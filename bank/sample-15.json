@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "paket": "sample-15",
+    "sumber": "disusun sendiri (original), mengacu kisi-kisi SKD Permenpan RB",
+    "format": "USM PKN STAN / SKD CAT",
+    "dibuat": "2026-09-11"
+  },
+  "soal": [
+    {
+      "id": "TWK-001",
+      "kategori": "TWK",
+      "subtopik": "Pancasila",
+      "pertanyaan": "Sila keempat Pancasila menekankan permusyawaratan. Penerapan yang paling tepat dalam kehidupan bernegara adalah...",
+      "opsi": {
+        "A": "Keputusan diambil oleh pihak yang paling berpengaruh agar cepat",
+        "B": "Musyawarah dilakukan sampai mufakat, dan bila tidak tercapai ditempuh pemungutan suara",
+        "C": "Setiap keputusan wajib disetujui seluruh peserta tanpa kecuali",
+        "D": "Keputusan diserahkan sepenuhnya kepada pemimpin yang dipilih",
+        "E": "Musyawarah hanya dilakukan untuk urusan yang tidak penting"
+      },
+      "kunci": "B",
+      "pembahasan": "Sila keempat mengutamakan mufakat melalui musyawarah. Bila mufakat tidak tercapai, mekanisme demokratis berikutnya adalah voting. Opsi C keliru karena menuntut aklamasi mutlak; opsi A dan D bertentangan dengan asas kerakyatan.",
+      "tingkat": "sedang"
+    },
+    {
+      "id": "TWK-002",
+      "kategori": "TWK",
+      "subtopik": "UUD 1945",
+      "pertanyaan": "Lembaga negara yang berwenang menguji undang-undang terhadap UUD 1945 adalah...",
+      "opsi": {
+        "A": "Mahkamah Agung",
+        "B": "Komisi Yudisial",
+        "C": "Mahkamah Konstitusi",
+        "D": "Dewan Perwakilan Daerah",
+        "E": "Badan Pemeriksa Keuangan"
+      },
+      "kunci": "C",
+      "pembahasan": "Pasal 24C ayat (1) UUD 1945: MK berwenang mengadili pada tingkat pertama dan terakhir yang putusannya bersifat final untuk menguji UU terhadap UUD. MA menguji peraturan di bawah UU terhadap UU.",
+      "tingkat": "mudah"
+    },
+    {
+      "id": "TWK-003",
+      "kategori": "TWK",
+      "subtopik": "Bela Negara",
+      "pertanyaan": "Bentuk bela negara yang paling relevan dilakukan mahasiswa PKN STAN dalam kehidupan sehari-hari adalah...",
+      "opsi": {
+        "A": "Mengikuti wajib militer secara sukarela",
+        "B": "Menolak seluruh produk asing tanpa kecuali",
+        "C": "Menjaga integritas akademik dan menolak praktik kecurangan",
+        "D": "Menghindari diskusi politik agar tidak terjadi konflik",
+        "E": "Mengunggah ulang setiap berita nasional di media sosial"
+      },
+      "kunci": "C",
+      "pembahasan": "Bela negara non-fisik mencakup pengabdian sesuai profesi. Bagi mahasiswa, menjaga integritas akademik adalah wujud konkret. Opsi B adalah chauvinisme, bukan nasionalisme.",
+      "tingkat": "sedang"
+    },
+    {
+      "id": "TWK-004",
+      "kategori": "TWK",
+      "subtopik": "Bahasa Indonesia",
+      "pertanyaan": "Kalimat berikut yang menggunakan ejaan baku secara tepat adalah...",
+      "opsi": {
+        "A": "Ia mempertanggung jawabkan laporan keuangan kepada atasannya.",
+        "B": "Ia mempertanggungjawabkan laporan keuangan kepada atasannya.",
+        "C": "Ia memper tanggungjawabkan laporan keuangan kepada atasannya.",
+        "D": "Ia mempertanggung-jawabkan laporan keuangan kepada atasannya.",
+        "E": "Ia mem-pertanggungjawabkan laporan keuangan kepada atasannya."
+      },
+      "kunci": "B",
+      "pembahasan": "Gabungan kata yang mendapat awalan dan akhiran sekaligus ditulis serangkai: mem- + tanggung jawab + -kan menjadi mempertanggungjawabkan.",
+      "tingkat": "sedang"
+    },
+    {
+      "id": "TWK-005",
+      "kategori": "TWK",
+      "subtopik": "NKRI",
+      "pertanyaan": "Otonomi daerah dalam kerangka NKRI bermakna bahwa daerah...",
+      "opsi": {
+        "A": "Berhak memisahkan diri jika merasa dirugikan pusat",
+        "B": "Mengatur dan mengurus sendiri urusan pemerintahan menurut asas otonomi dan tugas pembantuan",
+        "C": "Menjalankan seluruh urusan pemerintahan termasuk politik luar negeri",
+        "D": "Bebas menetapkan mata uang dan sistem pertahanan sendiri",
+        "E": "Hanya melaksanakan perintah pemerintah pusat tanpa inisiatif"
+      },
+      "kunci": "B",
+      "pembahasan": "Pasal 18 ayat (2) UUD 1945. Urusan absolut (politik luar negeri, pertahanan, keamanan, yustisi, moneter-fiskal nasional, agama) tetap menjadi kewenangan pusat.",
+      "tingkat": "sedang"
+    },
+    {
+      "id": "TIU-001",
+      "kategori": "TIU",
+      "subtopik": "Verbal - Analogi",
+      "pertanyaan": "AUDITOR : LAPORAN KEUANGAN = ... : ...",
+      "opsi": {
+        "A": "Dokter : Stetoskop",
+        "B": "Editor : Naskah",
+        "C": "Guru : Sekolah",
+        "D": "Petani : Cangkul",
+        "E": "Pilot : Bandara"
+      },
+      "kunci": "B",
+      "pembahasan": "Relasi: pelaku memeriksa/menelaah objek kerjanya. Auditor menelaah laporan keuangan, editor menelaah naskah. Opsi A dan D adalah relasi pelaku-alat, C dan E pelaku-tempat.",
+      "tingkat": "sedang"
+    },
+    {
+      "id": "TIU-002",
+      "kategori": "TIU",
+      "subtopik": "Verbal - Silogisme",
+      "pertanyaan": "Semua pegawai yang disiplin mendapat tunjangan kinerja. Sebagian pegawai di unit A tidak mendapat tunjangan kinerja. Simpulan yang tepat adalah...",
+      "opsi": {
+        "A": "Semua pegawai unit A disiplin",
+        "B": "Sebagian pegawai unit A tidak disiplin",
+        "C": "Semua pegawai unit A tidak disiplin",
+        "D": "Tidak ada pegawai unit A yang disiplin",
+        "E": "Sebagian pegawai unit A mendapat tunjangan kinerja"
+      },
+      "kunci": "B",
+      "pembahasan": "Kontraposisi premis 1: yang tidak mendapat tunjangan kinerja pasti tidak disiplin. Karena sebagian pegawai unit A tidak mendapat tunjangan, maka sebagian pegawai unit A tidak disiplin.",
+      "tingkat": "sedang"
+    },
+    {
+      "id": "TIU-003",
+      "kategori": "TIU",
+      "subtopik": "Numerik - Deret",
+      "pertanyaan": "Perhatikan deret: 3, 6, 11, 18, 27, ... Bilangan berikutnya adalah...",
+      "opsi": {
+        "A": "36",
+        "B": "38",
+        "C": "40",
+        "D": "42",
+        "E": "45"
+      },
+      "kunci": "B",
+      "pembahasan": "Selisih antarsuku: 3, 5, 7, 9, ... (bilangan ganjil naik 2). Selisih berikutnya 11, sehingga 27 + 11 = 38.",
+      "tingkat": "mudah"
+    },
+    {
+      "id": "TIU-004",
+      "kategori": "TIU",
+      "subtopik": "Numerik - Soal Cerita",
+      "pertanyaan": "Sebuah pekerjaan dapat diselesaikan A dalam 12 hari dan B dalam 18 hari. Jika dikerjakan bersama, pekerjaan selesai dalam...",
+      "opsi": {
+        "A": "6,0 hari",
+        "B": "6,8 hari",
+        "C": "7,2 hari",
+        "D": "7,5 hari",
+        "E": "8,0 hari"
+      },
+      "kunci": "C",
+      "pembahasan": "Laju gabungan = 1/12 + 1/18 = 3/36 + 2/36 = 5/36 per hari. Waktu = 36/5 = 7,2 hari.",
+      "tingkat": "sedang"
+    },
+    {
+      "id": "TIU-005",
+      "kategori": "TIU",
+      "subtopik": "Figural - Analitis",
+      "pertanyaan": "Lima orang duduk berjajar. R di ujung kiri. S tepat di sebelah kanan R. T berada di antara S dan U. V di ujung kanan. Siapa yang duduk di tengah?",
+      "opsi": {
+        "A": "R",
+        "B": "S",
+        "C": "T",
+        "D": "U",
+        "E": "V"
+      },
+      "kunci": "C",
+      "pembahasan": "Urutan terbentuk R-S-T-U-V. Posisi ke-3 (tengah) ditempati T.",
+      "tingkat": "sedang"
+    },
+    {
+      "id": "TKP-001",
+      "kategori": "TKP",
+      "subtopik": "Integritas",
+      "pertanyaan": "Anda menemukan selisih pencatatan yang menguntungkan unit kerja Anda pada laporan yang sudah ditandatangani atasan. Yang Anda lakukan...",
+      "opsi": {
+        "A": "Melaporkan temuan kepada atasan disertai usulan koreksi dan dampaknya",
+        "B": "Membiarkannya karena laporan sudah ditandatangani",
+        "C": "Memperbaiki sendiri tanpa memberi tahu siapa pun",
+        "D": "Menanyakan ke rekan sejawat apakah perlu dilaporkan",
+        "E": "Menunggu sampai ada pemeriksaan dari pihak eksternal"
+      },
+      "kunci": "A",
+      "bobot": {
+        "A": 5,
+        "B": 1,
+        "C": 2,
+        "D": 3,
+        "E": 2
+      },
+      "pembahasan": "Poin tertinggi pada tindakan proaktif, transparan, melalui jalur yang benar, dan solutif. Memperbaiki diam-diam (C) melanggar prosedur meski niatnya baik.",
+      "tingkat": "sedang"
+    },
+    {
+      "id": "TKP-002",
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "pertanyaan": "Seorang pemohon layanan marah karena berkasnya ditolak akibat syarat yang kurang. Sikap Anda...",
+      "opsi": {
+        "A": "Menjelaskan dengan tenang syarat yang kurang dan cara melengkapinya",
+        "B": "Meminta pemohon tenang dulu sebelum Anda mau melayani",
+        "C": "Memanggil satuan pengamanan agar suasana kondusif",
+        "D": "Menyerahkan penanganan kepada rekan yang lebih senior",
+        "E": "Menerima berkas apa adanya agar pemohon tidak marah"
+      },
+      "kunci": "A",
+      "bobot": {
+        "A": 5,
+        "B": 3,
+        "C": 2,
+        "D": 3,
+        "E": 1
+      },
+      "pembahasan": "Orientasi pelayanan menuntut respons empatik sekaligus tetap taat aturan. Opsi E melanggar aturan; opsi C berlebihan untuk situasi yang belum membahayakan.",
+      "tingkat": "mudah"
+    },
+    {
+      "id": "TKP-003",
+      "kategori": "TKP",
+      "subtopik": "Kemampuan Beradaptasi",
+      "pertanyaan": "Kantor Anda menerapkan aplikasi baru yang belum Anda kuasai, sementara target pekerjaan tetap. Yang Anda lakukan...",
+      "opsi": {
+        "A": "Mempelajari panduan aplikasi di luar jam kerja sambil tetap mengejar target",
+        "B": "Meminta penundaan target sampai Anda mahir",
+        "C": "Tetap memakai cara lama karena lebih cepat",
+        "D": "Meminta rekan mengerjakan bagian yang memakai aplikasi baru",
+        "E": "Menunggu pelatihan resmi dari kantor"
+      },
+      "kunci": "A",
+      "bobot": {
+        "A": 5,
+        "B": 2,
+        "C": 1,
+        "D": 2,
+        "E": 3
+      },
+      "pembahasan": "Adaptasi ditunjukkan lewat inisiatif belajar mandiri tanpa mengorbankan target. Menunggu pelatihan (E) pasif namun masih lebih baik daripada menolak berubah (C).",
+      "tingkat": "sedang"
+    },
+    {
+      "id": "TKP-004",
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "pertanyaan": "Anda ditunjuk memimpin tim lintas unit yang anggotanya belum pernah bekerja sama. Langkah pertama Anda...",
+      "opsi": {
+        "A": "Menyusun kesepakatan tujuan, peran, dan mekanisme kerja bersama tim",
+        "B": "Membagi tugas langsung sesuai jabatan masing-masing",
+        "C": "Mengerjakan bagian tersulit sendiri agar cepat selesai",
+        "D": "Meminta atasan menetapkan pembagian tugas",
+        "E": "Menunggu anggota saling mengenal lebih dulu"
+      },
+      "kunci": "A",
+      "bobot": {
+        "A": 5,
+        "B": 3,
+        "C": 2,
+        "D": 2,
+        "E": 1
+      },
+      "pembahasan": "Pada tim baru, penyelarasan tujuan dan peran secara partisipatif membangun komitmen sekaligus kejelasan kerja.",
+      "tingkat": "sedang"
+    },
+    {
+      "id": "TKP-005",
+      "kategori": "TKP",
+      "subtopik": "Teknologi Informasi",
+      "pertanyaan": "Anda menerima surel berisi tautan yang mengatasnamakan bagian kepegawaian dan meminta Anda memasukkan kata sandi akun kantor. Tindakan Anda...",
+      "opsi": {
+        "A": "Tidak mengeklik tautan dan mengonfirmasi ke bagian kepegawaian melalui saluran resmi",
+        "B": "Mengeklik tautan untuk memastikan isinya lebih dulu",
+        "C": "Meneruskan surel ke rekan untuk dimintai pendapat",
+        "D": "Menghapus surel tanpa memberi tahu siapa pun",
+        "E": "Mengisi data seadanya agar tidak dianggap lalai"
+      },
+      "kunci": "A",
+      "bobot": {
+        "A": 5,
+        "B": 1,
+        "C": 2,
+        "D": 3,
+        "E": 1
+      },
+      "pembahasan": "Verifikasi melalui kanal resmi tanpa berinteraksi dengan tautan adalah respons paling aman. Menghapus diam-diam (D) aman bagi diri sendiri tetapi tidak melindungi rekan lain.",
+      "tingkat": "mudah"
+    }
+  ]
+}
