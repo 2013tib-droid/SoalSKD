@@ -13,6 +13,7 @@ Aplikasi try out SKD CPNS (TWK, TIU, TKP). Mayoritas pengguna membuka di HP.
 
 - `DESIGN.md`: token visual (warna, font, spacing, radius, motion). Sudah final, jadi ikuti saja.
 - `docs/pola.md`: komponen dan pola yang sudah ada. Pakai ulang sebelum membuat yang baru.
+- `docs/rencana-app.md`: status aplikasi, keterbatasan, dan langkah berikutnya.
 - Bagian "Keputusan" di bawah: hal yang sudah diputuskan. Jangan dibahas ulang.
 
 ## Aturan hemat token
