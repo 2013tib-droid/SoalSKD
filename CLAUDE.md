@@ -7,7 +7,7 @@ Aplikasi try out SKD CPNS (TWK, TIU, TKP). Mayoritas pengguna membuka di HP.
 - Framework: Next.js
 - Styling / komponen UI: Tailwind (token dari DESIGN.md lewat variabel CSS), ikon Phosphor
 - App di `web/`. Dev: `npm run dev` · Typecheck: `npm run typecheck` · Build: `npm run build` (jalankan dari `web/`)
-- Bank soal: validasi `python3 tools/validasi.py` (seluruh bank) atau `python3 tools/validasi.py bank/p01.json` / `bank/` (wajib 0 galat sebelum commit soal) · tes validator `python3 tools/test_validasi.py`
+- Bank soal: validasi `python3 tools/validasi.py` (seluruh bank) atau `python3 tools/validasi.py bank/p01.json` / `bank/` (wajib 0 galat sebelum commit soal) · tes validator `python3 tools/test_validasi.py` · buat paket: `docs/cara-membuat-paket.md`
 
 ## Sumber kebenaran (baca ini dulu, sebelum memanggil skill)
 

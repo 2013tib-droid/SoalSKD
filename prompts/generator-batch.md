@@ -1,3 +1,6 @@
+> **Usang.** Format lama (USM PKN STAN). Untuk paket SKD CPNS, pakai
+> `docs/cara-membuat-paket.md` dan `prompts/paket-p03.md`.
+
 # Template Prompt Generator Batch (hemat token)
 
 Struktur di bawah memisahkan bagian **stabil** (di-cache) dari bagian

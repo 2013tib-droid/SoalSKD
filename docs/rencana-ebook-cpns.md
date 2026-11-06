@@ -86,4 +86,5 @@ Pemilik menyerahkan keputusan ke model ("gas aja"):
 3. ~~Validator~~ Selesai: `python3 tools/validasi.py`.
 4. ~~Skrip pembuat PDF~~ Selesai: `node ebook/buat-ebook.mjs bank/p01.json` (lihat `ebook/README.md`).
 5. Buat Paket 2 dan seterusnya (110 soal per paket), lalu review tiap paket.
-   - Paket 2 (`bank/p02.json`, 110 soal) selesai 6 November 2026, status draf. Berikutnya p03 dan p04.
+   - Paket 2 (`bank/p02.json`, 110 soal) selesai 6 November 2026, status draf. Berikutnya p03 dan p04:
+     alur di `docs/cara-membuat-paket.md`, prompt siap pakai di `prompts/paket-p03.md`.
