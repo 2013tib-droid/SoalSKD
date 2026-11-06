@@ -10,6 +10,7 @@ beserta contoh soal dan perkakas pendukungnya.
 | `docs/analisis-token.md` | **Analisis utama**: biaya token per soal, proyeksi biaya API, dan strategi penghematan |
 | `bank/sample-15.json` | 15 soal contoh (5 TWK, 5 TIU, 5 TKP) lengkap dengan kunci, bobot TKP, dan pembahasan |
 | `ebook/` | Pembuat ebook PDF dari `bank/*.json`: `node ebook/buat-ebook.mjs bank/p01.json` (lihat `ebook/README.md`) |
+| `web/` | Aplikasi try out (Next.js): `cd web && npm run dev`. Status dan rencana di `docs/rencana-app.md` |
 | `tools/estimate_tokens.py` | Estimator token bank soal, jalan offline |
 | `prompts/generator-batch.md` | Template prompt generator yang ramah prompt caching |
 

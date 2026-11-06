@@ -13,6 +13,7 @@ Aplikasi try out SKD CPNS (TWK, TIU, TKP). Mayoritas pengguna membuka di HP.
 
 - `DESIGN.md`: token visual (warna, font, spacing, radius, motion). Sudah final, jadi ikuti saja.
 - `docs/pola.md`: komponen dan pola yang sudah ada. Pakai ulang sebelum membuat yang baru.
+- `docs/rencana-app.md`: status aplikasi, keterbatasan, dan langkah berikutnya.
 - Bagian "Keputusan" di bawah: hal yang sudah diputuskan. Jangan dibahas ulang.
 
 ## Aturan hemat token
@@ -45,3 +46,4 @@ Aplikasi try out SKD CPNS (TWK, TIU, TKP). Mayoritas pengguna membuka di HP.
 2026-11-06 · Skor dihitung di server (server action); kunci dan pembahasan baru dikirim setelah ujian dikumpulkan · belum anti-curang penuh: action bisa dipanggil langsung, perlu sesi server saat ada backend
 2026-11-06 · `web/` membaca `config/skd.json` dan bank skema 1 langsung; `web/src/config/skd.ts` hanya pengaturan app · satu sumber kebenaran; `bank/sample-15.json` (format lama) tidak dipakai app
 2026-11-06 · Satu area satu sesi: `bank/`, `schema/`, `tools/`, `web/` dipegang sesi utama; sesi lain fetch dan cek main dulu sebelum membuat file di area itu · PR #1 ditutup karena skema dan validatornya dobel
+2026-11-06 · Beranda tanpa bottom nav dulu; nav 4 item dari DESIGN.md ditambahkan saat ada halaman Riwayat dan Profil terpisah · hindari tautan ke halaman yang belum ada
