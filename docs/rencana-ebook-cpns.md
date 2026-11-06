@@ -10,7 +10,7 @@ dulu sebelum membuat soal atau ebook.
   sekitar **satu bulan** (dicatat 6 November 2026).
 - Pemilik repo sudah PNS. Produk ini **untuk dijual**, bukan untuk belajar
   sendiri.
-- Paket contoh sudah ada: `bank/premium-01.md` (20 soal). Format dan
+- Paket contoh sudah ada: `bank/p01.json` (20 soal; arsip Markdown di `bank/premium-01.md`). Format dan
   kualitasnya menjadi standar acuan.
 
 ## Bentuk produk (usulan, belum final)
@@ -52,7 +52,7 @@ dulu sebelum membuat soal atau ebook.
 - **TIU figural dilewati** untuk sementara karena butuh gambar. Jika nanti
   diperlukan, buat gambarnya dengan SVG.
 - Jangan mengulang topik yang sudah dipakai di `bank/sample-15.json` dan
-  `bank/premium-01.md`.
+  `bank/p01.json` (field `topik`).
 
 ## Catatan legal dan kualitas
 
@@ -81,7 +81,7 @@ dulu sebelum membuat soal atau ebook.
 ## Langkah berikutnya
 
 1. Ambil keputusan untuk poin 1–3 di atas.
-2. Ubah `bank/premium-01.md` menjadi data JSON, dengan bentuk yang
-   mengikuti `bank/sample-15.json` ditambah field tips dan bobot TKP.
+2. ~~Ubah `bank/premium-01.md` menjadi data JSON.~~ Selesai: skema di
+   `schema/paket.schema.json` (lihat `docs/skema-soal.md`), data di `bank/p01.json`.
 3. Buat skrip pembuat PDF, lalu contoh ebook dari Paket 1.
 4. Buat Paket 2 dan seterusnya (110 soal per paket), lalu review tiap paket.

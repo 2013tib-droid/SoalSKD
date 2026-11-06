@@ -1,5 +1,7 @@
 # Bank Soal SKD CPNS Premium — Paket 01
 
+> **Arsip.** Sumber utama paket ini sekarang `bank/p01.json`, yang sudah memuat beberapa perbaikan pembahasan (soal 3, 7, 9, 11, 12, 17, 18). Jangan edit file ini; nanti file ini dibuat ulang dari JSON.
+
 **Isi paket:** 20 soal orisinal (TWK 6 · TIU 7 · TKP 7)
 **Distribusi kesulitan:** Mudah 4 (20%) · Sedang 10 (50%) · Sulit 6 (30%)
 
