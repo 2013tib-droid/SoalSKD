@@ -9,6 +9,8 @@ beserta contoh soal dan perkakas pendukungnya.
 |---|---|
 | `docs/analisis-token.md` | **Analisis utama**: biaya token per soal, proyeksi biaya API, dan strategi penghematan |
 | `bank/sample-15.json` | 15 soal contoh (5 TWK, 5 TIU, 5 TKP) lengkap dengan kunci, bobot TKP, dan pembahasan |
+| `bank/schema/bank-soal.schema.json` | JSON Schema (draft 2020-12) untuk berkas bank soal |
+| `tools/validate_bank.py` | Validator bank soal (skema + id ganda + kunci TKP) |
 | `tools/estimate_tokens.py` | Estimator token bank soal, jalan offline |
 | `prompts/generator-batch.md` | Template prompt generator yang ramah prompt caching |
 
@@ -30,6 +32,16 @@ Rinciannya ada di `docs/analisis-token.md`.
 ```bash
 python3 tools/estimate_tokens.py bank/*.json
 ```
+
+## Validasi bank soal
+
+```bash
+python3 tools/validate_bank.py bank/            # semua *.json di bank/
+python3 tools/validate_bank.py bank/sample-15.json
+```
+
+Memakai `jsonschema` bila terpasang (`pip install jsonschema`), selain itu
+pemeriksa stdlib. Keluar dengan kode 1 dan menyebut `id` soal bila ada error.
 
 ## Format data
 

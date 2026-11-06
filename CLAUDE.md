@@ -40,3 +40,4 @@ Aplikasi try out SKD CPNS (TWK, TIU, TKP). Mayoritas pengguna membuka di HP.
 2026-11-06 · Bottom nav di HP (bukan drawer) dan teks soal 16px · nyaman satu tangan + teks bacaan panjang
 2026-11-06 · App Next.js di `web/`, soal dibaca dari `bank/*.json` di server; kunci, bobot, dan pembahasan tidak dikirim ke browser · cegah bocor kunci
 2026-11-06 · Simpan otomatis sementara di localStorage; sinkron ke server menyusul saat ada backend · belum ada backend
+2026-11-06 · Format `bank/*.json` dikunci oleh `bank/schema/bank-soal.schema.json` (draft 2020-12); cek dengan `python3 tools/validate_bank.py bank/` sebelum commit soal baru · cegah data rusak dan kunci TKP salah

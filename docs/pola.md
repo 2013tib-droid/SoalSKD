@@ -21,6 +21,7 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 - `web/src/lib/soal.ts` · `ambilSoalUjian(paket)` baca `bank/<paket>.json` di server, buang kunci/bobot/pembahasan
 - `web/src/config/skd.ts` · format per paket (durasi, ambang timer, passing grade `null` sampai ada sumber resmi)
 - `web/src/components/ujian/use-ujian.ts` · state ujian + simpan otomatis ke localStorage (`soalskd:ujian:<paket>`), jam selesai disimpan jadi refresh tidak mengulang timer
+- `bank/schema/bank-soal.schema.json` + `tools/validate_bank.py` · skema bank soal; validator juga cek id ganda dan kunci TKP = opsi berbobot 5
 
 ## Pola UX (empty / loading / error state, konfirmasi, toast)
 

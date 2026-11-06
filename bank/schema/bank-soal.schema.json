@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/2013tib-droid/soalskd/bank/schema/bank-soal.schema.json",
+  "title": "Bank soal SoalSKD",
+  "description": "Format file bank/*.json. Cek duplikat id dan kecocokan kunci/bobot TKP dengan tools/validate_bank.py.",
+  "type": "object",
+  "required": ["meta", "soal"],
+  "additionalProperties": false,
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["paket", "sumber", "format", "dibuat"],
+      "additionalProperties": false,
+      "properties": {
+        "paket": { "type": "string", "pattern": "^[a-z0-9-]+$", "description": "Sama dengan nama file tanpa .json" },
+        "sumber": { "type": "string", "minLength": 1 },
+        "format": { "type": "string", "minLength": 1 },
+        "dibuat": { "type": "string", "format": "date", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+      }
+    },
+    "soal": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/soal" }
+    }
+  },
+  "$defs": {
+    "huruf": { "enum": ["A", "B", "C", "D", "E"] },
+    "teksTidakKosong": { "type": "string", "minLength": 1, "pattern": "\\S" },
+    "opsi": {
+      "type": "object",
+      "required": ["A", "B", "C", "D", "E"],
+      "additionalProperties": false,
+      "properties": {
+        "A": { "$ref": "#/$defs/teksTidakKosong" },
+        "B": { "$ref": "#/$defs/teksTidakKosong" },
+        "C": { "$ref": "#/$defs/teksTidakKosong" },
+        "D": { "$ref": "#/$defs/teksTidakKosong" },
+        "E": { "$ref": "#/$defs/teksTidakKosong" }
+      }
+    },
+    "skor": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "bobot": {
+      "type": "object",
+      "required": ["A", "B", "C", "D", "E"],
+      "additionalProperties": false,
+      "properties": {
+        "A": { "$ref": "#/$defs/skor" },
+        "B": { "$ref": "#/$defs/skor" },
+        "C": { "$ref": "#/$defs/skor" },
+        "D": { "$ref": "#/$defs/skor" },
+        "E": { "$ref": "#/$defs/skor" }
+      }
+    },
+    "soal": {
+      "type": "object",
+      "required": ["id", "kategori", "subtopik", "pertanyaan", "opsi", "kunci", "pembahasan", "tingkat"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^(TWK|TIU|TKP)-\\d{3}$" },
+        "kategori": { "enum": ["TWK", "TIU", "TKP"] },
+        "subtopik": { "$ref": "#/$defs/teksTidakKosong" },
+        "pertanyaan": { "$ref": "#/$defs/teksTidakKosong" },
+        "opsi": { "$ref": "#/$defs/opsi" },
+        "kunci": { "$ref": "#/$defs/huruf" },
+        "bobot": { "$ref": "#/$defs/bobot" },
+        "pembahasan": { "$ref": "#/$defs/teksTidakKosong" },
+        "tingkat": { "enum": ["mudah", "sedang", "sulit"] }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "kategori": { "const": "TWK" } }, "required": ["kategori"] },
+          "then": { "properties": { "id": { "pattern": "^TWK-" } }, "not": { "required": ["bobot"] } }
+        },
+        {
+          "if": { "properties": { "kategori": { "const": "TIU" } }, "required": ["kategori"] },
+          "then": { "properties": { "id": { "pattern": "^TIU-" } }, "not": { "required": ["bobot"] } }
+        },
+        {
+          "if": { "properties": { "kategori": { "const": "TKP" } }, "required": ["kategori"] },
+          "then": { "properties": { "id": { "pattern": "^TKP-" } }, "required": ["bobot"] }
+        }
+      ]
+    }
+  }
+}
