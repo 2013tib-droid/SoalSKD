@@ -49,3 +49,32 @@ Tidak ada isi branch itu yang masuk ke branch utama.
   dibuat sudah ada atau sedang direncanakan, misalnya di bagian "langkah berikutnya" di `docs/`.
 - **Cek branch utama lagi sebelum push atau membuat PR**, terutama kalau tugasnya makan waktu lama.
 - Pelajaran ini berlaku untuk semua proyek. Usulkan ke repo `agensi` (`house-style`).
+
+## 2026-11-06 · Ebook PDF di branch `claude/ebook-pdf`
+
+Atas permintaan sesi utama dan dengan persetujuan pemilik, sesi ebook mengerjakan langkah 4 di
+`docs/rencana-ebook-cpns.md`. Laporannya sudah dikirim ke sesi utama.
+
+- **Hasil:** `node ebook/buat-ebook.mjs bank/p01.json` menghasilkan `ebook/dist/p01.pdf`
+  (A4, 31 halaman untuk 20 soal). Isinya sampul, daftar isi, petunjuk, soal per subtes, kunci,
+  dan pembahasan. Cara pakai dan alasan pemilihan alat ada di `ebook/README.md`.
+- **Alat:** Paged.js untuk tata letak cetak, Chromium bawaan environment untuk mencetak PDF,
+  dan marked untuk Markdown GFM. WeasyPrint tidak bisa dipasang karena pip tidak bisa mengambil
+  paket di environment ini.
+- **Validasi:** skrip menolak paket yang gagal `tools/validasi.py` (exit 1). Sudah diuji dengan
+  bobot TKP yang dirusak dan dengan `sample-15`.
+- **Batas area:** hanya `ebook/` dan `docs/` yang diubah. Tidak ada yang perlu diubah di area
+  sesi utama.
+- **Terbuka untuk sesi utama:** Geist tidak punya glyph `∧ ∨ ≡ ✓ ✗` yang dipakai di pembahasan
+  TIU (p01-008 s.d. p01-013), jadi karakter itu tercetak dengan DejaVu Sans. Mengganti karakternya
+  di data adalah keputusan sesi utama, karena `bank/` areanya.
+- **Status:** sudah masuk ke branch utama lewat PR #2 (merge `73c08e5`).
+
+### Catatan susulan
+
+Catatan di atas sempat di-commit (`1e8335d`) di atas branch yang sudah di-merge, karena sesi ebook
+belum tahu PR #2 sudah masuk. Pemilik tidak mau riwayat ditulis ulang (tidak ada push paksa), jadi
+branch utama di-merge biasa ke `claude/ebook-pdf` dan catatan ini dibetulkan dengan commit baru.
+
+Pelajaran: sebelum menambah commit di branch lama, cek dulu apakah PR-nya sudah di-merge. Kalau
+sudah, pekerjaan susulan masuk lewat PR baru.
