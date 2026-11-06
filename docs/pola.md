@@ -29,6 +29,7 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 - `web/src/lib/format-skd.ts` · baca `config/skd.json`; `durasiPaket()` skalakan durasi resmi ke jumlah soal paket, atau 1 menit/soal selama `durasi_menit` null
 - `web/src/config/skd.ts` · hanya pengaturan app (durasi latihan per soal, ambang timer 10% / 5%). Format SKD ada di `config/skd.json`
 - `web/src/components/ujian/use-ujian.ts` · state ujian + simpan otomatis ke localStorage (`soalskd:ujian:<paket>`), jam selesai disimpan jadi refresh tidak mengulang timer
+- `ebook/buat-ebook.mjs` · ebook PDF A4 dari satu paket (sampul, daftar isi, soal, kunci, pembahasan); menolak paket yang gagal `tools/validasi.py` · gaya cetak di `ebook/gaya.css`
 
 ## Pola UX (empty / loading / error state, konfirmasi, toast)
 
