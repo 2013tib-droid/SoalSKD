@@ -99,6 +99,12 @@ td.angka, th.angka { text-align: center; }
   margin-bottom: 8pt !important;
 }
 
+/* ---------- pembatas paket (buku gabungan) ---------- */
+.pembatas { padding-top: 70mm; text-align: left; }
+.pembatas-label { font-size: 10pt; font-weight: 600; color: var(--text-muted); margin: 0 0 6pt; letter-spacing: 0.02em; }
+.pembatas h1 { font-size: 36pt; margin: 0 0 10pt; padding-bottom: 10pt; border-bottom: 2px solid var(--primary); }
+.pembatas-sub { font-size: 12pt; font-weight: 500; margin: 0 0 6pt; }
+
 /* ---------- daftar isi ---------- */
 .daftar-isi ol { list-style: none; padding: 0; }
 .daftar-isi li { margin: 0 0 6pt; font-weight: 600; }

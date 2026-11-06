@@ -1,13 +1,16 @@
 # Ebook PDF
 
-Membuat ebook PDF A4 dari satu paket soal (`bank/<id>.json`, skema 1).
+Membuat ebook PDF A4 dari satu paket soal atau beberapa paket sekaligus (`bank/<id>.json`, skema 1).
 
 ```bash
 cd ebook && npm install && cd ..          # sekali saja
 node ebook/buat-ebook.mjs bank/p01.json   # hasil: ebook/dist/p01.pdf
+
+# buku gabungan (Edisi 1: p02–p04), hasil: ebook/dist/soalskd-p02-p03-p04.pdf
+node ebook/buat-ebook.mjs bank/p02.json bank/p03.json bank/p04.json --judul "Edisi 1"
 ```
 
-Opsi: `--keluar <file.pdf>` untuk menentukan lokasi hasil, `--html` untuk ikut menyimpan
+Opsi: `--judul <teks>` untuk judul sampul buku gabungan, `--keluar <file.pdf>` untuk menentukan lokasi hasil, `--html` untuk ikut menyimpan
 HTML-nya (berguna saat mengatur tampilan). Hasil di `ebook/dist/` tidak di-commit.
 
 ## Isi PDF
@@ -20,6 +23,11 @@ HTML-nya (berguna saat mengatur tampilan). Hasil di `ebook/dist/` tidak di-commi
 4. Soal per subtes (TWK, TIU, TKP), tanpa kunci.
 5. Kunci jawaban: huruf untuk TWK/TIU, tabel bobot untuk TKP.
 6. Pembahasan per soal: kunci atau bobot, `pembahasan.inti`, alasan per opsi, konsep, tips, rujukan.
+
+**Buku gabungan** (lebih dari satu file): sampul dan petunjuk dicetak sekali, lalu setiap paket mendapat
+halaman pembatas diikuti soal, kunci, dan pembahasannya sendiri, supaya bisa dikerjakan sebagai tryout
+terpisah. Daftar isi dan kepala halaman menyebut nama paket. Semua paket divalidasi sekaligus; satu
+galat membatalkan seluruh buku. Lencana "belum siap terbit" muncul jika ada paket yang belum `final`.
 
 Teks soal dirender sebagai Markdown GFM (tabel, daftar, tebal). HTML mentah ditampilkan apa adanya,
 tidak dijalankan. Sesuai DESIGN.md tidak ada italic: `*teks*` dicetak sedikit lebih tebal.
