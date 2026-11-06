@@ -8,7 +8,7 @@ Repo ini tidak punya branch `main`. Branch utamanya `claude/skd-stan-resource-an
 | Area | Dipegang |
 |---|---|
 | `bank/`, `schema/`, `tools/`, `web/`, `config/` | sesi utama |
-| `ebook/` | sesi ebook (branch `claude/ebook-pdf`) |
+| `ebook/` | belum ada sesi aktif (sesi ebook selesai 2026-11-06); sesi berikutnya yang mengambil alih mencatat namanya di sini |
 
 Sesi lain yang butuh perubahan di area milik sesi lain menuliskannya di laporan,
 tidak mengubahnya sendiri.
@@ -78,3 +78,13 @@ branch utama di-merge biasa ke `claude/ebook-pdf` dan catatan ini dibetulkan den
 
 Pelajaran: sebelum menambah commit di branch lama, cek dulu apakah PR-nya sudah di-merge. Kalau
 sudah, pekerjaan susulan masuk lewat PR baru.
+
+### Penutupan sesi ebook
+
+- PR #3 (catatan di atas) sudah di-merge ke branch utama (`f8d483d`).
+- Sesi ebook selesai; pemilik pindah ke sesi lain. `ebook/` sekarang tidak dipegang sesi mana pun
+  (lihat tabel kepemilikan).
+- Yang masih terbuka: pilihan glyph `∧ ∨ ≡ ✓ ✗` di pembahasan TIU (lihat di atas), dan
+  ebook untuk paket berikutnya (`node ebook/buat-ebook.mjs bank/p02.json` setelah paketnya lolos
+  `tools/validasi.py`).
+- Catatan penutupan ini ada di branch `claude/ebook-pdf` dan baru masuk ke branch utama lewat PR baru.
