@@ -4,8 +4,8 @@ Aplikasi try out SKD CPNS (TWK, TIU, TKP). Mayoritas pengguna membuka di HP.
 
 ## Stack & perintah
 
-- Framework: …
-- Styling / komponen UI: …
+- Framework: Next.js
+- Styling / komponen UI: Tailwind (token dari DESIGN.md lewat variabel CSS), ikon Phosphor
 - Dev: `…` · Test: `…` · Build: `…`
 
 ## Sumber kebenaran (baca ini dulu, sebelum memanggil skill)
@@ -36,3 +36,5 @@ Aplikasi try out SKD CPNS (TWK, TIU, TKP). Mayoritas pengguna membuka di HP.
 2026-11-06 · Pola ujian wajib: grid nomor soal berstatus (belum / dijawab / ragu-ragu), timer selalu terlihat + peringatan saat hampir habis, jawaban tersimpan otomatis, nyaman satu tangan · kebutuhan inti try out
 2026-11-06 · Soal harus orisinal; jangan salin dari buku atau aplikasi lain · hak cipta & kualitas
 2026-11-06 · Format SKD (jumlah soal, durasi, skor) dan passing grade disimpan sebagai konfigurasi, tidak di-hardcode tanpa sumber; beri catatan "cek aturan BKN/KemenPAN-RB terbaru" · aturan bisa berubah tiap tahun
+2026-11-06 · DESIGN.md "SoalSKD Tenang": biru tenang, Geist/Geist Mono, terang + gelap, Next.js + Tailwind · jawaban pengguna; saran claymorphism dari ui-ux-pro-max ditolak karena bentrok dengan house-style
+2026-11-06 · Bottom nav di HP (bukan drawer) dan teks soal 16px · nyaman satu tangan + teks bacaan panjang
