@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+/* Token dari DESIGN.md ("SoalSKD Tenang"). Komponen hanya memakai token ini. */
+:root {
+  --color-primary: #1e40af;
+  --color-primary-hover: #1e3a8a;
+  --color-on-primary: #ffffff;
+  --color-background: #f7f8fa;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f1f3f6;
+  --color-border: #e5e7eb;
+  --color-text: #111827;
+  --color-text-muted: #4b5563;
+  --color-ring: #1e40af;
+  --color-doubt: #f59e0b;
+  --color-on-doubt: #111827;
+  --color-warning: #b45309;
+  --color-danger: #b91c1c;
+  --color-success: #15803d;
+  --color-overlay: rgba(0, 0, 0, 0.4);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-primary: #60a5fa;
+    --color-primary-hover: #93c5fd;
+    --color-on-primary: #000000;
+    --color-background: #000000;
+    --color-surface: #181818;
+    --color-surface-muted: #1f1f1f;
+    --color-border: #313131;
+    --color-text: #f3f4f6;
+    --color-text-muted: #a1a1aa;
+    --color-ring: #60a5fa;
+    --color-doubt: #fbbf24;
+    --color-on-doubt: #000000;
+    --color-warning: #fbbf24;
+    --color-danger: #f87171;
+    --color-success: #4ade80;
+    --color-overlay: rgba(0, 0, 0, 0.6);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-primary: #60a5fa;
+  --color-primary-hover: #93c5fd;
+  --color-on-primary: #000000;
+  --color-background: #000000;
+  --color-surface: #181818;
+  --color-surface-muted: #1f1f1f;
+  --color-border: #313131;
+  --color-text: #f3f4f6;
+  --color-text-muted: #a1a1aa;
+  --color-ring: #60a5fa;
+  --color-doubt: #fbbf24;
+  --color-on-doubt: #000000;
+  --color-warning: #fbbf24;
+  --color-danger: #f87171;
+  --color-success: #4ade80;
+  --color-overlay: rgba(0, 0, 0, 0.6);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-on-primary: var(--color-on-primary);
+  --color-background: var(--color-background);
+  --color-surface: var(--color-surface);
+  --color-surface-muted: var(--color-surface-muted);
+  --color-border: var(--color-border);
+  --color-text: var(--color-text);
+  --color-text-muted: var(--color-text-muted);
+  --color-ring: var(--color-ring);
+  --color-doubt: var(--color-doubt);
+  --color-on-doubt: var(--color-on-doubt);
+  --color-warning: var(--color-warning);
+  --color-danger: var(--color-danger);
+  --color-success: var(--color-success);
+  --color-overlay: var(--color-overlay);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --ease-out-house: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Skala teks bernama (house-style). */
+@utility heading-5 { @apply text-2xl font-semibold; }
+@utility title-3 { @apply text-base font-medium; }
+@utility title-4 { @apply text-sm font-medium; }
+@utility body-5 { font-size: 1rem; line-height: 1.625rem; font-weight: 400; }
+@utility body-6 { @apply text-sm font-normal; }
+@utility caption-4 { @apply text-xs font-medium; }
+@utility mono-timer { @apply font-mono text-lg font-semibold tabular-nums; }
+@utility mono-number { @apply font-mono text-sm font-medium tabular-nums; }
+
+@layer base {
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ring);
+  outline-offset: 2px;
+}
+}
+
+@keyframes pulse-sekali {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
