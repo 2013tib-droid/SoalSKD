@@ -68,4 +68,13 @@ Atas permintaan sesi utama dan dengan persetujuan pemilik, sesi ebook mengerjaka
 - **Terbuka untuk sesi utama:** Geist tidak punya glyph `∧ ∨ ≡ ✓ ✗` yang dipakai di pembahasan
   TIU (p01-008 s.d. p01-013), jadi karakter itu tercetak dengan DejaVu Sans. Mengganti karakternya
   di data adalah keputusan sesi utama, karena `bank/` areanya.
-- **Belum dikerjakan:** PR untuk `claude/ebook-pdf` (belum diminta).
+- **Status:** sudah masuk ke branch utama lewat PR #2 (merge `73c08e5`).
+
+### Catatan susulan
+
+Catatan di atas sempat di-commit (`1e8335d`) di atas branch yang sudah di-merge, karena sesi ebook
+belum tahu PR #2 sudah masuk. Pemilik tidak mau riwayat ditulis ulang (tidak ada push paksa), jadi
+branch utama di-merge biasa ke `claude/ebook-pdf` dan catatan ini dibetulkan dengan commit baru.
+
+Pelajaran: sebelum menambah commit di branch lama, cek dulu apakah PR-nya sudah di-merge. Kalau
+sudah, pekerjaan susulan masuk lewat PR baru.
