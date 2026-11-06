@@ -1875,6 +1875,1609 @@
         "konsep": "**Persentase berurutan dikalikan, bukan dijumlahkan.** Naik a% lalu turun b% berarti dikali (1 + a/100)(1 − b/100). Untuk naik lalu turun dengan persen yang sama (x%), hasil akhirnya selalu turun sebesar x²/100 persen. Di sini 20²/100 = 4%."
       },
       "tips": "Untuk perubahan persen bertingkat, ubah setiap perubahan menjadi **faktor pengali** (naik 20% = ×1,2, turun 20% = ×0,8), lalu kalikan. Cara ini menghindari jebakan “saling menghapus”."
+    },
+    {
+      "id": "p04-066",
+      "nomor": 66,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Warga mengeluh prosedur berbelit di unit lain",
+      "tingkat": "mudah",
+      "pertanyaan": "Seorang warga datang ke loket Anda dengan kesal. Ia mengeluh sudah tiga kali bolak-balik ke unit lain di instansi Anda karena persyaratan yang diminta selalu berubah. Urusannya sebenarnya ditangani unit tersebut. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Mendengarkan keluhannya, memeriksa persyaratan resmi bersama warga, lalu menghubungi unit terkait agar urusannya dapat dituntaskan",
+        "B": "Meminta warga bersabar dan kembali ke unit tersebut karena urusan itu bukan wewenang loket Anda",
+        "C": "Menyarankan warga menulis keluhan di kotak saran agar unit tersebut memperbaiki layanannya",
+        "D": "Ikut menyalahkan unit tersebut di depan warga supaya warga merasa didukung dan tidak marah lagi kepada Anda",
+        "E": "Menjelaskan persyaratan resmi yang tercantum di standar pelayanan dan menyarankan warga membawa catatan itu saat kembali ke unit tersebut"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 2,
+        "C": 3,
+        "D": 1,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Bagi warga, instansi adalah **satu kesatuan**. Walaupun urusannya ditangani unit lain, petugas yang ditemui tetap dapat membantu agar layanan tuntas. Sikap terbaik menggabungkan tiga hal: **mendengarkan keluhan**, **memastikan informasi persyaratan yang benar**, dan **berkoordinasi** dengan unit terkait agar warga tidak bolak-balik lagi. Keluhan seperti ini juga menjadi bahan perbaikan layanan, sehingga perlu disampaikan ke unit yang bersangkutan.",
+        "opsi": {
+          "A": "Bobot 5. Warga didengar, informasi diperiksa dari sumber resmi, dan unit terkait dihubungi sehingga masalahnya benar-benar selesai.",
+          "B": "Bobot 2. Secara aturan tidak salah, tetapi warga yang sudah tiga kali bolak-balik dibiarkan menghadapi masalah yang sama sendirian.",
+          "C": "Bobot 3. Kotak saran adalah saluran resmi, tetapi tidak menyelesaikan urusan warga hari ini.",
+          "D": "Bobot 1. Menjelekkan unit lain di depan warga merusak citra instansi dan tidak menyelesaikan masalah.",
+          "E": "Bobot 4. Informasi resmi sangat membantu, tetapi tanpa koordinasi, warga masih berisiko ditolak lagi oleh unit tersebut."
+        },
+        "konsep": "**Prinsip satu pintu:** petugas mana pun yang ditemui warga ikut bertanggung jawab memastikan warga diarahkan dengan benar. Koordinasi antarunit adalah bagian dari pelayanan, bukan campur tangan."
+      },
+      "tips": "Untuk soal keluhan tentang unit lain, bobot tertinggi biasanya **membantu tuntas lewat koordinasi**, bukan sekadar mengarahkan. Opsi yang menjelekkan rekan atau unit lain hampir selalu bernilai 1."
+    },
+    {
+      "id": "p04-067",
+      "nomor": 67,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Warga meminta informasi layanan lewat pesan pribadi di luar jam kerja",
+      "tingkat": "sedang",
+      "pertanyaan": "Pukul sembilan malam, seorang warga mengirim pesan ke nomor pribadi Anda. Ia menanyakan syarat pengurusan izin usaha karena besok pagi ia ingin datang ke kantor. Nomor Anda ia dapat dari kenalan. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Mengabaikan pesan itu karena di luar jam kerja dan dikirim ke nomor pribadi",
+        "B": "Membalas singkat berisi tautan informasi resmi persyaratan dan nomor layanan instansi yang dapat dihubungi",
+        "C": "Menjanjikan akan mengurus izinnya langsung besok tanpa perlu mengantre karena ia sudah menghubungi Anda",
+        "D": "Membalas keesokan harinya saat jam kerja dan meminta warga menanyakannya langsung di loket",
+        "E": "Membalas dengan meminta warga menghubungi kanal resmi instansi yang tersedia tanpa menjelaskan persyaratannya sama sekali"
+      },
+      "bobot": {
+        "A": 2,
+        "B": 5,
+        "C": 1,
+        "D": 3,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Petugas tidak wajib melayani di luar jam kerja melalui nomor pribadi. Namun, pertanyaan warga dalam soal **sederhana dan mendesak**, dan jawabannya sudah tersedia di **sumber resmi**. Membalas singkat dengan tautan informasi resmi dan kanal layanan instansi membantu warga tanpa mengorbankan batas profesional. Cara ini juga mengarahkan warga ke saluran resmi untuk urusan berikutnya, sehingga layanan tetap tercatat dan adil bagi semua warga.",
+        "opsi": {
+          "A": "Bobot 2. Warga yang akan datang besok pagi kehilangan kesempatan menyiapkan berkas. Batas pribadi terjaga, tetapi tidak ada upaya membantu.",
+          "B": "Bobot 5. Warga terbantu dengan informasi yang benar, dan Anda tetap memakai informasi resmi serta mengarahkan ke kanal resmi.",
+          "C": "Bobot 1. Memberi perlakuan khusus karena warga punya akses pribadi melanggar prinsip keadilan dan dapat membuka peluang kolusi.",
+          "D": "Bobot 3. Sesuai jam kerja, tetapi balasan datang setelah warga mungkin sudah berangkat tanpa berkas yang lengkap.",
+          "E": "Bobot 4. Mengarahkan ke kanal resmi sudah tepat, tetapi tanpa informasi persyaratan, warga belum terbantu untuk kedatangannya besok."
+        },
+        "konsep": "**Batas profesional dalam layanan:** bantu warga dengan **informasi resmi** dan **arahkan ke kanal resmi**. Jangan memberi janji atau perlakuan khusus melalui jalur pribadi."
+      },
+      "tips": "Jika warga menghubungi lewat jalur pribadi, bobot tertinggi biasanya **membantu secukupnya sambil mengarahkan ke jalur resmi**. Opsi yang menjanjikan keistimewaan selalu bernilai rendah."
+    },
+    {
+      "id": "p04-068",
+      "nomor": 68,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Melayani warga tuli yang berkomunikasi lewat tulisan",
+      "tingkat": "mudah",
+      "pertanyaan": "Seorang warga tuli datang ke loket Anda. Ia memberi isyarat bahwa tidak dapat mendengar dan menyodorkan buku catatan berisi pertanyaan tentang pengurusan kartu identitas anak. Antrean di belakangnya cukup panjang. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Meminta ia kembali bersama pendamping yang dapat berbicara agar pelayanan lebih cepat",
+        "B": "Menjawab secara lisan dengan suara keras dan pelan agar ia dapat membaca gerak bibir Anda",
+        "C": "Melayaninya dengan menulis jawaban yang jelas, menunjukkan contoh dokumen, dan memastikan ia memahami setiap langkah",
+        "D": "Memberikan brosur persyaratan dan memintanya membaca sendiri karena antrean masih panjang",
+        "E": "Mempersilakan ia menunggu sampai antrean sepi agar Anda dapat melayaninya lebih lama dan lebih teliti tanpa terburu-buru"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 2,
+        "C": 5,
+        "D": 3,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Penyandang disabilitas berhak mendapat pelayanan yang **setara dan sesuai kebutuhannya**. Warga dalam soal sudah menunjukkan cara komunikasi yang ia pakai, yaitu tulisan. Petugas yang baik menyesuaikan diri dengan cara itu: menulis jawaban dengan jelas, memakai contoh dokumen sebagai alat bantu, dan **memastikan warga paham**. Antrean panjang bukan alasan untuk menunda atau mengurangi mutu pelayanan bagi warga ini.",
+        "opsi": {
+          "A": "Bobot 1. Mewajibkan pendamping memindahkan beban ke warga dan bersifat diskriminatif. Warga sudah mampu berkomunikasi lewat tulisan.",
+          "B": "Bobot 2. Ada usaha, tetapi mengabaikan cara komunikasi yang sudah ditunjukkan warga. Tidak semua orang tuli dapat membaca gerak bibir.",
+          "C": "Bobot 5. Komunikasi disesuaikan, ada alat bantu, dan pemahaman warga dipastikan. Pelayanan setara dengan warga lain.",
+          "D": "Bobot 3. Brosur bermanfaat, tetapi pertanyaan warga tidak dijawab secara langsung seperti warga lain.",
+          "E": "Bobot 4. Niatnya baik agar pelayanan lebih tuntas, tetapi warga harus menunggu lebih lama daripada warga lain. Ini perlakuan yang kurang setara."
+        },
+        "konsep": "**Pelayanan inklusif:** ikuti cara komunikasi yang dipakai warga, siapkan alat bantu, dan pastikan pemahaman. Hak penyandang disabilitas atas pelayanan publik dijamin UU No. 8 Tahun 2016 tentang Penyandang Disabilitas."
+      },
+      "tips": "Dalam soal disabilitas, bobot 5 biasanya **langsung melayani dengan menyesuaikan cara komunikasi**. Opsi yang menunda, mewajibkan pendamping, atau mengalihkan ke brosur bernilai lebih rendah.",
+      "rujukan": [
+        "UU No. 8 Tahun 2016 tentang Penyandang Disabilitas"
+      ]
+    },
+    {
+      "id": "p04-069",
+      "nomor": 69,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Kesalahan data pada dokumen warga akibat kelalaian petugas",
+      "tingkat": "sedang",
+      "pertanyaan": "Seorang warga kembali ke loket karena nama ibunya tertulis salah pada dokumen yang Anda terbitkan minggu lalu. Setelah diperiksa, kesalahan itu terjadi saat Anda menginput data. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Meminta warga mengisi formulir perbaikan baru dan mengantre ulang sesuai prosedur yang berlaku",
+        "B": "Mengatakan bahwa kesalahan berasal dari sistem agar warga tidak menyalahkan Anda",
+        "C": "Memperbaiki dokumennya segera, tetapi tidak menyampaikan apa pun tentang penyebab kesalahannya",
+        "D": "Mengakui kesalahan, meminta maaf, memperbaikinya hari itu juga, dan memeriksa ulang cara input Anda",
+        "E": "Meminta maaf dan memperbaiki dokumennya segera tanpa membebankan biaya atau antrean tambahan kepada warga"
+      },
+      "bobot": {
+        "A": 2,
+        "B": 1,
+        "C": 3,
+        "D": 5,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Kesalahan dalam soal adalah **kesalahan petugas**, sehingga warga tidak boleh menanggung akibatnya. Sikap profesional mencakup **mengakui kesalahan dengan jujur**, **meminta maaf**, **memperbaiki segera** tanpa membebani warga, dan **mencegah kesalahan berulang**. Langkah terakhir sering terlupa. Memeriksa ulang cara input, misalnya dengan membaca ulang data bersama warga sebelum mencetak, mengurangi risiko kesalahan serupa pada warga lain.",
+        "opsi": {
+          "A": "Bobot 2. Warga diperlakukan seolah-olah ia yang salah dan harus mengulang proses. Beban dipindahkan ke warga.",
+          "B": "Bobot 1. Menyalahkan sistem adalah kebohongan dan merusak kepercayaan warga kepada instansi.",
+          "C": "Bobot 3. Masalah warga selesai, tetapi tanpa pengakuan dan permintaan maaf. Tidak ada pula upaya mencegah kesalahan berulang.",
+          "D": "Bobot 5. Jujur, bertanggung jawab, memperbaiki segera, dan belajar dari kesalahan.",
+          "E": "Bobot 4. Sudah baik dan meringankan warga, tetapi belum ada langkah untuk mencegah kesalahan serupa terulang."
+        },
+        "konsep": "**Pola kesalahan sendiri:** akui → minta maaf → perbaiki segera → cegah berulang. Opsi yang hanya memenuhi tiga unsur pertama bernilai 4, sedangkan yang menutupi kesalahan bernilai paling rendah."
+      },
+      "tips": "Jika soal menyebut **kesalahan dilakukan oleh Anda sendiri**, cari opsi yang mengandung pengakuan dan **perbaikan sistem kerja**. Opsi yang menyalahkan pihak lain selalu bernilai 1."
+    },
+    {
+      "id": "p04-070",
+      "nomor": 70,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Warga menyerobot antrean dengan alasan terburu-buru",
+      "tingkat": "sedang",
+      "pertanyaan": "Seorang warga langsung mendatangi loket Anda tanpa mengambil nomor antrean. Ia mengatakan harus segera kembali bekerja dan hanya perlu menyerahkan satu berkas. Beberapa warga yang sudah lama mengantre mulai protes. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menerima berkasnya saja karena prosesnya singkat dan tidak akan mengganggu antrean terlalu lama",
+        "B": "Meminta satpam membawa warga tersebut keluar dari ruang layanan agar suasana kembali tenang",
+        "C": "Meminta warga mengambil nomor antrean terlebih dahulu tanpa penjelasan panjang, lalu melanjutkan pelayanan kepada warga yang sudah menunggu giliran",
+        "D": "Menyampaikan bahwa Anda tidak dapat memutuskannya dan meminta warga bertanya kepada atasan",
+        "E": "Menjelaskan dengan sopan bahwa semua dilayani sesuai nomor antrean, membantunya mengambil nomor, dan memberi perkiraan waktu tunggu"
+      },
+      "bobot": {
+        "A": 2,
+        "B": 1,
+        "C": 4,
+        "D": 3,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Antrean adalah wujud **keadilan dalam pelayanan**. Semua warga punya kepentingan dan waktu yang sama berharganya, sehingga alasan terburu-buru tidak membuat seseorang boleh didahulukan, kecuali kelompok prioritas yang diatur, seperti lansia atau penyandang disabilitas. Sikap terbaik adalah **menegakkan aturan dengan sopan**, menjelaskan alasannya, dan **membantu warga** dengan informasi waktu tunggu agar ia dapat mengatur waktunya.",
+        "opsi": {
+          "A": "Bobot 2. Tampak membantu, tetapi tidak adil bagi warga yang sudah mengantre dan memicu kecemburuan.",
+          "B": "Bobot 1. Berlebihan dan mempermalukan warga. Masalahnya dapat diselesaikan dengan penjelasan.",
+          "C": "Bobot 4. Aturan ditegakkan dengan tepat, tetapi tanpa penjelasan dan bantuan, warga bisa merasa diabaikan.",
+          "D": "Bobot 3. Menghindari keputusan yang sebenarnya sudah jelas aturannya. Petugas loket berwenang menegakkan aturan antrean.",
+          "E": "Bobot 5. Adil bagi semua warga, disampaikan dengan sopan, dan warga dibantu agar bisa mengatur waktunya."
+        },
+        "konsep": "**Tegas pada aturan, ramah pada orang.** Dalam pelayanan, aturan yang berlaku untuk semua ditegakkan tanpa pengecualian, tetapi cara menyampaikannya tetap menghormati warga. Jika instansi menyediakan loket prioritas, arahkan warga yang memenuhi syarat ke sana, bukan menyisipkannya ke antrean umum."
+      },
+      "tips": "Dalam soal antrean, bobot 5 hampir selalu **menegakkan urutan antrean disertai penjelasan dan bantuan**. Opsi yang mendahulukan karena alasan pribadi bernilai rendah, dan opsi yang mengusir bernilai paling rendah."
+    },
+    {
+      "id": "p04-071",
+      "nomor": 71,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Warga mengancam memviralkan jika layanan tidak dipercepat",
+      "tingkat": "sulit",
+      "pertanyaan": "Seorang warga marah karena pengajuannya belum selesai, padahal waktu penyelesaian dalam standar pelayanan masih tersisa dua hari. Ia mulai merekam Anda dengan ponsel dan mengancam akan memviralkan jika berkasnya tidak selesai hari ini. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menyelesaikan berkasnya hari itu juga dengan mendahului berkas lain agar tidak terjadi keributan",
+        "B": "Tetap tenang, menjelaskan standar waktu dan posisi berkasnya, lalu menawarkan pemantauan status secara berkala",
+        "C": "Meminta warga berhenti merekam dan menolak melayani sampai rekaman dihapus",
+        "D": "Tetap tenang dan meminta warga menyampaikan keberatannya secara tertulis melalui kanal pengaduan resmi yang disediakan instansi",
+        "E": "Melaporkan kejadian ini kepada atasan dan menyerahkan penanganan warga sepenuhnya kepada atasan"
+      },
+      "bobot": {
+        "A": 2,
+        "B": 5,
+        "C": 1,
+        "D": 4,
+        "E": 3
+      },
+      "pembahasan": {
+        "inti": "Ancaman viral tidak boleh mengubah **urutan dan standar pelayanan**, karena mendahulukan warga yang mengancam tidak adil bagi warga lain. Namun, kemarahan warga biasanya muncul karena ia tidak tahu posisi berkasnya. Sikap terbaik adalah **tetap tenang dan profesional**, menjelaskan standar waktu dan **posisi berkasnya secara transparan**, lalu menawarkan cara memantau status. Petugas yang bersikap baik juga tidak perlu takut direkam, karena rekamannya justru menunjukkan pelayanan yang sesuai aturan.",
+        "opsi": {
+          "A": "Bobot 2. Keributan reda, tetapi warga lain dirugikan dan muncul kesan bahwa ancaman berhasil.",
+          "B": "Bobot 5. Profesional, transparan, adil bagi warga lain, dan menjawab kekhawatiran warga dengan informasi yang jelas.",
+          "C": "Bobot 1. Menolak melayani adalah pelanggaran. Merekam di ruang layanan publik juga bukan alasan untuk menghentikan pelayanan.",
+          "D": "Bobot 4. Tenang dan memakai saluran resmi, tetapi belum menjawab penyebab kemarahan warga, yaitu ketidakjelasan status berkas.",
+          "E": "Bobot 3. Melibatkan atasan dapat membantu, tetapi menyerahkan sepenuhnya berarti menghindari tugas yang sebenarnya bisa Anda tangani."
+        },
+        "konsep": "**Menghadapi tekanan dalam layanan:** tenang, transparan, dan konsisten pada standar. Informasi yang jelas sering lebih efektif meredakan kemarahan daripada memenuhi tuntutan."
+      },
+      "tips": "Jika ada ancaman atau tekanan, bobot 5 biasanya **tidak tunduk dan tidak melawan**, tetapi menjelaskan dengan transparan. Opsi yang memenuhi tuntutan dengan melanggar urutan bernilai rendah."
+    },
+    {
+      "id": "p04-072",
+      "nomor": 72,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Warga bingung karena kebijakan layanan baru belum tersosialisasi",
+      "tingkat": "sedang",
+      "pertanyaan": "Mulai pekan ini, instansi Anda mewajibkan pendaftaran daring sebelum datang ke kantor. Banyak warga yang datang langsung tidak mengetahui aturan baru itu dan kecewa karena tidak bisa dilayani. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menolak warga yang belum mendaftar daring karena aturan baru sudah resmi berlaku",
+        "B": "Tetap melayani semua warga tanpa pendaftaran daring sampai aturan itu dicabut",
+        "C": "Memasang pengumuman tentang aturan baru di pintu masuk agar warga berikutnya tidak salah",
+        "D": "Melaporkan kepada atasan bahwa banyak warga belum mengetahui aturan baru agar sosialisasi segera diperluas ke berbagai saluran",
+        "E": "Membantu warga yang datang mendaftar daring di tempat, lalu mengusulkan kepada atasan agar sosialisasi diperluas"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 2,
+        "C": 3,
+        "D": 4,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Aturan baru sah berlaku, tetapi tujuannya adalah **memperbaiki layanan**, bukan menolak warga. Masalah dalam soal muncul karena **sosialisasi belum menjangkau warga**. Sikap terbaik menyelesaikan dua hal sekaligus: **membantu warga yang sudah datang** agar tetap dapat mendaftar sesuai aturan baru, dan **mengusulkan perbaikan sosialisasi** agar masalah serupa tidak terus terjadi. Dengan begitu, aturan tetap dijalankan dan warga tetap terlayani.",
+        "opsi": {
+          "A": "Bobot 1. Kaku dan merugikan warga yang tidak bersalah. Warga yang belum tahu justru korban sosialisasi yang kurang.",
+          "B": "Bobot 2. Warga terlayani, tetapi aturan resmi diabaikan atas keputusan sendiri.",
+          "C": "Bobot 3. Membantu warga berikutnya, tetapi warga yang sudah datang tetap tidak terlayani.",
+          "D": "Bobot 4. Memperbaiki akar masalahnya, tetapi warga yang sudah datang belum dibantu hari itu.",
+          "E": "Bobot 5. Aturan dijalankan, warga tetap terlayani, dan akar masalahnya diusulkan untuk diperbaiki."
+        },
+        "konsep": "**Masa transisi kebijakan:** petugas menjembatani aturan baru dan warga yang belum siap. Bantu warga memenuhi aturan, bukan menolaknya atau mengabaikan aturannya. Masukan dari petugas loket sangat berharga karena merekalah yang pertama kali melihat dampak kebijakan pada warga."
+      },
+      "tips": "Dalam soal perubahan aturan, bobot 5 biasanya **membantu warga mematuhi aturan baru** dan **memperbaiki penyebab masalahnya**. Menolak secara kaku dan mengabaikan aturan sama-sama bernilai rendah."
+    },
+    {
+      "id": "p04-073",
+      "nomor": 73,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Permintaan melonggarkan syarat bantuan karena alasan kemanusiaan",
+      "tingkat": "sulit",
+      "pertanyaan": "Seorang ibu yang tampak sangat membutuhkan memohon agar didaftarkan sebagai penerima bantuan sosial. Ia tidak memiliki dokumen kependudukan karena rumahnya terbakar bulan lalu. Aturan mewajibkan dokumen tersebut. Ia menangis dan meminta Anda “sekali ini saja” melonggarkan syaratnya. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Mendaftarkannya tanpa dokumen karena kondisinya jelas darurat dan tidak ada yang dirugikan",
+        "B": "Menolak dengan sopan karena syarat dokumen tidak dapat dilonggarkan dalam kondisi apa pun",
+        "C": "Membantu menghubungkan ibu itu dengan layanan penerbitan ulang dokumen dan menanyakan ada tidaknya bantuan darurat bagi korban bencana",
+        "D": "Menjelaskan aturannya dan menyarankan ibu itu mengurus dokumen kependudukan terlebih dahulu",
+        "E": "Memberi bantuan dari uang pribadi Anda untuk kebutuhan mendesaknya sambil menyarankan ia kembali mendaftar setelah dokumennya diterbitkan ulang"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 2,
+        "C": 5,
+        "D": 3,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Empati tidak boleh diwujudkan dengan **melanggar aturan**, karena syarat dokumen mencegah salah sasaran dan penyalahgunaan bantuan. Namun, aturan juga tidak boleh membuat petugas berhenti berusaha. Sikap terbaik adalah **mencari jalan yang sah**: membantu ibu itu mendapatkan kembali dokumennya melalui layanan kependudukan, dan menanyakan apakah ada **skema bantuan darurat** bagi korban bencana yang syaratnya berbeda. Dengan begitu, kebutuhan ibu itu ditangani tanpa melanggar aturan.",
+        "opsi": {
+          "A": "Bobot 1. Melanggar aturan atas penilaian pribadi. Jika diulang, prosedur kehilangan fungsinya dan membuka peluang penyalahgunaan.",
+          "B": "Bobot 2. Sesuai aturan, tetapi berhenti pada penolakan tanpa membantu mencari jalan keluar.",
+          "C": "Bobot 5. Taat aturan sekaligus aktif mencari solusi yang sah dan melibatkan layanan yang tepat.",
+          "D": "Bobot 3. Memberi arah yang benar, tetapi ibu itu dibiarkan mencari sendiri cara mengurus dokumen setelah kehilangan rumah.",
+          "E": "Bobot 4. Peduli dan tidak melanggar aturan, tetapi bantuan pribadi bersifat sementara dan tidak menyelesaikan masalah dokumennya."
+        },
+        "konsep": "**Empati dalam batas aturan:** jangan langgar aturan, jangan pula berhenti di penolakan. Cari **jalur resmi lain** yang memang disediakan untuk kondisi khusus."
+      },
+      "tips": "Dalam soal dilema aturan dan kemanusiaan, bobot 5 hampir selalu **mencari jalur sah yang menyelesaikan masalah**. Opsi yang melanggar aturan demi belas kasihan bernilai 1."
+    },
+    {
+      "id": "p04-074",
+      "nomor": 74,
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "topik": "Kerja sama dengan perguruan tinggi untuk survei layanan",
+      "tingkat": "sedang",
+      "pertanyaan": "Unit Anda diminta mengukur kepuasan warga terhadap layanan, tetapi tidak memiliki tenaga yang cukup untuk survei lapangan. Sebuah perguruan tinggi di kota Anda pernah menawarkan kerja sama penelitian. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Meminta mahasiswa langsung turun ke lapangan memakai kuesioner yang mereka susun sendiri",
+        "B": "Menunda survei sampai unit Anda mendapat tambahan pegawai dari instansi",
+        "C": "Mengerjakan survei sendiri dengan sampel kecil supaya tidak perlu melibatkan pihak luar",
+        "D": "Mengusulkan kerja sama resmi kepada atasan, lalu menyusun bersama pihak kampus tujuan, metode, dan aturan penggunaan data",
+        "E": "Menghubungi kampus untuk menjajaki kerja sama dan melaporkan hasil penjajakannya kepada atasan sebelum ada keputusan resmi"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 2,
+        "C": 3,
+        "D": 5,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Jejaring kerja yang baik memanfaatkan **kekuatan mitra** untuk mencapai tujuan bersama. Perguruan tinggi memiliki tenaga dan keahlian metodologi, sedangkan instansi memiliki kebutuhan data layanan. Agar kerja sama bermanfaat dan aman, kerja sama harus **resmi** (disetujui atasan dan dituangkan dalam kesepakatan) dan **disusun bersama**, termasuk tujuan, metode, dan aturan penggunaan data warga. Dengan begitu, hasil survei dapat dipertanggungjawabkan.",
+        "opsi": {
+          "A": "Bobot 1. Tanpa kesepakatan resmi dan tanpa keterlibatan unit, kuesioner bisa tidak sesuai kebutuhan dan data warga berisiko disalahgunakan.",
+          "B": "Bobot 2. Menunda tugas padahal ada peluang kerja sama yang tersedia.",
+          "C": "Bobot 3. Tugas tetap dikerjakan, tetapi hasilnya kurang mewakili dan peluang kerja sama diabaikan.",
+          "D": "Bobot 5. Memanfaatkan mitra, melalui jalur resmi, dan menyusun aturan main bersama sejak awal.",
+          "E": "Bobot 4. Inisiatif dan tetap melapor ke atasan, tetapi belum sampai menyusun kesepakatan tentang metode dan perlindungan data."
+        },
+        "konsep": "**Pola kerja sama dengan pihak luar:** jajaki → minta persetujuan resmi → sepakati tujuan, peran, dan aturan data → laksanakan bersama → evaluasi. Perlindungan data responden perlu disepakati sejak awal karena survei kepuasan sering memuat identitas dan pendapat warga."
+      },
+      "tips": "Dalam soal kemitraan, bobot 5 biasanya **resmi, disusun bersama, dan saling menguntungkan**. Opsi yang menolak melibatkan pihak luar atau melepas kendali sepenuhnya bernilai rendah."
+    },
+    {
+      "id": "p04-075",
+      "nomor": 75,
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "topik": "Komunitas warga ingin dilibatkan dalam program kelurahan",
+      "tingkat": "mudah",
+      "pertanyaan": "Komunitas pemuda di wilayah Anda menawarkan diri membantu program bersih sungai yang sedang Anda rancang. Mereka memiliki banyak relawan, tetapi belum pernah bekerja sama dengan pemerintah. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menyambut tawaran itu, mengajak mereka rapat bersama, dan membagi peran sesuai kemampuan masing-masing",
+        "B": "Menerima bantuan mereka hanya sebagai tenaga tambahan pada hari pelaksanaan kegiatan",
+        "C": "Menolak dengan halus karena program pemerintah sebaiknya dijalankan oleh pegawai saja agar lebih tertib",
+        "D": "Menerima tawaran itu, tetapi meminta mereka mengurus sendiri seluruh kebutuhan relawan dan peralatan",
+        "E": "Menyambut tawaran mereka dan meminta atasan memutuskan bentuk keterlibatannya dalam program tersebut"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 3,
+        "C": 1,
+        "D": 2,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Program publik akan lebih berhasil jika **masyarakat dilibatkan sejak perencanaan**. Komunitas pemuda membawa tenaga, semangat, dan kedekatan dengan warga. Sikap terbaik adalah menyambut tawaran itu dan **membangun kerja sama yang setara**: merencanakan bersama dan membagi peran sesuai kemampuan. Pengalaman pertama yang baik juga membuat komunitas mau terlibat lagi dalam program lain.",
+        "opsi": {
+          "A": "Bobot 5. Terbuka, melibatkan sejak perencanaan, dan membagi peran dengan jelas.",
+          "B": "Bobot 3. Bantuan diterima, tetapi komunitas hanya dijadikan tenaga, bukan mitra. Gagasan mereka tidak dimanfaatkan.",
+          "C": "Bobot 1. Menolak partisipasi masyarakat tanpa alasan kuat. Ini bertentangan dengan semangat pelayanan yang partisipatif.",
+          "D": "Bobot 2. Tampak menerima, tetapi beban dilempar sepenuhnya kepada komunitas. Kerja sama menjadi tidak seimbang.",
+          "E": "Bobot 4. Sikapnya terbuka, tetapi keputusan yang sebenarnya dapat Anda kelola sebagai perancang program diserahkan ke atasan."
+        },
+        "konsep": "**Partisipasi masyarakat:** libatkan mitra dalam **perencanaan, pelaksanaan, dan evaluasi**. Mitra yang hanya dilibatkan saat pelaksanaan cenderung kurang merasa memiliki program. Pembagian peran yang jelas, misalnya komunitas mengerahkan relawan dan kelurahan menyiapkan alat serta izin, membuat kerja sama berjalan lancar dan aman."
+      },
+      "tips": "Jika masyarakat menawarkan bantuan, bobot 5 biasanya **menyambut dan menjadikannya mitra setara**. Opsi yang menolak partisipasi warga hampir selalu bernilai 1."
+    },
+    {
+      "id": "p04-076",
+      "nomor": 76,
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "topik": "Rapat lintas instansi buntu karena saling lempar tanggung jawab",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda memimpin rapat koordinasi penanganan sampah pasar yang dihadiri wakil dinas kebersihan, pengelola pasar, dan kecamatan. Setiap peserta menyatakan masalah itu bukan tanggung jawab instansinya. Rapat sudah berjalan satu jam tanpa kemajuan. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menutup rapat dan melaporkan kepada atasan bahwa instansi lain tidak mau bekerja sama",
+        "B": "Menetapkan sendiri pembagian tugas agar rapat segera selesai dan memiliki keputusan",
+        "C": "Menunda rapat dan meminta setiap instansi mengirim pejabat yang lebih berwenang pada pertemuan berikutnya",
+        "D": "Mengajak peserta memetakan aturan kewenangan masing-masing, lalu menyepakati pembagian peran dan tindak lanjut yang tertulis",
+        "E": "Mengajak peserta fokus pada dampak masalah bagi warga, lalu meminta setiap instansi mengusulkan bagian yang dapat mereka tangani"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 2,
+        "C": 3,
+        "D": 5,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Saling lempar tanggung jawab biasanya terjadi karena **batas kewenangan belum jelas**. Sebagai pemimpin rapat, tugas Anda adalah mengarahkan pembahasan dari saling menyalahkan menjadi **mencari pembagian peran**. Cara paling kuat adalah memetakan dasar aturan kewenangan setiap instansi, lalu menyepakati siapa melakukan apa dan menuliskannya sebagai **tindak lanjut** yang dapat dipantau. Keputusan yang berdasarkan aturan dan disepakati bersama lebih mungkin dijalankan.",
+        "opsi": {
+          "A": "Bobot 1. Menyerah dan menyalahkan instansi lain. Hubungan antarinstansi rusak dan masalah tidak selesai.",
+          "B": "Bobot 2. Ada keputusan, tetapi tidak disepakati dan bisa melampaui wewenang Anda. Instansi lain kemungkinan tidak menjalankannya.",
+          "C": "Bobot 3. Bisa membantu jika peserta memang tidak berwenang, tetapi rapat berakhir tanpa kemajuan dan masalah tertunda.",
+          "D": "Bobot 5. Memakai dasar aturan yang objektif, keputusan disepakati bersama, dan ada tindak lanjut tertulis.",
+          "E": "Bobot 4. Pendekatan yang baik untuk mencairkan suasana, tetapi tanpa dasar kewenangan dan catatan tertulis, kesepakatan mudah dilupakan."
+        },
+        "konsep": "**Memimpin rapat lintas instansi:** samakan tujuan → petakan kewenangan berdasarkan aturan → sepakati peran → tulis tindak lanjut, penanggung jawab, dan tenggat."
+      },
+      "tips": "Dalam soal rapat yang buntu, bobot 5 biasanya **mengubah perdebatan menjadi pembagian peran yang disepakati dan tertulis**. Opsi yang memutuskan sepihak atau menyerah bernilai rendah."
+    },
+    {
+      "id": "p04-077",
+      "nomor": 77,
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "topik": "Unit lain mengklaim hasil kerja tim gabungan",
+      "tingkat": "sulit",
+      "pertanyaan": "Tim gabungan dari unit Anda dan unit lain berhasil menyusun aplikasi pendataan. Dalam laporan ke pimpinan, kepala unit lain menyajikan aplikasi itu seolah-olah hanya hasil kerja unitnya. Rekan satu tim Anda marah dan ingin memprotes di grup percakapan kantor. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Mendukung rekan memprotes secara terbuka di grup percakapan kantor agar semua pegawai tahu siapa yang sebenarnya bekerja keras",
+        "B": "Membiarkannya karena yang penting aplikasinya bermanfaat, siapa pun yang mendapat pujian",
+        "C": "Membuat laporan tandingan langsung ke pimpinan tanpa memberi tahu unit tersebut",
+        "D": "Menenangkan rekan, lalu meminta atasan Anda menyampaikan peran tim gabungan kepada pimpinan",
+        "E": "Menenangkan rekan, lalu membicarakannya baik-baik dengan kepala unit lain agar laporan berikutnya menyebut kontribusi kedua unit"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 3,
+        "C": 2,
+        "D": 4,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Pengakuan kontribusi penting untuk menjaga **semangat dan kepercayaan dalam kerja sama**. Namun, cara memperjuangkannya harus tetap menjaga hubungan baik antarunit. Sikap terbaik adalah **meredakan emosi rekan**, lalu **berbicara langsung dan baik-baik** dengan pihak yang bersangkutan. Kemungkinan besar kepala unit lain tidak bermaksud mengambil pujian, dan percakapan langsung memberi kesempatan untuk meluruskannya tanpa mempermalukan siapa pun.",
+        "opsi": {
+          "A": "Bobot 1. Protes terbuka di grup kantor mempermalukan pihak lain dan merusak hubungan antarunit untuk kerja sama berikutnya.",
+          "B": "Bobot 3. Menghindari konflik, tetapi kontribusi tim tidak diakui dan rekan bisa kehilangan semangat.",
+          "C": "Bobot 2. Melapor diam-diam memicu saling curiga. Masalahnya juga belum dicoba diselesaikan dengan pihak yang bersangkutan.",
+          "D": "Bobot 4. Memakai jalur atasan dengan tenang, tetapi melewati kesempatan berbicara langsung dengan pihak yang bersangkutan.",
+          "E": "Bobot 5. Emosi diredakan, masalah dibicarakan langsung, dan solusinya menjaga hubungan sekaligus memastikan kontribusi diakui."
+        },
+        "konsep": "**Menyelesaikan gesekan antarunit:** redakan emosi → bicarakan langsung dan pribadi → libatkan atasan jika tidak berhasil. Hindari ruang publik untuk menyelesaikan masalah internal. Cara ini juga menjadi contoh baik bagi rekan yang sedang emosi."
+      },
+      "tips": "Dalam konflik kerja sama, urutan yang dinilai baik adalah **langsung ke pihak terkait dulu, baru naik ke atasan**. Opsi yang membawa masalah ke ruang publik hampir selalu bernilai 1."
+    },
+    {
+      "id": "p04-078",
+      "nomor": 78,
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "topik": "Berbagi pengetahuan dengan rekan baru yang belum paham sistem kerja",
+      "tingkat": "mudah",
+      "pertanyaan": "Seorang rekan baru di unit Anda sering bertanya tentang aplikasi pelaporan yang sudah Anda kuasai. Pertanyaannya mulai menyita waktu kerja Anda. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Memintanya bertanya kepada rekan lain karena Anda sedang banyak pekerjaan",
+        "B": "Menjawab setiap pertanyaannya kapan pun ia bertanya walaupun pekerjaan Anda sendiri menjadi terlambat diselesaikan",
+        "C": "Menyediakan waktu khusus untuk mengajarinya dan membagikan catatan panduan yang bisa ia pelajari sendiri",
+        "D": "Memberikan buku manual aplikasi dan memintanya mempelajari sendiri sampai benar-benar paham",
+        "E": "Mengerjakan bagian laporan yang sulit untuknya agar ia tidak perlu bertanya lagi"
+      },
+      "bobot": {
+        "A": 2,
+        "B": 4,
+        "C": 5,
+        "D": 3,
+        "E": 1
+      },
+      "pembahasan": {
+        "inti": "Berbagi pengetahuan adalah bagian dari **jejaring kerja di dalam tim**. Rekan baru yang cepat mandiri akan memperkuat kinerja unit. Agar tidak mengganggu pekerjaan Anda, berbagi perlu **diatur**: menyediakan waktu khusus untuk mengajar dan membuat catatan panduan yang bisa dipelajari sendiri. Cara ini membantu rekan belajar secara bertahap dan juga bermanfaat bagi pegawai baru berikutnya.",
+        "opsi": {
+          "A": "Bobot 2. Menghindar dan memindahkan beban ke rekan lain.",
+          "B": "Bobot 4. Sangat membantu, tetapi tanpa pengaturan waktu, pekerjaan Anda sendiri terganggu.",
+          "C": "Bobot 5. Membantu secara terarah, menjaga pekerjaan sendiri, dan membuat rekan cepat mandiri.",
+          "D": "Bobot 3. Ada bantuan berupa manual, tetapi rekan dibiarkan belajar sendiri tanpa pendampingan.",
+          "E": "Bobot 1. Rekan tidak pernah belajar, dan Anda mengerjakan tugas yang bukan tanggung jawab Anda."
+        },
+        "konsep": "**Berbagi pengetahuan yang efektif:** ajarkan cara, bukan kerjakan tugasnya. Dokumentasikan pengetahuan agar bisa dipakai banyak orang tanpa harus diajarkan berulang kali. Catatan panduan sederhana, misalnya langkah bergambar untuk tugas yang paling sering ditanyakan, sangat menghemat waktu tim."
+      },
+      "tips": "Dalam soal membantu rekan, bobot 5 biasanya **membuat rekan mandiri sambil tetap menjaga tanggung jawab sendiri**. Mengerjakan tugas orang lain bukan bantuan terbaik."
+    },
+    {
+      "id": "p04-079",
+      "nomor": 79,
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "topik": "Mitra swasta program tanggung jawab sosial meminta imbalan prioritas",
+      "tingkat": "sulit",
+      "pertanyaan": "Sebuah perusahaan menawarkan dana tanggung jawab sosial untuk membangun taman baca di kecamatan Anda. Sebagai imbalannya, mereka meminta logo perusahaan dipasang besar di taman dan meminta izin usaha cabang baru mereka “dibantu dipercepat”. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menerima seluruh tawaran karena taman baca sangat dibutuhkan warga dan izin usaha cabang itu pada akhirnya toh akan tetap diproses juga",
+        "B": "Menyambut dana untuk taman baca dengan pemasangan logo yang wajar, tetapi menegaskan bahwa izin usaha diproses sesuai prosedur biasa",
+        "C": "Menolak seluruh tawaran agar instansi tidak dianggap memiliki hubungan khusus dengan perusahaan",
+        "D": "Menerima dana dan logo, tetapi tidak menanggapi permintaan izin dan menunggu sampai mereka melupakannya",
+        "E": "Menerima dana tanggung jawab sosial dan menyerahkan permintaan percepatan izin kepada atasan untuk diputuskan"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 5,
+        "C": 3,
+        "D": 2,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Kerja sama dengan dunia usaha untuk kepentingan publik adalah hal yang baik, dan pemasangan logo yang wajar adalah bentuk pengakuan yang lazim. Namun, permintaan **mempercepat izin** sebagai imbalan adalah bentuk **benturan kepentingan** yang tidak boleh diterima. Sikap terbaik adalah **memisahkan dua urusan itu dengan tegas**: menyambut dukungan untuk taman baca, dan menyampaikan secara terbuka bahwa izin usaha diproses sesuai prosedur yang sama dengan pemohon lain.",
+        "opsi": {
+          "A": "Bobot 1. Menerima imbalan berupa percepatan izin adalah perlakuan istimewa yang melanggar integritas dan merugikan pemohon lain.",
+          "B": "Bobot 5. Kemitraan dimanfaatkan untuk warga, dan batas integritas ditegaskan secara terbuka sejak awal.",
+          "C": "Bobot 3. Aman dari benturan kepentingan, tetapi warga kehilangan manfaat taman baca yang sebenarnya dapat diterima secara sah.",
+          "D": "Bobot 2. Permintaan yang tidak ditanggapi bisa dianggap disetujui diam-diam dan menimbulkan masalah di kemudian hari.",
+          "E": "Bobot 4. Melibatkan atasan, tetapi permintaan yang jelas melanggar seharusnya langsung ditolak, bukan dilempar untuk diputuskan."
+        },
+        "konsep": "**Pisahkan kemitraan dan layanan.** Dukungan pihak swasta boleh diterima untuk kepentingan publik, asalkan tidak dikaitkan dengan **keputusan atau layanan** yang menguntungkan pemberi dukungan."
+      },
+      "tips": "Jika tawaran kerja sama disertai **permintaan imbalan berupa layanan**, bobot 5 biasanya menerima bagian yang sah dan **menolak tegas** bagian yang melanggar. Menolak semuanya bukan jawaban terbaik."
+    },
+    {
+      "id": "p04-080",
+      "nomor": 80,
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "topik": "Dua rekan satu tim berkonflik sehingga pekerjaan tersendat",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda ketua tim penyusun laporan tahunan. Dua anggota tim tidak saling bertegur sapa setelah berselisih soal pembagian tugas. Akibatnya, bagian laporan yang harus mereka gabungkan terlambat. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Mengajak keduanya berbicara, mendengarkan masing-masing, lalu menyepakati ulang pembagian tugas dan cara berkoordinasi",
+        "B": "Memindahkan salah satu dari mereka ke bagian lain agar keduanya tidak perlu bekerja bersama lagi",
+        "C": "Menegur keduanya di depan anggota tim lain agar menjadi pelajaran bagi semua orang",
+        "D": "Mengerjakan sendiri bagian yang terlambat agar laporan tetap selesai tepat waktu",
+        "E": "Berbicara dengan masing-masing secara terpisah untuk memahami masalahnya, lalu memberi arahan pembagian tugas yang baru"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 3,
+        "C": 1,
+        "D": 2,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Konflik dalam tim perlu diselesaikan pada **akar masalahnya**, dalam soal ini pembagian tugas. Sebagai ketua tim, sikap terbaik adalah **mempertemukan kedua pihak**, mendengarkan keduanya secara adil, lalu **menyepakati ulang** pembagian tugas dan cara koordinasinya. Kesepakatan yang dibuat bersama lebih mungkin dijalankan dibandingkan keputusan sepihak. Hubungan kerja keduanya juga pulih untuk pekerjaan berikutnya.",
+        "opsi": {
+          "A": "Bobot 5. Mendengarkan kedua pihak, menyelesaikan akar masalah, dan menghasilkan kesepakatan bersama.",
+          "B": "Bobot 3. Pekerjaan bisa berjalan, tetapi konfliknya tidak selesai dan bisa muncul lagi di tugas lain.",
+          "C": "Bobot 1. Mempermalukan anggota di depan umum memperburuk konflik dan suasana tim.",
+          "D": "Bobot 2. Laporan selesai, tetapi masalah tim dibiarkan dan Anda menanggung beban yang bukan milik Anda.",
+          "E": "Bobot 4. Mendengarkan secara terpisah itu baik, tetapi keputusan diberikan sepihak tanpa mempertemukan kedua pihak."
+        },
+        "konsep": "**Menangani konflik tim:** dengarkan semua pihak → temukan akar masalah → sepakati solusi bersama → pantau pelaksanaannya. Teguran, jika perlu, disampaikan secara pribadi. Ketua tim berperan sebagai penengah yang netral, bukan hakim yang memihak salah satu anggota."
+      },
+      "tips": "Dalam soal konflik anggota tim, bobot 5 biasanya **mempertemukan pihak yang berselisih dan menyepakati solusi bersama**. Menegur di depan umum hampir selalu bernilai 1."
+    },
+    {
+      "id": "p04-081",
+      "nomor": 81,
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "topik": "Undangan rapat instansi lain bentrok dengan tugas utama",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda diundang mewakili unit dalam rapat perencanaan bersama instansi lain. Pada waktu yang sama, Anda harus mendampingi audit di kantor. Atasan Anda sedang dinas luar dan sulit dihubungi. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Tidak menghadiri rapat karena audit lebih penting dan tidak perlu memberi kabar kepada penyelenggara",
+        "B": "Menghadiri rapat dan meminta rekan menggantikan Anda mendampingi audit tanpa membekalinya",
+        "C": "Mengutus rekan yang memahami materi rapat, membekalinya dengan sikap unit, memberi kabar ke penyelenggara, dan melaporkan ke atasan",
+        "D": "Meminta penyelenggara menunda rapat sampai Anda selesai mendampingi audit",
+        "E": "Memberi kabar kepada penyelenggara bahwa Anda berhalangan hadir dan meminta notula serta bahan rapat dikirimkan setelah rapat selesai"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 2,
+        "C": 5,
+        "D": 3,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Dua tugas yang bentrok perlu diatur agar **keduanya tetap terlaksana dengan baik**. Mendampingi audit adalah tugas yang tidak mudah dialihkan, sedangkan rapat perencanaan masih bisa diwakili oleh rekan yang memahami materinya. Sikap terbaik adalah **mendelegasikan dengan bekal yang jelas**, memberi kabar kepada penyelenggara agar hubungan antarinstansi terjaga, dan **melaporkan** keputusan itu kepada atasan walaupun beliau sulit dihubungi.",
+        "opsi": {
+          "A": "Bobot 1. Tidak hadir tanpa kabar merusak hubungan dengan instansi lain dan membuat kepentingan unit tidak terwakili.",
+          "B": "Bobot 2. Audit didampingi orang yang tidak dibekali, sehingga berisiko pada tugas yang lebih sulit dialihkan.",
+          "C": "Bobot 5. Kedua tugas terlaksana, perwakilan dibekali, mitra diberi kabar, dan atasan tetap mendapat laporan.",
+          "D": "Bobot 3. Meminta penundaan bisa dilakukan, tetapi rapat melibatkan banyak pihak dan permintaan ini membebani mereka.",
+          "E": "Bobot 4. Sopan dan tetap mendapat informasi, tetapi kepentingan unit tidak tersampaikan dalam rapat perencanaan."
+        },
+        "konsep": "**Mewakilkan dengan benar:** pilih wakil yang paham, bekali dengan sikap dan data unit, beri tahu penyelenggara, dan laporkan ke atasan. Mewakilkan tanpa bekal sama saja dengan tidak hadir."
+      },
+      "tips": "Untuk soal jadwal bentrok, bobot 5 biasanya membuat **kedua kepentingan tetap terpenuhi** melalui delegasi yang dibekali. Opsi yang mengorbankan salah satu tanpa kabar bernilai paling rendah."
+    },
+    {
+      "id": "p04-082",
+      "nomor": 82,
+      "kategori": "TKP",
+      "subtopik": "Sosial Budaya",
+      "topik": "Menyambut pegawai baru pengguna kursi roda",
+      "tingkat": "mudah",
+      "pertanyaan": "Unit Anda kedatangan pegawai baru pengguna kursi roda. Meja kerja yang disiapkan untuknya berada di lantai dua, dan kantor belum memiliki lift. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menawarkan diri membantu mendorong kursi rodanya naik dan turun tangga setiap pagi dan sore selama ia bekerja di unit Anda",
+        "B": "Menyambutnya dengan ramah, menanyakan kebutuhannya, dan mengusulkan kepada atasan agar meja kerjanya dipindah ke lantai satu",
+        "C": "Menyambutnya dengan ramah dan membiarkan bagian umum yang mengurus tempat kerjanya",
+        "D": "Bersikap biasa saja dan menunggu ia sendiri yang meminta bantuan jika memerlukannya",
+        "E": "Menyarankan ia mengajukan pindah ke unit lain yang kantornya lebih mudah diakses kursi roda"
+      },
+      "bobot": {
+        "A": 4,
+        "B": 5,
+        "C": 3,
+        "D": 2,
+        "E": 1
+      },
+      "pembahasan": {
+        "inti": "Rekan penyandang disabilitas berhak mendapat **lingkungan kerja yang aksesibel** dan diperlakukan setara. Sikap terbaik adalah **menyambut dengan hangat**, **menanyakan langsung kebutuhannya** daripada menebak, lalu **mengusulkan penyesuaian** yang membuatnya mandiri, misalnya memindahkan meja ke lantai satu. Penyesuaian seperti ini lebih menghormati martabatnya dibandingkan bantuan fisik yang membuatnya bergantung setiap hari.",
+        "opsi": {
+          "A": "Bobot 4. Niatnya baik dan langsung membantu, tetapi membuat rekan bergantung pada orang lain setiap hari dan berisiko bagi keselamatan.",
+          "B": "Bobot 5. Ramah, menghormati pendapat rekan tentang kebutuhannya, dan mencari solusi yang membuatnya mandiri.",
+          "C": "Bobot 3. Sikapnya baik, tetapi Anda melihat masalah nyata dan tidak berbuat apa-apa.",
+          "D": "Bobot 2. Pasif. Rekan baru mungkin sungkan meminta bantuan di hari-hari pertamanya.",
+          "E": "Bobot 1. Diskriminatif. Hambatannya ada pada tempat kerja, bukan pada rekan tersebut."
+        },
+        "konsep": "**Akomodasi yang layak:** sesuaikan lingkungan kerja agar penyandang disabilitas dapat bekerja mandiri dan setara. Prinsip ini diatur dalam UU No. 8 Tahun 2016 tentang Penyandang Disabilitas. Hal kecil lain juga berarti, seperti memastikan jalur di ruangan tidak terhalang dan toilet dapat dijangkau."
+      },
+      "tips": "Dalam soal rekan penyandang disabilitas, bobot 5 biasanya **bertanya langsung tentang kebutuhannya** dan **menyesuaikan lingkungan**, bukan sekadar membantu secara fisik.",
+      "rujukan": [
+        "UU No. 8 Tahun 2016 tentang Penyandang Disabilitas"
+      ]
+    },
+    {
+      "id": "p04-083",
+      "nomor": 83,
+      "kategori": "TKP",
+      "subtopik": "Sosial Budaya",
+      "topik": "Tradisi daerah yang berbeda dalam acara pernikahan rekan",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda menghadiri pernikahan rekan kerja yang berasal dari daerah lain. Dalam acara itu ada rangkaian adat yang belum pernah Anda lihat, dan tamu diajak ikut serta dalam salah satu prosesi yang tidak bertentangan dengan keyakinan Anda. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Duduk menonton saja karena tidak memahami makna prosesi tersebut",
+        "B": "Ikut serta, tetapi mengomentari prosesi itu sebagai kebiasaan yang aneh kepada tamu lain",
+        "C": "Meminta izin pulang lebih awal agar tidak perlu mengikuti prosesi yang asing",
+        "D": "Ikut serta dengan sopan dan bertanya kepada keluarga rekan tentang makna prosesi tersebut",
+        "E": "Ikut serta dengan sopan sambil memperhatikan dan meniru apa yang dilakukan oleh tamu-tamu lain di sekitar Anda"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 1,
+        "C": 2,
+        "D": 5,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Menghadiri acara adat rekan adalah kesempatan untuk **menghargai dan mengenal budaya lain**. Karena prosesinya tidak bertentangan dengan keyakinan Anda, ikut serta dengan sopan adalah bentuk penghormatan kepada rekan dan keluarganya. Sikap terbaik juga disertai **rasa ingin tahu yang tulus**, misalnya bertanya tentang makna prosesi. Pertanyaan seperti itu biasanya diterima dengan senang hati dan mempererat hubungan.",
+        "opsi": {
+          "A": "Bobot 3. Tidak menyinggung, tetapi kurang menunjukkan penghargaan dan melewatkan kesempatan mengenal budaya rekan.",
+          "B": "Bobot 1. Menyebut tradisi orang lain aneh adalah sikap merendahkan budaya lain dan dapat menyakiti tuan rumah.",
+          "C": "Bobot 2. Menghindari perbedaan dan bisa dianggap tidak menghargai tuan rumah.",
+          "D": "Bobot 5. Ikut menghormati dan berusaha memahami makna budaya rekan.",
+          "E": "Bobot 4. Ikut serta dengan sopan, tetapi belum berusaha memahami makna tradisinya."
+        },
+        "konsep": "**Sikap terhadap budaya lain:** hormati, ikuti selama tidak bertentangan dengan keyakinan, dan pahami maknanya. Lawannya adalah etnosentrisme, yaitu menilai budaya lain dengan ukuran budaya sendiri. Jika ada prosesi yang bertentangan dengan keyakinan Anda, menolak dengan sopan tetap dibenarkan, asalkan tidak merendahkan tradisi tersebut."
+      },
+      "tips": "Dalam soal tradisi berbeda, bobot 5 biasanya **ikut menghormati dan berusaha memahami**. Opsi yang mengomentari atau mengejek tradisi selalu bernilai 1."
+    },
+    {
+      "id": "p04-084",
+      "nomor": 84,
+      "kategori": "TKP",
+      "subtopik": "Sosial Budaya",
+      "topik": "Bahasa daerah dominan dalam rapat sehingga rekan pendatang tidak paham",
+      "tingkat": "sedang",
+      "pertanyaan": "Dalam rapat unit, sebagian besar peserta sering berbicara dalam bahasa daerah setempat karena merasa lebih akrab. Seorang rekan pendatang terlihat bingung dan jarang ikut berpendapat. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Membiarkannya karena rekan pendatang sebaiknya belajar bahasa daerah setempat agar dapat cepat menyesuaikan diri di kantor",
+        "B": "Menegur peserta rapat dengan keras karena tidak menghargai rekan pendatang",
+        "C": "Menerjemahkan isi rapat kepada rekan pendatang setelah rapat selesai",
+        "D": "Mengajak rekan pendatang berbicara dan menyarankan ia meminta peserta lain memakai bahasa Indonesia",
+        "E": "Mengusulkan dengan sopan agar rapat memakai bahasa Indonesia dan mengajak rekan pendatang menyampaikan pendapatnya"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 2,
+        "C": 3,
+        "D": 4,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Rapat kedinasan adalah forum resmi, dan semua peserta perlu dapat **memahami dan berkontribusi**. Bahasa Indonesia adalah bahasa resmi yang menjembatani pegawai dari berbagai daerah. Sikap terbaik adalah **mengusulkan dengan sopan** agar rapat memakai bahasa Indonesia, lalu **mengajak rekan pendatang ikut berpendapat**. Usulan ini tidak berarti menolak bahasa daerah, yang tetap bisa dipakai dalam percakapan santai di luar forum resmi.",
+        "opsi": {
+          "A": "Bobot 1. Membebankan penyesuaian sepenuhnya kepada rekan pendatang dan membiarkan ia tersisih dari forum resmi.",
+          "B": "Bobot 2. Tujuannya benar, tetapi teguran keras membuat suasana tegang dan peserta lain bisa tersinggung.",
+          "C": "Bobot 3. Membantu rekan memahami isi rapat, tetapi ia tetap tidak bisa berpendapat saat rapat berlangsung.",
+          "D": "Bobot 4. Peduli, tetapi beban untuk menyampaikan usulan dipindahkan kepada rekan pendatang yang sedang sungkan.",
+          "E": "Bobot 5. Sopan, inklusif, dan langsung memulihkan kesempatan rekan untuk berkontribusi."
+        },
+        "konsep": "**Bahasa Indonesia sebagai bahasa negara** dipakai dalam komunikasi resmi di lingkungan kerja pemerintah (UU No. 24 Tahun 2009). Bahasa daerah tetap dihargai dan dilestarikan dalam ruang yang sesuai. Usulan disampaikan sebagai ajakan bersama, bukan teguran, agar tidak ada peserta yang merasa disalahkan."
+      },
+      "tips": "Dalam soal keberagaman di tempat kerja, bobot 5 biasanya **mengambil inisiatif dengan sopan** agar semua orang terlibat. Opsi yang memaksa minoritas menyesuaikan diri atau menegur dengan keras bernilai rendah.",
+      "rujukan": [
+        "UU No. 24 Tahun 2009 tentang Bendera, Bahasa, dan Lambang Negara, serta Lagu Kebangsaan"
+      ]
+    },
+    {
+      "id": "p04-085",
+      "nomor": 85,
+      "kategori": "TKP",
+      "subtopik": "Sosial Budaya",
+      "topik": "Doa bersama satu agama dalam acara kantor yang dihadiri rekan beragam",
+      "tingkat": "sulit",
+      "pertanyaan": "Anda menjadi panitia syukuran ulang tahun kantor yang dihadiri pegawai dari berbagai agama. Seorang anggota panitia mengusulkan agar seluruh peserta diminta mengikuti doa sesuai tata cara satu agama karena pemeluknya paling banyak. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Mengusulkan doa dipimpin dengan kalimat umum, lalu memberi kesempatan setiap peserta berdoa menurut keyakinannya masing-masing",
+        "B": "Menyetujui usulan itu karena pemeluk agama tersebut memang mayoritas di kantor",
+        "C": "Menyetujui usulan itu, tetapi memberi tahu rekan yang berbeda agama bahwa mereka boleh keluar ruangan saat doa",
+        "D": "Mengusulkan agar acara syukuran tidak memakai doa sama sekali supaya tidak ada yang tersinggung",
+        "E": "Mengusulkan agar setiap pemuka agama yang hadir memimpin doa secara bergantian sesuai keyakinannya, meskipun acara menjadi lebih panjang"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 1,
+        "C": 2,
+        "D": 3,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Acara kantor adalah milik **semua pegawai**. Doa tetap dapat menjadi bagian acara, tetapi caranya harus **menghormati keyakinan setiap peserta**. Sikap terbaik adalah memakai doa dengan kalimat umum yang dapat diterima semua orang, lalu memberi waktu hening agar setiap peserta **berdoa menurut keyakinannya masing-masing**. Cara ini menjaga makna syukuran tanpa memaksa siapa pun mengikuti tata cara agama yang bukan miliknya.",
+        "opsi": {
+          "A": "Bobot 5. Doa tetap ada, setiap keyakinan dihormati, dan acara tetap sederhana.",
+          "B": "Bobot 1. Memaksa pegawai mengikuti tata cara agama lain bertentangan dengan kebebasan beragama dan semangat kebinekaan.",
+          "C": "Bobot 2. Ada pilihan bagi pemeluk agama lain, tetapi mereka dibuat merasa seperti tamu di acara kantornya sendiri.",
+          "D": "Bobot 3. Menghindari masalah, tetapi menghilangkan unsur doa yang sebenarnya diinginkan banyak peserta.",
+          "E": "Bobot 4. Menghormati semua agama, tetapi lebih rumit dan mungkin tidak semua pemuka agama hadir, sehingga bisa terasa tidak merata."
+        },
+        "konsep": "**Toleransi dalam acara bersama:** tidak memaksakan tata cara satu agama, tidak pula menghapus nilai religius. Pasal 29 ayat (2) UUD NRI 1945 menjamin kemerdekaan setiap penduduk beribadat menurut agama dan kepercayaannya."
+      },
+      "tips": "Dalam soal acara lintas agama, bobot 5 biasanya **menghormati semua keyakinan dengan cara sederhana**. Alasan “mayoritas” untuk memaksakan tata cara satu agama selalu bernilai rendah.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 29 ayat (2)"
+      ]
+    },
+    {
+      "id": "p04-086",
+      "nomor": 86,
+      "kategori": "TKP",
+      "subtopik": "Sosial Budaya",
+      "topik": "Rekan meminta izin pulang lebih awal untuk upacara adat keluarga",
+      "tingkat": "sedang",
+      "pertanyaan": "Seorang rekan meminta tolong Anda menggantikan tugasnya di loket sore ini karena ia harus mengikuti upacara adat keluarga. Ia sudah mendapat izin atasan. Pekerjaan Anda sendiri sore itu cukup banyak. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menolak karena pekerjaan Anda sendiri lebih penting dan upacara adat bukan urusan kantor",
+        "B": "Menerima, tetapi mengeluhkan beban tambahan itu kepada rekan lain di kantor",
+        "C": "Menyarankan rekan menunda keikutsertaannya dalam upacara agar layanan loket tidak terganggu",
+        "D": "Menerima dan langsung mengerjakan tugas loketnya sore itu, lalu menunda seluruh pekerjaan Anda sendiri sampai keesokan harinya",
+        "E": "Bersedia menggantikan, lalu mengatur ulang pekerjaan Anda dan meminta rekan menyerahkan catatan tugas loket sebelum berangkat"
+      },
+      "bobot": {
+        "A": 2,
+        "B": 1,
+        "C": 3,
+        "D": 4,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Upacara adat sering menjadi kewajiban keluarga yang penting bagi seseorang. Karena rekan sudah mendapat **izin resmi dari atasan**, membantu menggantikan tugasnya adalah bentuk **menghargai budaya dan kebutuhan rekan**. Namun, bantuan perlu **diatur dengan baik**: pekerjaan Anda sendiri dijadwal ulang, dan rekan menyerahkan catatan tugas agar layanan loket tetap berjalan lancar. Dengan begitu, rekan terbantu dan tanggung jawab Anda tetap terjaga.",
+        "opsi": {
+          "A": "Bobot 2. Menolak tanpa mencari jalan keluar dan meremehkan nilai budaya rekan.",
+          "B": "Bobot 1. Membantu dengan setengah hati lalu membicarakan rekan di belakang. Sikap ini merusak hubungan kerja.",
+          "C": "Bobot 3. Layanan menjadi pertimbangan, tetapi Anda mempersoalkan keputusan yang sudah disetujui atasan.",
+          "D": "Bobot 4. Rekan terbantu, tetapi pekerjaan sendiri ditunda tanpa diatur sehingga bisa mengganggu tanggung jawab Anda.",
+          "E": "Bobot 5. Menghargai kebutuhan budaya rekan sekaligus memastikan semua pekerjaan tetap tertangani dengan baik."
+        },
+        "konsep": "**Menghargai keragaman budaya di tempat kerja** berarti memberi ruang bagi kewajiban adat dan agama rekan, sambil bersama-sama menjaga agar layanan tidak terganggu. Bantuan yang diatur dengan baik juga membuat rekan lain mau saling membantu saat Anda membutuhkannya."
+      },
+      "tips": "Dalam soal membantu rekan karena alasan budaya atau agama, bobot 5 biasanya **bersedia membantu dan mengatur pekerjaan dengan cermat**. Opsi yang mengeluh di belakang selalu bernilai rendah."
+    },
+    {
+      "id": "p04-087",
+      "nomor": 87,
+      "kategori": "TKP",
+      "subtopik": "Sosial Budaya",
+      "topik": "Menyusun konsumsi acara kantor untuk peserta dengan pantangan makanan berbeda",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda ditugasi menyiapkan konsumsi rapat kerja yang diikuti peserta dari berbagai daerah dan agama. Beberapa peserta memiliki pantangan makanan karena keyakinan atau kebiasaan adatnya. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Mendata pantangan peserta sejak pendaftaran, menyediakan menu yang aman bagi semua, dan memberi label pada setiap hidangan",
+        "B": "Memesan menu yang paling disukai sebagian besar peserta agar biaya lebih efisien",
+        "C": "Memesan menu seperti biasa dan meminta peserta yang memiliki pantangan membawa makanan sendiri",
+        "D": "Memesan menu yang umum dan menyiapkan beberapa pilihan tambahan tanpa menanyakan kebutuhan peserta lebih dulu",
+        "E": "Menanyakan pantangan kepada peserta saat acara berlangsung, lalu segera memesan makanan tambahan bagi peserta yang membutuhkan"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 2,
+        "C": 1,
+        "D": 3,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Menghargai keragaman dapat diwujudkan dalam hal sederhana seperti konsumsi. Peserta dengan pantangan makanan berhak mendapat hidangan yang aman tanpa merasa merepotkan. Sikap terbaik adalah **merencanakan sejak awal**: mendata pantangan saat pendaftaran, menyediakan menu yang aman bagi semua, dan **memberi label** agar setiap orang tahu isi hidangan. Persiapan yang baik juga mencegah pemborosan karena memesan makanan tambahan secara mendadak.",
+        "opsi": {
+          "A": "Bobot 5. Terencana, inklusif, dan memudahkan setiap peserta memilih makanan dengan yakin.",
+          "B": "Bobot 2. Efisien bagi mayoritas, tetapi peserta dengan pantangan diabaikan.",
+          "C": "Bobot 1. Memindahkan beban kepada peserta dan membuat mereka merasa tidak dianggap dalam acara resmi.",
+          "D": "Bobot 3. Ada usaha menyediakan pilihan, tetapi tanpa data, pilihannya belum tentu sesuai kebutuhan peserta.",
+          "E": "Bobot 4. Peduli terhadap kebutuhan peserta, tetapi dilakukan mendadak sehingga peserta mungkin menunggu lama."
+        },
+        "konsep": "**Inklusif sejak perencanaan:** kebutuhan khusus peserta (makanan, ibadah, aksesibilitas) sebaiknya didata sebelum acara. Penyesuaian di tengah acara lebih mahal dan kurang nyaman bagi peserta. Label hidangan sederhana, misalnya “tanpa daging” atau “mengandung kacang”, sangat membantu peserta."
+      },
+      "tips": "Dalam soal penyelenggaraan acara untuk peserta beragam, bobot 5 biasanya **mendata kebutuhan di awal dan menyediakan pilihan yang aman bagi semua**. Opsi yang meminta peserta mengurus sendiri bernilai rendah."
+    },
+    {
+      "id": "p04-088",
+      "nomor": 88,
+      "kategori": "TKP",
+      "subtopik": "Sosial Budaya",
+      "topik": "Perebutan jadwal lapangan desa untuk kegiatan adat dan kegiatan keagamaan",
+      "tingkat": "sulit",
+      "pertanyaan": "Dua kelompok warga di wilayah tugas Anda sama-sama ingin memakai lapangan desa pada hari yang sama. Satu kelompok akan mengadakan pesta adat tahunan, sedangkan kelompok lain akan mengadakan perayaan hari besar agamanya. Ketegangan mulai terasa di media sosial warga. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Memberikan lapangan kepada kelompok yang lebih dulu mengajukan izin sesuai urutan berkas",
+        "B": "Memberikan lapangan kepada kelompok yang anggotanya lebih banyak agar lebih banyak warga terlayani",
+        "C": "Mempertemukan tokoh kedua kelompok untuk mencari pembagian waktu atau tempat yang adil dan disepakati bersama",
+        "D": "Melarang kedua kegiatan diadakan di lapangan desa agar tidak terjadi bentrokan antarwarga",
+        "E": "Meminta camat memutuskan pemakaian lapangan dan menyampaikan keputusannya kepada kedua kelompok secara tertulis"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 1,
+        "C": 5,
+        "D": 2,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Kedua kegiatan sama-sama penting bagi warganya, dan keputusan sepihak berisiko memperuncing ketegangan. Sikap terbaik adalah **mempertemukan tokoh kedua kelompok** untuk **bermusyawarah**, misalnya membagi waktu (pagi dan sore) atau mencari tempat alternatif. Solusi yang disepakati bersama lebih mudah diterima dan dijalankan, serta menunjukkan kepada warga bahwa perbedaan dapat diselesaikan dengan damai. Ketegangan di media sosial juga mereda jika tokoh kedua kelompok menyampaikan hasil kesepakatan bersama.",
+        "opsi": {
+          "A": "Bobot 3. Adil secara prosedur, tetapi tidak mengatasi ketegangan. Kelompok yang kalah tetap kecewa.",
+          "B": "Bobot 1. Mengutamakan kelompok yang lebih besar adalah sikap diskriminatif dan berpotensi memicu konflik.",
+          "C": "Bobot 5. Musyawarah melibatkan kedua pihak, mencari solusi yang adil, dan meredakan ketegangan.",
+          "D": "Bobot 2. Menghindari konflik dengan merugikan kedua kelompok. Masalah tidak selesai dan warga kecewa.",
+          "E": "Bobot 4. Melibatkan pejabat berwenang dan tertulis, tetapi tanpa dialog, kelompok yang tidak diuntungkan bisa merasa tidak didengar."
+        },
+        "konsep": "**Penyelesaian konflik antarkelompok warga:** fasilitasi dialog → cari solusi yang adil bagi kedua pihak → sepakati bersama → umumkan bersama. Petugas berperan sebagai penengah yang netral."
+      },
+      "tips": "Dalam soal ketegangan antarkelompok, bobot 5 biasanya **mempertemukan kedua pihak untuk bermusyawarah**. Opsi yang memihak berdasarkan jumlah anggota hampir selalu bernilai 1."
+    },
+    {
+      "id": "p04-089",
+      "nomor": 89,
+      "kategori": "TKP",
+      "subtopik": "Teknologi Informasi dan Komunikasi",
+      "topik": "Pesan berantai berisi tautan undian berhadiah",
+      "tingkat": "mudah",
+      "pertanyaan": "Grup percakapan kantor menerima pesan berantai yang menyebut instansi Anda sedang mengadakan undian berhadiah. Penerima diminta mengklik tautan dan mengisi nomor induk pegawai serta kata sandi aplikasi kepegawaian. Beberapa rekan sudah mengisinya. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Mengisi tautan itu juga karena banyak rekan sudah mengisinya dan tampaknya aman",
+        "B": "Mengingatkan di grup bahwa pesan itu penipuan, meminta rekan yang sudah mengisi segera mengganti kata sandi, dan melapor ke pengelola TI",
+        "C": "Tidak mengklik tautan itu dan menghapus pesan dari ponsel Anda sendiri",
+        "D": "Menanyakan kepada pengirim pesan apakah undian itu benar-benar resmi dari instansi",
+        "E": "Mengingatkan semua rekan di grup percakapan kantor agar tidak mengisi tautan itu karena kemungkinan besar merupakan upaya penipuan akun"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 5,
+        "C": 3,
+        "D": 2,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Pesan yang meminta **kata sandi** melalui tautan hampir pasti merupakan **phishing**, yaitu upaya mencuri akun. Instansi resmi tidak pernah meminta kata sandi melalui pesan berantai. Karena beberapa rekan sudah mengisinya, akun mereka berisiko dibobol. Sikap terbaik mencakup tiga hal: **mengingatkan semua orang**, **meminta rekan yang terlanjur mengisi segera mengganti kata sandi**, dan **melapor ke pengelola TI** agar akun dan sistem dapat diamankan.",
+        "opsi": {
+          "A": "Bobot 1. Ikut menyerahkan data akun kepada pihak tidak dikenal. Banyaknya orang yang mengisi bukan bukti keamanan.",
+          "B": "Bobot 5. Mencegah korban baru, menangani akun yang sudah bocor, dan melibatkan pihak yang berwenang.",
+          "C": "Bobot 3. Melindungi diri sendiri, tetapi rekan yang terancam dibiarkan.",
+          "D": "Bobot 2. Pengirim pesan berantai biasanya hanya meneruskan dan tidak tahu kebenarannya. Sementara itu, makin banyak rekan yang mengisi.",
+          "E": "Bobot 4. Mencegah korban baru, tetapi rekan yang sudah mengisi belum dibantu mengamankan akunnya."
+        },
+        "konsep": "**Ciri phishing:** menjanjikan hadiah, mendesak, meminta data rahasia seperti kata sandi atau kode OTP, dan memakai tautan yang bukan alamat resmi. Tindakan setelah terlanjur mengisi: ganti kata sandi, aktifkan verifikasi dua langkah, dan lapor."
+      },
+      "tips": "Dalam soal penipuan digital, bobot 5 biasanya **melindungi orang lain, menangani yang sudah jadi korban, dan melapor**. Opsi yang hanya melindungi diri sendiri bernilai sedang."
+    },
+    {
+      "id": "p04-090",
+      "nomor": 90,
+      "kategori": "TKP",
+      "subtopik": "Teknologi Informasi dan Komunikasi",
+      "topik": "Pegawai senior kesulitan memakai presensi daring",
+      "tingkat": "mudah",
+      "pertanyaan": "Kantor Anda beralih ke presensi daring melalui aplikasi di ponsel. Seorang pegawai senior yang mendekati masa pensiun sering gagal melakukan presensi dan khawatir dianggap tidak disiplin. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menawarkan diri melakukan presensi untuknya memakai akunnya setiap pagi",
+        "B": "Menyarankan ia meminta keringanan kepada atasan agar tetap memakai presensi manual",
+        "C": "Memintanya membaca panduan aplikasi yang sudah dibagikan bagian kepegawaian",
+        "D": "Mengajarinya langkah demi langkah dengan sabar dan membuatkan catatan sederhana yang bisa ia lihat kembali",
+        "E": "Mengajarinya cara melakukan presensi sekali di awal, lalu memintanya menghubungi Anda kapan saja jika masih gagal"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 2,
+        "C": 3,
+        "D": 5,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Perubahan teknologi tidak boleh membuat sebagian pegawai tertinggal. Pegawai senior mungkin hanya perlu **pendampingan yang sabar** dan **bahan belajar yang mudah diikuti**. Mengajari langkah demi langkah dan membuatkan catatan sederhana membuat ia mampu melakukan presensi sendiri, sehingga kekhawatirannya hilang. Bantuan seperti ini juga menunjukkan sikap saling menghargai antargenerasi.",
+        "opsi": {
+          "A": "Bobot 1. Melakukan presensi dengan akun orang lain adalah pelanggaran disiplin dan kecurangan data kehadiran.",
+          "B": "Bobot 2. Menghindari masalah dengan meminta pengecualian, padahal ia sebenarnya bisa belajar.",
+          "C": "Bobot 3. Panduan memang tersedia, tetapi pegawai yang kesulitan dengan teknologi biasanya butuh pendampingan langsung.",
+          "D": "Bobot 5. Sabar, praktis, dan membuat rekan mandiri dalam memakai aplikasi.",
+          "E": "Bobot 4. Membantu dan bersedia dihubungi, tetapi satu kali penjelasan sering belum cukup untuk membuatnya mandiri."
+        },
+        "konsep": "**Literasi digital di tempat kerja:** transisi ke sistem digital perlu disertai pendampingan. Bantu rekan sampai mampu sendiri, bukan menggantikan tugasnya. Catatan bergambar dengan urutan langkah yang singkat biasanya paling mudah diikuti oleh pegawai yang jarang memakai aplikasi ponsel. Jika masalahnya ternyata ada pada aplikasi atau ponsel, laporkan kepada pengelola sistem."
+      },
+      "tips": "Dalam soal rekan yang kesulitan teknologi, bobot 5 biasanya **mengajari sampai mandiri**. Opsi yang memakai akun orang lain selalu bernilai 1."
+    },
+    {
+      "id": "p04-091",
+      "nomor": 91,
+      "kategori": "TKP",
+      "subtopik": "Teknologi Informasi dan Komunikasi",
+      "topik": "Rekan mengunggah keluhan tentang kantor di media sosial",
+      "tingkat": "sedang",
+      "pertanyaan": "Seorang rekan mengunggah keluhan di akun media sosial pribadinya tentang atasan dan beban kerja di kantor. Unggahan itu menyebut nama instansi dan mulai dikomentari banyak orang. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Ikut menulis komentar yang mendukung rekan karena keluhannya memang sesuai kenyataan",
+        "B": "Menghubungi rekan secara pribadi, mendengarkan keluhannya, lalu menyarankan unggahan diturunkan dan keluhan dibawa ke jalur internal",
+        "C": "Melaporkan unggahan itu kepada atasan yang disebut dalam unggahan tersebut",
+        "D": "Diam saja karena media sosial adalah urusan pribadi masing-masing pegawai",
+        "E": "Menghubungi rekan secara pribadi dan memintanya segera menurunkan unggahan itu sebelum makin ramai dikomentari dan dibagikan orang lain"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 5,
+        "C": 2,
+        "D": 3,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "ASN tetap terikat **kode etik** saat bermedia sosial, terutama jika unggahannya menyebut instansi. Keluhan tentang pekerjaan sebaiknya disampaikan melalui **jalur internal**, karena masalah di ruang publik sulit diselesaikan dan dapat merusak nama instansi. Namun, keluhan rekan mungkin benar dan perlu didengar. Sikap terbaik adalah **mendekati secara pribadi**, **mendengarkan**, lalu menyarankan agar unggahan diturunkan dan keluhan disalurkan dengan cara yang tepat.",
+        "opsi": {
+          "A": "Bobot 1. Memperbesar masalah di ruang publik dan ikut melanggar etika bermedia sosial.",
+          "B": "Bobot 5. Peduli pada rekan, mendengarkan keluhannya, dan mengarahkan penyelesaian melalui jalur yang benar.",
+          "C": "Bobot 2. Melapor tanpa bicara dengan rekan lebih dulu dapat memperburuk hubungan dan konflik.",
+          "D": "Bobot 3. Tidak memperkeruh, tetapi membiarkan masalah yang dapat merugikan rekan dan instansi.",
+          "E": "Bobot 4. Langkahnya tepat, tetapi tanpa mendengarkan dan memberi jalan keluar, rekan bisa merasa keluhannya diabaikan."
+        },
+        "konsep": "**Etika bermedia sosial bagi ASN:** jaga nama baik instansi, jangan menyebarkan masalah internal, dan sampaikan keluhan melalui saluran resmi seperti atasan, bagian kepegawaian, atau mekanisme pengaduan internal. Mendengarkan lebih dulu penting, karena rekan yang merasa didengar lebih mudah menerima saran."
+      },
+      "tips": "Dalam soal unggahan bermasalah oleh rekan, bobot 5 biasanya **mendekati secara pribadi, mendengarkan, dan mengarahkan ke jalur internal**. Ikut berkomentar di ruang publik hampir selalu bernilai 1."
+    },
+    {
+      "id": "p04-092",
+      "nomor": 92,
+      "kategori": "TKP",
+      "subtopik": "Teknologi Informasi dan Komunikasi",
+      "topik": "Kata sandi akun bersama ditempel di monitor",
+      "tingkat": "sedang",
+      "pertanyaan": "Di ruang layanan, kata sandi akun aplikasi pendaftaran yang dipakai bersama ditulis pada kertas dan ditempel di monitor. Ruangan itu sering didatangi warga. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Membiarkannya karena cara itu memudahkan semua petugas saat bergantian jaga",
+        "B": "Mencabut kertas itu tanpa memberi tahu siapa pun agar tidak terlihat warga",
+        "C": "Memindahkan kertas itu ke laci meja agar tidak terlihat dari luar",
+        "D": "Mencabut kertas itu, meminta kata sandi segera diganti, dan mengusulkan agar setiap petugas memakai akun masing-masing",
+        "E": "Mencabut kertas itu dan mengingatkan semua rekan agar kata sandi akun tidak pernah ditulis dan ditempel di tempat terbuka"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 3,
+        "C": 2,
+        "D": 5,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Kata sandi yang terlihat di ruang publik dapat dipakai orang yang tidak berhak untuk mengakses **data warga**. Karena sudah terlanjur terlihat, mencabut kertas saja tidak cukup; **kata sandi harus diganti**. Masalah intinya adalah akun yang dipakai bersama, sehingga tidak jelas siapa melakukan apa di aplikasi. Usulan agar setiap petugas memakai **akun masing-masing** memperbaiki akar masalah dan membuat setiap tindakan dapat dipertanggungjawabkan.",
+        "opsi": {
+          "A": "Bobot 1. Mengabaikan risiko kebocoran data warga demi kemudahan.",
+          "B": "Bobot 3. Menghilangkan risiko yang terlihat, tetapi kata sandi lama mungkin sudah dicatat orang lain dan rekan tidak tahu kenapa kertasnya hilang.",
+          "C": "Bobot 2. Masih menyimpan kata sandi tertulis di tempat yang mudah dijangkau. Risikonya hanya dipindahkan.",
+          "D": "Bobot 5. Menutup celah sekarang, mengganti kata sandi yang bocor, dan memperbaiki cara kerja yang menjadi akar masalah.",
+          "E": "Bobot 4. Menutup celah dan menyadarkan rekan, tetapi kata sandi yang sudah terlihat belum diganti."
+        },
+        "konsep": "**Keamanan akun:** kata sandi bersifat rahasia, segera diganti jika diduga bocor, dan sebaiknya **satu orang satu akun** agar jejak aktivitas jelas. Prinsip ini sejalan dengan kewajiban melindungi data pribadi warga."
+      },
+      "tips": "Dalam soal keamanan informasi, bobot 5 biasanya **menutup celah, menangani kebocoran, dan memperbaiki prosedur**. Opsi yang hanya menyembunyikan masalah bernilai rendah."
+    },
+    {
+      "id": "p04-093",
+      "nomor": 93,
+      "kategori": "TKP",
+      "subtopik": "Teknologi Informasi dan Komunikasi",
+      "topik": "Aplikasi layanan baru sering bermasalah sehingga rekan kembali ke cara manual",
+      "tingkat": "sedang",
+      "pertanyaan": "Instansi Anda baru menerapkan aplikasi layanan daring. Aplikasi itu beberapa kali bermasalah, sehingga sebagian rekan kembali memakai formulir kertas dan tidak menginput data ke aplikasi. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Ikut kembali memakai formulir kertas karena lebih cepat dan tidak pernah bermasalah",
+        "B": "Tetap memakai aplikasi dan menegur rekan yang kembali ke cara manual karena melanggar kebijakan",
+        "C": "Mencatat masalah yang muncul, melaporkannya ke pengelola aplikasi, dan mengusulkan prosedur cadangan sementara agar data tetap diinput",
+        "D": "Tetap memakai aplikasi dan menyampaikan keluhan rekan kepada atasan",
+        "E": "Tetap memakai aplikasi, mencatat setiap masalah yang muncul, dan membantu rekan yang kesulitan menginput data saat aplikasi berjalan normal"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 2,
+        "C": 5,
+        "D": 3,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Aplikasi baru sering mengalami masalah di masa awal. Kembali ke cara manual tanpa pencatatan membuat **data terpecah** dan masalah aplikasi **tidak pernah diperbaiki**. Sikap terbaik adalah **mendokumentasikan masalah** secara rinci, **melaporkannya** kepada pengelola aplikasi agar diperbaiki, dan mengusulkan **prosedur cadangan resmi**, misalnya formulir kertas yang diinput ulang saat aplikasi pulih. Dengan begitu, layanan tetap berjalan dan data tetap lengkap.",
+        "opsi": {
+          "A": "Bobot 1. Meninggalkan kebijakan dan membuat data layanan tidak lengkap.",
+          "B": "Bobot 2. Taat kebijakan, tetapi menegur tanpa memahami masalah nyata yang dihadapi rekan.",
+          "C": "Bobot 5. Masalah diperbaiki dari sumbernya, layanan tetap berjalan, dan data tidak hilang.",
+          "D": "Bobot 3. Menyampaikan masalah ke atasan, tetapi tanpa data yang rinci dan tanpa usulan solusi.",
+          "E": "Bobot 4. Mendukung penerapan aplikasi dan membantu rekan, tetapi masalah belum dilaporkan kepada pengelola yang dapat memperbaikinya."
+        },
+        "konsep": "**Mengawal transisi digital:** dokumentasikan masalah, laporkan ke pihak yang dapat memperbaiki, dan siapkan prosedur cadangan agar layanan dan data tetap terjaga. Laporan yang menyebut waktu, jenis gangguan, dan layanan yang terdampak membantu pengelola menemukan penyebabnya dengan cepat."
+      },
+      "tips": "Dalam soal sistem baru yang bermasalah, bobot 5 biasanya **melaporkan masalah dengan data** dan **menjaga layanan tetap berjalan**. Opsi yang meninggalkan sistem atau sekadar mengeluh bernilai rendah."
+    },
+    {
+      "id": "p04-094",
+      "nomor": 94,
+      "kategori": "TKP",
+      "subtopik": "Teknologi Informasi dan Komunikasi",
+      "topik": "Laptop dinas berisi data warga hilang",
+      "tingkat": "sulit",
+      "pertanyaan": "Laptop dinas Anda yang berisi salinan data kependudukan warga hilang di kendaraan umum saat perjalanan pulang. Laptop itu dilindungi kata sandi, tetapi datanya tidak dienkripsi. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Segera melapor kepada atasan dan pengelola TI agar akses akun diputus dan risiko kebocoran ditangani, lalu melapor ke polisi",
+        "B": "Mencari laptop itu sendiri selama beberapa hari sebelum memberi tahu siapa pun",
+        "C": "Melapor ke polisi agar laptop segera dicari, lalu baru memberi tahu atasan jika laptop itu tidak ditemukan dalam beberapa hari",
+        "D": "Tidak melapor karena laptop dilindungi kata sandi sehingga datanya dianggap aman",
+        "E": "Segera melapor kepada atasan tentang kehilangan laptop dan bersedia mengganti laptop itu dengan uang pribadi"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 2,
+        "C": 3,
+        "D": 1,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Yang paling berisiko dari kehilangan ini bukan harga laptopnya, melainkan **data pribadi warga** di dalamnya. Kata sandi perangkat dapat dibobol, dan data yang tidak dienkripsi mudah dibaca. Karena itu, laporan harus dilakukan **segera** kepada atasan dan pengelola TI agar akun yang tersimpan diputus aksesnya dan dampak kebocoran ditangani. Laporan ke polisi juga diperlukan sebagai dasar pencarian dan administrasi barang milik negara.",
+        "opsi": {
+          "A": "Bobot 5. Cepat, jujur, mengutamakan perlindungan data warga, dan melibatkan semua pihak yang tepat.",
+          "B": "Bobot 2. Menunda laporan memberi waktu bagi pihak lain untuk menyalahgunakan data.",
+          "C": "Bobot 3. Melapor ke polisi itu baik, tetapi menunda laporan ke atasan dan pengelola TI membuat penanganan kebocoran data terlambat.",
+          "D": "Bobot 1. Menyembunyikan kehilangan dan meremehkan risiko kebocoran data pribadi warga.",
+          "E": "Bobot 4. Jujur dan bertanggung jawab atas barangnya, tetapi belum memikirkan penanganan risiko kebocoran data."
+        },
+        "konsep": "**Insiden data pribadi:** lapor segera, putus akses, nilai dampaknya, dan cegah berulang (misalnya dengan enkripsi). UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi mengatur kewajiban pengendali data untuk menangani kegagalan pelindungan data."
+      },
+      "tips": "Dalam soal kehilangan perangkat atau kebocoran, bobot 5 biasanya **melapor segera kepada pihak yang dapat membatasi dampaknya**. Opsi yang menunda atau menyembunyikan bernilai rendah.",
+      "rujukan": [
+        "UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi"
+      ]
+    },
+    {
+      "id": "p04-095",
+      "nomor": 95,
+      "kategori": "TKP",
+      "subtopik": "Teknologi Informasi dan Komunikasi",
+      "topik": "Diminta mengedit foto kegiatan agar tampak ramai untuk laporan",
+      "tingkat": "sulit",
+      "pertanyaan": "Kegiatan sosialisasi yang diadakan unit Anda hanya dihadiri sedikit warga. Seorang rekan meminta Anda, yang mahir menyunting foto, untuk menggandakan gambar peserta pada foto dokumentasi agar kegiatan tampak ramai dalam laporan ke pimpinan. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menyunting foto sesuai permintaan rekan karena foto itu hanya untuk dokumentasi internal dan tidak merugikan siapa pun",
+        "B": "Menyunting foto sedikit saja agar tidak terlalu mencolok, lalu tetap menulis jumlah peserta yang sebenarnya hadir di dalam laporan",
+        "C": "Menolak menyunting foto tanpa memberi penjelasan kepada rekan",
+        "D": "Menolak menyunting foto dan menyarankan rekan meminta orang lain jika tetap ingin melakukannya",
+        "E": "Menolak dengan sopan, menjelaskan bahwa laporan harus jujur, dan mengajak rekan menyertakan evaluasi rendahnya kehadiran"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 2,
+        "C": 4,
+        "D": 3,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Foto dokumentasi adalah **bukti pelaksanaan kegiatan** dalam laporan resmi. Menggandakan gambar peserta berarti **memalsukan data** dan menyesatkan pimpinan, walaupun dianggap hanya untuk internal. Keahlian teknologi harus dipakai secara **jujur dan bertanggung jawab**. Sikap terbaik adalah menolak dengan sopan, menjelaskan alasannya, lalu menawarkan jalan keluar: laporan yang jujur disertai **evaluasi** penyebab rendahnya kehadiran. Evaluasi ini justru berguna untuk memperbaiki kegiatan berikutnya.",
+        "opsi": {
+          "A": "Bobot 1. Memalsukan bukti kegiatan adalah pelanggaran integritas, apa pun alasannya.",
+          "B": "Bobot 2. Tetap memalsukan foto. Bukti visual yang tidak sesuai dengan angka justru membingungkan pembaca laporan.",
+          "C": "Bobot 4. Tegas menolak pelanggaran, tetapi tanpa penjelasan dan tanpa membantu rekan mencari jalan keluar yang benar.",
+          "D": "Bobot 3. Anda tidak ikut melanggar, tetapi justru mengarahkan rekan agar pelanggaran tetap terjadi melalui orang lain.",
+          "E": "Bobot 5. Menolak pelanggaran, menjelaskan alasannya, dan mengubah masalah menjadi bahan perbaikan kegiatan."
+        },
+        "konsep": "**Integritas data digital:** dokumentasi dan laporan harus mencerminkan keadaan sebenarnya. Kemampuan menyunting digital tidak boleh dipakai untuk memanipulasi bukti. Laporan jujur tentang kegiatan yang kurang berhasil lebih berguna bagi pimpinan daripada laporan yang tampak sempurna."
+      },
+      "tips": "Jika diminta memakai keahlian teknologi untuk memanipulasi data, bobot 5 biasanya **menolak dengan penjelasan dan menawarkan jalan keluar yang jujur**. Menolak tanpa penjelasan bernilai baik, tetapi bukan yang terbaik."
+    },
+    {
+      "id": "p04-096",
+      "nomor": 96,
+      "kategori": "TKP",
+      "subtopik": "Profesionalisme",
+      "topik": "Tugas verifikasi lapangan saat cuaca buruk",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda dijadwalkan memverifikasi rumah calon penerima bantuan di desa terpencil hari ini, karena data harus masuk lusa. Pagi ini hujan deras disertai peringatan cuaca buruk dari BMKG, dan jalan menuju desa rawan longsor. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Tetap berangkat sesuai jadwal karena tenggat data tidak dapat ditawar",
+        "B": "Membatalkan kunjungan dan menunggu atasan menanyakan perkembangan tugas tersebut",
+        "C": "Menunda keberangkatan, melapor kepada atasan, lalu menyusun jadwal pengganti dan menghubungi perangkat desa untuk persiapan",
+        "D": "Mengisi data verifikasi berdasarkan keterangan perangkat desa melalui telepon tanpa kunjungan",
+        "E": "Menunda keberangkatan dan segera melapor kepada atasan bahwa verifikasi lapangan tidak bisa dilakukan hari ini karena cuaca buruk"
+      },
+      "bobot": {
+        "A": 2,
+        "B": 3,
+        "C": 5,
+        "D": 1,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Profesionalisme berarti **bertanggung jawab atas tugas** sekaligus **mengutamakan keselamatan**. Peringatan cuaca buruk dan jalan rawan longsor adalah risiko nyata, sehingga menunda keberangkatan adalah keputusan yang wajar. Namun, tugas tidak boleh berhenti di situ. Sikap terbaik adalah **melapor kepada atasan**, **menyusun jadwal pengganti**, dan **menyiapkan kunjungan** bersama perangkat desa agar verifikasi dapat dilakukan cepat begitu kondisi aman.",
+        "opsi": {
+          "A": "Bobot 2. Bersemangat, tetapi membahayakan keselamatan diri. Jika terjadi kecelakaan, tugas justru gagal sama sekali.",
+          "B": "Bobot 3. Keputusan menunda tepat, tetapi sikap menunggu ditanya menunjukkan kurang inisiatif dan kurang bertanggung jawab.",
+          "C": "Bobot 5. Aman, melapor, dan tetap menjaga tugas berjalan dengan rencana pengganti.",
+          "D": "Bobot 1. Mengisi hasil verifikasi tanpa kunjungan berarti data tidak dapat dipertanggungjawabkan. Bantuan bisa salah sasaran.",
+          "E": "Bobot 4. Aman dan melapor, tetapi belum menyiapkan langkah pengganti agar tenggat tetap terkejar."
+        },
+        "konsep": "**Tugas lapangan dan risiko:** keselamatan diutamakan, tetapi setiap penundaan harus dilaporkan dan disertai rencana pengganti. Data verifikasi tidak boleh diisi tanpa pemeriksaan sebenarnya. Menghubungi perangkat desa lebih dulu juga membantu mengetahui kondisi jalan dan memastikan warga yang akan diverifikasi ada di rumah."
+      },
+      "tips": "Dalam soal tugas yang terhalang keadaan, bobot 5 biasanya **aman, melapor, dan punya rencana pengganti**. Opsi yang memalsukan hasil kerja demi tenggat selalu bernilai 1."
+    },
+    {
+      "id": "p04-097",
+      "nomor": 97,
+      "kategori": "TKP",
+      "subtopik": "Profesionalisme",
+      "topik": "Rekan memakai kendaraan dinas untuk keperluan pribadi",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda beberapa kali melihat rekan memakai mobil dinas untuk mengantar keluarganya berbelanja pada akhir pekan. Ia mengatakan bahwa semua orang di kantor juga melakukannya. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Ikut memakai mobil dinas untuk keperluan pribadi karena sudah menjadi kebiasaan di kantor",
+        "B": "Membiarkannya karena bukan tugas Anda mengawasi pemakaian kendaraan dinas",
+        "C": "Langsung melaporkannya kepada atasan tanpa membicarakannya terlebih dahulu dengan rekan tersebut",
+        "D": "Mengingatkan rekan secara pribadi bahwa kendaraan dinas hanya untuk kedinasan, lalu melapor ke atasan jika kebiasaan itu terus berlanjut",
+        "E": "Mengingatkan rekan secara pribadi bahwa pemakaian mobil dinas untuk mengantar keluarga berbelanja tidak dibenarkan oleh aturan yang berlaku"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 2,
+        "C": 3,
+        "D": 5,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Kendaraan dinas adalah **barang milik negara** yang dibiayai negara, termasuk bahan bakar dan perawatannya. Memakainya untuk keperluan pribadi adalah **penyalahgunaan fasilitas**, walaupun dianggap kebiasaan. Sikap profesional adalah **mengingatkan rekan secara pribadi lebih dulu**, karena cara ini menjaga hubungan dan memberi kesempatan memperbaiki diri. Jika kebiasaan itu terus berlanjut, barulah dilaporkan kepada atasan melalui jalur yang benar.",
+        "opsi": {
+          "A": "Bobot 1. Ikut melanggar aturan dengan alasan kebiasaan. Kebiasaan yang salah tidak menjadi benar karena banyak yang melakukannya.",
+          "B": "Bobot 2. Membiarkan penyalahgunaan aset negara di sekitar Anda.",
+          "C": "Bobot 3. Tujuannya benar, tetapi melewatkan kesempatan mengingatkan secara langsung dan bisa merusak hubungan kerja.",
+          "D": "Bobot 5. Mengingatkan dengan cara yang baik dan tetap siap memakai jalur resmi jika pelanggaran berlanjut.",
+          "E": "Bobot 4. Langkah pertama tepat, tetapi belum ada sikap jika rekan tetap mengulanginya."
+        },
+        "konsep": "**Penggunaan barang milik negara:** hanya untuk kepentingan dinas. Urutan menyikapi pelanggaran rekan: ingatkan secara pribadi → laporkan jika berlanjut. Mengingatkan secara pribadi menunjukkan itikad baik, sedangkan laporan ke atasan menjadi langkah berikutnya jika teguran tidak diindahkan."
+      },
+      "tips": "Dalam soal rekan yang melanggar aturan ringan, bobot 5 biasanya **mengingatkan secara pribadi dulu, lalu melapor jika berlanjut**. Ikut melanggar dengan alasan “semua orang melakukannya” selalu bernilai 1."
+    },
+    {
+      "id": "p04-098",
+      "nomor": 98,
+      "kategori": "TKP",
+      "subtopik": "Profesionalisme",
+      "topik": "Menyesuaikan diri dengan atasan baru yang gaya kerjanya berbeda",
+      "tingkat": "mudah",
+      "pertanyaan": "Atasan baru Anda meminta laporan kemajuan setiap Jumat dan lebih suka berkomunikasi lewat surel, sedangkan atasan sebelumnya cukup menerima laporan lisan sebulan sekali. Anda merasa cara baru ini menambah pekerjaan. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Tetap melapor secara lisan sebulan sekali karena cara itu sudah terbukti berjalan baik",
+        "B": "Mengikuti permintaan atasan, tetapi mengeluhkan perubahan itu kepada rekan-rekan",
+        "C": "Mengikuti permintaan atasan dengan laporan yang dibuat seadanya agar tidak menyita waktu",
+        "D": "Mengikuti permintaan atasan dan menyusun laporan kemajuan mingguan dengan baik dan lengkap melalui surel sesuai format yang ia minta",
+        "E": "Mengikuti permintaan atasan dan membuat format laporan sederhana yang mudah diperbarui setiap pekan agar tetap efisien"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 2,
+        "C": 3,
+        "D": 4,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Setiap atasan memiliki gaya kerja yang berbeda, dan pegawai profesional **mampu beradaptasi** selama permintaannya wajar dan sesuai aturan. Laporan mingguan membantu atasan baru memahami pekerjaan unit. Sikap terbaik adalah **mengikuti permintaan itu dengan sungguh-sungguh** sambil **mencari cara kerja yang efisien**, misalnya membuat format laporan sederhana yang tinggal diperbarui setiap pekan. Dengan begitu, beban tambahan berkurang tanpa mengurangi mutu laporan.",
+        "opsi": {
+          "A": "Bobot 1. Mengabaikan permintaan atasan adalah sikap tidak disiplin dan sulit beradaptasi.",
+          "B": "Bobot 2. Patuh, tetapi mengeluh di belakang dapat memengaruhi suasana tim.",
+          "C": "Bobot 3. Patuh, tetapi laporan seadanya tidak memenuhi tujuan atasan dan mencerminkan kurang sungguh-sungguh.",
+          "D": "Bobot 4. Patuh dan bersungguh-sungguh, tetapi belum mencari cara agar tugas tambahan itu lebih efisien.",
+          "E": "Bobot 5. Beradaptasi dengan baik dan sekaligus kreatif mencari cara kerja yang efisien."
+        },
+        "konsep": "**Adaptasi terhadap perubahan:** terima perubahan yang wajar, laksanakan dengan sungguh-sungguh, dan cari cara kerja yang efisien. Nilai BerAKHLAK yang terkait adalah *adaptif*. Format yang konsisten juga memudahkan atasan membandingkan kemajuan dari pekan ke pekan."
+      },
+      "tips": "Dalam soal perubahan gaya kerja atasan, bobot 5 biasanya **menerima dan mencari cara yang efisien**. Opsi yang menolak atau menjalankan setengah hati bernilai rendah."
+    },
+    {
+      "id": "p04-099",
+      "nomor": 99,
+      "kategori": "TKP",
+      "subtopik": "Profesionalisme",
+      "topik": "Tugas mendadak pada akhir pekan yang bentrok dengan rencana keluarga",
+      "tingkat": "sedang",
+      "pertanyaan": "Jumat sore, atasan meminta Anda membantu persiapan kunjungan pejabat pusat pada Sabtu pagi. Anda sudah berjanji mengantar keluarga ke acara kerabat pada hari yang sama. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menjelaskan rencana Anda kepada atasan dan menawarkan bagian tugas yang dapat diselesaikan malam ini atau dibantu rekan lain",
+        "B": "Menerima tugas itu, tetapi datang terlambat dan pulang lebih cepat tanpa memberi tahu atasan",
+        "C": "Menolak tugas itu karena akhir pekan adalah waktu pribadi yang tidak boleh diganggu",
+        "D": "Menerima tugas itu dan membatalkan janji dengan keluarga tanpa menjelaskan apa pun kepada atasan",
+        "E": "Menerima tugas itu dan meminta anggota keluarga yang lain menggantikan Anda mengantar keluarga ke acara kerabat pada hari Sabtu"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 1,
+        "C": 2,
+        "D": 3,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Tugas mendadak di luar jam kerja kadang memang terjadi, dan pegawai profesional berusaha **mendukung kepentingan organisasi**. Namun, komitmen pribadi juga penting. Sikap terbaik adalah **berkomunikasi terbuka** dengan atasan tentang rencana Anda, lalu **menawarkan solusi** agar tugas tetap terlaksana, misalnya menyelesaikan sebagian pekerjaan malam ini atau melibatkan rekan lain. Atasan biasanya menghargai pegawai yang jujur dan tetap memikirkan tugasnya.",
+        "opsi": {
+          "A": "Bobot 5. Terbuka, bertanggung jawab, dan menawarkan solusi agar tugas dan komitmen keluarga sama-sama terjaga.",
+          "B": "Bobot 1. Tidak jujur dan tidak bertanggung jawab. Atasan mengira tugas tertangani penuh, padahal tidak.",
+          "C": "Bobot 2. Menolak tanpa mencari jalan tengah, padahal kunjungan pejabat adalah kepentingan instansi.",
+          "D": "Bobot 3. Mendukung tugas, tetapi mengorbankan komitmen pribadi tanpa komunikasi. Sikap ini sulit dipertahankan jika terus terjadi.",
+          "E": "Bobot 4. Tugas terlaksana dan keluarga tetap diantar, tetapi peluang membicarakan pembagian tugas dengan atasan dilewatkan."
+        },
+        "konsep": "**Menyeimbangkan tugas dan urusan pribadi:** komunikasikan secara terbuka, tawarkan solusi, dan jangan menerima tugas jika tidak dapat menjalankannya dengan sungguh-sungguh. Komunikasi sejak awal memberi atasan kesempatan mengatur pembagian tugas dengan lebih baik."
+      },
+      "tips": "Dalam soal bentrok tugas dan urusan pribadi, bobot 5 biasanya **jujur kepada atasan dan menawarkan solusi**. Opsi yang menerima tugas lalu menjalankannya diam-diam setengah hati bernilai 1."
+    },
+    {
+      "id": "p04-100",
+      "nomor": 100,
+      "kategori": "TKP",
+      "subtopik": "Profesionalisme",
+      "topik": "Menemukan kesalahan data pada laporan atasan sebelum dikirim",
+      "tingkat": "sulit",
+      "pertanyaan": "Atasan meminta Anda mengirim laporan yang ia susun ke kantor pusat dalam satu jam. Saat memeriksanya, Anda menemukan angka realisasi anggaran yang tidak sesuai dengan data keuangan. Atasan sedang memimpin rapat dan berpesan agar tidak diganggu. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Mengirim laporan apa adanya karena laporan itu disusun dan ditandatangani atasan",
+        "B": "Mengirim pesan singkat kepada atasan tentang kesalahan itu beserta data pembandingnya dan menunggu arahannya sebelum mengirim laporan",
+        "C": "Memperbaiki angka itu sendiri sesuai data keuangan, lalu mengirim laporan tanpa memberi tahu atasan",
+        "D": "Menunda pengiriman laporan sampai rapat selesai tanpa memberi tahu siapa pun tentang kesalahannya",
+        "E": "Mengirim laporan tepat waktu sesuai pesan atasan, lalu memberi tahu atasan tentang kesalahan itu setelah rapat agar dapat segera diralat"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 5,
+        "C": 2,
+        "D": 3,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Laporan yang salah bisa berdampak pada keputusan di kantor pusat, sehingga kesalahan perlu ditangani **sebelum laporan dikirim**. Namun, laporan itu disusun dan ditandatangani atasan, jadi Anda **tidak berwenang mengubahnya sendiri**. Sikap terbaik adalah memberi tahu atasan dengan cara yang **tidak mengganggu rapat**, misalnya pesan singkat yang menyertakan data pembanding, lalu menunggu arahannya. Atasan dapat memutuskan dengan cepat karena informasinya lengkap.",
+        "opsi": {
+          "A": "Bobot 1. Membiarkan data yang salah sampai ke kantor pusat padahal Anda mengetahuinya.",
+          "B": "Bobot 5. Teliti, menghormati wewenang atasan, dan tidak mengganggu rapat, sambil tetap mengupayakan laporan yang benar.",
+          "C": "Bobot 2. Niatnya memperbaiki, tetapi mengubah dokumen atasan tanpa izin melampaui wewenang. Bisa jadi angka keuangan yang justru belum diperbarui.",
+          "D": "Bobot 3. Mencegah laporan salah terkirim, tetapi tenggat terlewat dan tidak ada yang diberi tahu alasannya.",
+          "E": "Bobot 4. Tepat waktu dan jujur, tetapi laporan yang salah sudah terlanjur diterima kantor pusat dan harus diralat."
+        },
+        "konsep": "**Menemukan kesalahan atasan:** sampaikan dengan sopan dan berdasarkan data, hormati wewenangnya untuk memutuskan, dan pilih cara yang tepat waktu tanpa mempermalukan atasan."
+      },
+      "tips": "Jika menemukan kesalahan pada pekerjaan atasan, bobot 5 biasanya **memberi tahu dengan data dan menunggu keputusannya**. Mengubah sendiri tanpa izin dan diam saja sama-sama bernilai rendah."
+    },
+    {
+      "id": "p04-101",
+      "nomor": 101,
+      "kategori": "TKP",
+      "subtopik": "Profesionalisme",
+      "topik": "Diminta menaikkan angka capaian agar target kinerja tampak tercapai",
+      "tingkat": "sulit",
+      "pertanyaan": "Capaian program unit Anda baru 70% dari target tahunan. Seorang rekan senior menyarankan agar angka capaian dalam laporan kinerja dibulatkan menjadi 90% dengan alasan “toh sisa kegiatannya akan selesai tahun depan”. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Mengikuti saran itu karena sisa kegiatan memang akan diselesaikan tahun depan",
+        "B": "Menulis capaian 80% sebagai jalan tengah agar tidak terlalu jauh dari kenyataan",
+        "C": "Menulis capaian 70% tanpa membahasnya dengan rekan senior agar tidak terjadi perdebatan",
+        "D": "Menolak dengan sopan, menulis capaian sebenarnya, dan menyertakan penjelasan kendala serta rencana penyelesaian",
+        "E": "Menolak dengan sopan dan menulis capaian sebenarnya, lalu menyerahkan penjelasan kendalanya kepada atasan unit Anda"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 2,
+        "C": 3,
+        "D": 5,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Laporan kinerja adalah **dasar evaluasi dan perencanaan** instansi. Menaikkan angka capaian, walaupun dengan alasan akan diselesaikan nanti, adalah **manipulasi data** yang menyesatkan pimpinan. Sikap terbaik adalah **menolak dengan sopan**, **melaporkan capaian sebenarnya**, dan menjelaskan **kendala serta rencana penyelesaiannya**. Penjelasan ini membuat capaian yang rendah dapat dipahami, sehingga pimpinan dapat membantu mencari jalan keluar.",
+        "opsi": {
+          "A": "Bobot 1. Memalsukan data kinerja. Kegiatan tahun depan tidak dapat dihitung sebagai capaian tahun ini.",
+          "B": "Bobot 2. Tetap manipulasi data, hanya angkanya lebih kecil.",
+          "C": "Bobot 3. Datanya jujur, tetapi tanpa penjelasan kendala dan tanpa menanggapi saran rekan dengan baik.",
+          "D": "Bobot 5. Jujur, sopan kepada rekan senior, dan laporan menjadi lebih berguna karena disertai penjelasan.",
+          "E": "Bobot 4. Jujur dan sopan, tetapi penjelasan kendala yang sebenarnya Anda pahami justru diserahkan kepada orang lain."
+        },
+        "konsep": "**Akuntabilitas kinerja:** laporkan capaian apa adanya, jelaskan kendalanya, dan usulkan rencana perbaikan. Laporan jujur dengan analisis lebih bernilai daripada angka tinggi yang tidak nyata. Menyampaikan penolakan dengan sopan kepada rekan senior juga menjaga hubungan kerja tetap baik."
+      },
+      "tips": "Dalam soal tekanan memanipulasi angka, bobot 5 biasanya **jujur dan menambahkan penjelasan atau rencana perbaikan**. Opsi “jalan tengah” yang tetap mengubah angka bernilai rendah."
+    },
+    {
+      "id": "p04-102",
+      "nomor": 102,
+      "kategori": "TKP",
+      "subtopik": "Profesionalisme",
+      "topik": "Dimutasi ke unit yang bukan pilihan",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda dimutasi ke unit pengelolaan arsip, padahal Anda lebih senang bekerja di bidang pelayanan yang sudah Anda tekuni selama lima tahun. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Mengajukan keberatan dan menolak berangkat sampai keputusan mutasi dibatalkan",
+        "B": "Menerima mutasi, tetapi bekerja seadanya sambil menunggu kesempatan pindah kembali",
+        "C": "Menerima mutasi, mempelajari tugas baru dengan sungguh-sungguh, dan memanfaatkan pengalaman pelayanan untuk memperbaiki layanan arsip",
+        "D": "Menerima mutasi dan meminta atasan baru memberi waktu adaptasi yang lebih panjang",
+        "E": "Menerima mutasi dan mempelajari tugas-tugas baru di unit pengelolaan arsip dengan sungguh-sungguh, teliti, dan penuh rasa tanggung jawab"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 2,
+        "C": 5,
+        "D": 3,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Mutasi adalah bagian dari **pengembangan karier dan kebutuhan organisasi**, dan ASN wajib bersedia ditempatkan sesuai kebutuhan. Pegawai profesional menerima penugasan baru dengan sungguh-sungguh. Sikap terbaik bahkan **memanfaatkan pengalaman sebelumnya** sebagai nilai tambah. Pengalaman lima tahun di pelayanan, misalnya, dapat membantu membuat layanan arsip lebih cepat dan mudah diakses oleh unit lain maupun warga.",
+        "opsi": {
+          "A": "Bobot 1. Menolak penugasan resmi adalah pelanggaran disiplin.",
+          "B": "Bobot 2. Menerima secara formal, tetapi tidak bertanggung jawab atas tugas baru.",
+          "C": "Bobot 5. Menerima, bersungguh-sungguh, dan memberi nilai tambah dari pengalaman sebelumnya.",
+          "D": "Bobot 3. Menerima, tetapi fokus pada kebutuhan diri sendiri, bukan pada tugas baru.",
+          "E": "Bobot 4. Profesional dan bertanggung jawab, tetapi belum memanfaatkan pengalaman sebelumnya sebagai nilai tambah."
+        },
+        "konsep": "**Sikap terhadap penugasan baru:** terima, pelajari, dan berikan kontribusi. Pengalaman di bidang lama adalah modal untuk berinovasi di tempat baru. Sikap positif di tempat baru juga mempercepat adaptasi dan membuka peluang karier berikutnya. Pegawai yang menunjukkan kinerja baik di penugasan yang tidak ia pilih biasanya mendapat kepercayaan lebih besar dari pimpinan."
+      },
+      "tips": "Dalam soal mutasi atau penugasan baru, bobot 5 biasanya **menerima dengan sungguh-sungguh dan memberi kontribusi lebih**. Opsi yang menolak atau bekerja seadanya bernilai rendah."
+    },
+    {
+      "id": "p04-103",
+      "nomor": 103,
+      "kategori": "TKP",
+      "subtopik": "Profesionalisme",
+      "topik": "Ditawari promosi saat proyek yang Anda pimpin belum selesai",
+      "tingkat": "sulit",
+      "pertanyaan": "Anda ditawari promosi ke jabatan baru di unit lain mulai bulan depan. Saat ini Anda memimpin proyek digitalisasi arsip yang baru selesai separuh dan belum ada anggota tim yang siap menggantikan Anda. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menolak promosi karena merasa wajib menyelesaikan proyek itu sendiri sampai tuntas",
+        "B": "Menerima promosi, lalu menyusun rencana serah terima, mendampingi calon pengganti, dan memastikan dokumentasi proyek lengkap",
+        "C": "Menerima promosi dan meminta atasan mencari sendiri pengganti untuk memimpin proyek",
+        "D": "Menerima promosi dan meninggalkan proyek begitu saja karena promosi adalah hak Anda",
+        "E": "Menerima promosi dan bersedia tetap membantu proyek lama dari unit baru jika sewaktu-waktu dibutuhkan oleh anggota tim proyek"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 5,
+        "C": 2,
+        "D": 1,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Promosi adalah kesempatan mengembangkan karier dan sekaligus kebutuhan organisasi. Namun, pegawai profesional juga bertanggung jawab agar **pekerjaan yang ditinggalkan tetap berjalan**. Sikap terbaik adalah menerima promosi sambil menyiapkan **serah terima yang tertib**: rencana peralihan, pendampingan calon pengganti, dan dokumentasi proyek yang lengkap. Dengan begitu, proyek tidak berhenti dan organisasi tidak dirugikan oleh perpindahan Anda.",
+        "opsi": {
+          "A": "Bobot 3. Bertanggung jawab pada proyek, tetapi menganggap proyek bergantung pada diri sendiri dan melewatkan kebutuhan organisasi di jabatan baru.",
+          "B": "Bobot 5. Menerima kesempatan dan memastikan proyek berlanjut melalui serah terima yang terencana.",
+          "C": "Bobot 2. Membebankan masalah peralihan kepada atasan, padahal Anda yang paling memahami proyeknya.",
+          "D": "Bobot 1. Tidak bertanggung jawab. Proyek terhenti dan tim kehilangan arah.",
+          "E": "Bobot 4. Ada kepedulian, tetapi bantuan sewaktu-waktu dari unit lain tidak menggantikan serah terima yang terencana."
+        },
+        "konsep": "**Serah terima pekerjaan:** dokumentasikan, latih pengganti, tetapkan masa peralihan, dan pastikan pihak terkait mengetahui perubahan penanggung jawab. Serah terima yang baik juga menjadi bukti kepemimpinan, karena keberhasilan proyek tidak bergantung pada satu orang saja."
+      },
+      "tips": "Dalam soal pindah tugas atau promosi, bobot 5 biasanya **menerima dan memastikan serah terima yang tertib**. Opsi yang meninggalkan pekerjaan begitu saja bernilai 1."
+    },
+    {
+      "id": "p04-104",
+      "nomor": 104,
+      "kategori": "TKP",
+      "subtopik": "Antiradikalisme",
+      "topik": "Donasi rumah ibadah yang disertai ajakan memusuhi kelompok lain",
+      "tingkat": "sulit",
+      "pertanyaan": "Seorang kenalan mengajak Anda berdonasi untuk pembangunan rumah ibadah. Dalam materi penggalangan dana yang ia kirim, terdapat seruan agar umat memusuhi dan menjauhi pemeluk agama lain di lingkungan sekitar. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Tidak berdonasi melalui penggalangan itu, menyampaikan keberatan atas seruan permusuhannya, dan melaporkan materi itu kepada pengurus atau pihak berwenang",
+        "B": "Tetap berdonasi karena pembangunan rumah ibadah adalah kegiatan yang baik, apa pun isi seruannya",
+        "C": "Berdonasi, tetapi tidak menyebarkan materi penggalangan dana itu kepada orang lain",
+        "D": "Tidak berdonasi dan diam saja tanpa memberi tanggapan apa pun kepada kenalan tersebut",
+        "E": "Tidak berdonasi melalui penggalangan itu dan menjelaskan kepada kenalan Anda bahwa seruan memusuhi pemeluk agama lain bertentangan dengan nilai kebangsaan"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 1,
+        "C": 2,
+        "D": 3,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Membangun rumah ibadah adalah tujuan yang baik, tetapi seruan **memusuhi pemeluk agama lain** adalah bibit intoleransi yang dapat berkembang menjadi radikalisme. Donasi melalui penggalangan seperti itu berarti ikut mendukung penyebaran pesan permusuhan. Sikap terbaik adalah **tidak berdonasi melalui jalur tersebut**, **menyampaikan keberatan** kepada kenalan, dan **melaporkan materi itu** kepada pengurus rumah ibadah atau pihak berwenang. Pengurus mungkin tidak tahu bahwa materinya dipakai untuk menyebarkan permusuhan.",
+        "opsi": {
+          "A": "Bobot 5. Menolak ikut mendukung, meluruskan secara langsung, dan melibatkan pihak yang dapat menghentikan penyebaran pesan.",
+          "B": "Bobot 1. Tujuan baik tidak membenarkan pesan permusuhan. Donasi ini ikut menguatkan penyebarnya.",
+          "C": "Bobot 2. Tidak menyebarkan pesan, tetapi tetap memberi dukungan dana kepada penggalangan yang menyebarkan permusuhan.",
+          "D": "Bobot 3. Tidak ikut mendukung, tetapi pesan permusuhan dibiarkan beredar tanpa diluruskan.",
+          "E": "Bobot 4. Menolak dan meluruskan, tetapi materi itu bisa terus menyebar ke orang lain karena tidak dilaporkan."
+        },
+        "konsep": "**Mengenali bibit radikalisme:** seruan memusuhi kelompok lain, merendahkan keyakinan lain, atau membenarkan kekerasan, sering dibungkus dengan kegiatan yang tampak baik. Nilai yang dijaga adalah toleransi dan persatuan dalam keberagaman."
+      },
+      "tips": "Jika kegiatan baik disertai pesan permusuhan, bobot 5 biasanya **menolak bagian yang salah, meluruskan, dan melapor**. Ikut mendukung karena tujuannya tampak baik selalu bernilai 1."
+    },
+    {
+      "id": "p04-105",
+      "nomor": 105,
+      "kategori": "TKP",
+      "subtopik": "Antiradikalisme",
+      "topik": "Permainan daring yang menyisipkan ajakan kekerasan kepada anak",
+      "tingkat": "sedang",
+      "pertanyaan": "Adik Anda yang masih SMP sering bermain gim daring. Anda melihat di ruang obrolan gim itu ada akun yang mengirim video kekerasan dan mengajak para pemain bergabung ke kelompok yang “berjuang dengan senjata melawan pemerintah”. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Melarang adik bermain gim apa pun mulai sekarang tanpa menjelaskan alasannya",
+        "B": "Membiarkannya karena itu hanya permainan dan adik belum tentu tertarik pada ajakan tersebut",
+        "C": "Mengatur ulang privasi akun adik agar tidak bisa menerima pesan dari orang asing",
+        "D": "Melaporkan akun itu ke pengelola gim dan memblokirnya dari akun adik tanpa membicarakan bahaya ajakan itu dengan adik sama sekali",
+        "E": "Mengajak adik membicarakan bahaya ajakan itu, melaporkan akunnya ke pengelola gim, dan mendampingi adik bermain dengan aman"
+      },
+      "bobot": {
+        "A": 2,
+        "B": 1,
+        "C": 3,
+        "D": 4,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Gim daring dapat menjadi jalur perekrutan kelompok kekerasan, karena anak dan remaja mudah dihubungi tanpa pengawasan orang tua. Perlindungan yang efektif menggabungkan tiga hal: **membangun pemahaman** agar adik dapat mengenali ajakan berbahaya sendiri, **melaporkan akun** agar tidak menyasar anak lain, dan **mendampingi dengan pengaturan yang aman**. Melarang total tanpa penjelasan justru membuat adik bermain diam-diam dan tidak bercerita jika ada masalah.",
+        "opsi": {
+          "A": "Bobot 2. Melindungi sementara, tetapi adik tidak belajar mengenali bahaya dan bisa bermain diam-diam.",
+          "B": "Bobot 1. Mengabaikan ajakan kekerasan yang menyasar anak. Paparan berulang dapat memengaruhi cara berpikir remaja.",
+          "C": "Bobot 3. Mengurangi risiko teknis, tetapi akun perekrut tetap aktif dan adik belum memahami bahayanya.",
+          "D": "Bobot 4. Melaporkan dan memblokir sudah tepat, tetapi adik tidak diajak memahami mengapa ajakan itu berbahaya.",
+          "E": "Bobot 5. Edukasi, pelaporan, dan pendampingan dilakukan sekaligus."
+        },
+        "konsep": "**Pencegahan radikalisme pada anak:** dialog terbuka, literasi digital, pengawasan yang mendampingi, dan pelaporan konten berbahaya. Larangan tanpa dialog cenderung kurang efektif. Anak yang merasa bisa bercerita kepada keluarga lebih cepat melapor jika menemukan ajakan serupa."
+      },
+      "tips": "Dalam soal anak atau remaja yang terpapar konten berbahaya, bobot 5 biasanya **mengajak bicara, melaporkan, dan mendampingi**. Membiarkan dengan alasan “hanya permainan” bernilai 1."
+    },
+    {
+      "id": "p04-106",
+      "nomor": 106,
+      "kategori": "TKP",
+      "subtopik": "Antiradikalisme",
+      "topik": "Teman lama mengajak bergabung ke kelompok yang menganggap pemerintah tidak sah",
+      "tingkat": "sulit",
+      "pertanyaan": "Seorang teman kuliah yang lama tidak berjumpa mengajak Anda ikut pertemuan rutin kelompoknya. Ia mengatakan kelompok itu menganggap pemerintahan saat ini tidak sah, dan anggotanya yang bekerja sebagai ASN dianjurkan “menunggu saat yang tepat” untuk melawan dari dalam. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Ikut beberapa pertemuan untuk mencari tahu lebih jauh sebelum memutuskan sikap",
+        "B": "Menolak ajakan itu dan menjauhi teman tersebut tanpa memberi tahu siapa pun",
+        "C": "Menolak ajakan itu dan menyarankan teman agar keluar dari kelompok tersebut",
+        "D": "Menolak dengan tegas, menjelaskan bahwa sebagai ASN Anda setia kepada Pancasila dan NKRI, lalu melaporkan informasi itu kepada pihak berwenang",
+        "E": "Menolak dengan tegas, menjelaskan kesetiaan Anda kepada Pancasila dan NKRI, lalu mengajak teman berdiskusi agar ia mempertimbangkan kembali keikutsertaannya"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 2,
+        "C": 3,
+        "D": 5,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "ASN wajib **setia dan taat kepada Pancasila, UUD 1945, NKRI, dan pemerintah yang sah**. Kelompok yang menganggap pemerintah tidak sah dan menyiapkan perlawanan dari dalam termasuk **ancaman ideologis yang serius**, terlebih jika menyasar ASN. Sikap terbaik adalah **menolak dengan tegas**, menyatakan sikap kebangsaan dengan jelas, dan **melaporkan** informasi itu kepada pihak berwenang agar dapat ditangani sebelum menyebar ke ASN lain.",
+        "opsi": {
+          "A": "Bobot 1. Menghadiri pertemuan membuka peluang terpapar dan dapat dianggap ikut terlibat.",
+          "B": "Bobot 2. Menolak, tetapi ancaman yang menyasar ASN lain dibiarkan tanpa dilaporkan.",
+          "C": "Bobot 3. Menolak dan peduli pada teman, tetapi tidak menyatakan sikap dengan jelas dan tidak melaporkan.",
+          "D": "Bobot 5. Tegas, menyatakan kesetiaan sebagai ASN, dan melapor agar ancaman ditangani pihak yang berwenang.",
+          "E": "Bobot 4. Tegas dan berusaha menyadarkan teman, tetapi informasi tentang kelompok yang menyasar ASN tidak dilaporkan."
+        },
+        "konsep": "**Kewajiban ASN:** setia dan taat kepada Pancasila, UUD 1945, NKRI, dan pemerintah yang sah (UU No. 20 Tahun 2023 tentang ASN). Ajakan menentang pemerintah yang sah perlu dilaporkan, bukan hanya ditolak."
+      },
+      "tips": "Jika ajakan radikal menyasar **ASN atau instansi**, bobot 5 hampir selalu **menolak tegas dan melapor**. Ikut hadir dengan alasan ingin tahu selalu bernilai 1.",
+      "rujukan": [
+        "UU No. 20 Tahun 2023 tentang Aparatur Sipil Negara"
+      ]
+    },
+    {
+      "id": "p04-107",
+      "nomor": 107,
+      "kategori": "TKP",
+      "subtopik": "Antiradikalisme",
+      "topik": "Mengisi kegiatan pemuda lingkungan dengan nilai kebangsaan",
+      "tingkat": "mudah",
+      "pertanyaan": "Pemuda di lingkungan rumah Anda banyak yang menganggur dan sering berkumpul tanpa kegiatan. Beberapa di antaranya mulai aktif mengikuti akun media sosial yang menyebarkan kebencian terhadap kelompok lain. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Melaporkan para pemuda itu kepada aparat keamanan karena mengikuti akun yang menyebarkan kebencian",
+        "B": "Mengajak pengurus lingkungan dan tokoh setempat membuat kegiatan positif bagi pemuda, seperti pelatihan keterampilan dan kegiatan sosial",
+        "C": "Menasihati para pemuda agar berhenti mengikuti akun-akun tersebut",
+        "D": "Melarang anak dan kerabat Anda bergaul dengan kelompok pemuda tersebut",
+        "E": "Mengajak beberapa pemuda yang Anda kenal mengikuti kegiatan rutin yang sudah ada di masjid, gereja, pura, atau balai warga di lingkungan sekitar"
+      },
+      "bobot": {
+        "A": 2,
+        "B": 5,
+        "C": 3,
+        "D": 1,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Pemuda yang menganggur dan tidak memiliki kegiatan lebih **rentan** terpengaruh paham kebencian. Pencegahan paling efektif adalah **menghilangkan kerentanannya**, yaitu memberi kegiatan yang bermakna, keterampilan, dan rasa diterima di lingkungan. Mengajak pengurus lingkungan dan tokoh setempat membuat kegiatan ini lebih kuat dan berkelanjutan. Kegiatan sosial lintas kelompok juga memperkenalkan pemuda pada warga yang berbeda, sehingga prasangka berkurang.",
+        "opsi": {
+          "A": "Bobot 2. Mengikuti akun belum merupakan tindak pidana. Melapor terlalu dini tanpa pendekatan dapat membuat pemuda merasa dimusuhi.",
+          "B": "Bobot 5. Menangani akar kerentanan dan melibatkan tokoh setempat sehingga upayanya berkelanjutan.",
+          "C": "Bobot 3. Ada usaha, tetapi nasihat tanpa kegiatan pengganti biasanya kurang efektif.",
+          "D": "Bobot 1. Mengucilkan pemuda justru memperbesar kerentanan mereka dan tidak menyelesaikan masalah.",
+          "E": "Bobot 4. Pendekatan personal yang baik, tetapi hanya menjangkau sebagian pemuda dan belum menyentuh masalah pengangguran."
+        },
+        "konsep": "**Pencegahan radikalisme berbasis masyarakat:** kurangi kerentanan (pengangguran, keterasingan), libatkan tokoh setempat, dan bangun ruang perjumpaan antarkelompok. Kegiatan yang memberi penghasilan atau keterampilan kerja biasanya paling diminati pemuda yang menganggur."
+      },
+      "tips": "Dalam soal pencegahan, bobot 5 biasanya **mengatasi akar kerentanan bersama masyarakat**. Opsi yang mengucilkan atau langsung mempidanakan kelompok rentan bernilai rendah."
+    },
+    {
+      "id": "p04-108",
+      "nomor": 108,
+      "kategori": "TKP",
+      "subtopik": "Antiradikalisme",
+      "topik": "Rekan menolak mengikuti upacara bendera karena dianggap bertentangan dengan agama",
+      "tingkat": "sedang",
+      "pertanyaan": "Seorang rekan mulai menolak mengikuti upacara bendera bulanan dengan alasan bahwa hormat kepada bendera bertentangan dengan agamanya. Ia juga mulai mengajak rekan lain melakukan hal yang sama. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Mengikuti sikapnya karena alasan agama harus dihormati dalam kondisi apa pun",
+        "B": "Menegurnya dengan keras di depan rekan lain agar mereka tidak ikut terpengaruh",
+        "C": "Membiarkannya karena keikutsertaan dalam upacara adalah pilihan pribadi masing-masing",
+        "D": "Mengajaknya berbicara secara pribadi dan menjelaskan bahwa hormat bendera merupakan bentuk penghormatan kepada negara dan bukan merupakan ibadah",
+        "E": "Mengajaknya berbicara secara pribadi tentang makna upacara dan kewajiban ASN, lalu melaporkan kepada atasan agar dapat dilakukan pembinaan"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 2,
+        "C": 3,
+        "D": 4,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Hormat kepada bendera adalah bentuk **penghormatan kepada negara**, bukan ibadah. Penolakan dengan alasan seperti itu, apalagi disertai ajakan kepada rekan lain, dapat menjadi **tanda awal paham yang menolak simbol negara**. Sikap terbaik adalah **berdialog secara pribadi** untuk meluruskan pemahamannya tentang makna upacara dan kewajiban ASN, lalu **melaporkan kepada atasan** agar ada pembinaan yang tepat. Ajakan kepada rekan lain membuat masalah ini tidak cukup ditangani secara pribadi.",
+        "opsi": {
+          "A": "Bobot 1. Ikut menolak simbol negara dan melanggar kewajiban ASN.",
+          "B": "Bobot 2. Tujuannya mencegah pengaruh, tetapi teguran keras di depan umum bisa membuat rekan makin keras pada pendiriannya.",
+          "C": "Bobot 3. Upacara adalah kewajiban kedinasan, bukan pilihan pribadi. Ajakannya kepada rekan lain juga dibiarkan.",
+          "D": "Bobot 4. Dialog pribadi sudah tepat, tetapi ajakan kepada rekan lain menunjukkan perlunya pembinaan oleh atasan.",
+          "E": "Bobot 5. Dialog yang meluruskan, ditambah pelaporan agar pembinaan dilakukan oleh pihak yang berwenang."
+        },
+        "konsep": "**Penghormatan kepada simbol negara:** bendera, lambang, dan lagu kebangsaan wajib dihormati sesuai UU No. 24 Tahun 2009. Pendekatan terhadap rekan yang mulai terpapar: dialog → laporkan untuk pembinaan."
+      },
+      "tips": "Dalam soal rekan yang menolak simbol negara, bobot 5 biasanya **berdialog dan melibatkan atasan untuk pembinaan**. Ikut menolak dengan alasan agama bernilai 1.",
+      "rujukan": [
+        "UU No. 24 Tahun 2009 tentang Bendera, Bahasa, dan Lambang Negara, serta Lagu Kebangsaan"
+      ]
+    },
+    {
+      "id": "p04-109",
+      "nomor": 109,
+      "kategori": "TKP",
+      "subtopik": "Antiradikalisme",
+      "topik": "Pembicara diskusi yang Anda moderatori menyerukan penolakan Pancasila",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda menjadi moderator diskusi publik tentang peran pemuda yang diadakan instansi Anda. Di tengah acara, salah satu pembicara menyatakan bahwa Pancasila tidak perlu dipertahankan dan mengajak peserta mengganti dasar negara. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Membiarkan pembicara melanjutkan karena diskusi publik harus menjamin kebebasan berpendapat semua pembicara tanpa terkecuali, termasuk pendapat yang berbeda",
+        "B": "Langsung mematikan mikrofon pembicara dan memintanya meninggalkan ruangan di depan peserta",
+        "C": "Mengingatkan pembicara dengan sopan agar kembali ke tema, menegaskan bahwa Pancasila adalah dasar negara, lalu melaporkannya kepada panitia",
+        "D": "Mengalihkan pembicaraan ke pembicara berikutnya tanpa menanggapi pernyataan tersebut",
+        "E": "Mengingatkan pembicara dengan sopan agar kembali ke tema diskusi dan tidak membahas penggantian dasar negara"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 2,
+        "C": 5,
+        "D": 3,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Kebebasan berpendapat dijamin, tetapi **ajakan mengganti dasar negara** di forum resmi instansi tidak dapat dibiarkan. Sebagai moderator, Anda bertanggung jawab menjaga jalannya diskusi. Sikap terbaik adalah **mengendalikan forum dengan sopan**, **menegaskan posisi Pancasila** di depan peserta agar mereka tidak menangkap pesan yang keliru, lalu **melaporkan** kejadian itu kepada panitia untuk ditindaklanjuti. Ketegasan yang sopan menjaga wibawa acara tanpa menimbulkan keributan.",
+        "opsi": {
+          "A": "Bobot 1. Membiarkan forum resmi instansi dipakai untuk menyebarkan ajakan mengganti dasar negara.",
+          "B": "Bobot 2. Tegas, tetapi cara yang kasar dapat memicu keributan dan membuat pembicara tampak sebagai korban.",
+          "C": "Bobot 5. Forum dikendalikan dengan sopan, peserta mendapat pelurusan, dan kejadian dilaporkan untuk ditindaklanjuti.",
+          "D": "Bobot 3. Menghentikan pembahasan, tetapi peserta tidak mendapat pelurusan atas pernyataan yang keliru.",
+          "E": "Bobot 4. Mengendalikan forum dengan sopan, tetapi peserta belum mendapat penegasan dan kejadiannya tidak dilaporkan."
+        },
+        "konsep": "**Pancasila sebagai dasar negara** tercantum dalam Pembukaan UUD 1945, yang menurut kesepakatan MPR saat amandemen tidak diubah. Batas kebebasan berpendapat diatur dalam Pasal 28J ayat (2) UUD NRI 1945."
+      },
+      "tips": "Dalam soal forum yang disusupi ajakan anti-Pancasila, bobot 5 biasanya **mengendalikan forum dengan sopan, meluruskan, dan melapor**. Membiarkan atas nama kebebasan berpendapat bernilai 1.",
+      "rujukan": [
+        "UUD NRI 1945 Pembukaan alinea keempat",
+        "UUD NRI 1945 Pasal 28J ayat (2)"
+      ]
+    },
+    {
+      "id": "p04-110",
+      "nomor": 110,
+      "kategori": "TKP",
+      "subtopik": "Antiradikalisme",
+      "topik": "Permintaan memakai aula kantor oleh organisasi yang telah dibubarkan pemerintah",
+      "tingkat": "sulit",
+      "pertanyaan": "Anda bertugas mengelola peminjaman aula kantor. Sebuah panitia mengajukan peminjaman untuk “kajian umum”. Setelah Anda periksa, penyelenggaranya ternyata pengurus organisasi yang sudah dibubarkan pemerintah karena bertentangan dengan Pancasila, hanya saja kini memakai nama baru. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menolak peminjaman dengan alasan yang jelas, melaporkan temuan itu kepada atasan, dan menyerahkan data penyelenggara kepada pihak berwenang",
+        "B": "Menyetujui peminjaman karena nama organisasinya sudah berbeda dan acaranya disebut kajian umum yang terbuka bagi siapa saja yang ingin hadir",
+        "C": "Menyetujui peminjaman, tetapi meminta panitia berjanji tidak membahas hal-hal yang bertentangan dengan Pancasila",
+        "D": "Menolak peminjaman dengan alasan aula sedang dipakai, tanpa melaporkan apa pun",
+        "E": "Menolak peminjaman dengan alasan yang jelas dan melaporkan temuan itu kepada atasan Anda"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 1,
+        "C": 2,
+        "D": 3,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Organisasi yang dibubarkan karena bertentangan dengan Pancasila **tidak boleh beraktivitas**, termasuk dengan memakai nama baru. Fasilitas negara tidak boleh dipakai untuk kegiatannya. Sikap terbaik adalah **menolak dengan alasan yang jujur**, **melaporkan kepada atasan**, dan meneruskan data penyelenggara kepada **pihak berwenang** agar aktivitas yang melanggar dapat ditangani. Ketelitian Anda memeriksa penyelenggara adalah bagian penting dari pencegahan.",
+        "opsi": {
+          "A": "Bobot 5. Tegas, jujur tentang alasannya, dan melibatkan atasan serta pihak berwenang.",
+          "B": "Bobot 1. Fasilitas negara dipakai oleh organisasi terlarang. Nama baru tidak mengubah status penyelenggaranya.",
+          "C": "Bobot 2. Janji panitia tidak dapat dijadikan jaminan, dan penyelenggaranya tetap organisasi yang dilarang.",
+          "D": "Bobot 3. Aula aman dari kegiatan itu, tetapi alasannya tidak jujur dan temuan penting tidak dilaporkan.",
+          "E": "Bobot 4. Tegas dan melapor, tetapi data penyelenggara belum diteruskan kepada pihak yang berwenang menindak."
+        },
+        "konsep": "**Pembubaran ormas** yang bertentangan dengan Pancasila diatur dalam UU No. 17 Tahun 2013 tentang Organisasi Kemasyarakatan sebagaimana diubah dengan UU No. 16 Tahun 2017. Organisasi yang sudah dibubarkan tidak dapat melanjutkan kegiatan, walaupun memakai nama atau bentuk lain."
+      },
+      "tips": "Dalam soal fasilitas negara dan organisasi terlarang, bobot 5 biasanya **menolak dengan jujur dan melapor sampai ke pihak berwenang**. Menolak dengan alasan palsu tanpa melapor bernilai sedang.",
+      "rujukan": [
+        "UU No. 17 Tahun 2013 tentang Organisasi Kemasyarakatan jo. UU No. 16 Tahun 2017"
+      ]
     }
   ]
 }
