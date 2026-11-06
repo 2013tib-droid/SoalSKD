@@ -49,3 +49,23 @@ Tidak ada isi branch itu yang masuk ke branch utama.
   dibuat sudah ada atau sedang direncanakan, misalnya di bagian "langkah berikutnya" di `docs/`.
 - **Cek branch utama lagi sebelum push atau membuat PR**, terutama kalau tugasnya makan waktu lama.
 - Pelajaran ini berlaku untuk semua proyek. Usulkan ke repo `agensi` (`house-style`).
+
+## 2026-11-06 · Ebook PDF di branch `claude/ebook-pdf`
+
+Atas permintaan sesi utama dan dengan persetujuan pemilik, sesi ebook mengerjakan langkah 4 di
+`docs/rencana-ebook-cpns.md`. Laporannya sudah dikirim ke sesi utama.
+
+- **Hasil:** `node ebook/buat-ebook.mjs bank/p01.json` menghasilkan `ebook/dist/p01.pdf`
+  (A4, 31 halaman untuk 20 soal). Isinya sampul, daftar isi, petunjuk, soal per subtes, kunci,
+  dan pembahasan. Cara pakai dan alasan pemilihan alat ada di `ebook/README.md`.
+- **Alat:** Paged.js untuk tata letak cetak, Chromium bawaan environment untuk mencetak PDF,
+  dan marked untuk Markdown GFM. WeasyPrint tidak bisa dipasang karena pip tidak bisa mengambil
+  paket di environment ini.
+- **Validasi:** skrip menolak paket yang gagal `tools/validasi.py` (exit 1). Sudah diuji dengan
+  bobot TKP yang dirusak dan dengan `sample-15`.
+- **Batas area:** hanya `ebook/` dan `docs/` yang diubah. Tidak ada yang perlu diubah di area
+  sesi utama.
+- **Terbuka untuk sesi utama:** Geist tidak punya glyph `∧ ∨ ≡ ✓ ✗` yang dipakai di pembahasan
+  TIU (p01-008 s.d. p01-013), jadi karakter itu tercetak dengan DejaVu Sans. Mengganti karakternya
+  di data adalah keputusan sesi utama, karena `bank/` areanya.
+- **Belum dikerjakan:** PR untuk `claude/ebook-pdf` (belum diminta).
