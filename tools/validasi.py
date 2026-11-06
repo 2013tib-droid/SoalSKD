@@ -156,6 +156,22 @@ def cek_paket(path, paket, config, validator, lap):
         if beruntun >= 4:
             lap.p(lok, f"kunci yang sama muncul {beruntun} kali berturut-turut")
 
+    # Peserta yang jeli bisa menebak jika jawaban terbaik hampir selalu opsi terpanjang.
+    # Secara acak, peluangnya sekitar 20%.
+    for kat in URUTAN:
+        grup = [s for s in soal if s["kategori"] == kat]
+        if len(grup) < 5:
+            continue
+        terpanjang = []
+        for s in grup:
+            terbaik = s.get("kunci") or next(h for h, v in s["bobot"].items() if v == 5)
+            panjang = {h: len(t) for h, t in s["opsi"].items()}
+            if all(panjang[terbaik] > n for h, n in panjang.items() if h != terbaik):
+                terpanjang.append(str(s["nomor"]))
+        if len(terpanjang) / len(grup) > 0.35:
+            lap.p(lok, f"{kat}: jawaban terbaik adalah opsi terpanjang di {len(terpanjang)} dari {len(grup)} soal "
+                       f"(nomor {', '.join(terpanjang)}); samakan panjang opsi agar jawaban tidak mudah ditebak")
+
     tkp = [s for s in soal if s["kategori"] == "TKP"]
     if tkp:
         lima = Counter(next(h for h, v in s["bobot"].items() if v == 5) for s in tkp)

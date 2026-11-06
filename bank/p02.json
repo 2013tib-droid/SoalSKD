@@ -17,11 +17,11 @@
       "tingkat": "mudah",
       "pertanyaan": "Sebuah kantor kelurahan melayani warga dari berbagai agama. Menjelang waktu ibadah salah satu agama, beberapa warga yang sedang antre meminta izin keluar sebentar untuk beribadah. Sikap petugas yang paling mencerminkan pengamalan sila pertama Pancasila adalah ....",
       "opsi": {
-        "A": "Menolak permintaan tersebut karena pelayanan harus berjalan tanpa gangguan apa pun",
+        "A": "Menolak permintaan tersebut karena pelayanan harus berjalan tanpa gangguan dan semua warga diperlakukan sama dalam antrean",
         "B": "Mengizinkan hanya jika warga lain yang antre memiliki agama yang sama",
         "C": "Mempersilakan warga beribadah dan menjaga nomor antreannya agar tetap dilayani setelah kembali",
         "D": "Menghentikan seluruh layanan sampai semua warga selesai beribadah",
-        "E": "Meminta warga memilih antara beribadah atau kehilangan nomor antrean"
+        "E": "Meminta warga memilih antara beribadah atau tetap antre, karena nomor antrean tidak dapat disimpan untuk siapa pun"
       },
       "kunci": "C",
       "pembahasan": {
@@ -45,10 +45,10 @@
       "tingkat": "sedang",
       "pertanyaan": "Pancasila disebut sebagai ideologi terbuka. Pernyataan yang paling tepat untuk menjelaskan sifat terbuka tersebut adalah ....",
       "opsi": {
-        "A": "Nilai dasarnya tetap, sedangkan penjabarannya dalam peraturan dan pelaksanaannya dapat menyesuaikan perkembangan zaman",
+        "A": "Nilai dasarnya tetap, sedangkan penjabaran dan pelaksanaannya dapat menyesuaikan perkembangan zaman",
         "B": "Seluruh nilainya, termasuk nilai dasar, dapat diubah melalui kesepakatan mayoritas rakyat",
         "C": "Pancasila dapat menerima ideologi lain apa pun untuk menggantikan nilai-nilainya",
-        "D": "Pancasila hanya berlaku dalam situasi tertentu dan dapat ditinggalkan saat keadaan darurat",
+        "D": "Pancasila hanya berlaku dalam situasi tertentu dan dapat ditinggalkan sementara ketika negara berada dalam keadaan darurat",
         "E": "Nilai praksisnya tidak boleh berubah karena sudah ditetapkan sejak 1945"
       },
       "kunci": "A",
@@ -76,8 +76,8 @@
         "A": "Sila kelima diubah agar keadilan sosial hanya berlaku bagi warga negara asli",
         "B": "Urutan sila diubah sehingga sila kemanusiaan ditempatkan di urutan pertama",
         "C": "Sila persatuan dihapus karena dianggap sudah terkandung dalam sila lainnya",
-        "D": "Sila pertama ditambah kalimat tentang kewajiban bela negara bagi seluruh warga",
-        "E": "Tujuh kata setelah “Ketuhanan” dihapus sehingga menjadi “Ketuhanan Yang Maha Esa”, demi menjaga persatuan seluruh wilayah dan golongan"
+        "D": "Sila pertama ditambah kalimat tentang kewajiban bela negara agar seluruh warga ikut mempertahankan kemerdekaan",
+        "E": "Tujuh kata setelah kata “Ketuhanan” dihapus demi menjaga persatuan seluruh wilayah dan golongan"
       },
       "kunci": "E",
       "pembahasan": {
@@ -105,9 +105,9 @@
       "pertanyaan": "Sebuah peraturan daerah dinilai bertentangan dengan nilai keadilan sosial karena hanya menguntungkan kelompok tertentu. Kedudukan Pancasila yang paling tepat dijadikan dasar untuk menilai peraturan tersebut adalah ....",
       "opsi": {
         "A": "Pancasila sebagai pandangan hidup yang hanya berlaku dalam kehidupan pribadi",
-        "B": "Pancasila sebagai sumber segala sumber hukum negara, sehingga setiap materi peraturan tidak boleh bertentangan dengan nilai-nilainya",
+        "B": "Pancasila sebagai sumber segala sumber hukum negara, sehingga peraturan harus sesuai nilai-nilainya",
         "C": "Pancasila sebagai perjanjian luhur yang hanya mengikat para pendiri negara",
-        "D": "Pancasila sebagai jenis peraturan tertinggi dalam hierarki peraturan perundang-undangan",
+        "D": "Pancasila sebagai jenis peraturan tertinggi dalam hierarki peraturan perundang-undangan, di atas UUD NRI Tahun 1945",
         "E": "Pancasila sebagai ideologi terbuka yang membolehkan setiap daerah menafsirkannya secara bebas"
       },
       "kunci": "B",
@@ -136,10 +136,10 @@
       "tingkat": "sedang",
       "pertanyaan": "Pemerintah memberikan kuota beasiswa khusus bagi pelajar dari daerah tertinggal yang akses pendidikannya terbatas. Sebagian orang menilai kebijakan ini tidak adil karena tidak berlaku sama untuk semua pelajar. Penilaian yang paling sesuai dengan nilai sila kelima Pancasila adalah ....",
       "opsi": {
-        "A": "Kebijakan itu tidak adil karena keadilan berarti semua orang harus menerima perlakuan yang persis sama",
+        "A": "Kebijakan itu tidak adil karena keadilan berarti semua pelajar harus menerima perlakuan yang persis sama tanpa kecuali",
         "B": "Kebijakan itu hanya sah jika seluruh pelajar di Indonesia menyetujuinya",
         "C": "Kebijakan itu sebaiknya diganti dengan pembagian beasiswa secara acak",
-        "D": "Kebijakan itu sejalan dengan keadilan sosial karena memberi perhatian lebih kepada kelompok yang tertinggal agar kesempatannya setara",
+        "D": "Kebijakan itu sejalan dengan keadilan sosial karena membuat kesempatan kelompok tertinggal menjadi setara",
         "E": "Kebijakan itu bertentangan dengan sila ketiga karena membeda-bedakan daerah"
       },
       "kunci": "D",
@@ -167,7 +167,7 @@
         "A": "Membentuk undang-undang bersama Presiden tanpa melibatkan DPR",
         "B": "Dapat mengajukan rancangan undang-undang yang berkaitan dengan otonomi daerah kepada DPR",
         "C": "Menetapkan anggaran pendapatan dan belanja negara bersama Presiden",
-        "D": "Memberikan persetujuan akhir atas setiap rancangan undang-undang",
+        "D": "Memberikan persetujuan akhir atas setiap rancangan undang-undang yang telah dibahas oleh DPR dan Presiden",
         "E": "Mengangkat dan memberhentikan kepala daerah"
       },
       "kunci": "B",
@@ -199,9 +199,9 @@
       "opsi": {
         "A": "MPR mengusulkan, DPR memeriksa, lalu Mahkamah Agung memutus",
         "B": "Mahkamah Konstitusi mengusulkan, DPR memutus, lalu MPR melantik pengganti",
-        "C": "DPR langsung memberhentikan setelah mendapat dukungan dua pertiga anggotanya",
+        "C": "DPR langsung memberhentikan Presiden setelah usulnya mendapat dukungan sekurang-kurangnya dua pertiga anggota DPR",
         "D": "MPR memberhentikan atas usul DPD setelah mendengar pendapat DPR",
-        "E": "DPR mengajukan permintaan kepada Mahkamah Konstitusi, MK memeriksa dan memutus pendapat DPR, lalu DPR mengusulkan kepada MPR yang memutuskan"
+        "E": "DPR mengajukan ke MK, MK memutus pendapat DPR, lalu DPR meneruskan usul ke MPR untuk diputuskan"
       },
       "kunci": "E",
       "pembahasan": {
@@ -231,7 +231,7 @@
       "opsi": {
         "A": "Pembelaan negara adalah hak sekaligus kewajiban seluruh warga negara, tidak terbatas pada anggota TNI",
         "B": "Pembelaan negara hanya menjadi kewajiban warga negara yang berusia di atas 18 tahun",
-        "C": "Warga negara boleh memilih untuk tidak ikut serta karena pembelaan negara hanyalah hak",
+        "C": "Warga negara boleh memilih untuk tidak ikut serta, karena pembelaan negara hanyalah hak yang boleh digunakan atau tidak",
         "D": "Pembelaan negara hanya dilakukan dalam bentuk perang melawan musuh dari luar",
         "E": "Hanya warga negara yang bekerja di instansi pemerintah yang wajib membela negara"
       },
@@ -296,7 +296,7 @@
       "opsi": {
         "A": "Anggaran pendidikan sekurang-kurangnya 20% hanya diambil dari APBN",
         "B": "Anggaran pendidikan ditetapkan paling banyak 20% dari APBN dan APBD",
-        "C": "Anggaran pendidikan sekurang-kurangnya 25% dari APBN untuk pendidikan dasar saja",
+        "C": "Anggaran pendidikan sekurang-kurangnya 25% dari APBN dan khusus digunakan untuk membiayai pendidikan dasar",
         "D": "Negara memprioritaskan anggaran pendidikan sekurang-kurangnya 20% dari APBN serta dari APBD",
         "E": "Besar anggaran pendidikan diserahkan sepenuhnya kepada pemerintah daerah"
       },
@@ -325,11 +325,11 @@
       "tingkat": "sedang",
       "pertanyaan": "Pemerintah mempertahankan pengelolaan air bersih di sebuah kota melalui badan usaha milik daerah, meskipun ada perusahaan swasta yang menawarkan untuk mengambil alih seluruhnya. Dasar konstitusional yang paling sesuai untuk kebijakan tersebut adalah ....",
       "opsi": {
-        "A": "Cabang produksi yang penting bagi negara dan menguasai hajat hidup orang banyak dikuasai oleh negara (Pasal 33 ayat 2)",
+        "A": "Cabang produksi penting yang menguasai hajat hidup orang banyak dikuasai oleh negara (Pasal 33 ayat 2)",
         "B": "Setiap orang berhak atas pekerjaan dan penghidupan yang layak bagi kemanusiaan (Pasal 27 ayat 2)",
         "C": "Fakir miskin dan anak terlantar dipelihara oleh negara (Pasal 34 ayat 1)",
         "D": "Perekonomian disusun berdasarkan persaingan bebas antarpelaku usaha",
-        "E": "Pajak dan pungutan lain yang bersifat memaksa diatur dengan undang-undang (Pasal 23A)"
+        "E": "Pajak dan pungutan lain yang bersifat memaksa untuk keperluan negara diatur dengan undang-undang (Pasal 23A)"
       },
       "kunci": "A",
       "pembahasan": {
@@ -356,10 +356,10 @@
       "tingkat": "sedang",
       "pertanyaan": "Sebelum 1957, wilayah laut Indonesia mengikuti aturan kolonial yang menetapkan laut teritorial selebar 3 mil dari garis pantai setiap pulau. Makna penting Deklarasi Djuanda 13 Desember 1957 bagi keutuhan wilayah Indonesia adalah ....",
       "opsi": {
-        "A": "Menetapkan batas darat Indonesia dengan negara tetangga di Pulau Kalimantan",
+        "A": "Menetapkan batas darat Indonesia dengan negara tetangga di Pulau Kalimantan sesuai perjanjian peninggalan kolonial",
         "B": "Mengakhiri sengketa wilayah Irian Barat dengan Belanda",
         "C": "Menetapkan Indonesia sebagai negara federal yang terdiri atas pulau-pulau",
-        "D": "Menyatakan laut di antara dan di sekitar pulau-pulau Indonesia sebagai bagian wilayah yang menyatukan, bukan memisahkan",
+        "D": "Menjadikan laut di antara pulau-pulau sebagai bagian wilayah yang menyatukan, bukan memisahkan",
         "E": "Membuka seluruh perairan Indonesia sebagai laut bebas bagi kapal asing"
       },
       "kunci": "D",
@@ -421,8 +421,8 @@
         "A": "Negara serikat yang terdiri atas negara-negara bagian",
         "B": "Negara hukum yang menjunjung tinggi hak asasi manusia",
         "C": "Negara yang berkedaulatan rakyat berdasarkan permusyawaratan",
-        "D": "Negara maritim yang wilayahnya ditetapkan oleh perjanjian internasional",
-        "E": "Negara kepulauan yang berciri Nusantara dengan wilayah yang batas-batas dan hak-haknya ditetapkan dengan undang-undang"
+        "D": "Negara maritim yang batas wilayah lautnya ditetapkan sepenuhnya oleh perjanjian internasional dengan negara tetangga",
+        "E": "Negara kepulauan berciri Nusantara yang batas dan hak wilayahnya ditetapkan dengan undang-undang"
       },
       "kunci": "E",
       "pembahasan": {
@@ -481,7 +481,7 @@
       "tingkat": "sedang",
       "pertanyaan": "Di sebuah perumahan, warga pendatang dari berbagai daerah sering berselisih dengan warga lama karena perbedaan kebiasaan dalam acara hajatan. Langkah ketua RT yang paling sesuai dengan semangat Bhinneka Tunggal Ika adalah ....",
       "opsi": {
-        "A": "Mewajibkan semua warga mengikuti kebiasaan warga lama karena mereka lebih dulu tinggal",
+        "A": "Mewajibkan semua warga mengikuti kebiasaan warga lama karena mereka lebih dulu tinggal dan lebih memahami lingkungan setempat",
         "B": "Melarang semua bentuk hajatan agar tidak ada lagi perselisihan",
         "C": "Meminta warga pendatang menyesuaikan diri sepenuhnya atau pindah dari perumahan",
         "D": "Membiarkan perselisihan karena perbedaan kebiasaan adalah urusan pribadi",
@@ -537,7 +537,7 @@
       "tingkat": "sulit",
       "pertanyaan": "PPKI bersidang beberapa kali setelah proklamasi kemerdekaan. Keputusan berikut yang dihasilkan dalam sidang pertama PPKI pada 18 Agustus 1945 adalah ....",
       "opsi": {
-        "A": "Membentuk Badan Keamanan Rakyat (BKR) dan Komite Nasional Indonesia Pusat",
+        "A": "Membentuk Badan Keamanan Rakyat (BKR), Komite Nasional Indonesia Pusat, dan Partai Nasional Indonesia",
         "B": "Mengesahkan UUD serta memilih Soekarno dan Mohammad Hatta sebagai Presiden dan Wakil Presiden",
         "C": "Membagi wilayah Indonesia menjadi delapan provinsi",
         "D": "Merumuskan dasar negara untuk pertama kalinya melalui pidato para tokoh",
@@ -565,11 +565,11 @@
       "tingkat": "sedang",
       "pertanyaan": "Seorang pegawai muda gemar mengikuti tren budaya populer dari luar negeri. Sikap yang paling mencerminkan nasionalisme dalam menghadapi pengaruh budaya asing tersebut adalah ....",
       "opsi": {
-        "A": "Menyaring budaya asing yang bermanfaat, tetap bangga memakai produk dan budaya Indonesia, serta ikut mempromosikannya",
+        "A": "Menyaring budaya asing, tetap bangga pada produk dan budaya Indonesia, serta ikut mempromosikannya",
         "B": "Menolak semua budaya asing karena dapat melunturkan jati diri bangsa",
         "C": "Mengikuti semua tren luar negeri agar tidak tertinggal zaman",
         "D": "Menganggap budaya Indonesia kuno sehingga perlu diganti budaya asing",
-        "E": "Membatasi pergaulan hanya dengan orang yang memiliki budaya daerah yang sama"
+        "E": "Membatasi pergaulan hanya dengan orang yang berasal dari daerah dan memiliki latar belakang budaya yang sama"
       },
       "kunci": "A",
       "pembahasan": {
@@ -594,7 +594,7 @@
       "pertanyaan": "Pada 16 Agustus 1945, golongan muda membawa Soekarno dan Mohammad Hatta ke Rengasdengklok. Tujuan utama golongan muda dalam peristiwa tersebut adalah ....",
       "opsi": {
         "A": "Menyerahkan Soekarno dan Hatta kepada pihak Sekutu",
-        "B": "Merundingkan pembentukan negara federal dengan wakil Jepang",
+        "B": "Merundingkan bentuk negara federal dengan wakil pemerintah Jepang sebelum kemerdekaan diumumkan kepada rakyat",
         "C": "Menyusun rancangan UUD bersama anggota BPUPKI",
         "D": "Menjauhkan Soekarno dan Hatta dari pengaruh Jepang dan mendesak agar kemerdekaan segera diproklamasikan",
         "E": "Mengadakan rapat raksasa untuk mengumumkan kekalahan Jepang"
@@ -623,7 +623,7 @@
       "opsi": {
         "A": "Tetap menilai karena ia yakin dapat bersikap objektif",
         "B": "Melaporkan hubungan keluarga tersebut kepada atasan atau ketua panitia dan tidak ikut menilai lelang itu",
-        "C": "Tetap menilai, tetapi sengaja tidak memberi nilai tertinggi kepada perusahaan adiknya",
+        "C": "Tetap menilai seperti biasa, tetapi dengan sengaja tidak memberi nilai tertinggi kepada perusahaan milik adiknya",
         "D": "Meminta adiknya mengundurkan diri dari lelang tanpa memberi tahu panitia",
         "E": "Merahasiakan hubungan tersebut agar proses lelang tidak tertunda"
       },
@@ -681,7 +681,7 @@
       "pertanyaan": "Seorang petugas perizinan mengatakan kepada pemohon bahwa berkasnya tidak akan diproses kecuali pemohon menyerahkan “uang pelicin”. Karena takut izinnya tertunda, pemohon terpaksa membayar. Berdasarkan UU Pemberantasan Tindak Pidana Korupsi, perbuatan petugas tersebut paling tepat digolongkan sebagai ....",
       "opsi": {
         "A": "Gratifikasi, karena petugas menerima pemberian dari pemohon",
-        "B": "Penggelapan dalam jabatan, karena uang tersebut tidak disetor ke kas negara",
+        "B": "Penggelapan dalam jabatan, karena uang yang diterima petugas tidak disetorkan ke kas negara sesuai aturan",
         "C": "Suap aktif, karena pemohon yang memberikan uang terlebih dahulu",
         "D": "Pemerasan, karena petugas menyalahgunakan kekuasaannya untuk memaksa pemohon memberikan uang",
         "E": "Pungutan resmi, karena dibayarkan dalam proses pelayanan"
@@ -711,11 +711,11 @@
       "tingkat": "sedang",
       "pertanyaan": "Rina menemukan bukti bahwa atasannya memalsukan daftar hadir kegiatan untuk mencairkan honor peserta fiktif. Tindakan Rina yang paling tepat adalah ....",
       "opsi": {
-        "A": "Mengunggah bukti tersebut ke media sosial agar diketahui publik",
+        "A": "Mengunggah bukti tersebut ke media sosial agar diketahui publik dan pimpinan instansi segera bertindak",
         "B": "Menegur atasannya di depan seluruh pegawai saat rapat",
         "C": "Diam saja karena takut kariernya terganggu",
         "D": "Meminta bagian dari honor tersebut sebagai imbalan untuk tutup mulut",
-        "E": "Mengamankan bukti dan melaporkannya melalui saluran pengaduan resmi, seperti whistleblowing system atau inspektorat"
+        "E": "Mengamankan bukti dan melaporkannya lewat saluran pengaduan resmi, seperti inspektorat"
       },
       "kunci": "E",
       "pembahasan": {
@@ -1883,6 +1883,327 @@
         "konsep": "**KPK vs FPB:** kata kunci *bersamaan lagi*, *bertemu lagi*, atau *serentak lagi* berarti KPK. Kata kunci *dibagi rata sebanyak-banyaknya* atau *kelompok terbesar* berarti FPB."
       },
       "tips": "Untuk bilangan kecil, KPK bisa dicari dengan **mendaftar kelipatan bilangan terbesar** (12, 24, 36, ...) lalu memeriksa apakah habis dibagi bilangan lain. Cara ini sering lebih cepat daripada faktorisasi."
+    },
+    {
+      "id": "p02-066",
+      "nomor": 66,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Melayani warga tunanetra dengan formulir cetak",
+      "tingkat": "mudah",
+      "pertanyaan": "Seorang warga tunanetra datang sendirian untuk mengurus dokumen kependudukan. Formulir yang tersedia hanya formulir cetak yang harus diisi dan ditandatangani. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Meminta warga tersebut datang kembali bersama pendamping yang dapat membantu mengisi formulir",
+        "B": "Membacakan isi formulir, mengisikannya sesuai jawaban warga, lalu membacakan ulang sebelum warga menandatangani",
+        "C": "Mengisi formulir memakai data warga yang sudah tersimpan di sistem tanpa banyak bertanya, supaya proses cepat dan warga tidak lama menunggu",
+        "D": "Meminta pengunjung lain yang sedang antre untuk membantu mengisikan formulirnya",
+        "E": "Memberikan formulir untuk dibawa pulang agar dapat diisi dengan tenang bersama anggota keluarga yang dipercaya warga"
+      },
+      "bobot": {
+        "A": 2,
+        "B": 5,
+        "C": 4,
+        "D": 1,
+        "E": 3
+      },
+      "pembahasan": {
+        "inti": "Aspek pelayanan publik menilai kesediaan memberi **perlakuan khusus bagi kelompok rentan**, termasuk penyandang disabilitas, sesuai asas dalam UU No. 25 Tahun 2009 tentang Pelayanan Publik. Pelayanan yang baik tidak berhenti pada membantu, tetapi juga memastikan data akurat dan keputusan tetap di tangan warga.",
+        "opsi": {
+          "A": "Warga harus datang dua kali hanya karena kebutuhan khususnya. Ini memindahkan beban kepada warga, padahal petugas bisa membantu saat itu juga.",
+          "B": "Paling ideal. Warga terlayani hari itu, isian sesuai keterangannya sendiri, dan pembacaan ulang memastikan warga tahu persis apa yang ia tandatangani.",
+          "C": "Cepat dan tetap melayani, tetapi data lama bisa sudah berubah. Warga juga tidak diberi kesempatan memeriksa isian sebelum menandatangani.",
+          "D": "Paling buruk karena data pribadi warga dibuka kepada orang asing. Tanggung jawab petugas juga dilempar kepada pengunjung lain.",
+          "E": "Masih memberi jalan keluar, tetapi pelayanan tidak selesai di tempat dan warga harus bergantung pada keluarga."
+        },
+        "konsep": "**Pola bobot pelayanan kelompok rentan:** 5 = dilayani langsung, akurat, dan menghormati kemandirian warga; nilai turun jika warga harus datang lagi; 1 = membuka data pribadi atau melempar tanggung jawab."
+      },
+      "tips": "Untuk soal pelayanan bagi kelompok rentan, pilih opsi yang **menyelesaikan layanan saat itu juga** sambil tetap **melibatkan warga dalam keputusan**. Coret opsi yang meminta warga datang lagi atau melibatkan orang yang tidak berwenang.",
+      "rujukan": [
+        "UU No. 25 Tahun 2009 tentang Pelayanan Publik (asas perlakuan khusus bagi kelompok rentan)"
+      ]
+    },
+    {
+      "id": "p02-067",
+      "nomor": 67,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Gangguan sistem antrean daring saat warga menumpuk",
+      "tingkat": "sedang",
+      "pertanyaan": "Sistem antrean daring di kantor layanan Anda mendadak tidak berfungsi. Warga mulai menumpuk dan beberapa di antaranya marah karena tidak tahu kapan akan dilayani. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menutup layanan sementara sampai sistem pulih, agar tidak ada data warga yang salah tercatat atau hilang",
+        "B": "Meminta warga bersabar menunggu sambil menghubungi bagian teknologi informasi",
+        "C": "Mendahulukan warga yang paling keras protes agar suasana segera tenang",
+        "D": "Menjelaskan gangguan kepada warga, memakai antrean manual sesuai urutan kedatangan, dan melapor ke bagian TI",
+        "E": "Segera melaporkan gangguan ke bagian teknologi informasi, lalu mengumumkan kepada warga perkiraan waktu sistem kembali normal"
+      },
+      "bobot": {
+        "A": 2,
+        "B": 3,
+        "C": 1,
+        "D": 5,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Gangguan sistem menguji kemampuan menjaga **kelangsungan layanan** dan **komunikasi kepada warga**. Petugas yang baik tidak menunggu sistem pulih, tetapi menyiapkan cara cadangan yang tetap adil, sambil memberi informasi yang jelas kepada warga. Dalam situasi ramai, kepastian dan keadilan urutan sama pentingnya dengan kecepatan.",
+        "opsi": {
+          "A": "Mencegah kesalahan data, tetapi semua warga kehilangan layanan. Menutup layanan seharusnya menjadi pilihan terakhir.",
+          "B": "Menangani penyebab gangguan, tetapi warga menunggu tanpa kepastian. Kemarahan warga justru berasal dari ketidakpastian ini.",
+          "C": "Tidak adil. Urutan layanan ditentukan oleh siapa yang paling keras, bukan siapa yang datang lebih dulu.",
+          "D": "Paling ideal. Warga mendapat penjelasan, layanan tetap berjalan dengan urutan yang adil, dan penyebab gangguan ikut ditangani.",
+          "E": "Komunikatif dan memberi kepastian waktu, tetapi layanan berhenti selama menunggu. Warga tetap harus menunggu tanpa dilayani."
+        },
+        "konsep": "**Pola bobot gangguan layanan:** 5 = komunikasi + cara cadangan yang adil + perbaikan penyebab; 4 = komunikasi + perbaikan; 3 = perbaikan saja; 2 = menghentikan layanan; 1 = cara yang tidak adil."
+      },
+      "tips": "Saat terjadi gangguan, cari opsi yang memuat **tiga hal**: menjelaskan kepada warga, tetap melayani dengan cara cadangan, dan melaporkan gangguan. Opsi yang mendahulukan warga paling keras hampir selalu bernilai terendah."
+    },
+    {
+      "id": "p02-068",
+      "nomor": 68,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Warga meminta layanan yang bukan wewenang unit",
+      "tingkat": "mudah",
+      "pertanyaan": "Seorang warga datang ke loket Anda untuk mengurus izin usaha, padahal izin tersebut ditangani unit lain di gedung yang sama. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menjelaskan unit yang berwenang dan menghubungi petugasnya agar warga langsung dilayani di sana",
+        "B": "Menyampaikan bahwa izin itu bukan tugas Anda dan meminta warga mencari informasi sendiri",
+        "C": "Menerima berkas warga dan berjanji meneruskannya ke unit terkait, walaupun Anda belum memahami prosedur izin usaha",
+        "D": "Memberi tahu nama unit yang menangani izin usaha beserta letak ruangannya, lalu mempersilakan warga menuju ke sana",
+        "E": "Meminta warga mengambil nomor antrean di meja informasi agar diarahkan petugas di sana"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 1,
+        "C": 2,
+        "D": 4,
+        "E": 3
+      },
+      "pembahasan": {
+        "inti": "Pelayanan publik yang baik tidak berhenti pada kalimat “bukan wewenang kami”. Petugas tetap bertanggung jawab memastikan warga sampai ke layanan yang tepat. Prinsip ini sering disebut **tidak ada pintu yang salah**: dari loket mana pun warga datang, ia harus diarahkan sampai terlayani.",
+        "opsi": {
+          "A": "Paling ideal. Warga mendapat penjelasan, arah yang jelas, dan langsung tersambung dengan petugas yang berwenang tanpa harus mengulang dari awal.",
+          "B": "Paling buruk. Warga ditolak tanpa bantuan, padahal unit yang berwenang ada di gedung yang sama.",
+          "C": "Niatnya membantu, tetapi berisiko. Berkas bisa tertahan atau salah proses karena Anda tidak memahami prosedurnya.",
+          "D": "Sudah mengarahkan dengan benar, tetapi kurang tuntas dibandingkan A karena warga tetap harus mencari dan mengantre sendiri.",
+          "E": "Warga diarahkan, tetapi harus melalui antrean tambahan. Prosesnya lebih panjang dari yang diperlukan."
+        },
+        "konsep": "**Pola bobot salah loket:** 5 = jelaskan, arahkan, dan hubungkan langsung; 4 = arahkan dengan jelas; 3 = arahkan lewat jalur tambahan; 2 = membantu tetapi berisiko; 1 = menolak tanpa solusi."
+      },
+      "tips": "Kata **menghubungkan** atau **mengantar langsung** biasanya menandai opsi bernilai tertinggi dalam soal salah loket. Opsi yang menerima berkas di luar wewenang terlihat ramah, tetapi nilainya rendah."
+    },
+    {
+      "id": "p02-069",
+      "nomor": 69,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Keluhan viral yang sebagian tuduhannya tidak akurat",
+      "tingkat": "sulit",
+      "pertanyaan": "Sebuah unggahan di media sosial mengeluhkan pelayanan di unit Anda dan menjadi viral. Sebagian keluhan memang benar, tetapi sebagian lain tidak sesuai fakta. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Membalas unggahan itu dari akun pribadi dengan menunjukkan bukti bahwa sebagian tuduhan yang beredar tidak sesuai fakta",
+        "B": "Mengabaikannya karena keluhan tersebut tidak sepenuhnya benar",
+        "C": "Menghubungi pengunggah secara pribadi untuk mendengar keluhannya langsung dan menawarkan penyelesaian atas masalah yang ia alami",
+        "D": "Melaporkan unggahan itu kepada atasan dan menunggu arahan sebelum melakukan apa pun",
+        "E": "Melapor kepada atasan, menelusuri fakta, lalu menyiapkan tanggapan resmi yang mengakui kekurangan dan meluruskan yang keliru"
+      },
+      "bobot": {
+        "A": 2,
+        "B": 1,
+        "C": 4,
+        "D": 3,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Keluhan publik adalah **masukan**, bukan serangan. Instansi yang baik mengakui kekurangan yang nyata, meluruskan informasi yang keliru dengan data, dan menyampaikannya melalui **saluran resmi**. Tanggapan pribadi yang emosional justru bisa memperburuk citra instansi. Sikap ini juga menunjukkan bahwa instansi terbuka terhadap kritik dan bertanggung jawab atas layanannya.",
+        "opsi": {
+          "A": "Berniat meluruskan, tetapi memakai akun pribadi dan bernada membantah. Cara ini berisiko memancing perdebatan dan tidak mewakili sikap resmi instansi.",
+          "B": "Paling buruk. Bagian keluhan yang benar ikut diabaikan, dan masalah pelayanan tidak pernah diperbaiki.",
+          "C": "Baik karena fokus pada penyelesaian masalah pengunggah. Namun, informasi keliru yang sudah tersebar tidak diluruskan melalui saluran resmi.",
+          "D": "Sesuai jalur, tetapi pasif. Menunggu tanpa ikut menelusuri fakta memperlambat tanggapan instansi.",
+          "E": "Paling ideal. Fakta ditelusuri, kekurangan diakui, informasi keliru diluruskan, dan semuanya disampaikan melalui saluran resmi."
+        },
+        "konsep": "**Prinsip menanggapi keluhan publik:** dengarkan, verifikasi fakta, akui yang benar, luruskan yang keliru, lalu perbaiki layanan. Tanggapan selalu melalui kanal resmi, bukan akun pribadi."
+      },
+      "tips": "Untuk soal keluhan di media sosial, opsi bernilai 5 biasanya **tidak defensif**: mengakui kekurangan sambil meluruskan fakta. Opsi yang membalas dari akun pribadi atau mengabaikan keluhan bernilai rendah."
+    },
+    {
+      "id": "p02-070",
+      "nomor": 70,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Warga dari desa jauh datang menjelang jam tutup layanan",
+      "tingkat": "sedang",
+      "pertanyaan": "Lima belas menit sebelum jam layanan berakhir, seorang warga dari desa yang jauh datang dengan berkas lengkap. Ia menempuh perjalanan tiga jam untuk sampai ke kantor Anda. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menolak dengan sopan karena layanan baru tidak diterima menjelang jam tutup",
+        "B": "Meminta warga datang kembali besok pagi dan menjanjikan nomor antrean pertama",
+        "C": "Memproses berkas warga tersebut hari itu karena berkasnya lengkap dan waktunya masih cukup",
+        "D": "Menerima berkas dengan tanda terima, lalu memprosesnya besok dan mengirimkan hasilnya kepada warga",
+        "E": "Menyarankan warga memakai layanan daring di lain waktu agar tidak perlu datang jauh"
+      },
+      "bobot": {
+        "A": 2,
+        "B": 3,
+        "C": 5,
+        "D": 4,
+        "E": 1
+      },
+      "pembahasan": {
+        "inti": "Selama jam layanan belum berakhir, warga yang datang **berhak dilayani**. Aspek pelayanan publik menilai kepekaan terhadap kondisi warga, termasuk jarak dan biaya yang sudah ia keluarkan. Petugas yang baik berusaha menuntaskan layanan selama masih memungkinkan. Standar jam layanan dibuat untuk melayani warga, bukan untuk menolak warga yang datang sebelum layanan ditutup.",
+        "opsi": {
+          "A": "Kaku. Jam layanan masih berjalan, dan warga sudah menempuh perjalanan jauh dengan berkas lengkap.",
+          "B": "Memberi kepastian, tetapi warga harus menempuh perjalanan tiga jam lagi. Bebannya tetap besar.",
+          "C": "Paling ideal. Warga masih datang di jam layanan, berkasnya lengkap, dan layanan bisa tuntas hari itu tanpa membuatnya kembali.",
+          "D": "Solutif karena warga tidak perlu datang lagi. Namun, layanan yang sebenarnya bisa diselesaikan hari itu justru ditunda.",
+          "E": "Paling buruk. Saran untuk masa depan tidak menyelesaikan kebutuhan warga yang sudah datang hari ini."
+        },
+        "konsep": "**Pola bobot:** 5 = tuntas hari itu; 4 = tuntas tanpa warga datang lagi; 3 = warga datang lagi dengan kepastian; 2 = menolak dengan alasan prosedur; 1 = tidak memberi solusi untuk kebutuhan saat ini."
+      },
+      "tips": "Perhatikan detail dalam soal, seperti **berkas lengkap** dan **jam layanan belum berakhir**. Detail ini sengaja diberikan untuk menunjukkan bahwa layanan masih bisa diselesaikan, sehingga opsi yang menunda bernilai lebih rendah."
+    },
+    {
+      "id": "p02-071",
+      "nomor": 71,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Pemohon memberi uang terima kasih setelah dilayani",
+      "tingkat": "sedang",
+      "pertanyaan": "Setelah urusannya selesai, seorang pemohon menyodorkan amplop berisi uang sebagai tanda terima kasih karena merasa dilayani dengan sangat baik. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menerimanya karena layanan sudah selesai dan pemberian itu tulus",
+        "B": "Menolak dengan sopan dan menjelaskan bahwa layanan ini gratis dan petugas dilarang menerima imbalan",
+        "C": "Menerima amplop tersebut lalu menyerahkan seluruh isinya ke kas kegiatan sosial kantor agar bermanfaat bagi banyak orang",
+        "D": "Menolak secara singkat lalu segera memanggil antrean berikutnya",
+        "E": "Menolak dengan sopan sambil mengucapkan terima kasih karena ia sudah menghargai pelayanan yang Anda berikan"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 5,
+        "C": 2,
+        "D": 3,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Pemberian kepada petugas yang berkaitan dengan jabatannya termasuk **gratifikasi**, meskipun diberikan setelah layanan selesai dan dengan niat tulus. Pelayanan publik juga harus bebas pungutan di luar ketentuan. Sikap terbaik adalah menolak dengan sopan sekaligus **mengedukasi** pemohon agar tidak mengulanginya kepada petugas lain.",
+        "opsi": {
+          "A": "Paling buruk. Menerima gratifikasi melanggar integritas, walaupun pemberinya tulus dan layanan sudah selesai.",
+          "B": "Paling ideal. Pemberian ditolak tanpa menyinggung, dan pemohon memahami alasannya sehingga kebiasaan ini tidak berulang.",
+          "C": "Niatnya baik, tetapi uang tetap diterima dari pemohon. Menyalurkannya ke kas kantor tidak mengubah sifatnya sebagai gratifikasi.",
+          "D": "Menolak sudah benar, tetapi tanpa penjelasan. Pemohon bisa tersinggung dan tidak paham mengapa pemberiannya ditolak.",
+          "E": "Menolak dengan sopan dan menghargai pemohon, tetapi tidak menjelaskan aturannya. Edukasinya kurang dibandingkan B."
+        },
+        "konsep": "**Pola bobot gratifikasi dalam pelayanan:** 5 = menolak + sopan + edukasi; 4 = menolak + sopan; 3 = menolak tanpa penjelasan; 2 = menerima untuk kepentingan bersama; 1 = menerima untuk diri sendiri."
+      },
+      "tips": "Untuk soal pemberian imbalan, opsi yang **menerima dalam bentuk apa pun** bernilai rendah. Di antara opsi yang menolak, nilai tertinggi diberikan kepada opsi yang sopan dan menjelaskan aturannya.",
+      "rujukan": [
+        "UU No. 31 Tahun 1999 jo. UU No. 20 Tahun 2001 Pasal 12B"
+      ]
+    },
+    {
+      "id": "p02-072",
+      "nomor": 72,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Warga lansia yang hanya fasih berbahasa daerah",
+      "tingkat": "sedang",
+      "pertanyaan": "Seorang warga lanjut usia datang ke loket Anda. Ia hanya fasih berbahasa daerah dan kesulitan memahami penjelasan dalam bahasa Indonesia tentang dokumen yang harus dilengkapi. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Meminta warga datang kembali bersama anggota keluarga yang lancar berbahasa Indonesia agar penjelasan dapat dipahami",
+        "B": "Tetap menjelaskan dalam bahasa Indonesia secara perlahan dan berulang-ulang",
+        "C": "Meminta bantuan rekan yang menguasai bahasa daerah tersebut dan memastikan warga memahami setiap persyaratan",
+        "D": "Menyiapkan dokumen berdasarkan dugaan Anda tentang kebutuhan warga tersebut",
+        "E": "Menjelaskan persyaratan dengan bantuan gambar dan contoh dokumen yang sudah jadi agar warga lebih mudah memahaminya"
+      },
+      "bobot": {
+        "A": 2,
+        "B": 3,
+        "C": 5,
+        "D": 1,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Pelayanan publik harus **mudah dipahami** oleh semua warga. Hambatan bahasa bukan alasan untuk menunda layanan. Petugas yang baik mencari cara komunikasi yang paling efektif, misalnya dengan melibatkan rekan yang menguasai bahasa warga, sambil memastikan warga benar-benar memahami informasinya. Pemohon yang mendapat penjelasan juga akan memahami bahwa pelayanan yang baik adalah haknya, bukan kebaikan yang perlu dibalas.",
+        "opsi": {
+          "A": "Warga harus datang lagi hanya karena kendala bahasa. Beban dipindahkan kepada warga.",
+          "B": "Usaha tetap ada, tetapi caranya kurang efektif. Mengulang dalam bahasa yang tidak dipahami belum tentu membuat warga mengerti.",
+          "C": "Paling ideal. Hambatan bahasa diatasi dengan sumber daya yang ada, dan pemahaman warga dipastikan untuk setiap persyaratan.",
+          "D": "Paling buruk. Dokumen yang disiapkan berdasarkan dugaan berisiko salah, dan warga tidak dilibatkan dalam urusannya sendiri.",
+          "E": "Kreatif dan membantu pemahaman, tetapi tanpa komunikasi lisan yang dipahami warga, rincian penting masih bisa terlewat."
+        },
+        "konsep": "**Prinsip komunikasi layanan:** sesuaikan cara menjelaskan dengan kemampuan warga, lalu **pastikan pemahaman**. Melibatkan rekan atau sumber daya lain adalah bentuk kerja sama, bukan melempar tugas."
+      },
+      "tips": "Dalam soal hambatan komunikasi, opsi bernilai 5 biasanya **menghilangkan hambatannya** (bahasa, alat bantu, pendamping) dan **memastikan warga paham**. Opsi yang menebak kebutuhan warga hampir selalu bernilai 1."
+    },
+    {
+      "id": "p02-073",
+      "nomor": 73,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Menindaklanjuti hasil survei kepuasan masyarakat yang rendah",
+      "tingkat": "sulit",
+      "pertanyaan": "Hasil survei kepuasan masyarakat di unit Anda tergolong rendah. Pimpinan meminta Anda menyusun usulan perbaikan. Langkah Anda adalah ....",
+      "opsi": {
+        "A": "Mengusulkan agar survei hanya diberikan kepada warga yang tampak puas setelah dilayani",
+        "B": "Mengusulkan penambahan jumlah petugas loket, karena antrean panjang adalah keluhan yang paling sering terdengar di unit Anda",
+        "C": "Menyampaikan bahwa hasil survei wajar karena masyarakat cenderung mengeluh",
+        "D": "Mengusulkan pelatihan keramahan dan komunikasi bagi seluruh petugas pelayanan, karena sikap petugas paling mudah dikeluhkan warga",
+        "E": "Menganalisis hasil survei dan keluhan untuk menemukan penyebab utama, lalu mengusulkan perbaikan terukur"
+      },
+      "bobot": {
+        "A": 1,
+        "B": 3,
+        "C": 2,
+        "D": 4,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Survei kepuasan adalah **alat evaluasi**, bukan sekadar angka yang harus dinaikkan. Perbaikan yang efektif dimulai dari **analisis penyebab**, berlanjut ke usulan yang terukur, dan diakhiri dengan pemantauan hasil. Tanpa analisis, usulan bisa salah sasaran dan memboroskan sumber daya. Untuk warga lanjut usia, petugas juga perlu bersabar dan memberi waktu lebih agar warga tidak merasa terburu-buru.",
+        "opsi": {
+          "A": "Paling buruk karena memanipulasi survei. Angka bisa naik, tetapi masalah pelayanan tetap ada dan integritas data rusak.",
+          "B": "Bisa tepat jika antrean memang penyebab utamanya. Namun, usulan ini dibuat tanpa analisis sehingga mungkin salah sasaran.",
+          "C": "Defensif dan menyangkal masalah. Tidak ada perbaikan yang dihasilkan dari sikap ini.",
+          "D": "Konkret dan sering relevan, tetapi masih berupa dugaan. Tanpa analisis survei, belum jelas apakah keramahan adalah masalah utama.",
+          "E": "Paling ideal. Usulan berbasis data, menyasar penyebab utama, dapat diukur, dan dipantau agar perbaikannya terbukti."
+        },
+        "konsep": "**Siklus perbaikan layanan:** kumpulkan data → analisis penyebab → rencanakan perbaikan terukur → laksanakan → pantau dan evaluasi. Siklus ini sering disebut PDCA (*plan-do-check-act*)."
+      },
+      "tips": "Dalam soal evaluasi kinerja, opsi bernilai 5 hampir selalu dimulai dengan **menganalisis penyebab**. Opsi yang langsung memberi solusi tanpa analisis bernilai menengah, dan opsi yang memanipulasi data bernilai terendah."
+    },
+    {
+      "id": "p02-074",
+      "nomor": 74,
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "topik": "Permintaan data mendesak dari unit lain tanpa surat resmi",
+      "tingkat": "sedang",
+      "pertanyaan": "Rekan dari unit lain menghubungi Anda dan meminta data rekap kegiatan untuk bahan rapat pimpinan satu jam lagi. Menurut prosedur, permintaan data antarunit harus disertai surat resmi, tetapi surat itu belum ada. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Langsung mengirim seluruh data yang diminta karena masih satu instansi",
+        "B": "Menolak dengan sopan sampai surat resmi diterima, karena prosedur permintaan data antarunit sudah ditetapkan dengan jelas",
+        "C": "Mengirim data dengan syarat unit tersebut membantu pekerjaan Anda di lain waktu",
+        "D": "Meminta persetujuan cepat dari atasan, mengirim data sesuai izin, dan meminta surat resminya menyusul",
+        "E": "Mengirim data yang tidak bersifat rahasia terlebih dahulu dan meminta rekan tersebut menyusulkan surat resminya"
+      },
+      "bobot": {
+        "A": 2,
+        "B": 3,
+        "C": 1,
+        "D": 5,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Aspek jejaring kerja menilai kemampuan **bekerja sama lintas unit** tanpa mengabaikan aturan. Dalam keadaan mendesak, kerja sama tetap bisa dilakukan dengan cara yang sah, yaitu meminta persetujuan pihak berwenang dan melengkapi administrasinya kemudian. Pemantauan diperlukan agar instansi tahu apakah perbaikan benar-benar menaikkan kepuasan warga.",
+        "opsi": {
+          "A": "Kooperatif, tetapi mengabaikan prosedur dan berisiko membocorkan data yang seharusnya dibatasi.",
+          "B": "Taat prosedur, tetapi kaku. Kebutuhan rapat pimpinan tidak terbantu, dan hubungan kerja antarunit bisa terganggu.",
+          "C": "Paling buruk karena kerja sama dijadikan alat tawar-menawar. Ini bertentangan dengan semangat saling mendukung dalam organisasi.",
+          "D": "Paling ideal. Kebutuhan mendesak terpenuhi, keputusan diambil oleh pihak berwenang, dan administrasi tetap dilengkapi.",
+          "E": "Cerdas karena membatasi risiko kebocoran data. Namun, Anda memutuskan sendiri tanpa persetujuan atasan, dan data penting mungkin tidak terkirim."
+        },
+        "konsep": "**Pola bobot kerja sama mendesak:** 5 = membantu + izin pihak berwenang + administrasi menyusul; 4 = membantu dengan membatasi risiko; 3 = taat prosedur tetapi tidak membantu; 2 = membantu dengan mengabaikan aturan; 1 = membantu dengan pamrih."
+      },
+      "tips": "Ketika kerja sama berbenturan dengan prosedur, cari opsi yang **memenuhi keduanya**: kebutuhan tetap terbantu dan aturan tetap dihormati melalui izin atasan. Opsi yang meminta imbalan selalu bernilai terendah."
     }
   ]
 }
