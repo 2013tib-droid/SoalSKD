@@ -84,5 +84,5 @@ dulu sebelum membuat soal atau ebook.
 2. ~~Ubah `bank/premium-01.md` menjadi data JSON.~~ Selesai: skema di
    `schema/paket.schema.json` (lihat `docs/skema-soal.md`), data di `bank/p01.json`.
 3. ~~Validator~~ Selesai: `python3 tools/validasi.py`.
-4. Buat skrip pembuat PDF, lalu contoh ebook dari Paket 1.
+4. ~~Skrip pembuat PDF~~ Selesai: `node ebook/buat-ebook.mjs bank/p01.json` (lihat `ebook/README.md`).
 5. Buat Paket 2 dan seterusnya (110 soal per paket), lalu review tiap paket.

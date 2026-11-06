@@ -1,0 +1,13 @@
+{
+  "name": "soalskd-ebook",
+  "private": true,
+  "type": "module",
+  "description": "Pembuat ebook PDF dari bank/*.json",
+  "scripts": {
+    "ebook": "node buat-ebook.mjs"
+  },
+  "dependencies": {
+    "marked": "18.1.3",
+    "pagedjs": "0.4.3"
+  }
+}
