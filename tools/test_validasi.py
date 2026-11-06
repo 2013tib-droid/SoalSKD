@@ -37,6 +37,7 @@ jalan("galat skema", lambda p: (ganti_topik(p), s(p,14).update(kunci="C")), 1, "
 jalan("bobot TKP ganda", lambda p: (ganti_topik(p), s(p,14)["bobot"].update(A=5)), 1, "bobot TKP harus")
 jalan("opsi tak dijelaskan", lambda p: (ganti_topik(p), s(p,1)["pembahasan"]["opsi"].pop("A")), 1, "belum menjelaskan opsi A")
 jalan("pembahasan pendek", lambda p: (ganti_topik(p), s(p,1)["pembahasan"].update(inti="Pendek.", opsi={h:"x" for h in "ABCE"}), s(p,1)["pembahasan"].pop("konsep")), 1, "minimal 150")
+jalan("opsi beda simbol tidak kembar", lambda p: (ganti_topik(p), s(p,7)["opsi"].update(A="x > y", B="x < y")), 0, "0 galat")
 jalan("opsi kembar", lambda p: (ganti_topik(p), s(p,1)["opsi"].update(B=s(p,1)["opsi"]["A"])), 1, "teks opsi yang sama")
 jalan("nomor loncat", lambda p: (ganti_topik(p), s(p,20).update(nomor=21)), 1, "berurutan")
 jalan("urutan subtes", lambda p: (ganti_topik(p), p["soal"].insert(0, p["soal"].pop(13)), [q.update(nomor=i+1) for i,q in enumerate(p["soal"])]), 1, "urutan soal")

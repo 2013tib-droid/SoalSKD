@@ -70,7 +70,8 @@ def cek_soal(s, lok, lap):
     if n < MIN_KATA_PEMBAHASAN:
         lap.g(lok, f"pembahasan {n} kata, minimal {MIN_KATA_PEMBAHASAN}")
 
-    ganda = [t for t, c in Counter(normal(v) for v in s["opsi"].values()).items() if c > 1]
+    # Spasi dan huruf besar diabaikan, tetapi simbol tetap dihitung (opsi "x > y" dan "x < y" berbeda).
+    ganda = [t for t, c in Counter(" ".join(v.lower().split()) for v in s["opsi"].values()).items() if c > 1]
     if ganda:
         lap.g(lok, "ada teks opsi yang sama persis")
 
