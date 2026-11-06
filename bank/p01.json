@@ -6,7 +6,8 @@
     "versi": 1,
     "dibuat": "2026-11-06",
     "status": "draf",
-    "catatan": "Dikonversi dari bank/premium-01.md (20 soal contoh, bukan paket penuh 110 soal)."
+    "catatan": "Dikonversi dari bank/premium-01.md (20 soal contoh, bukan paket penuh 110 soal).",
+    "diperbarui": "2026-11-06"
   },
   "soal": [
     {
@@ -51,9 +52,9 @@
       "pertanyaan": "Sebelum amandemen, Pasal 1 ayat (2) UUD 1945 berbunyi \"Kedaulatan adalah di tangan rakyat, dan dilakukan sepenuhnya oleh Majelis Permusyawaratan Rakyat\". Setelah Perubahan Ketiga, ayat tersebut berbunyi \"Kedaulatan berada di tangan rakyat dan dilaksanakan menurut Undang-Undang Dasar\". Konsekuensi ketatanegaraan yang paling tepat dari perubahan tersebut adalah ....",
       "opsi": {
         "A": "MPR tetap menjadi lembaga tertinggi negara, tetapi sebagian kewenangannya dialihkan kepada DPR",
-        "B": "Kedaulatan rakyat dijalankan oleh lembaga-lembaga negara sesuai kewenangan yang diberikan UUD, sehingga tidak ada lagi lembaga tertinggi negara",
+        "B": "Kedaulatan rakyat dijalankan lembaga-lembaga negara sesuai kewenangan dari UUD, tanpa lembaga tertinggi negara",
         "C": "Kedaulatan rakyat sepenuhnya beralih kepada DPR sebagai lembaga perwakilan rakyat",
-        "D": "Presiden tetap berkedudukan sebagai mandataris MPR, tetapi dipilih langsung oleh rakyat",
+        "D": "Presiden tetap berkedudukan sebagai mandataris MPR, tetapi kini dipilih secara langsung oleh rakyat melalui pemilu",
         "E": "Kedaulatan rakyat hanya dapat diwujudkan melalui pemilihan umum lima tahunan"
       },
       "kunci": "B",
@@ -147,8 +148,8 @@
       "opsi": {
         "A": "Ditetapkan melalui peraturan presiden demi menjaga stabilitas pembangunan nasional",
         "B": "Disetujui oleh mayoritas masyarakat melalui jajak pendapat yang terbuka",
-        "C": "Ditetapkan dengan undang-undang semata-mata untuk menjamin hak dan kebebasan orang lain serta memenuhi tuntutan yang adil sesuai pertimbangan moral, nilai agama, keamanan, dan ketertiban umum",
-        "D": "Ditetapkan dengan undang-undang dengan tujuan menjaga kewibawaan dan efektivitas pemerintahan",
+        "C": "Ditetapkan dengan undang-undang untuk menjamin hak dan kebebasan orang lain serta memenuhi tuntutan yang adil",
+        "D": "Ditetapkan dengan undang-undang dengan tujuan menjaga kewibawaan pemerintah dan efektivitas pelaksanaan program pembangunan",
         "E": "Ditetapkan dengan peraturan daerah sesuai kearifan lokal di masing-masing daerah"
       },
       "kunci": "C",
@@ -403,8 +404,8 @@
       "opsi": {
         "A": "Meminta warga tersebut menunggu di ruang tunggu hingga antrean sepi, lalu membantunya",
         "B": "Menyampaikan bahwa anjungan mandiri memang dirancang untuk diisi sendiri sesuai prosedur",
-        "C": "Membantu langsung pengisian formulir sambil menjelaskan langkahnya, dan meminta rekan membuka loket tambahan agar antrean tetap terlayani",
-        "D": "Menjelaskan langkah pengisian secara lisan dan mempersilakan warga tersebut mencobanya kembali",
+        "C": "Membantu mengisi formulir sambil menjelaskan langkahnya, dan meminta rekan membuka loket tambahan",
+        "D": "Menjelaskan langkah pengisian secara lisan dengan sabar, lalu mempersilakan warga tersebut mencobanya kembali sendiri",
         "E": "Menyarankan warga tersebut meminta bantuan anggota keluarga untuk mengisi formulir dari rumah"
       },
       "bobot": {
@@ -441,9 +442,9 @@
       "opsi": {
         "A": "Mengirimkan surat resmi kepada kepala bidang tersebut agar data dikirim tepat waktu",
         "B": "Melaporkan keterlambatan tersebut kepada atasan agar beliau yang menegur bidang tersebut",
-        "C": "Menggunakan data periode sebelumnya sebagai perkiraan agar laporan tetap selesai tepat waktu",
+        "C": "Menggunakan data periode sebelumnya sebagai perkiraan sementara agar laporan kinerja tetap selesai sebelum tenggat",
         "D": "Mengirimkan pengingat secara berkala kepada staf yang menangani data di bidang tersebut",
-        "E": "Menemui penanggung jawab data di bidang tersebut untuk mengetahui kendalanya, lalu menyepakati jadwal dan format pengiriman yang realistis bagi kedua pihak"
+        "E": "Menemui penanggung jawab data untuk mengetahui kendalanya, lalu menyepakati jadwal kirim yang realistis"
       },
       "bobot": {
         "A": 3,
@@ -512,10 +513,10 @@
       "tingkat": "sedang",
       "pertanyaan": "Instansi Anda mulai menerapkan sistem persuratan elektronik untuk menggantikan surat-menyurat manual. Anda belum mahir menggunakannya, dan beberapa rekan senior meminta Anda tetap memakai cara manual karena dianggap lebih praktis. Sikap Anda adalah ....",
       "opsi": {
-        "A": "Mengikuti permintaan rekan senior untuk tetap memakai cara manual demi menjaga hubungan baik",
+        "A": "Mengikuti permintaan rekan senior untuk tetap memakai cara manual demi menjaga hubungan baik dengan mereka",
         "B": "Menggunakan sistem baru hanya ketika diminta atasan, selebihnya tetap manual",
         "C": "Menggunakan cara manual dan elektronik sekaligus sampai semua rekan siap beralih",
-        "D": "Mempelajari sistem baru melalui panduan dan pelatihan, menggunakannya dalam pekerjaan, lalu membantu rekan senior yang mengalami kesulitan",
+        "D": "Mempelajari sistem baru, memakainya dalam pekerjaan, lalu membantu rekan senior yang kesulitan",
         "E": "Mempelajari sistem baru dan menggunakannya untuk pekerjaan Anda sendiri"
       },
       "bobot": {
@@ -547,8 +548,8 @@
       "tingkat": "sedang",
       "pertanyaan": "Anda sedang menyelesaikan laporan yang harus diserahkan besok pagi. Menjelang jam pulang, atasan memberikan tugas mendadak yang juga harus selesai besok pagi. Sikap Anda adalah ....",
       "opsi": {
-        "A": "Menyampaikan kepada atasan kondisi pekerjaan yang sedang berjalan, meminta arahan prioritas, lalu menyelesaikan keduanya sesuai arahan tersebut, termasuk bekerja lembur bila diperlukan",
-        "B": "Mengerjakan tugas dari atasan terlebih dahulu, lalu meminta perpanjangan tenggat laporan kepada pihak penerima laporan",
+        "A": "Memberi tahu atasan pekerjaan yang sedang berjalan, meminta arahan prioritas, lalu menyelesaikan keduanya, termasuk lembur",
+        "B": "Mengerjakan tugas dari atasan terlebih dahulu, lalu meminta perpanjangan tenggat laporan kepada pihak yang akan menerima laporan",
         "C": "Menerima tugas tersebut dan lembur untuk menyelesaikan keduanya tanpa perlu memberi tahu atasan",
         "D": "Meminta rekan kerja mengerjakan tugas mendadak tersebut karena Anda sedang sibuk",
         "E": "Menolak tugas tersebut karena laporan Anda sudah lebih dulu dijadwalkan"
@@ -584,9 +585,9 @@
       "opsi": {
         "A": "Menyampaikan bantahan di grup dengan argumen bahwa nilai-nilai Pancasila sejalan dengan ajaran agama",
         "B": "Tidak menanggapi karena unggahan tersebut merupakan bagian dari kebebasan berpendapat setiap orang",
-        "C": "Mengingatkan rekan tersebut secara pribadi bahwa konten itu bertentangan dengan Pancasila dan kewajiban ASN, lalu melaporkannya kepada atasan atau pejabat yang berwenang sesuai mekanisme instansi",
+        "C": "Mengingatkan rekan itu secara pribadi bahwa konten tersebut bertentangan dengan Pancasila, lalu melaporkannya kepada atasan",
         "D": "Keluar dari grup percakapan tersebut agar tidak terseret dalam persoalan",
-        "E": "Melaporkan konten tersebut kepada atasan atau pejabat yang berwenang tanpa perlu membicarakannya dengan rekan tersebut"
+        "E": "Melaporkan konten tersebut kepada atasan atau pejabat yang berwenang tanpa perlu membicarakannya terlebih dahulu dengan rekan tersebut"
       },
       "bobot": {
         "A": 3,
