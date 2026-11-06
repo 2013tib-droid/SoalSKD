@@ -88,5 +88,6 @@ Pemilik menyerahkan keputusan ke model ("gas aja"):
 5. Buat Paket 2 dan seterusnya (110 soal per paket), lalu review tiap paket.
    - Paket 2 (`bank/p02.json`, 110 soal) selesai 6 November 2026, status draf. Berikutnya p03 dan p04:
      alur di `docs/cara-membuat-paket.md`, prompt siap pakai di `prompts/paket-p03.md` dan `prompts/paket-p04.md`.
+   - Paket 3 (`bank/p03.json`, 110 soal, seed 303) selesai 6 November 2026, status draf. Validator 0 galat/0 peringatan, PDF 145 halaman.
    - Paket 4 (`bank/p04.json`, 110 soal, seed 404) selesai 6 November 2026, status draf. Validator 0 galat
      dan 0 peringatan, PDF 144 halaman. Cek fakta sebelum terbit: no. 6–12, 13, 17–21, 27, 30, 68, 84–85, 94, 106, 109–110 (lihat `rujukan`).

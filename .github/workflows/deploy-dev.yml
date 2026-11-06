@@ -1,0 +1,143 @@
+# Jalur DEVELOPMENT: build penguji ke GitHub Pages.
+#
+#   https://2013tib-droid.github.io/SoalSKD/development/<nama>/
+#
+# Build ini STATIS (STATIK=1, lihat web/src/config/build.ts): tidak ada server,
+# jadi kunci, bobot TKP, dan pembahasan ikut terkirim ke browser. Halaman ini
+# PUBLIK dan diberi noindex. Jangan sebarkan URL-nya ke pembeli. Situs pembeli
+# nanti di domain sendiri dengan build biasa (skor dihitung di server).
+#
+# Jalan otomatis setiap push ke branch utama (nama: main), atau manual lewat
+#   tab Actions → "Deploy development" → Run workflow
+#   - ref  : branch/commit yang di-build
+#   - nama : subfolder di /development/ (kosong = dari ref)
+#   - hapus: hapus subfolder itu dari Pages
+#
+# Sekali saja di GitHub: Settings → Pages → Source "Deploy from a branch",
+# branch `gh-pages`, folder `/ (root)`. Branch itu dibuat otomatis oleh workflow ini.
+name: Deploy development
+
+on:
+  push:
+    branches: [claude/skd-stan-resource-analysis-c10e5n]
+    paths: [web/**, bank/**, config/**, .github/workflows/deploy-dev.yml]
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Branch/commit yang di-build'
+        required: false
+        default: claude/skd-stan-resource-analysis-c10e5n
+      nama:
+        description: 'Subfolder di /development/ (huruf kecil, angka, tanda hubung). Kosong = dari ref'
+        required: false
+        default: ''
+      hapus:
+        description: 'Hapus subfolder ini dari Pages (tanpa build)'
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: pages-branch
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  PAGES_BRANCH: gh-pages
+  BRANCH_UTAMA: claude/skd-stan-resource-analysis-c10e5n
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tentukan ref dan nama subfolder
+        id: nama
+        env:
+          NAMA: ${{ inputs.nama }}
+          REF: ${{ inputs.ref || github.ref_name }}
+        run: |
+          n="$NAMA"
+          if [ -z "$n" ]; then
+            if [ "$REF" = "$BRANCH_UTAMA" ]; then n=main; else n="$REF"; fi
+          fi
+          n="$(printf '%s' "$n" | sed 's#^claude/##' | tr 'A-Z_/. ' 'a-z----' | tr -cd 'a-z0-9-' | sed 's/^-*//; s/-*$//' | cut -c1-40)"
+          if [ -z "$n" ]; then echo "::error::Nama subfolder kosong."; exit 1; fi
+          echo "nama=$n" >> "$GITHUB_OUTPUT"
+          echo "ref=$REF" >> "$GITHUB_OUTPUT"
+          echo "Subfolder: development/$n/ dari $REF"
+
+      - uses: actions/checkout@v4
+        if: ${{ !inputs.hapus }}
+        with:
+          ref: ${{ steps.nama.outputs.ref }}
+          path: src-repo
+
+      - uses: actions/setup-node@v4
+        if: ${{ !inputs.hapus }}
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: src-repo/web/package-lock.json
+
+      - name: Build statis
+        if: ${{ !inputs.hapus }}
+        working-directory: src-repo/web
+        env:
+          STATIK: '1'
+          BASE_PATH: /SoalSKD/development/${{ steps.nama.outputs.nama }}
+          NEXT_TELEMETRY_DISABLED: '1'
+        run: |
+          npm ci
+          npm run build
+          test -f out/index.html || { echo "::error::out/index.html tidak ada."; exit 1; }
+          grep -q "$BASE_PATH/_next/" out/index.html || { echo "::error::basePath build salah."; exit 1; }
+          grep -q 'name="robots" content="noindex, nofollow"' out/index.html || { echo "::error::noindex tidak terpasang."; exit 1; }
+
+      - name: Siapkan branch Pages
+        run: |
+          git init -q pages && cd pages
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          if git fetch -q --depth 1 origin "$PAGES_BRANCH"; then
+            git checkout -q -B "$PAGES_BRANCH" FETCH_HEAD
+          else
+            git checkout -q --orphan "$PAGES_BRANCH"
+          fi
+
+      - name: Salin ke development/<nama>/ dan push
+        working-directory: pages
+        env:
+          NAMA: ${{ steps.nama.outputs.nama }}
+          HAPUS: ${{ inputs.hapus }}
+          REF: ${{ steps.nama.outputs.ref }}
+        run: |
+          target="development/$NAMA"
+          rm -rf "$target"
+          if [ "$HAPUS" != "true" ]; then
+            mkdir -p "$target"
+            cp -R ../src-repo/web/out/. "$target/"
+          fi
+          # Halaman daftar build di /development/ (tanpa tautan dari situs mana pun).
+          mkdir -p development
+          {
+            echo '<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>SoalSKD development</title>'
+            echo '<style>body{font-family:system-ui,sans-serif;max-width:480px;margin:40px auto;padding:0 16px;color:#1e293b}a{display:block;padding:14px 16px;margin:8px 0;border:1px solid #cbd5e1;border-radius:10px;color:#1e40af;text-decoration:none;font-weight:600}</style></head><body>'
+            echo '<h1>SoalSKD development</h1><p>Build penguji, bukan situs pembeli. Kunci jawaban ikut terkirim ke browser.</p>'
+            for d in development/*/; do
+              n="$(basename "$d")"
+              [ -f "$d/index.html" ] && echo "<a href=\"./$n/\">$n</a>"
+            done
+            echo '</body></html>'
+          } > development/index.html
+          [ -f .nojekyll ] || touch .nojekyll
+          # Akar situs tidak menampilkan apa pun selain arahan ke daftar development.
+          [ -f index.html ] || echo '<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><meta http-equiv="refresh" content="0; url=./development/">' > index.html
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then echo "Tak ada perubahan."; exit 0; fi
+          if [ "$HAPUS" = "true" ]; then msg="Development: hapus $NAMA"; else msg="Development: $NAMA dari $REF ($(git -C ../src-repo rev-parse --short HEAD))"; fi
+          git commit -q -m "$msg"
+          for i in 1 2 3 4; do git push -q origin "HEAD:$PAGES_BRANCH" && break; sleep $((2**i)); git pull --rebase -q origin "$PAGES_BRANCH"; done
+          echo "### https://2013tib-droid.github.io/SoalSKD/$target/" >> "$GITHUB_STEP_SUMMARY"
