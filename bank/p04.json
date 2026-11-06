@@ -97,56 +97,62 @@
       "nomor": 4,
       "kategori": "TWK",
       "subtopik": "Pancasila",
-      "topik": "Mengenali pengamalan sila ketiga di antara butir sila lain",
+      "topik": "Isi alinea keempat Pembukaan UUD 1945",
       "tingkat": "sedang",
-      "pertanyaan": "Perhatikan beberapa tindakan pegawai berikut. Tindakan yang paling mencerminkan pengamalan sila ketiga Pancasila adalah ....",
+      "pertanyaan": "Rumusan dasar negara Pancasila tercantum dalam Pembukaan UUD NRI 1945. Isi pokok alinea yang memuat rumusan tersebut adalah ....",
       "opsi": {
-        "A": "Memberi kesempatan kepada rekan untuk menjalankan ibadah sesuai agamanya pada jam istirahat",
-        "B": "Melayani semua warga dengan sopan tanpa membedakan suku, agama, atau status sosialnya",
-        "C": "Bersedia ditempatkan di daerah perbatasan demi pemerataan layanan negara",
-        "D": "Mendengarkan semua usulan anggota tim sebelum keputusan bersama diambil",
-        "E": "Menghargai hasil karya rekan dengan mencantumkan namanya dalam laporan yang ia susun"
+        "A": "Kemerdekaan adalah hak segala bangsa, sehingga penjajahan harus dihapuskan",
+        "B": "Perjuangan pergerakan kemerdekaan telah sampai di depan pintu gerbang kemerdekaan",
+        "C": "Tujuan negara, bentuk negara republik yang berkedaulatan rakyat, dan dasar negara",
+        "D": "Pernyataan kemerdekaan atas berkat rahmat Allah dan keinginan luhur bangsa Indonesia",
+        "E": "Ketentuan bahwa Pembukaan tidak dapat diubah oleh MPR dalam perubahan undang-undang dasar"
       },
       "kunci": "C",
       "pembahasan": {
-        "inti": "Sila ketiga, **Persatuan Indonesia**, menekankan cinta tanah air, **rela berkorban untuk kepentingan bangsa dan negara**, serta menempatkan persatuan dan kepentingan bangsa di atas kepentingan pribadi atau golongan. Bersedia bertugas di daerah perbatasan, walaupun jauh dari keluarga, adalah bentuk mengutamakan kepentingan bangsa. Layanan negara pun hadir merata sampai ke wilayah terluar.",
+        "inti": "Rumusan Pancasila tercantum dalam **alinea keempat** Pembukaan UUD NRI 1945. Alinea ini memuat empat pokok: **tujuan negara** (melindungi segenap bangsa, memajukan kesejahteraan umum, mencerdaskan kehidupan bangsa, dan ikut melaksanakan ketertiban dunia), **ketentuan adanya undang-undang dasar**, **bentuk negara republik yang berkedaulatan rakyat**, dan **dasar negara Pancasila**. Karena memuat hal-hal mendasar itu, alinea keempat sering disebut inti Pembukaan.",
         "opsi": {
-          "A": "Memberi kesempatan beribadah dan menghormati agama orang lain adalah pengamalan **sila pertama**.",
-          "B": "Memperlakukan semua orang setara tanpa membedakan suku, agama, dan status adalah pengamalan **sila kedua** (persamaan derajat). Opsi ini menjebak karena menyebut keberagaman yang juga dekat dengan persatuan.",
-          "D": "Mendengarkan semua pendapat sebelum memutuskan bersama adalah pengamalan **sila keempat** (musyawarah).",
-          "E": "Menghargai hasil karya orang lain termasuk butir pengamalan **sila kelima**."
+          "A": "Ini isi **alinea pertama**, yaitu pernyataan bahwa kemerdekaan adalah hak segala bangsa dan penjajahan harus dihapuskan.",
+          "B": "Ini isi **alinea kedua**, tentang perjuangan pergerakan kemerdekaan yang telah mengantarkan rakyat ke depan pintu gerbang kemerdekaan.",
+          "D": "Jebakan terkuat. Ini isi **alinea ketiga**, yaitu pernyataan kemerdekaan atas berkat rahmat Allah Yang Maha Kuasa. Alinea ini tidak memuat rumusan dasar negara.",
+          "E": "Pembukaan tidak memuat ketentuan tentang perubahan UUD. Kesepakatan untuk tidak mengubah Pembukaan dibuat MPR saat amandemen, bukan isi Pembukaan itu sendiri."
         },
-        "konsep": "**Kata kunci tiap sila:** sila 1 → ibadah, toleransi beragama; sila 2 → persamaan derajat, tenggang rasa, membela kebenaran; sila 3 → cinta tanah air, rela berkorban, persatuan, kepentingan bangsa; sila 4 → musyawarah, tidak memaksakan kehendak; sila 5 → adil, kerja keras, menghargai karya orang lain, tidak boros."
+        "konsep": "**Ringkasan empat alinea:** (1) kemerdekaan hak segala bangsa; (2) perjuangan pergerakan kemerdekaan; (3) pernyataan kemerdekaan atas berkat rahmat Allah; (4) tujuan negara, UUD, bentuk negara, dan dasar negara Pancasila."
       },
-      "tips": "Jika semua opsi tampak baik, cocokkan **kata kunci setiap opsi** dengan kata kunci sila yang ditanyakan. Hafalkan dua atau tiga kata kunci khas untuk setiap sila."
+      "tips": "Hafalkan **satu kata kunci per alinea**: hak, perjuangan, rahmat, tujuan. Jika soal menyebut tujuan negara atau rumusan Pancasila, jawabannya alinea keempat.",
+      "rujukan": [
+        "Pembukaan UUD NRI 1945 alinea pertama sampai keempat"
+      ]
     },
     {
       "id": "p04-005",
       "nomor": 5,
       "kategori": "TWK",
       "subtopik": "Pancasila",
-      "topik": "Susunan sila Pancasila yang hierarkis piramidal",
+      "topik": "Pembeda Pancasila dengan liberalisme dan komunisme",
       "tingkat": "sulit",
-      "pertanyaan": "Sila-sila Pancasila disebut memiliki susunan yang **hierarkis piramidal**. Pernyataan yang sesuai dengan sifat tersebut adalah ....",
+      "pertanyaan": "Pernyataan yang paling tepat menggambarkan perbedaan Pancasila dengan ideologi liberalisme dan komunisme adalah ....",
       "opsi": {
-        "A": "Setiap sila dapat ditafsirkan dan diamalkan terpisah sesuai kebutuhan daerah",
-        "B": "Sila pertama menjadi dasar yang menjiwai sila-sila berikutnya, dan setiap sila dijiwai sila di atasnya",
-        "C": "Kedudukan kelima sila sejajar, sehingga tidak ada sila yang mendasari sila lain",
-        "D": "Sila pertama dapat dipisahkan dari sila-sila lain karena berkaitan dengan keyakinan pribadi setiap warga negara",
-        "E": "Urutan sila boleh dipertukarkan selama rumusan kalimat setiap sila tetap sama"
+        "A": "Pancasila menempatkan kebebasan individu di atas kepentingan masyarakat dan negara",
+        "B": "Pancasila mengakui hak individu sekaligus fungsi sosialnya, serta menjadikan Ketuhanan sebagai dasar kehidupan bernegara",
+        "C": "Pancasila menyerahkan penguasaan seluruh alat produksi kepada negara demi pemerataan",
+        "D": "Pancasila memisahkan agama sepenuhnya dari urusan negara agar negara bersikap netral terhadap semua keyakinan",
+        "E": "Pancasila menempatkan kepentingan negara secara mutlak di atas hak setiap warga"
       },
       "kunci": "B",
       "pembahasan": {
-        "inti": "Hierarkis piramidal berarti sila-sila Pancasila **tersusun bertingkat dan tidak dapat dibolak-balik**. Sila pertama menjadi **basis** yang menjiwai sila kedua sampai kelima. Sila kedua dijiwai sila pertama dan menjiwai sila ketiga sampai kelima, begitu seterusnya. Sila kelima dijiwai oleh keempat sila sebelumnya dan menjadi tujuan dari keseluruhan sila. Karena itu, urutan sila memiliki makna. Kelima sila juga harus dipahami sebagai satu kesatuan yang utuh.",
+        "inti": "Pancasila mengambil jalan **keseimbangan**. Hak individu diakui, tetapi pemakaiannya memperhatikan kepentingan bersama, misalnya hak milik yang berfungsi sosial. Pancasila juga menempatkan **Ketuhanan Yang Maha Esa** sebagai sila pertama, sehingga kehidupan bernegara tidak lepas dari nilai agama. Ini berbeda dengan **liberalisme** yang mengutamakan kebebasan individu dan **komunisme** yang menolak kepemilikan pribadi atas alat produksi serta cenderung menyingkirkan agama.",
         "opsi": {
-          "A": "Sila-sila Pancasila adalah satu kesatuan yang bulat dan utuh. Mengamalkan sila secara terpisah sesuai kebutuhan bertentangan dengan sifat kesatuan itu.",
-          "C": "Jika kedudukannya sejajar, tidak ada sila yang menjiwai sila lain. Pernyataan ini justru berlawanan dengan makna hierarkis atau bertingkat.",
-          "D": "Sila pertama adalah **dasar** bagi sila lain, sehingga tidak dapat dipisahkan. Jebakan ini memanfaatkan anggapan bahwa agama hanya urusan pribadi.",
-          "E": "Dalam susunan hierarkis, urutan tidak dapat dipertukarkan karena setiap sila menjiwai sila sesudahnya. Rumusan kalimat yang sama tidak cukup."
+          "A": "Ini ciri **liberalisme**. Dalam Pancasila, kebebasan individu dibatasi oleh kepentingan umum dan hak orang lain.",
+          "C": "Ini ciri **komunisme**. Pancasila tetap mengakui hak milik pribadi. Negara hanya menguasai cabang produksi penting dan kekayaan alam sesuai Pasal 33.",
+          "D": "Jebakan terkuat. Ini ciri **sekularisme**. Indonesia memang bukan negara agama, tetapi juga bukan negara sekuler, karena Ketuhanan menjadi dasar negara (Pasal 29 ayat 1).",
+          "E": "Ini ciri paham **totaliter**. Pancasila menjamin hak asasi warga yang dirinci dalam Pasal 28A–28J UUD NRI 1945."
         },
-        "konsep": "**Dua sifat sila Pancasila:** (1) *kesatuan yang bulat dan utuh*, artinya tidak dapat dipisahkan; (2) *hierarkis piramidal*, artinya bertingkat, sila sebelumnya menjiwai sila sesudahnya, dan urutannya tetap. Pola ini sering juga dirumuskan sebagai “saling mengisi dan saling mengkualifikasi”."
+        "konsep": "**Rumus singkat:** liberalisme = individu di atas segalanya; komunisme = negara/kolektif menguasai produksi, agama disingkirkan; Pancasila = keseimbangan individu dan masyarakat, berdasar Ketuhanan, dengan musyawarah dan keadilan sosial."
       },
-      "tips": "Untuk soal sifat Pancasila, eliminasi semua opsi yang membolehkan sila **dipisah**, **disejajarkan**, atau **diubah urutannya**. Jawaban yang benar selalu menegaskan keterkaitan dan urutan yang tetap."
+      "tips": "Untuk soal perbandingan ideologi, cari opsi yang menyebut **keseimbangan** dan **Ketuhanan**. Opsi yang berisi kata “mutlak”, “sepenuhnya”, atau “seluruh” biasanya menggambarkan ideologi lain.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 29 ayat (1) dan Pasal 33"
+      ]
     },
     {
       "id": "p04-006",
@@ -404,31 +410,30 @@
       "nomor": 14,
       "kategori": "TWK",
       "subtopik": "NKRI",
-      "topik": "Makna frasa dibagi atas dalam pembagian daerah (Pasal 18 ayat 1)",
+      "topik": "Laut teritorial dan zona ekonomi eksklusif menurut UNCLOS 1982",
       "tingkat": "sedang",
-      "pertanyaan": "Pasal 18 ayat (1) UUD NRI 1945 menyatakan bahwa Negara Kesatuan Republik Indonesia **dibagi atas** daerah-daerah provinsi, dan daerah provinsi itu dibagi atas kabupaten dan kota. Makna rumusan tersebut adalah ....",
+      "pertanyaan": "Sebuah kapal penangkap ikan berbendera asing berlayar pada jarak 100 mil laut dari garis pangkal kepulauan Indonesia. Berdasarkan Konvensi Hukum Laut PBB 1982 (UNCLOS) yang telah diratifikasi Indonesia, pernyataan yang tepat adalah ....",
       "opsi": {
-        "A": "Provinsi memiliki kedaulatan sendiri seperti negara bagian dalam negara federal",
-        "B": "Suatu daerah dapat memisahkan diri apabila disetujui oleh DPRD daerah tersebut",
-        "C": "Semua urusan dipusatkan sehingga daerah tidak memiliki pemerintahan sendiri",
-        "D": "Pembagian wilayah ditentukan sendiri oleh setiap pemerintah daerah tanpa perlu diatur dengan undang-undang",
-        "E": "Daerah merupakan bagian dari negara kesatuan, sedangkan kedaulatan tetap satu di tingkat negara"
+        "A": "Kapal itu berada di wilayah kedaulatan penuh Indonesia, sama seperti di daratan",
+        "B": "Kapal itu berada di laut teritorial Indonesia, yang lebarnya mencapai 200 mil laut",
+        "C": "Kapal itu berada di laut lepas, sehingga Indonesia tidak memiliki hak apa pun",
+        "D": "Kapal itu dilarang melintas karena semua kapal asing tidak boleh memasuki perairan Indonesia",
+        "E": "Kapal itu berada di ZEE, sehingga Indonesia berhak atas ikan di sana, tetapi kapal asing tetap bebas berlayar"
       },
       "kunci": "E",
       "pembahasan": {
-        "inti": "Frasa **“dibagi atas”** menunjukkan bahwa negara lebih dahulu ada sebagai satu kesatuan, lalu wilayahnya dibagi menjadi daerah. Ini berbeda dengan **“terdiri atas”** yang dapat dimaknai negara dibentuk dari gabungan negara-negara bagian. Karena itu, daerah dalam NKRI **tidak berdaulat sendiri**. Daerah diberi otonomi untuk mengurus urusan pemerintahan tertentu, tetapi kedaulatan tetap satu di tangan negara.",
+        "inti": "Menurut UNCLOS 1982, **laut teritorial** lebarnya paling jauh **12 mil laut** dari garis pangkal, dan di sana negara pantai berdaulat penuh. Di luar itu sampai **200 mil laut** terdapat **Zona Ekonomi Eksklusif (ZEE)**. Di ZEE, negara pantai memiliki **hak berdaulat atas sumber daya alam**, termasuk ikan, tetapi kapal negara lain tetap memiliki kebebasan berlayar. Jarak 100 mil laut berada di ZEE, sehingga kapal itu tidak boleh menangkap ikan tanpa izin Indonesia.",
         "opsi": {
-          "A": "Kedaulatan sendiri merupakan ciri negara federal. Pasal 1 ayat (1) menegaskan Indonesia adalah **negara kesatuan** yang berbentuk republik.",
-          "B": "Tidak ada mekanisme pemisahan diri dalam UUD NRI 1945. DPRD adalah unsur penyelenggara pemerintahan daerah, bukan lembaga yang dapat memutus keluar dari NKRI.",
-          "C": "Pasal 18 justru menyatakan setiap provinsi, kabupaten, dan kota **mempunyai pemerintahan daerah** yang mengatur urusannya menurut asas otonomi dan tugas pembantuan.",
-          "D": "Pembentukan dan pembagian daerah **diatur dengan undang-undang**, bukan ditentukan sendiri oleh setiap pemerintah daerah."
+          "A": "Kedaulatan penuh hanya berlaku di daratan, perairan pedalaman dan kepulauan, serta laut teritorial selebar 12 mil laut.",
+          "B": "Jebakan terkuat. Angka 200 mil laut adalah batas **ZEE**, bukan laut teritorial. Peserta sering tertukar dua angka ini.",
+          "C": "Laut lepas berada di luar 200 mil laut. Pada jarak 100 mil laut, Indonesia masih memiliki hak berdaulat atas sumber daya alam.",
+          "D": "Kapal asing memiliki **hak lintas damai** di laut teritorial dan perairan kepulauan, serta kebebasan berlayar di ZEE."
         },
-        "konsep": "**Negara kesatuan dengan otonomi:** kedaulatan tunggal di negara, sedangkan daerah menjalankan otonomi seluas-luasnya, kecuali urusan yang oleh undang-undang ditentukan sebagai urusan pemerintah pusat (Pasal 18 ayat 5)."
+        "konsep": "**Zona laut:** laut teritorial 12 mil laut (kedaulatan penuh), zona tambahan 24 mil laut, ZEE 200 mil laut (hak berdaulat atas sumber daya), landas kontinen (dasar laut). Indonesia meratifikasi UNCLOS melalui UU No. 17 Tahun 1985."
       },
-      "tips": "Bedakan **“dibagi atas”** (negara kesatuan dibagi menjadi daerah) dengan **“terdiri atas”** (negara dibentuk dari gabungan negara bagian). Opsi yang memberi daerah kedaulatan atau hak memisahkan diri pasti salah.",
+      "tips": "Bedakan **kedaulatan** (penuh, di laut teritorial) dan **hak berdaulat** (atas sumber daya, di ZEE). Hafalkan pasangan angka 12 dan 200 mil laut.",
       "rujukan": [
-        "UUD NRI 1945 Pasal 1 ayat (1)",
-        "UUD NRI 1945 Pasal 18 ayat (1), (2), dan (5)"
+        "UU No. 17 Tahun 1985 tentang Pengesahan UNCLOS 1982"
       ]
     },
     {
@@ -436,31 +441,31 @@
       "nomor": 15,
       "kategori": "TWK",
       "subtopik": "Bhinneka Tunggal Ika",
-      "topik": "Menyikapi rencana rumah ibadah kelompok minoritas di lingkungan",
+      "topik": "Bahasa daerah sebagai kekayaan budaya nasional (Pasal 32 ayat 2)",
       "tingkat": "sedang",
-      "pertanyaan": "Warga minoritas di lingkungan Anda mengajukan izin pendirian rumah ibadah dan sedang melengkapi persyaratan sesuai aturan. Sebagian tetangga menolak dengan alasan “kita mayoritas di sini”. Sikap yang sesuai dengan semangat Bhinneka Tunggal Ika adalah ....",
+      "pertanyaan": "Sebuah sekolah mengajarkan bahasa daerah setempat sebagai muatan lokal. Seorang wali murid keberatan karena menganggap pelajaran itu memecah persatuan, sebab bahasa persatuan adalah bahasa Indonesia. Tanggapan yang paling tepat adalah ....",
       "opsi": {
-        "A": "Ikut menolak karena kelompok mayoritas berhak menentukan kegiatan di lingkungannya sendiri",
-        "B": "Menghormati hak beribadah mereka dan mendukung agar proses perizinan berjalan sesuai aturan",
-        "C": "Menyarankan mereka membangun rumah ibadah di daerah yang mayoritas warganya seagama",
-        "D": "Bersikap netral dan diam saja karena urusan agama orang lain bukan urusan Anda",
-        "E": "Mendorong agar pembangunan segera dimulai tanpa menunggu izin supaya hak beribadah tidak tertunda"
+        "A": "Keberatan itu benar, karena semua sekolah seharusnya hanya mengajarkan bahasa Indonesia",
+        "B": "Keberatan itu kurang tepat, karena negara menghormati dan memelihara bahasa daerah sebagai kekayaan budaya nasional",
+        "C": "Keberatan itu benar, karena bahasa daerah hanya boleh dipakai di rumah dan acara adat",
+        "D": "Keberatan itu kurang tepat, karena bahasa daerah berkedudukan sama dengan bahasa Indonesia sebagai bahasa resmi negara",
+        "E": "Keberatan itu kurang tepat, karena setiap daerah berhak menentukan bahasa resminya sendiri"
       },
       "kunci": "B",
       "pembahasan": {
-        "inti": "Bhinneka Tunggal Ika mengajarkan bahwa perbedaan, termasuk agama, tidak menghapus **kesamaan hak** sebagai warga negara. Pasal 29 ayat (2) UUD NRI 1945 menyatakan negara menjamin kemerdekaan tiap penduduk untuk memeluk agama dan **beribadat menurut agamanya**. Pendirian rumah ibadah memiliki prosedur resmi. Jika warga minoritas sedang menempuh prosedur itu, sikap yang tepat adalah menghormati haknya dan mendukung proses yang sesuai aturan.",
+        "inti": "Pasal 32 ayat (2) UUD NRI 1945 berbunyi: “Negara **menghormati dan memelihara bahasa daerah** sebagai kekayaan budaya nasional.” Mengajarkan bahasa daerah tidak memecah persatuan, karena kebinekaan justru dijaga dengan memelihara keragaman budaya. Bahasa Indonesia tetap menjadi bahasa negara dan bahasa persatuan, sedangkan bahasa daerah menjadi kekayaan yang memperkaya identitas bangsa. Keduanya saling melengkapi, sesuai semangat **Bhinneka Tunggal Ika**.",
         "opsi": {
-          "A": "Hak beribadah tidak ditentukan oleh jumlah penganut. Alasan “mayoritas” bertentangan dengan jaminan konstitusi dan semangat kebinekaan.",
-          "C": "Tampak sopan, tetapi menyiratkan bahwa kelompok minoritas tidak layak tinggal berdampingan. Ini bentuk penolakan halus terhadap keberagaman.",
-          "D": "Diam saat ada penolakan tanpa dasar membuat suasana intoleran dibiarkan. Sikap ini tidak aktif menjaga persatuan.",
-          "E": "Jebakan terkuat. Opsi ini tampak membela minoritas, tetapi mengabaikan prosedur. Membangun tanpa izin dapat memicu konflik dan melanggar aturan yang berlaku untuk semua kelompok."
+          "A": "Persatuan tidak sama dengan penyeragaman. UUD justru mewajibkan negara memelihara bahasa daerah.",
+          "C": "Tidak ada aturan yang membatasi bahasa daerah hanya di rumah. Bahasa daerah dapat diajarkan di sekolah sebagai muatan lokal.",
+          "D": "Jebakan terkuat. Kesimpulannya benar, tetapi alasannya salah. Bahasa resmi negara hanya **bahasa Indonesia** (Pasal 36). Bahasa daerah berkedudukan sebagai kekayaan budaya.",
+          "E": "Daerah tidak menetapkan bahasa resmi sendiri. Bahasa resmi dalam penyelenggaraan negara adalah bahasa Indonesia."
         },
-        "konsep": "**Toleransi aktif:** menghormati hak kelompok lain dan ikut menjaga agar haknya terpenuhi melalui jalur yang sah. Prosedur pendirian rumah ibadat diatur dalam Peraturan Bersama Menteri Agama dan Menteri Dalam Negeri Nomor 9 dan Nomor 8 Tahun 2006."
+        "konsep": "**Pasal 32:** ayat (1) negara memajukan kebudayaan nasional dengan menjamin kebebasan masyarakat memelihara dan mengembangkan nilai budayanya; ayat (2) negara menghormati dan memelihara bahasa daerah. Persatuan dalam keberagaman berarti **bersatu tanpa menyeragamkan**."
       },
-      "tips": "Dalam soal kebinekaan, jawaban terbaik biasanya memenuhi dua hal: **menghormati hak kelompok lain** dan **tetap sesuai aturan**. Opsi yang membela salah satu pihak tetapi melanggar prosedur bukan jawaban terbaik.",
+      "tips": "Dalam soal kebinekaan, waspadai opsi yang **benar kesimpulannya tetapi salah alasannya**. Periksa setiap alasan terhadap pasal yang berlaku.",
       "rujukan": [
-        "UUD NRI 1945 Pasal 29 ayat (2)",
-        "Peraturan Bersama Menteri Agama dan Menteri Dalam Negeri Nomor 9 dan Nomor 8 Tahun 2006"
+        "UUD NRI 1945 Pasal 32 ayat (1) dan (2)",
+        "UUD NRI 1945 Pasal 36"
       ]
     },
     {
@@ -755,58 +760,63 @@
       "nomor": 26,
       "kategori": "TWK",
       "subtopik": "Bela Negara",
-      "topik": "Bela negara di ruang siber saat menerima berita tanpa sumber",
+      "topik": "Bela negara oleh pelajar di lingkungan sekolah",
       "tingkat": "mudah",
-      "pertanyaan": "Anda menerima pesan berisi tautan berita yang menuduh seorang pejabat daerah menjual aset negara. Pesan itu tidak mencantumkan sumber yang jelas dan meminta penerima “sebarkan sebelum dihapus”. Sikap yang mencerminkan bela negara di ruang siber adalah ....",
+      "pertanyaan": "Bela negara dapat dilakukan sesuai peran masing-masing. Contoh sikap bela negara yang paling tepat bagi seorang pelajar adalah ....",
       "opsi": {
-        "A": "Segera menyebarkannya karena masyarakat berhak tahu jika ada pejabat daerah yang menyalahgunakan jabatannya",
-        "B": "Menyebarkannya hanya ke grup keluarga dengan pesan agar tidak diteruskan lagi",
-        "C": "Memeriksa kebenarannya dari sumber resmi dan tidak menyebarkannya selama belum terverifikasi",
-        "D": "Mengomentari tautan itu dengan pendapat pribadi agar orang lain ikut menilai sendiri",
-        "E": "Menghapus pesan itu tanpa memikirkannya lagi karena bukan urusan Anda sama sekali"
+        "A": "Ikut berunjuk rasa menolak kebijakan sekolah tanpa menyampaikan aspirasi lebih dulu",
+        "B": "Mengikuti latihan militer bersama TNI agar siap berperang kapan saja",
+        "C": "Belajar dengan sungguh-sungguh, disiplin, dan menghormati teman yang berbeda suku atau agama",
+        "D": "Membeli barang impor yang bermerek terkenal agar tidak tertinggal oleh perkembangan zaman",
+        "E": "Mewakili sekolah dalam lomba olahraga dengan cara apa pun, termasuk curang, agar sekolah menang"
       },
       "kunci": "C",
       "pembahasan": {
-        "inti": "Ruang siber adalah salah satu medan **ancaman nonmiliter**, misalnya hoaks yang memecah belah dan merusak kepercayaan kepada lembaga negara. Bela negara di ruang siber berarti menjadi pengguna yang **cerdas dan bertanggung jawab**: memeriksa kebenaran informasi dari sumber resmi atau media tepercaya dan **tidak ikut menyebarkan** informasi yang belum jelas. Ciri pesan dalam soal, yaitu tanpa sumber dan mendesak untuk segera disebarkan, adalah ciri umum hoaks.",
+        "inti": "Bela negara tidak selalu berarti mengangkat senjata. Bagi pelajar, bentuk bela negara yang paling nyata adalah **menjalankan perannya dengan baik**: belajar sungguh-sungguh agar menjadi warga yang berkualitas, **disiplin**, dan **menjaga persatuan** dengan menghormati teman yang berbeda latar belakang. Sikap ini sejalan dengan nilai dasar bela negara, seperti cinta tanah air, sadar berbangsa dan bernegara, serta rela berkorban untuk bangsa.",
         "opsi": {
-          "A": "Hak masyarakat untuk tahu dipenuhi melalui informasi yang benar. Menyebarkan tuduhan tanpa bukti dapat merugikan orang dan menyesatkan publik.",
-          "B": "Grup keluarga tetap ruang publik kecil. Pesan mudah diteruskan, dan Anda tetap ikut menyebarkan informasi yang belum diverifikasi.",
-          "D": "Berkomentar membuat tautan makin sering muncul dan menyebar. Komentar tanpa data juga menambah keributan.",
-          "E": "Tidak menyebarkan memang baik, tetapi sikap ini pasif. Memeriksa kebenaran membantu Anda meluruskan jika informasi itu menyebar di lingkungan Anda."
+          "A": "Menyampaikan pendapat boleh, tetapi melalui cara yang tertib. Unjuk rasa tanpa menyampaikan aspirasi lebih dulu bukan contoh bela negara.",
+          "B": "Pelatihan militer bagi warga diatur khusus, misalnya melalui Komponen Cadangan bagi warga dewasa yang memenuhi syarat. Ini bukan bentuk bela negara yang tepat untuk pelajar.",
+          "D": "Mengutamakan produk dalam negeri justru bentuk bela negara di bidang ekonomi. Opsi ini kebalikannya.",
+          "E": "Mengharumkan nama sekolah itu baik, tetapi kecurangan bertentangan dengan nilai kejujuran dan sportivitas."
         },
-        "konsep": "**Ciri umum hoaks:** sumber tidak jelas, judul provokatif, meminta segera disebarkan, dan tidak dimuat media tepercaya. Langkah memeriksa: cek sumber, cek tanggal, bandingkan dengan media lain, dan cari klarifikasi dari instansi terkait."
+        "konsep": "**Bela negara sesuai peran:** pelajar dengan belajar dan menjaga persatuan, pekerja dengan bekerja profesional, ASN dengan melayani masyarakat secara jujur. Dasar hukumnya adalah Pasal 27 ayat (3) UUD NRI 1945."
       },
-      "tips": "Soal bela negara di ruang siber hampir selalu menguji sikap **saring sebelum sebar**. Pilih opsi yang memeriksa kebenaran, bukan yang menyebarkan dengan niat baik."
+      "tips": "Untuk soal bela negara berdasarkan profesi, pilih tindakan yang **sesuai peran sehari-hari** orang tersebut dan tetap menjunjung kejujuran. Opsi yang berlebihan atau curang adalah pengecoh.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 27 ayat (3)"
+      ]
     },
     {
       "id": "p04-027",
       "nomor": 27,
       "kategori": "TWK",
       "subtopik": "Bela Negara",
-      "topik": "Kedudukan TNI, Polri, dan rakyat dalam sistem pertahanan rakyat semesta (Pasal 30)",
+      "topik": "Pembagian tugas TNI dan Polri (Pasal 30 ayat 3 dan 4)",
       "tingkat": "sulit",
-      "pertanyaan": "Menurut Pasal 30 ayat (2) UUD NRI 1945, usaha pertahanan dan keamanan negara dilaksanakan melalui sistem pertahanan dan keamanan rakyat semesta. Kedudukan setiap unsur dalam sistem tersebut adalah ....",
+      "pertanyaan": "Perhatikan dua peristiwa berikut.\n\n1. Pesawat militer asing memasuki wilayah udara Indonesia tanpa izin.\n2. Terjadi bentrokan antarkelompok warga yang mengganggu ketertiban di sebuah kota.\n\nBerdasarkan Pasal 30 UUD NRI 1945, pihak yang menjadi penanggung jawab utama untuk setiap peristiwa adalah ....",
       "opsi": {
-        "A": "TNI dan rakyat sebagai kekuatan utama, sedangkan Polri sebagai kekuatan pendukung",
-        "B": "TNI sebagai kekuatan utama, sedangkan Polri dan rakyat sebagai kekuatan pendukung",
-        "C": "TNI sebagai satu-satunya kekuatan, sedangkan rakyat hanya dilibatkan saat perang terbuka",
-        "D": "Rakyat sebagai kekuatan utama yang wajib militer, sedangkan TNI dan Polri sebagai pelatih",
-        "E": "TNI dan Polri sebagai kekuatan utama, sedangkan rakyat sebagai kekuatan pendukung"
+        "A": "Peristiwa 1 dan 2 sama-sama ditangani TNI karena menyangkut keamanan negara",
+        "B": "Peristiwa 1 ditangani Polri, sedangkan peristiwa 2 ditangani TNI",
+        "C": "Peristiwa 1 dan 2 sama-sama ditangani Polri karena terjadi di wilayah Indonesia",
+        "D": "Peristiwa 1 ditangani TNI, sedangkan peristiwa 2 ditangani pemerintah daerah dan rakyat setempat",
+        "E": "Peristiwa 1 ditangani TNI, sedangkan peristiwa 2 ditangani Polri"
       },
       "kunci": "E",
       "pembahasan": {
-        "inti": "Pasal 30 ayat (2) berbunyi bahwa usaha pertahanan dan keamanan negara dilaksanakan melalui **sistem pertahanan dan keamanan rakyat semesta** oleh **Tentara Nasional Indonesia dan Kepolisian Negara Republik Indonesia sebagai kekuatan utama**, dan **rakyat sebagai kekuatan pendukung**. Kata “semesta” berarti melibatkan seluruh rakyat dan sumber daya nasional. Namun, kekuatan utamanya tetap TNI untuk pertahanan dan Polri untuk keamanan.",
+        "inti": "Pasal 30 ayat (3) menyatakan **TNI** (Angkatan Darat, Laut, dan Udara) bertugas **mempertahankan, melindungi, dan memelihara keutuhan dan kedaulatan negara**. Pelanggaran wilayah udara oleh pesawat militer asing adalah ancaman terhadap kedaulatan, sehingga menjadi tugas TNI. Pasal 30 ayat (4) menyatakan **Polri** sebagai alat negara yang **menjaga keamanan dan ketertiban masyarakat**, bertugas melindungi, mengayomi, melayani masyarakat, serta menegakkan hukum. Bentrokan antarwarga adalah gangguan ketertiban masyarakat, sehingga menjadi tugas Polri.",
         "opsi": {
-          "A": "Rakyat bukan kekuatan utama, melainkan pendukung. Polri justru kekuatan utama bersama TNI.",
-          "B": "Jebakan terkuat. Banyak peserta mengira hanya TNI yang menjadi kekuatan utama. Pasal 30 ayat (2) menyebut **TNI dan Polri** sebagai kekuatan utama.",
-          "C": "Sistem semesta justru melibatkan rakyat. Peran rakyat tidak hanya saat perang terbuka, tetapi juga dalam menghadapi ancaman nonmiliter.",
-          "D": "UUD tidak menetapkan rakyat sebagai kekuatan utama dan tidak mengatur wajib militer. Opsi ini membalik kedudukan unsur-unsurnya."
+          "A": "Gangguan ketertiban masyarakat adalah tugas utama Polri. TNI dapat membantu jika diminta sesuai aturan, tetapi bukan penanggung jawab utama.",
+          "B": "Pembagiannya terbalik. Kedaulatan wilayah adalah tugas TNI, sedangkan ketertiban masyarakat adalah tugas Polri.",
+          "C": "Ancaman militer dari luar negeri adalah urusan pertahanan, bukan keamanan dan ketertiban masyarakat.",
+          "D": "Jebakan terkuat. Rakyat adalah kekuatan pendukung dalam sistem pertahanan dan keamanan rakyat semesta, bukan penanggung jawab utama ketertiban masyarakat."
         },
-        "konsep": "**Isi Pasal 30:** ayat (1) hak dan kewajiban warga ikut serta dalam pertahanan dan keamanan; ayat (2) sistem pertahanan dan keamanan rakyat semesta; ayat (3) TNI (AD, AL, AU) mempertahankan, melindungi, dan memelihara keutuhan serta kedaulatan negara; ayat (4) Polri menjaga keamanan dan ketertiban masyarakat, melindungi, mengayomi, melayani, dan menegakkan hukum."
+        "konsep": "**Pertahanan vs keamanan:** pertahanan (ancaman terhadap kedaulatan dan keutuhan wilayah) → TNI; keamanan dan ketertiban masyarakat serta penegakan hukum → Polri. Pemisahan peran ini dipertegas setelah reformasi, dengan UU No. 34 Tahun 2004 tentang TNI dan UU No. 2 Tahun 2002 tentang Polri."
       },
-      "tips": "Ingat rumus **“dua utama, satu pendukung”**: TNI dan Polri utama, rakyat pendukung. Opsi yang menghilangkan Polri dari kekuatan utama adalah jebakan paling sering.",
+      "tips": "Tanyakan: **ancamannya terhadap negara dari luar atau gangguan ketertiban di masyarakat?** Yang pertama tugas TNI, yang kedua tugas Polri.",
       "rujukan": [
-        "UUD NRI 1945 Pasal 30 ayat (1), (2), (3), dan (4)"
+        "UUD NRI 1945 Pasal 30 ayat (3) dan (4)",
+        "UU No. 34 Tahun 2004 tentang Tentara Nasional Indonesia",
+        "UU No. 2 Tahun 2002 tentang Kepolisian Negara Republik Indonesia"
       ]
     },
     {
@@ -1097,28 +1107,28 @@
       "nomor": 38,
       "kategori": "TIU",
       "subtopik": "Silogisme",
-      "topik": "Silogisme disjungtif lalu modus ponens",
+      "topik": "Penarikan kesimpulan dari premis tidak mungkin keduanya",
       "tingkat": "sedang",
-      "pertanyaan": "Premis 1: Rapat koordinasi dilaksanakan di aula atau di ruang rapat lantai 3.\nPremis 2: Jika rapat dilaksanakan di ruang rapat lantai 3, peserta dibatasi 20 orang.\nPremis 3: Rapat tidak dilaksanakan di aula.\n\nKesimpulan yang sah adalah ....",
+      "pertanyaan": "Premis 1: Seorang petugas tidak mungkin bertugas di loket dan di lapangan pada hari yang sama.\nPremis 2: Hari ini Rudi bertugas di lapangan.\n\nKesimpulan yang sah adalah ....",
       "opsi": {
-        "A": "Rapat dilaksanakan di aula dengan jumlah peserta yang tidak dibatasi",
-        "B": "Rapat koordinasi dibatalkan karena aula tidak dapat dipakai",
-        "C": "Peserta rapat koordinasi dibatasi 20 orang",
-        "D": "Rapat dilaksanakan di lantai 3 dengan peserta lebih dari 20 orang",
-        "E": "Tidak dapat ditarik kesimpulan karena tempat rapat belum pasti"
+        "A": "Hari ini Rudi bertugas di loket dan di lapangan",
+        "B": "Besok Rudi pasti bertugas di loket",
+        "C": "Hari ini Rudi tidak bertugas di loket",
+        "D": "Hari ini tidak ada petugas lain yang bertugas di lapangan",
+        "E": "Tidak dapat ditarik kesimpulan tentang tugas Rudi di loket"
       },
       "kunci": "C",
       "pembahasan": {
-        "inti": "Gunakan dua langkah.\n\n1. **Silogisme disjungtif.** Premis 1: aula *atau* lantai 3. Premis 3: bukan aula. Maka rapat dilaksanakan **di lantai 3**.\n2. **Modus ponens.** Premis 2: jika di lantai 3, peserta dibatasi 20 orang. Karena rapat di lantai 3, maka **peserta dibatasi 20 orang**.\n\nDalam lambang: p ∨ q, ~p, sehingga q. Lalu q → r dan q, sehingga r. Kesimpulan yang sah adalah opsi C.",
+        "inti": "Misalkan p = Rudi bertugas di loket, q = Rudi bertugas di lapangan. Premis 1 berarti **tidak mungkin p dan q sekaligus**, yaitu ~(p ∧ q). Bentuk ini ekuivalen dengan ~p ∨ ~q, atau **q → ~p**: jika bertugas di lapangan, maka tidak bertugas di loket.\n\nPremis 2: q benar (Rudi di lapangan hari ini). Dengan modus ponens, kesimpulannya **~p**: hari ini Rudi **tidak bertugas di loket**.\n\nPerhatikan bahwa premis hanya membahas hari yang sama. Premis tidak memberi informasi apa pun tentang hari lain atau petugas lain.",
         "opsi": {
-          "A": "Bertentangan dengan Premis 3 yang menyatakan rapat tidak di aula.",
-          "B": "Tidak ada premis tentang pembatalan rapat. Premis 1 menyediakan tempat lain, yaitu lantai 3.",
-          "D": "Bertentangan dengan Premis 2. Jika rapat di lantai 3, peserta justru dibatasi 20 orang.",
-          "E": "Jebakan bagi peserta yang berhenti di Premis 1. Setelah Premis 3 dipakai, tempat rapat sudah pasti, yaitu lantai 3."
+          "A": "Bertentangan langsung dengan Premis 1 yang melarang kedua tugas pada hari yang sama.",
+          "B": "Premis tidak membahas jadwal besok. Kesimpulan ini menambahkan informasi yang tidak ada.",
+          "D": "Premis hanya membahas Rudi. Tidak ada informasi tentang petugas lain.",
+          "E": "Jebakan terkuat. Banyak peserta mengira premis “tidak mungkin keduanya” tidak menghasilkan kesimpulan. Padahal, jika salah satunya pasti benar, yang lain pasti salah."
         },
-        "konsep": "**Silogisme disjungtif:** p ∨ q dan ~p, maka q. **Modus ponens:** p → q dan p, maka q. Soal dengan tiga premis sering menggabungkan dua aturan ini. Tarik kesimpulan antara lebih dulu, lalu pakai kesimpulan antara itu sebagai premis baru."
+        "konsep": "**Negasi konjungsi:** ~(p ∧ q) ≡ ~p ∨ ~q ≡ p → ~q ≡ q → ~p. Jika salah satu benar, yang lain pasti salah. Namun, jika salah satu salah, yang lain tidak dapat dipastikan."
       },
-      "tips": "Untuk soal dengan tiga premis, cari dulu **dua premis yang langsung menghasilkan fakta baru** (biasanya premis “atau” dan premis “tidak”). Fakta baru itu lalu dipasangkan dengan premis “jika”."
+      "tips": "Premis **“tidak mungkin A dan B sekaligus”** hanya menghasilkan kesimpulan jika diketahui salah satunya **benar**. Jika yang diketahui salah satunya **tidak terjadi**, jawabannya biasanya “tidak dapat disimpulkan”."
     },
     {
       "id": "p04-039",
@@ -1769,28 +1779,28 @@
       "nomor": 62,
       "kategori": "TIU",
       "subtopik": "Aljabar",
-      "topik": "Perbandingan umur ayah dan anak sekarang dan lima tahun lagi",
+      "topik": "Jumlah kendaraan dari total roda di area parkir",
       "tingkat": "sedang",
-      "pertanyaan": "Umur Pak Budi sekarang tiga kali umur anaknya. Lima tahun lagi, umur Pak Budi menjadi 2,5 kali umur anaknya. Umur Pak Budi sekarang adalah ....",
+      "pertanyaan": "Di area parkir kantor terdapat 40 kendaraan yang terdiri atas sepeda motor dan mobil. Jumlah seluruh roda kendaraan itu 110. Banyak sepeda motor di area parkir tersebut adalah ....",
       "opsi": {
-        "A": "15 tahun",
-        "B": "50 tahun",
-        "C": "45 tahun",
-        "D": "20 tahun",
-        "E": "60 tahun"
+        "A": "15",
+        "B": "20",
+        "C": "25",
+        "D": "55",
+        "E": "30"
       },
       "kunci": "C",
       "pembahasan": {
-        "inti": "Misalkan umur anak sekarang = **a**. Maka umur Pak Budi sekarang = **3a**.\n\nLima tahun lagi, keduanya bertambah 5 tahun:\n\n3a + 5 = 2,5 × (a + 5)\n3a + 5 = 2,5a + 12,5\n0,5a = 7,5\na = **15**\n\nUmur Pak Budi sekarang = 3 × 15 = **45 tahun**.\n\nPemeriksaan: lima tahun lagi Pak Budi berumur 50 tahun dan anaknya 20 tahun. Hasil bagi 50 ÷ 20 = 2,5, sesuai dengan soal. Perhatikan juga bahwa perbandingan umur selalu mengecil seiring waktu, karena selisih umur tetap sedangkan umur keduanya bertambah.",
+        "inti": "Misalkan banyak motor = m dan banyak mobil = c.\n\n- m + c = 40\n- 2m + 4c = 110\n\nKalikan persamaan pertama dengan 2: 2m + 2c = 80. Kurangkan dari persamaan kedua: 2c = 30, sehingga **c = 15**. Maka m = 40 − 15 = **25**.\n\n**Cara cepat tanpa variabel:** andaikan semua 40 kendaraan adalah motor, maka rodanya 80. Kelebihan roda 110 − 80 = 30 berasal dari mobil, dan setiap mobil menambah 2 roda. Jadi, ada 30 ÷ 2 = 15 mobil dan 25 motor.\n\nPemeriksaan: 25 × 2 + 15 × 4 = 50 + 60 = 110 roda. Sesuai dengan soal.",
         "opsi": {
-          "A": "15 tahun adalah umur **anak** sekarang. Peserta berhenti setelah menemukan nilai a.",
-          "B": "50 tahun adalah umur Pak Budi **lima tahun lagi**, bukan sekarang.",
-          "D": "20 tahun adalah umur anak lima tahun lagi.",
-          "E": "60 tahun adalah **jumlah** umur Pak Budi dan anaknya sekarang (45 + 15)."
+          "A": "15 adalah banyak **mobil**, bukan motor. Peserta salah membaca yang ditanyakan.",
+          "B": "20 didapat dari 40 ÷ 2. Peserta menganggap jumlah motor dan mobil sama banyak tanpa memakai data roda.",
+          "D": "55 didapat dari 110 ÷ 2. Peserta menganggap semua roda milik motor, padahal jumlah kendaraan hanya 40.",
+          "E": "30 adalah **kelebihan roda** dalam cara cepat. Peserta lupa membaginya dengan 2 dan juga belum mengurangkannya dari 40."
         },
-        "konsep": "**Soal umur:** nyatakan semua umur dengan satu variabel untuk waktu **sekarang**. Untuk masa depan, tambahkan tahunnya ke setiap orang. Untuk masa lalu, kurangkan. Selisih umur dua orang selalu tetap."
+        "konsep": "**Soal jenis “ayam dan kambing”:** andaikan semuanya jenis yang lebih kecil, hitung kelebihannya, lalu bagi dengan selisih per satuan. Cara ini setara dengan sistem persamaan linear dua variabel."
       },
-      "tips": "Soal umur hampir selalu menaruh **umur anak, umur di masa depan, dan jumlah umur** di opsi. Setelah selesai menghitung, baca ulang: siapa dan kapan yang ditanyakan?"
+      "tips": "Soal jumlah benda dan jumlah roda atau kaki bisa diselesaikan cepat dengan **pengandaian semua satu jenis**. Setelah itu, selalu periksa hasilnya dengan memasukkan kembali ke soal."
     },
     {
       "id": "p04-063",
@@ -1825,56 +1835,56 @@
       "nomor": 64,
       "kategori": "TIU",
       "subtopik": "Perbandingan",
-      "topik": "Perbandingan senilai konsumsi bahan bakar kendaraan dinas",
+      "topik": "Perbandingan berbalik nilai persediaan makanan posko",
       "tingkat": "mudah",
-      "pertanyaan": "Sebuah kendaraan dinas menghabiskan 8 liter bensin untuk menempuh 96 km. Dengan kondisi yang sama, bensin yang diperlukan untuk menempuh 150 km adalah ....",
+      "pertanyaan": "Persediaan beras di sebuah posko pengungsian cukup untuk 30 orang selama 12 hari. Jika datang tambahan 6 pengungsi, persediaan itu akan habis dalam waktu ....",
       "opsi": {
-        "A": "12 liter",
-        "B": "18,75 liter",
-        "C": "5,12 liter",
-        "D": "1.800 liter",
-        "E": "12,5 liter"
+        "A": "14,4 hari",
+        "B": "6 hari",
+        "C": "15 hari",
+        "D": "12 hari",
+        "E": "10 hari"
       },
       "kunci": "E",
       "pembahasan": {
-        "inti": "Jarak dan bensin berbanding **senilai**: makin jauh jaraknya, makin banyak bensin yang dibutuhkan.\n\nCari dulu konsumsi per liter: 96 ÷ 8 = **12 km per liter**.\n\nBensin untuk 150 km = 150 ÷ 12 = **12,5 liter**.\n\nCara lain dengan perbandingan langsung: 8/96 = x/150, sehingga x = 8 × 150 ÷ 96 = 1.200 ÷ 96 = 12,5 liter.\n\nPemeriksaan kewajaran: 150 km sedikit lebih jauh dari 1,5 kali 96 km (144 km). Jadi, bensinnya harus sedikit lebih dari 1,5 × 8 = 12 liter. Hasil 12,5 liter sesuai dengan perkiraan ini.",
+        "inti": "Makin banyak orang, makin cepat persediaan habis. Jadi, hubungannya **berbalik nilai**: jumlah orang × jumlah hari tetap.\n\nTotal persediaan = 30 orang × 12 hari = **360 porsi-hari**.\n\nSetelah tambahan 6 orang, jumlah pengungsi menjadi 36 orang.\n\nLama persediaan = 360 ÷ 36 = **10 hari**.\n\nPemeriksaan kewajaran: jumlah orang bertambah, jadi lama persediaan harus **kurang dari 12 hari**. Hasil 10 hari sesuai dengan perkiraan ini. Opsi yang lebih dari 12 hari dapat langsung dicoret.",
         "opsi": {
-          "A": "12 adalah **kilometer per liter**, bukan banyak bensin. Peserta berhenti di langkah pertama dan salah membaca satuannya.",
-          "B": "18,75 = 150 ÷ 8. Peserta membagi jarak baru dengan **bensin awal**, sehingga satuannya menjadi km per liter, bukan liter.",
-          "C": "5,12 = 96 ÷ 150 × 8. Peserta membalik perbandingan seolah-olah berbalik nilai, sehingga jarak lebih jauh justru butuh bensin lebih sedikit.",
-          "D": "1.800 = 150 × 12. Peserta **mengalikan** jarak dengan km per liter, padahal seharusnya dibagi."
+          "A": "14,4 = 12 × 36 ÷ 30. Peserta memakai perbandingan **senilai**, seolah-olah makin banyak orang, persediaan makin lama.",
+          "B": "6 = 12 − 6. Peserta mengurangkan jumlah tambahan orang dari jumlah hari, padahal satuannya berbeda.",
+          "C": "15 = 360 ÷ 24. Peserta mengira 6 orang **pergi**, bukan datang.",
+          "D": "12 hari berarti persediaan dianggap tidak berubah walaupun jumlah orang bertambah."
         },
-        "konsep": "**Perbandingan senilai:** a₁/b₁ = a₂/b₂. **Perbandingan berbalik nilai:** a₁ × b₁ = a₂ × b₂ (misalnya jumlah pekerja dan waktu). Tentukan jenisnya dengan bertanya: jika satu naik, apakah yang lain ikut naik?"
+        "konsep": "**Berbalik nilai:** a₁ × b₁ = a₂ × b₂. Contohnya jumlah orang dan lama persediaan, jumlah pekerja dan lama pekerjaan, atau kecepatan dan waktu tempuh. **Senilai:** a₁/b₁ = a₂/b₂, misalnya jarak dan bensin."
       },
-      "tips": "Selalu **tuliskan satuan** di setiap langkah (km, liter, km/liter). Jika satuan jawaban tidak cocok dengan yang ditanyakan, berarti ada langkah yang terbalik."
+      "tips": "Sebelum menghitung, tentukan arahnya: jika satu besaran naik, apakah yang lain **naik** (senilai) atau **turun** (berbalik nilai)? Lalu periksa apakah jawaban searah dengan perkiraan."
     },
     {
       "id": "p04-065",
       "nomor": 65,
       "kategori": "TIU",
       "subtopik": "Aritmetika Sosial",
-      "topik": "Harga naik lalu turun dengan persentase yang sama",
+      "topik": "Untung rugi ketika sebagian barang rusak",
       "tingkat": "sedang",
-      "pertanyaan": "Harga sebuah printer Rp2.500.000. Bulan lalu harganya naik 20%, lalu bulan ini turun 20% dari harga bulan lalu. Dibandingkan dengan harga awal, harga printer bulan ini ....",
+      "pertanyaan": "Koperasi pegawai membeli 50 kg gula seharga Rp14.000 per kg. Sebanyak 4 kg gula rusak dan tidak dapat dijual. Sisanya dijual Rp15.000 per kg. Hasil penjualan koperasi tersebut adalah ....",
       "opsi": {
-        "A": "Sama dengan harga awal",
-        "B": "Lebih rendah Rp100.000",
-        "C": "Lebih tinggi Rp100.000",
-        "D": "Lebih rendah Rp500.000",
-        "E": "Lebih rendah Rp600.000"
+        "A": "Untung Rp50.000",
+        "B": "Rugi Rp10.000",
+        "C": "Untung Rp10.000",
+        "D": "Rugi Rp60.000",
+        "E": "Rugi Rp56.000"
       },
       "kunci": "B",
       "pembahasan": {
-        "inti": "Hitung bertahap, karena penurunan 20% dihitung dari **harga yang sudah naik**, bukan dari harga awal.\n\n- Setelah naik 20%: 2.500.000 × 1,2 = **3.000.000**\n- Setelah turun 20%: 3.000.000 × 0,8 = **2.400.000**\n\nSelisih dengan harga awal = 2.500.000 − 2.400.000 = **Rp100.000 lebih rendah**.\n\nCara cepat: 1,2 × 0,8 = 0,96. Artinya, harga akhir 96% dari harga awal, atau turun 4%. Dan 4% × 2.500.000 = 100.000. Rumus ini berlaku untuk harga awal berapa pun, sehingga kita bisa langsung tahu harga akhirnya pasti lebih rendah.",
+        "inti": "Bandingkan modal dengan hasil penjualan.\n\n- Modal = 50 × 14.000 = **Rp700.000**\n- Gula yang terjual = 50 − 4 = 46 kg\n- Hasil penjualan = 46 × 15.000 = **Rp690.000**\n\nHasil penjualan lebih kecil daripada modal, jadi koperasi **rugi** sebesar 700.000 − 690.000 = **Rp10.000**.\n\nPersentase ruginya sekitar 10.000 ÷ 700.000 ≈ 1,4% dari modal. Soal ini menunjukkan bahwa harga jual per kg yang lebih tinggi belum tentu menghasilkan untung jika ada barang yang rusak.",
         "opsi": {
-          "A": "Jebakan terkuat. Peserta mengira kenaikan 20% dan penurunan 20% **saling menghapus**. Padahal dasar perhitungan keduanya berbeda.",
-          "C": "Peserta menghitung selisihnya dengan benar, tetapi **salah arah**. Harga akhir Rp2.400.000 lebih rendah dari harga awal.",
-          "D": "Rp500.000 adalah besar **kenaikan** 20% dari harga awal, bukan selisih harga akhir dengan harga awal.",
-          "E": "Rp600.000 adalah besar **penurunan** 20% dari harga Rp3.000.000. Angka ini adalah potongan pada bulan ini, bukan selisih dengan harga awal."
+          "A": "Rp50.000 = 50 × 1.000. Peserta **lupa ada 4 kg yang rusak** dan menghitung seolah-olah semua gula terjual.",
+          "C": "Selisihnya dihitung benar, tetapi **arahnya salah**. Hasil penjualan lebih kecil dari modal, jadi rugi.",
+          "D": "Rp60.000 = 4 × 15.000. Peserta menghitung kerugian dari gula rusak dengan **harga jual**, lalu mengabaikan keuntungan dari gula yang terjual.",
+          "E": "Rp56.000 = 4 × 14.000. Ini nilai beli gula yang rusak, tetapi keuntungan Rp1.000 per kg dari 46 kg yang terjual belum diperhitungkan."
         },
-        "konsep": "**Persentase berurutan dikalikan, bukan dijumlahkan.** Naik a% lalu turun b% berarti dikali (1 + a/100)(1 − b/100). Untuk naik lalu turun dengan persen yang sama (x%), hasil akhirnya selalu turun sebesar x²/100 persen. Di sini 20²/100 = 4%."
+        "konsep": "**Untung/rugi = total penjualan − total modal.** Modal dihitung dari **semua** barang yang dibeli, sedangkan penjualan hanya dari barang yang **benar-benar terjual**."
       },
-      "tips": "Untuk perubahan persen bertingkat, ubah setiap perubahan menjadi **faktor pengali** (naik 20% = ×1,2, turun 20% = ×0,8), lalu kalikan. Cara ini menghindari jebakan “saling menghapus”."
+      "tips": "Dalam soal untung rugi, hitung **total modal** dan **total penjualan** secara terpisah, lalu bandingkan. Jangan hanya melihat selisih harga per satuan."
     },
     {
       "id": "p04-066",
@@ -1916,35 +1926,35 @@
       "nomor": 67,
       "kategori": "TKP",
       "subtopik": "Pelayanan Publik",
-      "topik": "Warga meminta informasi layanan lewat pesan pribadi di luar jam kerja",
+      "topik": "Warga menitipkan berkas tetangga tanpa surat kuasa",
       "tingkat": "sedang",
-      "pertanyaan": "Pukul sembilan malam, seorang warga mengirim pesan ke nomor pribadi Anda. Ia menanyakan syarat pengurusan izin usaha karena besok pagi ia ingin datang ke kantor. Nomor Anda ia dapat dari kenalan. Sikap Anda adalah ....",
+      "pertanyaan": "Seorang warga datang membawa berkas pengurusan akta milik tetangganya yang sedang sakit. Ia tidak membawa surat kuasa, padahal layanan itu mensyaratkan surat kuasa jika diwakilkan. Ia sudah jauh-jauh datang dan memohon agar berkas tetap diterima. Sikap Anda adalah ....",
       "opsi": {
-        "A": "Mengabaikan pesan itu karena di luar jam kerja dan dikirim ke nomor pribadi",
-        "B": "Membalas singkat berisi tautan informasi resmi persyaratan dan nomor layanan instansi yang dapat dihubungi",
-        "C": "Menjanjikan akan mengurus izinnya langsung besok tanpa perlu mengantre karena ia sudah menghubungi Anda",
-        "D": "Membalas keesokan harinya saat jam kerja dan meminta warga menanyakannya langsung di loket",
-        "E": "Membalas dengan meminta warga menghubungi kanal resmi instansi yang tersedia tanpa menjelaskan persyaratannya sama sekali"
+        "A": "Menerima berkas itu karena alasannya jelas dan pemiliknya sedang sakit",
+        "B": "Menjelaskan perlunya surat kuasa, memberi contoh formatnya, dan memeriksa kelengkapan berkas lain agar ia cukup datang sekali lagi",
+        "C": "Menolak berkas itu dan meminta warga kembali setelah membawa surat kuasa",
+        "D": "Menerima berkas itu dan memintanya menyusulkan surat kuasa kapan saja ia sempat",
+        "E": "Menjelaskan perlunya surat kuasa, lalu memberi tahu bahwa pemilik berkas dapat memakai layanan jemput bola bagi warga sakit jika tersedia di instansi"
       },
       "bobot": {
-        "A": 2,
+        "A": 1,
         "B": 5,
-        "C": 1,
-        "D": 3,
+        "C": 3,
+        "D": 2,
         "E": 4
       },
       "pembahasan": {
-        "inti": "Petugas tidak wajib melayani di luar jam kerja melalui nomor pribadi. Namun, pertanyaan warga dalam soal **sederhana dan mendesak**, dan jawabannya sudah tersedia di **sumber resmi**. Membalas singkat dengan tautan informasi resmi dan kanal layanan instansi membantu warga tanpa mengorbankan batas profesional. Cara ini juga mengarahkan warga ke saluran resmi untuk urusan berikutnya, sehingga layanan tetap tercatat dan adil bagi semua warga.",
+        "inti": "Syarat surat kuasa melindungi **pemilik dokumen**, karena tanpa itu siapa pun bisa mengurus dokumen orang lain. Aturan ini tidak boleh dilonggarkan. Namun, petugas tetap bisa **meringankan beban warga**: menjelaskan alasannya, memberi contoh surat kuasa, dan memeriksa kelengkapan berkas lainnya sekarang. Dengan begitu, warga cukup datang sekali lagi dengan berkas yang benar-benar lengkap.",
         "opsi": {
-          "A": "Bobot 2. Warga yang akan datang besok pagi kehilangan kesempatan menyiapkan berkas. Batas pribadi terjaga, tetapi tidak ada upaya membantu.",
-          "B": "Bobot 5. Warga terbantu dengan informasi yang benar, dan Anda tetap memakai informasi resmi serta mengarahkan ke kanal resmi.",
-          "C": "Bobot 1. Memberi perlakuan khusus karena warga punya akses pribadi melanggar prinsip keadilan dan dapat membuka peluang kolusi.",
-          "D": "Bobot 3. Sesuai jam kerja, tetapi balasan datang setelah warga mungkin sudah berangkat tanpa berkas yang lengkap.",
-          "E": "Bobot 4. Mengarahkan ke kanal resmi sudah tepat, tetapi tanpa informasi persyaratan, warga belum terbantu untuk kedatangannya besok."
+          "A": "Bobot 1. Melanggar prosedur yang melindungi pemilik dokumen. Alasan kasihan tidak membenarkan pelanggaran.",
+          "B": "Bobot 5. Aturan dijaga, alasannya dijelaskan, dan warga dibantu agar kedatangan berikutnya pasti berhasil.",
+          "C": "Bobot 3. Sesuai aturan, tetapi warga tidak dibantu dan bisa saja kembali dengan kekurangan berkas lain.",
+          "D": "Bobot 2. Berkas diproses tanpa dasar kuasa. Jika surat kuasa tidak pernah datang, petugas ikut bertanggung jawab.",
+          "E": "Bobot 4. Informasi layanan alternatif bermanfaat, tetapi kelengkapan berkas yang sudah dibawa belum diperiksa."
         },
-        "konsep": "**Batas profesional dalam layanan:** bantu warga dengan **informasi resmi** dan **arahkan ke kanal resmi**. Jangan memberi janji atau perlakuan khusus melalui jalur pribadi."
+        "konsep": "**Tegas pada syarat yang melindungi warga, luwes dalam membantu.** Petugas yang baik memastikan warga tahu persis apa yang harus dibawa, sehingga tidak perlu bolak-balik. Memeriksa seluruh berkas sekaligus juga mencegah warga harus kembali untuk kekurangan lain yang belum disebutkan."
       },
-      "tips": "Jika warga menghubungi lewat jalur pribadi, bobot tertinggi biasanya **membantu secukupnya sambil mengarahkan ke jalur resmi**. Opsi yang menjanjikan keistimewaan selalu bernilai rendah."
+      "tips": "Jika berkas tidak lengkap, bobot 5 biasanya **tidak melanggar aturan** tetapi **membantu warga melengkapi sekaligus**. Menerima berkas yang melanggar syarat bernilai rendah."
     },
     {
       "id": "p04-068",
@@ -2199,50 +2209,50 @@
       "nomor": 75,
       "kategori": "TKP",
       "subtopik": "Jejaring Kerja",
-      "topik": "Komunitas warga ingin dilibatkan dalam program kelurahan",
+      "topik": "Bekerja sama dengan media lokal untuk menyebarkan informasi layanan",
       "tingkat": "mudah",
-      "pertanyaan": "Komunitas pemuda di wilayah Anda menawarkan diri membantu program bersih sungai yang sedang Anda rancang. Mereka memiliki banyak relawan, tetapi belum pernah bekerja sama dengan pemerintah. Sikap Anda adalah ....",
+      "pertanyaan": "Unit Anda baru membuka layanan perizinan daring, tetapi banyak warga belum mengetahuinya. Sebuah radio lokal yang banyak didengar warga desa menawarkan acara bincang-bincang gratis tentang layanan publik. Sikap Anda adalah ....",
       "opsi": {
-        "A": "Menyambut tawaran itu, mengajak mereka rapat bersama, dan membagi peran sesuai kemampuan masing-masing",
-        "B": "Menerima bantuan mereka hanya sebagai tenaga tambahan pada hari pelaksanaan kegiatan",
-        "C": "Menolak dengan halus karena program pemerintah sebaiknya dijalankan oleh pegawai saja agar lebih tertib",
-        "D": "Menerima tawaran itu, tetapi meminta mereka mengurus sendiri seluruh kebutuhan relawan dan peralatan",
-        "E": "Menyambut tawaran mereka dan meminta atasan memutuskan bentuk keterlibatannya dalam program tersebut"
+        "A": "Menyambut tawaran itu, mengusulkannya kepada atasan, dan menyiapkan narasumber serta materi yang mudah dipahami warga",
+        "B": "Menolak karena informasi layanan cukup diumumkan melalui situs resmi instansi",
+        "C": "Menerima tawaran itu dan meminta pihak radio menyusun sendiri materi yang akan disampaikan",
+        "D": "Menunda keputusan sampai ada anggaran resmi untuk kerja sama dengan media",
+        "E": "Menyambut tawaran itu dan menyerahkan sepenuhnya kepada bagian humas untuk mengatur waktu, narasumber, dan materi siarannya"
       },
       "bobot": {
         "A": 5,
-        "B": 3,
-        "C": 1,
-        "D": 2,
+        "B": 1,
+        "C": 2,
+        "D": 3,
         "E": 4
       },
       "pembahasan": {
-        "inti": "Program publik akan lebih berhasil jika **masyarakat dilibatkan sejak perencanaan**. Komunitas pemuda membawa tenaga, semangat, dan kedekatan dengan warga. Sikap terbaik adalah menyambut tawaran itu dan **membangun kerja sama yang setara**: merencanakan bersama dan membagi peran sesuai kemampuan. Pengalaman pertama yang baik juga membuat komunitas mau terlibat lagi dalam program lain.",
+        "inti": "Informasi layanan hanya bermanfaat jika **sampai kepada warga**. Radio lokal menjangkau warga desa yang mungkin jarang membuka situs resmi. Kerja sama ini menguntungkan kedua pihak: radio mendapat konten bermanfaat, instansi mendapat saluran sosialisasi. Sikap terbaik adalah **menyambut**, **melalui jalur resmi** dengan mengusulkan kepada atasan, dan **menyiapkan materi yang akurat** agar informasi yang tersampaikan benar.",
         "opsi": {
-          "A": "Bobot 5. Terbuka, melibatkan sejak perencanaan, dan membagi peran dengan jelas.",
-          "B": "Bobot 3. Bantuan diterima, tetapi komunitas hanya dijadikan tenaga, bukan mitra. Gagasan mereka tidak dimanfaatkan.",
-          "C": "Bobot 1. Menolak partisipasi masyarakat tanpa alasan kuat. Ini bertentangan dengan semangat pelayanan yang partisipatif.",
-          "D": "Bobot 2. Tampak menerima, tetapi beban dilempar sepenuhnya kepada komunitas. Kerja sama menjadi tidak seimbang.",
-          "E": "Bobot 4. Sikapnya terbuka, tetapi keputusan yang sebenarnya dapat Anda kelola sebagai perancang program diserahkan ke atasan."
+          "A": "Bobot 5. Memanfaatkan mitra yang tepat, melalui jalur resmi, dan menjaga ketepatan informasi.",
+          "B": "Bobot 1. Mengabaikan kenyataan bahwa banyak warga tidak mengakses situs resmi.",
+          "C": "Bobot 2. Materi yang disusun pihak luar berisiko keliru dan dapat membingungkan warga.",
+          "D": "Bobot 3. Tawarannya gratis, sehingga anggaran bukan alasan. Penundaan membuat sosialisasi tertinggal.",
+          "E": "Bobot 4. Melibatkan humas itu tepat, tetapi Anda yang paling memahami layanannya justru tidak ikut menyiapkan materi."
         },
-        "konsep": "**Partisipasi masyarakat:** libatkan mitra dalam **perencanaan, pelaksanaan, dan evaluasi**. Mitra yang hanya dilibatkan saat pelaksanaan cenderung kurang merasa memiliki program. Pembagian peran yang jelas, misalnya komunitas mengerahkan relawan dan kelurahan menyiapkan alat serta izin, membuat kerja sama berjalan lancar dan aman."
+        "konsep": "**Jejaring dengan media:** pilih media yang dekat dengan sasaran, tempuh jalur resmi, dan pastikan materi disusun oleh pihak yang memahami layanan. Bahasa yang sederhana dan contoh langkah pendaftaran sangat membantu pendengar radio yang belum terbiasa dengan layanan daring. Waktu siaran juga sebaiknya dipilih saat warga desa banyak mendengarkan radio."
       },
-      "tips": "Jika masyarakat menawarkan bantuan, bobot 5 biasanya **menyambut dan menjadikannya mitra setara**. Opsi yang menolak partisipasi warga hampir selalu bernilai 1."
+      "tips": "Jika ada tawaran kerja sama yang bermanfaat bagi warga, bobot 5 biasanya **menyambut, melalui jalur resmi, dan ikut aktif**. Menolak tanpa alasan kuat bernilai 1."
     },
     {
       "id": "p04-076",
       "nomor": 76,
       "kategori": "TKP",
       "subtopik": "Jejaring Kerja",
-      "topik": "Rapat lintas instansi buntu karena saling lempar tanggung jawab",
+      "topik": "Instansi mitra meminta data pribadi warga untuk program bersama",
       "tingkat": "sedang",
-      "pertanyaan": "Anda memimpin rapat koordinasi penanganan sampah pasar yang dihadiri wakil dinas kebersihan, pengelola pasar, dan kecamatan. Setiap peserta menyatakan masalah itu bukan tanggung jawab instansinya. Rapat sudah berjalan satu jam tanpa kemajuan. Sikap Anda adalah ....",
+      "pertanyaan": "Dinas lain yang menjadi mitra program bantuan meminta Anda segera mengirim daftar lengkap warga beserta NIK dan nomor telepon melalui pesan pribadi, karena tenggat mereka besok. Belum ada kesepakatan tertulis tentang pertukaran data. Sikap Anda adalah ....",
       "opsi": {
-        "A": "Menutup rapat dan melaporkan kepada atasan bahwa instansi lain tidak mau bekerja sama",
-        "B": "Menetapkan sendiri pembagian tugas agar rapat segera selesai dan memiliki keputusan",
-        "C": "Menunda rapat dan meminta setiap instansi mengirim pejabat yang lebih berwenang pada pertemuan berikutnya",
-        "D": "Mengajak peserta memetakan aturan kewenangan masing-masing, lalu menyepakati pembagian peran dan tindak lanjut yang tertulis",
-        "E": "Mengajak peserta fokus pada dampak masalah bagi warga, lalu meminta setiap instansi mengusulkan bagian yang dapat mereka tangani"
+        "A": "Langsung mengirim data lengkap melalui pesan pribadi agar program mitra tidak terhambat",
+        "B": "Menolak permintaan itu karena data warga tidak boleh dibagikan kepada pihak mana pun",
+        "C": "Mengirim data tanpa NIK dan nomor telepon agar lebih aman, tanpa berkoordinasi dengan atasan",
+        "D": "Melapor kepada atasan dan mengusulkan pengiriman data seperlunya melalui jalur resmi berdasarkan kesepakatan tertulis yang dipercepat",
+        "E": "Memberi tahu mitra bahwa data hanya dapat dikirim melalui surat resmi dan meminta mereka mengajukan permintaan tertulis sesegera mungkin"
       },
       "bobot": {
         "A": 1,
@@ -2252,87 +2262,90 @@
         "E": 4
       },
       "pembahasan": {
-        "inti": "Saling lempar tanggung jawab biasanya terjadi karena **batas kewenangan belum jelas**. Sebagai pemimpin rapat, tugas Anda adalah mengarahkan pembahasan dari saling menyalahkan menjadi **mencari pembagian peran**. Cara paling kuat adalah memetakan dasar aturan kewenangan setiap instansi, lalu menyepakati siapa melakukan apa dan menuliskannya sebagai **tindak lanjut** yang dapat dipantau. Keputusan yang berdasarkan aturan dan disepakati bersama lebih mungkin dijalankan.",
+        "inti": "Kerja sama antarinstansi perlu didukung, tetapi **data pribadi warga** harus dilindungi. Pertukaran data perlu **dasar resmi**, hanya memuat data **seperlunya**, dan dikirim melalui **saluran yang aman**. Karena tenggat mitra mendesak, sikap terbaik adalah melapor kepada atasan dan mengusulkan percepatan prosedur resmi. Cara ini menjaga kepentingan mitra tanpa mengorbankan keamanan data warga.",
         "opsi": {
-          "A": "Bobot 1. Menyerah dan menyalahkan instansi lain. Hubungan antarinstansi rusak dan masalah tidak selesai.",
-          "B": "Bobot 2. Ada keputusan, tetapi tidak disepakati dan bisa melampaui wewenang Anda. Instansi lain kemungkinan tidak menjalankannya.",
-          "C": "Bobot 3. Bisa membantu jika peserta memang tidak berwenang, tetapi rapat berakhir tanpa kemajuan dan masalah tertunda.",
-          "D": "Bobot 5. Memakai dasar aturan yang objektif, keputusan disepakati bersama, dan ada tindak lanjut tertulis.",
-          "E": "Bobot 4. Pendekatan yang baik untuk mencairkan suasana, tetapi tanpa dasar kewenangan dan catatan tertulis, kesepakatan mudah dilupakan."
+          "A": "Bobot 1. Data pribadi warga dikirim tanpa dasar resmi melalui saluran pribadi yang tidak aman.",
+          "B": "Bobot 2. Melindungi data, tetapi menutup kerja sama yang sebenarnya dapat dilakukan secara sah.",
+          "C": "Bobot 3. Mengurangi risiko, tetapi tetap mengirim data tanpa dasar resmi dan tanpa sepengetahuan atasan.",
+          "D": "Bobot 5. Melindungi data, melibatkan atasan, dan tetap mendukung kebutuhan mitra melalui jalur resmi.",
+          "E": "Bobot 4. Prosedurnya benar, tetapi tanpa melibatkan atasan, permintaan resmi belum tentu dapat diproses sebelum tenggat."
         },
-        "konsep": "**Memimpin rapat lintas instansi:** samakan tujuan → petakan kewenangan berdasarkan aturan → sepakati peran → tulis tindak lanjut, penanggung jawab, dan tenggat."
+        "konsep": "**Berbagi data antarinstansi:** ada dasar resmi, data seperlunya (minimal), saluran aman, dan tercatat. Prinsip ini sejalan dengan UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi. Kesepakatan tertulis juga melindungi petugas, karena jelas siapa yang bertanggung jawab atas data setelah dikirim."
       },
-      "tips": "Dalam soal rapat yang buntu, bobot 5 biasanya **mengubah perdebatan menjadi pembagian peran yang disepakati dan tertulis**. Opsi yang memutuskan sepihak atau menyerah bernilai rendah."
+      "tips": "Dalam soal permintaan data dari mitra, bobot 5 biasanya **mendukung kerja sama melalui jalur resmi dan aman**. Mengirim data lewat pesan pribadi selalu bernilai rendah.",
+      "rujukan": [
+        "UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi"
+      ]
     },
     {
       "id": "p04-077",
       "nomor": 77,
       "kategori": "TKP",
       "subtopik": "Jejaring Kerja",
-      "topik": "Unit lain mengklaim hasil kerja tim gabungan",
+      "topik": "Data dari dua instansi mitra saling bertentangan untuk laporan bersama",
       "tingkat": "sulit",
-      "pertanyaan": "Tim gabungan dari unit Anda dan unit lain berhasil menyusun aplikasi pendataan. Dalam laporan ke pimpinan, kepala unit lain menyajikan aplikasi itu seolah-olah hanya hasil kerja unitnya. Rekan satu tim Anda marah dan ingin memprotes di grup percakapan kantor. Sikap Anda adalah ....",
+      "pertanyaan": "Anda menyusun laporan bersama tentang jumlah keluarga penerima bantuan. Data dari dinas sosial dan data dari kecamatan berbeda hampir 300 keluarga. Masing-masing yakin datanya yang benar, dan laporan harus diserahkan pekan depan. Sikap Anda adalah ....",
       "opsi": {
-        "A": "Mendukung rekan memprotes secara terbuka di grup percakapan kantor agar semua pegawai tahu siapa yang sebenarnya bekerja keras",
-        "B": "Membiarkannya karena yang penting aplikasinya bermanfaat, siapa pun yang mendapat pujian",
-        "C": "Membuat laporan tandingan langsung ke pimpinan tanpa memberi tahu unit tersebut",
-        "D": "Menenangkan rekan, lalu meminta atasan Anda menyampaikan peran tim gabungan kepada pimpinan",
-        "E": "Menenangkan rekan, lalu membicarakannya baik-baik dengan kepala unit lain agar laporan berikutnya menyebut kontribusi kedua unit"
+        "A": "Memakai data dari instansi yang jabatannya lebih tinggi agar laporan tidak dipersoalkan",
+        "B": "Mengambil rata-rata kedua data supaya adil bagi kedua instansi",
+        "C": "Mencantumkan kedua data apa adanya tanpa penjelasan dan menyerahkan penilaiannya kepada pembaca",
+        "D": "Melaporkan perbedaan data itu kepada atasan dan meminta atasan menentukan sendiri data dari instansi mana yang akan dipakai dalam laporan",
+        "E": "Mempertemukan petugas data kedua instansi untuk mencocokkan nama per nama, lalu mencatat hasil dan sisa perbedaannya dalam laporan"
       },
       "bobot": {
         "A": 1,
-        "B": 3,
-        "C": 2,
+        "B": 2,
+        "C": 3,
         "D": 4,
         "E": 5
       },
       "pembahasan": {
-        "inti": "Pengakuan kontribusi penting untuk menjaga **semangat dan kepercayaan dalam kerja sama**. Namun, cara memperjuangkannya harus tetap menjaga hubungan baik antarunit. Sikap terbaik adalah **meredakan emosi rekan**, lalu **berbicara langsung dan baik-baik** dengan pihak yang bersangkutan. Kemungkinan besar kepala unit lain tidak bermaksud mengambil pujian, dan percakapan langsung memberi kesempatan untuk meluruskannya tanpa mempermalukan siapa pun.",
+        "inti": "Perbedaan data antarinstansi biasanya muncul karena **waktu pendataan, definisi, atau kesalahan input** yang berbeda. Memilih salah satu atau menghitung rata-rata tidak menyelesaikan masalah dan bisa membuat bantuan salah sasaran. Sikap terbaik adalah **mempertemukan pemegang data** untuk **mencocokkan secara rinci**, lalu mencatat hasil serta perbedaan yang masih tersisa secara transparan dalam laporan. Cara ini juga memperbaiki data kedua instansi untuk ke depannya.",
         "opsi": {
-          "A": "Bobot 1. Protes terbuka di grup kantor mempermalukan pihak lain dan merusak hubungan antarunit untuk kerja sama berikutnya.",
-          "B": "Bobot 3. Menghindari konflik, tetapi kontribusi tim tidak diakui dan rekan bisa kehilangan semangat.",
-          "C": "Bobot 2. Melapor diam-diam memicu saling curiga. Masalahnya juga belum dicoba diselesaikan dengan pihak yang bersangkutan.",
-          "D": "Bobot 4. Memakai jalur atasan dengan tenang, tetapi melewati kesempatan berbicara langsung dengan pihak yang bersangkutan.",
-          "E": "Bobot 5. Emosi diredakan, masalah dibicarakan langsung, dan solusinya menjaga hubungan sekaligus memastikan kontribusi diakui."
+          "A": "Bobot 1. Kebenaran data tidak ditentukan oleh jabatan. Pilihan ini berisiko membuat bantuan salah sasaran.",
+          "B": "Bobot 2. Rata-rata menghasilkan angka yang tidak sesuai dengan data mana pun dan tidak dapat dipertanggungjawabkan.",
+          "C": "Bobot 3. Jujur, tetapi masalah dibiarkan dan pembaca tidak tahu data mana yang benar.",
+          "D": "Bobot 4. Melibatkan atasan itu baik, tetapi atasan tetap membutuhkan hasil pencocokan untuk memutuskan dengan benar.",
+          "E": "Bobot 5. Menyelesaikan akar perbedaan bersama mitra dan melaporkannya secara transparan."
         },
-        "konsep": "**Menyelesaikan gesekan antarunit:** redakan emosi → bicarakan langsung dan pribadi → libatkan atasan jika tidak berhasil. Hindari ruang publik untuk menyelesaikan masalah internal. Cara ini juga menjadi contoh baik bagi rekan yang sedang emosi."
+        "konsep": "**Rekonsiliasi data:** temukan sumber perbedaan (waktu, definisi, input), cocokkan secara rinci, sepakati hasilnya, dan catat perbedaan yang belum terselesaikan. Perbedaan yang tidak dapat diselesaikan sebelum tenggat tetap dicatat agar pembaca laporan dapat menilainya."
       },
-      "tips": "Dalam konflik kerja sama, urutan yang dinilai baik adalah **langsung ke pihak terkait dulu, baru naik ke atasan**. Opsi yang membawa masalah ke ruang publik hampir selalu bernilai 1."
+      "tips": "Dalam soal data yang bertentangan, bobot 5 biasanya **mencocokkan data bersama pemiliknya**. Opsi yang memilih berdasarkan jabatan atau menghitung rata-rata bernilai rendah."
     },
     {
       "id": "p04-078",
       "nomor": 78,
       "kategori": "TKP",
       "subtopik": "Jejaring Kerja",
-      "topik": "Berbagi pengetahuan dengan rekan baru yang belum paham sistem kerja",
+      "topik": "Menindaklanjuti kenalan dari pelatihan antarinstansi untuk berbagi praktik baik",
       "tingkat": "mudah",
-      "pertanyaan": "Seorang rekan baru di unit Anda sering bertanya tentang aplikasi pelaporan yang sudah Anda kuasai. Pertanyaannya mulai menyita waktu kerja Anda. Sikap Anda adalah ....",
+      "pertanyaan": "Dalam sebuah pelatihan, Anda berkenalan dengan pegawai dari kabupaten lain yang berhasil mempercepat layanan perizinan di daerahnya. Unit Anda sedang menghadapi masalah layanan yang lambat. Sikap Anda adalah ....",
       "opsi": {
-        "A": "Memintanya bertanya kepada rekan lain karena Anda sedang banyak pekerjaan",
-        "B": "Menjawab setiap pertanyaannya kapan pun ia bertanya walaupun pekerjaan Anda sendiri menjadi terlambat diselesaikan",
-        "C": "Menyediakan waktu khusus untuk mengajarinya dan membagikan catatan panduan yang bisa ia pelajari sendiri",
-        "D": "Memberikan buku manual aplikasi dan memintanya mempelajari sendiri sampai benar-benar paham",
-        "E": "Mengerjakan bagian laporan yang sulit untuknya agar ia tidak perlu bertanya lagi"
+        "A": "Menyimpan nomor kontaknya dan menghubunginya hanya jika suatu saat diperlukan",
+        "B": "Meminta salinan semua dokumen prosedur di daerahnya untuk langsung diterapkan di unit Anda",
+        "C": "Menghubunginya untuk berdiskusi tentang caranya, lalu menyampaikan pelajaran itu kepada atasan sebagai usulan perbaikan",
+        "D": "Menceritakan keberhasilan daerah itu kepada rekan-rekan tanpa tindak lanjut",
+        "E": "Menghubunginya untuk berdiskusi, lalu mencoba menerapkan sebagian caranya sendiri di meja layanan Anda tanpa membicarakannya dengan tim"
       },
       "bobot": {
-        "A": 2,
-        "B": 4,
+        "A": 3,
+        "B": 2,
         "C": 5,
-        "D": 3,
-        "E": 1
+        "D": 1,
+        "E": 4
       },
       "pembahasan": {
-        "inti": "Berbagi pengetahuan adalah bagian dari **jejaring kerja di dalam tim**. Rekan baru yang cepat mandiri akan memperkuat kinerja unit. Agar tidak mengganggu pekerjaan Anda, berbagi perlu **diatur**: menyediakan waktu khusus untuk mengajar dan membuat catatan panduan yang bisa dipelajari sendiri. Cara ini membantu rekan belajar secara bertahap dan juga bermanfaat bagi pegawai baru berikutnya.",
+        "inti": "Jejaring yang dibangun dalam pelatihan bernilai jika **ditindaklanjuti** untuk memperbaiki pekerjaan. Belajar dari daerah yang berhasil adalah cara cepat menemukan solusi. Sikap terbaik adalah **berdiskusi** untuk memahami caranya, lalu **membawa pelajaran itu melalui jalur resmi** sebagai usulan kepada atasan. Dengan begitu, perbaikan dapat dipertimbangkan sesuai kondisi unit dan diterapkan bersama tim.",
         "opsi": {
-          "A": "Bobot 2. Menghindar dan memindahkan beban ke rekan lain.",
-          "B": "Bobot 4. Sangat membantu, tetapi tanpa pengaturan waktu, pekerjaan Anda sendiri terganggu.",
-          "C": "Bobot 5. Membantu secara terarah, menjaga pekerjaan sendiri, dan membuat rekan cepat mandiri.",
-          "D": "Bobot 3. Ada bantuan berupa manual, tetapi rekan dibiarkan belajar sendiri tanpa pendampingan.",
-          "E": "Bobot 1. Rekan tidak pernah belajar, dan Anda mengerjakan tugas yang bukan tanggung jawab Anda."
+          "A": "Bobot 3. Hubungan dijaga, tetapi peluang memperbaiki masalah yang sedang dihadapi tidak dimanfaatkan.",
+          "B": "Bobot 2. Menerapkan langsung tanpa penyesuaian berisiko, karena kondisi setiap daerah berbeda.",
+          "C": "Bobot 5. Memanfaatkan jejaring, belajar secara aktif, dan mengusulkan perbaikan melalui jalur yang tepat.",
+          "D": "Bobot 1. Hanya bercerita tanpa tindak lanjut. Tidak ada manfaat nyata bagi unit.",
+          "E": "Bobot 4. Ada inisiatif, tetapi perubahan di satu meja tanpa koordinasi dapat membuat layanan tidak seragam."
         },
-        "konsep": "**Berbagi pengetahuan yang efektif:** ajarkan cara, bukan kerjakan tugasnya. Dokumentasikan pengetahuan agar bisa dipakai banyak orang tanpa harus diajarkan berulang kali. Catatan panduan sederhana, misalnya langkah bergambar untuk tugas yang paling sering ditanyakan, sangat menghemat waktu tim."
+        "konsep": "**Memanfaatkan jejaring:** belajar dari praktik baik, sesuaikan dengan kondisi sendiri, dan bawa sebagai usulan resmi agar perubahan dijalankan bersama. Pelajaran dari daerah lain juga dapat dibagikan dalam rapat tim agar seluruh unit ikut memahami dan mendukung perubahan. Hubungan baik dengan kenalan itu juga perlu dijaga untuk kerja sama berikutnya."
       },
-      "tips": "Dalam soal membantu rekan, bobot 5 biasanya **membuat rekan mandiri sambil tetap menjaga tanggung jawab sendiri**. Mengerjakan tugas orang lain bukan bantuan terbaik."
+      "tips": "Dalam soal jejaring dari pelatihan atau forum, bobot 5 biasanya **menindaklanjuti untuk perbaikan organisasi** melalui jalur resmi."
     },
     {
       "id": "p04-079",
@@ -2444,38 +2457,35 @@
       "nomor": 82,
       "kategori": "TKP",
       "subtopik": "Sosial Budaya",
-      "topik": "Menyambut pegawai baru pengguna kursi roda",
+      "topik": "Undangan perayaan hari raya agama lain di rumah rekan",
       "tingkat": "mudah",
-      "pertanyaan": "Unit Anda kedatangan pegawai baru pengguna kursi roda. Meja kerja yang disiapkan untuknya berada di lantai dua, dan kantor belum memiliki lift. Sikap Anda adalah ....",
+      "pertanyaan": "Rekan kerja Anda yang berbeda agama mengundang seluruh tim ke rumahnya untuk bersilaturahmi pada hari rayanya. Anda belum pernah menghadiri acara seperti itu. Sikap Anda adalah ....",
       "opsi": {
-        "A": "Menawarkan diri membantu mendorong kursi rodanya naik dan turun tangga setiap pagi dan sore selama ia bekerja di unit Anda",
-        "B": "Menyambutnya dengan ramah, menanyakan kebutuhannya, dan mengusulkan kepada atasan agar meja kerjanya dipindah ke lantai satu",
-        "C": "Menyambutnya dengan ramah dan membiarkan bagian umum yang mengurus tempat kerjanya",
-        "D": "Bersikap biasa saja dan menunggu ia sendiri yang meminta bantuan jika memerlukannya",
-        "E": "Menyarankan ia mengajukan pindah ke unit lain yang kantornya lebih mudah diakses kursi roda"
+        "A": "Menolak undangan karena merasa tidak nyaman berada di acara hari raya agama lain",
+        "B": "Hadir untuk bersilaturahmi, mengucapkan selamat dengan sopan, dan menghormati suasana acara",
+        "C": "Hadir sebentar tanpa berbicara dengan keluarga rekan, lalu segera pulang",
+        "D": "Tidak hadir dan tidak memberi kabar apa pun kepada rekan tersebut",
+        "E": "Tidak dapat hadir karena ada urusan, lalu mengirim pesan ucapan selamat dan permohonan maaf kepada rekan tersebut"
       },
       "bobot": {
-        "A": 4,
+        "A": 2,
         "B": 5,
         "C": 3,
-        "D": 2,
-        "E": 1
+        "D": 1,
+        "E": 4
       },
       "pembahasan": {
-        "inti": "Rekan penyandang disabilitas berhak mendapat **lingkungan kerja yang aksesibel** dan diperlakukan setara. Sikap terbaik adalah **menyambut dengan hangat**, **menanyakan langsung kebutuhannya** daripada menebak, lalu **mengusulkan penyesuaian** yang membuatnya mandiri, misalnya memindahkan meja ke lantai satu. Penyesuaian seperti ini lebih menghormati martabatnya dibandingkan bantuan fisik yang membuatnya bergantung setiap hari.",
+        "inti": "Bersilaturahmi pada hari raya rekan yang berbeda agama adalah bentuk **toleransi dan persaudaraan** dalam kehidupan sosial, bukan ikut beribadah. Kehadiran Anda menghargai rekan dan keluarganya serta mempererat hubungan tim. Sikap terbaik adalah **hadir**, **mengucapkan selamat dengan sopan**, dan **menghormati suasana** acara. Jika ada hal yang belum Anda pahami, bertanya dengan sopan biasanya disambut baik oleh tuan rumah.",
         "opsi": {
-          "A": "Bobot 4. Niatnya baik dan langsung membantu, tetapi membuat rekan bergantung pada orang lain setiap hari dan berisiko bagi keselamatan.",
-          "B": "Bobot 5. Ramah, menghormati pendapat rekan tentang kebutuhannya, dan mencari solusi yang membuatnya mandiri.",
-          "C": "Bobot 3. Sikapnya baik, tetapi Anda melihat masalah nyata dan tidak berbuat apa-apa.",
-          "D": "Bobot 2. Pasif. Rekan baru mungkin sungkan meminta bantuan di hari-hari pertamanya.",
-          "E": "Bobot 1. Diskriminatif. Hambatannya ada pada tempat kerja, bukan pada rekan tersebut."
+          "A": "Bobot 2. Menolak karena perbedaan agama menunjukkan sikap kurang terbuka dan dapat menyinggung rekan.",
+          "B": "Bobot 5. Hadir, menghargai, dan mempererat hubungan antarumat beragama di lingkungan kerja.",
+          "C": "Bobot 3. Hadir, tetapi sikap menjaga jarak tidak menunjukkan keakraban yang diharapkan dari silaturahmi.",
+          "D": "Bobot 1. Mengabaikan undangan tanpa kabar adalah sikap tidak sopan.",
+          "E": "Bobot 4. Tetap menghargai rekan dengan ucapan dan permohonan maaf, tetapi kesempatan bersilaturahmi langsung terlewat."
         },
-        "konsep": "**Akomodasi yang layak:** sesuaikan lingkungan kerja agar penyandang disabilitas dapat bekerja mandiri dan setara. Prinsip ini diatur dalam UU No. 8 Tahun 2016 tentang Penyandang Disabilitas. Hal kecil lain juga berarti, seperti memastikan jalur di ruangan tidak terhalang dan toilet dapat dijangkau."
+        "konsep": "**Toleransi dalam pergaulan:** menghormati perayaan agama lain melalui silaturahmi dan ucapan yang sopan, tanpa harus mengikuti ibadahnya. Jika ada bagian acara yang bersifat ibadah, Anda cukup menghormatinya tanpa harus ikut serta. Kehadiran dalam suasana kekeluargaan seperti ini memperkuat rasa saling percaya dalam tim kerja."
       },
-      "tips": "Dalam soal rekan penyandang disabilitas, bobot 5 biasanya **bertanya langsung tentang kebutuhannya** dan **menyesuaikan lingkungan**, bukan sekadar membantu secara fisik.",
-      "rujukan": [
-        "UU No. 8 Tahun 2016 tentang Penyandang Disabilitas"
-      ]
+      "tips": "Dalam soal undangan dari rekan beda agama atau budaya, bobot 5 biasanya **hadir dan menghormati**. Mengabaikan undangan tanpa kabar bernilai 1."
     },
     {
       "id": "p04-083",
@@ -2628,35 +2638,35 @@
       "nomor": 87,
       "kategori": "TKP",
       "subtopik": "Sosial Budaya",
-      "topik": "Menyusun konsumsi acara kantor untuk peserta dengan pantangan makanan berbeda",
+      "topik": "Jadwal piket hari raya yang selalu membebani pegawai beragama minoritas",
       "tingkat": "sedang",
-      "pertanyaan": "Anda ditugasi menyiapkan konsumsi rapat kerja yang diikuti peserta dari berbagai daerah dan agama. Beberapa peserta memiliki pantangan makanan karena keyakinan atau kebiasaan adatnya. Sikap Anda adalah ....",
+      "pertanyaan": "Anda ditugasi menyusun jadwal piket layanan selama libur hari raya keagamaan. Selama ini, piket saat hari raya mayoritas selalu dibebankan kepada pegawai beragama minoritas, sedangkan saat hari raya mereka, tidak ada pembagian yang serupa. Sikap Anda adalah ....",
       "opsi": {
-        "A": "Mendata pantangan peserta sejak pendaftaran, menyediakan menu yang aman bagi semua, dan memberi label pada setiap hidangan",
-        "B": "Memesan menu yang paling disukai sebagian besar peserta agar biaya lebih efisien",
-        "C": "Memesan menu seperti biasa dan meminta peserta yang memiliki pantangan membawa makanan sendiri",
-        "D": "Memesan menu yang umum dan menyiapkan beberapa pilihan tambahan tanpa menanyakan kebutuhan peserta lebih dulu",
-        "E": "Menanyakan pantangan kepada peserta saat acara berlangsung, lalu segera memesan makanan tambahan bagi peserta yang membutuhkan"
+        "A": "Menyusun jadwal bergiliran yang adil bagi semua pegawai, dengan memberi kelonggaran kepada yang sedang merayakan hari rayanya",
+        "B": "Mengikuti kebiasaan yang sudah berjalan karena selama ini tidak ada yang mengeluh",
+        "C": "Meminta pegawai beragama minoritas menentukan sendiri apakah mereka bersedia piket lagi",
+        "D": "Membebaskan seluruh pegawai dari piket hari raya dan menutup layanan selama libur",
+        "E": "Menyampaikan kepada atasan bahwa pembagian selama ini kurang adil dan meminta atasan menyusun aturan pembagian piket hari raya yang baru"
       },
       "bobot": {
         "A": 5,
-        "B": 2,
-        "C": 1,
-        "D": 3,
+        "B": 1,
+        "C": 3,
+        "D": 2,
         "E": 4
       },
       "pembahasan": {
-        "inti": "Menghargai keragaman dapat diwujudkan dalam hal sederhana seperti konsumsi. Peserta dengan pantangan makanan berhak mendapat hidangan yang aman tanpa merasa merepotkan. Sikap terbaik adalah **merencanakan sejak awal**: mendata pantangan saat pendaftaran, menyediakan menu yang aman bagi semua, dan **memberi label** agar setiap orang tahu isi hidangan. Persiapan yang baik juga mencegah pemborosan karena memesan makanan tambahan secara mendadak.",
+        "inti": "Memberi kesempatan kepada pegawai yang merayakan hari raya untuk libur adalah bentuk menghormati agama. Namun, jika beban piket **selalu jatuh** pada kelompok yang sama tanpa timbal balik, pembagian itu **tidak adil** dan dapat menimbulkan rasa diperlakukan berbeda. Sikap terbaik adalah menyusun jadwal **bergiliran yang adil**, sehingga setiap pegawai mendapat giliran piket dan kesempatan libur saat hari rayanya sendiri.",
         "opsi": {
-          "A": "Bobot 5. Terencana, inklusif, dan memudahkan setiap peserta memilih makanan dengan yakin.",
-          "B": "Bobot 2. Efisien bagi mayoritas, tetapi peserta dengan pantangan diabaikan.",
-          "C": "Bobot 1. Memindahkan beban kepada peserta dan membuat mereka merasa tidak dianggap dalam acara resmi.",
-          "D": "Bobot 3. Ada usaha menyediakan pilihan, tetapi tanpa data, pilihannya belum tentu sesuai kebutuhan peserta.",
-          "E": "Bobot 4. Peduli terhadap kebutuhan peserta, tetapi dilakukan mendadak sehingga peserta mungkin menunggu lama."
+          "A": "Bobot 5. Adil bagi semua, menghormati hari raya setiap agama, dan layanan tetap berjalan.",
+          "B": "Bobot 1. Melanjutkan ketidakadilan dengan alasan tidak ada yang mengeluh. Tidak mengeluh bukan berarti merasa adil.",
+          "C": "Bobot 3. Memberi pilihan, tetapi beban keputusan tetap dibebankan kepada kelompok minoritas saja.",
+          "D": "Bobot 2. Menghindari masalah dengan mengorbankan layanan kepada warga.",
+          "E": "Bobot 4. Menyadari ketidakadilan dan menyampaikannya, tetapi tugas menyusun jadwal yang menjadi wewenang Anda justru dikembalikan kepada atasan."
         },
-        "konsep": "**Inklusif sejak perencanaan:** kebutuhan khusus peserta (makanan, ibadah, aksesibilitas) sebaiknya didata sebelum acara. Penyesuaian di tengah acara lebih mahal dan kurang nyaman bagi peserta. Label hidangan sederhana, misalnya “tanpa daging” atau “mengandung kacang”, sangat membantu peserta."
+        "konsep": "**Keadilan dalam keberagaman:** perlakukan semua kelompok secara setara, termasuk dalam pembagian beban kerja. Menghormati hari raya satu kelompok tidak boleh berarti membebani kelompok lain secara terus-menerus. Jadwal yang disusun terbuka dan bergiliran juga mudah diterima karena semua pegawai dapat melihat pembagiannya."
       },
-      "tips": "Dalam soal penyelenggaraan acara untuk peserta beragam, bobot 5 biasanya **mendata kebutuhan di awal dan menyediakan pilihan yang aman bagi semua**. Opsi yang meminta peserta mengurus sendiri bernilai rendah."
+      "tips": "Dalam soal pembagian tugas di lingkungan yang beragam, bobot 5 biasanya **adil dan bergiliran**. Opsi yang melanjutkan kebiasaan tidak adil bernilai paling rendah."
     },
     {
       "id": "p04-088",
@@ -2698,15 +2708,15 @@
       "nomor": 89,
       "kategori": "TKP",
       "subtopik": "Teknologi Informasi dan Komunikasi",
-      "topik": "Pesan berantai berisi tautan undian berhadiah",
+      "topik": "Menemukan flashdisk tak dikenal di area kantor",
       "tingkat": "mudah",
-      "pertanyaan": "Grup percakapan kantor menerima pesan berantai yang menyebut instansi Anda sedang mengadakan undian berhadiah. Penerima diminta mengklik tautan dan mengisi nomor induk pegawai serta kata sandi aplikasi kepegawaian. Beberapa rekan sudah mengisinya. Sikap Anda adalah ....",
+      "pertanyaan": "Anda menemukan sebuah flashdisk tanpa nama di lantai lobi kantor. Rekan Anda menyarankan untuk mencolokkannya ke komputer kantor agar tahu siapa pemiliknya. Sikap Anda adalah ....",
       "opsi": {
-        "A": "Mengisi tautan itu juga karena banyak rekan sudah mengisinya dan tampaknya aman",
-        "B": "Mengingatkan di grup bahwa pesan itu penipuan, meminta rekan yang sudah mengisi segera mengganti kata sandi, dan melapor ke pengelola TI",
-        "C": "Tidak mengklik tautan itu dan menghapus pesan dari ponsel Anda sendiri",
-        "D": "Menanyakan kepada pengirim pesan apakah undian itu benar-benar resmi dari instansi",
-        "E": "Mengingatkan semua rekan di grup percakapan kantor agar tidak mengisi tautan itu karena kemungkinan besar merupakan upaya penipuan akun"
+        "A": "Mencolokkannya ke komputer kantor untuk melihat isinya dan mencari tahu pemiliknya",
+        "B": "Tidak mencolokkannya ke komputer kantor dan menyerahkannya kepada pengelola TI atau bagian keamanan untuk ditangani",
+        "C": "Membiarkan flashdisk itu tetap di lantai karena bukan milik Anda",
+        "D": "Mencolokkannya ke laptop pribadi Anda agar komputer kantor tetap aman",
+        "E": "Tidak mencolokkannya ke perangkat apa pun dan menitipkannya ke meja resepsionis sebagai barang temuan tanpa keterangan khusus"
       },
       "bobot": {
         "A": 1,
@@ -2716,17 +2726,17 @@
         "E": 4
       },
       "pembahasan": {
-        "inti": "Pesan yang meminta **kata sandi** melalui tautan hampir pasti merupakan **phishing**, yaitu upaya mencuri akun. Instansi resmi tidak pernah meminta kata sandi melalui pesan berantai. Karena beberapa rekan sudah mengisinya, akun mereka berisiko dibobol. Sikap terbaik mencakup tiga hal: **mengingatkan semua orang**, **meminta rekan yang terlanjur mengisi segera mengganti kata sandi**, dan **melapor ke pengelola TI** agar akun dan sistem dapat diamankan.",
+        "inti": "Flashdisk yang tidak dikenal dapat berisi **program jahat** yang langsung berjalan saat dicolokkan. Cara ini memang sering dipakai untuk menyusup ke jaringan instansi. Karena itu, flashdisk tersebut **tidak boleh dicolokkan** ke perangkat mana pun. Sikap terbaik adalah menyerahkannya kepada **pengelola TI atau bagian keamanan**, yang dapat memeriksanya dengan cara aman dan sekaligus mencari pemiliknya.",
         "opsi": {
-          "A": "Bobot 1. Ikut menyerahkan data akun kepada pihak tidak dikenal. Banyaknya orang yang mengisi bukan bukti keamanan.",
-          "B": "Bobot 5. Mencegah korban baru, menangani akun yang sudah bocor, dan melibatkan pihak yang berwenang.",
-          "C": "Bobot 3. Melindungi diri sendiri, tetapi rekan yang terancam dibiarkan.",
-          "D": "Bobot 2. Pengirim pesan berantai biasanya hanya meneruskan dan tidak tahu kebenarannya. Sementara itu, makin banyak rekan yang mengisi.",
-          "E": "Bobot 4. Mencegah korban baru, tetapi rekan yang sudah mengisi belum dibantu mengamankan akunnya."
+          "A": "Bobot 1. Berisiko memasukkan program jahat ke jaringan kantor dan membahayakan data instansi.",
+          "B": "Bobot 5. Aman bagi sistem kantor dan diserahkan kepada pihak yang dapat menanganinya dengan tepat.",
+          "C": "Bobot 3. Tidak menimbulkan risiko, tetapi orang lain mungkin mengambil dan mencolokkannya.",
+          "D": "Bobot 2. Laptop pribadi juga bisa terinfeksi, dan laptop itu mungkin terhubung ke jaringan atau dipakai untuk pekerjaan kantor.",
+          "E": "Bobot 4. Aman bagi perangkat, tetapi resepsionis tidak tahu risikonya dan bisa saja mencolokkannya untuk mencari pemilik."
         },
-        "konsep": "**Ciri phishing:** menjanjikan hadiah, mendesak, meminta data rahasia seperti kata sandi atau kode OTP, dan memakai tautan yang bukan alamat resmi. Tindakan setelah terlanjur mengisi: ganti kata sandi, aktifkan verifikasi dua langkah, dan lapor."
+        "konsep": "**Keamanan perangkat penyimpanan:** jangan mencolokkan media yang tidak dikenal. Serahkan kepada pihak TI. Sikap waspada pegawai adalah lapisan pertama keamanan informasi instansi. Pengelola TI biasanya memiliki komputer khusus yang terisolasi untuk memeriksa perangkat seperti ini."
       },
-      "tips": "Dalam soal penipuan digital, bobot 5 biasanya **melindungi orang lain, menangani yang sudah jadi korban, dan melapor**. Opsi yang hanya melindungi diri sendiri bernilai sedang."
+      "tips": "Dalam soal keamanan siber, bobot 5 biasanya **tidak mengambil risiko sendiri** dan **melibatkan pengelola TI**. Rasa penasaran bukan alasan membuka perangkat atau tautan yang tidak dikenal."
     },
     {
       "id": "p04-090",
@@ -2838,35 +2848,38 @@
       "nomor": 93,
       "kategori": "TKP",
       "subtopik": "Teknologi Informasi dan Komunikasi",
-      "topik": "Aplikasi layanan baru sering bermasalah sehingga rekan kembali ke cara manual",
+      "topik": "Usulan memakai formulir daring gratis untuk mengumpulkan data warga",
       "tingkat": "sedang",
-      "pertanyaan": "Instansi Anda baru menerapkan aplikasi layanan daring. Aplikasi itu beberapa kali bermasalah, sehingga sebagian rekan kembali memakai formulir kertas dan tidak menginput data ke aplikasi. Sikap Anda adalah ....",
+      "pertanyaan": "Seorang rekan mengusulkan pendataan warga penerima pelatihan memakai formulir daring gratis milik perusahaan swasta, karena cepat dan mudah. Formulir itu akan meminta NIK, alamat, dan nomor telepon warga. Instansi Anda sebenarnya memiliki aplikasi pendataan resmi, tetapi lebih rumit dipakai. Sikap Anda adalah ....",
       "opsi": {
-        "A": "Ikut kembali memakai formulir kertas karena lebih cepat dan tidak pernah bermasalah",
-        "B": "Tetap memakai aplikasi dan menegur rekan yang kembali ke cara manual karena melanggar kebijakan",
-        "C": "Mencatat masalah yang muncul, melaporkannya ke pengelola aplikasi, dan mengusulkan prosedur cadangan sementara agar data tetap diinput",
-        "D": "Tetap memakai aplikasi dan menyampaikan keluhan rekan kepada atasan",
-        "E": "Tetap memakai aplikasi, mencatat setiap masalah yang muncul, dan membantu rekan yang kesulitan menginput data saat aplikasi berjalan normal"
+        "A": "Mendukung usulan itu karena yang penting data cepat terkumpul",
+        "B": "Menolak usulan itu tanpa memberi alternatif karena semua layanan swasta tidak aman",
+        "C": "Menyampaikan risiko data pribadi pada layanan luar, lalu mengusulkan memakai aplikasi resmi dan meminta pengelola TI membantu menyederhanakannya",
+        "D": "Mendukung usulan itu asalkan formulir hanya dibagikan kepada warga yang dikenal",
+        "E": "Menyarankan memakai aplikasi resmi, lalu menyusun panduan singkat bergambar agar petugas dan warga lebih mudah memakainya di lapangan nanti"
       },
       "bobot": {
         "A": 1,
-        "B": 2,
+        "B": 3,
         "C": 5,
-        "D": 3,
+        "D": 2,
         "E": 4
       },
       "pembahasan": {
-        "inti": "Aplikasi baru sering mengalami masalah di masa awal. Kembali ke cara manual tanpa pencatatan membuat **data terpecah** dan masalah aplikasi **tidak pernah diperbaiki**. Sikap terbaik adalah **mendokumentasikan masalah** secara rinci, **melaporkannya** kepada pengelola aplikasi agar diperbaiki, dan mengusulkan **prosedur cadangan resmi**, misalnya formulir kertas yang diinput ulang saat aplikasi pulih. Dengan begitu, layanan tetap berjalan dan data tetap lengkap.",
+        "inti": "Data seperti NIK dan alamat adalah **data pribadi** yang harus dilindungi. Menyimpannya di layanan swasta gratis berarti data berada di luar kendali instansi, tanpa jaminan pengamanan dan tanpa perjanjian pengelolaan. Sikap terbaik adalah **menjelaskan risikonya**, **memakai aplikasi resmi**, dan **mengatasi alasan usulan itu muncul**, yaitu aplikasi yang rumit, dengan meminta pengelola TI membantu menyederhanakannya.",
         "opsi": {
-          "A": "Bobot 1. Meninggalkan kebijakan dan membuat data layanan tidak lengkap.",
-          "B": "Bobot 2. Taat kebijakan, tetapi menegur tanpa memahami masalah nyata yang dihadapi rekan.",
-          "C": "Bobot 5. Masalah diperbaiki dari sumbernya, layanan tetap berjalan, dan data tidak hilang.",
-          "D": "Bobot 3. Menyampaikan masalah ke atasan, tetapi tanpa data yang rinci dan tanpa usulan solusi.",
-          "E": "Bobot 4. Mendukung penerapan aplikasi dan membantu rekan, tetapi masalah belum dilaporkan kepada pengelola yang dapat memperbaikinya."
+          "A": "Bobot 1. Mengorbankan keamanan data warga demi kecepatan.",
+          "B": "Bobot 3. Melindungi data, tetapi tanpa alternatif, masalah aplikasi yang rumit tetap ada dan rekan bisa tetap memakai cara lain.",
+          "C": "Bobot 5. Data terlindungi, alasannya dijelaskan, dan akar masalah diselesaikan bersama pihak yang berwenang.",
+          "D": "Bobot 2. Membatasi penerima formulir tidak mengubah tempat penyimpanan data yang berada di luar kendali instansi.",
+          "E": "Bobot 4. Memakai aplikasi resmi dan memudahkan penggunaannya, tetapi kerumitan aplikasinya sendiri tidak dilaporkan untuk diperbaiki."
         },
-        "konsep": "**Mengawal transisi digital:** dokumentasikan masalah, laporkan ke pihak yang dapat memperbaiki, dan siapkan prosedur cadangan agar layanan dan data tetap terjaga. Laporan yang menyebut waktu, jenis gangguan, dan layanan yang terdampak membantu pengelola menemukan penyebabnya dengan cepat."
+        "konsep": "**Pengelolaan data pribadi oleh instansi:** gunakan sistem resmi yang aman dan kumpulkan data seperlunya. Jika sistem resmi sulit dipakai, perbaiki sistemnya, bukan pindah ke layanan yang tidak terkendali. Rujukan: UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi."
       },
-      "tips": "Dalam soal sistem baru yang bermasalah, bobot 5 biasanya **melaporkan masalah dengan data** dan **menjaga layanan tetap berjalan**. Opsi yang meninggalkan sistem atau sekadar mengeluh bernilai rendah."
+      "tips": "Dalam soal kemudahan versus keamanan data, bobot 5 biasanya **memilih yang aman** dan **memperbaiki kemudahannya**.",
+      "rujukan": [
+        "UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi"
+      ]
     },
     {
       "id": "p04-094",
@@ -2981,35 +2994,35 @@
       "nomor": 97,
       "kategori": "TKP",
       "subtopik": "Profesionalisme",
-      "topik": "Rekan memakai kendaraan dinas untuk keperluan pribadi",
+      "topik": "Rapat penting bentrok dengan cuti yang sudah disetujui",
       "tingkat": "sedang",
-      "pertanyaan": "Anda beberapa kali melihat rekan memakai mobil dinas untuk mengantar keluarganya berbelanja pada akhir pekan. Ia mengatakan bahwa semua orang di kantor juga melakukannya. Sikap Anda adalah ....",
+      "pertanyaan": "Cuti tahunan Anda untuk menghadiri wisuda adik sudah disetujui sejak sebulan lalu. Dua hari sebelum cuti, atasan menjadwalkan rapat evaluasi yang membahas program yang Anda tangani. Sikap Anda adalah ....",
       "opsi": {
-        "A": "Ikut memakai mobil dinas untuk keperluan pribadi karena sudah menjadi kebiasaan di kantor",
-        "B": "Membiarkannya karena bukan tugas Anda mengawasi pemakaian kendaraan dinas",
-        "C": "Langsung melaporkannya kepada atasan tanpa membicarakannya terlebih dahulu dengan rekan tersebut",
-        "D": "Mengingatkan rekan secara pribadi bahwa kendaraan dinas hanya untuk kedinasan, lalu melapor ke atasan jika kebiasaan itu terus berlanjut",
-        "E": "Mengingatkan rekan secara pribadi bahwa pemakaian mobil dinas untuk mengantar keluarga berbelanja tidak dibenarkan oleh aturan yang berlaku"
+        "A": "Membatalkan cuti tanpa membicarakannya karena rapat evaluasi lebih penting",
+        "B": "Tetap cuti dan tidak memberi informasi apa pun tentang program kepada siapa pun",
+        "C": "Meminta atasan memindahkan jadwal rapat sampai Anda kembali dari cuti",
+        "D": "Tetap mengambil cuti, menyiapkan bahan dan catatan program untuk rekan yang mewakili, serta bersedia dihubungi jika diperlukan",
+        "E": "Menyampaikan kepada atasan bahwa Anda sedang cuti, lalu menyerahkan bahan program kepada rekan untuk dipelajari sendiri sebelum rapat dimulai"
       },
       "bobot": {
-        "A": 1,
-        "B": 2,
-        "C": 3,
+        "A": 3,
+        "B": 1,
+        "C": 2,
         "D": 5,
         "E": 4
       },
       "pembahasan": {
-        "inti": "Kendaraan dinas adalah **barang milik negara** yang dibiayai negara, termasuk bahan bakar dan perawatannya. Memakainya untuk keperluan pribadi adalah **penyalahgunaan fasilitas**, walaupun dianggap kebiasaan. Sikap profesional adalah **mengingatkan rekan secara pribadi lebih dulu**, karena cara ini menjaga hubungan dan memberi kesempatan memperbaiki diri. Jika kebiasaan itu terus berlanjut, barulah dilaporkan kepada atasan melalui jalur yang benar.",
+        "inti": "Cuti yang sudah disetujui adalah **hak pegawai**, dan acara keluarga yang penting layak dipertahankan. Namun, pegawai profesional memastikan pekerjaannya **tetap berjalan** selama ia tidak ada. Sikap terbaik adalah tetap mengambil cuti sambil **menyiapkan bahan dan catatan** untuk rekan yang mewakili dalam rapat, serta **bersedia dihubungi** untuk pertanyaan penting. Dengan begitu, hak pribadi dan tanggung jawab kerja sama-sama terjaga.",
         "opsi": {
-          "A": "Bobot 1. Ikut melanggar aturan dengan alasan kebiasaan. Kebiasaan yang salah tidak menjadi benar karena banyak yang melakukannya.",
-          "B": "Bobot 2. Membiarkan penyalahgunaan aset negara di sekitar Anda.",
-          "C": "Bobot 3. Tujuannya benar, tetapi melewatkan kesempatan mengingatkan secara langsung dan bisa merusak hubungan kerja.",
-          "D": "Bobot 5. Mengingatkan dengan cara yang baik dan tetap siap memakai jalur resmi jika pelanggaran berlanjut.",
-          "E": "Bobot 4. Langkah pertama tepat, tetapi belum ada sikap jika rekan tetap mengulanginya."
+          "A": "Bobot 3. Mendahulukan pekerjaan, tetapi mengorbankan hak cuti tanpa komunikasi. Bisa jadi rapat tetap berjalan baik dengan bahan yang disiapkan.",
+          "B": "Bobot 1. Meninggalkan tanggung jawab. Rapat evaluasi berjalan tanpa informasi program yang Anda tangani.",
+          "C": "Bobot 2. Meminta rapat dipindah demi kepentingan pribadi, padahal rapat melibatkan banyak orang.",
+          "D": "Bobot 5. Hak cuti terpakai, pekerjaan diserahterimakan dengan baik, dan Anda tetap siap membantu.",
+          "E": "Bobot 4. Ada komunikasi dan serah terima, tetapi rekan dibiarkan mempelajari sendiri tanpa catatan dan tanpa kesempatan bertanya."
         },
-        "konsep": "**Penggunaan barang milik negara:** hanya untuk kepentingan dinas. Urutan menyikapi pelanggaran rekan: ingatkan secara pribadi → laporkan jika berlanjut. Mengingatkan secara pribadi menunjukkan itikad baik, sedangkan laporan ke atasan menjadi langkah berikutnya jika teguran tidak diindahkan."
+        "konsep": "**Profesional saat cuti:** serahkan pekerjaan dengan bahan yang jelas, tunjuk pengganti, dan tetap dapat dihubungi untuk hal mendesak. Hak cuti dan tanggung jawab kerja tidak harus saling meniadakan."
       },
-      "tips": "Dalam soal rekan yang melanggar aturan ringan, bobot 5 biasanya **mengingatkan secara pribadi dulu, lalu melapor jika berlanjut**. Ikut melanggar dengan alasan “semua orang melakukannya” selalu bernilai 1."
+      "tips": "Dalam soal bentrok cuti dan tugas, bobot 5 biasanya **tetap memakai hak** tetapi **menyiapkan serah terima yang baik**."
     },
     {
       "id": "p04-098",
@@ -3051,15 +3064,15 @@
       "nomor": 99,
       "kategori": "TKP",
       "subtopik": "Profesionalisme",
-      "topik": "Tugas mendadak pada akhir pekan yang bentrok dengan rencana keluarga",
+      "topik": "Nilai penilaian kinerja lebih rendah dari harapan",
       "tingkat": "sedang",
-      "pertanyaan": "Jumat sore, atasan meminta Anda membantu persiapan kunjungan pejabat pusat pada Sabtu pagi. Anda sudah berjanji mengantar keluarga ke acara kerabat pada hari yang sama. Sikap Anda adalah ....",
+      "pertanyaan": "Hasil penilaian kinerja tahunan Anda lebih rendah daripada yang Anda harapkan. Anda merasa sudah bekerja keras sepanjang tahun. Sikap Anda adalah ....",
       "opsi": {
-        "A": "Menjelaskan rencana Anda kepada atasan dan menawarkan bagian tugas yang dapat diselesaikan malam ini atau dibantu rekan lain",
-        "B": "Menerima tugas itu, tetapi datang terlambat dan pulang lebih cepat tanpa memberi tahu atasan",
-        "C": "Menolak tugas itu karena akhir pekan adalah waktu pribadi yang tidak boleh diganggu",
-        "D": "Menerima tugas itu dan membatalkan janji dengan keluarga tanpa menjelaskan apa pun kepada atasan",
-        "E": "Menerima tugas itu dan meminta anggota keluarga yang lain menggantikan Anda mengantar keluarga ke acara kerabat pada hari Sabtu"
+        "A": "Meminta waktu kepada atasan untuk membahas penilaian itu, menanyakan bagian yang perlu diperbaiki, dan menyusun rencana perbaikan",
+        "B": "Menurunkan semangat kerja karena merasa usaha Anda tidak dihargai",
+        "C": "Mengeluhkan penilaian itu kepada rekan-rekan dan membandingkannya dengan nilai mereka",
+        "D": "Menerima nilai itu tanpa bertanya dan bekerja seperti biasa",
+        "E": "Mengajukan keberatan resmi atas penilaian itu dengan melampirkan semua bukti hasil kerja yang sudah Anda kumpulkan selama setahun"
       },
       "bobot": {
         "A": 5,
@@ -3069,17 +3082,17 @@
         "E": 4
       },
       "pembahasan": {
-        "inti": "Tugas mendadak di luar jam kerja kadang memang terjadi, dan pegawai profesional berusaha **mendukung kepentingan organisasi**. Namun, komitmen pribadi juga penting. Sikap terbaik adalah **berkomunikasi terbuka** dengan atasan tentang rencana Anda, lalu **menawarkan solusi** agar tugas tetap terlaksana, misalnya menyelesaikan sebagian pekerjaan malam ini atau melibatkan rekan lain. Atasan biasanya menghargai pegawai yang jujur dan tetap memikirkan tugasnya.",
+        "inti": "Penilaian kinerja adalah **umpan balik** untuk berkembang. Bekerja keras belum tentu sama dengan mencapai sasaran yang diukur. Sikap terbaik adalah **membicarakannya dengan atasan** untuk memahami dasar penilaiannya, **menanyakan bagian yang perlu diperbaiki**, lalu **menyusun rencana perbaikan**. Jika ternyata ada data yang terlewat, pembicaraan ini juga menjadi kesempatan menyampaikannya dengan baik.",
         "opsi": {
-          "A": "Bobot 5. Terbuka, bertanggung jawab, dan menawarkan solusi agar tugas dan komitmen keluarga sama-sama terjaga.",
-          "B": "Bobot 1. Tidak jujur dan tidak bertanggung jawab. Atasan mengira tugas tertangani penuh, padahal tidak.",
-          "C": "Bobot 2. Menolak tanpa mencari jalan tengah, padahal kunjungan pejabat adalah kepentingan instansi.",
-          "D": "Bobot 3. Mendukung tugas, tetapi mengorbankan komitmen pribadi tanpa komunikasi. Sikap ini sulit dipertahankan jika terus terjadi.",
-          "E": "Bobot 4. Tugas terlaksana dan keluarga tetap diantar, tetapi peluang membicarakan pembagian tugas dengan atasan dilewatkan."
+          "A": "Bobot 5. Terbuka terhadap umpan balik, aktif mencari kejelasan, dan berorientasi pada perbaikan.",
+          "B": "Bobot 1. Menurunkan semangat merugikan diri sendiri dan unit, serta tidak memperbaiki apa pun.",
+          "C": "Bobot 2. Mengeluh dan membandingkan di belakang dapat merusak suasana tim.",
+          "D": "Bobot 3. Menerima dengan tenang, tetapi tidak berusaha memahami apa yang perlu diperbaiki.",
+          "E": "Bobot 4. Keberatan resmi adalah hak yang sah, tetapi sebaiknya dilakukan setelah memahami dasar penilaian dari atasan."
         },
-        "konsep": "**Menyeimbangkan tugas dan urusan pribadi:** komunikasikan secara terbuka, tawarkan solusi, dan jangan menerima tugas jika tidak dapat menjalankannya dengan sungguh-sungguh. Komunikasi sejak awal memberi atasan kesempatan mengatur pembagian tugas dengan lebih baik."
+        "konsep": "**Menyikapi umpan balik:** dengarkan, pahami dasarnya, tanyakan yang belum jelas, dan buat rencana perbaikan. Gunakan jalur keberatan resmi jika setelah dibahas memang ada kekeliruan. Rencana perbaikan yang disepakati dengan atasan juga memudahkan penilaian tahun berikutnya, karena sasaran dan ukurannya lebih jelas. Sikap terbuka terhadap umpan balik menunjukkan kedewasaan profesional."
       },
-      "tips": "Dalam soal bentrok tugas dan urusan pribadi, bobot 5 biasanya **jujur kepada atasan dan menawarkan solusi**. Opsi yang menerima tugas lalu menjalankannya diam-diam setengah hati bernilai 1."
+      "tips": "Dalam soal kritik atau penilaian yang mengecewakan, bobot 5 biasanya **mencari umpan balik untuk berkembang**. Mengeluh di belakang dan menurunkan semangat bernilai rendah."
     },
     {
       "id": "p04-100",
@@ -3121,70 +3134,70 @@
       "nomor": 101,
       "kategori": "TKP",
       "subtopik": "Profesionalisme",
-      "topik": "Diminta menaikkan angka capaian agar target kinerja tampak tercapai",
+      "topik": "Atasan meminta izin usaha kerabatnya didahulukan",
       "tingkat": "sulit",
-      "pertanyaan": "Capaian program unit Anda baru 70% dari target tahunan. Seorang rekan senior menyarankan agar angka capaian dalam laporan kinerja dibulatkan menjadi 90% dengan alasan “toh sisa kegiatannya akan selesai tahun depan”. Sikap Anda adalah ....",
+      "pertanyaan": "Atasan Anda menitipkan berkas izin usaha milik kerabatnya dan meminta Anda memprosesnya hari ini, padahal masih ada 20 berkas lain yang masuk lebih dulu. Berkas kerabatnya sudah lengkap. Sikap Anda adalah ....",
       "opsi": {
-        "A": "Mengikuti saran itu karena sisa kegiatan memang akan diselesaikan tahun depan",
-        "B": "Menulis capaian 80% sebagai jalan tengah agar tidak terlalu jauh dari kenyataan",
-        "C": "Menulis capaian 70% tanpa membahasnya dengan rekan senior agar tidak terjadi perdebatan",
-        "D": "Menolak dengan sopan, menulis capaian sebenarnya, dan menyertakan penjelasan kendala serta rencana penyelesaian",
-        "E": "Menolak dengan sopan dan menulis capaian sebenarnya, lalu menyerahkan penjelasan kendalanya kepada atasan unit Anda"
+        "A": "Memproses berkas itu hari ini karena perintah atasan wajib dilaksanakan",
+        "B": "Memproses berkas itu diam-diam di sela pekerjaan agar tidak terlihat mendahului antrean",
+        "C": "Menolak berkas itu karena dititipkan melalui atasan, bukan diajukan sendiri oleh pemohon",
+        "D": "Menerima berkas itu, menjelaskan dengan sopan bahwa berkas diproses sesuai urutan masuk, dan memberi tahu perkiraan waktu selesainya",
+        "E": "Menerima berkas itu, lalu memprosesnya sesuai urutan masuk tanpa menyampaikan apa pun kepada atasan agar tidak terjadi perdebatan di antara kalian"
       },
       "bobot": {
-        "A": 1,
-        "B": 2,
+        "A": 2,
+        "B": 1,
         "C": 3,
         "D": 5,
         "E": 4
       },
       "pembahasan": {
-        "inti": "Laporan kinerja adalah **dasar evaluasi dan perencanaan** instansi. Menaikkan angka capaian, walaupun dengan alasan akan diselesaikan nanti, adalah **manipulasi data** yang menyesatkan pimpinan. Sikap terbaik adalah **menolak dengan sopan**, **melaporkan capaian sebenarnya**, dan menjelaskan **kendala serta rencana penyelesaiannya**. Penjelasan ini membuat capaian yang rendah dapat dipahami, sehingga pimpinan dapat membantu mencari jalan keluar.",
+        "inti": "Mendahulukan berkas kerabat atasan adalah **perlakuan istimewa** yang merugikan 20 pemohon lain dan termasuk **benturan kepentingan**. Perintah atasan yang bertentangan dengan prinsip keadilan layanan tidak boleh dijalankan begitu saja. Namun, berkasnya sah dan lengkap, sehingga tetap harus diterima. Sikap terbaik adalah **menerima berkas**, **menjelaskan dengan sopan** bahwa semua berkas diproses sesuai urutan, dan memberi perkiraan waktu selesai. Cara ini tegas, transparan, dan tetap menghormati atasan.",
         "opsi": {
-          "A": "Bobot 1. Memalsukan data kinerja. Kegiatan tahun depan tidak dapat dihitung sebagai capaian tahun ini.",
-          "B": "Bobot 2. Tetap manipulasi data, hanya angkanya lebih kecil.",
-          "C": "Bobot 3. Datanya jujur, tetapi tanpa penjelasan kendala dan tanpa menanggapi saran rekan dengan baik.",
-          "D": "Bobot 5. Jujur, sopan kepada rekan senior, dan laporan menjadi lebih berguna karena disertai penjelasan.",
-          "E": "Bobot 4. Jujur dan sopan, tetapi penjelasan kendala yang sebenarnya Anda pahami justru diserahkan kepada orang lain."
+          "A": "Bobot 2. Taat kepada atasan, tetapi melanggar keadilan layanan bagi pemohon lain.",
+          "B": "Bobot 1. Tetap mendahulukan, ditambah upaya menyembunyikannya. Ini pelanggaran sekaligus ketidakjujuran.",
+          "C": "Bobot 3. Menolak perlakuan istimewa, tetapi berkas yang sah dan lengkap tidak seharusnya ditolak.",
+          "D": "Bobot 5. Adil bagi semua pemohon, transparan kepada atasan, dan berkas tetap dilayani.",
+          "E": "Bobot 4. Prosesnya adil, tetapi atasan tidak diberi tahu sehingga ia mungkin mengira berkas sudah didahulukan."
         },
-        "konsep": "**Akuntabilitas kinerja:** laporkan capaian apa adanya, jelaskan kendalanya, dan usulkan rencana perbaikan. Laporan jujur dengan analisis lebih bernilai daripada angka tinggi yang tidak nyata. Menyampaikan penolakan dengan sopan kepada rekan senior juga menjaga hubungan kerja tetap baik."
+        "konsep": "**Menghadapi perintah yang tidak tepat:** tetap sopan, jelaskan aturan yang berlaku, dan tawarkan jalan yang sesuai prosedur. ASN wajib menghindari benturan kepentingan dan memberi pelayanan yang adil. Jika atasan tetap memaksa, Anda dapat meminta perintah itu dituangkan secara tertulis atau berkonsultasi dengan pihak kepatuhan internal."
       },
-      "tips": "Dalam soal tekanan memanipulasi angka, bobot 5 biasanya **jujur dan menambahkan penjelasan atau rencana perbaikan**. Opsi “jalan tengah” yang tetap mengubah angka bernilai rendah."
+      "tips": "Jika atasan meminta perlakuan istimewa, bobot 5 biasanya **menjalankan aturan dengan sopan dan transparan**, bukan menuruti, menyembunyikan, atau menolak seluruhnya."
     },
     {
       "id": "p04-102",
       "nomor": 102,
       "kategori": "TKP",
       "subtopik": "Profesionalisme",
-      "topik": "Dimutasi ke unit yang bukan pilihan",
+      "topik": "Diminta menggantikan presentasi rekan di depan pimpinan dengan persiapan singkat",
       "tingkat": "sedang",
-      "pertanyaan": "Anda dimutasi ke unit pengelolaan arsip, padahal Anda lebih senang bekerja di bidang pelayanan yang sudah Anda tekuni selama lima tahun. Sikap Anda adalah ....",
+      "pertanyaan": "Satu jam sebelum rapat pimpinan, atasan meminta Anda menggantikan rekan yang mendadak sakit untuk memaparkan hasil kajian tim. Anda ikut menyusun sebagian kajian itu, tetapi belum menguasai bagian yang dikerjakan rekan. Sikap Anda adalah ....",
       "opsi": {
-        "A": "Mengajukan keberatan dan menolak berangkat sampai keputusan mutasi dibatalkan",
-        "B": "Menerima mutasi, tetapi bekerja seadanya sambil menunggu kesempatan pindah kembali",
-        "C": "Menerima mutasi, mempelajari tugas baru dengan sungguh-sungguh, dan memanfaatkan pengalaman pelayanan untuk memperbaiki layanan arsip",
-        "D": "Menerima mutasi dan meminta atasan baru memberi waktu adaptasi yang lebih panjang",
-        "E": "Menerima mutasi dan mempelajari tugas-tugas baru di unit pengelolaan arsip dengan sungguh-sungguh, teliti, dan penuh rasa tanggung jawab"
+        "A": "Menolak karena Anda tidak menguasai seluruh isi kajian",
+        "B": "Menerima tugas itu dan memaparkan bagian yang Anda kuasai saja tanpa menyinggung bagian lainnya",
+        "C": "Menerima tugas itu, mempelajari bagian rekan dengan cepat, menghubunginya jika memungkinkan, dan menyampaikan secara jujur hal yang belum dapat Anda jawab",
+        "D": "Menerima tugas itu dan menjawab semua pertanyaan pimpinan dengan perkiraan Anda sendiri",
+        "E": "Menerima tugas itu, mempelajari bagian rekan secepatnya, dan meminta atasan ikut mendampingi untuk menjawab pertanyaan pimpinan yang sulit"
       },
       "bobot": {
-        "A": 1,
-        "B": 2,
+        "A": 2,
+        "B": 3,
         "C": 5,
-        "D": 3,
+        "D": 1,
         "E": 4
       },
       "pembahasan": {
-        "inti": "Mutasi adalah bagian dari **pengembangan karier dan kebutuhan organisasi**, dan ASN wajib bersedia ditempatkan sesuai kebutuhan. Pegawai profesional menerima penugasan baru dengan sungguh-sungguh. Sikap terbaik bahkan **memanfaatkan pengalaman sebelumnya** sebagai nilai tambah. Pengalaman lima tahun di pelayanan, misalnya, dapat membantu membuat layanan arsip lebih cepat dan mudah diakses oleh unit lain maupun warga.",
+        "inti": "Tugas mendadak menuntut **kesiapan dan kejujuran**. Sikap terbaik adalah **menerima** tugas itu, **mempersiapkan diri secepat mungkin** dengan mempelajari bahan dan, jika rekan masih bisa dihubungi, menanyakan poin pentingnya. Saat presentasi, sampaikan **secara jujur** hal yang belum dapat dijawab dan janjikan tindak lanjut. Pimpinan lebih menghargai jawaban jujur daripada jawaban yang tampak meyakinkan tetapi keliru.",
         "opsi": {
-          "A": "Bobot 1. Menolak penugasan resmi adalah pelanggaran disiplin.",
-          "B": "Bobot 2. Menerima secara formal, tetapi tidak bertanggung jawab atas tugas baru.",
-          "C": "Bobot 5. Menerima, bersungguh-sungguh, dan memberi nilai tambah dari pengalaman sebelumnya.",
-          "D": "Bobot 3. Menerima, tetapi fokus pada kebutuhan diri sendiri, bukan pada tugas baru.",
-          "E": "Bobot 4. Profesional dan bertanggung jawab, tetapi belum memanfaatkan pengalaman sebelumnya sebagai nilai tambah."
+          "A": "Bobot 2. Menghindari tanggung jawab, padahal Anda ikut menyusun kajian dan paling siap menggantikan.",
+          "B": "Bobot 3. Menerima tugas, tetapi sebagian hasil kerja tim tidak tersampaikan.",
+          "C": "Bobot 5. Bertanggung jawab, berusaha maksimal dalam waktu singkat, dan jujur tentang keterbatasan.",
+          "D": "Bobot 1. Memberi informasi berdasarkan perkiraan kepada pimpinan dapat menyesatkan keputusan.",
+          "E": "Bobot 4. Siap dan mencari dukungan, tetapi membebani atasan yang mungkin juga harus fokus pada agenda rapat lainnya."
         },
-        "konsep": "**Sikap terhadap penugasan baru:** terima, pelajari, dan berikan kontribusi. Pengalaman di bidang lama adalah modal untuk berinovasi di tempat baru. Sikap positif di tempat baru juga mempercepat adaptasi dan membuka peluang karier berikutnya. Pegawai yang menunjukkan kinerja baik di penugasan yang tidak ia pilih biasanya mendapat kepercayaan lebih besar dari pimpinan."
+        "konsep": "**Tugas mendadak:** terima, siapkan diri secepat mungkin, manfaatkan sumber yang ada, dan jujur tentang hal yang belum diketahui. Jangan menebak saat memberi informasi kepada pimpinan. Setelah rapat, sampaikan pertanyaan yang belum terjawab kepada rekan yang menyusun bagian itu dan kirimkan jawabannya kepada pimpinan. Tindak lanjut seperti ini menjaga kepercayaan pimpinan kepada tim."
       },
-      "tips": "Dalam soal mutasi atau penugasan baru, bobot 5 biasanya **menerima dengan sungguh-sungguh dan memberi kontribusi lebih**. Opsi yang menolak atau bekerja seadanya bernilai rendah."
+      "tips": "Dalam soal tugas mendadak di luar kesiapan, bobot 5 biasanya **menerima, bersiap maksimal, dan jujur**. Opsi yang mengarang jawaban selalu bernilai 1."
     },
     {
       "id": "p04-103",
@@ -3226,15 +3239,15 @@
       "nomor": 104,
       "kategori": "TKP",
       "subtopik": "Antiradikalisme",
-      "topik": "Donasi rumah ibadah yang disertai ajakan memusuhi kelompok lain",
+      "topik": "Kerabat membagikan panduan merakit bahan peledak di grup keluarga",
       "tingkat": "sulit",
-      "pertanyaan": "Seorang kenalan mengajak Anda berdonasi untuk pembangunan rumah ibadah. Dalam materi penggalangan dana yang ia kirim, terdapat seruan agar umat memusuhi dan menjauhi pemeluk agama lain di lingkungan sekitar. Sikap Anda adalah ....",
+      "pertanyaan": "Seorang kerabat membagikan berkas panduan merakit bahan peledak di grup percakapan keluarga. Ia mengatakan hanya “untuk pengetahuan”, tetapi beberapa pesan sebelumnya ia sering memuji pelaku serangan teror. Sikap Anda adalah ....",
       "opsi": {
-        "A": "Tidak berdonasi melalui penggalangan itu, menyampaikan keberatan atas seruan permusuhannya, dan melaporkan materi itu kepada pengurus atau pihak berwenang",
-        "B": "Tetap berdonasi karena pembangunan rumah ibadah adalah kegiatan yang baik, apa pun isi seruannya",
-        "C": "Berdonasi, tetapi tidak menyebarkan materi penggalangan dana itu kepada orang lain",
-        "D": "Tidak berdonasi dan diam saja tanpa memberi tanggapan apa pun kepada kenalan tersebut",
-        "E": "Tidak berdonasi melalui penggalangan itu dan menjelaskan kepada kenalan Anda bahwa seruan memusuhi pemeluk agama lain bertentangan dengan nilai kebangsaan"
+        "A": "Meminta berkas itu dihapus, mengingatkan bahayanya, dan melaporkan kepada pihak berwenang dengan menyimpan bukti pesannya",
+        "B": "Membiarkannya karena ia mengatakan hanya untuk pengetahuan dan masih anggota keluarga sendiri",
+        "C": "Keluar dari grup keluarga agar tidak terlibat dalam urusan tersebut",
+        "D": "Meminta berkas itu dihapus dan menegurnya secara pribadi tanpa melaporkan kepada siapa pun karena masih keluarga",
+        "E": "Meminta berkas itu dihapus, menegurnya secara pribadi, dan meminta anggota keluarga yang dituakan untuk terus mengawasi serta menasihatinya"
       },
       "bobot": {
         "A": 5,
@@ -3244,17 +3257,17 @@
         "E": 4
       },
       "pembahasan": {
-        "inti": "Membangun rumah ibadah adalah tujuan yang baik, tetapi seruan **memusuhi pemeluk agama lain** adalah bibit intoleransi yang dapat berkembang menjadi radikalisme. Donasi melalui penggalangan seperti itu berarti ikut mendukung penyebaran pesan permusuhan. Sikap terbaik adalah **tidak berdonasi melalui jalur tersebut**, **menyampaikan keberatan** kepada kenalan, dan **melaporkan materi itu** kepada pengurus rumah ibadah atau pihak berwenang. Pengurus mungkin tidak tahu bahwa materinya dipakai untuk menyebarkan permusuhan.",
+        "inti": "Panduan merakit bahan peledak, ditambah kebiasaan **memuji pelaku teror**, adalah **tanda bahaya yang serius**. Situasi ini tidak cukup ditangani di lingkungan keluarga, karena menyangkut keselamatan banyak orang. Sikap terbaik adalah meminta berkas itu dihapus agar tidak menyebar, mengingatkan bahayanya, dan **melaporkan kepada pihak berwenang** dengan **menyimpan bukti**. Melapor bukan berarti membenci kerabat, tetapi mencegah ia dan orang lain menjadi korban.",
         "opsi": {
-          "A": "Bobot 5. Menolak ikut mendukung, meluruskan secara langsung, dan melibatkan pihak yang dapat menghentikan penyebaran pesan.",
-          "B": "Bobot 1. Tujuan baik tidak membenarkan pesan permusuhan. Donasi ini ikut menguatkan penyebarnya.",
-          "C": "Bobot 2. Tidak menyebarkan pesan, tetapi tetap memberi dukungan dana kepada penggalangan yang menyebarkan permusuhan.",
-          "D": "Bobot 3. Tidak ikut mendukung, tetapi pesan permusuhan dibiarkan beredar tanpa diluruskan.",
-          "E": "Bobot 4. Menolak dan meluruskan, tetapi materi itu bisa terus menyebar ke orang lain karena tidak dilaporkan."
+          "A": "Bobot 5. Menghentikan penyebaran, mengingatkan, dan melibatkan pihak berwenang dengan bukti yang cukup.",
+          "B": "Bobot 1. Mengabaikan tanda bahaya yang serius. Alasan “untuk pengetahuan” tidak menghapus risikonya.",
+          "C": "Bobot 2. Menghindar dari masalah dan membiarkan anggota keluarga lain terpapar.",
+          "D": "Bobot 3. Ada upaya menghentikan penyebaran, tetapi tanda bahaya yang serius tidak dilaporkan.",
+          "E": "Bobot 4. Melibatkan keluarga untuk pembinaan itu baik, tetapi pengawasan keluarga tidak cukup untuk ancaman yang menyangkut keselamatan umum."
         },
-        "konsep": "**Mengenali bibit radikalisme:** seruan memusuhi kelompok lain, merendahkan keyakinan lain, atau membenarkan kekerasan, sering dibungkus dengan kegiatan yang tampak baik. Nilai yang dijaga adalah toleransi dan persatuan dalam keberagaman."
+        "konsep": "**Tanda bahaya yang harus dilaporkan:** menyebarkan cara membuat senjata atau bahan peledak, memuji atau membenarkan aksi teror, dan menyatakan niat melakukan kekerasan. Laporan dapat disampaikan kepada kepolisian atau kanal pengaduan terorisme."
       },
-      "tips": "Jika kegiatan baik disertai pesan permusuhan, bobot 5 biasanya **menolak bagian yang salah, meluruskan, dan melapor**. Ikut mendukung karena tujuannya tampak baik selalu bernilai 1."
+      "tips": "Jika ada indikasi **persiapan kekerasan**, bobot 5 hampir selalu **melapor kepada pihak berwenang**, termasuk jika pelakunya keluarga sendiri. Membiarkan atau sekadar keluar grup bernilai rendah."
     },
     {
       "id": "p04-105",

@@ -90,4 +90,4 @@ Pemilik menyerahkan keputusan ke model ("gas aja"):
      alur di `docs/cara-membuat-paket.md`, prompt siap pakai di `prompts/paket-p03.md` dan `prompts/paket-p04.md`.
    - Paket 3 (`bank/p03.json`, 110 soal, seed 303) selesai 6 November 2026, status draf. Validator 0 galat/0 peringatan, PDF 145 halaman.
    - Paket 4 (`bank/p04.json`, 110 soal, seed 404) selesai 6 November 2026, status draf. Validator 0 galat
-     dan 0 peringatan, PDF 144 halaman. Cek fakta sebelum terbit: no. 6–12, 13, 17–21, 27, 30, 68, 84–85, 94, 106, 109–110 (lihat `rujukan`).
+     dan 0 peringatan, Topik yang mirip p03 sudah diganti (24 soal). Cek fakta sebelum terbit: no. 4–15, 17–21, 27, 30, 68, 76, 84, 93–94, 106, 109–110 (lihat `rujukan`).
