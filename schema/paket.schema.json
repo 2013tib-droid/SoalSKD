@@ -1,0 +1,197 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://soalskd.local/schema/paket.schema.json",
+  "title": "Paket soal SKD CPNS",
+  "description": "Sumber utama data soal. Ebook PDF, Markdown, dan aplikasi try out dibuat dari file ini. Penjelasan field ada di docs/skema-soal.md.",
+  "type": "object",
+  "required": ["skema", "meta", "soal"],
+  "additionalProperties": false,
+  "properties": {
+    "skema": {
+      "description": "Versi skema. Naikkan jika ada perubahan yang tidak kompatibel.",
+      "const": 1
+    },
+    "meta": { "$ref": "#/$defs/meta" },
+    "soal": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 110,
+      "items": { "$ref": "#/$defs/soal" }
+    }
+  },
+  "$defs": {
+    "markdown": {
+      "description": "Markdown GFM: tebal, miring, daftar, tabel. Tanpa LaTeX; tulis rumus dengan karakter Unicode (×, ÷, √, ², d₁).",
+      "type": "string",
+      "minLength": 1
+    },
+    "huruf": { "enum": ["A", "B", "C", "D", "E"] },
+    "meta": {
+      "type": "object",
+      "required": ["id", "judul", "versi", "dibuat", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "description": "Kode paket, huruf kecil. Contoh: p01.",
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*$"
+        },
+        "judul": { "type": "string", "minLength": 1 },
+        "versi": {
+          "description": "Naik setiap kali isi soal berubah setelah terbit.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "dibuat": { "type": "string", "format": "date" },
+        "diperbarui": { "type": "string", "format": "date" },
+        "status": {
+          "description": "draf: belum direview pemilik · review: sedang direview · final: siap terbit.",
+          "enum": ["draf", "review", "final"]
+        },
+        "catatan": { "type": "string" }
+      }
+    },
+    "soal": {
+      "type": "object",
+      "required": [
+        "id", "nomor", "kategori", "subtopik", "topik", "tingkat",
+        "pertanyaan", "opsi", "pembahasan", "tips"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "description": "Unik di seluruh bank dan tidak berubah walau nomor berubah. Format: <id paket>-<3 digit>. Contoh: p01-014.",
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*-[0-9]{3}$"
+        },
+        "nomor": { "type": "integer", "minimum": 1, "maximum": 110 },
+        "kategori": { "enum": ["TWK", "TIU", "TKP"] },
+        "subtopik": {
+          "description": "Materi kisi-kisi. TWK: Pancasila, UUD 1945, Nasionalisme, Integritas, Bela Negara, Bahasa Indonesia, dst. TIU: Analogi, Silogisme, Deret Angka, dst. TKP: wajib salah satu dari enam aspek.",
+          "type": "string",
+          "minLength": 1
+        },
+        "topik": {
+          "description": "Topik spesifik, dipakai untuk mencegah topik berulang antarpaket. Contoh: Pembatasan HAM (Pasal 28J).",
+          "type": "string",
+          "minLength": 1
+        },
+        "tingkat": { "enum": ["mudah", "sedang", "sulit"] },
+        "pertanyaan": { "$ref": "#/$defs/markdown" },
+        "opsi": {
+          "type": "object",
+          "required": ["A", "B", "C", "D", "E"],
+          "additionalProperties": false,
+          "properties": {
+            "A": { "$ref": "#/$defs/markdown" },
+            "B": { "$ref": "#/$defs/markdown" },
+            "C": { "$ref": "#/$defs/markdown" },
+            "D": { "$ref": "#/$defs/markdown" },
+            "E": { "$ref": "#/$defs/markdown" }
+          }
+        },
+        "kunci": {
+          "description": "TWK dan TIU saja. Benar = 5, salah atau kosong = 0.",
+          "$ref": "#/$defs/huruf"
+        },
+        "bobot": {
+          "description": "TKP saja. Nilai 1–5 per opsi, masing-masing dipakai tepat sekali (dicek validator).",
+          "type": "object",
+          "required": ["A", "B", "C", "D", "E"],
+          "additionalProperties": false,
+          "properties": {
+            "A": { "type": "integer", "minimum": 1, "maximum": 5 },
+            "B": { "type": "integer", "minimum": 1, "maximum": 5 },
+            "C": { "type": "integer", "minimum": 1, "maximum": 5 },
+            "D": { "type": "integer", "minimum": 1, "maximum": 5 },
+            "E": { "type": "integer", "minimum": 1, "maximum": 5 }
+          }
+        },
+        "pembahasan": {
+          "type": "object",
+          "required": ["inti", "opsi"],
+          "additionalProperties": false,
+          "properties": {
+            "inti": {
+              "description": "Alasan jawaban benar (TWK/TIU) atau prinsip penilaian aspek (TKP). Boleh berisi tabel dan langkah penyelesaian.",
+              "$ref": "#/$defs/markdown"
+            },
+            "opsi": {
+              "description": "Penjelasan per opsi. TWK/TIU: wajib untuk setiap opsi selain kunci (kesalahan dan asal distraktornya). TKP: wajib kelima opsi beserta alasan bobotnya.",
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "A": { "$ref": "#/$defs/markdown" },
+                "B": { "$ref": "#/$defs/markdown" },
+                "C": { "$ref": "#/$defs/markdown" },
+                "D": { "$ref": "#/$defs/markdown" },
+                "E": { "$ref": "#/$defs/markdown" }
+              }
+            },
+            "konsep": {
+              "description": "Konsep penting, rumus, trik eliminasi, atau pola bobot TKP.",
+              "$ref": "#/$defs/markdown"
+            }
+          }
+        },
+        "tips": {
+          "description": "Tips menghadapi soal sejenis.",
+          "$ref": "#/$defs/markdown"
+        },
+        "rujukan": {
+          "description": "Peraturan atau pasal yang dikutip. Wajib dicocokkan dengan teks resmi sebelum paket berstatus final.",
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "gambar": {
+          "description": "Untuk TIU figural. File SVG, path relatif dari folder bank/.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["file", "alt"],
+            "additionalProperties": false,
+            "properties": {
+              "file": { "type": "string", "pattern": "\\.svg$" },
+              "alt": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "catatan_review": {
+          "description": "Masukan pemilik saat review. Dikosongkan lagi setelah soal diperbaiki.",
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "kategori": { "const": "TKP" } } },
+          "then": {
+            "required": ["bobot"],
+            "not": { "required": ["kunci"] },
+            "properties": {
+              "subtopik": {
+                "enum": [
+                  "Pelayanan Publik",
+                  "Jejaring Kerja",
+                  "Sosial Budaya",
+                  "Teknologi Informasi dan Komunikasi",
+                  "Profesionalisme",
+                  "Antiradikalisme"
+                ]
+              },
+              "pembahasan": {
+                "properties": {
+                  "opsi": { "required": ["A", "B", "C", "D", "E"] }
+                }
+              }
+            }
+          },
+          "else": {
+            "required": ["kunci"],
+            "not": { "required": ["bobot"] }
+          }
+        }
+      ]
+    }
+  }
+}
