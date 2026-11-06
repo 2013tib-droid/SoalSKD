@@ -1,0 +1,52 @@
+{
+  "catatan": "Cek aturan BKN/KemenPAN-RB terbaru. Durasi dan ambang batas sengaja null sampai sumber resminya dicatat di `sumber`. Jumlah soal per subtes adalah standar komposisi produk ini (mengikuti proporsi SKD CAT).",
+  "sumber": null,
+  "bahan_cek": "Dari ingatan, BUKAN sumber: SKD CPNS 2023–2024 memakai 110 soal, 100 menit, ambang batas TWK 65, TIU 80, TKP 166. Cocokkan dengan pengumuman 2026 sebelum mengisi field di atas.",
+  "durasi_menit": null,
+  "subtes": [
+    {
+      "kode": "TWK",
+      "nama": "Tes Wawasan Kebangsaan",
+      "jumlah_soal": 30,
+      "penilaian": "benar_salah",
+      "nilai_benar": 5,
+      "nilai_salah": 0,
+      "nilai_maks": 150,
+      "ambang_batas": null
+    },
+    {
+      "kode": "TIU",
+      "nama": "Tes Intelegensia Umum",
+      "jumlah_soal": 35,
+      "penilaian": "benar_salah",
+      "nilai_benar": 5,
+      "nilai_salah": 0,
+      "nilai_maks": 175,
+      "ambang_batas": null
+    },
+    {
+      "kode": "TKP",
+      "nama": "Tes Karakteristik Pribadi",
+      "jumlah_soal": 45,
+      "penilaian": "bobot",
+      "nilai_bobot": [
+        1,
+        5
+      ],
+      "nilai_maks": 225,
+      "ambang_batas": null
+    }
+  ],
+  "nilai_maks_total": 550,
+  "urutan_soal": [
+    "TWK",
+    "TIU",
+    "TKP"
+  ],
+  "sebaran_tingkat": {
+    "mudah": 0.2,
+    "sedang": 0.5,
+    "sulit": 0.3
+  },
+  "catatan_sebaran_tingkat": "Target internal produk, bukan aturan BKN."
+}
