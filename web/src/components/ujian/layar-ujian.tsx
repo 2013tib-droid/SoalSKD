@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowLeft, ArrowRight, Flag, PaperPlaneTilt, SquaresFour } from "@phosphor-icons/react";
+import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import type { SoalUjian } from "@/lib/soal";
 import { Dialog } from "./dialog";
@@ -25,6 +26,7 @@ const tombolSekunder = `${tombolDasar} border border-border bg-surface text-text
 
 export function LayarUjian({ paket, soal, durasiMenit, peringatanMenit, kritisMenit }: Props) {
   const u = useUjian(paket, soal, durasiMenit);
+  const router = useRouter();
   const [gridTerbuka, setGridTerbuka] = useState(false);
   const [konfirmasiTerbuka, setKonfirmasiTerbuka] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
@@ -75,6 +77,11 @@ export function LayarUjian({ paket, soal, durasiMenit, peringatanMenit, kritisMe
     return () => window.removeEventListener("keydown", onKey);
   }, [u, gridTerbuka, konfirmasiTerbuka]);
 
+  // Setelah dikumpulkan (manual atau waktu habis), pindah ke halaman hasil.
+  useEffect(() => {
+    if (u.selesai) router.replace(`/ujian/${paket}/hasil`);
+  }, [u.selesai, paket, router]);
+
   const grid = (
     <GridNomor
       soal={soal}
@@ -90,29 +97,10 @@ export function LayarUjian({ paket, soal, durasiMenit, peringatanMenit, kritisMe
 
   if (u.selesai) {
     return (
-      <main className="mx-auto flex min-h-dvh max-w-xl flex-col gap-6 px-4 py-10">
-        <h1 className="heading-5">Jawaban terkumpul</h1>
-        <section className="rounded-xl border border-border bg-surface p-4">
-          <dl className="grid grid-cols-3 gap-4">
-            {[
-              ["Dijawab", u.ringkasan.dijawab],
-              ["Ragu", u.ringkasan.ragu],
-              ["Belum", u.ringkasan.belum],
-            ].map(([label, n]) => (
-              <div key={label} className="flex flex-col gap-1">
-                <dt className="caption-4 text-text-muted">{label}</dt>
-                <dd className="font-mono text-2xl font-semibold tabular-nums">{n}</dd>
-              </div>
-            ))}
-          </dl>
-        </section>
-        <p className="body-6 text-text-muted">
-          Halaman skor dan pembahasan belum dibangun. Format dan passing grade mengikuti konfigurasi. Cek aturan
-          BKN/KemenPAN-RB terbaru.
+      <main className="mx-auto flex min-h-dvh max-w-xl items-center justify-center px-4">
+        <p role="status" className="body-6 text-text-muted">
+          Jawaban terkumpul. Membuka hasil…
         </p>
-        <button type="button" onClick={u.ulangi} className={`${tombolSekunder} self-start`}>
-          Ulangi paket ini
-        </button>
       </main>
     );
   }

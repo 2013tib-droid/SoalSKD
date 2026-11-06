@@ -6,7 +6,7 @@ import type { SoalUjian } from "@/lib/soal";
 export type StatusSoal = "belum" | "dijawab" | "ragu";
 export type StatusSimpan = "tersimpan" | "gagal" | "memuat";
 
-type Rekaman = {
+export type Rekaman = {
   jawaban: Record<string, string>;
   ragu: Record<string, boolean>;
   indeks: number;
@@ -15,15 +15,21 @@ type Rekaman = {
   disimpanPada: number;
 };
 
-const kunciPenyimpanan = (paket: string) => `soalskd:ujian:${paket}`;
+export const kunciPenyimpanan = (paket: string) => `soalskd:ujian:${paket}`;
 
-function bacaRekaman(paket: string): Rekaman | null {
+export function bacaRekaman(paket: string): Rekaman | null {
   try {
     const raw = localStorage.getItem(kunciPenyimpanan(paket));
     return raw ? (JSON.parse(raw) as Rekaman) : null;
   } catch {
     return null;
   }
+}
+
+export function hapusRekaman(paket: string) {
+  try {
+    localStorage.removeItem(kunciPenyimpanan(paket));
+  } catch {}
 }
 
 /**

@@ -41,3 +41,4 @@ Aplikasi try out SKD CPNS (TWK, TIU, TKP). Mayoritas pengguna membuka di HP.
 2026-11-06 · App Next.js di `web/`, soal dibaca dari `bank/*.json` di server; kunci, bobot, dan pembahasan tidak dikirim ke browser · cegah bocor kunci
 2026-11-06 · Simpan otomatis sementara di localStorage; sinkron ke server menyusul saat ada backend · belum ada backend
 2026-11-06 · Data soal: satu JSON per paket di `bank/` sesuai `schema/paket.schema.json` (lihat `docs/skema-soal.md`), dipakai app dan ebook; format SKD resmi di `config/skd.json`, durasi dan ambang batas `null` sampai ada sumber · satu sumber kebenaran untuk dua produk
+2026-11-06 · Skor dihitung di server (server action); kunci dan pembahasan baru dikirim setelah ujian dikumpulkan · belum anti-curang penuh: action bisa dipanggil langsung, perlu sesi server saat ada backend

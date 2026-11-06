@@ -19,6 +19,11 @@ export type FormatPaket = {
   kritisMenit: number;
   /** Nilai ambang batas per subtes. `null` berarti belum diisi dari sumber resmi. */
   ambangBatas: Record<Subtes, number | null>;
+  /**
+   * Nilai TWK/TIU per jawaban. TKP selalu memakai bobot opsi dari bank soal (1–5),
+   * dan jawaban kosong bernilai 0.
+   */
+  nilaiPilihanTunggal: { benar: number; salah: number; kosong: number };
   /** Asal angka di atas, misalnya nomor peraturan dan tahunnya. */
   sumber: string;
 };
@@ -29,6 +34,8 @@ export const FORMAT_LATIHAN: FormatPaket = {
   peringatanMenit: 5,
   kritisMenit: 2,
   ambangBatas: { TWK: null, TIU: null, TKP: null },
+  // Sama dengan "Petunjuk Penilaian" di bank/premium-01.md. Cek aturan resmi terbaru.
+  nilaiPilihanTunggal: { benar: 5, salah: 0, kosong: 0 },
   sumber: "Format latihan internal. Belum mengacu peraturan resmi.",
 };
 
