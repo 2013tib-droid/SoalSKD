@@ -10,8 +10,9 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 
 ## Komponen
 
+- `web/src/components/teks-md.tsx` · render Markdown GFM soal/pembahasan (tanpa HTML, italic jadi medium) · `inline` untuk di dalam tombol
 - `web/src/components/hasil/kartu-skor.tsx` · kartu KPI skor (nilai/maks, bar, status ambang ikon + teks) · `utama` untuk kartu total selebar grid
-- `web/src/components/hasil/item-pembahasan.tsx` · `<details>` per soal: ringkas (status, subtopik, poin, ragu) lalu opsi + kunci/bobot TKP + pembahasan
+- `web/src/components/hasil/item-pembahasan.tsx` · `<details>` per soal: ringkas (status, subtopik, poin, ragu) lalu tiap opsi + alasannya (`pembahasan.opsi`), bobot TKP, inti, konsep, tips, rujukan
 - `web/src/components/ujian/kartu-soal.tsx` · teks soal + pilihan A–E (radiogroup) · `terpilih`, `onPilih`, `terkunci`
 - `web/src/components/ujian/grid-nomor.tsx` · grid nomor per subtes + legenda jumlah · status belum / dijawab / ragu (ragu juga diberi titik)
 - `web/src/components/ujian/timer.tsx` · timer `jj:mm:dd`, status normal / peringatan / kritis lewat `statusTimer()` · ambang dari config
@@ -22,10 +23,11 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 
 - `schema/paket.schema.json` · bentuk data paket soal; TWK/TIU pakai `kunci`, TKP pakai `bobot`, `pembahasan` berupa objek `{inti, opsi, konsep}` · penjelasan di `docs/skema-soal.md`; jawaban pengguna disimpan per `soal.id`
 - `config/skd.json` · format SKD resmi (jumlah soal per subtes, nilai, durasi, ambang batas) untuk app dan ebook · `null` = belum ada sumber resmi
-- `web/src/app/ujian/[paket]/hasil/actions.ts` · server action `nilaiUjian(paket, jawaban)`: TWK/TIU pakai `nilaiPilihanTunggal` dari config, TKP pakai bobot opsi, kosong 0
+- `web/src/app/ujian/[paket]/hasil/actions.ts` · server action `nilaiUjian(paket, jawaban)`: TWK/TIU pakai nilai dari `config/skd.json`; ambang batas hanya dibandingkan kalau paket lengkap, TKP pakai bobot opsi, kosong 0
 - Filter hasil di URL: `?filter=salah|kosong|ragu&subtes=TWK|TIU|TKP`
-- `web/src/lib/soal.ts` · `ambilSoalUjian(paket)` baca `bank/<paket>.json` di server, buang kunci/bobot/pembahasan
-- `web/src/config/skd.ts` · format per paket (durasi, ambang timer, passing grade `null` sampai ada sumber resmi)
+- `web/src/lib/soal.ts` · baca `bank/<paket>.json` skema 1 di server; `ambilSoalUjian` tanpa kunci/bobot/pembahasan, `ambilSoalPembahasan` lengkap (kunci TKP = opsi berbobot tertinggi). File tanpa `skema: 1` tidak dimuat
+- `web/src/lib/format-skd.ts` · baca `config/skd.json`; `durasiPaket()` skalakan durasi resmi ke jumlah soal paket, atau 1 menit/soal selama `durasi_menit` null
+- `web/src/config/skd.ts` · hanya pengaturan app (durasi latihan per soal, ambang timer 10% / 5%). Format SKD ada di `config/skd.json`
 - `web/src/components/ujian/use-ujian.ts` · state ujian + simpan otomatis ke localStorage (`soalskd:ujian:<paket>`), jam selesai disimpan jadi refresh tidak mengulang timer
 
 ## Pola UX (empty / loading / error state, konfirmasi, toast)

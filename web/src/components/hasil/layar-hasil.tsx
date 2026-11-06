@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { nilaiUjian, type HasilUjian, type ItemHasil } from "@/app/ujian/[paket]/hasil/actions";
-import { URUTAN_SUBTES } from "@/config/skd";
 import { bacaRekaman, hapusRekaman, type Rekaman } from "@/components/ujian/use-ujian";
 import { ItemPembahasan } from "./item-pembahasan";
 import { KartuSkor } from "./kartu-skor";
@@ -55,7 +54,10 @@ export function LayarHasil({ paket }: { paket: string }) {
 
   // Filter disimpan di URL supaya bertahan saat refresh dan bisa dibagikan.
   const filter = (FILTER.some((f) => f.id === params.get("filter")) ? params.get("filter") : "semua") as IdFilter;
-  const subtes = URUTAN_SUBTES.find((t) => t === params.get("subtes")) ?? null;
+  const subtes =
+    keadaan.jenis === "siap"
+      ? (keadaan.hasil.perSubtes.find((p) => p.subtes === params.get("subtes"))?.subtes ?? null)
+      : null;
   const setParam = (kunci: string, nilai: string | null) => {
     const q = new URLSearchParams(params.toString());
     if (nilai === null) q.delete(kunci);
@@ -86,7 +88,10 @@ export function LayarHasil({ paket }: { paket: string }) {
     <main className="mx-auto flex min-h-dvh w-full max-w-3xl flex-col gap-6 px-4 pt-6 pb-10">
       <header className="flex flex-col gap-1">
         <h1 className="heading-5">Hasil try out</h1>
-        <p className="body-6 text-text-muted">Paket {paket}. Skor dihitung dari jawaban yang kamu kumpulkan.</p>
+        <p className="body-6 text-text-muted">
+          {keadaan.jenis === "siap" ? keadaan.hasil.judul : `Paket ${paket}`}. Skor dihitung dari jawaban yang kamu
+          kumpulkan.
+        </p>
       </header>
 
       {keadaan.jenis === "memuat" && <Kerangka />}
@@ -131,7 +136,9 @@ export function LayarHasil({ paket }: { paket: string }) {
 
           <p className="caption-4 flex items-start gap-2 text-text-muted">
             <Info size={16} className="shrink-0" aria-hidden />
-            Format dan passing grade mengikuti konfigurasi. Cek aturan BKN/KemenPAN-RB terbaru.
+            {keadaan.hasil.paketLengkap
+              ? "Format dan passing grade mengikuti konfigurasi. Cek aturan BKN/KemenPAN-RB terbaru."
+              : `Paket ini berisi ${keadaan.hasil.items.length} soal, bukan paket penuh, jadi skor tidak dibandingkan dengan ambang batas. Cek aturan BKN/KemenPAN-RB terbaru.`}
           </p>
 
           <section aria-labelledby="judul-pembahasan" className="flex flex-col gap-4">

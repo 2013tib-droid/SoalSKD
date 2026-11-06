@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-// Beranda belum dibangun. Sementara langsung ke paket contoh.
+// Beranda belum dibangun. Sementara langsung ke paket 01.
 export default function Beranda() {
-  redirect("/ujian/sample-15");
+  redirect("/ujian/p01");
 }

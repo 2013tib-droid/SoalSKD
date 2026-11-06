@@ -1,6 +1,5 @@
 "use client";
 
-import { URUTAN_SUBTES } from "@/config/skd";
 import type { SoalUjian } from "@/lib/soal";
 import type { StatusSoal } from "./use-ujian";
 
@@ -40,7 +39,7 @@ export function GridNomor({ soal, indeksAktif, statusDari, ringkasan, onPilih }:
         <Legenda status="ragu" jumlah={ringkasan.ragu} label="Ragu" />
         <Legenda status="belum" jumlah={ringkasan.belum} label="Belum" />
       </ul>
-      {URUTAN_SUBTES.map((subtes) => {
+      {[...new Set(soal.map((s) => s.kategori))].map((subtes) => {
         const daftar = soal.map((s, i) => ({ s, i })).filter(({ s }) => s.kategori === subtes);
         if (daftar.length === 0) return null;
         return (

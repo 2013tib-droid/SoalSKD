@@ -1,7 +1,8 @@
 "use server";
 
-import { formatUntuk, URUTAN_SUBTES, type Subtes } from "@/config/skd";
-import { ambilSoalPembahasan, type SoalPembahasan } from "@/lib/soal";
+import type { Subtes } from "@/config/skd";
+import { ambilFormatSkd } from "@/lib/format-skd";
+import { ambilJudulPaket, ambilSoalPembahasan, type SoalPembahasan } from "@/lib/soal";
 
 export type StatusJawaban = "benar" | "salah" | "kosong";
 
@@ -23,19 +24,24 @@ export type SkorSubtes = {
 };
 
 export type HasilUjian = {
+  judul: string;
   total: number;
   totalMaks: number;
   perSubtes: SkorSubtes[];
   lulusSemua: boolean | null;
+  /** Ambang batas hanya dibandingkan kalau paket memuat jumlah soal resmi per subtes. */
+  paketLengkap: boolean;
   items: ItemHasil[];
 };
 
 /** Menilai jawaban di server. Kunci dan bobot hanya dikirim ke browser setelah dikumpulkan. */
 export async function nilaiUjian(paket: string, jawaban: Record<string, string>): Promise<HasilUjian | null> {
-  const soal = await ambilSoalPembahasan(paket);
-  if (!soal) return null;
-  const format = formatUntuk(paket);
-  const nilai = format.nilaiPilihanTunggal;
+  const [soal, judul, format] = await Promise.all([
+    ambilSoalPembahasan(paket),
+    ambilJudulPaket(paket),
+    ambilFormatSkd(),
+  ]);
+  if (!soal || !judul) return null;
 
   const items: ItemHasil[] = soal.map((s, i) => {
     const raw = jawaban?.[s.id];
@@ -46,31 +52,38 @@ export async function nilaiUjian(paket: string, jawaban: Record<string, string>)
       const status: StatusJawaban = !j ? "kosong" : poin === poinMaks ? "benar" : "salah";
       return { ...s, nomor: i + 1, jawaban: j, poin, poinMaks, status };
     }
+    const aturan = format.subtes[s.kategori];
     const status: StatusJawaban = !j ? "kosong" : j === s.kunci ? "benar" : "salah";
-    return { ...s, nomor: i + 1, jawaban: j, poin: nilai[status], poinMaks: nilai.benar, status };
+    // Kosong bernilai 0, sama seperti "salah/kosong = 0" di docs/skema-soal.md.
+    const poin = status === "benar" ? aturan.nilaiBenar : status === "salah" ? aturan.nilaiSalah : 0;
+    return { ...s, nomor: i + 1, jawaban: j, poin, poinMaks: aturan.nilaiBenar, status };
   });
 
-  const perSubtes: SkorSubtes[] = URUTAN_SUBTES.filter((t) => items.some((it) => it.kategori === t)).map(
-    (subtes) => {
-      const isi = items.filter((it) => it.kategori === subtes);
-      const skor = isi.reduce((n, it) => n + it.poin, 0);
-      const ambangBatas = format.ambangBatas[subtes];
-      return {
-        subtes,
-        skor,
-        maks: isi.reduce((n, it) => n + it.poinMaks, 0),
-        ambangBatas,
-        lulus: ambangBatas === null ? null : skor >= ambangBatas,
-      };
-    },
+  const subtesAda = format.urutan.filter((t) => items.some((it) => it.kategori === t));
+  const paketLengkap = format.urutan.every(
+    (t) => items.filter((it) => it.kategori === t).length === format.subtes[t].jumlahSoal,
   );
 
-  const semuaAda = perSubtes.every((p) => p.lulus !== null);
+  const perSubtes: SkorSubtes[] = subtesAda.map((subtes) => {
+    const isi = items.filter((it) => it.kategori === subtes);
+    const skor = isi.reduce((n, it) => n + it.poin, 0);
+    const ambangBatas = paketLengkap ? format.subtes[subtes].ambangBatas : null;
+    return {
+      subtes,
+      skor,
+      maks: isi.reduce((n, it) => n + it.poinMaks, 0),
+      ambangBatas,
+      lulus: ambangBatas === null ? null : skor >= ambangBatas,
+    };
+  });
+
   return {
+    judul,
     total: perSubtes.reduce((n, p) => n + p.skor, 0),
     totalMaks: perSubtes.reduce((n, p) => n + p.maks, 0),
     perSubtes,
-    lulusSemua: semuaAda ? perSubtes.every((p) => p.lulus) : null,
+    lulusSemua: perSubtes.every((p) => p.lulus !== null) ? perSubtes.every((p) => p.lulus) : null,
+    paketLengkap,
     items,
   };
 }

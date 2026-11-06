@@ -1,21 +1,29 @@
 import "server-only";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { URUTAN_SUBTES, type Subtes } from "@/config/skd";
+import type { Subtes } from "@/config/skd";
+import { ambilFormatSkd } from "@/lib/format-skd";
 
+/** Bentuk soal di bank sesuai `schema/paket.schema.json` (skema 1). */
 type SoalBank = {
   id: string;
+  nomor: number;
   kategori: Subtes;
   subtopik: string;
+  topik: string;
+  tingkat: string;
   pertanyaan: string;
   opsi: Record<string, string>;
-  kunci: string;
+  kunci?: string;
   bobot?: Record<string, number>;
-  pembahasan: string;
-  tingkat: string;
+  pembahasan: { inti: string; opsi: Record<string, string>; konsep?: string };
+  tips: string;
+  rujukan?: string[];
 };
 
-/** Soal yang aman dikirim ke browser: tanpa kunci, bobot, dan pembahasan. */
+type PaketBank = { skema: number; meta: { id: string; judul: string }; soal: SoalBank[] };
+
+/** Soal yang aman dikirim ke browser: tanpa kunci, bobot, dan pembahasan. Teks berupa Markdown. */
 export type SoalUjian = {
   id: string;
   kategori: Subtes;
@@ -26,21 +34,27 @@ export type SoalUjian = {
 /** Soal lengkap untuk halaman hasil, dikirim hanya setelah jawaban dikumpulkan. */
 export type SoalPembahasan = SoalUjian & {
   subtopik: string;
+  /** TWK/TIU: kunci. TKP: opsi berbobot tertinggi. */
   kunci: string;
   bobot: Record<string, number> | null;
-  pembahasan: string;
+  pembahasan: { inti: string; opsi: Record<string, string>; konsep: string | null };
+  tips: string;
+  rujukan: string[];
 };
 
-const BANK_DIR = path.join(process.cwd(), "..", "bank");
+const ROOT = path.join(process.cwd(), "..");
 
-async function bacaBank(paket: string): Promise<SoalBank[] | null> {
+async function bacaPaket(paket: string): Promise<PaketBank | null> {
   if (!/^[a-z0-9-]+$/.test(paket)) return null;
   try {
-    const raw = await readFile(path.join(BANK_DIR, `${paket}.json`), "utf8");
-    const data = JSON.parse(raw) as { soal: SoalBank[] };
-    return [...data.soal].sort(
-      (a, b) => URUTAN_SUBTES.indexOf(a.kategori) - URUTAN_SUBTES.indexOf(b.kategori),
+    const data = JSON.parse(await readFile(path.join(ROOT, "bank", `${paket}.json`), "utf8")) as PaketBank;
+    // Hanya file yang mengikuti skema 1. File lama (mis. sample-15) tidak dimuat.
+    if (data.skema !== 1 || !Array.isArray(data.soal)) return null;
+    const { urutan } = await ambilFormatSkd();
+    data.soal.sort(
+      (a, b) => urutan.indexOf(a.kategori) - urutan.indexOf(b.kategori) || a.nomor - b.nomor,
     );
+    return data;
   } catch {
     return null;
   }
@@ -48,24 +62,36 @@ async function bacaBank(paket: string): Promise<SoalBank[] | null> {
 
 const keOpsi = (s: SoalBank) => Object.entries(s.opsi).map(([huruf, teks]) => ({ huruf, teks }));
 
+const kunciDari = (s: SoalBank) =>
+  s.bobot ? Object.entries(s.bobot).reduce((a, b) => (b[1] > a[1] ? b : a))[0] : (s.kunci ?? "");
+
+export async function ambilJudulPaket(paket: string): Promise<string | null> {
+  return (await bacaPaket(paket))?.meta.judul ?? null;
+}
+
 export async function ambilSoalUjian(paket: string): Promise<SoalUjian[] | null> {
-  const bank = await bacaBank(paket);
-  return bank && bank.map((s) => ({ id: s.id, kategori: s.kategori, pertanyaan: s.pertanyaan, opsi: keOpsi(s) }));
+  const data = await bacaPaket(paket);
+  return (
+    data &&
+    data.soal.map((s) => ({ id: s.id, kategori: s.kategori, pertanyaan: s.pertanyaan, opsi: keOpsi(s) }))
+  );
 }
 
 export async function ambilSoalPembahasan(paket: string): Promise<SoalPembahasan[] | null> {
-  const bank = await bacaBank(paket);
+  const data = await bacaPaket(paket);
   return (
-    bank &&
-    bank.map((s) => ({
+    data &&
+    data.soal.map((s) => ({
       id: s.id,
       kategori: s.kategori,
       subtopik: s.subtopik,
       pertanyaan: s.pertanyaan,
       opsi: keOpsi(s),
-      kunci: s.kunci,
+      kunci: kunciDari(s),
       bobot: s.bobot ?? null,
-      pembahasan: s.pembahasan,
+      pembahasan: { inti: s.pembahasan.inti, opsi: s.pembahasan.opsi, konsep: s.pembahasan.konsep ?? null },
+      tips: s.tips,
+      rujukan: s.rujukan ?? [],
     }))
   );
 }

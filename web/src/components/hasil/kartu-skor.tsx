@@ -29,7 +29,7 @@ export function KartuSkor({ label, skor, maks, ambangBatas, lulus, utama }: Prop
         utama && (
         <p className="caption-4 flex items-center gap-1 text-text-muted">
           <MinusCircle size={16} aria-hidden />
-          Ambang batas belum diatur
+          Tanpa ambang batas
         </p>
         )
       ) : lulus ? (

@@ -2,6 +2,7 @@
 
 import { CheckCircle } from "@phosphor-icons/react";
 import type { SoalUjian } from "@/lib/soal";
+import { TeksMd } from "@/components/teks-md";
 
 type Props = {
   soal: SoalUjian;
@@ -16,10 +17,10 @@ export function KartuSoal({ soal, nomor, terpilih, onPilih, terkunci }: Props) {
   const idJudul = `soal-${soal.id}`;
   return (
     <article className="flex flex-col gap-6">
-      <p id={idJudul} className="body-5 text-text">
+      <div id={idJudul} className="body-5 text-text">
         <span className="sr-only">Soal nomor {nomor}. </span>
-        {soal.pertanyaan}
-      </p>
+        <TeksMd>{soal.pertanyaan}</TeksMd>
+      </div>
       <div role="radiogroup" aria-labelledby={idJudul} className="flex flex-col gap-3">
         {soal.opsi.map(({ huruf, teks }) => {
           const aktif = terpilih === huruf;
@@ -45,7 +46,9 @@ export function KartuSoal({ soal, nomor, terpilih, onPilih, terkunci }: Props) {
               >
                 {huruf}
               </span>
-              <span className="body-5 flex-1 text-text">{teks}</span>
+              <span className="body-5 flex-1 text-text">
+                <TeksMd inline>{teks}</TeksMd>
+              </span>
               <CheckCircle
                 size={20}
                 weight="fill"

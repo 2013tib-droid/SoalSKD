@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { formatUntuk } from "@/config/skd";
+import { ambangTimerMenit } from "@/config/skd";
+import { ambilFormatSkd, durasiPaket } from "@/lib/format-skd";
 import { ambilSoalUjian } from "@/lib/soal";
 import { LayarUjian } from "@/components/ujian/layar-ujian";
 
@@ -10,15 +11,16 @@ export default async function HalamanUjian({ params }: { params: Promise<{ paket
   const { paket } = await params;
   const soal = await ambilSoalUjian(paket);
   if (!soal || soal.length === 0) notFound();
-  const format = formatUntuk(paket);
+  const durasiMenit = durasiPaket(await ambilFormatSkd(), soal.length);
+  const { peringatanMenit, kritisMenit } = ambangTimerMenit(durasiMenit);
 
   return (
     <LayarUjian
       paket={paket}
       soal={soal}
-      durasiMenit={format.durasiMenit}
-      peringatanMenit={format.peringatanMenit}
-      kritisMenit={format.kritisMenit}
+      durasiMenit={durasiMenit}
+      peringatanMenit={peringatanMenit}
+      kritisMenit={kritisMenit}
     />
   );
 }
