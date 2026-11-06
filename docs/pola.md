@@ -6,6 +6,7 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 
 ## Layout
 
+- `web/src/components/beranda/layar-beranda.tsx` · beranda: kartu lanjutkan ujian (sesi berjalan), daftar paket dengan aksi sesuai state (Mulai / Lanjutkan / Lihat hasil + Ulangi), riwayat skor · props `paket` dari `daftarPaket()` + `durasiPaket()`
 - `web/src/components/ujian/layar-ujian.tsx` · layar ujian: topbar sticky (subtes, nomor, timer), soal, action bar bawah, grid (sheet di HP, panel kanan ≥1024px) · props `paket`, `soal`, `durasiMenit`, `peringatanMenit`, `kritisMenit`
 
 ## Komponen
@@ -21,6 +22,8 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 
 ## Data & state (fetch, tabel, filter, form)
 
+- `web/src/lib/soal.ts` `daftarPaket()` · ringkasan semua paket skema 1 di `bank/` (judul, status, jumlah per subtes)
+- `web/src/lib/riwayat.ts` · riwayat skor di localStorage (`soalskd:riwayat`, maks 50), dicatat sekali per percobaan (`percobaan` = jam selesai sesi) saat halaman hasil dibuka
 - `schema/paket.schema.json` · bentuk data paket soal; TWK/TIU pakai `kunci`, TKP pakai `bobot`, `pembahasan` berupa objek `{inti, opsi, konsep}` · penjelasan di `docs/skema-soal.md`; jawaban pengguna disimpan per `soal.id`
 - `config/skd.json` · format SKD resmi (jumlah soal per subtes, nilai, durasi, ambang batas) untuk app dan ebook · `null` = belum ada sumber resmi
 - `web/src/app/ujian/[paket]/hasil/actions.ts` · server action `nilaiUjian(paket, jawaban)`: TWK/TIU pakai nilai dari `config/skd.json`; ambang batas hanya dibandingkan kalau paket lengkap, TKP pakai bobot opsi, kosong 0

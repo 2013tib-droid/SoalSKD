@@ -1,11 +1,12 @@
 "use client";
 
-import { ArrowCounterClockwise, Info } from "@phosphor-icons/react";
+import { ArrowCounterClockwise, ArrowLeft, Info } from "@phosphor-icons/react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { nilaiUjian, type HasilUjian, type ItemHasil } from "@/app/ujian/[paket]/hasil/actions";
 import { bacaRekaman, hapusRekaman, type Rekaman } from "@/components/ujian/use-ujian";
+import { catatRiwayat } from "@/lib/riwayat";
 import { ItemPembahasan } from "./item-pembahasan";
 import { KartuSkor } from "./kartu-skor";
 
@@ -42,6 +43,17 @@ export function LayarHasil({ paket }: { paket: string }) {
     setKeadaan({ jenis: "memuat" });
     try {
       const hasil = await nilaiUjian(paket, rekaman.jawaban);
+      if (hasil) {
+        catatRiwayat({
+          paket,
+          judul: hasil.judul,
+          total: hasil.total,
+          totalMaks: hasil.totalMaks,
+          perSubtes: hasil.perSubtes.map(({ subtes, skor, maks }) => ({ subtes, skor, maks })),
+          percobaan: rekaman.berakhirPada,
+          dicatatPada: Date.now(),
+        });
+      }
       setKeadaan(hasil ? { jenis: "siap", hasil, rekaman } : { jenis: "gagal" });
     } catch {
       setKeadaan({ jenis: "gagal" });
@@ -87,6 +99,13 @@ export function LayarHasil({ paket }: { paket: string }) {
   return (
     <main className="mx-auto flex min-h-dvh w-full max-w-3xl flex-col gap-6 px-4 pt-6 pb-10">
       <header className="flex flex-col gap-1">
+        <Link
+          href="/"
+          className="caption-4 -ml-2 flex h-11 items-center gap-1 self-start rounded-lg px-2 text-text-muted hover:bg-surface-muted"
+        >
+          <ArrowLeft size={16} aria-hidden />
+          Beranda
+        </Link>
         <h1 className="heading-5">Hasil try out</h1>
         <p className="body-6 text-text-muted">
           {keadaan.jenis === "siap" ? keadaan.hasil.judul : `Paket ${paket}`}. Skor dihitung dari jawaban yang kamu

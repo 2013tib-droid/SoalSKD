@@ -1,5 +1,5 @@
 import "server-only";
-import { readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import type { Subtes } from "@/config/skd";
 import { ambilFormatSkd } from "@/lib/format-skd";
@@ -21,7 +21,15 @@ type SoalBank = {
   rujukan?: string[];
 };
 
-type PaketBank = { skema: number; meta: { id: string; judul: string }; soal: SoalBank[] };
+type PaketBank = { skema: number; meta: { id: string; judul: string; status: string }; soal: SoalBank[] };
+
+export type RingkasanPaket = {
+  id: string;
+  judul: string;
+  status: string;
+  jumlahSoal: number;
+  perSubtes: { subtes: Subtes; jumlah: number }[];
+};
 
 /** Soal yang aman dikirim ke browser: tanpa kunci, bobot, dan pembahasan. Teks berupa Markdown. */
 export type SoalUjian = {
@@ -94,4 +102,28 @@ export async function ambilSoalPembahasan(paket: string): Promise<SoalPembahasan
       rujukan: s.rujukan ?? [],
     }))
   );
+}
+
+/** Semua paket skema 1 di `bank/`, urut menurut id. File lama dilewati. */
+export async function daftarPaket(): Promise<RingkasanPaket[]> {
+  let nama: string[];
+  try {
+    nama = await readdir(path.join(ROOT, "bank"));
+  } catch {
+    return [];
+  }
+  const ids = nama.filter((n) => n.endsWith(".json")).map((n) => n.slice(0, -5)).sort();
+  const hasil = await Promise.all(ids.map((id) => bacaPaket(id)));
+  const { urutan } = await ambilFormatSkd();
+  return hasil
+    .filter((d): d is PaketBank => d !== null)
+    .map((d) => ({
+      id: d.meta.id,
+      judul: d.meta.judul,
+      status: d.meta.status,
+      jumlahSoal: d.soal.length,
+      perSubtes: urutan
+        .map((subtes) => ({ subtes, jumlah: d.soal.filter((s) => s.kategori === subtes).length }))
+        .filter((x) => x.jumlah > 0),
+    }));
 }
