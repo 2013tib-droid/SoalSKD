@@ -1,11 +1,14 @@
 import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+import { BUILD_STATIK } from "@/config/build";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "SoalSKD",
   description: "Try out SKD CPNS: TWK, TIU, TKP",
+  // Build statis = halaman dev di GitHub Pages: jangan sampai terindeks mesin pencari.
+  ...(BUILD_STATIK && { robots: { index: false, follow: false } }),
 };
 
 export const viewport: Viewport = {

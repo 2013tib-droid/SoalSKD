@@ -4,7 +4,10 @@ import { ArrowCounterClockwise, ArrowLeft, Info } from "@phosphor-icons/react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { nilaiUjian, type HasilUjian, type ItemHasil } from "@/app/ujian/[paket]/hasil/actions";
+import { nilaiUjian } from "@/lib/penilai";
+import type { FormatSkd } from "@/lib/format-skd";
+import { hitungHasil, type HasilUjian, type ItemHasil } from "@/lib/nilai";
+import type { SoalPembahasan } from "@/lib/soal";
 import { bacaRekaman, hapusRekaman, type Rekaman } from "@/components/ujian/use-ujian";
 import { catatRiwayat } from "@/lib/riwayat";
 import { ItemPembahasan } from "./item-pembahasan";
@@ -30,7 +33,10 @@ type Keadaan =
   | { jenis: "gagal" }
   | { jenis: "siap"; hasil: HasilUjian; rekaman: Rekaman };
 
-export function LayarHasil({ paket }: { paket: string }) {
+/** Hanya diisi di build statis (GitHub Pages dev): soal lengkap ikut terkirim dan skor dihitung di browser. */
+export type DataStatik = { soal: SoalPembahasan[]; judul: string; format: FormatSkd };
+
+export function LayarHasil({ paket, dataStatik }: { paket: string; dataStatik?: DataStatik }) {
   const router = useRouter();
   const pathname = usePathname();
   const params = useSearchParams();
@@ -42,7 +48,9 @@ export function LayarHasil({ paket }: { paket: string }) {
     if (!rekaman.selesai) return setKeadaan({ jenis: "belum-selesai" });
     setKeadaan({ jenis: "memuat" });
     try {
-      const hasil = await nilaiUjian(paket, rekaman.jawaban);
+      const hasil = dataStatik
+        ? hitungHasil(dataStatik.soal, dataStatik.judul, dataStatik.format, rekaman.jawaban)
+        : await nilaiUjian(paket, rekaman.jawaban);
       if (hasil) {
         catatRiwayat({
           paket,
@@ -58,7 +66,7 @@ export function LayarHasil({ paket }: { paket: string }) {
     } catch {
       setKeadaan({ jenis: "gagal" });
     }
-  }, [paket]);
+  }, [paket, dataStatik]);
 
   useEffect(() => {
     muat();

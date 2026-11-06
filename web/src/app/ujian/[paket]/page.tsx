@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ambangTimerMenit } from "@/config/skd";
 import { ambilFormatSkd, durasiPaket } from "@/lib/format-skd";
-import { ambilSoalUjian } from "@/lib/soal";
+import { ambilSoalUjian, daftarPaket } from "@/lib/soal";
 import { LayarUjian } from "@/components/ujian/layar-ujian";
 
 export const metadata: Metadata = { title: "Ujian · SoalSKD" };
+
+export async function generateStaticParams() {
+  return (await daftarPaket()).map((p) => ({ paket: p.id }));
+}
 
 export default async function HalamanUjian({ params }: { params: Promise<{ paket: string }> }) {
   const { paket } = await params;

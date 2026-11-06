@@ -1,7 +1,7 @@
 "use client";
 
 import { BookOpen, CaretDown, CheckCircle, Flag, Lightbulb, MinusCircle, XCircle } from "@phosphor-icons/react";
-import type { ItemHasil, StatusJawaban } from "@/app/ujian/[paket]/hasil/actions";
+import type { ItemHasil, StatusJawaban } from "@/lib/nilai";
 import { TeksMd } from "@/components/teks-md";
 
 const ikonStatus: Record<StatusJawaban, { Ikon: typeof CheckCircle; kelas: string; label: string }> = {

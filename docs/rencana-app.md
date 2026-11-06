@@ -14,6 +14,15 @@ Status per 2026-11-06. Area `web/`, `bank/`, `schema/`, dan `tools/` dipegang se
 
 Paket yang tersedia: `p01` (20 dari 110 soal, status draf).
 
+## Deploy dev (sementara)
+
+- URL: `https://2013tib-droid.github.io/SoalSKD/development/main/`. Workflow `.github/workflows/deploy-dev.yml`
+  jalan otomatis tiap push ke branch utama yang mengubah `web/`, `bank/`, atau `config/`, dan bisa dijalankan manual.
+- Build statis: `cd web && STATIK=1 BASE_PATH=/SoalSKD/development/main npm run build` → `web/out/`.
+  Skor dihitung di browser (`src/lib/nilai.ts`, fungsi yang sama dengan server action), jadi kunci dan
+  pembahasan ikut terkirim. Hanya untuk tes; situs pembeli memakai build biasa.
+- Sekali saja di GitHub: Settings → Pages → Deploy from a branch → `gh-pages` / root.
+
 ## Keterbatasan yang diketahui
 
 - **Belum ada backend.** Jawaban, sesi ujian, dan riwayat hanya tersimpan di localStorage perangkat. Ganti perangkat atau hapus data browser = hilang.
