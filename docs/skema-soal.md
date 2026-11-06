@@ -57,8 +57,8 @@ turunannya.
 Skema menangkap kesalahan bentuk: field wajib, field salah ketik, kunci di soal
 TKP, bobot 0, aspek TKP asing, tanggal salah, dan sejenisnya.
 
-Aturan yang melibatkan beberapa soal sekaligus dicek oleh validator (langkah
-berikutnya): bobot TKP memakai 1–5 masing-masing tepat sekali, `id` dan `nomor`
+Aturan yang melibatkan beberapa soal sekaligus dicek oleh validator
+(`python3 tools/validasi.py`; galat = tidak boleh terbit, peringatan = sebaiknya dibereskan): bobot TKP memakai 1–5 masing-masing tepat sekali, `id` dan `nomor`
 unik dan berurutan, urutan TWK → TIU → TKP, komposisi 30/35/45 untuk paket
 penuh, sebaran tingkat 20/50/30, sebaran kunci A–E, pembahasan minimal 150 kata,
 dan `topik` tidak berulang di seluruh bank.
