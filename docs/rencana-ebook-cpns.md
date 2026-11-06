@@ -67,16 +67,16 @@ dulu sebelum membuat soal atau ebook.
 - BKN tidak memublikasikan kunci bobot TKP, jadi bobot di produk ini adalah
   hasil penyusunan sendiri. Sebaiknya produk mencantumkan catatan ini juga.
 
-## Keputusan yang masih terbuka
+## Keputusan (6 November 2026)
 
-1. **Nama brand atau judul ebook.** Belum ada. Model bisa mengusulkan
-   beberapa pilihan.
-2. **Jumlah soal versi pertama:** 330 soal (3 paket, terbit lebih cepat)
-   atau 550 soal (5 paket)?
-3. **Review Paket 1:** pemilik repo belum memberi masukan tentang gaya dan
-   tingkat kesulitan. Minta masukan ini sebelum membuat ratusan soal.
-4. **Contoh tampilan ebook:** sudah ditawarkan contoh PDF dari 20 soal
-   Paket 1, tetapi belum dikerjakan.
+Pemilik menyerahkan keputusan ke model ("gas aja"):
+
+1. **Nama:** tetap "SoalSKD", sama dengan aplikasi.
+2. **Versi pertama:** 330 soal (3 paket penuh: p02, p03, p04). Paket 4 dan 5 menyusul
+   sebagai pembaruan.
+3. **Paket 1 (`bank/p01.json`)** diterima sebagai standar gaya, tingkat kesulitan, dan
+   panjang pembahasan.
+4. **Contoh ebook** sudah dibuat dengan `ebook/buat-ebook.mjs`.
 
 ## Langkah berikutnya
 

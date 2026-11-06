@@ -1,0 +1,908 @@
+{
+  "skema": 1,
+  "meta": {
+    "id": "p02",
+    "judul": "Paket 02",
+    "versi": 1,
+    "dibuat": "2026-11-06",
+    "status": "draf"
+  },
+  "soal": [
+    {
+      "id": "p02-001",
+      "nomor": 1,
+      "kategori": "TWK",
+      "subtopik": "Pancasila",
+      "topik": "Sila pertama dalam pelayanan: menghormati ibadah warga yang berbeda agama",
+      "tingkat": "mudah",
+      "pertanyaan": "Sebuah kantor kelurahan melayani warga dari berbagai agama. Menjelang waktu ibadah salah satu agama, beberapa warga yang sedang antre meminta izin keluar sebentar untuk beribadah. Sikap petugas yang paling mencerminkan pengamalan sila pertama Pancasila adalah ....",
+      "opsi": {
+        "A": "Menolak permintaan tersebut karena pelayanan harus berjalan tanpa gangguan apa pun",
+        "B": "Mengizinkan hanya jika warga lain yang antre memiliki agama yang sama",
+        "C": "Mempersilakan warga beribadah dan menjaga nomor antreannya agar tetap dilayani setelah kembali",
+        "D": "Menghentikan seluruh layanan sampai semua warga selesai beribadah",
+        "E": "Meminta warga memilih antara beribadah atau kehilangan nomor antrean"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "Sila pertama, **Ketuhanan Yang Maha Esa**, mengandung nilai menghormati kebebasan setiap orang menjalankan ibadah sesuai agama dan kepercayaannya. Dalam konteks pelayanan publik, nilai ini diwujudkan dengan memberi ruang bagi warga untuk beribadah **tanpa merugikan hak pelayanannya**. Opsi C memenuhi keduanya: warga bisa beribadah, dan nomor antreannya tetap berlaku. Sikap ini juga adil bagi warga lain karena layanan tetap berjalan.",
+        "opsi": {
+          "A": "Mengutamakan kelancaran layanan dengan menutup kesempatan beribadah. Ini bertentangan dengan nilai menghormati kebebasan beribadah dalam sila pertama.",
+          "B": "Diskriminatif. Izin beribadah dikaitkan dengan agama warga lain, padahal sila pertama menuntut sikap hormat kepada semua pemeluk agama secara setara.",
+          "D": "Berlebihan dan merugikan warga lain yang tidak sedang beribadah. Menghormati ibadah tidak berarti menghentikan seluruh pelayanan.",
+          "E": "Memaksa warga memilih antara hak beribadah dan hak dilayani. Pilihan seperti ini justru menekan kebebasan beribadah."
+        },
+        "konsep": "**Pola soal pengamalan sila:** jawaban terbaik biasanya menjaga **dua hak sekaligus** (hak beribadah dan hak dilayani) tanpa mengorbankan pihak lain. Opsi yang ekstrem ke salah satu sisi hampir selalu salah."
+      },
+      "tips": "Untuk soal penerapan sila, cari opsi yang **menghormati, tidak memaksa, dan tidak membeda-bedakan**. Coret opsi yang mengandung syarat berdasarkan agama tertentu atau yang menghentikan hak orang lain."
+    },
+    {
+      "id": "p02-002",
+      "nomor": 2,
+      "kategori": "TWK",
+      "subtopik": "Pancasila",
+      "topik": "Pancasila sebagai ideologi terbuka: nilai dasar, instrumental, praksis",
+      "tingkat": "sedang",
+      "pertanyaan": "Pancasila disebut sebagai ideologi terbuka. Pernyataan yang paling tepat untuk menjelaskan sifat terbuka tersebut adalah ....",
+      "opsi": {
+        "A": "Nilai dasarnya tetap, sedangkan penjabarannya dalam peraturan dan pelaksanaannya dapat menyesuaikan perkembangan zaman",
+        "B": "Seluruh nilainya, termasuk nilai dasar, dapat diubah melalui kesepakatan mayoritas rakyat",
+        "C": "Pancasila dapat menerima ideologi lain apa pun untuk menggantikan nilai-nilainya",
+        "D": "Pancasila hanya berlaku dalam situasi tertentu dan dapat ditinggalkan saat keadaan darurat",
+        "E": "Nilai praksisnya tidak boleh berubah karena sudah ditetapkan sejak 1945"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "Ideologi terbuka adalah ideologi yang **nilai dasarnya tetap**, tetapi penjabarannya bisa berkembang secara dinamis. Nilai Pancasila biasa dibagi menjadi tiga tingkat:\n\n1. **Nilai dasar**: inti sila-sila Pancasila yang bersifat tetap dan tidak berubah.\n2. **Nilai instrumental**: penjabaran nilai dasar dalam peraturan perundang-undangan dan kebijakan, yang dapat disesuaikan.\n3. **Nilai praksis**: wujud nyata dalam kehidupan sehari-hari, yang paling mudah berubah mengikuti keadaan.\n\nKeterbukaan Pancasila ada pada tingkat instrumental dan praksis, bukan pada nilai dasarnya.",
+        "opsi": {
+          "B": "Keliru karena nilai dasar justru bersifat tetap. Jika nilai dasar bisa diubah, Pancasila kehilangan jati dirinya sebagai dasar negara.",
+          "C": "Terbuka tidak berarti dapat digantikan ideologi lain. Pancasila terbuka terhadap pemikiran baru selama tidak bertentangan dengan nilai dasarnya.",
+          "D": "Bertentangan dengan kedudukan Pancasila sebagai dasar negara yang berlaku dalam segala keadaan.",
+          "E": "Terbalik. Nilai praksis adalah tingkat yang paling dinamis dan paling mudah menyesuaikan perkembangan zaman."
+        },
+        "konsep": "**Hafalkan urutannya:** dasar (tetap) → instrumental (bisa disesuaikan lewat aturan) → praksis (paling dinamis). Soal sering menukar sifat dua tingkat ini."
+      },
+      "tips": "Kata **terbuka** dalam soal ideologi hampir selalu berarti *penjabarannya fleksibel, intinya tetap*. Coret opsi yang menyebut nilai dasar bisa diubah atau Pancasila bisa diganti."
+    },
+    {
+      "id": "p02-003",
+      "nomor": 3,
+      "kategori": "TWK",
+      "subtopik": "Pancasila",
+      "topik": "Perubahan rumusan sila pertama dari Piagam Jakarta pada 18 Agustus 1945",
+      "tingkat": "sulit",
+      "pertanyaan": "Rumusan dasar negara dalam Piagam Jakarta (22 Juni 1945) berbeda dengan rumusan dalam Pembukaan UUD yang disahkan PPKI pada 18 Agustus 1945. Perbedaan tersebut dan alasan utamanya adalah ....",
+      "opsi": {
+        "A": "Sila kelima diubah agar keadilan sosial hanya berlaku bagi warga negara asli",
+        "B": "Urutan sila diubah sehingga sila kemanusiaan ditempatkan di urutan pertama",
+        "C": "Sila persatuan dihapus karena dianggap sudah terkandung dalam sila lainnya",
+        "D": "Sila pertama ditambah kalimat tentang kewajiban bela negara bagi seluruh warga",
+        "E": "Tujuh kata setelah “Ketuhanan” dihapus sehingga menjadi “Ketuhanan Yang Maha Esa”, demi menjaga persatuan seluruh wilayah dan golongan"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "Piagam Jakarta disusun oleh Panitia Sembilan pada 22 Juni 1945. Rumusan sila pertamanya berbunyi “Ketuhanan, dengan kewajiban menjalankan syariat Islam bagi pemeluk-pemeluknya”. Menjelang sidang PPKI 18 Agustus 1945, muncul keberatan dari tokoh-tokoh wilayah timur Indonesia terhadap tujuh kata tersebut. Setelah musyawarah, para tokoh, termasuk Mohammad Hatta dan tokoh-tokoh Islam, sepakat menghapus tujuh kata itu sehingga sila pertama menjadi **“Ketuhanan Yang Maha Esa”**. Alasan utamanya adalah **menjaga persatuan bangsa** yang baru merdeka.",
+        "opsi": {
+          "A": "Tidak ada perubahan seperti ini. Sila kelima tetap berbunyi keadilan sosial bagi seluruh rakyat Indonesia, tanpa membedakan asal-usul.",
+          "B": "Urutan sila dalam Piagam Jakarta dan Pembukaan UUD sama. Perubahan hanya terjadi pada rumusan sila pertama.",
+          "C": "Sila persatuan tidak pernah dihapus. Kelima sila tetap ada dalam kedua rumusan.",
+          "D": "Kewajiban bela negara diatur dalam batang tubuh UUD, bukan ditambahkan ke rumusan sila pertama."
+        },
+        "konsep": "**Urutan peristiwa penting:** 1 Juni 1945 (pidato Soekarno tentang Pancasila di BPUPKI) → 22 Juni 1945 (Piagam Jakarta oleh Panitia Sembilan) → 18 Agustus 1945 (PPKI mengesahkan UUD dengan rumusan Pancasila yang berlaku sekarang)."
+      },
+      "tips": "Soal sejarah rumusan Pancasila biasanya menguji **perubahan sila pertama** dan **alasannya (persatuan)**. Jika ada opsi yang menyebut perubahan urutan atau penghapusan sila, itu hampir pasti distraktor.",
+      "rujukan": [
+        "Pembukaan UUD NRI 1945 alinea keempat"
+      ]
+    },
+    {
+      "id": "p02-004",
+      "nomor": 4,
+      "kategori": "TWK",
+      "subtopik": "Pancasila",
+      "topik": "Pancasila sebagai sumber segala sumber hukum negara",
+      "tingkat": "sulit",
+      "pertanyaan": "Sebuah peraturan daerah dinilai bertentangan dengan nilai keadilan sosial karena hanya menguntungkan kelompok tertentu. Kedudukan Pancasila yang paling tepat dijadikan dasar untuk menilai peraturan tersebut adalah ....",
+      "opsi": {
+        "A": "Pancasila sebagai pandangan hidup yang hanya berlaku dalam kehidupan pribadi",
+        "B": "Pancasila sebagai sumber segala sumber hukum negara, sehingga setiap materi peraturan tidak boleh bertentangan dengan nilai-nilainya",
+        "C": "Pancasila sebagai perjanjian luhur yang hanya mengikat para pendiri negara",
+        "D": "Pancasila sebagai jenis peraturan tertinggi dalam hierarki peraturan perundang-undangan",
+        "E": "Pancasila sebagai ideologi terbuka yang membolehkan setiap daerah menafsirkannya secara bebas"
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "Pasal 2 UU No. 12 Tahun 2011 tentang Pembentukan Peraturan Perundang-undangan menyatakan bahwa **Pancasila merupakan sumber segala sumber hukum negara**. Artinya, setiap materi muatan peraturan, dari undang-undang sampai peraturan daerah, harus sesuai dengan nilai-nilai Pancasila. Peraturan daerah yang hanya menguntungkan kelompok tertentu dapat dinilai bertentangan dengan sila kelima. Jadi, kedudukan yang paling tepat untuk menilai perda tersebut adalah Pancasila sebagai sumber segala sumber hukum.",
+        "opsi": {
+          "A": "Pancasila memang pandangan hidup, tetapi tidak terbatas pada kehidupan pribadi. Kedudukan ini juga tidak menjadi dasar penilaian sebuah peraturan.",
+          "C": "Perjanjian luhur mengikat seluruh bangsa, bukan hanya para pendiri negara. Kedudukan ini juga bukan dasar yuridis untuk menilai peraturan.",
+          "D": "Jebakan utama. Pancasila **bukan jenis peraturan** dalam hierarki. Hierarki dimulai dari UUD NRI 1945. Pancasila berada di atas hierarki sebagai sumber nilai, bukan sebagai salah satu jenis peraturan.",
+          "E": "Keterbukaan Pancasila tidak berarti daerah bebas menafsirkan nilai dasarnya. Penjabaran di daerah tetap harus sesuai dengan nilai dasar Pancasila."
+        },
+        "konsep": "**Bedakan dua hal yang sering tertukar:** Pancasila adalah *sumber segala sumber hukum* (Pasal 2), sedangkan *hierarki peraturan* diatur dalam Pasal 7 dan dimulai dari UUD NRI 1945, lalu Ketetapan MPR, UU/Perppu, PP, Perpres, Perda Provinsi, dan Perda Kabupaten/Kota."
+      },
+      "tips": "Jika soal menyebut menilai atau menguji sebuah peraturan dengan nilai Pancasila, kata kuncinya adalah **sumber segala sumber hukum**. Waspadai opsi yang menempatkan Pancasila sebagai salah satu jenis peraturan.",
+      "rujukan": [
+        "UU No. 12 Tahun 2011 Pasal 2",
+        "UU No. 12 Tahun 2011 Pasal 7 ayat (1)"
+      ]
+    },
+    {
+      "id": "p02-005",
+      "nomor": 5,
+      "kategori": "TWK",
+      "subtopik": "Pancasila",
+      "topik": "Sila kelima dalam kebijakan afirmasi daerah tertinggal",
+      "tingkat": "sedang",
+      "pertanyaan": "Pemerintah memberikan kuota beasiswa khusus bagi pelajar dari daerah tertinggal yang akses pendidikannya terbatas. Sebagian orang menilai kebijakan ini tidak adil karena tidak berlaku sama untuk semua pelajar. Penilaian yang paling sesuai dengan nilai sila kelima Pancasila adalah ....",
+      "opsi": {
+        "A": "Kebijakan itu tidak adil karena keadilan berarti semua orang harus menerima perlakuan yang persis sama",
+        "B": "Kebijakan itu hanya sah jika seluruh pelajar di Indonesia menyetujuinya",
+        "C": "Kebijakan itu sebaiknya diganti dengan pembagian beasiswa secara acak",
+        "D": "Kebijakan itu sejalan dengan keadilan sosial karena memberi perhatian lebih kepada kelompok yang tertinggal agar kesempatannya setara",
+        "E": "Kebijakan itu bertentangan dengan sila ketiga karena membeda-bedakan daerah"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "Sila kelima, **Keadilan sosial bagi seluruh rakyat Indonesia**, tidak selalu berarti perlakuan yang persis sama. Keadilan sosial menuntut agar setiap warga punya **kesempatan yang setara**. Karena titik awal setiap kelompok berbeda, kelompok yang tertinggal kadang perlu perhatian lebih agar bisa mengejar ketertinggalan. Kebijakan seperti ini disebut kebijakan afirmasi. Kuota beasiswa bagi pelajar dari daerah tertinggal adalah contoh penerapan keadilan sosial yang tepat.",
+        "opsi": {
+          "A": "Menyamakan keadilan dengan perlakuan yang seragam. Perlakuan seragam pada kondisi awal yang tidak setara justru mempertahankan kesenjangan.",
+          "B": "Keadilan sosial tidak ditentukan oleh persetujuan semua orang. Kebijakan publik ditetapkan oleh lembaga berwenang berdasarkan pertimbangan keadilan.",
+          "C": "Pembagian acak mengabaikan kebutuhan nyata. Keadilan sosial justru menuntut perhatian pada kelompok yang paling membutuhkan.",
+          "E": "Kebijakan afirmasi tidak memecah persatuan. Mengurangi kesenjangan antardaerah justru memperkuat persatuan bangsa. Persatuan Indonesia tidak berarti semua daerah diperlakukan seragam."
+        },
+        "konsep": "**Adil tidak sama dengan sama rata.** Dalam soal TWK, keadilan sosial sering diuji lewat kebijakan afirmasi: perhatian khusus bagi kelompok tertinggal agar kesempatannya setara."
+      },
+      "tips": "Jika soal mempertentangkan “perlakuan sama” dan “perhatian khusus bagi yang tertinggal”, pilih opsi yang menekankan **kesetaraan kesempatan**, bukan keseragaman perlakuan."
+    },
+    {
+      "id": "p02-006",
+      "nomor": 6,
+      "kategori": "TWK",
+      "subtopik": "UUD 1945",
+      "topik": "Kewenangan DPD dalam pembentukan undang-undang (Pasal 22D)",
+      "tingkat": "sulit",
+      "pertanyaan": "Berdasarkan Pasal 22D UUD NRI Tahun 1945, kewenangan Dewan Perwakilan Daerah (DPD) yang tepat adalah ....",
+      "opsi": {
+        "A": "Membentuk undang-undang bersama Presiden tanpa melibatkan DPR",
+        "B": "Dapat mengajukan rancangan undang-undang yang berkaitan dengan otonomi daerah kepada DPR",
+        "C": "Menetapkan anggaran pendapatan dan belanja negara bersama Presiden",
+        "D": "Memberikan persetujuan akhir atas setiap rancangan undang-undang",
+        "E": "Mengangkat dan memberhentikan kepala daerah"
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "Pasal 22D ayat (1) menyatakan bahwa DPD **dapat mengajukan kepada DPR** rancangan undang-undang yang berkaitan dengan otonomi daerah, hubungan pusat dan daerah, pembentukan dan pemekaran serta penggabungan daerah, pengelolaan sumber daya alam dan sumber daya ekonomi lainnya, serta perimbangan keuangan pusat dan daerah. Ayat (2) mengatur keikutsertaan DPD membahas RUU di bidang yang sama dan memberi pertimbangan atas RUU APBN, pajak, pendidikan, dan agama. Ayat (3) mengatur fungsi pengawasan. Jadi, kewenangan DPD terbatas pada bidang kedaerahan.",
+        "opsi": {
+          "A": "Kekuasaan membentuk undang-undang dipegang DPR (Pasal 20 ayat 1), dan setiap RUU dibahas oleh DPR dan Presiden. DPD tidak bisa membentuk UU tanpa DPR.",
+          "C": "APBN diajukan Presiden dan dibahas bersama DPR (Pasal 23). DPD hanya memberikan pertimbangan atas RUU APBN.",
+          "D": "Persetujuan bersama atas RUU diberikan oleh DPR dan Presiden (Pasal 20 ayat 2). DPD tidak memberikan persetujuan akhir.",
+          "E": "Kepala daerah dipilih secara demokratis (Pasal 18 ayat 4). DPD tidak berwenang mengangkat atau memberhentikan kepala daerah."
+        },
+        "konsep": "**Kata kunci DPD:** *dapat mengajukan*, *ikut membahas*, *memberikan pertimbangan*, dan *mengawasi*, semuanya terbatas pada bidang yang berkaitan dengan daerah. Kata *menetapkan* atau *menyetujui* UU bukan kewenangan DPD."
+      },
+      "tips": "Hafalkan lima bidang RUU yang dapat diajukan DPD: **otonomi daerah, hubungan pusat-daerah, pemekaran/penggabungan daerah, pengelolaan SDA dan SDE, perimbangan keuangan**. Opsi yang memberi DPD wewenang memutus hampir pasti salah.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 22D",
+        "UUD NRI 1945 Pasal 20",
+        "UUD NRI 1945 Pasal 23"
+      ]
+    },
+    {
+      "id": "p02-007",
+      "nomor": 7,
+      "kategori": "TWK",
+      "subtopik": "UUD 1945",
+      "topik": "Alur pemberhentian presiden: DPR, MK, lalu MPR (Pasal 7B)",
+      "tingkat": "sulit",
+      "pertanyaan": "Menurut Pasal 7B UUD NRI Tahun 1945, urutan proses pemberhentian Presiden dan/atau Wakil Presiden dalam masa jabatannya adalah ....",
+      "opsi": {
+        "A": "MPR mengusulkan, DPR memeriksa, lalu Mahkamah Agung memutus",
+        "B": "Mahkamah Konstitusi mengusulkan, DPR memutus, lalu MPR melantik pengganti",
+        "C": "DPR langsung memberhentikan setelah mendapat dukungan dua pertiga anggotanya",
+        "D": "MPR memberhentikan atas usul DPD setelah mendengar pendapat DPR",
+        "E": "DPR mengajukan permintaan kepada Mahkamah Konstitusi, MK memeriksa dan memutus pendapat DPR, lalu DPR mengusulkan kepada MPR yang memutuskan"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "Pasal 7B mengatur alur pemberhentian dengan tiga lembaga:\n\n1. **DPR** mengajukan permintaan kepada MK dengan dukungan sekurang-kurangnya 2/3 anggota DPR yang hadir dalam sidang paripurna yang dihadiri sekurang-kurangnya 2/3 anggota DPR.\n2. **MK** wajib memeriksa, mengadili, dan memutus pendapat DPR paling lama 90 hari.\n3. Jika MK membenarkan pendapat DPR, DPR menyelenggarakan sidang paripurna untuk meneruskan usul kepada **MPR**. MPR wajib bersidang paling lambat 30 hari dan memutus dalam rapat paripurna yang dihadiri sekurang-kurangnya 3/4 anggota, dengan persetujuan sekurang-kurangnya 2/3 anggota yang hadir.",
+        "opsi": {
+          "A": "Urutannya terbalik dan lembaganya keliru. Yang memeriksa pendapat DPR adalah Mahkamah Konstitusi, bukan Mahkamah Agung.",
+          "B": "MK tidak mengusulkan pemberhentian. MK hanya memeriksa dan memutus pendapat yang diajukan DPR.",
+          "C": "DPR tidak berwenang memberhentikan Presiden secara langsung. Keputusan akhir ada di MPR setelah melalui putusan MK.",
+          "D": "DPD tidak berperan dalam proses ini. Usul pemberhentian berasal dari DPR."
+        },
+        "konsep": "**Angka penting Pasal 7B:** dukungan DPR 2/3 dari yang hadir (kuorum 2/3), MK memutus paling lama **90 hari**, MPR bersidang paling lambat **30 hari**, keputusan MPR dihadiri **3/4** anggota dan disetujui **2/3** yang hadir."
+      },
+      "tips": "Ingat urutan **DPR → MK → DPR → MPR**. MK menilai aspek hukum, MPR membuat keputusan politik akhir. Angka 90 dan 30 hari sering ditukar dalam opsi, jadi hafalkan pasangannya.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 7A",
+        "UUD NRI 1945 Pasal 7B"
+      ]
+    },
+    {
+      "id": "p02-008",
+      "nomor": 8,
+      "kategori": "TWK",
+      "subtopik": "UUD 1945",
+      "topik": "Hak dan kewajiban ikut serta dalam pembelaan negara (Pasal 27 ayat 3)",
+      "tingkat": "mudah",
+      "pertanyaan": "Pasal 27 ayat (3) UUD NRI Tahun 1945 menyatakan bahwa setiap warga negara berhak dan wajib ikut serta dalam upaya pembelaan negara. Makna kata “berhak dan wajib” dalam pasal tersebut adalah ....",
+      "opsi": {
+        "A": "Pembelaan negara adalah hak sekaligus kewajiban seluruh warga negara, tidak terbatas pada anggota TNI",
+        "B": "Pembelaan negara hanya menjadi kewajiban warga negara yang berusia di atas 18 tahun",
+        "C": "Warga negara boleh memilih untuk tidak ikut serta karena pembelaan negara hanyalah hak",
+        "D": "Pembelaan negara hanya dilakukan dalam bentuk perang melawan musuh dari luar",
+        "E": "Hanya warga negara yang bekerja di instansi pemerintah yang wajib membela negara"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "Rumusan **“berhak dan wajib”** berarti pembelaan negara melekat pada setiap warga negara dalam dua sisi sekaligus. Sebagai hak, setiap warga negara boleh ikut serta dan tidak boleh dihalangi. Sebagai kewajiban, setiap warga negara dituntut berperan sesuai kemampuan dan profesinya. Pembelaan negara juga tidak terbatas pada kegiatan militer. Belajar dengan sungguh-sungguh, bekerja jujur, dan menjaga persatuan juga termasuk upaya bela negara. Pasal 30 ayat (1) menegaskan hal serupa untuk usaha pertahanan dan keamanan negara.",
+        "opsi": {
+          "B": "Pasal 27 ayat (3) tidak membatasi usia. Rumusan “setiap warga negara” berlaku untuk semua warga negara sesuai kemampuannya.",
+          "C": "Mengabaikan kata “wajib”. Pembelaan negara bukan sekadar hak yang boleh tidak digunakan.",
+          "D": "Bela negara mencakup banyak bentuk, termasuk menghadapi ancaman nonmiliter seperti narkoba, hoaks, dan bencana.",
+          "E": "Pasal ini berlaku untuk seluruh warga negara, bukan hanya pegawai pemerintah."
+        },
+        "konsep": "**Dua pasal yang mirip:** Pasal 27 ayat (3) tentang *upaya pembelaan negara*, sedangkan Pasal 30 ayat (1) tentang *usaha pertahanan dan keamanan negara*. Keduanya memakai rumusan “berhak dan wajib”."
+      },
+      "tips": "Jika soal memuat frasa **“berhak dan wajib”**, jawaban yang tepat selalu memuat dua sisi itu dan berlaku untuk **setiap warga negara**. Coret opsi yang membatasi pelaku atau bentuk bela negara.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 27 ayat (3)",
+        "UUD NRI 1945 Pasal 30 ayat (1)"
+      ]
+    },
+    {
+      "id": "p02-009",
+      "nomor": 9,
+      "kategori": "TWK",
+      "subtopik": "UUD 1945",
+      "topik": "Wewenang Komisi Yudisial (Pasal 24B)",
+      "tingkat": "sedang",
+      "pertanyaan": "Seorang hakim diduga melanggar kode etik karena sering bertemu pihak yang perkaranya sedang ia tangani. Lembaga yang berwenang menjaga dan menegakkan kehormatan serta perilaku hakim menurut UUD NRI Tahun 1945 adalah ....",
+      "opsi": {
+        "A": "Mahkamah Konstitusi",
+        "B": "Dewan Perwakilan Rakyat",
+        "C": "Komisi Yudisial",
+        "D": "Kejaksaan Agung",
+        "E": "Ombudsman Republik Indonesia"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "Pasal 24B ayat (1) UUD NRI 1945 menyatakan bahwa **Komisi Yudisial** bersifat mandiri dan berwenang mengusulkan pengangkatan hakim agung serta mempunyai wewenang lain dalam rangka **menjaga dan menegakkan kehormatan, keluhuran martabat, serta perilaku hakim**. Kasus hakim yang diduga melanggar kode etik karena bertemu pihak berperkara termasuk wilayah pengawasan perilaku hakim. Karena itu, lembaga yang tepat adalah Komisi Yudisial.",
+        "opsi": {
+          "A": "MK adalah pelaku kekuasaan kehakiman yang menguji UU terhadap UUD, memutus sengketa kewenangan lembaga negara, membubarkan partai politik, dan memutus perselisihan hasil pemilu. MK tidak mengawasi perilaku hakim.",
+          "B": "DPR memberi persetujuan atas calon hakim agung yang diusulkan KY, tetapi tidak menegakkan kode etik hakim.",
+          "D": "Kejaksaan menangani penuntutan perkara pidana. Pelanggaran etik hakim bukan ranah kejaksaan, kecuali ada tindak pidana.",
+          "E": "Ombudsman mengawasi penyelenggaraan pelayanan publik dan maladministrasi, bukan perilaku hakim dalam memeriksa perkara."
+        },
+        "konsep": "**Alur pengangkatan hakim agung (Pasal 24A ayat 3):** calon diusulkan **Komisi Yudisial** kepada DPR untuk mendapat persetujuan, lalu ditetapkan oleh Presiden."
+      },
+      "tips": "Pasangkan lembaga dengan kata kuncinya: **KY = perilaku dan kehormatan hakim**, **MK = menguji UU terhadap UUD**, **MA = kasasi dan menguji peraturan di bawah UU terhadap UU**.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 24A ayat (3)",
+        "UUD NRI 1945 Pasal 24B ayat (1)",
+        "UUD NRI 1945 Pasal 24C"
+      ]
+    },
+    {
+      "id": "p02-010",
+      "nomor": 10,
+      "kategori": "TWK",
+      "subtopik": "UUD 1945",
+      "topik": "Anggaran pendidikan minimal 20 persen (Pasal 31 ayat 4)",
+      "tingkat": "sedang",
+      "pertanyaan": "Pasal 31 ayat (4) UUD NRI Tahun 1945 mengatur prioritas anggaran pendidikan. Pernyataan yang sesuai dengan pasal tersebut adalah ....",
+      "opsi": {
+        "A": "Anggaran pendidikan sekurang-kurangnya 20% hanya diambil dari APBN",
+        "B": "Anggaran pendidikan ditetapkan paling banyak 20% dari APBN dan APBD",
+        "C": "Anggaran pendidikan sekurang-kurangnya 25% dari APBN untuk pendidikan dasar saja",
+        "D": "Negara memprioritaskan anggaran pendidikan sekurang-kurangnya 20% dari APBN serta dari APBD",
+        "E": "Besar anggaran pendidikan diserahkan sepenuhnya kepada pemerintah daerah"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "Pasal 31 ayat (4) berbunyi: negara memprioritaskan anggaran pendidikan **sekurang-kurangnya dua puluh persen** dari anggaran pendapatan dan belanja negara **serta dari** anggaran pendapatan dan belanja daerah untuk memenuhi kebutuhan penyelenggaraan pendidikan nasional. Ada tiga unsur penting: kata *memprioritaskan*, batas *sekurang-kurangnya* (batas bawah, bukan batas atas), dan sumbernya *APBN serta APBD*. Opsi D memuat ketiga unsur tersebut dengan tepat.",
+        "opsi": {
+          "A": "Kurang lengkap. Pasal ini juga mewajibkan prioritas dari APBD, bukan hanya APBN.",
+          "B": "Mengubah batas bawah menjadi batas atas. Kata “sekurang-kurangnya” berarti minimal 20%, sehingga boleh lebih.",
+          "C": "Angka dan cakupannya salah. Persentasenya 20%, dan anggaran itu untuk penyelenggaraan pendidikan nasional, bukan pendidikan dasar saja. Pendidikan dasar memang wajib dibiayai pemerintah, tetapi itu diatur di ayat (2).",
+          "E": "Bertentangan dengan pasal yang justru menetapkan kewajiban prioritas bagi negara, baik pusat maupun daerah."
+        },
+        "konsep": "**Pasal 31 secara ringkas:** ayat (1) hak mendapat pendidikan, ayat (2) wajib mengikuti pendidikan dasar dan pemerintah wajib membiayainya, ayat (3) satu sistem pendidikan nasional, ayat (4) anggaran minimal 20%, ayat (5) kemajuan iptek."
+      },
+      "tips": "Perhatikan kata pembatas seperti **sekurang-kurangnya**, **paling banyak**, dan **serta**. Distraktor sering hanya mengganti satu kata pembatas atau menghapus salah satu sumber anggaran.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 31"
+      ]
+    },
+    {
+      "id": "p02-011",
+      "nomor": 11,
+      "kategori": "TWK",
+      "subtopik": "UUD 1945",
+      "topik": "Penguasaan negara atas cabang produksi penting (Pasal 33 ayat 2 dan 3)",
+      "tingkat": "sedang",
+      "pertanyaan": "Pemerintah mempertahankan pengelolaan air bersih di sebuah kota melalui badan usaha milik daerah, meskipun ada perusahaan swasta yang menawarkan untuk mengambil alih seluruhnya. Dasar konstitusional yang paling sesuai untuk kebijakan tersebut adalah ....",
+      "opsi": {
+        "A": "Cabang produksi yang penting bagi negara dan menguasai hajat hidup orang banyak dikuasai oleh negara (Pasal 33 ayat 2)",
+        "B": "Setiap orang berhak atas pekerjaan dan penghidupan yang layak bagi kemanusiaan (Pasal 27 ayat 2)",
+        "C": "Fakir miskin dan anak terlantar dipelihara oleh negara (Pasal 34 ayat 1)",
+        "D": "Perekonomian disusun berdasarkan persaingan bebas antarpelaku usaha",
+        "E": "Pajak dan pungutan lain yang bersifat memaksa diatur dengan undang-undang (Pasal 23A)"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "Air bersih termasuk kebutuhan yang **menguasai hajat hidup orang banyak**. Pasal 33 ayat (2) menyatakan bahwa cabang-cabang produksi yang penting bagi negara dan yang menguasai hajat hidup orang banyak dikuasai oleh negara. Ayat (3) menambahkan bahwa bumi, air, dan kekayaan alam yang terkandung di dalamnya dikuasai oleh negara dan dipergunakan untuk sebesar-besar kemakmuran rakyat. Kebijakan mempertahankan pengelolaan air bersih melalui badan usaha milik daerah sejalan dengan kedua ayat ini. Dikuasai negara tidak selalu berarti dikelola sendiri sepenuhnya, tetapi negara harus tetap memegang kendali atas pengaturan, pengelolaan, dan pengawasannya.",
+        "opsi": {
+          "B": "Pasal ini mengatur hak warga atas pekerjaan, bukan dasar penguasaan negara atas sumber daya atau cabang produksi.",
+          "C": "Pasal ini mengatur jaminan sosial bagi fakir miskin dan anak terlantar, tidak berkaitan dengan pengelolaan air bersih.",
+          "D": "Bertentangan dengan Pasal 33 ayat (1) yang menyatakan perekonomian disusun sebagai usaha bersama berdasar atas asas kekeluargaan, bukan persaingan bebas.",
+          "E": "Pasal ini mengatur dasar hukum pemungutan pajak, bukan penguasaan cabang produksi."
+        },
+        "konsep": "**Pasal 33 secara ringkas:** ayat (1) asas kekeluargaan, ayat (2) cabang produksi penting dikuasai negara, ayat (3) bumi, air, dan kekayaan alam untuk kemakmuran rakyat, ayat (4) demokrasi ekonomi, ayat (5) pelaksanaannya diatur dengan UU."
+      },
+      "tips": "Jika soal menyebut sumber daya vital seperti air, listrik, atau tambang, kata kuncinya adalah **hajat hidup orang banyak** dan **dikuasai negara**. Waspadai opsi yang menyebut persaingan bebas.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 33"
+      ]
+    },
+    {
+      "id": "p02-012",
+      "nomor": 12,
+      "kategori": "TWK",
+      "subtopik": "NKRI",
+      "topik": "Deklarasi Djuanda 1957 dan konsep negara kepulauan",
+      "tingkat": "sedang",
+      "pertanyaan": "Sebelum 1957, wilayah laut Indonesia mengikuti aturan kolonial yang menetapkan laut teritorial selebar 3 mil dari garis pantai setiap pulau. Makna penting Deklarasi Djuanda 13 Desember 1957 bagi keutuhan wilayah Indonesia adalah ....",
+      "opsi": {
+        "A": "Menetapkan batas darat Indonesia dengan negara tetangga di Pulau Kalimantan",
+        "B": "Mengakhiri sengketa wilayah Irian Barat dengan Belanda",
+        "C": "Menetapkan Indonesia sebagai negara federal yang terdiri atas pulau-pulau",
+        "D": "Menyatakan laut di antara dan di sekitar pulau-pulau Indonesia sebagai bagian wilayah yang menyatukan, bukan memisahkan",
+        "E": "Membuka seluruh perairan Indonesia sebagai laut bebas bagi kapal asing"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "Aturan kolonial tahun 1939 menetapkan laut teritorial hanya 3 mil dari garis pantai setiap pulau. Akibatnya, di antara pulau-pulau Indonesia terdapat laut bebas yang memisahkan wilayah. **Deklarasi Djuanda** menyatakan bahwa laut di antara dan di sekitar pulau-pulau Indonesia merupakan bagian wilayah Indonesia, dengan laut teritorial 12 mil yang diukur dari garis yang menghubungkan titik-titik terluar pulau. Konsep ini menjadikan laut sebagai **pemersatu**, bukan pemisah, dan menjadi dasar **Wawasan Nusantara**. Konsep negara kepulauan ini kemudian diakui dunia internasional melalui Konvensi Hukum Laut PBB (UNCLOS) 1982.",
+        "opsi": {
+          "A": "Deklarasi Djuanda mengatur wilayah laut, bukan batas darat dengan negara tetangga.",
+          "B": "Masalah Irian Barat diselesaikan melalui jalur lain pada dekade 1960-an, bukan oleh Deklarasi Djuanda.",
+          "C": "Deklarasi Djuanda memperkuat negara kesatuan. Bentuk negara federal tidak ada kaitannya dengan deklarasi ini.",
+          "E": "Kebalikan dari maksud deklarasi. Justru laut yang sebelumnya bebas dijadikan bagian wilayah Indonesia."
+        },
+        "konsep": "**Kaitan konsep:** Deklarasi Djuanda (1957) → Wawasan Nusantara → diakui UNCLOS (1982) → dikukuhkan dalam Pasal 25A UUD NRI 1945 tentang negara kepulauan berciri Nusantara."
+      },
+      "tips": "Soal Deklarasi Djuanda hampir selalu berpusat pada **laut sebagai pemersatu**. Ingat juga angka 3 mil (aturan kolonial) dan 12 mil (Deklarasi Djuanda), karena sering ditukar.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 25A"
+      ]
+    },
+    {
+      "id": "p02-013",
+      "nomor": 13,
+      "kategori": "TWK",
+      "subtopik": "NKRI",
+      "topik": "Urusan pemerintahan absolut yang tidak diserahkan ke daerah",
+      "tingkat": "sulit",
+      "pertanyaan": "Dalam penyelenggaraan otonomi daerah, terdapat urusan pemerintahan absolut yang sepenuhnya menjadi kewenangan pemerintah pusat. Kelompok urusan berikut yang seluruhnya termasuk urusan absolut adalah ....",
+      "opsi": {
+        "A": "Pendidikan, kesehatan, dan pekerjaan umum",
+        "B": "Agama, pariwisata, dan pertanian",
+        "C": "Politik luar negeri, pertahanan, dan yustisi",
+        "D": "Keamanan, perhubungan, dan kebudayaan",
+        "E": "Moneter dan fiskal nasional, perdagangan, dan kehutanan"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "UU No. 23 Tahun 2014 tentang Pemerintahan Daerah membagi urusan pemerintahan menjadi urusan absolut, urusan konkuren, dan urusan pemerintahan umum. **Urusan absolut** sepenuhnya menjadi kewenangan pemerintah pusat dan terdiri atas enam urusan: **politik luar negeri, pertahanan, keamanan, yustisi, moneter dan fiskal nasional, serta agama**. Opsi C adalah satu-satunya kelompok yang ketiganya termasuk urusan absolut. Urusan konkuren adalah urusan yang dibagi antara pusat dan daerah, seperti pendidikan, kesehatan, pariwisata, dan pertanian.",
+        "opsi": {
+          "A": "Ketiganya urusan konkuren. Pendidikan, kesehatan, dan pekerjaan umum bahkan termasuk urusan wajib yang berkaitan dengan pelayanan dasar.",
+          "B": "Agama memang urusan absolut, tetapi pariwisata dan pertanian adalah urusan konkuren pilihan.",
+          "D": "Keamanan memang urusan absolut, tetapi perhubungan dan kebudayaan adalah urusan konkuren.",
+          "E": "Moneter dan fiskal nasional memang urusan absolut, tetapi perdagangan dan kehutanan adalah urusan konkuren. Distraktor ini menjebak peserta yang hanya mencocokkan satu kata."
+        },
+        "konsep": "**Cara mengingat urusan absolut:** keenamnya menyangkut **kedaulatan dan keutuhan negara**, sehingga harus seragam di seluruh wilayah dan tidak bisa dibagi ke daerah. Politik luar negeri, pertahanan, keamanan, yustisi (peradilan), moneter dan fiskal nasional, serta agama. Urusan lain yang menyangkut pelayanan sehari-hari warga umumnya urusan konkuren."
+      },
+      "tips": "Untuk soal “seluruhnya termasuk”, periksa **setiap** unsur dalam opsi. Distraktor sengaja memuat satu urusan absolut ditambah urusan konkuren supaya terlihat benar.",
+      "rujukan": [
+        "UU No. 23 Tahun 2014 Pasal 9 dan Pasal 10"
+      ]
+    },
+    {
+      "id": "p02-014",
+      "nomor": 14,
+      "kategori": "TWK",
+      "subtopik": "NKRI",
+      "topik": "Indonesia sebagai negara kepulauan berciri Nusantara (Pasal 25A)",
+      "tingkat": "mudah",
+      "pertanyaan": "Pasal 25A UUD NRI Tahun 1945 menyatakan bahwa Negara Kesatuan Republik Indonesia adalah ....",
+      "opsi": {
+        "A": "Negara serikat yang terdiri atas negara-negara bagian",
+        "B": "Negara hukum yang menjunjung tinggi hak asasi manusia",
+        "C": "Negara yang berkedaulatan rakyat berdasarkan permusyawaratan",
+        "D": "Negara maritim yang wilayahnya ditetapkan oleh perjanjian internasional",
+        "E": "Negara kepulauan yang berciri Nusantara dengan wilayah yang batas-batas dan hak-haknya ditetapkan dengan undang-undang"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "Pasal 25A ditambahkan melalui Perubahan Kedua UUD 1945 (tahun 2000). Bunyinya: Negara Kesatuan Republik Indonesia adalah sebuah **negara kepulauan yang berciri Nusantara** dengan wilayah yang batas-batas dan hak-haknya ditetapkan dengan undang-undang. Pasal ini mengukuhkan konsep Wawasan Nusantara yang berakar dari Deklarasi Djuanda 1957. Ada dua unsur penting: ciri negara kepulauan, dan pengaturan batas wilayah melalui undang-undang nasional.",
+        "opsi": {
+          "A": "Indonesia adalah negara kesatuan (Pasal 1 ayat 1), bukan negara serikat. Bentuk negara kesatuan bahkan tidak dapat diubah (Pasal 37 ayat 5).",
+          "B": "Indonesia memang negara hukum, tetapi rumusan itu ada di Pasal 1 ayat (3), bukan Pasal 25A.",
+          "C": "Rumusan kedaulatan rakyat terdapat di Pasal 1 ayat (2). Kata permusyawaratan berasal dari sila keempat Pancasila.",
+          "D": "Istilah dalam pasal adalah negara kepulauan, bukan negara maritim. Batas wilayahnya ditetapkan dengan undang-undang, bukan semata oleh perjanjian internasional."
+        },
+        "konsep": "**Pasal 1 UUD secara ringkas:** ayat (1) negara kesatuan berbentuk republik, ayat (2) kedaulatan di tangan rakyat dan dilaksanakan menurut UUD, ayat (3) negara hukum. Pasal 25A menambahkan ciri **negara kepulauan**."
+      },
+      "tips": "Pasangkan nomor pasal dengan kata kuncinya. **25A = kepulauan**, **1 ayat 3 = negara hukum**, **1 ayat 1 = kesatuan dan republik**. Distraktor sering memakai bunyi pasal lain yang juga benar.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 1",
+        "UUD NRI 1945 Pasal 25A"
+      ]
+    },
+    {
+      "id": "p02-015",
+      "nomor": 15,
+      "kategori": "TWK",
+      "subtopik": "Bhinneka Tunggal Ika",
+      "topik": "Asal-usul semboyan dari Kakawin Sutasoma",
+      "tingkat": "mudah",
+      "pertanyaan": "Semboyan Bhinneka Tunggal Ika berasal dari kitab Sutasoma. Pernyataan yang tepat tentang asal-usul dan makna semboyan tersebut adalah ....",
+      "opsi": {
+        "A": "Ditulis Mpu Prapanca pada masa Kerajaan Sriwijaya dan bermakna “bersatu kita teguh”",
+        "B": "Ditulis Mpu Tantular pada masa Kerajaan Majapahit dan bermakna “berbeda-beda tetapi tetap satu”",
+        "C": "Ditulis Mpu Sedah pada masa Kerajaan Kediri dan bermakna “satu nusa satu bangsa”",
+        "D": "Dirumuskan BPUPKI pada 1945 dan bermakna “persatuan di atas segalanya”",
+        "E": "Ditulis Mpu Kanwa pada masa Kerajaan Mataram Kuno dan bermakna “tidak ada kebenaran yang mendua”"
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "Semboyan **Bhinneka Tunggal Ika** berasal dari Kakawin **Sutasoma** karya **Mpu Tantular** pada masa Kerajaan **Majapahit**. Kalimat lengkapnya berbunyi *Bhinneka tunggal ika tan hana dharma mangrwa*, yang kurang lebih berarti “berbeda-beda tetapi tetap satu, tidak ada kebenaran yang mendua”. Dalam konteks aslinya, kalimat itu menggambarkan kerukunan antarpemeluk ajaran yang berbeda. Kini semboyan tersebut tertulis pada lambang negara Garuda Pancasila (Pasal 36A UUD NRI 1945).",
+        "opsi": {
+          "A": "Mpu Prapanca adalah penulis Negarakertagama, bukan Sutasoma. Sriwijaya juga bukan kerajaan tempat kitab ini ditulis.",
+          "C": "Mpu Sedah dikenal sebagai salah satu penulis Bharatayuddha pada masa Kediri. “Satu nusa satu bangsa” bukan arti semboyan ini.",
+          "D": "Semboyan ini jauh lebih tua dari BPUPKI. Para pendiri negara mengambilnya dari karya sastra Majapahit.",
+          "E": "Mpu Kanwa menulis Arjunawiwaha pada masa Airlangga. Frasa “tidak ada kebenaran yang mendua” memang bagian kalimat lengkapnya, tetapi penulis dan kerajaannya salah."
+        },
+        "konsep": "**Pasangan penting:** Sutasoma – Mpu Tantular; Negarakertagama – Mpu Prapanca. Keduanya karya masa Majapahit dan sering ditukar dalam opsi."
+      },
+      "tips": "Untuk soal asal-usul, periksa **tiga unsur sekaligus**: nama kitab, nama pengarang, dan kerajaan. Distraktor biasanya benar di satu unsur tetapi salah di unsur lain.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 36A"
+      ]
+    },
+    {
+      "id": "p02-016",
+      "nomor": 16,
+      "kategori": "TWK",
+      "subtopik": "Bhinneka Tunggal Ika",
+      "topik": "Sikap multikultural saat perbedaan tradisi menimbulkan gesekan",
+      "tingkat": "sedang",
+      "pertanyaan": "Di sebuah perumahan, warga pendatang dari berbagai daerah sering berselisih dengan warga lama karena perbedaan kebiasaan dalam acara hajatan. Langkah ketua RT yang paling sesuai dengan semangat Bhinneka Tunggal Ika adalah ....",
+      "opsi": {
+        "A": "Mewajibkan semua warga mengikuti kebiasaan warga lama karena mereka lebih dulu tinggal",
+        "B": "Melarang semua bentuk hajatan agar tidak ada lagi perselisihan",
+        "C": "Meminta warga pendatang menyesuaikan diri sepenuhnya atau pindah dari perumahan",
+        "D": "Membiarkan perselisihan karena perbedaan kebiasaan adalah urusan pribadi",
+        "E": "Mengadakan musyawarah warga untuk menyepakati aturan bersama yang menghormati kebiasaan setiap kelompok"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "Semangat **Bhinneka Tunggal Ika** adalah menerima perbedaan sebagai kekayaan sambil tetap menjaga persatuan. Dalam masyarakat majemuk, perbedaan kebiasaan tidak dihapus, tetapi dikelola melalui **kesepakatan bersama**. Musyawarah memberi ruang bagi setiap kelompok untuk menyampaikan kebiasaannya, lalu warga menyepakati aturan yang adil, misalnya soal jam acara atau penggunaan jalan. Sikap ini juga sejalan dengan sila keempat Pancasila. Opsi E adalah satu-satunya langkah yang menghormati keberagaman sekaligus menyelesaikan masalah.",
+        "opsi": {
+          "A": "Memaksakan kebiasaan satu kelompok kepada kelompok lain. Ini mengarah pada asimilasi paksa, bukan penghormatan terhadap keberagaman.",
+          "B": "Menghilangkan masalah dengan menghapus kegiatan warga. Langkah ini membatasi hak warga dan tidak membangun saling pengertian.",
+          "C": "Diskriminatif terhadap pendatang. Setiap warga negara berhak tinggal di mana pun di wilayah Indonesia.",
+          "D": "Pasif. Perselisihan yang dibiarkan dapat membesar dan merusak kerukunan warga. Ketua RT justru berperan menjaga kerukunan warganya."
+        },
+        "konsep": "**Bedakan:** *multikulturalisme* (perbedaan diakui dan hidup berdampingan) dengan *asimilasi paksa* (satu budaya dipaksa melebur ke budaya lain). Semangat Bhinneka Tunggal Ika sejalan dengan multikulturalisme."
+      },
+      "tips": "Dalam soal keberagaman, opsi terbaik biasanya memuat kata **musyawarah**, **kesepakatan bersama**, atau **saling menghormati**. Coret opsi yang memaksa, melarang total, atau membiarkan."
+    },
+    {
+      "id": "p02-017",
+      "nomor": 17,
+      "kategori": "TWK",
+      "subtopik": "Nasionalisme",
+      "topik": "Budi Utomo 1908 sebagai awal pergerakan nasional modern",
+      "tingkat": "sedang",
+      "pertanyaan": "Berdirinya Budi Utomo pada 20 Mei 1908 diperingati sebagai Hari Kebangkitan Nasional. Ciri utama yang membedakan perjuangan sejak masa itu dengan perjuangan sebelumnya adalah ....",
+      "opsi": {
+        "A": "Perjuangan dilakukan dengan perlawanan bersenjata yang dipimpin raja-raja daerah",
+        "B": "Perjuangan bertujuan memulihkan kekuasaan kerajaan-kerajaan lokal",
+        "C": "Perjuangan dilakukan melalui organisasi modern yang dipimpin kaum terpelajar",
+        "D": "Perjuangan hanya dilakukan oleh golongan bangsawan tanpa melibatkan rakyat",
+        "E": "Perjuangan bergantung pada bantuan negara lain"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "Sebelum abad ke-20, perlawanan terhadap penjajah umumnya bersifat **kedaerahan**, mengandalkan **senjata**, dan bergantung pada pemimpin karismatik seperti raja atau tokoh agama. Ketika pemimpinnya tertangkap atau gugur, perlawanan biasanya ikut padam. Budi Utomo, yang didirikan oleh pelajar STOVIA seperti Sutomo atas gagasan dr. Wahidin Sudirohusodo, menandai cara baru: perjuangan melalui **organisasi modern** yang dipimpin kaum terpelajar, dengan anggaran dasar, kepengurusan, dan tujuan yang jelas. Cara ini membuat perjuangan lebih berkelanjutan dan menjadi awal pergerakan nasional.",
+        "opsi": {
+          "A": "Ini ciri perjuangan sebelum 1908. Perlawanan bersenjata yang dipimpin raja-raja daerah justru yang digantikan oleh pergerakan modern.",
+          "B": "Pergerakan nasional bertujuan memajukan bangsa dan kemudian mencapai kemerdekaan, bukan memulihkan kerajaan lokal.",
+          "D": "Pergerakan modern justru dipimpin kaum terpelajar dan semakin melibatkan rakyat luas melalui organisasi.",
+          "E": "Pergerakan nasional bertumpu pada kekuatan bangsa sendiri, bukan bantuan negara lain."
+        },
+        "konsep": "**Perbandingan cepat:** sebelum 1908 bersifat kedaerahan, bersenjata, dan bergantung pada tokoh. Sesudah 1908 bersifat nasional, terorganisasi, dipimpin kaum terpelajar, dan memakai cara politik serta pendidikan."
+      },
+      "tips": "Soal pergerakan nasional sering meminta **ciri pembeda**. Ingat kata kunci **organisasi modern** dan **kaum terpelajar**. Opsi yang menyebut perlawanan senjata atau raja daerah adalah ciri masa sebelumnya."
+    },
+    {
+      "id": "p02-018",
+      "nomor": 18,
+      "kategori": "TWK",
+      "subtopik": "Nasionalisme",
+      "topik": "Hasil sidang PPKI 18 Agustus 1945",
+      "tingkat": "sulit",
+      "pertanyaan": "PPKI bersidang beberapa kali setelah proklamasi kemerdekaan. Keputusan berikut yang dihasilkan dalam sidang pertama PPKI pada 18 Agustus 1945 adalah ....",
+      "opsi": {
+        "A": "Membentuk Badan Keamanan Rakyat (BKR) dan Komite Nasional Indonesia Pusat",
+        "B": "Mengesahkan UUD serta memilih Soekarno dan Mohammad Hatta sebagai Presiden dan Wakil Presiden",
+        "C": "Membagi wilayah Indonesia menjadi delapan provinsi",
+        "D": "Merumuskan dasar negara untuk pertama kalinya melalui pidato para tokoh",
+        "E": "Menyusun rancangan Piagam Jakarta melalui Panitia Sembilan"
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "Sidang pertama PPKI pada **18 Agustus 1945** menghasilkan tiga keputusan:\n\n1. Mengesahkan Undang-Undang Dasar (UUD 1945).\n2. Memilih **Soekarno** sebagai Presiden dan **Mohammad Hatta** sebagai Wakil Presiden.\n3. Menetapkan bahwa untuk sementara Presiden dibantu oleh sebuah Komite Nasional.\n\nOpsi B memuat dua keputusan utama sidang tersebut. Keputusan lain yang sering muncul dalam opsi sebenarnya berasal dari sidang PPKI berikutnya atau dari BPUPKI.",
+        "opsi": {
+          "A": "Pembentukan BKR dan KNIP diputuskan dalam sidang PPKI 22 Agustus 1945, bukan 18 Agustus.",
+          "C": "Pembagian delapan provinsi diputuskan pada sidang PPKI 19 Agustus 1945, bersama pembentukan kementerian.",
+          "D": "Perumusan dasar negara melalui pidato para tokoh terjadi di sidang pertama **BPUPKI** (29 Mei–1 Juni 1945), bukan PPKI. Pidato Soekarno tentang Pancasila disampaikan pada 1 Juni 1945.",
+          "E": "Piagam Jakarta disusun Panitia Sembilan pada 22 Juni 1945, dalam rangkaian kerja BPUPKI."
+        },
+        "konsep": "**Tabel waktu PPKI:** 18 Agustus (UUD, presiden dan wakil, komite nasional sementara) → 19 Agustus (8 provinsi, 12 kementerian) → 22 Agustus (KNIP, PNI sebagai partai, BKR)."
+      },
+      "tips": "Soal sidang PPKI hampir selalu menukar keputusan antartanggal. Hafalkan **18 = UUD dan presiden**, **19 = provinsi dan kementerian**, **22 = KNIP, PNI, BKR**. Bedakan juga tugas BPUPKI (menyusun) dan PPKI (mengesahkan)."
+    },
+    {
+      "id": "p02-019",
+      "nomor": 19,
+      "kategori": "TWK",
+      "subtopik": "Nasionalisme",
+      "topik": "Nasionalisme dalam memilih produk dan budaya di era global",
+      "tingkat": "sedang",
+      "pertanyaan": "Seorang pegawai muda gemar mengikuti tren budaya populer dari luar negeri. Sikap yang paling mencerminkan nasionalisme dalam menghadapi pengaruh budaya asing tersebut adalah ....",
+      "opsi": {
+        "A": "Menyaring budaya asing yang bermanfaat, tetap bangga memakai produk dan budaya Indonesia, serta ikut mempromosikannya",
+        "B": "Menolak semua budaya asing karena dapat melunturkan jati diri bangsa",
+        "C": "Mengikuti semua tren luar negeri agar tidak tertinggal zaman",
+        "D": "Menganggap budaya Indonesia kuno sehingga perlu diganti budaya asing",
+        "E": "Membatasi pergaulan hanya dengan orang yang memiliki budaya daerah yang sama"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "Nasionalisme di era global tidak berarti menutup diri. Sikap yang tepat adalah **menyaring** pengaruh asing: mengambil yang bermanfaat, seperti etos kerja atau kreativitas, dan menolak yang bertentangan dengan nilai Pancasila. Bersamaan dengan itu, nasionalisme ditunjukkan secara nyata melalui **kebanggaan** memakai produk dalam negeri dan **ikut mempromosikan** budaya Indonesia, misalnya melalui media sosial. Opsi A memuat ketiga unsur tersebut, sehingga paling tepat.",
+        "opsi": {
+          "B": "Bersifat chauvinis atau menutup diri. Menolak semua budaya asing tidak realistis dan membuang hal-hal yang bermanfaat.",
+          "C": "Mengikuti semua tren tanpa menyaring adalah sikap yang dapat mengikis jati diri bangsa. Ketertinggalan zaman tidak diatasi dengan meniru, tetapi dengan berkarya.",
+          "D": "Merendahkan budaya sendiri. Ini kebalikan dari nasionalisme. Budaya Indonesia justru bisa dikembangkan agar relevan dengan zaman.",
+          "E": "Mengarah pada primordialisme atau sikap kedaerahan yang sempit, yang bertentangan dengan semangat persatuan dalam keberagaman."
+        },
+        "konsep": "**Istilah yang sering diuji:** *chauvinisme* (cinta bangsa secara berlebihan dan merendahkan bangsa lain), *primordialisme* (mengutamakan kelompok asal), *xenosentrisme* (mengagungkan budaya asing dan merendahkan budaya sendiri)."
+      },
+      "tips": "Jawaban nasionalisme yang tepat biasanya berada **di tengah**: terbuka tetapi menyaring, bangga tetapi tidak merendahkan bangsa lain. Coret opsi yang menolak semua atau menerima semua."
+    },
+    {
+      "id": "p02-020",
+      "nomor": 20,
+      "kategori": "TWK",
+      "subtopik": "Nasionalisme",
+      "topik": "Makna peristiwa Rengasdengklok bagi proklamasi",
+      "tingkat": "sedang",
+      "pertanyaan": "Pada 16 Agustus 1945, golongan muda membawa Soekarno dan Mohammad Hatta ke Rengasdengklok. Tujuan utama golongan muda dalam peristiwa tersebut adalah ....",
+      "opsi": {
+        "A": "Menyerahkan Soekarno dan Hatta kepada pihak Sekutu",
+        "B": "Merundingkan pembentukan negara federal dengan wakil Jepang",
+        "C": "Menyusun rancangan UUD bersama anggota BPUPKI",
+        "D": "Menjauhkan Soekarno dan Hatta dari pengaruh Jepang dan mendesak agar kemerdekaan segera diproklamasikan",
+        "E": "Mengadakan rapat raksasa untuk mengumumkan kekalahan Jepang"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "Setelah mendengar kabar kekalahan Jepang dari Sekutu, golongan muda seperti Sukarni, Wikana, dan Chaerul Saleh ingin kemerdekaan diproklamasikan **secepatnya dan tanpa campur tangan Jepang**. Golongan tua ingin menunggu sesuai prosedur PPKI agar tidak terjadi pertumpahan darah. Perbedaan pendapat ini membuat golongan muda membawa Soekarno dan Hatta ke Rengasdengklok pada 16 Agustus 1945. Tujuannya adalah **menjauhkan keduanya dari pengaruh Jepang** dan **mendesak** agar proklamasi segera dilakukan. Setelah Ahmad Soebardjo menjamin proklamasi dilaksanakan keesokan harinya, Soekarno dan Hatta dibawa kembali ke Jakarta.",
+        "opsi": {
+          "A": "Golongan muda menentang penjajahan dan tidak berniat menyerahkan pemimpin bangsa kepada Sekutu.",
+          "B": "Tidak ada perundingan negara federal dalam peristiwa ini. Golongan muda justru ingin lepas dari pengaruh Jepang.",
+          "C": "Rancangan UUD disusun BPUPKI pada Juli 1945, bukan di Rengasdengklok.",
+          "E": "Peristiwa Rengasdengklok bukan rapat raksasa. Rapat Raksasa di Lapangan Ikada terjadi pada 19 September 1945."
+        },
+        "konsep": "**Inti perbedaan golongan muda dan tua:** keduanya sama-sama ingin merdeka. Bedanya ada pada **waktu dan cara**: golongan muda ingin segera tanpa Jepang, golongan tua ingin melalui PPKI agar lebih aman."
+      },
+      "tips": "Soal Rengasdengklok sering menanyakan **tujuan** atau **latar belakang**. Kata kuncinya: *menjauhkan dari pengaruh Jepang* dan *mendesak proklamasi segera*."
+    },
+    {
+      "id": "p02-021",
+      "nomor": 21,
+      "kategori": "TWK",
+      "subtopik": "Integritas",
+      "topik": "Konflik kepentingan: menilai lelang yang diikuti perusahaan keluarga",
+      "tingkat": "sedang",
+      "pertanyaan": "Dimas ditunjuk sebagai anggota panitia penilai lelang pengadaan. Saat membuka dokumen, ia mengetahui bahwa salah satu peserta adalah perusahaan milik adik kandungnya. Tindakan Dimas yang paling sesuai dengan prinsip integritas adalah ....",
+      "opsi": {
+        "A": "Tetap menilai karena ia yakin dapat bersikap objektif",
+        "B": "Melaporkan hubungan keluarga tersebut kepada atasan atau ketua panitia dan tidak ikut menilai lelang itu",
+        "C": "Tetap menilai, tetapi sengaja tidak memberi nilai tertinggi kepada perusahaan adiknya",
+        "D": "Meminta adiknya mengundurkan diri dari lelang tanpa memberi tahu panitia",
+        "E": "Merahasiakan hubungan tersebut agar proses lelang tidak tertunda"
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "Situasi Dimas adalah contoh **konflik kepentingan**: kepentingan pribadi (hubungan keluarga) berpotensi memengaruhi keputusan dalam jabatan. Prinsip integritas menuntut dua langkah. Pertama, **mengungkapkan** konflik kepentingan kepada atasan atau pihak berwenang. Kedua, **menarik diri** dari pengambilan keputusan yang terkait. Dengan cara ini, lelang tetap berjalan, hasilnya dapat dipercaya, dan Dimas terlindungi dari tuduhan berpihak. Yang dinilai bukan niat baik Dimas, tetapi apakah prosesnya bebas dari potensi pengaruh pribadi.",
+        "opsi": {
+          "A": "Keyakinan bisa objektif tidak menghapus konflik kepentingan. Pihak lain tetap tidak bisa memastikan penilaiannya bebas pengaruh, sehingga kepercayaan terhadap lelang rusak.",
+          "C": "Sengaja menurunkan nilai juga bentuk ketidakobjektifan. Peserta berhak dinilai sesuai kualitas dokumennya, bukan berdasarkan hubungan dengan penilai.",
+          "D": "Mencampuri keputusan peserta lelang secara diam-diam. Konflik kepentingan tetap tidak diungkapkan kepada panitia, dan adiknya kehilangan hak ikut lelang secara sah.",
+          "E": "Merahasiakan konflik kepentingan adalah pelanggaran integritas yang paling serius karena membuka peluang penyalahgunaan wewenang."
+        },
+        "konsep": "**Langkah baku menghadapi konflik kepentingan:** kenali → ungkapkan kepada atasan atau pihak berwenang → menarik diri dari keputusan terkait → dokumentasikan. Kunci utamanya adalah **transparansi**, bukan sekadar niat baik."
+      },
+      "tips": "Untuk soal konflik kepentingan, jawaban terbaik hampir selalu memuat **melapor atau mengungkapkan** dan **tidak terlibat dalam keputusan**. Opsi yang mengandalkan keyakinan pribadi atau merahasiakan hampir pasti salah."
+    },
+    {
+      "id": "p02-022",
+      "nomor": 22,
+      "kategori": "TWK",
+      "subtopik": "Integritas",
+      "topik": "Mengenali nilai dasar ASN BerAKHLAK: akuntabel",
+      "tingkat": "sedang",
+      "pertanyaan": "Seorang bendahara mencatat setiap pengeluaran disertai bukti yang lengkap, memakai anggaran secara hemat sesuai peruntukannya, dan menolak permintaan rekan untuk mencairkan dana tanpa dokumen. Perilaku tersebut paling mencerminkan nilai dasar ASN ....",
+      "opsi": {
+        "A": "Akuntabel",
+        "B": "Harmonis",
+        "C": "Adaptif",
+        "D": "Kolaboratif",
+        "E": "Berorientasi pelayanan"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "Nilai dasar ASN dirumuskan dalam akronim **BerAKHLAK**: Berorientasi pelayanan, Akuntabel, Kompeten, Harmonis, Loyal, Adaptif, dan Kolaboratif. Nilai **akuntabel** berarti bertanggung jawab atas kepercayaan yang diberikan. Perilakunya antara lain melaksanakan tugas dengan jujur, cermat, dan disiplin; menggunakan kekayaan dan barang milik negara secara bertanggung jawab, efektif, dan efisien; serta tidak menyalahgunakan kewenangan jabatan. Mencatat pengeluaran dengan bukti, memakai anggaran sesuai peruntukan, dan menolak pencairan tanpa dokumen adalah contoh langsung nilai ini.",
+        "opsi": {
+          "B": "Harmonis berkaitan dengan saling peduli, menghargai perbedaan, dan membangun lingkungan kerja yang kondusif. Perilaku dalam soal tidak berfokus pada hubungan antarpegawai.",
+          "C": "Adaptif berkaitan dengan cepat menyesuaikan diri menghadapi perubahan dan terus berinovasi. Soal tidak menggambarkan perubahan atau inovasi.",
+          "D": "Kolaboratif berkaitan dengan membangun kerja sama yang sinergis. Menolak permintaan rekan justru bukan contoh kerja sama.",
+          "E": "Berorientasi pelayanan berkaitan dengan memahami dan memenuhi kebutuhan masyarakat. Perilaku bendahara dalam soal berfokus pada pertanggungjawaban anggaran."
+        },
+        "konsep": "**Kata kunci tiap nilai:** Berorientasi pelayanan = kebutuhan masyarakat; Akuntabel = tanggung jawab dan anggaran; Kompeten = belajar dan kualitas kerja; Harmonis = menghargai perbedaan; Loyal = setia pada Pancasila, UUD, dan negara; Adaptif = perubahan dan inovasi; Kolaboratif = kerja sama."
+      },
+      "tips": "Soal BerAKHLAK biasanya memberi contoh perilaku, lalu meminta nama nilainya. Cari **kata kunci yang paling dominan** dalam contoh. Kata seperti anggaran, bukti, dan tanggung jawab mengarah ke **akuntabel**.",
+      "rujukan": [
+        "UU No. 20 Tahun 2023 tentang Aparatur Sipil Negara (nilai dasar ASN)"
+      ]
+    },
+    {
+      "id": "p02-023",
+      "nomor": 23,
+      "kategori": "TWK",
+      "subtopik": "Integritas",
+      "topik": "Membedakan pemerasan, suap, dan gratifikasi",
+      "tingkat": "sulit",
+      "pertanyaan": "Seorang petugas perizinan mengatakan kepada pemohon bahwa berkasnya tidak akan diproses kecuali pemohon menyerahkan “uang pelicin”. Karena takut izinnya tertunda, pemohon terpaksa membayar. Berdasarkan UU Pemberantasan Tindak Pidana Korupsi, perbuatan petugas tersebut paling tepat digolongkan sebagai ....",
+      "opsi": {
+        "A": "Gratifikasi, karena petugas menerima pemberian dari pemohon",
+        "B": "Penggelapan dalam jabatan, karena uang tersebut tidak disetor ke kas negara",
+        "C": "Suap aktif, karena pemohon yang memberikan uang terlebih dahulu",
+        "D": "Pemerasan, karena petugas menyalahgunakan kekuasaannya untuk memaksa pemohon memberikan uang",
+        "E": "Pungutan resmi, karena dibayarkan dalam proses pelayanan"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "Kunci pembeda ada pada **siapa yang berinisiatif** dan **adanya paksaan**. Dalam soal, petugas yang meminta uang dan mengancam tidak memproses berkas. Pemohon membayar karena terpaksa. Pasal 12 huruf e UU No. 31 Tahun 1999 jo. UU No. 20 Tahun 2001 mengatur pegawai negeri atau penyelenggara negara yang dengan menyalahgunakan kekuasaannya **memaksa seseorang memberikan sesuatu**. Perbuatan ini disebut **pemerasan**. Inisiatif dan paksaan datang dari petugas, sehingga posisi pemohon adalah korban.",
+        "opsi": {
+          "A": "Gratifikasi adalah pemberian dalam arti luas yang diterima pegawai negeri karena jabatannya, biasanya tanpa permintaan. Dalam soal ada permintaan disertai ancaman, sehingga lebih tepat disebut pemerasan.",
+          "B": "Penggelapan dalam jabatan adalah menggelapkan uang atau surat berharga yang **sudah berada** dalam penguasaannya karena jabatan. Uang dalam soal bukan uang negara yang dikelola petugas.",
+          "C": "Pada suap, ada kesepakatan timbal balik dan pemberi bertindak atas kehendaknya sendiri. Dalam soal, pemohon membayar karena dipaksa, bukan karena berinisiatif.",
+          "E": "Pungutan resmi harus memiliki dasar aturan dan disetor sesuai ketentuan. “Uang pelicin” yang diminta dengan ancaman jelas bukan pungutan resmi."
+        },
+        "konsep": "**Tabel pembeda:** *suap* = ada kesepakatan, keduanya berkehendak; *gratifikasi* = pemberian karena jabatan, wajib dilaporkan ke KPK dalam 30 hari kerja; *pemerasan* = pejabat **memaksa** dengan menyalahgunakan kekuasaan."
+      },
+      "tips": "Untuk menggolongkan perbuatan korupsi, tanyakan dua hal: **siapa yang memulai** dan **apakah ada paksaan**. Jika pejabat meminta dengan ancaman, jawabannya pemerasan.",
+      "rujukan": [
+        "UU No. 31 Tahun 1999 jo. UU No. 20 Tahun 2001 Pasal 5, Pasal 8, Pasal 12 huruf e, dan Pasal 12B"
+      ]
+    },
+    {
+      "id": "p02-024",
+      "nomor": 24,
+      "kategori": "TWK",
+      "subtopik": "Integritas",
+      "topik": "Melaporkan kecurangan atasan melalui saluran resmi",
+      "tingkat": "sedang",
+      "pertanyaan": "Rina menemukan bukti bahwa atasannya memalsukan daftar hadir kegiatan untuk mencairkan honor peserta fiktif. Tindakan Rina yang paling tepat adalah ....",
+      "opsi": {
+        "A": "Mengunggah bukti tersebut ke media sosial agar diketahui publik",
+        "B": "Menegur atasannya di depan seluruh pegawai saat rapat",
+        "C": "Diam saja karena takut kariernya terganggu",
+        "D": "Meminta bagian dari honor tersebut sebagai imbalan untuk tutup mulut",
+        "E": "Mengamankan bukti dan melaporkannya melalui saluran pengaduan resmi, seperti whistleblowing system atau inspektorat"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "Memalsukan daftar hadir untuk mencairkan honor fiktif merugikan keuangan negara dan termasuk dugaan tindak pidana korupsi. Sebagai ASN yang berintegritas, Rina tidak boleh diam. Namun caranya juga harus tepat. Laporan disampaikan melalui **saluran resmi**, seperti sistem pelaporan pelanggaran (*whistleblowing system*) instansi, inspektorat sebagai aparat pengawas internal, atau lembaga penegak hukum. Saluran resmi menjamin laporan ditindaklanjuti dengan proses yang sah dan **melindungi identitas pelapor**. Mengamankan bukti lebih dulu membuat laporan dapat diverifikasi.",
+        "opsi": {
+          "A": "Bukti yang diunggah ke publik sebelum diperiksa dapat menjadi fitnah jika keliru, berisiko melanggar aturan informasi, dan bisa merusak proses penyelidikan.",
+          "B": "Menegur di depan umum mempermalukan atasan tanpa menyelesaikan masalah, dan memberi kesempatan untuk menghilangkan bukti.",
+          "C": "Diam berarti membiarkan kerugian negara terus terjadi. Saluran resmi justru menyediakan perlindungan bagi pelapor.",
+          "D": "Meminta imbalan membuat Rina ikut terlibat dalam korupsi. Ini pilihan yang paling melanggar integritas."
+        },
+        "konsep": "**Prinsip pelaporan pelanggaran:** lapor ke saluran yang **berwenang**, sertakan **bukti**, dan percayakan pemeriksaan pada prosesnya. Pelapor berhak atas perlindungan dan kerahasiaan identitas."
+      },
+      "tips": "Untuk soal menemukan kecurangan, jawaban terbaik memuat **bukti** dan **saluran resmi**. Coret opsi yang diam, membuka ke publik, atau mengambil keuntungan."
+    },
+    {
+      "id": "p02-025",
+      "nomor": 25,
+      "kategori": "TWK",
+      "subtopik": "Bela Negara",
+      "topik": "Nilai dasar bela negara menurut UU 23/2019",
+      "tingkat": "sedang",
+      "pertanyaan": "Berikut ini yang termasuk nilai dasar bela negara sebagaimana diatur dalam UU No. 23 Tahun 2019, **kecuali** ....",
+      "opsi": {
+        "A": "Cinta tanah air",
+        "B": "Sadar berbangsa dan bernegara",
+        "C": "Menguasai keterampilan tempur sebagai syarat menjadi warga negara",
+        "D": "Setia pada Pancasila sebagai ideologi negara",
+        "E": "Rela berkorban untuk bangsa dan negara"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "UU No. 23 Tahun 2019 tentang Pengelolaan Sumber Daya Nasional untuk Pertahanan Negara menyebut lima nilai dasar bela negara:\n\n1. Cinta tanah air.\n2. Sadar berbangsa dan bernegara.\n3. Setia pada Pancasila sebagai ideologi negara.\n4. Rela berkorban untuk bangsa dan negara.\n5. Kemampuan awal bela negara.\n\nOpsi C bukan nilai dasar bela negara. Menguasai keterampilan tempur tidak menjadi syarat kewarganegaraan. Nilai kelima, kemampuan awal bela negara, mencakup kemampuan psikis seperti disiplin dan ulet, serta kemampuan fisik seperti kesehatan dan ketangkasan, bukan keterampilan tempur.",
+        "opsi": {
+          "A": "Termasuk nilai dasar pertama. Wujudnya antara lain menjaga lingkungan dan bangga pada produk serta budaya Indonesia.",
+          "B": "Termasuk nilai dasar kedua. Wujudnya antara lain menaati hukum dan ikut serta dalam pemilu.",
+          "D": "Termasuk nilai dasar ketiga. Wujudnya antara lain menjadikan Pancasila sebagai pedoman dalam bersikap.",
+          "E": "Termasuk nilai dasar keempat. Wujudnya antara lain mendahulukan kepentingan bangsa di atas kepentingan pribadi."
+        },
+        "konsep": "**Bela negara tidak identik dengan militer.** Nilai dasar bela negara bisa diamalkan oleh pelajar, pegawai, dan profesional melalui disiplin, kerja jujur, dan menjaga persatuan."
+      },
+      "tips": "Pada soal “kecuali”, cari opsi yang **berbau militer atau wajib militer**. Nilai dasar bela negara bersifat sikap dan kesadaran, bukan keterampilan tempur.",
+      "rujukan": [
+        "UU No. 23 Tahun 2019 tentang Pengelolaan Sumber Daya Nasional untuk Pertahanan Negara (nilai dasar bela negara)"
+      ]
+    },
+    {
+      "id": "p02-026",
+      "nomor": 26,
+      "kategori": "TWK",
+      "subtopik": "Bela Negara",
+      "topik": "Contoh ancaman nonmiliter",
+      "tingkat": "mudah",
+      "pertanyaan": "Ancaman terhadap negara dapat berupa ancaman militer maupun nonmiliter. Contoh ancaman nonmiliter adalah ....",
+      "opsi": {
+        "A": "Serangan pasukan negara lain ke wilayah perbatasan",
+        "B": "Pesawat militer asing memasuki wilayah udara tanpa izin",
+        "C": "Pemberontakan bersenjata yang ingin memisahkan diri dari negara",
+        "D": "Penyebaran hoaks yang memecah belah masyarakat melalui media sosial",
+        "E": "Blokade pelabuhan oleh armada kapal perang negara lain"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "**Ancaman militer** adalah ancaman yang memakai kekuatan bersenjata yang terorganisasi, misalnya agresi, pelanggaran wilayah oleh alat perang asing, blokade, dan pemberontakan bersenjata. **Ancaman nonmiliter** tidak memakai kekuatan bersenjata, tetapi dapat membahayakan kedaulatan, keutuhan wilayah, dan keselamatan bangsa. Ancaman ini bisa berdimensi ideologi, politik, ekonomi, sosial budaya, teknologi dan informasi, serta keselamatan umum. Hoaks yang memecah belah masyarakat termasuk ancaman nonmiliter di bidang informasi dan sosial. Contoh lainnya adalah peredaran narkoba, serangan siber, dan bencana.",
+        "opsi": {
+          "A": "Serangan pasukan negara lain adalah agresi, bentuk ancaman militer yang paling jelas.",
+          "B": "Pelanggaran wilayah udara oleh pesawat militer asing termasuk ancaman militer karena melibatkan alat perang.",
+          "C": "Pemberontakan bersenjata memakai kekuatan senjata yang terorganisasi, sehingga termasuk ancaman militer.",
+          "E": "Blokade oleh armada kapal perang termasuk ancaman militer karena menggunakan kekuatan bersenjata negara lain."
+        },
+        "konsep": "**Cara cepat membedakan:** tanyakan apakah ancaman itu memakai **senjata atau alat perang yang terorganisasi**. Jika ya, ancaman militer. Jika tidak, ancaman nonmiliter, meskipun dampaknya bisa sangat besar."
+      },
+      "tips": "Kata **pasukan**, **pesawat militer**, **bersenjata**, dan **kapal perang** menandai ancaman militer. Kata **hoaks**, **narkoba**, **siber**, dan **bencana** menandai ancaman nonmiliter."
+    },
+    {
+      "id": "p02-027",
+      "nomor": 27,
+      "kategori": "TWK",
+      "subtopik": "Bela Negara",
+      "topik": "Ciri Komponen Cadangan pertahanan negara",
+      "tingkat": "sulit",
+      "pertanyaan": "Pernyataan yang tepat tentang Komponen Cadangan dalam sistem pertahanan negara menurut UU No. 23 Tahun 2019 adalah ....",
+      "opsi": {
+        "A": "Komponen Cadangan wajib diikuti oleh setiap lulusan sekolah menengah",
+        "B": "Anggota Komponen Cadangan berstatus prajurit TNI aktif sepanjang waktu",
+        "C": "Komponen Cadangan hanya terdiri atas warga negara yang telah dilatih",
+        "D": "Komponen Cadangan dapat dikerahkan kapan saja oleh komandan satuan tanpa penetapan mobilisasi",
+        "E": "Pendaftaran warga negara menjadi anggota Komponen Cadangan bersifat sukarela"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "Dalam UU No. 23 Tahun 2019, sistem pertahanan negara mengenal **Komponen Utama** (TNI), **Komponen Cadangan**, dan **Komponen Pendukung**. Komponen Cadangan disiapkan untuk memperbesar dan memperkuat Komponen Utama. Ciri pentingnya, warga negara yang ingin menjadi anggota Komponen Cadangan mendaftar **secara sukarela**, lalu mengikuti seleksi dan pelatihan dasar kemiliteran. Di luar masa aktif, yaitu masa latihan dan mobilisasi, anggota kembali menjalani profesi masing-masing. Komponen Cadangan baru dikerahkan melalui **mobilisasi** yang ditetapkan Presiden.",
+        "opsi": {
+          "A": "Komponen Cadangan bukan wajib militer. Tidak ada kewajiban bagi lulusan sekolah menengah untuk mengikutinya.",
+          "B": "Anggota Komponen Cadangan bukan prajurit TNI aktif. Mereka hanya tunduk pada hukum militer selama masa aktif.",
+          "C": "Komponen Cadangan tidak hanya terdiri atas warga negara. Sumber daya alam, sumber daya buatan, serta sarana dan prasarana nasional juga dapat ditetapkan sebagai Komponen Cadangan.",
+          "D": "Pengerahan Komponen Cadangan dilakukan melalui mobilisasi yang ditetapkan Presiden, bukan keputusan komandan satuan."
+        },
+        "konsep": "**Tiga komponen pertahanan:** *Utama* = TNI; *Cadangan* = memperbesar dan memperkuat Komponen Utama, bersifat sukarela, dikerahkan melalui mobilisasi; *Pendukung* = meningkatkan kekuatan dan kemampuan Komponen Utama dan Komponen Cadangan."
+      },
+      "tips": "Kata kunci Komponen Cadangan adalah **sukarela** dan **mobilisasi**. Opsi yang menyebut kata wajib, aktif sepanjang waktu, atau tanpa mobilisasi hampir pasti salah.",
+      "rujukan": [
+        "UU No. 23 Tahun 2019 tentang Pengelolaan Sumber Daya Nasional untuk Pertahanan Negara (Komponen Cadangan)"
+      ]
+    },
+    {
+      "id": "p02-028",
+      "nomor": 28,
+      "kategori": "TWK",
+      "subtopik": "Bahasa Indonesia",
+      "topik": "Penulisan di sebagai kata depan dan sebagai awalan",
+      "tingkat": "mudah",
+      "pertanyaan": "Kalimat berikut yang penulisan kata “di”-nya tepat adalah ....",
+      "opsi": {
+        "A": "Berkas permohonan itu sudah di kirim kemarin sore.",
+        "B": "Para peserta diminta menunggu diruang tunggu.",
+        "C": "Dokumen itu disimpan di dalam lemari arsip.",
+        "D": "Surat keputusan itu harus di tandatangani kepala dinas.",
+        "E": "Rapat koordinasi diadakan dikantor gubernur."
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "Bentuk **di** punya dua fungsi dengan aturan penulisan yang berbeda:\n\n- **Awalan di-** ditulis **serangkai** dengan kata kerja yang mengikutinya, misalnya *dikirim*, *disimpan*, *ditandatangani*.\n- **Kata depan di** ditulis **terpisah** dari kata yang mengikutinya, karena menunjukkan tempat, misalnya *di dalam*, *di ruang tunggu*, *di kantor*.\n\nKalimat C memakai keduanya dengan benar: *disimpan* (awalan, serangkai) dan *di dalam* (kata depan, terpisah).",
+        "opsi": {
+          "A": "Kata *kirim* adalah kata kerja, sehingga awalan di- harus serangkai menjadi *dikirim*.",
+          "B": "*Ruang tunggu* menunjukkan tempat, sehingga kata depan di harus dipisah menjadi *di ruang tunggu*.",
+          "D": "*Tandatangani* berasal dari gabungan kata yang mendapat awalan dan akhiran sekaligus, sehingga ditulis serangkai: *ditandatangani*.",
+          "E": "*Kantor* menunjukkan tempat, sehingga ditulis *di kantor*, bukan *dikantor*. Uji cepat: *ke kantor gubernur* masuk akal, berarti *di* di sini kata depan."
+        },
+        "konsep": "**Uji cepat:** ganti *di* dengan *ke* atau *dari*. Jika kalimat masih masuk akal (*ke kantor*, *dari ruang tunggu*), berarti *di* adalah kata depan dan ditulis terpisah. Jika tidak masuk akal (*ke kirim*), berarti awalan dan ditulis serangkai."
+      },
+      "tips": "Periksa kata setelah *di*. Jika kata itu **tempat atau arah**, pisahkan. Jika kata itu **kata kerja**, gabungkan. Uji *ke/dari* adalah cara tercepat di ruang ujian."
+    },
+    {
+      "id": "p02-029",
+      "nomor": 29,
+      "kategori": "TWK",
+      "subtopik": "Bahasa Indonesia",
+      "topik": "Menentukan gagasan utama paragraf induktif",
+      "tingkat": "sedang",
+      "pertanyaan": "Bacalah paragraf berikut.\n\nWarga kini dapat mengurus akta kelahiran dari rumah melalui aplikasi. Pembayaran pajak kendaraan bisa dilakukan lewat ponsel tanpa antre. Pengaduan layanan pun dapat dikirim kapan saja melalui kanal daring dan dipantau perkembangannya. Berbagai kemudahan ini menunjukkan bahwa digitalisasi telah mengubah cara masyarakat memperoleh pelayanan publik.\n\nGagasan utama paragraf tersebut adalah ....",
+      "opsi": {
+        "A": "Digitalisasi telah mengubah cara masyarakat memperoleh pelayanan publik",
+        "B": "Akta kelahiran dapat diurus dari rumah melalui aplikasi",
+        "C": "Pembayaran pajak kendaraan tidak lagi memerlukan antrean",
+        "D": "Pengaduan layanan dapat dipantau perkembangannya secara daring",
+        "E": "Masyarakat lebih menyukai layanan daring daripada layanan tatap muka"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "Paragraf ini berpola **induktif**: dimulai dengan contoh-contoh khusus, lalu ditutup dengan kesimpulan umum. Tiga kalimat pertama adalah contoh (akta kelahiran, pajak kendaraan, pengaduan layanan). Kalimat terakhir merangkum semua contoh itu menjadi satu pernyataan umum: digitalisasi telah mengubah cara masyarakat memperoleh pelayanan publik. Kalimat yang merangkum inilah **kalimat utama**, dan isinya adalah gagasan utama paragraf. Jadi, jawaban yang tepat adalah A.",
+        "opsi": {
+          "B": "Hanya salah satu contoh pendukung. Gagasan utama harus mencakup seluruh isi paragraf, bukan satu bagiannya.",
+          "C": "Juga contoh pendukung, bukan gagasan yang merangkum seluruh paragraf.",
+          "D": "Contoh pendukung ketiga. Distraktor seperti ini menjebak peserta yang memilih kalimat yang paling rinci.",
+          "E": "Tidak dinyatakan dalam paragraf. Paragraf tidak membandingkan kesukaan masyarakat terhadap layanan daring dan tatap muka. Ini kesimpulan yang melampaui teks. Pilih hanya yang benar-benar tertulis atau tersirat jelas dalam paragraf."
+        },
+        "konsep": "**Pola paragraf:** *deduktif* = kalimat utama di awal; *induktif* = kalimat utama di akhir; *campuran* = di awal dan ditegaskan lagi di akhir. Kalimat utama bersifat **umum**, kalimat penjelas bersifat **khusus**."
+      },
+      "tips": "Cari kalimat yang bisa **mewakili semua kalimat lain**. Coba tanyakan: apakah kalimat lain merupakan contoh dari kalimat ini? Jika ya, itulah gagasan utamanya. Coret opsi yang menambahkan informasi di luar teks."
+    },
+    {
+      "id": "p02-030",
+      "nomor": 30,
+      "kategori": "TWK",
+      "subtopik": "Bahasa Indonesia",
+      "topik": "Huruf kapital pada nama jabatan dan nama geografi",
+      "tingkat": "sulit",
+      "pertanyaan": "Kalimat yang penggunaan huruf kapitalnya sesuai dengan kaidah EYD adalah ....",
+      "opsi": {
+        "A": "Bulan lalu ia resmi dilantik menjadi Gubernur.",
+        "B": "Rapat koordinasi dibuka oleh Gubernur Sumatra Barat.",
+        "C": "Acara itu dihadiri oleh Para Kepala Dinas.",
+        "D": "Ibu membeli Kue Lapis di pasar tradisional.",
+        "E": "Keluarga kami berlibur ke danau Toba."
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "Menurut kaidah EYD, huruf kapital dipakai sebagai huruf pertama **nama jabatan** jika jabatan itu **diikuti nama orang, nama instansi, atau nama tempat**, atau dipakai sebagai pengganti nama orang tertentu. Pada kalimat B, *Gubernur* diikuti nama tempat *Sumatra Barat*, sehingga ditulis dengan huruf kapital. Sebaliknya, nama jabatan yang tidak merujuk kepada orang atau wilayah tertentu ditulis dengan huruf kecil. Kalimat B adalah satu-satunya yang tepat.",
+        "opsi": {
+          "A": "*Gubernur* tidak diikuti nama orang, instansi, atau tempat, sehingga ditulis dengan huruf kecil: *dilantik menjadi gubernur*.",
+          "C": "*Para* bukan bagian nama dan ditulis kecil. *Kepala dinas* juga tidak diikuti nama instansi tertentu, sehingga ditulis kecil: *para kepala dinas*.",
+          "D": "*Kue lapis* adalah nama jenis makanan, bukan nama diri, sehingga ditulis dengan huruf kecil.",
+          "E": "*Danau Toba* adalah nama geografi. Unsur nama geografi seperti danau, gunung, dan sungai yang diikuti nama diri ditulis dengan huruf kapital: *Danau Toba*."
+        },
+        "konsep": "**Pola kapital yang sering diuji:** jabatan + nama orang/instansi/tempat → kapital (*Menteri Keuangan*, *Gubernur Bali*); jabatan tanpa rujukan → kecil (*ia diangkat menjadi menteri*); unsur geografi + nama diri → kapital (*Sungai Musi*); nama jenis → kecil (*gula jawa*, *kue lapis*)."
+      },
+      "tips": "Untuk setiap kata berhuruf kapital, tanyakan: **apakah kata ini merujuk kepada satu orang, lembaga, atau tempat tertentu?** Jika tidak, huruf kecil. Periksa juga kata yang seharusnya kapital tetapi ditulis kecil, seperti opsi E."
+    }
+  ]
+}
