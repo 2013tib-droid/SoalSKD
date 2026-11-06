@@ -221,11 +221,22 @@ def main(argv):
     if argv:
         dipilih = []
         for a in argv:
-            path = Path(a).resolve()
-            data = semua[path][1] if path in semua else muat(path, wajib=True)
-            if data is not None:
-                semua[path] = (path, data)
-                dipilih.append((path, data))
+            arg = Path(a)
+            if arg.is_dir():
+                # Folder: periksa semua *.json di dalamnya. File lama tanpa "skema" dilewati,
+                # sama seperti saat tanpa argumen.
+                isi = sorted(arg.glob("*.json"))
+                if not isi:
+                    lap.g(str(arg), "folder tidak berisi file .json")
+                target = [(p, False) for p in isi]
+            else:
+                target = [(arg, True)]
+            for p, wajib in target:
+                path = p.resolve()
+                data = semua[path][1] if path in semua else muat(path, wajib=wajib)
+                if data is not None and all(path != x for x, _ in dipilih):
+                    semua[path] = (path, data)
+                    dipilih.append((path, data))
     else:
         dipilih = list(semua.values())
     semua = list(semua.values())

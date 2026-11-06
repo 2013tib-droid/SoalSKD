@@ -7,7 +7,7 @@ Aplikasi try out SKD CPNS (TWK, TIU, TKP). Mayoritas pengguna membuka di HP.
 - Framework: Next.js
 - Styling / komponen UI: Tailwind (token dari DESIGN.md lewat variabel CSS), ikon Phosphor
 - App di `web/`. Dev: `npm run dev` · Typecheck: `npm run typecheck` · Build: `npm run build` (jalankan dari `web/`)
-- Bank soal: validasi `python3 tools/validasi.py` (wajib 0 galat sebelum commit soal) · tes validator `python3 tools/test_validasi.py`
+- Bank soal: validasi `python3 tools/validasi.py` (seluruh bank) atau `python3 tools/validasi.py bank/p01.json` / `bank/` (wajib 0 galat sebelum commit soal) · tes validator `python3 tools/test_validasi.py`
 
 ## Sumber kebenaran (baca ini dulu, sebelum memanggil skill)
 
@@ -44,3 +44,4 @@ Aplikasi try out SKD CPNS (TWK, TIU, TKP). Mayoritas pengguna membuka di HP.
 2026-11-06 · Data soal: satu JSON per paket di `bank/` sesuai `schema/paket.schema.json` (lihat `docs/skema-soal.md`), dipakai app dan ebook; format SKD resmi di `config/skd.json`, durasi dan ambang batas `null` sampai ada sumber · satu sumber kebenaran untuk dua produk
 2026-11-06 · Skor dihitung di server (server action); kunci dan pembahasan baru dikirim setelah ujian dikumpulkan · belum anti-curang penuh: action bisa dipanggil langsung, perlu sesi server saat ada backend
 2026-11-06 · `web/` membaca `config/skd.json` dan bank skema 1 langsung; `web/src/config/skd.ts` hanya pengaturan app · satu sumber kebenaran; `bank/sample-15.json` (format lama) tidak dipakai app
+2026-11-06 · Satu area satu sesi: `bank/`, `schema/`, `tools/`, `web/` dipegang sesi utama; sesi lain fetch dan cek main dulu sebelum membuat file di area itu · PR #1 ditutup karena skema dan validatornya dobel
