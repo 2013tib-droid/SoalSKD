@@ -404,7 +404,7 @@
       },
       "tips": "Tanyakan dua hal: **urusan itu milik siapa** setelah dijalankan, dan **siapa penerimanya**. Jika urusan tetap milik pusat dan penerimanya pemerintah daerah otonom, jawabannya tugas pembantuan.",
       "rujukan": [
-        "UU No. 23 Tahun 2014 tentang Pemerintahan Daerah Pasal 1 (definisi desentralisasi, dekonsentrasi, dan tugas pembantuan)"
+        "UU No. 23 Tahun 2014 tentang Pemerintahan Daerah sebagaimana telah diubah dengan UU No. 9 Tahun 2015, Pasal 1 angka 8 (desentralisasi), angka 9 (dekonsentrasi), dan angka 11 (tugas pembantuan)"
       ]
     },
     {
@@ -1436,29 +1436,29 @@
       "id": "p03-049",
       "nomor": 49,
       "kategori": "TIU",
-      "subtopik": "Statistika",
-      "topik": "Median dan modus data tunggal berjumlah genap",
+      "subtopik": "Aritmetika",
+      "topik": "Sifat perpangkatan berbasis sama dan akar pangkat genap",
       "tingkat": "sedang",
-      "pertanyaan": "Nilai sepuluh peserta latihan adalah sebagai berikut.\n\n7, 8, 6, 9, 8, 7, 8, 5, 9, 6\n\nMedian dan modus data tersebut berturut-turut adalah ....",
+      "pertanyaan": "Hasil dari (2⁵ × 2³) ÷ 2⁶ + √(3⁴) adalah ....",
       "opsi": {
-        "A": "7 dan 8",
-        "B": "7,3 dan 8",
-        "C": "7,5 dan 8",
-        "D": "8 dan 7,5",
-        "E": "7,5 dan 3"
+        "A": "7",
+        "B": "521",
+        "C": "13",
+        "D": "85",
+        "E": "1.033"
       },
       "kunci": "C",
       "pembahasan": {
-        "inti": "**Urutkan data** dari yang terkecil: 5, 6, 6, 7, 7, 8, 8, 8, 9, 9.\n\n- **Median** adalah nilai tengah. Banyak data 10 (genap), sehingga median adalah rata-rata data ke-5 dan ke-6: (7 + 8) ÷ 2 = **7,5**.\n- **Modus** adalah nilai yang paling sering muncul. Nilai 8 muncul tiga kali, lebih sering daripada nilai lain. Jadi, modusnya **8**.\n\nMedian dan modus berturut-turut adalah **7,5 dan 8**.",
+        "inti": "Kerjakan setiap bagian dengan sifat perpangkatan.\n\n1. **Perkalian berbasis sama: pangkat dijumlahkan.** 2⁵ × 2³ = 2⁵⁺³ = 2⁸.\n2. **Pembagian berbasis sama: pangkat dikurangkan.** 2⁸ ÷ 2⁶ = 2⁸⁻⁶ = 2² = 4.\n3. **Akar kuadrat dari pangkat genap: pangkat dibagi dua.** √(3⁴) = 3⁴ᐟ² = 3² = 9.\n\nJumlahkan hasilnya: 4 + 9 = **13**.\n\nPeriksa dengan angka biasa: 32 × 8 = 256, 256 ÷ 64 = 4, dan √81 = 9. Hasilnya sama. Dengan sifat pangkat, angka besar seperti 256 tidak perlu dihitung sama sekali.",
         "opsi": {
-          "A": "7 adalah data ke-5 saja. Untuk banyak data genap, median adalah rata-rata **dua** data tengah (ke-5 dan ke-6).",
-          "B": "7,3 adalah **rata-rata** (73 ÷ 10), bukan median. Pengecoh ini menjebak peserta yang menyamakan rata-rata dan median.",
-          "D": "Nilainya tertukar. Median 7,5 dan modus 8, bukan sebaliknya. Bacalah kata *berturut-turut* dengan teliti.",
-          "E": "3 adalah **frekuensi** nilai 8, bukan modusnya. Modus adalah nilai datanya, yaitu 8."
+          "A": "7 diperoleh jika √(3⁴) dianggap 3, seolah-olah akar menghapus seluruh pangkat. Akar kuadrat hanya membagi pangkat dengan dua, sehingga hasilnya 3² = 9.",
+          "B": "521 diperoleh jika pangkat **dikalikan** saat perkalian (2⁵ × 2³ dianggap 2¹⁵), lalu 2¹⁵ ÷ 2⁶ = 2⁹ = 512, ditambah 9. Pada perkalian berbasis sama, pangkat dijumlahkan.",
+          "D": "85 diperoleh jika √(3⁴) dihitung sebagai 3⁴ = 81, yaitu lupa menarik akarnya.",
+          "E": "1.033 diperoleh jika basis ikut dikalikan (2⁵ × 2³ dianggap 4⁸ = 65.536), lalu dibagi 64 menjadi 1.024, ditambah 9. Basis tidak berubah pada perkalian berbasis sama."
         },
-        "konsep": "**Rumus letak median:** untuk n data terurut, median berada di data ke-(n + 1) ÷ 2. Jika n genap, hasilnya pecahan (misalnya 5,5), sehingga median adalah rata-rata data ke-5 dan ke-6. **Modus** bisa lebih dari satu jika ada beberapa nilai dengan frekuensi tertinggi yang sama."
+        "konsep": "**Sifat perpangkatan:** aᵐ × aⁿ = aᵐ⁺ⁿ; aᵐ ÷ aⁿ = aᵐ⁻ⁿ; (aᵐ)ⁿ = aᵐˣⁿ; √(aᵐ) = aᵐᐟ². Sifat ini hanya berlaku jika **basisnya sama**."
       },
-      "tips": "Langkah pertama soal median selalu **mengurutkan data**. Untuk modus, buat turus atau hitung frekuensi tiap nilai agar tidak ada yang terlewat."
+      "tips": "Jangan langsung menghitung nilai pangkat yang besar. Sederhanakan dengan sifat perpangkatan lebih dulu, baru hitung angka akhirnya yang biasanya kecil."
     },
     {
       "id": "p03-050",
@@ -1604,29 +1604,29 @@
       "id": "p03-055",
       "nomor": 55,
       "kategori": "TIU",
-      "subtopik": "Geometri",
-      "topik": "Diagonal persegi panjang dari keliling dan luas",
+      "subtopik": "Perbandingan",
+      "topik": "Perbandingan luas dua bangun sebangun dari perbandingan keliling",
       "tingkat": "sulit",
-      "pertanyaan": "Sebuah persegi panjang memiliki keliling 46 cm dan luas 120 cm². Panjang diagonal persegi panjang tersebut adalah ....",
+      "pertanyaan": "Dua persegi panjang sebangun. Perbandingan keliling persegi panjang kecil dan besar adalah 2 : 3. Jika luas persegi panjang kecil 48 cm², luas persegi panjang besar adalah ....",
       "opsi": {
-        "A": "23 cm",
-        "B": "7 cm",
-        "C": "17 cm",
-        "D": "15 cm",
-        "E": "289 cm"
+        "A": "72 cm²",
+        "B": "32 cm²",
+        "C": "108 cm²",
+        "D": "162 cm²",
+        "E": "156 cm²"
       },
       "kunci": "C",
       "pembahasan": {
-        "inti": "Misalkan panjang p dan lebar l.\n\n- Keliling: 2(p + l) = 46, jadi **p + l = 23**.\n- Luas: **p × l = 120**.\n\nCari dua bilangan yang jumlahnya 23 dan hasil kalinya 120, yaitu **15 dan 8**. Jadi, p = 15 cm dan l = 8 cm.\n\nDiagonal persegi panjang adalah sisi miring segitiga siku-siku dengan sisi p dan l. Dengan teorema Pythagoras: d² = 15² + 8² = 225 + 64 = 289, sehingga d = √289 = **17 cm**.\n\nCara cepat tanpa mencari p dan l: d² = p² + l² = (p + l)² − 2pl = 23² − 2 × 120 = 529 − 240 = 289.",
+        "inti": "Pada dua bangun yang **sebangun**, semua ukuran panjang (sisi, keliling, diagonal) berbanding dengan **faktor skala** yang sama. Di soal ini faktor skalanya 2 : 3.\n\nLuas adalah hasil kali **dua** ukuran panjang, sehingga perbandingan luasnya adalah **kuadrat** faktor skala: 2² : 3² = 4 : 9.\n\nLuas besar = 48 × 9/4 = 12 × 9 = **108 cm²**.\n\nPeriksa dengan contoh: persegi panjang kecil 8 × 6 (luas 48, keliling 28). Diperbesar 3/2 kali menjadi 12 × 9 (luas 108, keliling 42). Perbandingan kelilingnya 28 : 42 = 2 : 3, sesuai soal.",
         "opsi": {
-          "A": "23 cm adalah **jumlah panjang dan lebar** (setengah keliling), bukan diagonal.",
-          "B": "7 cm adalah **selisih** panjang dan lebar (15 − 8).",
-          "D": "15 cm adalah **panjang** persegi panjang. Pengecoh ini menjebak peserta yang berhenti setelah menemukan p dan l.",
-          "E": "289 adalah **kuadrat** diagonal. Opsi ini lupa menarik akar. Satuannya pun seharusnya cm² jika belum diakarkan."
+          "A": "72 cm² diperoleh dengan memakai perbandingan 2 : 3 langsung pada luas (48 × 3/2). Perbandingan panjang harus dikuadratkan dulu untuk luas.",
+          "B": "32 cm² diperoleh jika perbandingan dibalik (48 × 2/3), sehingga bangun besar justru dianggap lebih kecil.",
+          "D": "162 cm² diperoleh jika perbandingan **dipangkatkan tiga** (48 × 27/8). Pangkat tiga dipakai untuk volume bangun ruang, bukan luas.",
+          "E": "156 cm² adalah **jumlah** luas kedua persegi panjang (48 + 108). Soal hanya menanyakan luas persegi panjang besar."
         },
-        "konsep": "**Identitas yang berguna:** p² + l² = (p + l)² − 2pl. Rumus ini memungkinkan diagonal dihitung langsung dari keliling dan luas. **Tripel Pythagoras** yang sering keluar: 3-4-5, 5-12-13, 8-15-17, 7-24-25."
+        "konsep": "**Bangun sebangun dengan faktor skala k:** panjang dan keliling × k, luas × k², volume × k³."
       },
-      "tips": "Hafalkan tripel Pythagoras. Begitu tahu sisi 8 dan 15, diagonal 17 dapat langsung ditulis. Setelah itu, periksa apakah semua satuan opsi masuk akal."
+      "tips": "Tentukan dulu besaran yang ditanyakan: panjang, luas, atau volume. Pangkat faktor skalanya mengikuti dimensi besaran itu (1, 2, atau 3)."
     },
     {
       "id": "p03-056",
@@ -1884,29 +1884,29 @@
       "id": "p03-065",
       "nomor": 65,
       "kategori": "TIU",
-      "subtopik": "Kombinatorika",
-      "topik": "Permutasi susunan dengan dua orang harus berdampingan",
+      "subtopik": "Bilangan",
+      "topik": "Angka satuan bilangan berpangkat besar dengan pola berulang",
       "tingkat": "sedang",
-      "pertanyaan": "Lima pegawai, termasuk Rina dan Sinta, akan berfoto berjajar dalam satu baris. Rina dan Sinta harus selalu berdampingan. Banyak susunan foto yang mungkin adalah ....",
+      "pertanyaan": "Angka satuan dari 7²⁰²⁶ adalah ....",
       "opsi": {
-        "A": "24",
-        "B": "120",
-        "C": "48",
-        "D": "72",
-        "E": "8"
+        "A": "7",
+        "B": "1",
+        "C": "9",
+        "D": "3",
+        "E": "2"
       },
       "kunci": "C",
       "pembahasan": {
-        "inti": "Gunakan **teknik ikat**. Anggap Rina dan Sinta sebagai satu kelompok yang tidak terpisah.\n\n1. Sekarang ada 4 unit yang disusun: kelompok (Rina–Sinta) dan 3 pegawai lain. Banyak susunannya 4! = 4 × 3 × 2 × 1 = **24**.\n2. Di dalam kelompok, Rina dan Sinta dapat bertukar posisi (Rina–Sinta atau Sinta–Rina), yaitu 2! = **2** cara.\n\nBanyak susunan = 24 × 2 = **48**.\n\nCara lain: ada 4 pasang posisi bersebelahan dalam satu baris lima kursi. Setiap pasang dapat diisi Rina dan Sinta dengan 2 cara, dan 3 orang sisanya disusun 3! = 6 cara. Hasilnya 4 × 2 × 6 = 48.",
+        "inti": "Angka satuan perpangkatan 7 membentuk **pola berulang**. Cukup perhatikan angka satuannya saja.\n\n- 7¹ → 7\n- 7² = 49 → 9\n- 7³ → 9 × 7 = 63 → 3\n- 7⁴ → 3 × 7 = 21 → 1\n- 7⁵ → 1 × 7 = 7 (pola kembali ke awal)\n\nPolanya 7, 9, 3, 1 dengan **panjang siklus 4**. Bagi pangkatnya dengan 4: 2026 = 4 × 506 + 2, sisanya **2**. Sisa 2 berarti angka satuannya sama dengan suku kedua pola, yaitu **9**.",
         "opsi": {
-          "A": "24 diperoleh jika posisi Rina dan Sinta di dalam kelompok **tidak dipertukarkan**. Lupa mengalikan dengan 2!.",
-          "B": "120 adalah 5!, yaitu semua susunan **tanpa syarat**.",
-          "D": "72 adalah banyak susunan ketika Rina dan Sinta **tidak** berdampingan (120 − 48). Pengecoh ini menjebak peserta yang salah membaca syarat.",
-          "E": "8 diperoleh dari 4 pasang posisi × 2 cara, tetapi **lupa menyusun** tiga pegawai lainnya."
+          "A": "7 adalah suku **pertama** pola, yang berlaku jika sisa pembagian pangkat dengan 4 adalah 1. Sisa sebenarnya 2.",
+          "B": "1 adalah suku keempat pola, yang berlaku jika pangkatnya habis dibagi 4. Opsi ini menjebak peserta yang mengira 2026 habis dibagi 4 karena berakhiran angka genap.",
+          "D": "3 adalah suku **ketiga** pola (sisa 3). Opsi ini muncul jika sisa pembagian salah dihitung atau pola dibaca bergeser satu langkah.",
+          "E": "2 adalah **sisa pembagian** 2026 ÷ 4, bukan angka satuannya. Sisa hanya menunjukkan posisi dalam pola, lalu angka pada posisi itu yang menjadi jawaban."
         },
-        "konsep": "**Teknik ikat:** k objek yang harus berdampingan dianggap satu unit. Banyak susunan = (n − k + 1)! × k!. Untuk syarat *tidak berdampingan*, gunakan komplemen: total − berdampingan."
+        "konsep": "**Siklus angka satuan:** 2 → (2, 4, 8, 6); 3 → (3, 9, 7, 1); 7 → (7, 9, 3, 1); 8 → (8, 4, 2, 6) dengan siklus 4. Bilangan berakhiran 0, 1, 5, dan 6 selalu menghasilkan angka satuan yang sama. Jika sisa pembagian 0, ambil suku **terakhir** siklus."
       },
-      "tips": "Untuk soal susunan dengan syarat, tanyakan dua hal: **unit apa saja yang disusun** dan **apakah susunan di dalam kelompok penting**. Faktor k! di dalam kelompok paling sering terlupa."
+      "tips": "Untuk menghitung sisa pembagian dengan 4, cukup lihat **dua angka terakhir** pangkatnya. Pada 2026, 26 ÷ 4 bersisa 2."
     },
     {
       "id": "p03-066",
