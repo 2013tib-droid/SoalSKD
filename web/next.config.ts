@@ -29,7 +29,7 @@ const nextConfig: NextConfig = statik
       // Server (App Hosting): bank soal dan config dibaca dari luar web/ saat request,
       // jadi wajib ikut dibawa ke paket server.
       outputFileTracingRoot: path.resolve(".."),
-      outputFileTracingIncludes: { "/**/*": ["../bank/*.json", "../config/*.json"] },
+      outputFileTracingIncludes: { "/**/*": ["../bank/*.json", "../config/*.json", "./src/konten/*.md"] },
     };
 
 export default nextConfig;

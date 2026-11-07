@@ -733,6 +733,8 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
               ["/try-out", "Try out"],
               ["#contoh-soal", "Contoh soal"],
               ["#faq", "FAQ"],
+              ["/privasi", "Privasi"],
+              ["/syarat", "Syarat"],
             ].map(([href, label]) => (
               <li key={href}>
                 <Link href={href} className="title-4 block rounded-lg px-3 py-2 text-text-muted hover:text-text">

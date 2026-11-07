@@ -151,6 +151,19 @@ export function LayarMasuk({ mode }: { mode: Mode }) {
             {proses === "form" ? (daftar ? "Mendaftarkan…" : "Memeriksa…") : daftar ? "Daftar" : "Masuk"}
           </button>
         </form>
+        {daftar && (
+          <p className="caption-4 text-pretty text-text-muted">
+            Dengan mendaftar, kamu menyetujui{" "}
+            <Link href="/syarat" className="text-primary underline underline-offset-4">
+              Syarat &amp; Ketentuan
+            </Link>{" "}
+            dan{" "}
+            <Link href="/privasi" className="text-primary underline underline-offset-4">
+              Kebijakan Privasi
+            </Link>
+            .
+          </p>
+        )}
         {!daftar && (
           <button type="button" onClick={lupa} disabled={sibuk} className={`${tautanTeks} self-start`}>
             {proses === "lupa" ? "Mengirim tautan…" : "Lupa kata sandi?"}

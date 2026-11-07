@@ -12,6 +12,7 @@ Status per 2026-11-07. Area `web/`, `bank/`, `schema/`, dan `tools/` dipegang se
 | Beranda | Kartu lanjutkan ujian, daftar paket dari `bank/`, aksi per state, riwayat skor | `/try-out` |
 | Data | Bank skema 1 dan `config/skd.json` dibaca langsung; Markdown GFM dirender | `web/src/lib/` |
 | Akun & penjualan | Login email+sandi dan Google, /aktivasi kode, gerbang p02–p04 di server, sinkron jawaban/riwayat ke akun, Cloud Functions tukar kode + webhook Mayar + `unduhEbook` (55 tes emulator), rules Firestore + Storage | `/masuk`, `/daftar`, `/aktivasi`, `functions/`, `firestore.rules`, `storage.rules` |
+| Legal | Kebijakan Privasi dan Syarat & Ketentuan dari Markdown + config, ditautkan dari footer landing, /try-out, /daftar, /aktivasi, dan email kode; inventaris data di `docs/data-pribadi.md` | `/privasi`, `/syarat` |
 | Ebook | Pembuat PDF dari `bank/*.json` (dikerjakan sesi ebook); unduhan pembeli lewat kartu "Ebook PDF" di /try-out → `unduhEbook` → signed URL 10 menit dari Storage privat `ebook/edisi-1.pdf`; build + unggah `tools/unggah-ebook.sh` | `ebook/`, `/try-out` |
 
 Paket yang tersedia: `p01` (20 dari 110 soal, status draf).
@@ -33,6 +34,9 @@ Paket yang tersedia: `p01` (20 dari 110 soal, status draf).
 - **Kunci belum aman penuh.** `nilaiUjian` mengecek hak paket, tapi pemilik paket bisa memanggilnya sebelum mengumpulkan (sesi ujian ditulis browser). Menutupnya = jam mulai/selesai dicatat server.
 - **Belum ada batas perangkat** per akun (game edukasi: 3). Satu akun bisa dipakai bersama.
 - **Masuk dengan Google lewat pindah halaman** (cadangan saat pop-up diblokir) bisa gagal di Safari karena `authDomain` beda domain dengan situs. Pop-up jalan normal.
+- **Belum ada fitur hapus akun** di app. Permintaan hapus lewat kontak di /privasi, dihapus manual (`docs/data-pribadi.md`, bagian Keputusan terbuka).
+- **Belum ada aturan lama simpan** untuk `orders` dan `activation_codes`; /privasi menulisnya apa adanya.
+- **Nilai legal belum diisi**: `PENGELOLA`, `EMAIL_KONTAK`, `BERLAKU_SEJAK` masih `null`, dan `PENGEMBALIAN_DANA` masih usulan (`web/src/config/legal.ts`, `docs/firebase.md` langkah 12). Wajib sebelum jualan.
 - **Belum ada bottom nav.** Ditambahkan saat halaman Riwayat dan Profil terpisah sudah ada.
 - **Soal bergambar (`gambar`) belum ditampilkan** di app. Belum ada di `p01`.
 - **Simbol `∧ ∨ ≡ ✓ ✗`** di pembahasan TIU `p01` dicetak dengan DejaVu Sans di PDF karena Geist tidak punya glyph-nya. Diputuskan dibiarkan.
@@ -48,10 +52,13 @@ Paket yang tersedia: `p01` (20 dari 110 soal, status draf).
 3. **Pemeriksaan akhir tampilan.** `antislop` / `impeccable` sekali pada file UI yang sudah jadi
    (`web/src/components/`), sesuai aturan hemat token di CLAUDE.md.
 
+Setelah backend hidup: fitur hapus akun di /profil (hapus Auth + `users/{uid}` dan subkoleksi lewat Cloud Function) dan aturan lama simpan data pesanan.
+
 Setelah itu: halaman Riwayat dan Profil terpisah + bottom nav 4 item (Beranda, Try out, Riwayat, Profil),
 sakelar tema terang/gelap di Profil, tampilan soal bergambar.
 
 ## Keputusan yang masih terbuka
 
 - Urutan kerja: backend dulu atau isi bank soal dulu.
+- Kebijakan pengembalian dana (usulan di `web/src/config/legal.ts`), nama pengelola, kontak, dan lama simpan data pesanan.
 - Sumber resmi untuk durasi dan ambang batas SKD tahun berjalan.
