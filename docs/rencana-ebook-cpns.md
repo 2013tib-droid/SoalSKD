@@ -91,3 +91,6 @@ Pemilik menyerahkan keputusan ke model ("gas aja"):
    - Paket 3 (`bank/p03.json`, 110 soal, seed 303) selesai 6 November 2026, status draf. Validator 0 galat/0 peringatan, PDF 145 halaman.
    - Paket 4 (`bank/p04.json`, 110 soal, seed 404) selesai 6 November 2026, status draf. Validator 0 galat
      dan 0 peringatan, PDF 143 halaman. Topik yang mirip p03 sudah diganti (24 soal). Cek fakta sebelum terbit: no. 4–15, 17–21, 27, 30, 68, 76, 84, 93–94, 106, 109–110 (lihat `rujukan`).
+6. ~~Ebook gabungan Edisi 1~~ Selesai: `node ebook/buat-ebook.mjs bank/p02.json bank/p03.json bank/p04.json --judul "Edisi 1"`
+   → `ebook/dist/soalskd-p02-p03-p04.pdf`, 427 halaman, 330 soal. Masih berlencana "belum siap terbit"
+   sampai ketiga paket berstatus `final` setelah direview pemilik.
