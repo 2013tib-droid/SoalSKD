@@ -52,3 +52,4 @@ Aplikasi try out SKD CPNS (TWK, TIU, TKP). Mayoritas pengguna membuka di HP.
 2026-11-07 · Landing di `/`, daftar paket pindah ke `/try-out`; testimoni dan harga disembunyikan sampai ada data asli di `web/src/config/landing.ts`; ranking tidak diklaim sebelum ada backend · tanpa klaim palsu
 2026-11-07 · Harga perkenalan bundel 3 try out (p02–p04) + ebook PDF: Rp9.900, tanpa harga coret; naik setelah ada testimoni/paket bertambah; utamakan pembayaran QRIS/e-wallet (biaya tetap VA terlalu besar di harga ini) · mengejar jumlah pembeli, pesaing besar Rp15.000/3 TO
 2026-11-07 · Tombol beli di kartu harga menunjuk `TAUTAN_BELI` (checkout QRIS/e-wallet atau wa.me); selama null tampil nonaktif "Pembelian segera dibuka". Tombol coba gratis membuka `PAKET_GRATIS` (p01) · belum ada backend pembayaran, tanpa tautan mati
+2026-11-07 · Landing tanpa skip link "Langsung ke isi"; cukup landmark `<nav>`/`<main>` · tautan itu muncul di HP dan membingungkan pemilik/pengguna
