@@ -6,11 +6,13 @@ import {
   ChartLineUp,
   CheckCircle,
   Flag,
+  Gift,
+  ShoppingBag,
   Timer,
 } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import { AMBANG_TIMER, DURASI_LATIHAN_MENIT_PER_SOAL } from "@/config/skd";
-import { HARGA, TESTIMONI } from "@/config/landing";
+import { PAKET_GRATIS, PENAWARAN, TAUTAN_BELI, TESTIMONI } from "@/config/landing";
 import type { SoalPembahasan, SoalUjian } from "@/lib/soal";
 import { ContohSoal, PratinjauHasil } from "./contoh-soal";
 import { Muncul, TaglineBertahap } from "./gerak";
@@ -25,6 +27,7 @@ export type DataLanding = {
   komposisi: { kode: string; jumlah: number; nilaiMaks: number }[];
   nilaiBenar: number;
   ambang: { kode: string; nilai: number }[] | null;
+  soalGratis: number;
 };
 
 type Props = {
@@ -36,6 +39,8 @@ type Props = {
 const CTA = "Mulai Try Out";
 const tombolUtama =
   "button-md flex h-12 items-center justify-center gap-2 rounded-lg bg-primary px-4 text-on-primary transition-[background-color,transform] duration-300 ease-[var(--ease-out-house)] hover:bg-primary-hover active:scale-[0.98]";
+const tombolKedua =
+  "button-md flex h-12 items-center justify-center gap-2 rounded-lg border border-border bg-surface px-4 text-text transition-[background-color,transform] duration-300 ease-[var(--ease-out-house)] hover:bg-surface-muted active:scale-[0.98]";
 const wadah = "mx-auto w-full max-w-5xl px-4";
 const judulSection = "heading-4 lg:heading-3 text-balance";
 
@@ -157,6 +162,7 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
             ["#keunggulan", "Keunggulan"],
             ["#cara-kerja", "Cara kerja"],
             ["#contoh-soal", "Contoh soal"],
+            ...(PENAWARAN ? [["#harga", "Harga"]] : []),
             ["#faq", "FAQ"],
           ].map(([href, label]) => (
             <li key={href}>
@@ -304,28 +310,65 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
         )}
 
         {/* Harga: tampil hanya jika sudah diisi di config/landing.ts */}
-        {HARGA && HARGA.length > 0 && (
+        {PENAWARAN && (
           <section id="harga" aria-labelledby="judul-harga" className="scroll-mt-20 py-16 lg:py-24">
             <Muncul className={`${wadah} flex flex-col gap-8`}>
-              <h2 id="judul-harga" className={judulSection}>
-                Pilih paket latihanmu
-              </h2>
-              <ul className={`grid gap-4 ${HARGA.length > 1 ? "md:grid-cols-3" : "max-w-md"}`}>
-                {HARGA.map((h) => (
-                  <li key={h.nama} className="flex flex-col gap-4 rounded-xl border border-border bg-surface p-6">
-                    <h3 className="title-3">{h.nama}</h3>
-                    <p className="heading-5 font-mono tabular-nums">{h.harga}</p>
-                    <ul className="flex flex-col gap-2">
-                      {h.isi.map((x) => (
-                        <li key={x} className="body-6 flex items-start gap-2 text-text-muted">
-                          <CheckCircle size={20} aria-hidden className="shrink-0 text-primary" />
-                          {x}
-                        </li>
-                      ))}
-                    </ul>
-                  </li>
-                ))}
-              </ul>
+              <div className="flex flex-col gap-3">
+                <h2 id="judul-harga" className={judulSection}>
+                  Semua paket latihan, harga satu gelas kopi
+                </h2>
+                <p className="body-3 max-w-[680px] text-pretty text-text-muted">
+                  Kerjakan di HP, baca ulang pembahasannya lewat ebook. Belum yakin? Coba paket gratis dulu.
+                </p>
+              </div>
+
+              <div className="grid overflow-hidden rounded-2xl border border-primary/40 bg-surface lg:grid-cols-[5fr_7fr]">
+                <div className="flex flex-col gap-6 bg-primary/[0.06] p-6 sm:p-10">
+                  <p className="caption-4 w-fit rounded-full bg-primary px-3 py-1 text-on-primary">{PENAWARAN.label}</p>
+                  <div className="flex flex-col gap-2">
+                    <h3 className="title-2">{PENAWARAN.nama}</h3>
+                    <p className="heading-1 tracking-tight text-text tabular-nums">{PENAWARAN.harga}</p>
+                    <p className="body-6 text-text-muted">Sekali bayar untuk seluruh isi bundel.</p>
+                  </div>
+                  <div className="mt-auto flex flex-col gap-3">
+                    {TAUTAN_BELI ? (
+                      <a href={TAUTAN_BELI} target="_blank" rel="noopener" className={`${tombolUtama} w-full`}>
+                        <ShoppingBag size={20} aria-hidden />
+                        Beli bundel {PENAWARAN.harga}
+                      </a>
+                    ) : (
+                      <span
+                        role="link"
+                        aria-disabled="true"
+                        className="button-md flex h-12 w-full cursor-not-allowed items-center justify-center gap-2 rounded-lg bg-surface-muted px-4 text-text-muted"
+                      >
+                        <ShoppingBag size={20} aria-hidden />
+                        Pembelian segera dibuka
+                      </span>
+                    )}
+                    {data.soalGratis > 0 && (
+                      <Link href={`/ujian/${PAKET_GRATIS}`} className={`${tombolKedua} w-full`}>
+                        <Gift size={20} aria-hidden className="text-primary" />
+                        Coba {data.soalGratis} soal gratis
+                      </Link>
+                    )}
+                  </div>
+                </div>
+
+                <ul className="flex flex-col gap-6 border-t border-border p-6 sm:p-10 lg:border-t-0 lg:border-l">
+                  {PENAWARAN.isi.map((x) => (
+                    <li key={x.judul} className="flex items-start gap-4">
+                      <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                        <CheckCircle size={20} weight="fill" aria-hidden />
+                      </span>
+                      <span className="flex flex-col gap-1">
+                        <span className="title-3">{x.judul}</span>
+                        <span className="body-6 text-text-muted">{x.detail}</span>
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </Muncul>
           </section>
         )}
