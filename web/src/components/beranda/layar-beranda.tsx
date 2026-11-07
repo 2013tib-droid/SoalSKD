@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowCounterClockwise, ArrowRight, ClockCountdown, Info, Play } from "@phosphor-icons/react";
+import { ArrowCounterClockwise, ArrowLeft, ArrowRight, ClockCountdown, Info, Play } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -81,8 +81,12 @@ export function LayarBeranda({ paket }: { paket: PaketBeranda[] }) {
   return (
     <main className="mx-auto flex min-h-dvh w-full max-w-3xl flex-col gap-8 px-4 pt-6 pb-10">
       <header className="flex flex-col gap-1">
-        <Link href="/" className="caption-4 self-start rounded-sm text-text-muted hover:text-text">
-          SoalSKD
+        <Link
+          href="/"
+          className="caption-4 -ml-2 flex h-11 items-center gap-1 self-start rounded-lg px-2 text-text-muted hover:bg-surface-muted"
+        >
+          <ArrowLeft size={16} aria-hidden />
+          Halaman utama
         </Link>
         <h1 className="heading-5">Try out SKD CPNS</h1>
         <p className="body-6 text-text-muted">Latihan TWK, TIU, dan TKP dengan timer dan pembahasan lengkap.</p>
