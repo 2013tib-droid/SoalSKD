@@ -4,11 +4,25 @@ import {
   CaretDown,
   ChartBar,
   ChartLineUp,
+  Check,
   CheckCircle,
+  DeviceMobile,
+  Exam,
   Flag,
   Gift,
+  Lightning,
+  Megaphone,
+  PlayCircle,
+  ShieldCheck,
   ShoppingBag,
+  SmileyNervous,
+  SmileyWink,
+  Stack,
+  Star,
+  Target,
   Timer,
+  Trophy,
+  XCircle,
 } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import { AMBANG_TIMER, DURASI_LATIHAN_MENIT_PER_SOAL } from "@/config/skd";
@@ -17,7 +31,7 @@ import type { SoalPembahasan, SoalUjian } from "@/lib/soal";
 import { MenuAkun } from "@/components/akun/menu-akun";
 import { LOGIN_AKTIF } from "@/lib/firebase/klien";
 import { ContohSoal, PratinjauHasil } from "./contoh-soal";
-import { Muncul, TaglineBertahap } from "./gerak";
+import { Muncul } from "./gerak";
 
 export type DataLanding = {
   jumlahPaket: number;
@@ -84,44 +98,60 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
 
   const keunggulan = [
     {
-      ikon: Timer,
-      judul: "Timer seperti di ruang CAT",
-      isi: `Waktu berjalan sejak soal pertama dan selalu terlihat di atas layar. Warnanya berubah saat sisa waktu tinggal ${AMBANG_TIMER.peringatan * 100} persen, lalu ${AMBANG_TIMER.kritis * 100} persen.`,
+      ikon: Target,
+      warna: "bg-danger/10 text-danger",
+      judul: `${data.totalSoal > 0 ? `${data.totalSoal} soal` : "Soal"} orisinal`,
+      isi: "Ditulis sendiri mengikuti format SKD, bukan salinan dari internet.",
     },
     {
-      ikon: ChartBar,
-      judul: "Skor per subtes dan passing grade",
-      isi: `TWK dan TIU bernilai ${data.nilaiBenar} poin per jawaban benar, TKP dinilai dari bobot pilihanmu. ${
-        ambangTeks
-          ? `Skor langsung dibandingkan dengan ambang batas ${ambangTeks}.`
-          : "Perbandingan dengan passing grade aktif setelah angka resmi tahun ini diumumkan."
-      }`,
+      ikon: Timer,
+      warna: "bg-primary/10 text-primary",
+      judul: "Simulasi seperti CAT",
+      isi: `Timer selalu terlihat dan berubah warna saat waktu tinggal ${AMBANG_TIMER.peringatan * 100}%.`,
     },
     {
       ikon: BookOpen,
-      judul: "Pembahasan untuk tiap pilihan",
-      isi: "Bukan hanya kunci. Setiap opsi yang keliru dijelaskan kenapa menjebak, lengkap dengan konsep dan tips mengerjakan.",
+      warna: "bg-primary/10 text-primary",
+      judul: "Pembahasan tiap pilihan",
+      isi: "Tahu kenapa jawabanmu benar, dan kenapa pilihan lain menjebak.",
     },
     {
-      ikon: ChartLineUp,
-      judul: "Riwayat skor tiap percobaan",
-      isi: "Ulangi paket kapan saja dan lihat apakah skormu naik. Riwayat tersimpan di perangkatmu.",
+      ikon: ChartBar,
+      warna: "bg-success/10 text-success",
+      judul: "Skor per subtes",
+      isi: ambangTeks
+        ? `TWK, TIU, TKP dinilai terpisah dan dibandingkan dengan ${ambangTeks}.`
+        : "TWK, TIU, dan TKP dinilai terpisah, jadi kelihatan bagian yang perlu dilatih.",
     },
   ];
 
+  const masalah = [
+    "Soal acak dari internet, tanpa format SKD",
+    "Tidak tahu nilai sendiri per subtes",
+    "Kunci tanpa pembahasan",
+    "Belum terbiasa dikejar timer",
+  ];
+  const solusi = [
+    `Satu paket ${data.soalPerPaket} soal seperti CAT`,
+    "Nilai langsung keluar setelah dikumpulkan",
+    "Pembahasan untuk setiap pilihan",
+    "Riwayat skor tiap percobaan",
+  ];
+
   const langkah = [
-    {
-      judul: "Pilih paket",
-      isi: `Satu paket berisi ${data.soalPerPaket} soal: ${komposisi}, mengikuti proporsi SKD CAT.`,
-    },
-    {
-      judul: "Kerjakan dengan timer",
-      isi: "Jawaban tersimpan otomatis. Tandai soal yang belum yakin, lalu kembali lewat grid nomor.",
-    },
-    {
-      judul: "Kumpulkan dan pelajari",
-      isi: "Lihat skor per subtes, lalu saring pembahasan untuk soal yang salah, kosong, atau sempat kamu tandai.",
-    },
+    { judul: "Pilih paket", isi: `${data.soalPerPaket} soal: ${komposisi}.` },
+    { judul: "Kerjakan", isi: "Timer berjalan, jawaban tersimpan otomatis." },
+    { judul: "Lihat skor", isi: "Nilai TWK, TIU, TKP langsung keluar." },
+    { judul: "Pelajari", isi: "Saring soal yang salah, kosong, atau ragu." },
+  ];
+
+  const angka = [
+    ...(data.totalSoal > 0
+      ? [{ ikon: Lightning, nilai: `${data.totalSoal}`, label: "Soal orisinal" }]
+      : []),
+    ...(data.jumlahPaket > 0 ? [{ ikon: Stack, nilai: `${data.jumlahPaket}`, label: "Paket latihan" }] : []),
+    { ikon: DeviceMobile, nilai: "HP", label: "Nyaman satu tangan" },
+    { ikon: ShieldCheck, nilai: "Gratis", label: `Paket pertama, tanpa akun` },
   ];
 
   const faq = [
@@ -179,17 +209,14 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
     <>
       <nav
         aria-label="Utama"
-        className="fixed inset-x-0 top-0 z-40 border-b border-border bg-surface/80 backdrop-blur-md"
+        className="fixed inset-x-0 top-0 z-40 border-b border-border/60 bg-surface/80 backdrop-blur-md"
       >
         <div className={`${wadah} flex h-16 items-center justify-between gap-2`}>
-          <Link href="/" className="title-3 -ml-2 rounded-lg px-2 py-2 text-text">
-            SoalSKD
-          </Link>
+          <Logo />
           <ul className="hidden items-center md:flex">
             {[
-              ["#apa-itu-skd", "Apa itu SKD"],
-              ["#cara-baca", "Cara baca layar"],
-              ["#contoh-soal", "Contoh soal"],
+              ["#contoh-soal", "Contoh Soal"],
+              ["#cara-kerja", "Cara Kerja"],
               ...(PENAWARAN ? [["#harga", "Harga"]] : []),
               ["#faq", "FAQ"],
             ].map(([href, label]) => (
@@ -207,52 +234,219 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
             <MenuAkun />
             <Link
               href="/try-out"
-              className="title-4 flex h-10 items-center rounded-lg bg-primary px-3 whitespace-nowrap text-on-primary transition-[background-color,transform] duration-300 ease-[var(--ease-out-house)] hover:bg-primary-hover active:scale-[0.98]"
+              className="title-4 flex h-10 items-center gap-1 rounded-lg bg-primary px-3 whitespace-nowrap text-on-primary transition-[background-color,transform] duration-300 ease-[var(--ease-out-house)] hover:bg-primary-hover active:scale-[0.98]"
             >
               {CTA}
+              <ArrowRight size={16} aria-hidden className="hidden sm:block" />
             </Link>
           </div>
         </div>
       </nav>
 
       <main id="isi" className="flex flex-col">
-        {/* Hero */}
-        <section className={`${wadah} grid items-center gap-12 pt-24 pb-16 lg:grid-cols-2 lg:gap-16 lg:pt-32 lg:pb-24`}>
-          <div className="flex flex-col gap-6">
-            <p className="caption-4 flex w-fit items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-text-muted">
-              Try out SKD CPNS · TWK, TIU, TKP
-            </p>
-            <h1 className="teks-hero heading-3 sm:heading-2 max-w-[680px] pb-2 text-balance">
-              Latihan tes CPNS di HP, <br className="hidden sm:block" />
-              rasanya seperti ujian sungguhan
-            </h1>
-            <p className="body-3 max-w-[680px] text-pretty text-text-muted">
-              SKD adalah tes pertama untuk jadi PNS, dikerjakan di komputer dengan waktu terbatas. Di sini kamu
-              mengerjakan soal latihan dengan cara yang sama, lalu langsung tahu nilaimu dan alasan setiap jawaban.
-            </p>
-            <div className="flex flex-col gap-3">
-              <Link href="/try-out" className={`${tombolUtama} w-full sm:w-fit`}>
-                {CTA}
-                <ArrowRight size={20} aria-hidden />
-              </Link>
-              {data.totalSoal > 0 && (
-                <p className="caption-4 flex items-center gap-1 text-text-muted">
-                  <CheckCircle size={16} weight="fill" aria-hidden className="text-primary" />
-                  <span>
-                    <span className="mono-number text-text">{data.totalSoal}</span> soal orisinal dalam{" "}
-                    <span className="mono-number text-text">{data.jumlahPaket}</span> paket
-                    {data.paketLengkap > 0 && (
-                      <>
-                        , <span className="mono-number text-text">{data.paketLengkap}</span> di antaranya paket
-                        lengkap {data.soalPerPaket} soal
-                      </>
-                    )}
-                  </span>
-                </p>
-              )}
-            </div>
+        {/* Hero: latar biru lembut + mockup HP */}
+        <section className="relative overflow-hidden">
+          <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+            <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.07] to-transparent" />
+            <div className="absolute -top-24 right-[-10%] size-[520px] rounded-full bg-primary/15 blur-3xl lg:size-[640px]" />
+            <div className="absolute top-1/3 -left-40 size-[360px] rounded-full bg-primary/[0.08] blur-3xl" />
           </div>
-          {soalHero && <PratinjauUjian soal={soalHero} data={data} />}
+          <div className={`${wadah} grid items-center gap-10 pt-24 pb-10 lg:grid-cols-[7fr_5fr] lg:gap-8 lg:pt-28 lg:pb-12`}>
+            <div className="flex flex-col gap-6">
+              <p className="caption-4 flex w-fit items-center gap-2 rounded-full bg-accent-soft px-3 py-1.5 text-text">
+                <Trophy size={16} weight="fill" aria-hidden className="text-accent" />
+                SKD CPNS · Simulasi CAT di HP
+              </p>
+              <h1 className="heading-3 sm:heading-2 lg:heading-1 text-balance tracking-tight">
+                Latihan SKD yang terasa seperti{" "}
+                <span className="relative inline-block whitespace-nowrap text-primary">
+                  ujian CAT
+                  <svg
+                    aria-hidden
+                    viewBox="0 0 200 12"
+                    preserveAspectRatio="none"
+                    className="absolute -bottom-2 left-0 h-3 w-full text-accent"
+                  >
+                    <path d="M2 9 C 50 2, 120 2, 198 7" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
+                  </svg>
+                </span>{" "}
+                sesungguhnya.
+              </h1>
+              <p className="body-3 max-w-[560px] text-pretty text-text-muted sm:text-lg">
+                Soal orisinal dengan pembahasan tiap pilihan, timer seperti di ruang tes, dan skor per subtes yang
+                langsung keluar. Belajar lebih terarah sebelum hari ujian.
+              </p>
+              <div className="flex flex-col gap-3 sm:flex-row">
+                <Link href="/try-out" className={`${tombolUtama} h-14 px-6 sm:w-fit`}>
+                  {CTA}
+                  <ArrowRight size={20} aria-hidden />
+                </Link>
+                {soalContoh && (
+                  <a
+                    href="#contoh-soal"
+                    className="button-md flex h-14 items-center justify-center gap-2 rounded-lg border-2 border-primary bg-surface px-6 text-primary transition-[background-color,transform] duration-300 ease-[var(--ease-out-house)] hover:bg-primary/5 active:scale-[0.98] sm:w-fit"
+                  >
+                    <PlayCircle size={20} weight="fill" aria-hidden />
+                    Lihat Contoh Soal
+                  </a>
+                )}
+              </div>
+              <ul className="caption-4 flex flex-wrap gap-x-4 gap-y-2 text-text-muted">
+                {["Paket pertama gratis", "Tanpa daftar akun", "Jawaban tersimpan otomatis"].map((t) => (
+                  <li key={t} className="flex items-center gap-1">
+                    <CheckCircle size={16} weight="fill" aria-hidden className="text-success" />
+                    {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {soalHero && (
+              <div className="relative mx-auto w-full max-w-[340px] lg:mr-0">
+                <Kilau className="absolute -top-6 -right-4 z-10 size-14 text-accent" />
+                <div className="relative lg:rotate-[4deg]">
+                  <div className="overflow-hidden rounded-[2.75rem] border-[10px] border-neutral-900 bg-surface shadow-[0_30px_60px_-20px_rgba(30,64,175,0.35)] ring-1 ring-border [mask-image:linear-gradient(to_bottom,black_82%,transparent)] dark:border-neutral-700">
+                    <div className="flex items-center justify-between px-5 pt-3 pb-1">
+                      <span className="title-4">SoalSKD</span>
+                      <span aria-hidden className="h-5 w-20 rounded-full bg-neutral-900 dark:bg-neutral-700" />
+                      <span className="caption-4 rounded-full bg-surface-muted px-2 py-0.5 text-text-muted">Paket 1</span>
+                    </div>
+                    <div className="max-h-[540px] overflow-hidden">
+                      <PratinjauUjian soal={soalHero} data={data} tanpaBingkai />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Strip angka */}
+          <div className={`${wadah} pb-12 lg:pb-16`}>
+            <ul className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border bg-border shadow-[0_8px_30px_-12px_rgba(30,64,175,0.18)] lg:grid-cols-4">
+              {angka.map(({ ikon: Ikon, nilai, label }) => (
+                <li key={label} className="flex items-center gap-3 bg-surface p-4 sm:p-5">
+                  <Ikon size={28} weight="duotone" aria-hidden className="shrink-0 text-primary" />
+                  <span className="flex min-w-0 flex-col">
+                    <span className="title-2 font-semibold tabular-nums">{nilai}</span>
+                    <span className="caption-4 text-text-muted">{label}</span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* Masalah → solusi */}
+        <section aria-labelledby="judul-masalah" className="py-8 lg:py-12">
+          <Muncul className={`${wadah} grid items-stretch gap-4 lg:grid-cols-[1fr_auto_1fr]`}>
+            <div className="relative flex overflow-hidden rounded-2xl border border-border bg-surface p-6 sm:p-8">
+              <div className="relative z-10 flex flex-col gap-5 sm:pr-16">
+                <h2 id="judul-masalah" className="heading-6 sm:heading-5 max-w-[260px] text-balance">
+                  Masih belajar CPNS seperti ini?
+                </h2>
+                <ul className="flex flex-col gap-3">
+                  {masalah.map((t) => (
+                    <li key={t} className="body-6 flex items-center gap-3 text-text sm:text-base">
+                      <XCircle size={22} weight="fill" aria-hidden className="shrink-0 text-danger/80" />
+                      {t}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <SmileyNervous
+                size={120}
+                weight="duotone"
+                aria-hidden
+                className="absolute -right-4 -bottom-4 text-text-muted/15"
+              />
+            </div>
+            <span
+              aria-hidden
+              className="flex size-12 items-center justify-center self-center justify-self-center rounded-full border border-border bg-surface text-primary max-lg:rotate-90"
+            >
+              <ArrowRight size={22} />
+            </span>
+            <div className="relative flex overflow-hidden rounded-2xl border border-primary/20 bg-primary/[0.06] p-6 sm:p-8">
+              <div className="relative z-10 flex flex-col gap-5 sm:pr-16">
+                <h2 className="heading-6 sm:heading-5 max-w-[260px] text-balance">Di SoalSKD, latihannya begini.</h2>
+                <ul className="flex flex-col gap-3">
+                  {solusi.map((t) => (
+                    <li key={t} className="body-6 flex items-center gap-3 text-text sm:text-base">
+                      <CheckCircle size={22} weight="fill" aria-hidden className="shrink-0 text-success" />
+                      {t}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <SmileyWink
+                size={120}
+                weight="duotone"
+                aria-hidden
+                className="absolute -right-4 -bottom-4 text-primary/20"
+              />
+            </div>
+          </Muncul>
+        </section>
+
+        {/* Keunggulan */}
+        <section id="keunggulan" aria-labelledby="judul-keunggulan" className="scroll-mt-20 py-12 lg:py-16">
+          <Muncul className={`${wadah} flex flex-col gap-8`}>
+            <h2 id="judul-keunggulan" className={`${judulSection} text-center`}>
+              Kenapa latihan di SoalSKD?
+            </h2>
+            <ul className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+              {keunggulan.map(({ ikon: Ikon, warna, judul, isi }) => (
+                <li
+                  key={judul}
+                  className="flex flex-col items-center gap-3 rounded-2xl border border-border bg-surface p-4 text-center transition-transform duration-300 ease-[var(--ease-out-house)] hover:-translate-y-1 sm:p-6"
+                >
+                  <span className={`flex size-14 items-center justify-center rounded-2xl ${warna}`}>
+                    <Ikon size={30} weight="duotone" aria-hidden />
+                  </span>
+                  <h3 className="title-3 font-semibold text-balance">{judul}</h3>
+                  <p className="body-6 text-pretty text-text-muted">{isi}</p>
+                </li>
+              ))}
+            </ul>
+          </Muncul>
+        </section>
+
+        {/* Cara kerja: garis langkah */}
+        <section id="cara-kerja" aria-labelledby="judul-cara-kerja" className="scroll-mt-20 py-12 lg:py-16">
+          <Muncul className={wadah}>
+            <div className="grid gap-6 rounded-2xl border border-primary/15 bg-primary/[0.05] p-6 sm:p-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,5fr)] lg:items-center">
+              <div className="flex items-center gap-4">
+                <ChartLineUp size={36} weight="duotone" aria-hidden className="shrink-0 text-primary" />
+                <h2 id="judul-cara-kerja" className="title-2 font-semibold text-balance">
+                  Semakin sering latihan, semakin siap menghadapi CAT.
+                </h2>
+              </div>
+              <ol className="relative grid gap-5 sm:grid-cols-4 sm:gap-2">
+                <span aria-hidden className="absolute top-4 bottom-4 left-4 w-0.5 bg-primary/30 sm:top-4 sm:right-[12.5%] sm:bottom-auto sm:left-[12.5%] sm:h-0.5 sm:w-auto" />
+                {langkah.map((l, i) => {
+                  const akhir = i === langkah.length - 1;
+                  return (
+                    <li key={l.judul} className="relative flex items-start gap-3 sm:flex-col sm:items-center sm:text-center">
+                      <span
+                        aria-hidden
+                        className={`relative flex size-8 shrink-0 items-center justify-center rounded-full ring-4 ring-surface ${
+                          akhir ? "bg-accent text-on-accent" : "bg-primary text-on-primary"
+                        }`}
+                      >
+                        {akhir ? <Star size={16} weight="fill" /> : <Check size={16} weight="bold" />}
+                      </span>
+                      <span className="flex flex-col gap-0.5">
+                        <span className="title-3 font-semibold">
+                          <span className="sr-only">Langkah {i + 1}: </span>
+                          {l.judul}
+                        </span>
+                        <span className="caption-4 text-pretty text-text-muted">{l.isi}</span>
+                      </span>
+                    </li>
+                  );
+                })}
+              </ol>
+            </div>
+          </Muncul>
         </section>
 
         {/* Apa itu SKD: penjelasan untuk orang yang baru pertama kali dengar */}
@@ -302,65 +496,6 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
                   : "Angkanya ditetapkan pemerintah tiap tahun; cek aturan BKN dan KemenPAN-RB terbaru."}
               </span>
             </p>
-          </Muncul>
-        </section>
-
-        {/* Keunggulan */}
-        <section id="keunggulan" aria-labelledby="judul-keunggulan" className="scroll-mt-20 py-16 lg:py-24">
-          <Muncul className={`${wadah} flex flex-col gap-8`}>
-            <div className="flex max-w-[680px] flex-col gap-3">
-              <h2 id="judul-keunggulan" className={judulSection}>
-                Yang kamu dapat di setiap paket
-              </h2>
-              <p className="body-3 text-pretty text-text-muted">
-                Latihan yang berguna bukan sekadar menjawab soal, tapi juga membiasakan diri dengan waktu, skor, dan cara
-                berpikir di balik jawaban.
-              </p>
-            </div>
-            <ul className="grid gap-4 sm:grid-cols-2">
-              {keunggulan.map(({ ikon: Ikon, judul, isi }) => (
-                <li key={judul} className="flex flex-col gap-3 rounded-xl border border-border bg-surface p-6">
-                  <span className="flex size-10 items-center justify-center rounded-lg bg-surface-muted text-primary">
-                    <Ikon size={20} aria-hidden />
-                  </span>
-                  <h3 className="title-3">{judul}</h3>
-                  <p className="body-6 text-pretty text-text-muted">{isi}</p>
-                </li>
-              ))}
-            </ul>
-          </Muncul>
-        </section>
-
-        {/* Tagline */}
-        <section aria-label="Tagline" className="py-16 lg:py-24">
-          <div className={wadah}>
-            <TaglineBertahap
-              className="heading-4 sm:heading-3 lg:heading-2 max-w-[680px] text-balance lg:max-w-4xl"
-              baris={["Biasakan diri dengan tekanan waktu sekarang,", "supaya di ruang tes kamu cukup fokus pada soal."]}
-            />
-          </div>
-        </section>
-
-        {/* Cara kerja */}
-        <section id="cara-kerja" aria-labelledby="judul-cara-kerja" className="scroll-mt-20 py-16 lg:py-24">
-          <Muncul className={`${wadah} flex flex-col gap-8`}>
-            <h2 id="judul-cara-kerja" className={judulSection}>
-              Tiga langkah dari paket ke pembahasan
-            </h2>
-            <ol className="grid gap-4 md:grid-cols-3">
-              {langkah.map((l, i) => (
-                <li key={l.judul} className="flex flex-col gap-3 rounded-xl border border-border bg-surface p-6">
-                  <span
-                    aria-hidden
-                    className="mono-number flex size-8 items-center justify-center rounded-full bg-primary text-on-primary"
-                  >
-                    {i + 1}
-                  </span>
-                  <h3 className="title-3">{l.judul}</h3>
-                  <p className="body-6 text-pretty text-text-muted">{l.isi}</p>
-                </li>
-              ))}
-            </ol>
           </Muncul>
         </section>
 
@@ -545,52 +680,95 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
           </Muncul>
         </section>
 
-        {/* CTA penutup */}
-        <section aria-labelledby="judul-penutup" className="py-16 lg:py-24">
+        {/* CTA penutup: banner biru */}
+        <section aria-labelledby="judul-penutup" className="py-12 lg:py-16">
           <Muncul className={wadah}>
-            <div className="flex flex-col items-start gap-6 rounded-xl border border-border bg-surface p-6 sm:p-10 lg:items-center lg:p-16 lg:text-center">
-              <h2 id="judul-penutup" className={`${judulSection} max-w-[680px]`}>
-                Coba satu paket penuh, lalu lihat di mana kamu perlu berlatih
-              </h2>
-              <p className="body-3 max-w-[680px] text-pretty text-text-muted">
-                Paket gratis bisa langsung dikerjakan tanpa daftar akun. Jawabanmu tersimpan otomatis, jadi kamu bisa
-                berhenti dan melanjutkan kapan saja.
-              </p>
-              <Link href="/try-out" className={`${tombolUtama} w-full sm:w-fit`}>
-                {CTA}
-                <ArrowRight size={20} aria-hidden />
-              </Link>
+            <div className="relative grid gap-6 overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-primary-hover p-6 text-on-primary dark:from-blue-800 dark:to-blue-950 dark:text-white shadow-[0_30px_60px_-25px_rgba(30,64,175,0.6)] sm:p-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:gap-10">
+              <div aria-hidden className="pointer-events-none absolute -top-20 -right-20 size-64 rounded-full bg-on-primary/10 blur-2xl" />
+              <Kilau className="absolute top-3 right-4 size-12 text-accent" />
+              <div className="relative flex flex-col items-start gap-3">
+                <p className="caption-4 flex w-fit items-center gap-2 rounded-full bg-accent px-4 py-2 text-on-accent sm:text-sm">
+                  <Megaphone size={20} weight="fill" aria-hidden />
+                  Jangan tunggu sampai hari ujian!
+                </p>
+                <h2 id="judul-penutup" className="heading-5 sm:heading-4 text-balance">
+                  Siap menghadapi <span className="text-accent">SKD</span>?
+                </h2>
+                <p className="body-3 max-w-[480px] text-pretty opacity-90">
+                  Mulai dengan paket gratis hari ini. Semakin cepat latihan, semakin terbiasa dengan waktunya.
+                </p>
+              </div>
+              <div className="relative flex flex-col gap-4 sm:flex-row sm:items-center lg:border-l lg:border-on-primary/25 lg:pl-10">
+                {PENAWARAN && (
+                  <p className="flex flex-col">
+                    <span className="caption-4 opacity-90">Bundel lengkap</span>
+                    <span className="heading-4 tracking-tight text-accent tabular-nums">{PENAWARAN.harga}</span>
+                  </p>
+                )}
+                <Link
+                  href="/try-out"
+                  className="button-md flex h-14 items-center justify-center gap-2 rounded-full bg-surface px-6 whitespace-nowrap text-text transition-transform duration-300 ease-[var(--ease-out-house)] hover:scale-[1.03] active:scale-[0.98]"
+                >
+                  Mulai Sekarang
+                  <ArrowRight size={20} aria-hidden />
+                </Link>
+              </div>
             </div>
           </Muncul>
         </section>
       </main>
 
-      <footer className="border-t border-border py-10">
-        <div className={`${wadah} flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between`}>
-          <div className="flex max-w-md flex-col gap-2">
-            <p className="title-3">SoalSKD</p>
+      <footer className="border-t border-border bg-surface py-10">
+        <div className={`${wadah} flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between`}>
+          <div className="flex max-w-md flex-col gap-3">
+            <Logo />
+            <p className="title-4 text-text">Belajar lebih terarah sebelum hari ujian.</p>
             <p className="caption-4 text-pretty text-text-muted">
               Soal latihan orisinal, bukan soal resmi BKN. Format dan passing grade mengikuti konfigurasi; cek aturan BKN
               dan KemenPAN-RB terbaru.
             </p>
           </div>
-          <ul className="flex gap-2">
-            <li>
-              <Link href="/try-out" className="title-4 block rounded-lg px-3 py-2 text-text-muted hover:text-text">
-                Try out
-              </Link>
-            </li>
-            <li>
-              <a href="#faq" className="title-4 block rounded-lg px-3 py-2 text-text-muted hover:text-text">
-                FAQ
-              </a>
-            </li>
+          <ul className="flex flex-wrap gap-2">
+            {[
+              ["/try-out", "Try out"],
+              ["#contoh-soal", "Contoh soal"],
+              ["#faq", "FAQ"],
+            ].map(([href, label]) => (
+              <li key={href}>
+                <Link href={href} className="title-4 block rounded-lg px-3 py-2 text-text-muted hover:text-text">
+                  {label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </footer>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     </>
+  );
+}
+
+/** Logo: kotak biru berisi ikon + nama. */
+function Logo() {
+  return (
+    <Link href="/" className="-ml-1 flex items-center gap-2 rounded-lg px-1 py-1 text-text">
+      <span aria-hidden className="flex size-8 items-center justify-center rounded-lg bg-primary text-on-primary">
+        <Exam size={20} weight="fill" />
+      </span>
+      <span className="title-2 font-bold tracking-tight">SoalSKD</span>
+    </Link>
+  );
+}
+
+/** Tiga garis kilau dekoratif (aksen kuning) di pojok mockup dan banner. */
+function Kilau({ className = "" }: { className?: string }) {
+  return (
+    <svg aria-hidden viewBox="0 0 48 48" fill="none" className={className}>
+      <path d="M12 22 L18 6" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
+      <path d="M24 28 L42 16" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
+      <path d="M28 40 L44 38" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
+    </svg>
   );
 }
 
@@ -670,10 +848,13 @@ function PratinjauUjian({
   soal,
   data,
   beranotasi = false,
+  tanpaBingkai = false,
 }: {
   soal: Omit<SoalUjian, "id">;
   data: DataLanding;
   beranotasi?: boolean;
+  /** Tanpa border dan sudut sendiri, untuk ditaruh di dalam bingkai HP. */
+  tanpaBingkai?: boolean;
 }) {
   const nomor = nomorPratinjau(soal, data);
   const penanda = (n: number, className?: string) => (beranotasi ? <Penanda n={n} className={className} /> : null);
@@ -683,9 +864,9 @@ function PratinjauUjian({
   return (
     <figure
       aria-label={beranotasi ? "Layar ujian dengan nomor penunjuk 1 sampai 6" : "Contoh tampilan layar ujian"}
-      className="mx-auto w-full max-w-md lg:max-w-none"
+      className={tanpaBingkai ? "w-full" : "mx-auto w-full max-w-md lg:max-w-none"}
     >
-      <div aria-hidden className="overflow-hidden rounded-xl border border-border bg-surface">
+      <div aria-hidden className={tanpaBingkai ? "bg-surface" : "overflow-hidden rounded-xl border border-border bg-surface"}>
         <div className="flex h-14 items-center justify-between border-b border-border px-4">
           <span className="title-4 flex items-center gap-2">
             {penanda(1)}

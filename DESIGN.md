@@ -178,7 +178,7 @@ Asumsi stack: Next.js + Tailwind. Token dipetakan ke variabel CSS (`--color-prim
 - Hanya skala Tailwind, didefinisikan sebagai class bernama (`heading-5`, `title-3`, `body-5`, `body-6`, `caption-4`).
 - **Pengecualian dari default dashboard 14px:** teks soal dan pilihan jawaban memakai `body-5` (16px, line-height 26px) karena ini teks bacaan panjang di HP. UI lainnya memakai `body-6` (14px).
 - Angka memakai `tabular-nums` supaya timer dan skor tidak bergoyang.
-- **Landing (`/`)** mengikuti `house-style:landing-page-design`: judul section `heading-4`/`heading-3`, hero `heading-3` → `heading-2` dengan gradien teks (`.teks-hero`, hitam → #666 / putih → #9B9B9B; latar tetap datar), satu efek gerak utama: tagline yang menyala kata per kata.
+- **Landing (`/`)** gaya "promo" (dipilih pemilik dari mockup, 2026-11-07): hero `heading-3` → `heading-2` → `heading-1`, "ujian CAT" berwarna `primary` dengan garis coret `accent` di bawahnya, judul section `heading-4`/`heading-3`. Lihat juga Elevation.
 
 ## Layout
 
@@ -195,6 +195,8 @@ Asumsi stack: Next.js + Tailwind. Token dipetakan ke variabel CSS (`--color-prim
 ## Elevation & Depth
 
 Tanpa bayangan dekoratif. Kedalaman ditunjukkan dengan border dan perbedaan `surface` / `surface-muted`. Hanya bottom sheet dan dialog yang memakai overlay `rgba(0,0,0,0.4)`.
+
+**Pengecualian landing (`/`) saja:** latar hero boleh bercahaya biru lembut (`primary/7%` + blob blur), mockup HP miring 4° dengan bayangan biru, strip angka dan banner CTA berbayangan biru lembut, banner CTA bergradien `primary` → `primary-hover` (gelap: blue-800 → blue-950, teks putih). Aksen kuning `accent` (#FBBF24, `accent-soft` untuk badge) hanya untuk dekorasi landing: garis coret, kilau, badge, harga di banner. Layar aplikasi tetap datar.
 
 ## Shapes
 
