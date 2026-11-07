@@ -48,6 +48,36 @@ const judulSection = "heading-4 lg:heading-3 text-balance";
 
 const gabung = (xs: string[]) => (xs.length < 2 ? xs.join("") : `${xs.slice(0, -1).join(", ")}, dan ${xs.at(-1)}`);
 
+/** Penjelasan bahasa awam untuk tiap bagian SKD. Jumlah soal dan nilai tetap diambil dari config. */
+const BAGIAN_SKD: Record<string, { nama: string; menguji: string; contoh: string }> = {
+  TWK: {
+    nama: "Wawasan Kebangsaan",
+    menguji: "Pengetahuanmu tentang negara sendiri.",
+    contoh: "Pancasila, UUD 1945, sejarah, dan Bhinneka Tunggal Ika.",
+  },
+  TIU: {
+    nama: "Kemampuan Berpikir",
+    menguji: "Cara kamu bernalar dan berhitung.",
+    contoh: "Deret angka, soal cerita hitungan, logika, dan arti kata.",
+  },
+  TKP: {
+    nama: "Sikap dan Karakter",
+    menguji: "Sikapmu saat bekerja dan melayani orang.",
+    contoh: "Kamu memilih tindakan yang paling tepat dalam sebuah situasi kerja.",
+  },
+};
+
+/** Nomor bulat kecil penunjuk bagian pada pratinjau layar ujian. */
+function Penanda({ n, className = "" }: { n: number; className?: string }) {
+  return (
+    <span
+      className={`caption-4 flex size-6 shrink-0 items-center justify-center rounded-full bg-text font-mono text-surface tabular-nums ${className}`}
+    >
+      {n}
+    </span>
+  );
+}
+
 export function LayarLanding({ data, soalHero, soalContoh }: Props) {
   const komposisi = gabung(data.komposisi.map((s) => `${s.jumlah} ${s.kode}`));
   const ambangTeks = data.ambang && gabung(data.ambang.map((a) => `${a.kode} ${a.nilai}`));
@@ -117,7 +147,9 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
     },
     {
       t: "Perlu daftar akun?",
-      j: "Belum perlu. Jawaban, sesi ujian, dan riwayat skor disimpan di browser perangkatmu. Kalau data browser dihapus atau kamu ganti perangkat, riwayatnya ikut hilang.",
+      j: LOGIN_AKTIF
+        ? "Untuk paket gratis tidak perlu: jawaban dan riwayat skor disimpan di browser perangkatmu. Paket berbayar dibuka lewat akun, supaya bisa dikerjakan dari HP atau laptop mana pun dan riwayatmu ikut tersimpan."
+        : "Belum perlu. Jawaban, sesi ujian, dan riwayat skor disimpan di browser perangkatmu. Kalau data browser dihapus atau kamu ganti perangkat, riwayatnya ikut hilang.",
     },
     {
       t: "Bagaimana kalau tab tertutup di tengah ujian?",
@@ -154,8 +186,8 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
         </Link>
         <ul className="hidden items-center md:flex">
           {[
-            ["#keunggulan", "Keunggulan"],
-            ["#cara-kerja", "Cara kerja"],
+            ["#apa-itu-skd", "Apa itu SKD"],
+            ["#cara-baca", "Cara baca layar"],
             ["#contoh-soal", "Contoh soal"],
             ...(PENAWARAN ? [["#harga", "Harga"]] : []),
             ["#faq", "FAQ"],
@@ -163,7 +195,7 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
             <li key={href}>
               <a
                 href={href}
-                className="title-4 block rounded-lg px-3 py-2 text-text-muted transition-colors duration-300 ease-[var(--ease-out-house)] hover:bg-surface-muted hover:text-text"
+                className="title-4 block rounded-lg px-3 py-2 whitespace-nowrap text-text-muted transition-colors duration-300 ease-[var(--ease-out-house)] hover:bg-surface-muted hover:text-text"
               >
                 {label}
               </a>
@@ -187,12 +219,12 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
               Try out SKD CPNS · TWK, TIU, TKP
             </p>
             <h1 className="teks-hero heading-3 sm:heading-2 max-w-[680px] pb-2 text-balance">
-              Latihan SKD CPNS <br className="hidden sm:block" />
-              dengan suasana ujian CAT
+              Latihan tes CPNS di HP, <br className="hidden sm:block" />
+              rasanya seperti ujian sungguhan
             </h1>
             <p className="body-3 max-w-[680px] text-pretty text-text-muted">
-              Kerjakan TWK, TIU, dan TKP dengan timer berjalan, grid nomor soal, dan pembahasan untuk setiap pilihan
-              jawaban. Langsung dari HP, tanpa daftar akun.
+              SKD adalah tes pertama untuk jadi PNS, dikerjakan di komputer dengan waktu terbatas. Di sini kamu
+              mengerjakan soal latihan dengan cara yang sama, lalu langsung tahu nilaimu dan alasan setiap jawaban.
             </p>
             <div className="flex flex-col gap-3">
               <Link href="/try-out" className={`${tombolUtama} w-full sm:w-fit`}>
@@ -217,6 +249,56 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
             </div>
           </div>
           {soalHero && <PratinjauUjian soal={soalHero} data={data} />}
+        </section>
+
+        {/* Apa itu SKD: penjelasan untuk orang yang baru pertama kali dengar */}
+        <section id="apa-itu-skd" aria-labelledby="judul-skd" className="scroll-mt-20 py-16 lg:py-24">
+          <Muncul className={`${wadah} flex flex-col gap-8`}>
+            <div className="flex max-w-[680px] flex-col gap-3">
+              <h2 id="judul-skd" className={judulSection}>
+                Baru dengar SKD? Ini ringkasannya
+              </h2>
+              <p className="body-3 text-pretty text-text-muted">
+                SKD (Seleksi Kompetensi Dasar) berisi <span className="mono-number text-text">{data.soalPerPaket}</span>{" "}
+                soal pilihan ganda yang terbagi tiga bagian. Setiap bagian dinilai sendiri-sendiri.
+              </p>
+            </div>
+            <ul className="grid gap-4 md:grid-cols-3">
+              {data.komposisi.map((s) => {
+                const b = BAGIAN_SKD[s.kode];
+                return (
+                  <li key={s.kode} className="flex flex-col gap-3 rounded-xl border border-border bg-surface p-6">
+                    <span className="title-4 w-fit rounded-md bg-surface-muted px-2 py-1 font-mono text-primary">
+                      {s.kode}
+                    </span>
+                    <h3 className="title-3">{b?.nama ?? s.kode}</h3>
+                    {b && (
+                      <p className="body-6 text-pretty text-text-muted">
+                        <span className="text-text">{b.menguji}</span> {b.contoh}
+                      </p>
+                    )}
+                    <p className="caption-4 mt-auto border-t border-border pt-3 text-text-muted">
+                      <span className="mono-number text-text">{s.jumlah}</span> soal ·{" "}
+                      {s.kode === "TKP"
+                        ? "setiap pilihan punya nilai, tidak ada yang nol"
+                        : `benar ${data.nilaiBenar} poin, salah 0`}
+                    </p>
+                  </li>
+                );
+              })}
+            </ul>
+            <p className="body-6 flex max-w-[680px] items-start gap-3 rounded-xl bg-surface-muted p-4 text-pretty text-text">
+              <ChartBar size={20} aria-hidden className="mt-0.5 shrink-0 text-primary" />
+              <span>
+                Supaya lolos, nilai <strong className="font-semibold">ketiga bagian</strong> harus mencapai batas
+                minimal yang disebut <em>passing grade</em>. Nilai TIU yang tinggi tidak bisa menutup nilai TWK yang
+                kurang.{" "}
+                {ambangTeks
+                  ? `Batas yang kami pakai: ${ambangTeks}.`
+                  : "Angkanya ditetapkan pemerintah tiap tahun; cek aturan BKN dan KemenPAN-RB terbaru."}
+              </span>
+            </p>
+          </Muncul>
         </section>
 
         {/* Keunggulan */}
@@ -278,6 +360,27 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
           </Muncul>
         </section>
 
+        {/* Cara membaca layar ujian: pratinjau bernomor + keterangan */}
+        {soalHero && (
+          <section id="cara-baca" aria-labelledby="judul-cara-baca" className="scroll-mt-20 py-16 lg:py-24">
+            <Muncul className={`${wadah} flex flex-col gap-8`}>
+              <div className="flex max-w-[680px] flex-col gap-3">
+                <h2 id="judul-cara-baca" className={judulSection}>
+                  Cara membaca layar ujian
+                </h2>
+                <p className="body-3 text-pretty text-text-muted">
+                  Pertama kali melihatnya mungkin terasa ramai. Cocokkan nomor bulat di gambar dengan keterangan
+                  bernomor sama.
+                </p>
+              </div>
+              <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-16">
+                <PratinjauUjian soal={soalHero} data={data} beranotasi />
+                <CaraBaca soal={soalHero} data={data} />
+              </div>
+            </Muncul>
+          </section>
+        )}
+
         {/* Contoh soal + pratinjau hasil */}
         {soalContoh && (
           <section id="contoh-soal" aria-labelledby="judul-contoh" className="scroll-mt-20 py-16 lg:py-24">
@@ -295,6 +398,19 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
                 <div className="flex min-w-0 flex-col gap-4">
                   <h3 className="title-3">Setelah dikumpulkan, hasilmu terlihat seperti ini</h3>
                   <PratinjauHasil maks={data.komposisi.map((s) => ({ kode: s.kode, nilai: s.nilaiMaks }))} />
+                  <ul className="body-6 flex flex-col gap-2 text-pretty text-text-muted">
+                    <li>
+                      <span className="text-text">Kotak Total</span> adalah jumlah nilai ketiga bagian.
+                    </li>
+                    <li>
+                      <span className="text-text">Tiga kotak lainnya</span> adalah nilai tiap bagian. Angka kecil di
+                      belakang garis miring adalah nilai tertinggi yang mungkin.
+                    </li>
+                    <li>
+                      Di bawahnya ada pembahasan. Kamu bisa menyaring hanya soal yang salah, kosong, atau sempat
+                      ditandai ragu.
+                    </li>
+                  </ul>
                   <p className="caption-4 text-text-muted">
                     Angka di atas hanya contoh. Format dan passing grade mengikuti konfigurasi; cek aturan BKN dan
                     KemenPAN-RB terbaru.
@@ -433,8 +549,8 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
                 Coba satu paket penuh, lalu lihat di mana kamu perlu berlatih
               </h2>
               <p className="body-3 max-w-[680px] text-pretty text-text-muted">
-                Tanpa daftar akun. Jawabanmu tersimpan otomatis di perangkat, jadi kamu bisa berhenti dan melanjutkan
-                kapan saja.
+                Paket gratis bisa langsung dikerjakan tanpa daftar akun. Jawabanmu tersimpan otomatis, jadi kamu bisa
+                berhenti dan melanjutkan kapan saja.
               </p>
               <Link href="/try-out" className={`${tombolUtama} w-full sm:w-fit`}>
                 {CTA}
@@ -474,32 +590,118 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
   );
 }
 
-/** Pratinjau statis layar ujian untuk hero, memakai soal asli dari bank (tanpa kunci). */
-function PratinjauUjian({ soal, data }: { soal: Omit<SoalUjian, "id">; data: DataLanding }) {
+/** Nomor soal yang ditampilkan di pratinjau: soal ke-7 di bagian soal tersebut. */
+function nomorPratinjau(soal: Omit<SoalUjian, "id">, data: DataLanding) {
   const sebelum = data.komposisi.slice(0, data.komposisi.findIndex((s) => s.kode === soal.kategori));
-  const nomor = sebelum.reduce((n, s) => n + s.jumlah, 0) + 7;
+  return sebelum.reduce((n, s) => n + s.jumlah, 0) + 7;
+}
+
+/** Keterangan bernomor untuk pratinjau layar ujian (pasangan `PratinjauUjian beranotasi`). */
+function CaraBaca({ soal, data }: { soal: Omit<SoalUjian, "id">; data: DataLanding }) {
+  const nomor = nomorPratinjau(soal, data);
+  const nama = BAGIAN_SKD[soal.kategori]?.nama;
+  const warna = [
+    { kelas: "bg-primary", label: "sudah dijawab" },
+    { kelas: "bg-doubt", label: "ditandai ragu" },
+    { kelas: "border border-border bg-surface", label: "belum dijawab" },
+    { kelas: "bg-primary ring-2 ring-ring ring-offset-2 ring-offset-background", label: "soal yang sedang dibuka" },
+  ];
+  const butir = [
+    {
+      judul: "Bagian dan nomor soal",
+      isi: `${soal.kategori}${nama ? ` berarti bagian ${nama}` : ""}. ${nomor}/${data.soalPerPaket} artinya kamu sedang di soal ke-${nomor} dari ${data.soalPerPaket}.`,
+    },
+    {
+      judul: "Sisa waktu",
+      isi: `Jam:menit:detik, menghitung mundur. Warnanya berubah saat waktu tinggal ${AMBANG_TIMER.peringatan * 100} persen dan ${AMBANG_TIMER.kritis * 100} persen. Kalau habis, jawabanmu dikumpulkan otomatis.`,
+    },
+    {
+      judul: "Tanda tersimpan",
+      isi: "Setiap kali kamu memilih, jawaban langsung disimpan. Tidak ada tombol simpan. Kalau HP mati, buka lagi dan lanjutkan.",
+    },
+    {
+      judul: "Pilihan jawaban",
+      isi: "Ketuk salah satu huruf. Pilihanmu ditandai biru dan bercentang. Masih bisa diganti selama belum dikumpulkan.",
+    },
+    {
+      judul: "Peta nomor soal",
+      isi: "Ketuk nomor mana saja untuk lompat ke soal itu. Di HP, peta ini dibuka lewat tombol kotak di sebelah timer.",
+      warna: true,
+    },
+    {
+      judul: "Tombol Ragu",
+      isi: "Tandai soal yang belum yakin supaya mudah dicari lagi. Tanda ini tidak mengurangi nilai.",
+    },
+  ];
+  return (
+    <ol className="flex flex-col gap-6">
+      {butir.map((b, i) => (
+        <li key={b.judul} className="flex items-start gap-4">
+          <Penanda n={i + 1} className="mt-0.5" />
+          <div className="flex min-w-0 flex-col gap-1">
+            <h3 className="title-3">{b.judul}</h3>
+            <p className="body-6 text-pretty text-text-muted">{b.isi}</p>
+            {b.warna && (
+              <ul className="mt-2 grid gap-2 sm:grid-cols-2">
+                {warna.map((w) => (
+                  <li key={w.label} className="body-6 flex items-center gap-3 text-text">
+                    <span aria-hidden className={`size-5 shrink-0 rounded-md ${w.kelas}`} />
+                    {w.label}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+/**
+ * Pratinjau statis layar ujian, memakai soal asli dari bank (tanpa kunci).
+ * `beranotasi`: tampilkan nomor penunjuk 1–6 yang dijelaskan `CaraBaca`.
+ */
+function PratinjauUjian({
+  soal,
+  data,
+  beranotasi = false,
+}: {
+  soal: Omit<SoalUjian, "id">;
+  data: DataLanding;
+  beranotasi?: boolean;
+}) {
+  const nomor = nomorPratinjau(soal, data);
+  const penanda = (n: number, className?: string) => (beranotasi ? <Penanda n={n} className={className} /> : null);
   const terpilih = soal.opsi[3]?.huruf;
   // Status 10 sel grid di sekitar soal aktif: d = dijawab, r = ragu, b = belum.
   const sel = ["d", "d", "d", "r", "d", "d", "a", "b", "b", "b"];
   return (
-    <figure aria-label="Contoh tampilan layar ujian" className="mx-auto w-full max-w-md lg:max-w-none">
+    <figure
+      aria-label={beranotasi ? "Layar ujian dengan nomor penunjuk 1 sampai 6" : "Contoh tampilan layar ujian"}
+      className="mx-auto w-full max-w-md lg:max-w-none"
+    >
       <div aria-hidden className="overflow-hidden rounded-xl border border-border bg-surface">
         <div className="flex h-14 items-center justify-between border-b border-border px-4">
-          <span className="title-4">
+          <span className="title-4 flex items-center gap-2">
+            {penanda(1)}
             {soal.kategori} · <span className="mono-number">{nomor}</span>
             <span className="mono-number text-text-muted">/{data.soalPerPaket}</span>
           </span>
           <span className="flex items-center gap-1">
+            {penanda(2, "mr-1")}
             <Timer size={20} />
             <span className="mono-timer">01:12:48</span>
           </span>
         </div>
         <div className="flex flex-col gap-4 p-4">
           <p className="caption-4 flex items-center gap-1 text-text-muted">
+            {penanda(3, "mr-1")}
             <CheckCircle size={16} /> Tersimpan
           </p>
           <p className="body-5">{soal.pertanyaan}</p>
-          <ul className="flex flex-col gap-2">
+          <ul className="relative flex flex-col gap-2">
+            {penanda(4, "absolute -top-3 -left-3 z-10")}
             {soal.opsi.map(({ huruf, teks }) => {
               const aktif = huruf === terpilih;
               return (
@@ -523,7 +725,8 @@ function PratinjauUjian({ soal, data }: { soal: Omit<SoalUjian, "id">; data: Dat
             })}
           </ul>
           <div className="flex flex-col gap-2 border-t border-border pt-4">
-            <p className="caption-4 text-text-muted">
+            <p className="caption-4 flex flex-wrap items-center gap-x-1 text-text-muted">
+              {penanda(5, "mr-1")}
               Dijawab <span className="mono-number">{nomor - 1}</span> · Ragu <span className="mono-number">1</span> ·
               Belum <span className="mono-number">{data.soalPerPaket - nomor}</span>
             </p>
@@ -550,7 +753,8 @@ function PratinjauUjian({ soal, data }: { soal: Omit<SoalUjian, "id">; data: Dat
         </div>
         <div className="grid grid-cols-3 gap-2 border-t border-border p-3">
           <span className="title-4 flex h-10 items-center justify-center rounded-lg border border-border">Sebelumnya</span>
-          <span className="title-4 flex h-10 items-center justify-center gap-1 rounded-lg border border-border">
+          <span className="title-4 relative flex h-10 items-center justify-center gap-1 rounded-lg border border-border">
+            {penanda(6, "absolute -top-3 -right-2")}
             <Flag size={16} /> Ragu
           </span>
           <span className="title-4 flex h-10 items-center justify-center rounded-lg bg-primary text-on-primary">

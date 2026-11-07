@@ -8,7 +8,7 @@ Status per 2026-11-07. Area `web/`, `bank/`, `schema/`, dan `tools/` dipegang se
 |---|---|---|
 | Layar ujian | Topbar + timer (normal/peringatan/kritis), pilihan A–E, action bar bawah, grid nomor berstatus (sheet di HP, panel di desktop), simpan otomatis, konfirmasi kumpulkan, pintasan keyboard | `/ujian/<paket>` |
 | Halaman hasil | Skor per subtes dihitung di server, pembahasan per soal (alasan per opsi, inti, konsep, tips, rujukan), filter di URL | `/ujian/<paket>/hasil` |
-| Landing | Hero + pratinjau ujian, keunggulan, cara kerja, contoh soal interaktif, FAQ; angka dari `bank/` dan config | `/` |
+| Landing | Hero + pratinjau ujian, penjelasan SKD untuk orang awam, cara membaca layar ujian (bernomor), keunggulan, cara kerja, contoh soal interaktif, FAQ; angka dari `bank/` dan config | `/` |
 | Beranda | Kartu lanjutkan ujian, daftar paket dari `bank/`, aksi per state, riwayat skor | `/try-out` |
 | Data | Bank skema 1 dan `config/skd.json` dibaca langsung; Markdown GFM dirender | `web/src/lib/` |
 | Akun & penjualan | Login email+sandi dan Google, /aktivasi kode, gerbang p02–p04 di server, sinkron jawaban/riwayat ke akun, Cloud Functions tukar kode + webhook Mayar (41 tes emulator), rules Firestore | `/masuk`, `/daftar`, `/aktivasi`, `functions/`, `firestore.rules` |

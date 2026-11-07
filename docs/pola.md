@@ -6,7 +6,7 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 
 ## Layout
 
-- `web/src/components/landing/layar-landing.tsx` · landing `/`: nav melayang, hero + pratinjau layar ujian, keunggulan, tagline, cara kerja, contoh soal + pratinjau hasil, kartu harga (tombol beli `TAUTAN_BELI`, nonaktif bila null; tombol coba gratis `PAKET_GRATIS`) dan testimoni (hanya jika diisi di `web/src/config/landing.ts`), FAQ + JSON-LD, CTA penutup · angka dari `bank/` dan `config/skd.json`
+- `web/src/components/landing/layar-landing.tsx` · landing `/`: nav melayang, hero + pratinjau layar ujian, "Apa itu SKD" (TWK/TIU/TKP bahasa awam dari `BAGIAN_SKD` + catatan passing grade), keunggulan, tagline, cara kerja, "Cara membaca layar ujian" (`PratinjauUjian beranotasi` bernomor 1–6 + `CaraBaca` keterangan & legenda warna grid), contoh soal + pratinjau hasil (dengan cara membaca nilai), kartu harga (tombol beli `TAUTAN_BELI`, nonaktif bila null; tombol coba gratis `PAKET_GRATIS`) dan testimoni (hanya jika diisi di `web/src/config/landing.ts`), FAQ + JSON-LD, CTA penutup · angka dari `bank/` dan `config/skd.json`
 - `web/src/components/beranda/layar-beranda.tsx` · beranda: kartu lanjutkan ujian (sesi berjalan), daftar paket dengan aksi sesuai state (Mulai / Lanjutkan / Lihat hasil + Ulangi), riwayat skor · props `paket` dari `daftarPaket()` + `durasiPaket()`
 - `web/src/components/akun/ui.tsx` `LayarAkun` · kerangka layar akun satu kolom (max-w-md): tautan kembali, judul, isi · dipakai /masuk, /daftar, /aktivasi, gerbang ujian
 - `web/src/components/ujian/layar-ujian.tsx` · layar ujian: topbar sticky (subtes, nomor, timer), soal, action bar bawah, grid (sheet di HP, panel kanan ≥1024px) · props `paket`, `soal`, `durasiMenit`, `peringatanMenit`, `kritisMenit`
