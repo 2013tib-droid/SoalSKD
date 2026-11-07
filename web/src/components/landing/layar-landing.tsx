@@ -145,7 +145,7 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
     <>
       <a
         href="#isi"
-        className="title-4 sr-only z-50 rounded-lg bg-primary px-4 py-3 text-on-primary focus:not-sr-only focus:fixed focus:top-4 focus:left-4"
+        className="title-4 sr-only z-50 rounded-lg bg-primary px-4 py-3 text-on-primary focus-visible:not-sr-only focus-visible:fixed focus-visible:top-3 focus-visible:left-1/2 focus-visible:-translate-x-1/2"
       >
         Langsung ke isi
       </a>
