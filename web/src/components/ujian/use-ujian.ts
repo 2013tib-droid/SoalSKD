@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { SoalUjian } from "@/lib/soal";
+import { EVENT_SINKRON, hapusRekamanAkun, kirimRekaman } from "@/lib/sinkron";
 
 export type StatusSoal = "belum" | "dijawab" | "ragu";
 export type StatusSimpan = "tersimpan" | "gagal" | "memuat";
@@ -30,6 +31,7 @@ export function hapusRekaman(paket: string) {
   try {
     localStorage.removeItem(kunciPenyimpanan(paket));
   } catch {}
+  hapusRekamanAkun(paket);
 }
 
 /**
@@ -46,22 +48,33 @@ export function useUjian(paket: string, soal: SoalUjian[], durasiMenit: number) 
   const [disimpanPada, setDisimpanPada] = useState<number | null>(null);
   const [sekarang, setSekarang] = useState(() => Date.now());
   const siap = useRef(false);
+  /** Pengguna sudah mengubah sesi ini di perangkat ini sejak dimuat. */
+  const diubah = useRef(false);
 
   // Pulihkan sesi yang tersimpan, atau mulai sesi baru.
   useEffect(() => {
-    const r = bacaRekaman(paket);
-    if (r) {
+    const pulihkan = (r: Rekaman) => {
       setJawaban(r.jawaban);
       setRagu(r.ragu);
       setIndeks(Math.min(r.indeks, soal.length - 1));
       setBerakhirPada(r.berakhirPada);
       setSelesai(r.selesai);
       setDisimpanPada(r.disimpanPada);
-    } else {
-      setBerakhirPada(Date.now() + durasiMenit * 60_000);
-    }
+    };
+    const r = bacaRekaman(paket);
+    if (r) pulihkan(r);
+    else setBerakhirPada(Date.now() + durasiMenit * 60_000);
     setSekarang(Date.now());
     siap.current = true;
+    diubah.current = false;
+
+    // Sesi dari akun (perangkat lain) tiba setelah layar terbuka: pakai selama belum ada perubahan di sini.
+    const dariAkun = () => {
+      const baru = bacaRekaman(paket);
+      if (baru && !diubah.current) pulihkan(baru);
+    };
+    window.addEventListener(EVENT_SINKRON, dariAkun);
+    return () => window.removeEventListener(EVENT_SINKRON, dariAkun);
   }, [paket, soal.length, durasiMenit]);
 
   // Simpan otomatis.
@@ -76,6 +89,8 @@ export function useUjian(paket: string, soal: SoalUjian[], durasiMenit: number) 
     } catch {
       setStatusSimpan("gagal");
     }
+    // Hanya perubahan dari pengguna yang dikirim ke akun, bukan sesi yang baru dibuka/dipulihkan.
+    if (diubah.current) kirimRekaman(paket, r);
   }, [paket, jawaban, ragu, indeks, berakhirPada, selesai]);
 
   // Detak timer.
@@ -92,7 +107,10 @@ export function useUjian(paket: string, soal: SoalUjian[], durasiMenit: number) 
 
   // Waktu habis: kumpulkan otomatis.
   useEffect(() => {
-    if (berakhirPada !== null && sisaDetik === 0 && !selesai) setSelesai(true);
+    if (berakhirPada !== null && sisaDetik === 0 && !selesai) {
+      diubah.current = true;
+      setSelesai(true);
+    }
   }, [sisaDetik, berakhirPada, selesai]);
 
   const statusDari = useCallback(
@@ -127,15 +145,21 @@ export function useUjian(paket: string, soal: SoalUjian[], durasiMenit: number) 
     statusDari,
     pilih: (huruf: string) => {
       if (selesai) return;
+      diubah.current = true;
       setJawaban((j) => ({ ...j, [aktif.id]: huruf }));
     },
     toggleRagu: () => {
       if (selesai) return;
+      diubah.current = true;
       setRagu((r) => ({ ...r, [aktif.id]: !r[aktif.id] }));
     },
     keSoal: (i: number) => setIndeks(Math.max(0, Math.min(soal.length - 1, i))),
-    kumpulkan: () => setSelesai(true),
+    kumpulkan: () => {
+      diubah.current = true;
+      setSelesai(true);
+    },
     ulangi: () => {
+      diubah.current = true;
       setJawaban({});
       setRagu({});
       setIndeks(0);

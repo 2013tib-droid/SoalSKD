@@ -1,3 +1,5 @@
+import { PAKET_TERBUKA } from "@/config/akses";
+
 /**
  * Isi landing page yang belum punya data asli di repo.
  * Bagian yang kosong tidak ditampilkan. Jangan isi dengan angka atau kutipan karangan.
@@ -40,4 +42,4 @@ export const PENAWARAN: {
 export const TAUTAN_BELI: string | null = null;
 
 /** Paket yang boleh dicoba gratis dari landing. */
-export const PAKET_GRATIS = "p01";
+export const PAKET_GRATIS = PAKET_TERBUKA[0];

@@ -1,0 +1,30 @@
+# Tes backend (webhook Mayar, tukar kode, security rules) di Firebase Emulator.
+# Tanpa kredensial dan tanpa menyentuh proyek sungguhan (project demo-soalskd).
+name: Uji backend
+
+on:
+  pull_request:
+    paths: [functions/**, firestore.rules, firebase.json, .github/workflows/uji-backend.yml]
+  push:
+    branches: [claude/skd-stan-resource-analysis-c10e5n]
+    paths: [functions/**, firestore.rules, firebase.json]
+  workflow_dispatch:
+
+jobs:
+  uji:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: functions/package-lock.json
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - working-directory: functions
+        run: |
+          npm ci
+          npm run uji

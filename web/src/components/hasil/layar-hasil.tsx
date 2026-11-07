@@ -10,6 +10,9 @@ import { hitungHasil, type HasilUjian, type ItemHasil } from "@/lib/nilai";
 import type { SoalPembahasan } from "@/lib/soal";
 import { bacaRekaman, hapusRekaman, type Rekaman } from "@/components/ujian/use-ujian";
 import { catatRiwayat } from "@/lib/riwayat";
+import { EVENT_SINKRON } from "@/lib/sinkron";
+import { paketTerbuka } from "@/config/akses";
+import { useAkun } from "@/components/akun/auth";
 import { ItemPembahasan } from "./item-pembahasan";
 import { KartuSkor } from "./kartu-skor";
 
@@ -31,6 +34,7 @@ type Keadaan =
   | { jenis: "belum-ada" }
   | { jenis: "belum-selesai" }
   | { jenis: "gagal" }
+  | { jenis: "terkunci"; alasan: "perlu-masuk" | "belum-punya" | "belum-dibuka" }
   | { jenis: "siap"; hasil: HasilUjian; rekaman: Rekaman };
 
 /** Hanya diisi di build statis (GitHub Pages dev): soal lengkap ikut terkirim dan skor dihitung di browser. */
@@ -42,15 +46,30 @@ export function LayarHasil({ paket, dataStatik }: { paket: string; dataStatik?: 
   const params = useSearchParams();
   const [keadaan, setKeadaan] = useState<Keadaan>({ jenis: "memuat" });
 
+  const terbuka = paketTerbuka(paket);
+  // Paket berbayar butuh token login; paket gratis tidak menunggu Firebase.
+  const akun = useAkun({ wajib: !terbuka });
+  const { status: statusAkun, ambilToken } = akun;
+  const uid = akun.pengguna?.uid;
+
   const muat = useCallback(async () => {
     const rekaman = bacaRekaman(paket);
-    if (!rekaman) return setKeadaan({ jenis: "belum-ada" });
+    if (!rekaman) return setKeadaan(statusAkun === "memuat" ? { jenis: "memuat" } : { jenis: "belum-ada" });
     if (!rekaman.selesai) return setKeadaan({ jenis: "belum-selesai" });
+    if (!dataStatik && !terbuka && statusAkun === "memuat") return setKeadaan({ jenis: "memuat" });
     setKeadaan({ jenis: "memuat" });
     try {
-      const hasil = dataStatik
-        ? hitungHasil(dataStatik.soal, dataStatik.judul, dataStatik.format, rekaman.jawaban)
-        : await nilaiUjian(paket, rekaman.jawaban);
+      let hasil: HasilUjian | null;
+      if (dataStatik) {
+        hasil = hitungHasil(dataStatik.soal, dataStatik.judul, dataStatik.format, rekaman.jawaban);
+      } else {
+        const token = terbuka ? null : await ambilToken();
+        const r = await nilaiUjian(paket, rekaman.jawaban, token);
+        if (r.status === "perlu-masuk" || r.status === "belum-punya" || r.status === "belum-dibuka") {
+          return setKeadaan({ jenis: "terkunci", alasan: r.status });
+        }
+        hasil = r.status === "ok" ? r.hasil : null;
+      }
       if (hasil) {
         catatRiwayat({
           paket,
@@ -66,7 +85,15 @@ export function LayarHasil({ paket, dataStatik }: { paket: string; dataStatik?: 
     } catch {
       setKeadaan({ jenis: "gagal" });
     }
-  }, [paket, dataStatik]);
+    // uid: muat ulang setelah login/ganti akun.
+  }, [paket, dataStatik, terbuka, statusAkun, ambilToken, uid]);
+
+  // Rekaman dari akun (perangkat lain) tiba setelah halaman dibuka.
+  useEffect(() => {
+    const ulang = () => void muat();
+    window.addEventListener(EVENT_SINKRON, ulang);
+    return () => window.removeEventListener(EVENT_SINKRON, ulang);
+  }, [muat]);
 
   useEffect(() => {
     muat();
@@ -122,6 +149,26 @@ export function LayarHasil({ paket, dataStatik }: { paket: string; dataStatik?: 
       </header>
 
       {keadaan.jenis === "memuat" && <Kerangka />}
+
+      {keadaan.jenis === "terkunci" && (
+        <section className="flex flex-col items-start gap-3 rounded-xl border border-border bg-surface p-4">
+          <p className="body-6">
+            {keadaan.alasan === "perlu-masuk"
+              ? "Masuk dulu untuk melihat hasil paket ini."
+              : keadaan.alasan === "belum-punya"
+                ? "Akun ini belum punya akses ke paket ini."
+                : "Paket ini belum dibuka."}
+          </p>
+          {keadaan.alasan !== "belum-dibuka" && (
+            <Link
+              href={`/${keadaan.alasan === "perlu-masuk" ? "masuk" : "aktivasi"}?lanjut=${encodeURIComponent(`/ujian/${paket}/hasil`)}`}
+              className={tombolUtama}
+            >
+              {keadaan.alasan === "perlu-masuk" ? "Masuk" : "Masukkan kode aktivasi"}
+            </Link>
+          )}
+        </section>
+      )}
 
       {keadaan.jenis === "gagal" && (
         <section className="flex flex-col items-start gap-3 rounded-xl border border-border bg-surface p-4">

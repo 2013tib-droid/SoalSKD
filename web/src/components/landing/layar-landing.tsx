@@ -14,6 +14,8 @@ import Link from "next/link";
 import { AMBANG_TIMER, DURASI_LATIHAN_MENIT_PER_SOAL } from "@/config/skd";
 import { PAKET_GRATIS, PENAWARAN, TAUTAN_BELI, TESTIMONI } from "@/config/landing";
 import type { SoalPembahasan, SoalUjian } from "@/lib/soal";
+import { MenuAkun } from "@/components/akun/menu-akun";
+import { LOGIN_AKTIF } from "@/lib/firebase/klien";
 import { ContohSoal, PratinjauHasil } from "./contoh-soal";
 import { Muncul, TaglineBertahap } from "./gerak";
 
@@ -168,6 +170,7 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
             </li>
           ))}
         </ul>
+        <MenuAkun />
         <Link
           href="/try-out"
           className="title-4 flex h-10 items-center rounded-lg bg-primary px-3 whitespace-nowrap text-on-primary transition-[background-color,transform] duration-300 ease-[var(--ease-out-house)] hover:bg-primary-hover active:scale-[0.98]"
@@ -343,6 +346,14 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
                       <Link href={`/ujian/${PAKET_GRATIS}`} className={`${tombolKedua} w-full`}>
                         <Gift size={20} aria-hidden className="text-primary" />
                         Coba {data.soalGratis} soal gratis
+                      </Link>
+                    )}
+                    {LOGIN_AKTIF && (
+                      <Link
+                        href="/aktivasi"
+                        className="title-4 flex h-11 items-center justify-center rounded-lg text-text-muted hover:text-text"
+                      >
+                        Sudah bayar? Masukkan kode aktivasi
                       </Link>
                     )}
                   </div>

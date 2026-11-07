@@ -4,6 +4,7 @@ import { BUILD_STATIK } from "@/config/build";
 import { LayarBeranda } from "@/components/beranda/layar-beranda";
 import { ambilFormatSkd, durasiPaket } from "@/lib/format-skd";
 import { daftarPaket } from "@/lib/soal";
+import { paketTerbuka } from "@/config/akses";
 
 export const metadata: Metadata = { title: "Pilih paket · SoalSKD" };
 
@@ -12,5 +13,5 @@ export default async function Beranda() {
   // Build statis: dibaca sekali saat build.
   if (!BUILD_STATIK) await connection();
   const [paket, format] = await Promise.all([daftarPaket(), ambilFormatSkd()]);
-  return <LayarBeranda paket={paket.map((p) => ({ ...p, durasiMenit: durasiPaket(format, p.jumlahSoal) }))} />;
+  return <LayarBeranda paket={paket.map((p) => ({ ...p, durasiMenit: durasiPaket(format, p.jumlahSoal), terbuka: paketTerbuka(p.id) }))} />;
 }

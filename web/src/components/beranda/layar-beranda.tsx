@@ -1,11 +1,14 @@
 "use client";
 
-import { ArrowCounterClockwise, ArrowLeft, ArrowRight, ClockCountdown, Info, Play } from "@phosphor-icons/react";
+import { ArrowCounterClockwise, ArrowLeft, ArrowRight, ClockCountdown, Info, LockKey, Play } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { bacaRekaman, hapusRekaman } from "@/components/ujian/use-ujian";
 import { bacaRiwayat, type EntriRiwayat } from "@/lib/riwayat";
+import { EVENT_SINKRON } from "@/lib/sinkron";
+import { useAkun } from "@/components/akun/auth";
+import { MenuAkun } from "@/components/akun/menu-akun";
 
 export type PaketBeranda = {
   id: string;
@@ -14,6 +17,8 @@ export type PaketBeranda = {
   jumlahSoal: number;
   durasiMenit: number;
   perSubtes: { subtes: string; jumlah: number }[];
+  /** Boleh dikerjakan tanpa login (paket gratis, atau build statis). */
+  terbuka: boolean;
 };
 
 type Sesi =
@@ -62,13 +67,26 @@ export function LayarBeranda({ paket }: { paket: PaketBeranda[] }) {
   const [sesi, setSesi] = useState<Record<string, Sesi>>({});
   const [riwayat, setRiwayat] = useState<EntriRiwayat[]>([]);
 
+  const akun = useAkun();
+
   useEffect(() => {
-    const t = Date.now();
-    setSekarang(t);
-    setSesi(Object.fromEntries(paket.map((p) => [p.id, sesiDari(p, t)])));
-    setRiwayat(bacaRiwayat());
-    setDimuat(true);
+    const baca = () => {
+      const t = Date.now();
+      setSekarang(t);
+      setSesi(Object.fromEntries(paket.map((p) => [p.id, sesiDari(p, t)])));
+      setRiwayat(bacaRiwayat());
+      setDimuat(true);
+    };
+    baca();
+    // Data dari akun (perangkat lain) baru tiba, atau baru keluar.
+    window.addEventListener(EVENT_SINKRON, baca);
+    return () => window.removeEventListener(EVENT_SINKRON, baca);
   }, [paket]);
+
+  const aksesDimuat = akun.status !== "memuat" && !(akun.status === "masuk" && akun.paket === null);
+  const terkunci = (p: PaketBeranda) => !p.terbuka && !(akun.paket ?? []).includes(p.id);
+  const tujuanBuka =
+    akun.status === "mati" ? "/#harga" : akun.status === "masuk" ? "/aktivasi?lanjut=/try-out" : "/masuk?lanjut=/try-out";
 
   const berjalan = paket.find((p) => sesi[p.id]?.jenis === "berjalan");
   const sesiBerjalan = berjalan ? (sesi[berjalan.id] as Extract<Sesi, { jenis: "berjalan" }>) : null;
@@ -81,13 +99,16 @@ export function LayarBeranda({ paket }: { paket: PaketBeranda[] }) {
   return (
     <main className="mx-auto flex min-h-dvh w-full max-w-3xl flex-col gap-8 px-4 pt-6 pb-10">
       <header className="flex flex-col gap-1">
-        <Link
-          href="/"
-          className="caption-4 -ml-2 flex h-11 items-center gap-1 self-start rounded-lg px-2 text-text-muted hover:bg-surface-muted"
-        >
-          <ArrowLeft size={16} aria-hidden />
-          Halaman utama
-        </Link>
+        <div className="flex items-center justify-between gap-2">
+          <Link
+            href="/"
+            className="caption-4 -ml-2 flex h-11 items-center gap-1 rounded-lg px-2 text-text-muted hover:bg-surface-muted"
+          >
+            <ArrowLeft size={16} aria-hidden />
+            Halaman utama
+          </Link>
+          <MenuAkun />
+        </div>
         <h1 className="heading-5">Try out SKD CPNS</h1>
         <p className="body-6 text-text-muted">Latihan TWK, TIU, dan TKP dengan timer dan pembahasan lengkap.</p>
       </header>
@@ -150,6 +171,12 @@ export function LayarBeranda({ paket }: { paket: PaketBeranda[] }) {
                   <div className="flex flex-col gap-2">
                     <div className="flex items-center gap-2">
                       <h3 className="title-3">{p.judul}</h3>
+                      {!p.terbuka && aksesDimuat && terkunci(p) && (
+                        <span className="caption-4 flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-text-muted">
+                          <LockKey size={12} aria-hidden />
+                          Berbayar
+                        </span>
+                      )}
                       {p.status !== "final" && (
                         <span className="caption-4 rounded-full border border-border px-2 py-0.5 text-text-muted">
                           {p.status === "review" ? "Review" : "Draf"}
@@ -171,8 +198,17 @@ export function LayarBeranda({ paket }: { paket: PaketBeranda[] }) {
                       </p>
                     )}
                   </div>
-                  {!dimuat ? (
+                  {!dimuat || (!p.terbuka && !aksesDimuat) ? (
                     <div className="h-12 animate-pulse rounded-lg bg-surface-muted" aria-hidden />
+                  ) : terkunci(p) ? (
+                    <Link href={tujuanBuka} className={tombolSekunder}>
+                      <LockKey size={20} aria-hidden />
+                      {akun.status === "mati"
+                        ? "Lihat penawaran"
+                        : akun.status === "masuk"
+                          ? "Masukkan kode aktivasi"
+                          : "Masuk untuk membuka"}
+                    </Link>
                   ) : s?.jenis === "selesai" ? (
                     <div className="grid grid-cols-2 gap-3">
                       <Link href={`/ujian/${p.id}/hasil`} className={tombolSekunder}>
@@ -234,7 +270,9 @@ export function LayarBeranda({ paket }: { paket: PaketBeranda[] }) {
             ))}
           </ol>
         )}
-        <p className="caption-4 text-text-muted">Riwayat tersimpan di perangkat ini.</p>
+        <p className="caption-4 text-text-muted">
+          {akun.status === "masuk" ? "Riwayat tersimpan di akunmu." : "Riwayat tersimpan di perangkat ini."}
+        </p>
       </section>
 
       <p className="caption-4 flex items-start gap-2 text-text-muted">
