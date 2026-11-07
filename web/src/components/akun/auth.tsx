@@ -6,7 +6,7 @@ import { ambilFirebase, LOGIN_AKTIF } from "@/lib/firebase/klien";
 import { aturUidSinkron, hapusDataLokal, kirimAntrean, sinkronkanAkun } from "@/lib/sinkron";
 
 /**
- * mati    : build statis / env Firebase kosong. Tombol Masuk tidak tampil, paket berbayar tertutup.
+ * mati    : build statis / env Firebase kosong. Layar masuk tetap sama seperti produksi (aksi gagal dengan pesan), paket berbayar tertutup.
  * memuat  : status login belum diketahui.
  * keluar  : belum login.
  * masuk   : login; `paket` = paket yang dimiliki (null selama dibaca).
@@ -272,6 +272,8 @@ export function pesanGalat(e: unknown): string {
       return "Tidak ada koneksi. Periksa internet lalu coba lagi.";
     case "auth/account-exists-with-different-credential":
       return "Email ini terdaftar dengan kata sandi. Masuk dengan email dan kata sandi.";
+    case "akun/mati":
+      return "Login sedang tidak bisa dipakai. Coba lagi nanti; paket gratis tetap bisa dikerjakan tanpa akun.";
     case "auth/popup-blocked":
       return "Pop-up diblokir browser. Izinkan pop-up lalu coba lagi.";
     case "auth/unauthorized-domain":

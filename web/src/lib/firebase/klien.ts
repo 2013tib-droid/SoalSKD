@@ -24,7 +24,7 @@ export type LayananFirebase = { app: FirebaseApp; auth: Auth; db: Firestore; fun
 let janji: Promise<LayananFirebase> | null = null;
 
 export function ambilFirebase(): Promise<LayananFirebase> {
-  if (!LOGIN_AKTIF) return Promise.reject(new Error("Login belum dikonfigurasi."));
+  if (!LOGIN_AKTIF) return Promise.reject(Object.assign(new Error("Login belum dikonfigurasi."), { code: "akun/mati" }));
   janji ??= (async () => {
     const [{ initializeApp }, { getAuth }, { getFirestore }, { getFunctions }] = await Promise.all([
       import("firebase/app"),

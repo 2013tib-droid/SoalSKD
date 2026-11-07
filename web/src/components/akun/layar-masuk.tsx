@@ -4,13 +4,12 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { dibatalkan, pesanGalat, useAkun } from "./auth";
+import { KerangkaMasuk } from "./kerangka-masuk";
 import {
   Kartu,
   Kerangka,
   Kolom,
   KolomSandi,
-  LayarAkun,
-  LoginMati,
   Pemisah,
   Pesan,
   TombolGoogle,
@@ -39,10 +38,11 @@ export function LayarMasuk({ mode }: { mode: Mode }) {
   const [selesai, setSelesai] = useState(false);
 
   const daftar = mode === "daftar";
-  const judul = daftar ? "Daftar akun" : "Masuk";
+  const judul = daftar ? "Buat akun SoalSKD" : "Selamat datang lagi";
   const keterangan = daftar
-    ? "Akun dipakai untuk membuka paket yang kamu beli dan menyimpan jawaban di semua perangkat."
-    : "Masuk untuk membuka paket yang kamu beli dan melanjutkan ujian di perangkat lain.";
+    ? "Gratis. Akun menyimpan paket yang kamu beli dan jawabanmu di semua perangkat."
+    : "Masuk untuk membuka paket yang kamu beli dan melanjutkan ujian di perangkat mana pun.";
+  const kerangka = { mode, judul, keterangan, qLanjut };
 
   const berhasil = () => {
     setSelesai(true);
@@ -91,27 +91,20 @@ export function LayarMasuk({ mode }: { mode: Mode }) {
     setProses(null);
   };
 
-  if (akun.status === "mati")
-    return (
-      <LayarAkun judul={judul}>
-        <LoginMati />
-      </LayarAkun>
-    );
-
   // Saat login baru saja berhasil, status sudah "masuk" sebelum pindah halaman: jangan kedipkan kartu "sudah masuk".
   if (akun.status === "memuat" || selesai || (akun.status === "masuk" && proses !== null))
     return (
-      <LayarAkun judul={judul} keterangan={keterangan}>
+      <KerangkaMasuk {...kerangka}>
         <p className="sr-only" role="status">
           Memuat…
         </p>
         <Kerangka tinggi="h-80" />
-      </LayarAkun>
+      </KerangkaMasuk>
     );
 
   if (akun.status === "masuk")
     return (
-      <LayarAkun judul="Kamu sudah masuk">
+      <KerangkaMasuk {...kerangka} judul="Kamu sudah masuk" keterangan={undefined} sakelar={false}>
         <Kartu>
           <p className="body-6">
             Masuk sebagai <span className="title-4 break-all">{akun.pengguna?.email}</span>.
@@ -123,7 +116,7 @@ export function LayarMasuk({ mode }: { mode: Mode }) {
             Keluar
           </button>
         </Kartu>
-      </LayarAkun>
+      </KerangkaMasuk>
     );
 
   const sibuk = proses !== null;
@@ -131,7 +124,7 @@ export function LayarMasuk({ mode }: { mode: Mode }) {
   const tampil = kabar ?? galatGoogle;
 
   return (
-    <LayarAkun judul={judul} keterangan={keterangan}>
+    <KerangkaMasuk {...kerangka}>
       <Kartu>
         <TombolGoogle onClick={google} memuat={proses === "google"} />
         <Pemisah />
@@ -164,12 +157,6 @@ export function LayarMasuk({ mode }: { mode: Mode }) {
           </button>
         )}
       </Kartu>
-      <p className="body-6 text-center text-text-muted">
-        {daftar ? "Sudah punya akun?" : "Belum punya akun?"}{" "}
-        <Link href={`/${daftar ? "masuk" : "daftar"}${qLanjut}`} className={tautanTeks}>
-          {daftar ? "Masuk" : "Daftar"}
-        </Link>
-      </p>
-    </LayarAkun>
+    </KerangkaMasuk>
   );
 }
