@@ -38,7 +38,8 @@ Paket yang tersedia: `p01` (20 dari 110 soal, status draf).
 ## Langkah berikutnya (pilih salah satu)
 
 1. **Backend + login.** Simpan jawaban dan riwayat di server, tutup celah kunci jawaban.
-   Perlu keputusan pemilik dulu: penyedia (misalnya Supabase atau database sendiri) dan cara login.
+   Sudah diputuskan: Firebase (Auth email+sandi + Google, Firestore Jakarta, Cloud Functions) dan
+   penjualan lewat Mayar + kode aktivasi, meniru Game-Edukasi-Anak. Prompt siap tempel: `docs/prompt-backend-login.md`.
 2. **Lengkapi `p01` jadi 110 soal.** Dikerjakan per subtes (misalnya 24 soal TWK dulu), soal orisinal,
    `python3 tools/validasi.py bank/` wajib 0 galat sebelum setiap commit. Butuh banyak token.
 3. **Pemeriksaan akhir tampilan.** `antislop` / `impeccable` sekali pada file UI yang sudah jadi
@@ -49,6 +50,6 @@ sakelar tema terang/gelap di Profil, tampilan soal bergambar.
 
 ## Keputusan yang masih terbuka
 
-- Penyedia backend dan cara login.
+- Hosting dengan server untuk Next.js: Firebase App Hosting atau Vercel.
 - Urutan kerja: backend dulu atau isi bank soal dulu.
 - Sumber resmi untuk durasi dan ambang batas SKD tahun berjalan.
