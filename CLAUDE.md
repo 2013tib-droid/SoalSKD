@@ -49,3 +49,4 @@ Aplikasi try out SKD CPNS (TWK, TIU, TKP). Mayoritas pengguna membuka di HP.
 2026-11-06 · Beranda tanpa bottom nav dulu; nav 4 item dari DESIGN.md ditambahkan saat ada halaman Riwayat dan Profil terpisah · hindari tautan ke halaman yang belum ada
 2026-11-06 · Versi pertama ebook 330 soal (p02–p04, 110 soal per paket), nama tetap "SoalSKD", p01 jadi standar gaya · pemilik menyerahkan keputusan ("gas aja"); waktu ke ujian ±1 bulan
 2026-11-06 · Dev sementara di GitHub Pages (`/SoalSKD/development/<nama>/`) lewat build statis `STATIK=1`: kunci ikut ke browser, noindex, beberapa hari saja; situs pembeli nanti di domain sendiri dengan build server · pemilik menerima risiko repo publik untuk tes cepat
+2026-11-07 · Landing di `/`, daftar paket pindah ke `/try-out`; testimoni dan harga disembunyikan sampai ada data asli di `web/src/config/landing.ts`; ranking tidak diklaim sebelum ada backend · tanpa klaim palsu

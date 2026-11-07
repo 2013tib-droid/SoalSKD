@@ -108,7 +108,7 @@ export function LayarHasil({ paket, dataStatik }: { paket: string; dataStatik?: 
     <main className="mx-auto flex min-h-dvh w-full max-w-3xl flex-col gap-6 px-4 pt-6 pb-10">
       <header className="flex flex-col gap-1">
         <Link
-          href="/"
+          href="/try-out"
           className="caption-4 -ml-2 flex h-11 items-center gap-1 self-start rounded-lg px-2 text-text-muted hover:bg-surface-muted"
         >
           <ArrowLeft size={16} aria-hidden />

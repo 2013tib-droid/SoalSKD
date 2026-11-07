@@ -178,6 +178,7 @@ Asumsi stack: Next.js + Tailwind. Token dipetakan ke variabel CSS (`--color-prim
 - Hanya skala Tailwind, didefinisikan sebagai class bernama (`heading-5`, `title-3`, `body-5`, `body-6`, `caption-4`).
 - **Pengecualian dari default dashboard 14px:** teks soal dan pilihan jawaban memakai `body-5` (16px, line-height 26px) karena ini teks bacaan panjang di HP. UI lainnya memakai `body-6` (14px).
 - Angka memakai `tabular-nums` supaya timer dan skor tidak bergoyang.
+- **Landing (`/`)** mengikuti `house-style:landing-page-design`: judul section `heading-4`/`heading-3`, hero `heading-3` → `heading-2` dengan gradien teks (`.teks-hero`, hitam → #666 / putih → #9B9B9B; latar tetap datar), satu efek gerak utama: tagline yang menyala kata per kata.
 
 ## Layout
 

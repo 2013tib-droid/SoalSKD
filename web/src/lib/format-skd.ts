@@ -13,6 +13,7 @@ type ConfigSkd = {
     penilaian: "benar_salah" | "bobot";
     nilai_benar?: number;
     nilai_salah?: number;
+    nilai_maks: number;
     ambang_batas: number | null;
   }[];
   urutan_soal: Subtes[];
@@ -22,7 +23,10 @@ export type FormatSkd = {
   urutan: Subtes[];
   sumber: string | null;
   durasiResmiMenit: number | null;
-  subtes: Record<Subtes, { jumlahSoal: number; nilaiBenar: number; nilaiSalah: number; ambangBatas: number | null }>;
+  subtes: Record<
+    Subtes,
+    { jumlahSoal: number; nilaiBenar: number; nilaiSalah: number; nilaiMaks: number; ambangBatas: number | null }
+  >;
 };
 
 export async function ambilFormatSkd(): Promise<FormatSkd> {
@@ -35,6 +39,7 @@ export async function ambilFormatSkd(): Promise<FormatSkd> {
         jumlahSoal: s.jumlah_soal,
         nilaiBenar: s.nilai_benar ?? 0,
         nilaiSalah: s.nilai_salah ?? 0,
+        nilaiMaks: s.nilai_maks,
         ambangBatas: s.ambang_batas,
       },
     ]),
