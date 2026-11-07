@@ -4,6 +4,7 @@ import { Key, SignOut, UserCircle } from "@phosphor-icons/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
+import { BUILD_STATIK } from "@/config/build";
 import { useAkun } from "./auth";
 
 const itemMenu =
@@ -11,7 +12,7 @@ const itemMenu =
 
 /**
  * Tombol "Masuk" (belum login) atau ikon akun dengan menu: email, Aktivasi kode, Keluar.
- * Tidak tampil sama sekali saat login mati (build statis / env kosong).
+ * Login mati: tidak tampil di server tanpa env Firebase; di build statis tampil sebagai pratinjau.
  */
 export function MenuAkun() {
   const akun = useAkun();
@@ -38,9 +39,11 @@ export function MenuAkun() {
     };
   }, [buka]);
 
-  if (akun.status === "mati") return null;
+  // Build statis (dev GitHub Pages): tombol tetap tampil sebagai pratinjau posisi; /masuk menjelaskan
+  // bahwa login baru aktif di situs pembeli. Server tanpa env Firebase: tidak tampil.
+  if (akun.status === "mati" && !BUILD_STATIK) return null;
   if (akun.status === "memuat") return <span className="block h-10 w-16 rounded-lg bg-surface-muted" aria-hidden />;
-  if (akun.status === "keluar")
+  if (akun.status === "keluar" || akun.status === "mati")
     return (
       <Link
         href={path && path !== "/" ? `/masuk?lanjut=${encodeURIComponent(path)}` : "/masuk"}
