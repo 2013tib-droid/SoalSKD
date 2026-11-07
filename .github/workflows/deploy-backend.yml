@@ -1,0 +1,84 @@
+# Men-deploy Cloud Functions + Firestore security rules SoalSKD ke proyek Firebase.
+# Situs Next.js TIDAK lewat sini: App Hosting membangunnya sendiri dari GitHub
+# (lihat docs/firebase.md langkah 8).
+#
+# BELUM PERNAH DIJALANKAN. Jalankan pertama kali dengan "Cuma periksa" (dry run).
+#
+# SEBELUM MENJALANKAN, isi di GitHub → Settings → Secrets and variables → Actions:
+#   Secret   FIREBASE_SERVICE_ACCOUNT = isi file JSON service account (seluruhnya)
+#   Variable FIREBASE_PROJECT_ID      = id proyek, mis. soalskd-xxxx
+#   Variable EMAIL_PENGIRIM           = Gmail pengirim kode, mis. soalskd.id@gmail.com
+#   Variable URL_SITUS                = alamat situs pembeli, mis. https://soalskd.id
+# Service account butuh peran: Firebase Admin, Cloud Functions Admin, Service
+# Account User, Cloud Datastore Owner, Secret Manager Admin.
+#
+# Cara memakai: tab Actions → "Deploy backend" → Run workflow.
+name: Deploy backend
+
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'Apa yang di-deploy'
+        required: true
+        type: choice
+        default: 'functions,firestore'
+        options:
+          - 'functions,firestore'
+          - 'functions'
+          - 'firestore'
+      dry_run:
+        description: 'Cuma periksa, jangan benar-benar deploy'
+        required: false
+        type: boolean
+        default: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: functions/package-lock.json
+
+      - name: Build Cloud Functions
+        working-directory: functions
+        run: |
+          npm ci
+          npm run build
+
+      - name: Siapkan kredensial dan parameter
+        env:
+          SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          PROJECT: ${{ vars.FIREBASE_PROJECT_ID }}
+          EMAIL_PENGIRIM: ${{ vars.EMAIL_PENGIRIM }}
+          URL_SITUS: ${{ vars.URL_SITUS }}
+        run: |
+          [ -n "$SA" ] || { echo "::error::Secret FIREBASE_SERVICE_ACCOUNT belum diisi."; exit 1; }
+          [ -n "$PROJECT" ] || { echo "::error::Variable FIREBASE_PROJECT_ID belum diisi."; exit 1; }
+          [ -n "$EMAIL_PENGIRIM" ] || { echo "::error::Variable EMAIL_PENGIRIM belum diisi."; exit 1; }
+          # Parameter non-rahasia untuk functions (defineString). Rahasia ada di Secret Manager.
+          printf 'EMAIL_PENGIRIM=%s\nURL_SITUS=%s\n' "$EMAIL_PENGIRIM" "$URL_SITUS" > functions/.env
+          # Di luar folder kerja supaya tidak mungkin ikut ter-deploy.
+          printf '%s' "$SA" > "$RUNNER_TEMP/service-account.json"
+
+      - name: Deploy
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/service-account.json
+          PROJECT: ${{ vars.FIREBASE_PROJECT_ID }}
+          TARGET: ${{ inputs.target }}
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            echo "Dry run: memeriksa saja, tidak men-deploy."
+            npx --yes firebase-tools@14 deploy --only "$TARGET" --project "$PROJECT" --dry-run
+          else
+            npx --yes firebase-tools@14 deploy --only "$TARGET" --project "$PROJECT" --non-interactive --force
+          fi
+
+      - name: Hapus kredensial
+        if: always()
+        run: rm -f "$RUNNER_TEMP/service-account.json"

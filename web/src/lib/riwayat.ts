@@ -1,6 +1,8 @@
+import { kirimRiwayat } from "@/lib/sinkron";
+
 /**
  * Riwayat skor di perangkat (localStorage). Satu entri per percobaan, dikenali dari
- * `berakhirPada` sesi ujian. Pindah ke server saat ada backend.
+ * `berakhirPada` sesi ujian. Saat login, ikut disalin ke akun (lihat `lib/sinkron.ts`).
  */
 
 export type EntriRiwayat = {
@@ -14,12 +16,12 @@ export type EntriRiwayat = {
   dicatatPada: number;
 };
 
-const KUNCI = "soalskd:riwayat";
+export const KUNCI_RIWAYAT = "soalskd:riwayat";
 const MAKS_ENTRI = 50;
 
 export function bacaRiwayat(): EntriRiwayat[] {
   try {
-    const raw = localStorage.getItem(KUNCI);
+    const raw = localStorage.getItem(KUNCI_RIWAYAT);
     const data = raw ? (JSON.parse(raw) as EntriRiwayat[]) : [];
     return Array.isArray(data) ? data : [];
   } catch {
@@ -32,10 +34,17 @@ export function catatRiwayat(entri: EntriRiwayat) {
   try {
     const lama = bacaRiwayat().find((e) => e.paket === entri.paket && e.percobaan === entri.percobaan);
     if (lama) return; // percobaan ini sudah tercatat; jam catat pertama dipertahankan
-    const lain = bacaRiwayat();
-    const baru = [entri, ...lain].sort((a, b) => b.dicatatPada - a.dicatatPada).slice(0, MAKS_ENTRI);
-    localStorage.setItem(KUNCI, JSON.stringify(baru));
+    tulisRiwayat([entri, ...bacaRiwayat()]);
   } catch {
     // Penyimpanan penuh atau diblokir: riwayat tidak tercatat, hasil tetap tampil.
   }
+  kirimRiwayat(entri);
+}
+
+/** Tulis ulang seluruh riwayat lokal (terbaru dulu, maks 50). */
+export function tulisRiwayat(daftar: EntriRiwayat[]) {
+  try {
+    const urut = [...daftar].sort((a, b) => b.dicatatPada - a.dicatatPada).slice(0, MAKS_ENTRI);
+    localStorage.setItem(KUNCI_RIWAYAT, JSON.stringify(urut));
+  } catch {}
 }

@@ -218,6 +218,8 @@ Tanpa bayangan dekoratif. Kedalaman ditunjukkan dengan border dan perbedaan `sur
 - **Tombol Ragu-ragu:** toggle dengan `aria-pressed`. Saat aktif memakai latar `status-doubt`.
 - **Selesai ujian:** dialog konfirmasi yang menyebut jumlah soal belum dijawab dan ragu-ragu, dengan aksi utama "Kumpulkan" dan aksi sekunder "Periksa lagi".
 - **Kartu hasil:** skor per subtes dengan Geist Mono, dibandingkan dengan passing grade dari konfigurasi. Status lulus atau tidak memakai ikon + teks, bukan warna saja. Selalu sertakan catatan kecil: "Format dan passing grade mengikuti konfigurasi. Cek aturan BKN/KemenPAN-RB terbaru."
+- **Layar akun (/masuk, /daftar, /aktivasi):** satu kolom `max-w-md`, satu kartu berisi form. Google di atas, pemisah "atau", lalu email + sandi. Input 48px dengan teks 16px (iOS tidak zoom) dan label di atas. Galat = ikon + teks `danger` tepat di atas tombol kirim. Kode aktivasi memakai Geist Mono huruf besar.
+- **Menu akun:** "Masuk" teks di nav (sebelum "Mulai Try Out"); setelah login ikon `UserCircle` 44px → panel ber-border tanpa bayangan: email, Aktivasi kode, Keluar.
 - **Ikon:** Phosphor (regular, 20px). Jangan pakai emoji atau Material.
 
 ## Do's and Don'ts

@@ -1,0 +1,88 @@
+rules_version = '2';
+
+// SoalSKD. Prinsip: user hanya membaca datanya sendiri, dan semua yang
+// menentukan AKSES BERBAYAR hanya ditulis Cloud Function / server Next.js
+// lewat Admin SDK (yang melewati rules ini). Apa pun di browser bisa diubah.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isOwner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+
+    // Id paket seperti p01, p02 (lihat bank/).
+    function idPaketSah(id) {
+      return id is string && id.matches('^[a-z0-9-]{1,40}$');
+    }
+
+    // Profil + paket yang dimiliki (`paket`, `produk`). Ditulis HANYA oleh
+    // `redeemActivationCode`. Client cuma membaca, jadi tidak ada celah
+    // "update dokumen sendiri sambil menambah paket".
+    match /users/{uid} {
+      allow read: if isOwner(uid);
+      allow write: if false;
+
+      // Sesi ujian per paket = isi `soalskd:ujian:<paket>` di localStorage.
+      // Milik user sepenuhnya; tidak menentukan akses dan tidak memuat kunci.
+      match /sesi/{paket} {
+        allow read, delete: if isOwner(uid);
+        allow create, update: if isOwner(uid)
+          && idPaketSah(paket)
+          && request.resource.data.keys().hasOnly(
+               ['jawaban', 'ragu', 'indeks', 'berakhirPada', 'selesai', 'disimpanPada'])
+          && request.resource.data.jawaban is map
+          && request.resource.data.jawaban.size() <= 300
+          && request.resource.data.ragu is map
+          && request.resource.data.ragu.size() <= 300
+          && request.resource.data.indeks is int
+          && request.resource.data.berakhirPada is number
+          && request.resource.data.selesai is bool
+          && request.resource.data.disimpanPada is number;
+      }
+
+      // Riwayat skor, satu dokumen per percobaan (`<paket>-<percobaan>`).
+      // Skor dihitung server tapi dicatat browser; ini catatan pribadi, bukan peringkat.
+      match /riwayat/{id} {
+        allow read, delete: if isOwner(uid);
+        allow create, update: if isOwner(uid)
+          && id.matches('^[a-z0-9-]{1,40}-[0-9]{1,15}$')
+          && request.resource.data.keys().hasOnly(
+               ['paket', 'judul', 'total', 'totalMaks', 'perSubtes', 'percobaan', 'dicatatPada'])
+          && idPaketSah(request.resource.data.paket)
+          && request.resource.data.judul is string
+          && request.resource.data.judul.size() <= 200
+          && request.resource.data.total is number
+          && request.resource.data.totalMaks is number
+          && request.resource.data.perSubtes is list
+          && request.resource.data.perSubtes.size() <= 5
+          && request.resource.data.percobaan is number
+          && request.resource.data.dicatatPada is number;
+      }
+    }
+
+    // Kode aktivasi: tertutup total. Kalau bisa dibaca, semua kode yang
+    // belum terpakai ikut terbaca.
+    match /activation_codes/{code} {
+      allow read, write: if false;
+    }
+
+    // Rem percobaan kode. Di luar dokumen user supaya tidak bisa direset.
+    match /redeem_attempts/{uid} {
+      allow read, write: if false;
+    }
+
+    // Pesanan Mayar: email pembeli + kode. Tertutup total.
+    match /orders/{orderId} {
+      allow read, write: if false;
+    }
+
+    // Pengaturan server, mis. `config/mayar_products`. Diisi lewat Console.
+    match /config/{docId} {
+      allow read, write: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

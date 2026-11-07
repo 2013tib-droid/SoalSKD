@@ -8,6 +8,7 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 
 - `web/src/components/landing/layar-landing.tsx` · landing `/`: nav melayang, hero + pratinjau layar ujian, keunggulan, tagline, cara kerja, contoh soal + pratinjau hasil, kartu harga (tombol beli `TAUTAN_BELI`, nonaktif bila null; tombol coba gratis `PAKET_GRATIS`) dan testimoni (hanya jika diisi di `web/src/config/landing.ts`), FAQ + JSON-LD, CTA penutup · angka dari `bank/` dan `config/skd.json`
 - `web/src/components/beranda/layar-beranda.tsx` · beranda: kartu lanjutkan ujian (sesi berjalan), daftar paket dengan aksi sesuai state (Mulai / Lanjutkan / Lihat hasil + Ulangi), riwayat skor · props `paket` dari `daftarPaket()` + `durasiPaket()`
+- `web/src/components/akun/ui.tsx` `LayarAkun` · kerangka layar akun satu kolom (max-w-md): tautan kembali, judul, isi · dipakai /masuk, /daftar, /aktivasi, gerbang ujian
 - `web/src/components/ujian/layar-ujian.tsx` · layar ujian: topbar sticky (subtes, nomor, timer), soal, action bar bawah, grid (sheet di HP, panel kanan ≥1024px) · props `paket`, `soal`, `durasiMenit`, `peringatanMenit`, `kritisMenit`
 
 ## Komponen
@@ -23,7 +24,16 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 - `web/src/components/ujian/dialog.tsx` · `<dialog>` native, varian `sheet` / `tengah`, Esc + klik backdrop menutup
 - `web/src/components/ujian/indikator-simpan.tsx` · status simpan otomatis (tersimpan / gagal)
 
+- `web/src/components/akun/ui.tsx` · `Kolom` (input 48px, teks 16px, label di atas), `KolomSandi` (tombol lihat 44px), `Pesan` (galat/sukses/info, ikon + teks), `TombolGoogle`, `Pemisah`, `Kerangka`, `tombolUtama`/`tombolSekunder`/`tautanTeks`, `tujuanAman(lanjut)`
+- `web/src/components/akun/menu-akun.tsx` · `MenuAkun`: "Masuk" (belum login) atau ikon akun → menu email, Aktivasi kode, Keluar; tidak tampil saat login mati · dipakai nav landing dan header /try-out
+- `web/src/components/ujian/gerbang-ujian.tsx` · `GerbangUjian` paket berbayar: minta soal ke server setelah login; status memuat / perlu masuk / belum punya / gagal
+
 ## Data & state (fetch, tabel, filter, form)
+
+- `web/src/components/akun/auth.tsx` · `PenyediaAkun` + `useAkun({ wajib })`: status `mati|memuat|keluar|masuk`, `paket` milik, aksi masuk/daftar/Google/keluar/verifikasi/tukarKode, `pesanGalat()` Indonesia · `wajib` = muat Firebase sekarang
+- `web/src/config/akses.ts` `paketTerbuka(id)` · paket tanpa login (p01; semua di build statis). `web/src/lib/akses-server.ts` `cekAksesPaket(paket, idToken)` = satu-satunya keputusan akses di server
+- `web/src/lib/sinkron.ts` · localStorage ↔ `users/{uid}/sesi|riwayat`: `kirimRekaman` (jeda 1,5 dtk), `sinkronkanAkun` sekali per login, event `soalskd:sinkron` agar layar membaca ulang
+- `functions/src/index.ts` · `redeemActivationCode`, `mayarWebhook`; produk → paket di `PRODUK` · tes: `cd functions && npm run uji`
 
 - `web/src/lib/soal.ts` `daftarPaket()` · ringkasan semua paket skema 1 di `bank/` (judul, status, jumlah per subtes)
 - `web/src/lib/riwayat.ts` · riwayat skor di localStorage (`soalskd:riwayat`, maks 50), dicatat sekali per percobaan (`percobaan` = jam selesai sesi) saat halaman hasil dibuka
@@ -44,4 +54,6 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 - Setelah kumpul (manual atau waktu habis) layar ujian pindah ke `/ujian/<paket>/hasil`; buka ujian yang sudah selesai juga diarahkan ke hasil. "Ulangi" menghapus rekaman.
 - Empty state hasil: belum ada jawaban / belum dikumpulkan / filter tanpa hasil (tombol hapus filter)
 - Pintasan ujian: A–E / 1–5 pilih, ← → pindah, R ragu-ragu
+- Paket berbayar terkunci di /try-out: badge "Berbayar" + tombol sekunder ber-ikon gembok ke /masuk atau /aktivasi (`?lanjut=` kembali)
+- Galat login/kode: `Pesan jenis="galat"` di atas tombol kirim; login Google dibatalkan = info, bukan galat; "tidak ada" dan "sudah dipakai" satu pesan
 - Tautan kembali di header: `caption-4 -ml-2 flex h-11 items-center gap-1 rounded-lg px-2` + `ArrowLeft` 16 · `/try-out` → `/` ("Halaman utama"), hasil → `/try-out` ("Beranda")
