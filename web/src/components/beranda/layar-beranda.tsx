@@ -81,7 +81,9 @@ export function LayarBeranda({ paket }: { paket: PaketBeranda[] }) {
   return (
     <main className="mx-auto flex min-h-dvh w-full max-w-3xl flex-col gap-8 px-4 pt-6 pb-10">
       <header className="flex flex-col gap-1">
-        <p className="caption-4 text-text-muted">SoalSKD</p>
+        <Link href="/" className="caption-4 self-start rounded-sm text-text-muted hover:text-text">
+          SoalSKD
+        </Link>
         <h1 className="heading-5">Try out SKD CPNS</h1>
         <p className="body-6 text-text-muted">Latihan TWK, TIU, dan TKP dengan timer dan pembahasan lengkap.</p>
       </header>

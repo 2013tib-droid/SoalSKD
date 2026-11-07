@@ -6,11 +6,14 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 
 ## Layout
 
+- `web/src/components/landing/layar-landing.tsx` · landing `/`: nav melayang, hero + pratinjau layar ujian, keunggulan, tagline, cara kerja, contoh soal + pratinjau hasil, harga/testimoni (hanya jika diisi di `web/src/config/landing.ts`), FAQ + JSON-LD, CTA penutup · angka dari `bank/` dan `config/skd.json`
 - `web/src/components/beranda/layar-beranda.tsx` · beranda: kartu lanjutkan ujian (sesi berjalan), daftar paket dengan aksi sesuai state (Mulai / Lanjutkan / Lihat hasil + Ulangi), riwayat skor · props `paket` dari `daftarPaket()` + `durasiPaket()`
 - `web/src/components/ujian/layar-ujian.tsx` · layar ujian: topbar sticky (subtes, nomor, timer), soal, action bar bawah, grid (sheet di HP, panel kanan ≥1024px) · props `paket`, `soal`, `durasiMenit`, `peringatanMenit`, `kritisMenit`
 
 ## Komponen
 
+- `web/src/components/landing/gerak.tsx` · `Muncul` (section naik 32px sekali saat masuk layar) dan `TaglineBertahap` (kata menyala satu per satu saat lewat garis 60% layar) · keduanya mati di `prefers-reduced-motion`
+- `web/src/components/landing/contoh-soal.tsx` · `ContohSoal` (satu soal interaktif + pembahasan, pakai `KartuSoal`) dan `PratinjauHasil` (kartu skor ilustrasi)
 - `web/src/components/teks-md.tsx` · render Markdown GFM soal/pembahasan (tanpa HTML, italic jadi medium) · `inline` untuk di dalam tombol
 - `web/src/components/hasil/kartu-skor.tsx` · kartu KPI skor (nilai/maks, bar, status ambang ikon + teks) · `utama` untuk kartu total selebar grid
 - `web/src/components/hasil/item-pembahasan.tsx` · `<details>` per soal: ringkas (status, subtopik, poin, ragu) lalu tiap opsi + alasannya (`pembahasan.opsi`), bobot TKP, inti, konsep, tips, rujukan

@@ -86,6 +86,14 @@
 }
 
 /* Skala teks bernama (house-style). */
+@utility heading-1 { @apply text-6xl font-semibold; }
+@utility heading-2 { @apply text-5xl font-semibold; }
+@utility heading-3 { @apply text-4xl font-semibold; }
+@utility heading-4 { @apply text-3xl font-semibold; }
+@utility heading-6 { @apply text-xl font-semibold; }
+@utility title-2 { @apply text-lg font-medium; }
+@utility body-3 { @apply text-base font-normal; }
+@utility button-md { @apply text-base font-semibold; }
 @utility heading-5 { @apply text-2xl font-semibold; }
 @utility title-3 { @apply text-base font-medium; }
 @utility title-4 { @apply text-sm font-medium; }
@@ -108,6 +116,18 @@ body {
   outline-offset: 2px;
 }
 }
+
+/* Landing: judul hero memakai gradien teks (house-style B5), bukan latar. */
+.teks-hero {
+  background-image: linear-gradient(90deg, #000000, #666666);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .teks-hero { background-image: linear-gradient(90deg, #ffffff, #9b9b9b); }
+}
+:root[data-theme="dark"] .teks-hero { background-image: linear-gradient(90deg, #ffffff, #9b9b9b); }
 
 @keyframes pulse-sekali {
   0%, 100% { opacity: 1; }
