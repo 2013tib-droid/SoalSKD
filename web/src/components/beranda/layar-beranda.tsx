@@ -316,6 +316,15 @@ export function LayarBeranda({ paket }: { paket: PaketBeranda[] }) {
         <Info size={16} className="shrink-0" aria-hidden />
         Format dan passing grade mengikuti konfigurasi. Cek aturan BKN/KemenPAN-RB terbaru.
       </p>
+
+      <footer className="-mt-4 flex gap-2 border-t border-border pt-2">
+        <Link href="/privasi" className="caption-4 -ml-2 flex h-11 items-center rounded-lg px-2 text-text-muted hover:text-text">
+          Privasi
+        </Link>
+        <Link href="/syarat" className="caption-4 flex h-11 items-center rounded-lg px-2 text-text-muted hover:text-text">
+          Syarat
+        </Link>
+      </footer>
     </main>
   );
 }

@@ -325,6 +325,7 @@ function emailKode(nama: string, produk: IdProduk, kode: string) {
   const situs = URL_SITUS.value().replace(/\/+$/, '');
   const halamanAktivasi = situs ? `${situs}/aktivasi` : '';
   const halamanTryOut = situs ? `${situs}/try-out` : '';
+  const halamanRefund = situs ? `${situs}/syarat#pengembalian-dana` : '';
   const sapa = nama ? `Halo ${nama},` : 'Halo,';
   const langkah1 = halamanAktivasi ? `Buka ${halamanAktivasi}` : 'Buka situs SoalSKD, lalu pilih Masuk';
   const text = [
@@ -342,6 +343,7 @@ function emailKode(nama: string, produk: IdProduk, kode: string) {
     `Setelah kode ditukar, ebook PDF bisa diunduh dari halaman Try out (${halamanTryOut || 'menu Try out di situs SoalSKD'}).`,
     '',
     'Satu kode untuk satu akun. Simpan email ini. Ada kendala? Balas email ini.',
+    `Syarat & pengembalian dana: ${halamanRefund || 'halaman Syarat & Ketentuan di situs SoalSKD'}`,
     '',
     'Salam,',
     'SoalSKD',
@@ -366,6 +368,7 @@ function emailKode(nama: string, produk: IdProduk, kode: string) {
 </ol>
 <p>Setelah kode ditukar, ebook PDF bisa diunduh dari ${tautanTryOut}.</p>
 <p>Satu kode untuk satu akun. Simpan email ini. Ada kendala? Balas email ini.</p>
+<p style="font-size:13px;color:#4B5563">${halamanRefund ? `<a href="${halamanRefund}">Syarat &amp; pengembalian dana</a>` : 'Syarat &amp; pengembalian dana: halaman Syarat &amp; Ketentuan di situs SoalSKD'}</p>
 <p>Salam,<br>SoalSKD</p>
 </div>`;
   return { subject: `Kode aktivasi SoalSKD: ${judul}`, text, html };

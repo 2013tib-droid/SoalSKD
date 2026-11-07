@@ -160,6 +160,12 @@ export function LayarAktivasi({ paketBerbayar }: { paketBerbayar: PaketBerbayar[
           </p>
         )}
         <p className="body-6 text-text-muted">
+          Kode tidak datang atau tidak bisa dipakai?{" "}
+          <Link href="/syarat#pengembalian-dana" className={tautanTeks}>
+            Bantuan &amp; pengembalian dana
+          </Link>
+        </p>
+        <p className="body-6 text-text-muted">
           Masuk sebagai <span className="break-all text-text">{akun.pengguna?.email}</span> ·{" "}
           <button type="button" onClick={() => void akun.keluar()} className={tautanTeks}>
             Keluar

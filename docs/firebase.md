@@ -71,6 +71,15 @@ Cloud Functions, Secret Manager, dan App Hosting hanya jalan di paket Blaze.
 4. (Disarankan) **Templates → Email address verification** dan **Password reset**:
    ganti bahasa template ke **Indonesian** (ikon pensil → Template language).
 
+5. **Layar izin Google (OAuth consent screen)**: Google Cloud Console →
+   **APIs & Services → OAuth consent screen** (Branding). Setelah situs punya
+   domain (langkah 8), isi:
+   - **Application privacy policy link**: `https://DOMAIN/privasi`
+   - **Application terms of service link**: `https://DOMAIN/syarat`
+   - **Authorized domains**: domain situs pembeli.
+   Isi dulu nilai di `web/src/config/legal.ts` (langkah 12) supaya kedua
+   halaman memuat nama pengelola dan kontak.
+
 Pembeli yang daftar dengan email + kata sandi harus **klik tautan verifikasi** di
 emailnya sebelum bisa menukar kode. Ini mencegah paket hilang karena email salah
 ketik. Masuk dengan Google tidak perlu verifikasi.
@@ -195,7 +204,12 @@ setelah dicoba di alamat App Hosting.
    (ganti `PROJECT_ID`, tanpa apa pun di belakangnya). Simpan → **Test**.
    Hasil benar: **200**. Kalau **401**: token di Secret Manager tidak sama dengan
    di dasbor Mayar (cek spasi yang ikut tersalin), perbaiki lalu deploy ulang.
-4. Kirim **tautan produk Mayar** ke Claude. Claude mengisinya di `TAUTAN_BELI`
+4. **Verifikasi merchant / data toko**: kalau Mayar meminta URL kebijakan,
+   isi `https://DOMAIN/privasi` (privasi), `https://DOMAIN/syarat` (syarat), dan
+   `https://DOMAIN/syarat#pengembalian-dana` (pengembalian dana). Teks
+   pengembalian dana ada di `PENGEMBALIAN_DANA` (`web/src/config/legal.ts`) dan
+   masih **usulan**: setujui atau ubah dulu (langkah 12).
+5. Kirim **tautan produk Mayar** ke Claude. Claude mengisinya di `TAUTAN_BELI`
    (`web/src/config/landing.ts`) supaya tombol beli di landing aktif.
 
 ## 10. Ebook PDF di Storage (privat)
@@ -267,6 +281,27 @@ Beli sendiri pakai email lain (Rp9.900). Dalam beberapa menit email berisi kode
 harus masuk. Daftar dengan email itu, verifikasi, buka **Aktivasi kode**,
 masukkan kode → "Semua paket sudah aktif" → buka Paket 02. Kembali ke halaman
 Try out → **Unduh ebook PDF** → file `SoalSKD-Edisi-1.pdf` terunduh.
+
+## 12. Lengkapi halaman Privasi dan Syarat (sebelum jualan)
+
+Halaman `/privasi` dan `/syarat` membaca nilai dari `web/src/config/legal.ts`.
+Nilai `null` disembunyikan dengan rapi, tapi **wajib diisi sebelum situs pembeli
+dibuka** (repo ini publik, jadi isi hanya data yang memang boleh tampil di
+halaman publik). Kirim nilainya ke Claude atau ubah sendiri:
+
+| Nilai | Isi | Kenapa wajib |
+|---|---|---|
+| `PENGELOLA` | nama Anda atau badan usaha | UU PDP: pengendali data harus jelas; Mayar dan Google juga memeriksanya |
+| `EMAIL_KONTAK` | email kontak umum (boleh Gmail pengirim kode) | tanpa ini, yang belum membeli tidak punya cara meminta hapus akun |
+| `WA_KONTAK` | nomor WA, mis. `6281234567890` | opsional |
+| `PENGEMBALIAN_DANA` | teks kebijakan pengembalian dana | sekarang masih usulan Claude, perlu persetujuan Anda |
+| `BERLAKU_SEJAK` | tanggal mulai berlaku, mis. `2026-12-01` | diisi setelah Anda membaca kedua halaman |
+| `DIPERBARUI` | tanggal terakhir teks diubah | ganti setiap kali teks atau nilai berubah |
+
+Teks lengkapnya di `web/src/konten/privasi.md` dan `web/src/konten/syarat.md`.
+Daftar data yang dijelaskan di sana: `docs/data-pribadi.md`. Teks ini bukan
+nasihat hukum; baca ulang (atau minta orang yang paham hukum membacanya)
+sebelum situs pembeli dibuka.
 
 ---
 
