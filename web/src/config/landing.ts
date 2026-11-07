@@ -13,4 +13,15 @@ export const SOAL_HERO = { paket: "p01", id: "p01-007" };
 export const TESTIMONI: { nama: string; keterangan: string; kutipan: string }[] = [];
 
 /** Paket berbayar. null = section harga disembunyikan sampai harga diputuskan pemilik. */
-export const HARGA: { nama: string; harga: string; isi: string[] }[] | null = null;
+export const HARGA: { nama: string; harga: string; isi: string[] }[] | null = [
+  {
+    nama: "Bundel 3 Try Out SKD · harga perkenalan",
+    harga: "Rp9.900",
+    isi: [
+      "3 paket try out × 110 soal (TWK, TIU, TKP)",
+      "Pembahasan lengkap setiap soal",
+      "Ujian di HP dengan timer dan simpan otomatis",
+      "Ebook PDF berisi soal dan pembahasan",
+    ],
+  },
+];

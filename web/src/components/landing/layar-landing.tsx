@@ -310,7 +310,7 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
               <h2 id="judul-harga" className={judulSection}>
                 Pilih paket latihanmu
               </h2>
-              <ul className="grid gap-4 md:grid-cols-3">
+              <ul className={`grid gap-4 ${HARGA.length > 1 ? "md:grid-cols-3" : "max-w-md"}`}>
                 {HARGA.map((h) => (
                   <li key={h.nama} className="flex flex-col gap-4 rounded-xl border border-border bg-surface p-6">
                     <h3 className="title-3">{h.nama}</h3>
