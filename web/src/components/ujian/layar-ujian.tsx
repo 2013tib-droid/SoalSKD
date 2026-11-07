@@ -1,6 +1,13 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, Flag, PaperPlaneTilt, SquaresFour } from "@phosphor-icons/react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  Flag,
+  PaperPlaneTilt,
+  SquaresFour,
+  X,
+} from "@phosphor-icons/react";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import type { SoalUjian } from "@/lib/soal";
@@ -24,11 +31,18 @@ const tombolDasar =
 const tombolUtama = `${tombolDasar} bg-primary text-on-primary hover:bg-primary-hover`;
 const tombolSekunder = `${tombolDasar} border border-border bg-surface text-text hover:bg-surface-muted`;
 
-export function LayarUjian({ paket, soal, durasiMenit, peringatanMenit, kritisMenit }: Props) {
+export function LayarUjian({
+  paket,
+  soal,
+  durasiMenit,
+  peringatanMenit,
+  kritisMenit,
+}: Props) {
   const u = useUjian(paket, soal, durasiMenit);
   const router = useRouter();
   const [gridTerbuka, setGridTerbuka] = useState(false);
   const [konfirmasiTerbuka, setKonfirmasiTerbuka] = useState(false);
+  const [keluarTerbuka, setKeluarTerbuka] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   const statusSebelumnya = useRef<StatusTimer | null>(null);
   const isiRef = useRef<HTMLDivElement>(null);
@@ -58,7 +72,8 @@ export function LayarUjian({ paket, soal, durasiMenit, peringatanMenit, kritisMe
   // Pintasan keyboard: A–E / 1–5 memilih, ← → pindah soal, R ragu-ragu.
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (gridTerbuka || konfirmasiTerbuka || u.selesai) return;
+      if (gridTerbuka || konfirmasiTerbuka || keluarTerbuka || u.selesai)
+        return;
       if (e.ctrlKey || e.metaKey || e.altKey) return;
       const t = e.target as HTMLElement;
       if (t.tagName === "INPUT" || t.tagName === "TEXTAREA") return;
@@ -66,7 +81,8 @@ export function LayarUjian({ paket, soal, durasiMenit, peringatanMenit, kritisMe
       const huruf = u.aktif.opsi.map((o) => o.huruf.toLowerCase());
       const angka = ["1", "2", "3", "4", "5"].indexOf(k);
       if (huruf.includes(k)) u.pilih(k.toUpperCase());
-      else if (angka >= 0 && angka < huruf.length) u.pilih(u.aktif.opsi[angka].huruf);
+      else if (angka >= 0 && angka < huruf.length)
+        u.pilih(u.aktif.opsi[angka].huruf);
       else if (k === "arrowright") u.keSoal(u.indeks + 1);
       else if (k === "arrowleft") u.keSoal(u.indeks - 1);
       else if (k === "r") u.toggleRagu();
@@ -75,7 +91,7 @@ export function LayarUjian({ paket, soal, durasiMenit, peringatanMenit, kritisMe
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [u, gridTerbuka, konfirmasiTerbuka]);
+  }, [u, gridTerbuka, konfirmasiTerbuka, keluarTerbuka]);
 
   // Setelah dikumpulkan (manual atau waktu habis), pindah ke halaman hasil.
   useEffect(() => {
@@ -108,17 +124,31 @@ export function LayarUjian({ paket, soal, durasiMenit, peringatanMenit, kritisMe
   return (
     <div className="min-h-dvh lg:grid lg:grid-cols-[1fr_320px]">
       <div className="flex min-h-dvh flex-col">
-        {/* Topbar: subtes, nomor, timer, tombol grid. Selalu terlihat. */}
+        {/* Topbar: keluar, subtes, nomor, timer, tombol grid. Selalu terlihat. */}
         <header className="sticky top-0 z-10 border-b border-border bg-surface pt-[env(safe-area-inset-top)]">
-          <div className="mx-auto flex h-14 max-w-3xl items-center justify-between gap-3 px-4">
-            <div className="flex min-w-0 items-baseline gap-2">
-              <span className="title-4">{u.aktif.kategori}</span>
-              <span className="mono-number text-text-muted">
-                {u.indeks + 1}/{soal.length}
+          <div className="mx-auto flex h-14 max-w-3xl items-center justify-between gap-3 pr-4 pl-1.5">
+            <div className="flex min-w-0 items-center gap-1">
+              <button
+                type="button"
+                onClick={() => setKeluarTerbuka(true)}
+                aria-label="Keluar dari ujian"
+                className="flex size-11 shrink-0 items-center justify-center rounded-lg text-text-muted hover:bg-surface-muted hover:text-text active:bg-surface-muted"
+              >
+                <X size={20} aria-hidden />
+              </button>
+              <span className="flex min-w-0 items-baseline gap-2">
+                <span className="title-4">{u.aktif.kategori}</span>
+                <span className="mono-number text-text-muted">
+                  {u.indeks + 1}/{soal.length}
+                </span>
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <Timer sisaDetik={u.sisaDetik} status={status} dimuat={u.dimuat} />
+              <Timer
+                sisaDetik={u.sisaDetik}
+                status={status}
+                dimuat={u.dimuat}
+              />
               <button
                 type="button"
                 onClick={() => setGridTerbuka(true)}
@@ -131,7 +161,9 @@ export function LayarUjian({ paket, soal, durasiMenit, peringatanMenit, kritisMe
           </div>
           <div
             className="h-1 bg-primary transition-[width] duration-300 ease-[var(--ease-out-house)]"
-            style={{ width: `${((u.ringkasan.dijawab + u.ringkasan.ragu) / soal.length) * 100}%` }}
+            style={{
+              width: `${((u.ringkasan.dijawab + u.ringkasan.ragu) / soal.length) * 100}%`,
+            }}
             aria-hidden
           />
         </header>
@@ -176,19 +208,33 @@ export function LayarUjian({ paket, soal, durasiMenit, peringatanMenit, kritisMe
               aria-pressed={raguAktif}
               onClick={u.toggleRagu}
               className={
-                raguAktif ? `${tombolDasar} border border-doubt bg-doubt text-on-doubt` : tombolSekunder
+                raguAktif
+                  ? `${tombolDasar} border border-doubt bg-doubt text-on-doubt`
+                  : tombolSekunder
               }
             >
-              <Flag size={20} weight={raguAktif ? "fill" : "regular"} aria-hidden />
+              <Flag
+                size={20}
+                weight={raguAktif ? "fill" : "regular"}
+                aria-hidden
+              />
               Ragu-ragu
             </button>
             {terakhir ? (
-              <button type="button" onClick={() => setKonfirmasiTerbuka(true)} className={tombolUtama}>
+              <button
+                type="button"
+                onClick={() => setKonfirmasiTerbuka(true)}
+                className={tombolUtama}
+              >
                 Selesai
                 <PaperPlaneTilt size={20} aria-hidden />
               </button>
             ) : (
-              <button type="button" onClick={() => u.keSoal(u.indeks + 1)} className={tombolUtama}>
+              <button
+                type="button"
+                onClick={() => u.keSoal(u.indeks + 1)}
+                className={tombolUtama}
+              >
                 Berikutnya
                 <ArrowRight size={20} aria-hidden />
               </button>
@@ -207,7 +253,11 @@ export function LayarUjian({ paket, soal, durasiMenit, peringatanMenit, kritisMe
         </div>
         <div className="flex-1 overflow-y-auto p-4">{grid}</div>
         <div className="border-t border-border p-4">
-          <button type="button" onClick={() => setKonfirmasiTerbuka(true)} className={`${tombolSekunder} w-full`}>
+          <button
+            type="button"
+            onClick={() => setKonfirmasiTerbuka(true)}
+            className={`${tombolSekunder} w-full`}
+          >
             Kumpulkan jawaban
           </button>
         </div>
@@ -241,7 +291,11 @@ export function LayarUjian({ paket, soal, durasiMenit, peringatanMenit, kritisMe
         judul="Kumpulkan jawaban?"
         footer={
           <>
-            <button type="button" onClick={() => setKonfirmasiTerbuka(false)} className={`${tombolSekunder} flex-1`}>
+            <button
+              type="button"
+              onClick={() => setKonfirmasiTerbuka(false)}
+              className={`${tombolSekunder} flex-1`}
+            >
               Periksa lagi
             </button>
             <button
@@ -261,18 +315,56 @@ export function LayarUjian({ paket, soal, durasiMenit, peringatanMenit, kritisMe
           {u.ringkasan.belum === 0 && u.ringkasan.ragu === 0
             ? "Semua soal sudah dijawab. Jawaban tidak bisa diubah setelah dikumpulkan."
             : `Masih ada ${[
-                u.ringkasan.belum > 0 && `${u.ringkasan.belum} soal belum dijawab`,
+                u.ringkasan.belum > 0 &&
+                  `${u.ringkasan.belum} soal belum dijawab`,
                 u.ringkasan.ragu > 0 && `${u.ringkasan.ragu} soal ragu-ragu`,
               ]
                 .filter(Boolean)
-                .join(" dan ")}. Jawaban tidak bisa diubah setelah dikumpulkan.`}
+                .join(
+                  " dan ",
+                )}. Jawaban tidak bisa diubah setelah dikumpulkan.`}
+        </p>
+      </Dialog>
+
+      <Dialog
+        terbuka={keluarTerbuka}
+        onTutup={() => setKeluarTerbuka(false)}
+        judul="Keluar dari ujian?"
+        footer={
+          <>
+            <button
+              type="button"
+              onClick={() => setKeluarTerbuka(false)}
+              className={`${tombolSekunder} flex-1`}
+            >
+              Lanjutkan
+            </button>
+            <button
+              type="button"
+              onClick={() => router.push("/try-out")}
+              className={`${tombolUtama} flex-1`}
+            >
+              Keluar
+            </button>
+          </>
+        }
+      >
+        <p className="body-6 text-text">
+          Jawabanmu sudah tersimpan dan bisa dilanjutkan dari daftar try out.
+          Timer tetap berjalan seperti ujian sungguhan, jadi kembali sebelum
+          waktunya habis.
         </p>
       </Dialog>
 
       {/* Toast peringatan waktu. */}
-      <div aria-live="polite" className="pointer-events-none fixed inset-x-0 bottom-20 z-20 flex justify-center px-4">
+      <div
+        aria-live="polite"
+        className="pointer-events-none fixed inset-x-0 bottom-20 z-20 flex justify-center px-4"
+      >
         {toast && (
-          <p className="body-6 rounded-lg border border-border bg-surface px-4 py-3 text-text shadow-none">{toast}</p>
+          <p className="body-6 rounded-lg border border-border bg-surface px-4 py-3 text-text shadow-none">
+            {toast}
+          </p>
         )}
       </div>
     </div>

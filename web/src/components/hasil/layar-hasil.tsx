@@ -57,6 +57,8 @@ export function LayarHasil({ paket, dataStatik }: { paket: string; dataStatik?: 
     if (!rekaman) return setKeadaan(statusAkun === "memuat" ? { jenis: "memuat" } : { jenis: "belum-ada" });
     if (!rekaman.selesai) return setKeadaan({ jenis: "belum-selesai" });
     if (!dataStatik && !terbuka && statusAkun === "memuat") return setKeadaan({ jenis: "memuat" });
+    // Login mati (build statis / Firebase belum diatur): paket berbayar tidak bisa dinilai.
+    if (!dataStatik && !terbuka && statusAkun === "mati") return setKeadaan({ jenis: "terkunci", alasan: "belum-dibuka" });
     setKeadaan({ jenis: "memuat" });
     try {
       let hasil: HasilUjian | null;

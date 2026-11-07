@@ -7,6 +7,7 @@ import type { UjianBerbayar } from "@/app/ujian/[paket]/actions";
 import { useAkun } from "@/components/akun/auth";
 import { Kartu, Kerangka, LayarAkun, Pesan, tombolSekunder, tombolUtama } from "@/components/akun/ui";
 import { muatUjianBerbayar } from "@/lib/gerbang";
+import { PAKET_TERBUKA } from "@/config/akses";
 import { LayarUjian } from "./layar-ujian";
 
 type Keadaan = { status: "memuat" } | { status: "gagal" } | UjianBerbayar;
@@ -83,7 +84,7 @@ export function GerbangUjian({ paket, judul }: { paket: string; judul: string })
                 ? "Paket ini untuk pembeli. Masuk dengan akun yang dipakai saat aktivasi."
                 : k.status === "belum-punya"
                   ? "Akunmu belum punya akses ke paket ini. Masukkan kode aktivasi dari email pembelian."
-                  : "Paket ini belum dibuka. Sementara itu, coba paket gratis dulu."}
+                  : "Paket ini untuk pembeli. Setelah membeli, masuk dan masukkan kode aktivasi untuk membukanya. Sementara itu, coba paket gratis dulu."}
             </p>
           </div>
           {k.status === "perlu-masuk" && (
@@ -98,6 +99,9 @@ export function GerbangUjian({ paket, judul }: { paket: string; judul: string })
           )}
           <Link href="/#harga" className={tombolSekunder}>
             Lihat penawaran
+          </Link>
+          <Link href={`/ujian/${PAKET_TERBUKA[0]}`} className={tombolSekunder}>
+            Coba paket gratis
           </Link>
         </Kartu>
       )}

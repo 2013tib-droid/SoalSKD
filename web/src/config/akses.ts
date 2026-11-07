@@ -1,5 +1,3 @@
-import { BUILD_STATIK } from "@/config/build";
-
 /**
  * Paket yang boleh dikerjakan tanpa login. Paket lain di `bank/` hanya untuk akun
  * yang memilikinya (`users/{uid}.paket`, ditulis Cloud Function `redeemActivationCode`).
@@ -7,7 +5,10 @@ import { BUILD_STATIK } from "@/config/build";
  */
 export const PAKET_TERBUKA = ["p01"] as const;
 
-/** Build statis (GitHub Pages dev): login dan gerbang dimatikan, semua paket terbuka. */
+/**
+ * Paket yang terbuka untuk semua orang. Build statis (GitHub Pages dev) ikut aturan yang sama:
+ * paket berbayar tampil terkunci dan soalnya tidak ditanam di halaman.
+ */
 export function paketTerbuka(paket: string): boolean {
-  return BUILD_STATIK || (PAKET_TERBUKA as readonly string[]).includes(paket);
+  return (PAKET_TERBUKA as readonly string[]).includes(paket);
 }
