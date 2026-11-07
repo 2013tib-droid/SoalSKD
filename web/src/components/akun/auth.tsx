@@ -37,6 +37,8 @@ type NilaiAkun = {
   cekVerifikasi: () => Promise<boolean>;
   ambilToken: () => Promise<string | null>;
   tukarKode: (kode: string) => Promise<{ paket: string[]; sudah: boolean }>;
+  /** Signed URL ebook PDF (±10 menit) dari Cloud Function `unduhEbook`; server yang mengecek hak. */
+  unduhEbook: () => Promise<{ url: string; namaFile: string }>;
   /** Galat dari alur pindah-halaman Google, ditampilkan di /masuk. */
   galatGoogle: string | null;
 };
@@ -208,6 +210,11 @@ export function PenyediaAkun({ children }: { children: ReactNode }) {
         if (auth.currentUser) await muatPaket(auth.currentUser.uid).catch(() => undefined);
         return data;
       },
+      async unduhEbook() {
+        const [{ functions }, { httpsCallable }] = await Promise.all([ambilFirebase(), import("firebase/functions")]);
+        const minta = httpsCallable<Record<string, never>, { url: string; namaFile: string }>(functions, "unduhEbook");
+        return (await minta({})).data;
+      },
     }),
     [status, pengguna, paket, galatGoogle, muatPaket],
   );
@@ -246,8 +253,11 @@ export function dibatalkan(e: unknown) {
   return kode === "auth/popup-closed-by-user" || kode === "auth/cancelled-popup-request" || kode === "auth/user-cancelled";
 }
 
-/** Pesan galat Firebase Auth / Functions dalam bahasa Indonesia, ringkas. */
-export function pesanGalat(e: unknown): string {
+/**
+ * Pesan galat Firebase Auth / Functions dalam bahasa Indonesia, ringkas.
+ * `cadangan`: dipakai kalau function gagal tanpa pesan sendiri (bawaan: konteks kode aktivasi).
+ */
+export function pesanGalat(e: unknown, cadangan = "Kode belum bisa diproses. Coba lagi sebentar lagi."): string {
   const kode = (e as { code?: string } | null)?.code ?? "";
   const pesan = (e as { message?: string } | null)?.message ?? "";
   switch (kode) {
@@ -283,9 +293,10 @@ export function pesanGalat(e: unknown): string {
     case "functions/invalid-argument":
     case "functions/resource-exhausted":
     case "functions/failed-precondition":
+    case "functions/permission-denied":
     case "functions/internal":
       // "INTERNAL" = function gagal tanpa pesan sendiri.
-      return pesan && pesan !== "INTERNAL" ? pesan : "Kode belum bisa diproses. Coba lagi sebentar lagi.";
+      return pesan && pesan !== "INTERNAL" ? pesan : cadangan;
     case "functions/unauthenticated":
       return "Sesi login habis. Masuk lagi lalu coba lagi.";
     default:

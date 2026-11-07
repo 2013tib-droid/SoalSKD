@@ -11,8 +11,8 @@ Status per 2026-11-07. Area `web/`, `bank/`, `schema/`, dan `tools/` dipegang se
 | Landing | Hero + pratinjau ujian, penjelasan SKD untuk orang awam, cara membaca layar ujian (bernomor), keunggulan, cara kerja, contoh soal interaktif, FAQ; angka dari `bank/` dan config | `/` |
 | Beranda | Kartu lanjutkan ujian, daftar paket dari `bank/`, aksi per state, riwayat skor | `/try-out` |
 | Data | Bank skema 1 dan `config/skd.json` dibaca langsung; Markdown GFM dirender | `web/src/lib/` |
-| Akun & penjualan | Login email+sandi dan Google, /aktivasi kode, gerbang p02–p04 di server, sinkron jawaban/riwayat ke akun, Cloud Functions tukar kode + webhook Mayar (41 tes emulator), rules Firestore | `/masuk`, `/daftar`, `/aktivasi`, `functions/`, `firestore.rules` |
-| Ebook | Pembuat PDF dari `bank/*.json` (dikerjakan sesi ebook) | `ebook/` |
+| Akun & penjualan | Login email+sandi dan Google, /aktivasi kode, gerbang p02–p04 di server, sinkron jawaban/riwayat ke akun, Cloud Functions tukar kode + webhook Mayar + `unduhEbook` (55 tes emulator), rules Firestore + Storage | `/masuk`, `/daftar`, `/aktivasi`, `functions/`, `firestore.rules`, `storage.rules` |
+| Ebook | Pembuat PDF dari `bank/*.json` (dikerjakan sesi ebook); unduhan pembeli lewat kartu "Ebook PDF" di /try-out → `unduhEbook` → signed URL 10 menit dari Storage privat `ebook/edisi-1.pdf`; build + unggah `tools/unggah-ebook.sh` | `ebook/`, `/try-out` |
 
 Paket yang tersedia: `p01` (20 dari 110 soal, status draf).
 
@@ -27,12 +27,13 @@ Paket yang tersedia: `p01` (20 dari 110 soal, status draf).
 
 ## Keterbatasan yang diketahui
 
-- **Backend belum hidup.** Kode Firebase sudah ada, tapi proyek Firebase, App Hosting, dan webhook Mayar belum dibuat pemilik (`docs/firebase.md`). Sampai itu, situs server menutup p02–p04 dan login tidak tampil.
+- **Backend belum hidup.** Kode Firebase sudah ada, tapi proyek Firebase, App Hosting, Storage, dan webhook Mayar belum dibuat pemilik (`docs/firebase.md`). Sampai itu, situs server menutup p02–p04 dan login tidak tampil.
+- **Ebook belum diunggah.** Setelah Storage aktif, pemilik menjalankan `docs/firebase.md` langkah 10 (izin tanda tangan + `tools/unggah-ebook.sh`) dan mengulang 10c tiap isi p02–p04 berubah. Sebelum itu tombol unduh menjawab "Ebook sedang disiapkan".
+- **Tautan ebook bisa diteruskan** selama 10 menit, dan PDF yang sudah terunduh bisa disebar. Belum ada watermark nama/email pembeli di PDF.
 - **Kunci belum aman penuh.** `nilaiUjian` mengecek hak paket, tapi pemilik paket bisa memanggilnya sebelum mengumpulkan (sesi ujian ditulis browser). Menutupnya = jam mulai/selesai dicatat server.
 - **Belum ada batas perangkat** per akun (game edukasi: 3). Satu akun bisa dipakai bersama.
 - **Masuk dengan Google lewat pindah halaman** (cadangan saat pop-up diblokir) bisa gagal di Safari karena `authDomain` beda domain dengan situs. Pop-up jalan normal.
 - **Belum ada bottom nav.** Ditambahkan saat halaman Riwayat dan Profil terpisah sudah ada.
-- **Belum ada tombol keluar dari layar ujian** selain tombol kembali browser (jawaban tetap tersimpan).
 - **Soal bergambar (`gambar`) belum ditampilkan** di app. Belum ada di `p01`.
 - **Simbol `∧ ∨ ≡ ✓ ✗`** di pembahasan TIU `p01` dicetak dengan DejaVu Sans di PDF karena Geist tidak punya glyph-nya. Diputuskan dibiarkan.
 - **Durasi dan ambang batas resmi** masih `null` di `config/skd.json`. Durasi latihan 1 menit per soal; ambang batas hanya dibandingkan untuk paket lengkap. Cek aturan BKN/KemenPAN-RB terbaru sebelum mengisinya.

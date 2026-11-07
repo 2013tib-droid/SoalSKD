@@ -1,4 +1,5 @@
-// Skenario backend SoalSKD di emulator: webhook Mayar, tukar kode, security rules.
+// Skenario backend SoalSKD di emulator: webhook Mayar, tukar kode, unduh ebook,
+// security rules Firestore + Storage.
 // Jalankan: cd functions && npm run uji
 import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
@@ -7,14 +8,18 @@ const require = createRequire(new URL('../package.json', import.meta.url));
 const { initializeApp } = require('firebase-admin/app');
 const { getAuth } = require('firebase-admin/auth');
 const { getFirestore } = require('firebase-admin/firestore');
+const { getStorage } = require('firebase-admin/storage');
 
 const PROJECT = 'demo-soalskd';
 const FN = `http://127.0.0.1:5001/${PROJECT}/asia-southeast2`;
 const AUTH = 'http://127.0.0.1:9099/identitytoolkit.googleapis.com/v1';
 const FS = `http://127.0.0.1:8080/v1/projects/${PROJECT}/databases/(default)/documents`;
+// Bucket default emulator (sama dengan FIREBASE_CONFIG yang dilihat functions).
+const BUCKET = `${PROJECT}.appspot.com`;
+const ST = `http://127.0.0.1:9199/v0/b/${BUCKET}/o`;
 const TOKEN = readFileSync(new URL('../.secret.local', import.meta.url), 'utf8').match(/MAYAR_WEBHOOK_TOKEN=(.*)/)[1].trim();
 
-initializeApp({ projectId: PROJECT });
+initializeApp({ projectId: PROJECT, storageBucket: BUCKET });
 const db = getFirestore();
 const auth = getAuth();
 
@@ -65,13 +70,37 @@ async function daftar(email, terverifikasi) {
   return { uid: r.localId, token: m.idToken };
 }
 
-async function tukar(token, kode) {
+async function panggil(nama, token, data) {
   const headers = { 'content-type': 'application/json' };
   if (token) headers.authorization = `Bearer ${token}`;
-  const r = await fetch(`${FN}/redeemActivationCode`, {
-    method: 'POST', headers, body: JSON.stringify({ data: { kode } }),
+  const r = await fetch(`${FN}/${nama}`, {
+    method: 'POST', headers, body: JSON.stringify({ data }),
   }).then((x) => x.json());
   return r.error ? { galat: r.error.status, pesan: r.error.message } : { hasil: r.result };
+}
+const tukar = (token, kode) => panggil('redeemActivationCode', token, { kode });
+const unduh = (token) => panggil('unduhEbook', token, {});
+
+// Storage REST sebagai client (rules berlaku).
+async function stGet(token, path) {
+  const r = await fetch(`${ST}/${encodeURIComponent(path)}?alt=media`, {
+    headers: token ? { authorization: `Firebase ${token}` } : {},
+  });
+  return r.status;
+}
+async function stList(token, prefix) {
+  const r = await fetch(`${ST}?prefix=${encodeURIComponent(prefix)}`, {
+    headers: token ? { authorization: `Firebase ${token}` } : {},
+  });
+  return r.status;
+}
+async function stUpload(token, path) {
+  const r = await fetch(`${ST}?name=${encodeURIComponent(path)}`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/pdf', ...(token ? { authorization: `Firebase ${token}` } : {}) },
+    body: '%PDF-1.4 palsu',
+  });
+  return r.status;
 }
 
 // Firestore REST sebagai client (rules berlaku).
@@ -183,6 +212,36 @@ cek('menulis sesi akun lain ditolak', (await fsPatch(sari.token, `users/${andi.u
 const riwayat = { paket: 'p01', judul: 'Paket 1', total: 120, totalMaks: 550, perSubtes: [{ subtes: 'TWK', skor: 40, maks: 150 }], percobaan: 1780000000000, dicatatPada: 1780000000001 };
 cek('menulis riwayat sendiri', (await fsPatch(sari.token, `users/${sari.uid}/riwayat/p01-1780000000000`, fields(riwayat))) === 200);
 cek('riwayat id tidak sah ditolak', (await fsPatch(sari.token, `users/${sari.uid}/riwayat/ngawur`, fields(riwayat))) === 403);
+
+console.log('Unduh ebook');
+const PATH_EBOOK = 'ebook/edisi-1.pdf';
+cek('tanpa login → UNAUTHENTICATED', (await unduh(null)).galat === 'UNAUTHENTICATED');
+cek('akun tanpa paket → PERMISSION_DENIED', (await unduh(sari.token)).galat === 'PERMISSION_DENIED');
+const gratisan = await daftar('gratis@contoh.test', true);
+await db.doc(`users/${gratisan.uid}`).set({ paket: ['p01'] });
+cek('hanya paket gratis p01 → PERMISSION_DENIED', (await unduh(gratisan.token)).galat === 'PERMISSION_DENIED');
+const belumAda = await unduh(andi.token);
+cek('pemilik bundel, file belum diunggah → NOT_FOUND', belumAda.galat === 'NOT_FOUND', belumAda);
+
+await getStorage().bucket().file(PATH_EBOOK).save(Buffer.from('%PDF-1.4 uji'), { contentType: 'application/pdf' });
+const u1 = await unduh(andi.token);
+const url = u1.hasil?.url ? new URL(u1.hasil.url) : null;
+cek('pemilik bundel → signed URL', url !== null && url.pathname.endsWith(`/${BUCKET}/${PATH_EBOOK}`), u1);
+cek('URL berlaku 10 menit', url?.searchParams.get('X-Goog-Expires') === '600'
+  && Math.abs(u1.hasil.berakhirPada - Date.now() - 600_000) < 60_000, url?.search);
+cek('nama file unduhan SoalSKD-Edisi-1.pdf', u1.hasil?.namaFile === 'SoalSKD-Edisi-1.pdf'
+  && url?.searchParams.get('response-content-disposition') === 'attachment; filename="SoalSKD-Edisi-1.pdf"');
+cek('URL bertanda tangan v4', Boolean(url?.searchParams.get('X-Goog-Signature')) && url?.searchParams.get('X-Goog-Algorithm') === 'GOOG4-RSA-SHA256');
+const satuPaket = await daftar('satu@contoh.test', true);
+await db.doc(`users/${satuPaket.uid}`).set({ paket: ['p03'] });
+cek('cukup satu paket bundel (p03) → boleh', typeof (await unduh(satuPaket.token)).hasil?.url === 'string');
+
+console.log('Storage rules');
+cek('pemilik bundel tidak bisa membaca PDF langsung', (await stGet(andi.token, PATH_EBOOK)) === 403);
+cek('tanpa login tidak bisa membaca PDF', (await stGet(null, PATH_EBOOK)) === 403);
+cek('tidak bisa mendaftar isi ebook/', (await stList(andi.token, 'ebook/')) === 403);
+cek('client tidak bisa mengunggah', (await stUpload(andi.token, 'ebook/palsu.pdf')) === 403);
+cek('client tidak bisa menimpa PDF', (await stUpload(andi.token, PATH_EBOOK)) === 403);
 
 console.log(`\n${lulus} lulus, ${gagal.length} gagal`);
 if (gagal.length) {

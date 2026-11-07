@@ -1,0 +1,13 @@
+rules_version = '2';
+
+// SoalSKD. Storage hanya berisi file berbayar (ebook PDF di `ebook/`).
+// Client tidak boleh membaca, mendaftar, atau menulis apa pun. Pembeli
+// mendapat signed URL berumur pendek dari Cloud Function `unduhEbook`,
+// yang memakai Admin SDK (melewati rules ini) setelah mengecek paket.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{semua=**} {
+      allow read, write: if false;
+    }
+  }
+}
