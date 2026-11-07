@@ -143,13 +143,6 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
 
   return (
     <>
-      <a
-        href="#isi"
-        className="title-4 sr-only z-50 rounded-lg bg-primary px-4 py-3 text-on-primary focus-visible:not-sr-only focus-visible:fixed focus-visible:top-3 focus-visible:left-1/2 focus-visible:-translate-x-1/2"
-      >
-        Langsung ke isi
-      </a>
-
       <nav
         aria-label="Utama"
         className="fixed top-3 left-1/2 z-40 flex -translate-x-1/2 items-center gap-2 rounded-xl border border-border bg-surface/80 p-2 backdrop-blur-md"
