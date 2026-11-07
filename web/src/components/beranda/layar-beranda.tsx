@@ -9,6 +9,7 @@ import { bacaRiwayat, type EntriRiwayat } from "@/lib/riwayat";
 import { EVENT_SINKRON } from "@/lib/sinkron";
 import { useAkun } from "@/components/akun/auth";
 import { MenuAkun } from "@/components/akun/menu-akun";
+import { PENAWARAN } from "@/config/landing";
 
 export type PaketBeranda = {
   id: string;
@@ -88,6 +89,19 @@ export function LayarBeranda({ paket }: { paket: PaketBeranda[] }) {
   const tujuanBuka =
     akun.status === "mati" ? "/#harga" : akun.status === "masuk" ? "/aktivasi?lanjut=/try-out" : "/masuk?lanjut=/try-out";
 
+  // Paket berbayar yang belum dimiliki tampil sebagai satu kartu bundel; yang sudah dibuka tampil biasa.
+  const masihMemuat = !dimuat || !aksesDimuat;
+  const tampil = paket.filter((p) => p.terbuka || (!masihMemuat && !terkunci(p)));
+  const bundel = paket.filter((p) => !tampil.includes(p));
+  const ringkasBundel = (() => {
+    const [a] = bundel;
+    if (!a) return "";
+    const kunci = (p: PaketBeranda) => `${p.jumlahSoal}|${p.perSubtes.map((x) => `${x.subtes} ${x.jumlah}`).join(" · ")}`;
+    return bundel.every((p) => kunci(p) === kunci(a))
+      ? `${a.jumlahSoal} soal per paket · ${a.perSubtes.map((x) => `${x.subtes} ${x.jumlah}`).join(" · ")}`
+      : `${bundel.reduce((n, p) => n + p.jumlahSoal, 0)} soal`;
+  })();
+
   const berjalan = paket.find((p) => sesi[p.id]?.jenis === "berjalan");
   const sesiBerjalan = berjalan ? (sesi[berjalan.id] as Extract<Sesi, { jenis: "berjalan" }>) : null;
 
@@ -163,7 +177,7 @@ export function LayarBeranda({ paket }: { paket: PaketBeranda[] }) {
           </p>
         ) : (
           <ul className="flex flex-col gap-3">
-            {paket.map((p) => {
+            {tampil.map((p) => {
               const s = sesi[p.id];
               const terakhir = riwayat.find((e) => e.paket === p.id);
               return (
@@ -171,12 +185,6 @@ export function LayarBeranda({ paket }: { paket: PaketBeranda[] }) {
                   <div className="flex flex-col gap-2">
                     <div className="flex items-center gap-2">
                       <h3 className="title-3">{p.judul}</h3>
-                      {!p.terbuka && aksesDimuat && terkunci(p) && (
-                        <span className="caption-4 flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-text-muted">
-                          <LockKey size={12} aria-hidden />
-                          Berbayar
-                        </span>
-                      )}
                       {p.status !== "final" && (
                         <span className="caption-4 rounded-full border border-border px-2 py-0.5 text-text-muted">
                           {p.status === "review" ? "Review" : "Draf"}
@@ -198,17 +206,8 @@ export function LayarBeranda({ paket }: { paket: PaketBeranda[] }) {
                       </p>
                     )}
                   </div>
-                  {!dimuat || (!p.terbuka && !aksesDimuat) ? (
+                  {!dimuat ? (
                     <div className="h-12 animate-pulse rounded-lg bg-surface-muted" aria-hidden />
-                  ) : terkunci(p) ? (
-                    <Link href={tujuanBuka} className={tombolSekunder}>
-                      <LockKey size={20} aria-hidden />
-                      {akun.status === "mati"
-                        ? "Lihat penawaran"
-                        : akun.status === "masuk"
-                          ? "Masukkan kode aktivasi"
-                          : "Masuk untuk membuka"}
-                    </Link>
                   ) : s?.jenis === "selesai" ? (
                     <div className="grid grid-cols-2 gap-3">
                       <Link href={`/ujian/${p.id}/hasil`} className={tombolSekunder}>
@@ -233,6 +232,41 @@ export function LayarBeranda({ paket }: { paket: PaketBeranda[] }) {
                 </li>
               );
             })}
+            {bundel.length > 0 && (
+              <li className="flex flex-col gap-4 rounded-xl border border-border bg-surface p-4">
+                <div className="flex flex-col gap-2">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <h3 className="title-3">{PENAWARAN?.nama ?? `Bundel ${bundel.length} try out`}</h3>
+                    <span className="caption-4 flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-text-muted">
+                      <LockKey size={12} aria-hidden />
+                      Berbayar
+                    </span>
+                  </div>
+                  <p className="body-6 text-text-muted">
+                    {bundel.map((p) => p.judul).join(", ")}
+                  </p>
+                  <p className="body-6 text-text-muted">{ringkasBundel}</p>
+                  {PENAWARAN && (
+                    <p className="body-6">
+                      <span className="mono-number title-4">{PENAWARAN.harga}</span>{" "}
+                      <span className="text-text-muted">untuk semua paket, plus ebook PDF</span>
+                    </p>
+                  )}
+                </div>
+                {masihMemuat ? (
+                  <div className="h-12 animate-pulse rounded-lg bg-surface-muted" aria-hidden />
+                ) : (
+                  <Link href={tujuanBuka} className={tombolSekunder}>
+                    <LockKey size={20} aria-hidden />
+                    {akun.status === "mati"
+                      ? "Lihat penawaran"
+                      : akun.status === "masuk"
+                        ? "Masukkan kode aktivasi"
+                        : "Masuk untuk membuka"}
+                  </Link>
+                )}
+              </li>
+            )}
           </ul>
         )}
       </section>

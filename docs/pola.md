@@ -55,6 +55,6 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 - Setelah kumpul (manual atau waktu habis) layar ujian pindah ke `/ujian/<paket>/hasil`; buka ujian yang sudah selesai juga diarahkan ke hasil. "Ulangi" menghapus rekaman.
 - Empty state hasil: belum ada jawaban / belum dikumpulkan / filter tanpa hasil (tombol hapus filter)
 - Pintasan ujian: A–E / 1–5 pilih, ← → pindah, R ragu-ragu
-- Paket berbayar terkunci di /try-out: badge "Berbayar" + tombol sekunder ber-ikon gembok ke /masuk atau /aktivasi (`?lanjut=` kembali)
+- Paket berbayar terkunci di /try-out digabung jadi satu kartu bundel (nama + harga dari `PENAWARAN`, daftar paket, badge "Berbayar") + tombol sekunder ber-ikon gembok ke /masuk atau /aktivasi (`?lanjut=` kembali); paket yang sudah dimiliki keluar dari bundel jadi kartu biasa
 - Galat login/kode: `Pesan jenis="galat"` di atas tombol kirim; login Google dibatalkan = info, bukan galat; "tidak ada" dan "sudah dipakai" satu pesan
 - Tautan kembali di header: `caption-4 -ml-2 flex h-11 items-center gap-1 rounded-lg px-2` + `ArrowLeft` 16 · `/try-out` → `/` ("Halaman utama"), hasil → `/try-out` ("Beranda")
