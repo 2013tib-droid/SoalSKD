@@ -179,36 +179,40 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
     <>
       <nav
         aria-label="Utama"
-        className="fixed top-3 left-1/2 z-40 flex -translate-x-1/2 items-center gap-2 rounded-xl border border-border bg-surface/80 p-2 backdrop-blur-md"
+        className="fixed inset-x-0 top-0 z-40 border-b border-border bg-surface/80 backdrop-blur-md"
       >
-        <Link href="/" className="title-3 rounded-lg px-3 py-2 text-text">
-          SoalSKD
-        </Link>
-        <ul className="hidden items-center md:flex">
-          {[
-            ["#apa-itu-skd", "Apa itu SKD"],
-            ["#cara-baca", "Cara baca layar"],
-            ["#contoh-soal", "Contoh soal"],
-            ...(PENAWARAN ? [["#harga", "Harga"]] : []),
-            ["#faq", "FAQ"],
-          ].map(([href, label]) => (
-            <li key={href}>
-              <a
-                href={href}
-                className="title-4 block rounded-lg px-3 py-2 whitespace-nowrap text-text-muted transition-colors duration-300 ease-[var(--ease-out-house)] hover:bg-surface-muted hover:text-text"
-              >
-                {label}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <MenuAkun />
-        <Link
-          href="/try-out"
-          className="title-4 flex h-10 items-center rounded-lg bg-primary px-3 whitespace-nowrap text-on-primary transition-[background-color,transform] duration-300 ease-[var(--ease-out-house)] hover:bg-primary-hover active:scale-[0.98]"
-        >
-          {CTA}
-        </Link>
+        <div className={`${wadah} flex h-16 items-center justify-between gap-2`}>
+          <Link href="/" className="title-3 -ml-2 rounded-lg px-2 py-2 text-text">
+            SoalSKD
+          </Link>
+          <ul className="hidden items-center md:flex">
+            {[
+              ["#apa-itu-skd", "Apa itu SKD"],
+              ["#cara-baca", "Cara baca layar"],
+              ["#contoh-soal", "Contoh soal"],
+              ...(PENAWARAN ? [["#harga", "Harga"]] : []),
+              ["#faq", "FAQ"],
+            ].map(([href, label]) => (
+              <li key={href}>
+                <a
+                  href={href}
+                  className="title-4 block rounded-lg px-3 py-2 whitespace-nowrap text-text-muted transition-colors duration-300 ease-[var(--ease-out-house)] hover:bg-surface-muted hover:text-text"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div className="flex items-center gap-1">
+            <MenuAkun />
+            <Link
+              href="/try-out"
+              className="title-4 flex h-10 items-center rounded-lg bg-primary px-3 whitespace-nowrap text-on-primary transition-[background-color,transform] duration-300 ease-[var(--ease-out-house)] hover:bg-primary-hover active:scale-[0.98]"
+            >
+              {CTA}
+            </Link>
+          </div>
+        </div>
       </nav>
 
       <main id="isi" className="flex flex-col">
