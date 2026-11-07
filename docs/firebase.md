@@ -11,6 +11,8 @@ yang membingungkan, kirim tangkapan layarnya ke Claude (tanpa kata sandi/token).
 3. Pembeli membuka situs → **Masuk** (email + kata sandi, atau Google) →
    halaman **Aktivasi kode** → memasukkan kode.
 4. Paket p02, p03, p04 terbuka di akun itu, di HP mana pun ia login.
+   Tombol **Unduh ebook PDF** muncul di halaman Try out; server memberi tautan
+   unduh yang hanya berlaku ±10 menit.
 5. Paket p01 tetap gratis tanpa login.
 
 Jawaban dan riwayat skor pembeli yang login tersimpan di akunnya, jadi pindah HP
@@ -23,7 +25,8 @@ Yang dipakai:
 |---|---|---|
 | Login | Firebase Authentication | — |
 | Database (paket milik, jawaban, riwayat, pesanan) | Cloud Firestore | Jakarta (`asia-southeast2`) |
-| Tukar kode + webhook Mayar | Cloud Functions | Jakarta (`asia-southeast2`) |
+| Tukar kode + webhook Mayar + tautan unduh ebook | Cloud Functions | Jakarta (`asia-southeast2`) |
+| File ebook PDF (privat) | Cloud Storage for Firebase | Jakarta (`asia-southeast2`) |
 | Situs (Next.js dengan server) | Firebase App Hosting | Singapura (`asia-southeast1`) |
 | Email kode | Gmail dengan App Password | — |
 
@@ -141,7 +144,8 @@ Setelah itu file JSON di komputer boleh dihapus.
 Tab **Actions → Deploy backend → Run workflow**:
 1. target `functions,firestore`, **dry_run dicentang** → Run. Harus hijau.
 2. Ulangi **tanpa centang** dry_run. Ini mengirim Cloud Functions dan aturan
-   keamanan database.
+   keamanan database. Target `storage` (dan `functions,firestore,storage`)
+   baru dipakai setelah Storage aktif di langkah 10a.
 
 ## 8. Situs di Firebase App Hosting
 
@@ -194,11 +198,75 @@ setelah dicoba di alamat App Hosting.
 4. Kirim **tautan produk Mayar** ke Claude. Claude mengisinya di `TAUTAN_BELI`
    (`web/src/config/landing.ts`) supaya tombol beli di landing aktif.
 
-## 10. Uji sekali dengan uang sungguhan
+## 10. Ebook PDF di Storage (privat)
+
+Ebook dijanjikan di kartu harga. File-nya **tidak boleh** ada di repo, `web/public`,
+atau situs dev (repo ini publik). Tempatnya di Storage dengan path
+`ebook/edisi-1.pdf`, tertutup untuk semua client (`storage.rules`). Pembeli
+menekan **Unduh ebook PDF** di halaman Try out; Cloud Function `unduhEbook` mengecek
+akunnya punya paket bundel (p02/p03/p04), lalu memberi tautan bertanda tangan
+yang berlaku **10 menit** dengan nama file `SoalSKD-Edisi-1.pdf`.
+
+### 10a. Aktifkan Storage di Jakarta (sekali)
+
+1. Console → **Build → Storage → Get started**.
+2. Location: **asia-southeast2 (Jakarta)**, sama dengan Firestore dan Functions.
+   Lokasi bucket **tidak bisa diganti**. (Bucket di luar region AS butuh paket
+   Blaze; sudah dari langkah 2.)
+3. Mode: **Production mode**. Aturan sebenarnya (tolak semua) dikirim lewat
+   Deploy backend target `storage` (langkah 7c, dry run dulu), setelah bucket ada.
+4. Catat nama bucket di bagian atas halaman Storage, mis.
+   `soalskd-1a2b3.firebasestorage.app`.
+
+### 10b. Izinkan function menandatangani tautan (sekali)
+
+Tautan unduh ditandatangani oleh service account Cloud Functions. Tanpa izin ini
+tombol unduh menjawab "Tautan unduhan belum bisa dibuat".
+
+1. Buka `https://console.cloud.google.com/apis/library/iamcredentials.googleapis.com?project=PROJECT_ID`
+   → **Enable** (IAM Service Account Credentials API).
+2. Buka `https://console.cloud.google.com/iam-admin/iam?project=PROJECT_ID`, cari
+   akun `PROJECT_NUMBER-compute@developer.gserviceaccount.com` (service account
+   bawaan Cloud Functions generasi 2), ikon pensil → tambahkan peran
+   **Service Account Token Creator** → Save.
+
+### 10c. Buat PDF lalu unggah
+
+Di komputer dengan Node 22, Python 3, Chromium (Playwright), dan
+[gcloud CLI](https://cloud.google.com/sdk/docs/install) yang sudah `gcloud auth login`
+dengan akun pemilik proyek:
+
+```sh
+sh tools/unggah-ebook.sh soalskd-1a2b3.firebasestorage.app   # ganti dengan nama bucket
+```
+
+Skrip ini memvalidasi `bank/p02–p04`, membuat `ebook/dist/edisi-1.pdf` (Edisi 1,
+330 soal), lalu `gsutil cp` ke `gs://<bucket>/ebook/edisi-1.pdf`. Hanya ingin
+membuat PDF: `sh tools/unggah-ebook.sh --cuma-buat`.
+
+Tanpa skrip: buat PDF dengan
+`node ebook/buat-ebook.mjs bank/p02.json bank/p03.json bank/p04.json --judul "Edisi 1" --keluar ebook/dist/edisi-1.pdf`,
+lalu Console → **Storage → Create folder** `ebook` → buka folder → **Upload file**
+→ pilih PDF-nya dan beri nama persis `edisi-1.pdf` (ganti nama di komputer dulu
+kalau perlu).
+
+**Jangan** klik "Create new access token" atau membagikan tautan dari Console:
+tautan semacam itu berlaku selamanya dan bisa disebar.
+
+### 10d. Setiap kali isi bank berubah
+
+Soal p02–p04 diperbaiki atau ditambah → jalankan lagi **10c**. File lama ditimpa
+di path yang sama, jadi tombol unduh langsung memberi versi baru. Pembeli yang
+sudah mengunduh tetap memegang versi lamanya. Edisi baru dengan nama file lain
+(mis. "Edisi 2") butuh perubahan kecil di `functions/src/index.ts` (`EBOOK`) dan
+skrip; minta Claude.
+
+## 11. Uji sekali dengan uang sungguhan
 
 Beli sendiri pakai email lain (Rp9.900). Dalam beberapa menit email berisi kode
 harus masuk. Daftar dengan email itu, verifikasi, buka **Aktivasi kode**,
-masukkan kode → "Semua paket sudah aktif" → buka Paket 02.
+masukkan kode → "Semua paket sudah aktif" → buka Paket 02. Kembali ke halaman
+Try out → **Unduh ebook PDF** → file `SoalSKD-Edisi-1.pdf` terunduh.
 
 ---
 
@@ -212,6 +280,10 @@ Semua pesanan ada di Firestore → koleksi **`orders`** (id = id transaksi Mayar
 | `code` terisi, `emailedAt` kosong | Email gagal; Mayar mengulang sendiri | Setelah 1 jam masih kosong: kirim kode di `code` secara manual |
 | `problem: produk-tidak-dikenal` | Nama produk tidak cocok | Buat kode manual (di bawah), betulkan nama produk |
 | `problem: status-…` | Status pembayaran bukan sukses | Cek di dasbor Mayar; kalau ternyata lunas, kirim kode manual |
+
+Pembeli melapor ebook tidak bisa diunduh: lihat log function `unduhEbook`
+(Console → Functions → Logs). `file belum diunggah` = ulangi langkah 10c;
+`gagal menandatangani URL` = cek langkah 10b.
 
 Pembeli salah ketik email: cari pesanannya di `orders`, kirim kode yang sama dari
 field `code`. **Jangan buat kode baru**, supaya satu pembayaran tetap satu kode.
@@ -246,14 +318,17 @@ harga resmi sebelum memutuskan ulang.)
 ## Untuk developer: uji di emulator
 
 ```sh
-cd functions && npm ci && npm run uji          # 41 skenario: webhook, tukar kode, rules
+cd functions && npm ci && npm run uji          # 55 skenario: webhook, tukar kode, unduh ebook, rules Firestore + Storage
 ```
 
 Butuh Java 21. Untuk mencoba situs dengan emulator: jalankan
-`npx firebase-tools@14 emulators:start --project demo-soalskd --only auth,functions,firestore`
+`npx firebase-tools@14 emulators:start --project demo-soalskd --only auth,functions,firestore,storage`
 dari root repo, lalu isi `web/.env.local` mengikuti contoh emulator di
 `web/.env.example` (`NEXT_PUBLIC_FIREBASE_PROJECT_ID=demo-soalskd`, nilai lain
 boleh asal) dan `npm run dev` di `web/`.
 
-Build statis GitHub Pages (`STATIK=1`) tetap seperti dulu: login dan gerbang
-mati, semua paket terbuka, kunci ikut ke browser. Hanya untuk penguji.
+Di emulator, `unduhEbook` menandatangani tautan dengan kunci sekali pakai (tanpa
+kredensial Google), dan tautannya mengarah ke emulator Storage.
+
+Build statis GitHub Pages (`STATIK=1`): login dan gerbang mati, p02–p04
+terkunci, kartu ebook tidak ikut dibundel. Hanya untuk penguji.

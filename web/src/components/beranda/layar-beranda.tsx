@@ -9,6 +9,7 @@ import { bacaRiwayat, type EntriRiwayat } from "@/lib/riwayat";
 import { EVENT_SINKRON } from "@/lib/sinkron";
 import { useAkun } from "@/components/akun/auth";
 import { MenuAkun } from "@/components/akun/menu-akun";
+import { KartuEbook } from "@/components/beranda/kartu-ebook";
 import { PENAWARAN } from "@/config/landing";
 
 export type PaketBeranda = {
@@ -267,6 +268,8 @@ export function LayarBeranda({ paket }: { paket: PaketBeranda[] }) {
                 )}
               </li>
             )}
+            {/* Build statis: dibandingkan langsung (bukan BUILD_STATIK) supaya minifier membuang kartu ebook dari bundel. */}
+            {process.env.STATIK !== "1" && <KartuEbook />}
           </ul>
         )}
       </section>

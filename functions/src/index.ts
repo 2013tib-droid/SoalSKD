@@ -12,13 +12,16 @@
  *      melarang client menulis dokumen user sama sekali.
  *   3. Kode dari Mayar dibuat per pesanan, idempoten, dan dikirim ke email
  *      pembeli. Kode tidak pernah dicatat di log.
+ *   4. Ebook PDF ada di Storage privat (storage.rules menolak semua client);
+ *      `unduhEbook` memberi signed URL berumur pendek ke pemilik paket bundel.
  *
  * Pola ini meniru game edukasi (functions/src/index.ts di repo itu), tapi
  * yang dibuka di sini daftar PAKET, bukan kelompok umur.
  */
-import { randomInt, timingSafeEqual } from 'node:crypto';
-import { initializeApp } from 'firebase-admin/app';
+import { generateKeyPairSync, randomInt, timingSafeEqual } from 'node:crypto';
+import { cert, initializeApp, type App } from 'firebase-admin/app';
 import { FieldValue, getFirestore, Timestamp } from 'firebase-admin/firestore';
+import { getStorage } from 'firebase-admin/storage';
 import { logger } from 'firebase-functions';
 import { defineSecret, defineString } from 'firebase-functions/params';
 import { setGlobalOptions } from 'firebase-functions/v2';
@@ -170,7 +173,90 @@ export const redeemActivationCode = onCall(async (request) => {
   return { paket: hasil.paket, sudah: hasil.status === 'sudah-milikmu' };
 });
 
-// --- 2. Webhook Mayar: buat kode + kirim email -------------------------------
+// --- 2. Unduh ebook PDF -----------------------------------------------------
+
+/**
+ * Ebook yang ikut produk bundel. PDF dibuat dari bank/p02–p04 (ebook/README.md)
+ * dan diunggah pemilik ke path ini (docs/firebase.md). Nama file unduhan dipaksa
+ * lewat Content-Disposition, jadi path di bucket tidak terlihat di nama file.
+ */
+const EBOOK = {
+  path: 'ebook/edisi-1.pdf',
+  namaFile: 'SoalSKD-Edisi-1.pdf',
+  paket: PRODUK['bundel-3to'].paket as readonly string[],
+  berlakuMs: 10 * 60 * 1000,
+} as const;
+
+let appEmulator: App | null = null;
+
+/**
+ * Bucket default proyek. Di emulator tidak ada kredensial untuk menandatangani
+ * URL, jadi dipakai app terpisah dengan kunci RSA sekali pakai (hanya emulator;
+ * URL-nya cuma berlaku di emulator). Produksi menandatangani lewat IAM signBlob
+ * dengan service account function (docs/firebase.md, langkah Storage).
+ */
+function bucketEbook() {
+  if (process.env.FUNCTIONS_EMULATOR !== 'true') return getStorage().bucket();
+  if (!appEmulator) {
+    const { privateKey } = generateKeyPairSync('rsa', {
+      modulusLength: 2048,
+      privateKeyEncoding: { type: 'pkcs8', format: 'pem' },
+      publicKeyEncoding: { type: 'spki', format: 'pem' },
+    });
+    const projectId = process.env.GCLOUD_PROJECT ?? 'demo-soalskd';
+    appEmulator = initializeApp(
+      { credential: cert({ projectId, clientEmail: `emulator@${projectId}.iam.gserviceaccount.com`, privateKey }) },
+      'emulator-ebook',
+    );
+  }
+  return getStorage(appEmulator).bucket(getStorage().bucket().name);
+}
+
+/**
+ * Tautan unduh ebook untuk akun yang memiliki minimal satu paket bundel.
+ * Hak dibaca dari `users/{uid}.paket` (hanya ditulis `redeemActivationCode`).
+ * URL berlaku 10 menit; tidak disimpan di mana pun.
+ */
+export const unduhEbook = onCall(async (request) => {
+  const uid = wajibUid(request);
+  const milik: unknown = (await db.doc(`users/${uid}`).get()).get('paket');
+  const punya = Array.isArray(milik) && milik.some((p) => typeof p === 'string' && EBOOK.paket.includes(p));
+  if (!punya) {
+    throw new HttpsError('permission-denied', 'Ebook ikut paket bundel. Tukar kode aktivasimu dulu di halaman Aktivasi.');
+  }
+
+  const file = bucketEbook().file(EBOOK.path);
+  let ada = false;
+  try {
+    [ada] = await file.exists();
+  } catch (e) {
+    logger.error('unduhEbook: Storage tidak bisa dibaca', { pesan: (e as Error).message });
+    throw new HttpsError('internal', 'Ebook belum bisa diambil. Coba lagi sebentar lagi.');
+  }
+  if (!ada) {
+    logger.error('unduhEbook: file belum diunggah', { path: EBOOK.path });
+    throw new HttpsError('not-found', 'Ebook sedang disiapkan. Coba lagi nanti, atau balas email pembelianmu.');
+  }
+
+  try {
+    const berakhir = Date.now() + EBOOK.berlakuMs;
+    const [url] = await file.getSignedUrl({
+      version: 'v4',
+      action: 'read',
+      expires: berakhir,
+      responseDisposition: `attachment; filename="${EBOOK.namaFile}"`,
+      responseType: 'application/pdf',
+    });
+    logger.info('unduhEbook: tautan dibuat', { uid });
+    return { url, namaFile: EBOOK.namaFile, berakhirPada: berakhir };
+  } catch (e) {
+    // Biasanya: service account function belum punya peran Service Account Token Creator.
+    logger.error('unduhEbook: gagal menandatangani URL', { pesan: (e as Error).message });
+    throw new HttpsError('internal', 'Tautan unduhan belum bisa dibuat. Coba lagi sebentar lagi.');
+  }
+});
+
+// --- 3. Webhook Mayar: buat kode + kirim email -------------------------------
 
 /** Webhook Token dari dasbor Mayar, dikirim Mayar lewat header `X-Callback-Token`. */
 const MAYAR_WEBHOOK_TOKEN = defineSecret('MAYAR_WEBHOOK_TOKEN');
@@ -238,6 +324,7 @@ function emailKode(nama: string, produk: IdProduk, kode: string) {
   const judul = PRODUK[produk].judul;
   const situs = URL_SITUS.value().replace(/\/+$/, '');
   const halamanAktivasi = situs ? `${situs}/aktivasi` : '';
+  const halamanTryOut = situs ? `${situs}/try-out` : '';
   const sapa = nama ? `Halo ${nama},` : 'Halo,';
   const langkah1 = halamanAktivasi ? `Buka ${halamanAktivasi}` : 'Buka situs SoalSKD, lalu pilih Masuk';
   const text = [
@@ -252,6 +339,8 @@ function emailKode(nama: string, produk: IdProduk, kode: string) {
     '2. Masuk atau daftar (email + kata sandi, atau akun Google)',
     '3. Masukkan kode di atas, lalu tekan Aktifkan',
     '',
+    `Setelah kode ditukar, ebook PDF bisa diunduh dari halaman Try out (${halamanTryOut || 'menu Try out di situs SoalSKD'}).`,
+    '',
     'Satu kode untuk satu akun. Simpan email ini. Ada kendala? Balas email ini.',
     '',
     'Salam,',
@@ -261,6 +350,9 @@ function emailKode(nama: string, produk: IdProduk, kode: string) {
   const tautan = halamanAktivasi
     ? `<a href="${halamanAktivasi}">halaman aktivasi</a>`
     : 'situs SoalSKD, lalu pilih Masuk';
+  const tautanTryOut = halamanTryOut
+    ? `halaman <a href="${halamanTryOut}">Try out</a>`
+    : 'halaman Try out di situs SoalSKD';
   const html = `<div style="font-family:Arial,sans-serif;font-size:15px;color:#111827;line-height:1.5">
 <p>${escapeHtml(sapa)}</p>
 <p>Terima kasih sudah membeli <b>${judul}</b> di SoalSKD.</p>
@@ -272,6 +364,7 @@ function emailKode(nama: string, produk: IdProduk, kode: string) {
 <li>Masuk atau daftar (email + kata sandi, atau akun Google)</li>
 <li>Masukkan kode di atas, lalu tekan <b>Aktifkan</b></li>
 </ol>
+<p>Setelah kode ditukar, ebook PDF bisa diunduh dari ${tautanTryOut}.</p>
 <p>Satu kode untuk satu akun. Simpan email ini. Ada kendala? Balas email ini.</p>
 <p>Salam,<br>SoalSKD</p>
 </div>`;

@@ -27,6 +27,7 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 - `web/src/components/akun/ui.tsx` · `Kolom` (input 48px, teks 16px, label di atas), `KolomSandi` (tombol lihat 44px), `Pesan` (galat/sukses/info, ikon + teks), `TombolGoogle`, `Pemisah`, `Kerangka`, `tombolUtama`/`tombolSekunder`/`tautanTeks`, `tujuanAman(lanjut)`
 - `web/src/components/akun/kerangka-masuk.tsx` · `KerangkaMasuk` layar /masuk & /daftar: merek, sakelar segmen (bawa `?lanjut=`), manfaat, pratinjau grid ujian; dua kolom di desktop · props `mode`, `judul`, `keterangan`, `qLanjut`, `sakelar`
 - `web/src/components/akun/menu-akun.tsx` · `MenuAkun`: "Masuk" (belum login) atau ikon akun → menu email, Aktivasi kode, Keluar; tidak tampil saat login mati · dipakai nav landing dan header /try-out
+- `web/src/components/beranda/kartu-ebook.tsx` · `KartuEbook` di daftar paket /try-out: tampil hanya jika `punyaEbook(akun.paket)` (`web/src/config/akses.ts`), tombol sekunder `DownloadSimple` → `akun.unduhEbook()` (signed URL dari function `unduhEbook`), state memuat / galat / info; build statis dibuang dari bundel lewat `process.env.STATIK !== "1"` di pemanggil
 - `web/src/components/ujian/gerbang-ujian.tsx` · `GerbangUjian` paket berbayar: minta soal ke server setelah login; status memuat / perlu masuk / belum punya / gagal; login mati = terkunci + tombol penawaran dan paket gratis
 
 ## Data & state (fetch, tabel, filter, form)
@@ -34,7 +35,7 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 - `web/src/components/akun/auth.tsx` · `PenyediaAkun` + `useAkun({ wajib })`: status `mati|memuat|keluar|masuk`, `paket` milik, aksi masuk/daftar/Google/keluar/verifikasi/tukarKode, `pesanGalat()` Indonesia · `wajib` = muat Firebase sekarang
 - `web/src/config/akses.ts` `paketTerbuka(id)` · paket tanpa login (p01, juga di build statis: paket berbayar terkunci dan soal/kuncinya tidak ditanam). `web/src/lib/akses-server.ts` `cekAksesPaket(paket, idToken)` = satu-satunya keputusan akses di server
 - `web/src/lib/sinkron.ts` · localStorage ↔ `users/{uid}/sesi|riwayat`: `kirimRekaman` (jeda 1,5 dtk), `sinkronkanAkun` sekali per login, event `soalskd:sinkron` agar layar membaca ulang
-- `functions/src/index.ts` · `redeemActivationCode`, `mayarWebhook`; produk → paket di `PRODUK` · tes: `cd functions && npm run uji`
+- `functions/src/index.ts` · `redeemActivationCode`, `mayarWebhook`, `unduhEbook` (file berbayar: Storage privat + signed URL berumur pendek, hak dari `users/{uid}.paket`, konfigurasi `EBOOK`); produk → paket di `PRODUK` · tes: `cd functions && npm run uji`
 
 - `web/src/lib/soal.ts` `daftarPaket()` · ringkasan semua paket skema 1 di `bank/` (judul, status, jumlah per subtes)
 - `web/src/lib/riwayat.ts` · riwayat skor di localStorage (`soalskd:riwayat`, maks 50), dicatat sekali per percobaan (`percobaan` = jam selesai sesi) saat halaman hasil dibuka

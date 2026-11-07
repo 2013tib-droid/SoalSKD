@@ -12,3 +12,14 @@ export const PAKET_TERBUKA = ["p01"] as const;
 export function paketTerbuka(paket: string): boolean {
   return (PAKET_TERBUKA as readonly string[]).includes(paket);
 }
+
+/**
+ * Paket bundel yang ikut membuka ebook PDF (minimal satu dimiliki). Hanya untuk
+ * menampilkan tombol unduh; haknya dicek Cloud Function `unduhEbook`
+ * (functions/src/index.ts, `EBOOK.paket`). Build statis tidak pernah menampilkannya.
+ */
+export const PAKET_EBOOK = ["p02", "p03", "p04"] as const;
+
+export function punyaEbook(milik: readonly string[] | null | undefined): boolean {
+  return (milik ?? []).some((p) => (PAKET_EBOOK as readonly string[]).includes(p));
+}

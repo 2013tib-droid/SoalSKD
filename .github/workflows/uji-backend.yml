@@ -1,13 +1,13 @@
-# Tes backend (webhook Mayar, tukar kode, security rules) di Firebase Emulator.
+# Tes backend (webhook Mayar, tukar kode, unduh ebook, rules Firestore + Storage) di Firebase Emulator.
 # Tanpa kredensial dan tanpa menyentuh proyek sungguhan (project demo-soalskd).
 name: Uji backend
 
 on:
   pull_request:
-    paths: [functions/**, firestore.rules, firebase.json, .github/workflows/uji-backend.yml]
+    paths: [functions/**, firestore.rules, storage.rules, firebase.json, .github/workflows/uji-backend.yml]
   push:
     branches: [claude/skd-stan-resource-analysis-c10e5n]
-    paths: [functions/**, firestore.rules, firebase.json]
+    paths: [functions/**, firestore.rules, storage.rules, firebase.json]
   workflow_dispatch:
 
 jobs:

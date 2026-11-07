@@ -7,5 +7,5 @@ cd "$(dirname "$0")/.."
 [ -f .secret.local ] || printf 'MAYAR_WEBHOOK_TOKEN=token-uji\nGMAIL_APP_PASSWORD=dummy\n' > .secret.local
 [ -f .env.local ] || printf 'EMAIL_PENGIRIM=uji@example.com\nURL_SITUS=https://contoh.test\n' > .env.local
 cd ..
-${FIREBASE:-npx --yes firebase-tools@14} emulators:exec --project demo-soalskd --only auth,functions,firestore \
+${FIREBASE:-npx --yes firebase-tools@14} emulators:exec --project demo-soalskd --only auth,functions,firestore,storage \
   "node functions/test/uji.mjs"
