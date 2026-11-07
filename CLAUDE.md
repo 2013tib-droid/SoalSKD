@@ -61,3 +61,4 @@ Aplikasi try out SKD CPNS (TWK, TIU, TKP). Mayoritas pengguna membuka di HP.
 2026-11-07 · Dev statis tetap menampilkan tombol "Masuk" (pratinjau posisi); /masuk di sana menjelaskan login aktif di situs pembeli · pemilik mencari tombolnya di dev
 2026-11-07 · Build statis dev ikut gerbang: p02–p04 tampil terkunci ("Berbayar"), soal dan kuncinya tidak masuk `out/`; hanya p01 bisa dikerjakan · pemilik ingin try out berbayar nonaktif sampai dibayar, juga di dev
 2026-11-07 · Layar ujian punya tombol keluar (X di topbar) dengan konfirmasi; jawaban tersimpan, timer tetap berjalan, lanjut dari /try-out · pengguna merasa terjebak di layar ujian
+2026-11-07 · Layar masuk/daftar/aktivasi sama persis di dev dan produksi: tanpa pesan "versi uji"; saat login mati form tetap tampil dan aksi menjawab "Login sedang tidak bisa dipakai" · pemilik ingin dev = produksi; menggantikan pesan /masuk di keputusan dev statis sebelumnya

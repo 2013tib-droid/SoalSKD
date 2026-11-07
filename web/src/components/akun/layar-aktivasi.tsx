@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { pesanGalat, useAkun } from "./auth";
-import { Kartu, Kerangka, Kolom, LayarAkun, LoginMati, Pesan, tautanTeks, tombolSekunder, tombolUtama, tujuanAman } from "./ui";
+import { Kartu, Kerangka, Kolom, LayarAkun, Pesan, tautanTeks, tombolSekunder, tombolUtama, tujuanAman } from "./ui";
 
 export type PaketBerbayar = { id: string; judul: string };
 
@@ -20,13 +20,6 @@ export function LayarAktivasi({ paketBerbayar }: { paketBerbayar: PaketBerbayar[
   const [proses, setProses] = useState<"tukar" | "cek" | "kirim" | null>(null);
   const [kabar, setKabar] = useState<{ jenis: "galat" | "sukses" | "info"; teks: string } | null>(null);
 
-  if (akun.status === "mati")
-    return (
-      <LayarAkun judul={JUDUL}>
-        <LoginMati />
-      </LayarAkun>
-    );
-
   if (akun.status === "memuat" || (akun.status === "masuk" && akun.paket === null))
     return (
       <LayarAkun judul={JUDUL} keterangan={KETERANGAN}>
@@ -37,7 +30,7 @@ export function LayarAktivasi({ paketBerbayar }: { paketBerbayar: PaketBerbayar[
       </LayarAkun>
     );
 
-  if (akun.status === "keluar")
+  if (akun.status === "keluar" || akun.status === "mati")
     return (
       <LayarAkun judul={JUDUL} keterangan={KETERANGAN}>
         <Kartu>

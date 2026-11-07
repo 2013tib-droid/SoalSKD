@@ -2,7 +2,6 @@
 
 import { ArrowLeft, CheckCircle, Eye, EyeSlash, GoogleLogo, Info, WarningCircle } from "@phosphor-icons/react";
 import Link from "next/link";
-import { BUILD_STATIK } from "@/config/build";
 import { useId, useState, type InputHTMLAttributes, type ReactNode } from "react";
 
 const tombolDasar =
@@ -135,22 +134,6 @@ export function Pemisah() {
 
 export function Kerangka({ tinggi = "h-48" }: { tinggi?: string }) {
   return <div className={`${tinggi} animate-pulse rounded-xl border border-border bg-surface`} aria-hidden />;
-}
-
-/** Login dimatikan (build statis / env kosong). */
-export function LoginMati() {
-  return (
-    <Kartu>
-      <Pesan jenis="info">
-        {BUILD_STATIK
-          ? "Ini versi uji. Login aktif di situs pembeli setelah Firebase disiapkan. Di versi uji semua paket terbuka tanpa akun."
-          : "Login belum tersedia di versi ini. Paket gratis tetap bisa dikerjakan tanpa akun."}
-      </Pesan>
-      <Link href="/try-out" className={tombolUtama}>
-        Ke daftar try out
-      </Link>
-    </Kartu>
-  );
 }
 
 /** Tujuan setelah login dari `?lanjut=`; hanya jalur internal. */

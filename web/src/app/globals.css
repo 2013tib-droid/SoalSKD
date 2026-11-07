@@ -134,6 +134,12 @@ body {
   50% { opacity: 0.4; }
 }
 
+/* Layar masuk/daftar: isi naik 8px sekali saat dibuka. */
+@keyframes masuk-naik {
+  from { opacity: 0; transform: translateY(8px); }
+}
+.masuk-naik { animation: masuk-naik 300ms var(--ease-out-house) both; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
