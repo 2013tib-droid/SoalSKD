@@ -3,7 +3,7 @@
 import { ArrowCounterClockwise, ArrowLeft, ArrowRight, ClockCountdown, Info, LockKey, Play } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { type ReactNode, useEffect, useState } from "react";
 import { bacaRekaman, hapusRekaman } from "@/components/ujian/use-ujian";
 import { bacaRiwayat, type EntriRiwayat } from "@/lib/riwayat";
 import { EVENT_SINKRON } from "@/lib/sinkron";
@@ -62,7 +62,7 @@ function waktuRelatif(ms: number, sekarang: number) {
 const tanggalLengkap = (ms: number) =>
   new Date(ms).toLocaleString("id-ID", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" });
 
-export function LayarBeranda({ paket }: { paket: PaketBeranda[] }) {
+export function LayarBeranda({ paket, panduan }: { paket: PaketBeranda[]; panduan?: ReactNode }) {
   const router = useRouter();
   const [dimuat, setDimuat] = useState(false);
   const [sekarang, setSekarang] = useState(0);
@@ -167,6 +167,8 @@ export function LayarBeranda({ paket }: { paket: PaketBeranda[] }) {
           </Link>
         </section>
       )}
+
+      {panduan}
 
       <section aria-labelledby="judul-paket" className="flex flex-col gap-3">
         <h2 id="judul-paket" className="title-3">

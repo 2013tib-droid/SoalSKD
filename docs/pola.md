@@ -6,7 +6,7 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 
 ## Layout
 
-- `web/src/components/landing/layar-landing.tsx` · landing `/` gaya promo: header (`Logo` kotak biru + nama, tautan bagian ≥768px, Masuk + CTA), hero bercahaya + `PratinjauUjian tanpaBingkai` di bingkai HP + `Kilau`, strip angka (dari `bank/`), kartu masalah → solusi, 4 kartu keunggulan berikon berwarna, garis langkah cara kerja, "Apa itu SKD", "Cara membaca layar ujian" (`PratinjauUjian beranotasi` + `CaraBaca`), contoh soal + pratinjau hasil, kartu harga dan testimoni (hanya jika diisi di `web/src/config/landing.ts`), FAQ + JSON-LD, banner CTA biru dengan harga `PENAWARAN` · angka dari `bank/` dan `config/skd.json`
+- `web/src/components/landing/layar-landing.tsx` · landing `/` gaya promo: header (`Logo` kotak biru + nama, tautan bagian ≥768px, Masuk + CTA), hero bercahaya + `PratinjauUjian tanpaBingkai` di bingkai HP + `Kilau` (tombol kedua ke paket gratis), strip angka (dari `bank/`), kartu harga (hanya jika diisi di `web/src/config/landing.ts`), kartu masalah → solusi, 4 kartu keunggulan berikon berwarna, garis langkah cara kerja, "Apa itu SKD", testimoni (hanya jika diisi), banner CTA biru dengan harga `PENAWARAN`, lalu FAQ + JSON-LD · angka dari `bank/` dan `config/skd.json`
 - `web/src/components/beranda/layar-beranda.tsx` · beranda: kartu lanjutkan ujian (sesi berjalan), daftar paket dengan aksi sesuai state (Mulai / Lanjutkan / Lihat hasil + Ulangi), riwayat skor · props `paket` dari `daftarPaket()` + `durasiPaket()`
 - `web/src/components/akun/ui.tsx` `LayarAkun` · kerangka layar akun satu kolom (max-w-md): tautan kembali, judul, isi · dipakai /aktivasi, gerbang ujian (/masuk & /daftar pakai `KerangkaMasuk`)
 - `web/src/components/legal/layar-legal.tsx` `LayarLegal` · halaman teks panjang (server component, tanpa Firebase): `max-w-prose`, `body-5`, daftar isi anchor dari judul `##`, tabel bergulir di dalam kartu, tautan internal lewat `Link` (basePath) · isi dari `web/src/konten/<nama>.md` lewat `muatHalamanLegal()` (`web/src/lib/legal.ts`), penanda `{{...}}` diganti dari `web/src/config/legal.ts`; dipakai /privasi, /syarat
@@ -15,7 +15,7 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 ## Komponen
 
 - `web/src/components/landing/gerak.tsx` · `Muncul` (section naik 32px sekali saat masuk layar) dan `TaglineBertahap` (kata menyala satu per satu saat lewat garis 60% layar) · keduanya mati di `prefers-reduced-motion`
-- `web/src/components/landing/contoh-soal.tsx` · `ContohSoal` (satu soal interaktif + pembahasan, pakai `KartuSoal`) dan `PratinjauHasil` (kartu skor ilustrasi)
+- `web/src/components/panduan/panduan-ujian.tsx` · `PratinjauUjian` (layar ujian statis dari soal bank, opsi `beranotasi`/`tanpaBingkai`), `CaraBaca` (keterangan bernomor), `PanduanUjian` (`<details>` "Cara membaca layar ujian" di /try-out, dirender server lalu jadi slot `panduan` di `LayarBeranda`), `BAGIAN_SKD`
 - `web/src/components/teks-md.tsx` · render Markdown GFM soal/pembahasan (tanpa HTML, italic jadi medium) · `inline` untuk di dalam tombol
 - `web/src/components/hasil/kartu-skor.tsx` · kartu KPI skor (nilai/maks, bar, status ambang ikon + teks) · `utama` untuk kartu total selebar grid
 - `web/src/components/hasil/item-pembahasan.tsx` · `<details>` per soal: ringkas (status, subtopik, poin, ragu) lalu tiap opsi + alasannya (`pembahasan.opsi`), bobot TKP, inti, konsep, tips, rujukan

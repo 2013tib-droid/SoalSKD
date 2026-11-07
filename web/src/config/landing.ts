@@ -5,10 +5,7 @@ import { PAKET_TERBUKA } from "@/config/akses";
  * Bagian yang kosong tidak ditampilkan. Jangan isi dengan angka atau kutipan karangan.
  */
 
-/** Soal contoh interaktif di landing. Kunci dan pembahasan soal ini ikut ke browser. */
-export const CONTOH_SOAL = { paket: "p01", id: "p01-010" };
-
-/** Soal yang tampil di pratinjau layar ujian pada hero (tanpa kunci). */
+/** Soal yang tampil di pratinjau layar ujian pada hero landing dan panduan di /try-out (tanpa kunci). */
 export const SOAL_HERO = { paket: "p01", id: "p01-007" };
 
 /** Isi dari pengguna sungguhan (dengan izin). Kosong = section testimoni disembunyikan. */

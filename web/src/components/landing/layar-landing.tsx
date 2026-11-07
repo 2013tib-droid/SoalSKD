@@ -8,7 +8,6 @@ import {
   CheckCircle,
   DeviceMobile,
   Exam,
-  Flag,
   Gift,
   Lightning,
   Megaphone,
@@ -27,10 +26,10 @@ import {
 import Link from "next/link";
 import { AMBANG_TIMER, DURASI_LATIHAN_MENIT_PER_SOAL } from "@/config/skd";
 import { PAKET_GRATIS, PENAWARAN, TAUTAN_BELI, TESTIMONI } from "@/config/landing";
-import type { SoalPembahasan, SoalUjian } from "@/lib/soal";
+import type { SoalUjian } from "@/lib/soal";
 import { MenuAkun } from "@/components/akun/menu-akun";
 import { LOGIN_AKTIF } from "@/lib/firebase/klien";
-import { ContohSoal, PratinjauHasil } from "./contoh-soal";
+import { BAGIAN_SKD, PratinjauUjian } from "@/components/panduan/panduan-ujian";
 import { Muncul } from "./gerak";
 
 export type DataLanding = {
@@ -49,7 +48,6 @@ export type DataLanding = {
 type Props = {
   data: DataLanding;
   soalHero: Omit<SoalUjian, "id"> | null;
-  soalContoh: SoalPembahasan | null;
 };
 
 const CTA = "Mulai Try Out";
@@ -62,37 +60,7 @@ const judulSection = "heading-4 lg:heading-3 text-balance";
 
 const gabung = (xs: string[]) => (xs.length < 2 ? xs.join("") : `${xs.slice(0, -1).join(", ")}, dan ${xs.at(-1)}`);
 
-/** Penjelasan bahasa awam untuk tiap bagian SKD. Jumlah soal dan nilai tetap diambil dari config. */
-const BAGIAN_SKD: Record<string, { nama: string; menguji: string; contoh: string }> = {
-  TWK: {
-    nama: "Wawasan Kebangsaan",
-    menguji: "Pengetahuanmu tentang negara sendiri.",
-    contoh: "Pancasila, UUD 1945, sejarah, dan Bhinneka Tunggal Ika.",
-  },
-  TIU: {
-    nama: "Kemampuan Berpikir",
-    menguji: "Cara kamu bernalar dan berhitung.",
-    contoh: "Deret angka, soal cerita hitungan, logika, dan arti kata.",
-  },
-  TKP: {
-    nama: "Sikap dan Karakter",
-    menguji: "Sikapmu saat bekerja dan melayani orang.",
-    contoh: "Kamu memilih tindakan yang paling tepat dalam sebuah situasi kerja.",
-  },
-};
-
-/** Nomor bulat kecil penunjuk bagian pada pratinjau layar ujian. */
-function Penanda({ n, className = "" }: { n: number; className?: string }) {
-  return (
-    <span
-      className={`caption-4 flex size-6 shrink-0 items-center justify-center rounded-full bg-text font-mono text-surface tabular-nums ${className}`}
-    >
-      {n}
-    </span>
-  );
-}
-
-export function LayarLanding({ data, soalHero, soalContoh }: Props) {
+export function LayarLanding({ data, soalHero }: Props) {
   const komposisi = gabung(data.komposisi.map((s) => `${s.jumlah} ${s.kode}`));
   const ambangTeks = data.ambang && gabung(data.ambang.map((a) => `${a.kode} ${a.nilai}`));
 
@@ -215,7 +183,6 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
           <Logo />
           <ul className="hidden items-center md:flex">
             {[
-              ["#contoh-soal", "Contoh Soal"],
               ["#cara-kerja", "Cara Kerja"],
               ...(PENAWARAN ? [["#harga", "Harga"]] : []),
               ["#faq", "FAQ"],
@@ -281,14 +248,14 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
                   {CTA}
                   <ArrowRight size={20} aria-hidden />
                 </Link>
-                {soalContoh && (
-                  <a
-                    href="#contoh-soal"
+                {data.soalGratis > 0 && (
+                  <Link
+                    href={`/ujian/${PAKET_GRATIS}`}
                     className="button-md flex h-14 items-center justify-center gap-2 rounded-lg border-2 border-primary bg-surface px-6 text-primary transition-[background-color,transform] duration-300 ease-[var(--ease-out-house)] hover:bg-primary/5 active:scale-[0.98] sm:w-fit"
                   >
                     <PlayCircle size={20} weight="fill" aria-hidden />
-                    Lihat Contoh Soal
-                  </a>
+                    Coba {data.soalGratis} Soal Gratis
+                  </Link>
                 )}
               </div>
               <ul className="caption-4 flex flex-wrap gap-x-4 gap-y-2 text-text-muted">
@@ -334,6 +301,78 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
             </ul>
           </div>
         </section>
+
+        {/* Harga: tampil hanya jika sudah diisi di config/landing.ts */}
+        {PENAWARAN && (
+          <section id="harga" aria-labelledby="judul-harga" className="scroll-mt-20 py-16 lg:py-24">
+            <Muncul className={`${wadah} flex flex-col gap-8`}>
+              <div className="flex flex-col gap-3">
+                <h2 id="judul-harga" className={judulSection}>
+                  Semua paket latihan, harga satu gelas kopi
+                </h2>
+                <p className="body-3 max-w-[680px] text-pretty text-text-muted">
+                  Kerjakan di HP, baca ulang pembahasannya lewat ebook. Belum yakin? Coba paket gratis dulu.
+                </p>
+              </div>
+
+              <div className="grid overflow-hidden rounded-2xl border border-primary/40 bg-surface lg:grid-cols-[5fr_7fr]">
+                <div className="flex flex-col gap-6 bg-primary/[0.06] p-6 sm:p-10">
+                  <p className="caption-4 w-fit rounded-full bg-primary px-3 py-1 text-on-primary">{PENAWARAN.label}</p>
+                  <div className="flex flex-col gap-2">
+                    <h3 className="title-2">{PENAWARAN.nama}</h3>
+                    <p className="heading-1 tracking-tight text-text tabular-nums">{PENAWARAN.harga}</p>
+                    <p className="body-6 text-text-muted">Sekali bayar untuk seluruh isi bundel.</p>
+                  </div>
+                  <div className="mt-auto flex flex-col gap-3">
+                    {TAUTAN_BELI ? (
+                      <a href={TAUTAN_BELI} target="_blank" rel="noopener" className={`${tombolUtama} w-full`}>
+                        <ShoppingBag size={20} aria-hidden />
+                        Beli bundel {PENAWARAN.harga}
+                      </a>
+                    ) : (
+                      <span
+                        role="link"
+                        aria-disabled="true"
+                        className="button-md flex h-12 w-full cursor-not-allowed items-center justify-center gap-2 rounded-lg bg-surface-muted px-4 text-text-muted"
+                      >
+                        <ShoppingBag size={20} aria-hidden />
+                        Pembelian segera dibuka
+                      </span>
+                    )}
+                    {data.soalGratis > 0 && (
+                      <Link href={`/ujian/${PAKET_GRATIS}`} className={`${tombolKedua} w-full`}>
+                        <Gift size={20} aria-hidden className="text-primary" />
+                        Coba {data.soalGratis} soal gratis
+                      </Link>
+                    )}
+                    {LOGIN_AKTIF && (
+                      <Link
+                        href="/aktivasi"
+                        className="title-4 flex h-11 items-center justify-center rounded-lg text-text-muted hover:text-text"
+                      >
+                        Sudah bayar? Masukkan kode aktivasi
+                      </Link>
+                    )}
+                  </div>
+                </div>
+
+                <ul className="flex flex-col gap-6 border-t border-border p-6 sm:p-10 lg:border-t-0 lg:border-l">
+                  {PENAWARAN.isi.map((x) => (
+                    <li key={x.judul} className="flex items-start gap-4">
+                      <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                        <CheckCircle size={20} weight="fill" aria-hidden />
+                      </span>
+                      <span className="flex flex-col gap-1">
+                        <span className="title-3">{x.judul}</span>
+                        <span className="body-6 text-text-muted">{x.detail}</span>
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Muncul>
+          </section>
+        )}
 
         {/* Masalah → solusi */}
         <section aria-labelledby="judul-masalah" className="py-8 lg:py-12">
@@ -499,139 +538,6 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
           </Muncul>
         </section>
 
-        {/* Cara membaca layar ujian: pratinjau bernomor + keterangan */}
-        {soalHero && (
-          <section id="cara-baca" aria-labelledby="judul-cara-baca" className="scroll-mt-20 py-16 lg:py-24">
-            <Muncul className={`${wadah} flex flex-col gap-8`}>
-              <div className="flex max-w-[680px] flex-col gap-3">
-                <h2 id="judul-cara-baca" className={judulSection}>
-                  Cara membaca layar ujian
-                </h2>
-                <p className="body-3 text-pretty text-text-muted">
-                  Pertama kali melihatnya mungkin terasa ramai. Cocokkan nomor bulat di gambar dengan keterangan
-                  bernomor sama.
-                </p>
-              </div>
-              <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-16">
-                <PratinjauUjian soal={soalHero} data={data} beranotasi />
-                <CaraBaca soal={soalHero} data={data} />
-              </div>
-            </Muncul>
-          </section>
-        )}
-
-        {/* Contoh soal + pratinjau hasil */}
-        {soalContoh && (
-          <section id="contoh-soal" aria-labelledby="judul-contoh" className="scroll-mt-20 py-16 lg:py-24">
-            <Muncul className={`${wadah} flex flex-col gap-8`}>
-              <div className="flex max-w-[680px] flex-col gap-3">
-                <h2 id="judul-contoh" className={judulSection}>
-                  Coba satu soal {soalContoh.kategori} sekarang
-                </h2>
-                <p className="body-3 text-pretty text-text-muted">
-                  Pilih jawabanmu. Pembahasan muncul di bawahnya, termasuk alasan kenapa pilihan lain keliru.
-                </p>
-              </div>
-              <div className="grid items-start gap-8 lg:grid-cols-2">
-                <ContohSoal soal={soalContoh} />
-                <div className="flex min-w-0 flex-col gap-4">
-                  <h3 className="title-3">Setelah dikumpulkan, hasilmu terlihat seperti ini</h3>
-                  <PratinjauHasil maks={data.komposisi.map((s) => ({ kode: s.kode, nilai: s.nilaiMaks }))} />
-                  <ul className="body-6 flex flex-col gap-2 text-pretty text-text-muted">
-                    <li>
-                      <span className="text-text">Kotak Total</span> adalah jumlah nilai ketiga bagian.
-                    </li>
-                    <li>
-                      <span className="text-text">Tiga kotak lainnya</span> adalah nilai tiap bagian. Angka kecil di
-                      belakang garis miring adalah nilai tertinggi yang mungkin.
-                    </li>
-                    <li>
-                      Di bawahnya ada pembahasan. Kamu bisa menyaring hanya soal yang salah, kosong, atau sempat
-                      ditandai ragu.
-                    </li>
-                  </ul>
-                  <p className="caption-4 text-text-muted">
-                    Angka di atas hanya contoh. Format dan passing grade mengikuti konfigurasi; cek aturan BKN dan
-                    KemenPAN-RB terbaru.
-                  </p>
-                </div>
-              </div>
-            </Muncul>
-          </section>
-        )}
-
-        {/* Harga: tampil hanya jika sudah diisi di config/landing.ts */}
-        {PENAWARAN && (
-          <section id="harga" aria-labelledby="judul-harga" className="scroll-mt-20 py-16 lg:py-24">
-            <Muncul className={`${wadah} flex flex-col gap-8`}>
-              <div className="flex flex-col gap-3">
-                <h2 id="judul-harga" className={judulSection}>
-                  Semua paket latihan, harga satu gelas kopi
-                </h2>
-                <p className="body-3 max-w-[680px] text-pretty text-text-muted">
-                  Kerjakan di HP, baca ulang pembahasannya lewat ebook. Belum yakin? Coba paket gratis dulu.
-                </p>
-              </div>
-
-              <div className="grid overflow-hidden rounded-2xl border border-primary/40 bg-surface lg:grid-cols-[5fr_7fr]">
-                <div className="flex flex-col gap-6 bg-primary/[0.06] p-6 sm:p-10">
-                  <p className="caption-4 w-fit rounded-full bg-primary px-3 py-1 text-on-primary">{PENAWARAN.label}</p>
-                  <div className="flex flex-col gap-2">
-                    <h3 className="title-2">{PENAWARAN.nama}</h3>
-                    <p className="heading-1 tracking-tight text-text tabular-nums">{PENAWARAN.harga}</p>
-                    <p className="body-6 text-text-muted">Sekali bayar untuk seluruh isi bundel.</p>
-                  </div>
-                  <div className="mt-auto flex flex-col gap-3">
-                    {TAUTAN_BELI ? (
-                      <a href={TAUTAN_BELI} target="_blank" rel="noopener" className={`${tombolUtama} w-full`}>
-                        <ShoppingBag size={20} aria-hidden />
-                        Beli bundel {PENAWARAN.harga}
-                      </a>
-                    ) : (
-                      <span
-                        role="link"
-                        aria-disabled="true"
-                        className="button-md flex h-12 w-full cursor-not-allowed items-center justify-center gap-2 rounded-lg bg-surface-muted px-4 text-text-muted"
-                      >
-                        <ShoppingBag size={20} aria-hidden />
-                        Pembelian segera dibuka
-                      </span>
-                    )}
-                    {data.soalGratis > 0 && (
-                      <Link href={`/ujian/${PAKET_GRATIS}`} className={`${tombolKedua} w-full`}>
-                        <Gift size={20} aria-hidden className="text-primary" />
-                        Coba {data.soalGratis} soal gratis
-                      </Link>
-                    )}
-                    {LOGIN_AKTIF && (
-                      <Link
-                        href="/aktivasi"
-                        className="title-4 flex h-11 items-center justify-center rounded-lg text-text-muted hover:text-text"
-                      >
-                        Sudah bayar? Masukkan kode aktivasi
-                      </Link>
-                    )}
-                  </div>
-                </div>
-
-                <ul className="flex flex-col gap-6 border-t border-border p-6 sm:p-10 lg:border-t-0 lg:border-l">
-                  {PENAWARAN.isi.map((x) => (
-                    <li key={x.judul} className="flex items-start gap-4">
-                      <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                        <CheckCircle size={20} weight="fill" aria-hidden />
-                      </span>
-                      <span className="flex flex-col gap-1">
-                        <span className="title-3">{x.judul}</span>
-                        <span className="body-6 text-text-muted">{x.detail}</span>
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </Muncul>
-          </section>
-        )}
-
         {/* Testimoni: tampil hanya jika sudah ada testimoni asli di config/landing.ts */}
         {TESTIMONI.length > 0 && (
           <section aria-labelledby="judul-testimoni" className="py-16 lg:py-24">
@@ -655,30 +561,6 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
             </Muncul>
           </section>
         )}
-
-        {/* FAQ */}
-        <section id="faq" aria-labelledby="judul-faq" className="scroll-mt-20 py-16 lg:py-24">
-          <Muncul className={`${wadah} grid gap-8 lg:grid-cols-[1fr_2fr]`}>
-            <h2 id="judul-faq" className={judulSection}>
-              Pertanyaan yang sering muncul
-            </h2>
-            <div className="flex flex-col gap-3">
-              {faq.map((f) => (
-                <details key={f.t} className="group rounded-xl border border-border bg-surface">
-                  <summary className="title-3 flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 rounded-xl p-4 transition-colors duration-300 ease-[var(--ease-out-house)] hover:bg-surface-muted [&::-webkit-details-marker]:hidden">
-                    {f.t}
-                    <CaretDown
-                      size={20}
-                      aria-hidden
-                      className="shrink-0 text-text-muted transition-transform duration-300 ease-[var(--ease-out-house)] group-open:rotate-180"
-                    />
-                  </summary>
-                  <p className="body-6 px-4 pb-4 text-pretty text-text-muted">{f.j}</p>
-                </details>
-              ))}
-            </div>
-          </Muncul>
-        </section>
 
         {/* CTA penutup: banner biru */}
         <section aria-labelledby="judul-penutup" className="py-12 lg:py-16">
@@ -716,6 +598,30 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
             </div>
           </Muncul>
         </section>
+        {/* FAQ */}
+        <section id="faq" aria-labelledby="judul-faq" className="scroll-mt-20 py-16 lg:py-24">
+          <Muncul className={`${wadah} grid gap-8 lg:grid-cols-[1fr_2fr]`}>
+            <h2 id="judul-faq" className={judulSection}>
+              Pertanyaan yang sering muncul
+            </h2>
+            <div className="flex flex-col gap-3">
+              {faq.map((f) => (
+                <details key={f.t} className="group rounded-xl border border-border bg-surface">
+                  <summary className="title-3 flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 rounded-xl p-4 transition-colors duration-300 ease-[var(--ease-out-house)] hover:bg-surface-muted [&::-webkit-details-marker]:hidden">
+                    {f.t}
+                    <CaretDown
+                      size={20}
+                      aria-hidden
+                      className="shrink-0 text-text-muted transition-transform duration-300 ease-[var(--ease-out-house)] group-open:rotate-180"
+                    />
+                  </summary>
+                  <p className="body-6 px-4 pb-4 text-pretty text-text-muted">{f.j}</p>
+                </details>
+              ))}
+            </div>
+          </Muncul>
+        </section>
+
       </main>
 
       <footer className="border-t border-border bg-surface py-10">
@@ -731,7 +637,6 @@ export function LayarLanding({ data, soalHero, soalContoh }: Props) {
           <ul className="flex flex-wrap gap-2">
             {[
               ["/try-out", "Try out"],
-              ["#contoh-soal", "Contoh soal"],
               ["#faq", "FAQ"],
               ["/privasi", "Privasi"],
               ["/syarat", "Syarat"],
@@ -771,184 +676,5 @@ function Kilau({ className = "" }: { className?: string }) {
       <path d="M24 28 L42 16" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
       <path d="M28 40 L44 38" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
     </svg>
-  );
-}
-
-/** Nomor soal yang ditampilkan di pratinjau: soal ke-7 di bagian soal tersebut. */
-function nomorPratinjau(soal: Omit<SoalUjian, "id">, data: DataLanding) {
-  const sebelum = data.komposisi.slice(0, data.komposisi.findIndex((s) => s.kode === soal.kategori));
-  return sebelum.reduce((n, s) => n + s.jumlah, 0) + 7;
-}
-
-/** Keterangan bernomor untuk pratinjau layar ujian (pasangan `PratinjauUjian beranotasi`). */
-function CaraBaca({ soal, data }: { soal: Omit<SoalUjian, "id">; data: DataLanding }) {
-  const nomor = nomorPratinjau(soal, data);
-  const nama = BAGIAN_SKD[soal.kategori]?.nama;
-  const warna = [
-    { kelas: "bg-primary", label: "sudah dijawab" },
-    { kelas: "bg-doubt", label: "ditandai ragu" },
-    { kelas: "border border-border bg-surface", label: "belum dijawab" },
-    { kelas: "bg-primary ring-2 ring-ring ring-offset-2 ring-offset-background", label: "soal yang sedang dibuka" },
-  ];
-  const butir = [
-    {
-      judul: "Bagian dan nomor soal",
-      isi: `${soal.kategori}${nama ? ` berarti bagian ${nama}` : ""}. ${nomor}/${data.soalPerPaket} artinya kamu sedang di soal ke-${nomor} dari ${data.soalPerPaket}.`,
-    },
-    {
-      judul: "Sisa waktu",
-      isi: `Jam:menit:detik, menghitung mundur. Warnanya berubah saat waktu tinggal ${AMBANG_TIMER.peringatan * 100} persen dan ${AMBANG_TIMER.kritis * 100} persen. Kalau habis, jawabanmu dikumpulkan otomatis.`,
-    },
-    {
-      judul: "Tanda tersimpan",
-      isi: "Setiap kali kamu memilih, jawaban langsung disimpan. Tidak ada tombol simpan. Kalau HP mati, buka lagi dan lanjutkan.",
-    },
-    {
-      judul: "Pilihan jawaban",
-      isi: "Ketuk salah satu huruf. Pilihanmu ditandai biru dan bercentang. Masih bisa diganti selama belum dikumpulkan.",
-    },
-    {
-      judul: "Peta nomor soal",
-      isi: "Ketuk nomor mana saja untuk lompat ke soal itu. Di HP, peta ini dibuka lewat tombol kotak di sebelah timer.",
-      warna: true,
-    },
-    {
-      judul: "Tombol Ragu",
-      isi: "Tandai soal yang belum yakin supaya mudah dicari lagi. Tanda ini tidak mengurangi nilai.",
-    },
-  ];
-  return (
-    <ol className="flex flex-col gap-6">
-      {butir.map((b, i) => (
-        <li key={b.judul} className="flex items-start gap-4">
-          <Penanda n={i + 1} className="mt-0.5" />
-          <div className="flex min-w-0 flex-col gap-1">
-            <h3 className="title-3">{b.judul}</h3>
-            <p className="body-6 text-pretty text-text-muted">{b.isi}</p>
-            {b.warna && (
-              <ul className="mt-2 grid gap-2 sm:grid-cols-2">
-                {warna.map((w) => (
-                  <li key={w.label} className="body-6 flex items-center gap-3 text-text">
-                    <span aria-hidden className={`size-5 shrink-0 rounded-md ${w.kelas}`} />
-                    {w.label}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-        </li>
-      ))}
-    </ol>
-  );
-}
-
-/**
- * Pratinjau statis layar ujian, memakai soal asli dari bank (tanpa kunci).
- * `beranotasi`: tampilkan nomor penunjuk 1–6 yang dijelaskan `CaraBaca`.
- */
-function PratinjauUjian({
-  soal,
-  data,
-  beranotasi = false,
-  tanpaBingkai = false,
-}: {
-  soal: Omit<SoalUjian, "id">;
-  data: DataLanding;
-  beranotasi?: boolean;
-  /** Tanpa border dan sudut sendiri, untuk ditaruh di dalam bingkai HP. */
-  tanpaBingkai?: boolean;
-}) {
-  const nomor = nomorPratinjau(soal, data);
-  const penanda = (n: number, className?: string) => (beranotasi ? <Penanda n={n} className={className} /> : null);
-  const terpilih = soal.opsi[3]?.huruf;
-  // Status 10 sel grid di sekitar soal aktif: d = dijawab, r = ragu, b = belum.
-  const sel = ["d", "d", "d", "r", "d", "d", "a", "b", "b", "b"];
-  return (
-    <figure
-      aria-label={beranotasi ? "Layar ujian dengan nomor penunjuk 1 sampai 6" : "Contoh tampilan layar ujian"}
-      className={tanpaBingkai ? "w-full" : "mx-auto w-full max-w-md lg:max-w-none"}
-    >
-      <div aria-hidden className={tanpaBingkai ? "bg-surface" : "overflow-hidden rounded-xl border border-border bg-surface"}>
-        <div className="flex h-14 items-center justify-between border-b border-border px-4">
-          <span className="title-4 flex items-center gap-2">
-            {penanda(1)}
-            {soal.kategori} · <span className="mono-number">{nomor}</span>
-            <span className="mono-number text-text-muted">/{data.soalPerPaket}</span>
-          </span>
-          <span className="flex items-center gap-1">
-            {penanda(2, "mr-1")}
-            <Timer size={20} />
-            <span className="mono-timer">01:12:48</span>
-          </span>
-        </div>
-        <div className="flex flex-col gap-4 p-4">
-          <p className="caption-4 flex items-center gap-1 text-text-muted">
-            {penanda(3, "mr-1")}
-            <CheckCircle size={16} /> Tersimpan
-          </p>
-          <p className="body-5">{soal.pertanyaan}</p>
-          <ul className="relative flex flex-col gap-2">
-            {penanda(4, "absolute -top-3 -left-3 z-10")}
-            {soal.opsi.map(({ huruf, teks }) => {
-              const aktif = huruf === terpilih;
-              return (
-                <li
-                  key={huruf}
-                  className={`flex items-center gap-3 rounded-xl border p-3 ${
-                    aktif ? "border-primary bg-surface-muted outline outline-1 outline-primary" : "border-border"
-                  }`}
-                >
-                  <span
-                    className={`mono-number flex size-7 shrink-0 items-center justify-center rounded-full border ${
-                      aktif ? "border-primary bg-primary text-on-primary" : "border-border text-text-muted"
-                    }`}
-                  >
-                    {huruf}
-                  </span>
-                  <span className="body-6 flex-1">{teks}</span>
-                  {aktif && <CheckCircle size={20} weight="fill" className="shrink-0 text-primary" />}
-                </li>
-              );
-            })}
-          </ul>
-          <div className="flex flex-col gap-2 border-t border-border pt-4">
-            <p className="caption-4 flex flex-wrap items-center gap-x-1 text-text-muted">
-              {penanda(5, "mr-1")}
-              Dijawab <span className="mono-number">{nomor - 1}</span> · Ragu <span className="mono-number">1</span> ·
-              Belum <span className="mono-number">{data.soalPerPaket - nomor}</span>
-            </p>
-            <div className="grid grid-cols-10 gap-1">
-              {sel.map((s, i) => (
-                <span
-                  key={i}
-                  className={`relative flex aspect-square items-center justify-center rounded-md font-mono text-xs tabular-nums ${
-                    s === "d"
-                      ? "bg-primary text-on-primary"
-                      : s === "r"
-                        ? "bg-doubt text-on-doubt"
-                        : s === "a"
-                          ? "bg-primary text-on-primary ring-2 ring-ring ring-offset-2 ring-offset-surface"
-                          : "border border-border bg-surface text-text-muted"
-                  }`}
-                >
-                  {nomor - 6 + i}
-                  {s === "r" && <span className="absolute top-0.5 right-0.5 size-1 rounded-full bg-on-doubt" />}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-        <div className="grid grid-cols-3 gap-2 border-t border-border p-3">
-          <span className="title-4 flex h-10 items-center justify-center rounded-lg border border-border">Sebelumnya</span>
-          <span className="title-4 relative flex h-10 items-center justify-center gap-1 rounded-lg border border-border">
-            {penanda(6, "absolute -top-3 -right-2")}
-            <Flag size={16} /> Ragu
-          </span>
-          <span className="title-4 flex h-10 items-center justify-center rounded-lg bg-primary text-on-primary">
-            Berikutnya
-          </span>
-        </div>
-      </div>
-    </figure>
   );
 }

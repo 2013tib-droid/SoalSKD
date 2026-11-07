@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { connection } from "next/server";
 import { BUILD_STATIK } from "@/config/build";
-import { CONTOH_SOAL, PAKET_GRATIS, SOAL_HERO } from "@/config/landing";
+import { PAKET_GRATIS, SOAL_HERO } from "@/config/landing";
 import { LayarLanding } from "@/components/landing/layar-landing";
 import { ambilFormatSkd, durasiPaket } from "@/lib/format-skd";
 import { ambilSoalPembahasan, daftarPaket } from "@/lib/soal";
@@ -14,10 +14,9 @@ export const metadata: Metadata = {
 
 export default async function Landing() {
   if (!BUILD_STATIK) await connection();
-  const [paket, format, soalContoh, soalHero] = await Promise.all([
+  const [paket, format, soalHero] = await Promise.all([
     daftarPaket(),
     ambilFormatSkd(),
-    ambilSoalPembahasan(CONTOH_SOAL.paket),
     ambilSoalPembahasan(SOAL_HERO.paket),
   ]);
 
@@ -30,7 +29,6 @@ export default async function Landing() {
   const ambang = format.urutan.every((k) => format.subtes[k].ambangBatas !== null)
     ? format.urutan.map((k) => ({ kode: k, nilai: format.subtes[k].ambangBatas as number }))
     : null;
-  const contoh = soalContoh?.find((s) => s.id === CONTOH_SOAL.id) ?? null;
   const hero = soalHero?.find((s) => s.id === SOAL_HERO.id) ?? null;
 
   return (
@@ -48,7 +46,6 @@ export default async function Landing() {
         soalGratis: paket.find((p) => p.id === PAKET_GRATIS)?.jumlahSoal ?? 0,
       }}
       soalHero={hero && { kategori: hero.kategori, pertanyaan: hero.pertanyaan, opsi: hero.opsi }}
-      soalContoh={contoh}
     />
   );
 }
