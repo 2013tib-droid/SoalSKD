@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { connection } from "next/server";
 import { BUILD_STATIK } from "@/config/build";
-import { CONTOH_SOAL, SOAL_HERO } from "@/config/landing";
+import { CONTOH_SOAL, PAKET_GRATIS, SOAL_HERO } from "@/config/landing";
 import { LayarLanding } from "@/components/landing/layar-landing";
 import { ambilFormatSkd, durasiPaket } from "@/lib/format-skd";
 import { ambilSoalPembahasan, daftarPaket } from "@/lib/soal";
@@ -45,6 +45,7 @@ export default async function Landing() {
         komposisi,
         nilaiBenar: format.subtes.TWK.nilaiBenar,
         ambang,
+        soalGratis: paket.find((p) => p.id === PAKET_GRATIS)?.jumlahSoal ?? 0,
       }}
       soalHero={hero && { kategori: hero.kategori, pertanyaan: hero.pertanyaan, opsi: hero.opsi }}
       soalContoh={contoh}
