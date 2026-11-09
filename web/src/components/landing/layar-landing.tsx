@@ -117,7 +117,7 @@ export function LayarLanding({ data, soalHero }: Props) {
       ? [{ ikon: Lightning, nilai: `${data.totalSoal}`, label: "Soal orisinal" }]
       : []),
     ...(data.jumlahPaket > 0 ? [{ ikon: Stack, nilai: `${data.jumlahPaket}`, label: "Paket latihan" }] : []),
-    { ikon: ChartLineUp, nilai: "Instan", label: "Skor + pembahasan" },
+    { ikon: CheckCircle, nilai: "Otomatis", label: "Jawaban tersimpan" },
     { ikon: ShieldCheck, nilai: "Gratis", label: `Paket pertama, tanpa akun` },
   ];
 
