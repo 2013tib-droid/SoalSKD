@@ -28,7 +28,7 @@ Paket di `bank/`: `p01` gratis (20 dari 110 soal), `p02`–`p04` berbayar (110 s
 
 ## Keterbatasan yang diketahui
 
-- **Dev statis sedang membuka semua paket.** `DEV_BUKA_SEMUA = true` di `web/src/config/akses.ts` (commit `1e1914e`, untuk cek ulang pemilik), jadi soal + kunci p02–p04 ikut ke GitHub Pages yang publik. Ini menyimpang dari keputusan "build statis dev ikut gerbang". Kembalikan ke `false` begitu pemilik selesai mengecek, dan wajib sebelum jualan.
+- **Dev statis sedang membuka semua paket.** `DEV_BUKA_SEMUA = true` di `web/src/config/akses.ts` (commit `1e1914e`, untuk cek ulang pemilik), jadi soal + kunci p02–p04 ikut ke GitHub Pages yang publik. Sengaja dinyalakan pemilik untuk testing (pengecualian sementara dari keputusan "build statis dev ikut gerbang"); jangan dimatikan tanpa izin pemilik. Wajib `false` sebelum jualan.
 - **Isi soal belum final.** p02–p04 masih `draf`: belum direview pemilik (terutama bobot TKP) dan kutipan pasal belum dicocokkan dengan teks resmi (daftar nomor di `docs/rencana-ebook-cpns.md`). Ebook masih berlencana "belum siap terbit".
 - **Belum bisa membeli.** `TAUTAN_BELI` null dan produk Mayar belum dibuat, jadi tombol beli nonaktif.
 - **Backend belum hidup.** Kode Firebase sudah ada, tapi proyek Firebase, App Hosting, Storage, dan webhook Mayar belum dibuat pemilik (`docs/firebase.md`). Sampai itu, situs server menutup p02–p04 dan login tidak tampil.
@@ -65,6 +65,5 @@ sakelar tema terang/gelap di Profil, tampilan soal bergambar.
 ## Keputusan yang masih terbuka
 
 - Urutan kerja: backend dulu atau review soal dulu.
-- Kapan `DEV_BUKA_SEMUA` dikembalikan ke `false`.
 - Kebijakan pengembalian dana (usulan di `web/src/config/legal.ts`), nama pengelola, kontak, dan lama simpan data pesanan.
 - Sumber resmi untuk durasi dan ambang batas SKD tahun berjalan.
