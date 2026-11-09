@@ -6,7 +6,6 @@ import {
   ChartLineUp,
   Check,
   CheckCircle,
-  DeviceMobile,
   Exam,
   Gift,
   Lightning,
@@ -118,7 +117,7 @@ export function LayarLanding({ data, soalHero }: Props) {
       ? [{ ikon: Lightning, nilai: `${data.totalSoal}`, label: "Soal orisinal" }]
       : []),
     ...(data.jumlahPaket > 0 ? [{ ikon: Stack, nilai: `${data.jumlahPaket}`, label: "Paket latihan" }] : []),
-    { ikon: DeviceMobile, nilai: "HP", label: "Nyaman satu tangan" },
+    { ikon: ChartLineUp, nilai: "Instan", label: "Skor + pembahasan" },
     { ikon: ShieldCheck, nilai: "Gratis", label: `Paket pertama, tanpa akun` },
   ];
 
