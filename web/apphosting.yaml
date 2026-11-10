@@ -1,6 +1,6 @@
 # Firebase App Hosting (situs pembeli, build server Next.js). Backend dibuat sekali
 # di Console dengan "App root directory" = web; lihat docs/firebase.md langkah 8.
-# Nilai NEXT_PUBLIC_* bukan rahasia; isi setelah proyek Firebase dibuat.
+# Nilai NEXT_PUBLIC_* bukan rahasia (memang dikirim ke browser).
 runConfig:
   minInstances: 0 # tanpa pengunjung = tanpa biaya server
   maxInstances: 3
@@ -12,17 +12,16 @@ env:
   - variable: NEXT_TELEMETRY_DISABLED
     value: "1"
     availability: [BUILD, RUNTIME]
-  # Buka komentar 4 variabel di bawah dan ganti ISI_... dengan nilai dari Firebase Console.
-  # Selama masih dikomentari, login mati dan paket berbayar tertutup (gagal aman).
-  # - variable: NEXT_PUBLIC_FIREBASE_API_KEY
-  #   value: ISI_API_KEY
-  #   availability: [BUILD, RUNTIME]
-  # - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
-  #   value: ISI_PROJECT_ID.firebaseapp.com
-  #   availability: [BUILD, RUNTIME]
-  # - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
-  #   value: ISI_PROJECT_ID
-  #   availability: [BUILD, RUNTIME]
-  # - variable: NEXT_PUBLIC_FIREBASE_APP_ID
-  #   value: ISI_APP_ID
-  #   availability: [BUILD, RUNTIME]
+  # Nilai dari Firebase Console proyek soal-skd (docs/firebase.md langkah 5).
+  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
+    value: AIzaSyA-X-fogHZeRFOge2NlbfT6n5h_LRfSyO8
+    availability: [BUILD, RUNTIME]
+  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+    value: soal-skd.firebaseapp.com
+    availability: [BUILD, RUNTIME]
+  - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+    value: soal-skd
+    availability: [BUILD, RUNTIME]
+  - variable: NEXT_PUBLIC_FIREBASE_APP_ID
+    value: 1:378942087346:web:9d5f23825ba54e1050a9ab
+    availability: [BUILD, RUNTIME]
