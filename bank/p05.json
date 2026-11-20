@@ -920,6 +920,986 @@
       "rujukan": [
         "Ejaan Bahasa Indonesia yang Disempurnakan (EYD) Edisi V, 2022, bagian Gabungan Kata"
       ]
+    },
+    {
+      "id": "p05-031",
+      "nomor": 31,
+      "kategori": "TIU",
+      "subtopik": "Sinonim",
+      "topik": "Sinonim akselerasi",
+      "tingkat": "mudah",
+      "pertanyaan": "AKSELERASI = ....",
+      "opsi": {
+        "A": "perlambatan",
+        "B": "perluasan",
+        "C": "percepatan",
+        "D": "penyesuaian",
+        "E": "pemberdayaan"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "Dalam KBBI, *akselerasi* berarti proses mempercepat atau peningkatan kecepatan, sehingga padanan yang paling tepat adalah **percepatan**. Kata ini sering muncul dalam dokumen pemerintahan, misalnya “akselerasi penurunan angka stunting” atau “akselerasi transformasi digital”, yang maksudnya mempercepat program. Dalam fisika, akselerasi juga dipakai untuk perubahan kecepatan per satuan waktu. Cara memeriksa jawaban: ganti kata akselerasi dalam kalimat contoh dengan opsi yang dipilih. “Percepatan penurunan angka stunting” tetap bermakna sama, sedangkan opsi lain mengubah maknanya.",
+        "opsi": {
+          "A": "*Perlambatan* adalah lawan kata akselerasi (deselerasi). Pengecoh ini menjebak peserta yang membaca terburu-buru dan tertukar antara sinonim dan antonim.",
+          "B": "*Perluasan* adalah padanan *ekspansi*. Program bisa diperluas tanpa dipercepat.",
+          "D": "*Penyesuaian* adalah padanan *adaptasi* atau *akomodasi*, tidak berkaitan dengan kecepatan.",
+          "E": "*Pemberdayaan* berarti membuat seseorang atau kelompok lebih berdaya dan mandiri. Pemberdayaan bisa berjalan lambat, jadi maknanya tidak sama dengan akselerasi."
+        },
+        "konsep": "**Kata serapan berakhiran -asi** sering berpasangan dengan bentuk *pe-an*: akselerasi → percepatan, ekspansi → perluasan, adaptasi → penyesuaian, eliminasi → penghapusan."
+      },
+      "tips": "Untuk sinonim kata serapan, buat kalimat pendek yang biasa Anda dengar di berita, lalu uji setiap opsi di dalam kalimat itu. Opsi yang tidak mengubah makna kalimat adalah jawabannya."
+    },
+    {
+      "id": "p05-032",
+      "nomor": 32,
+      "kategori": "TIU",
+      "subtopik": "Sinonim",
+      "topik": "Sinonim konsisten",
+      "tingkat": "sedang",
+      "pertanyaan": "KONSISTEN = ....",
+      "opsi": {
+        "A": "teliti",
+        "B": "gigih",
+        "C": "cermat",
+        "D": "tegas",
+        "E": "ajek"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "KBBI mengartikan *konsisten* sebagai tetap, tidak berubah-ubah, taat asas, atau **ajek**. Kata *ajek* sendiri berarti tetap, tidak berubah, atau teratur. Contoh: “Ia konsisten datang tepat waktu” sama dengan “Ia ajek datang tepat waktu”. Soal ini tergolong sedang karena kata *ajek* jarang dipakai sehari-hari, sementara opsi lain terdengar seperti sifat baik yang sering disandingkan dengan konsisten dalam penilaian kinerja. Kuncinya adalah makna **tidak berubah dari waktu ke waktu**, bukan sekadar sifat positif.",
+        "opsi": {
+          "A": "*Teliti* berarti cermat dan hati-hati dalam bekerja. Orang yang teliti bisa saja tidak konsisten, misalnya hanya teliti ketika diawasi.",
+          "B": "*Gigih* berarti tetap bertahan dan tidak mudah menyerah. Maknanya dekat, tetapi menekankan daya juang menghadapi kesulitan, bukan keajekan.",
+          "C": "*Cermat* hampir sama dengan teliti, yaitu saksama dan seksama. Tidak menyangkut keajekan.",
+          "D": "*Tegas* berarti jelas dan tidak ragu-ragu dalam bersikap. Orang bisa tegas pada satu waktu dan berubah sikap pada waktu lain."
+        },
+        "konsep": "**Pasangan yang perlu diingat:** konsisten = ajek, taat asas; konsekuen = sesuai dengan yang dikatakan atau diperbuat; persisten = gigih, tekun bertahan."
+      },
+      "tips": "Jika beberapa opsi sama-sama terdengar seperti sifat baik, cari makna inti kata soal. Untuk konsisten, intinya *tetap atau tidak berubah*. Pilih opsi yang memuat makna inti itu, bukan yang hanya bernada positif."
+    },
+    {
+      "id": "p05-033",
+      "nomor": 33,
+      "kategori": "TIU",
+      "subtopik": "Antonim",
+      "topik": "Antonim apatis",
+      "tingkat": "mudah",
+      "pertanyaan": "APATIS >< ....",
+      "opsi": {
+        "A": "pasif",
+        "B": "peduli",
+        "C": "ragu",
+        "D": "pesimis",
+        "E": "agresif"
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "*Apatis* berarti acuh tak acuh, tidak peduli, atau masa bodoh. Contoh: “Warga menjadi apatis terhadap rapat desa karena usulan mereka tidak pernah ditindaklanjuti.” Lawan katanya adalah **peduli**, yaitu menaruh perhatian dan mau terlibat. Kalimat contoh tadi berbalik makna jika apatis diganti peduli: “Warga menjadi peduli terhadap rapat desa.” Dalam konteks pelayanan publik, sikap apatis masyarakat sering menjadi tantangan, sedangkan sikap peduli menjadi tujuan program pelibatan warga.",
+        "opsi": {
+          "A": "*Pasif* berarti tidak aktif. Maknanya justru dekat dengan apatis, jadi ini pengecoh untuk peserta yang mencari kata yang berkaitan, bukan berlawanan.",
+          "C": "*Ragu* berarti bimbang. Tidak berlawanan dengan sikap tidak peduli; orang yang peduli pun bisa ragu.",
+          "D": "*Pesimis* berarti tidak berharap baik. Lawannya *optimis*, bukan *apatis*.",
+          "E": "*Agresif* berarti cenderung menyerang. Terdengar berlawanan dengan sikap diam, tetapi bukan lawan dari tidak peduli."
+        },
+        "konsep": "**Langkah antonim:** (1) tentukan makna kata soal (apatis = tidak peduli); (2) balik maknanya (peduli); (3) cari opsi yang sama dengan hasil balikan. Opsi yang bermakna dekat dengan kata soal adalah pengecoh sinonim."
+      },
+      "tips": "Waspadai opsi yang bermakna mirip dengan kata soal, seperti *pasif*. Pada soal antonim, pengecoh sinonim sering dipasang untuk peserta yang lupa tanda ><."
+    },
+    {
+      "id": "p05-034",
+      "nomor": 34,
+      "kategori": "TIU",
+      "subtopik": "Antonim",
+      "topik": "Antonim ekspansi",
+      "tingkat": "sedang",
+      "pertanyaan": "EKSPANSI >< ....",
+      "opsi": {
+        "A": "penyusutan",
+        "B": "penyebaran",
+        "C": "penahanan",
+        "D": "penundaan",
+        "E": "pemusatan"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "*Ekspansi* berarti perluasan, misalnya perluasan wilayah usaha, pasar, atau kegiatan. Contoh: “Koperasi itu melakukan ekspansi ke tiga kecamatan baru.” Lawan katanya adalah makna yang membuat sesuatu menjadi lebih sempit atau lebih kecil, yaitu **penyusutan**. Dalam ekonomi dikenal pasangan *ekspansi* dan *kontraksi*: ekonomi berekspansi ketika tumbuh, dan berkontraksi ketika menyusut. Jadi penyusutan adalah pilihan yang paling tepat. Uji kalimat: “Koperasi itu mengalami penyusutan wilayah usaha” berlawanan dengan contoh di atas.",
+        "opsi": {
+          "B": "*Penyebaran* dekat maknanya dengan ekspansi karena sama-sama menjangkau wilayah lebih luas. Ini pengecoh sinonim.",
+          "C": "*Penahanan* berarti menahan sesuatu agar tetap di tempat. Kegiatan yang ditahan belum tentu menyusut; ukurannya bisa tetap.",
+          "D": "*Penundaan* menyangkut waktu, bukan luas atau ukuran. Ekspansi yang ditunda tidak berarti ada penyusutan.",
+          "E": "*Pemusatan* adalah lawan dari *penyebaran* atau *desentralisasi*. Pengecoh ini memanfaatkan kedekatan makna ekspansi dengan penyebaran, padahal yang dicari adalah lawan dari makna *meluas*."
+        },
+        "konsep": "**Pasangan antonim istilah ekonomi:** ekspansi >< kontraksi atau penyusutan; inflasi >< deflasi; surplus >< defisit; ekspor >< impor."
+      },
+      "tips": "Jika ada opsi yang merupakan lawan dari **sinonim** kata soal (seperti pemusatan, lawan dari penyebaran), periksa lagi. Lawan dari sinonim yang kurang tepat sering dipasang sebagai pengecoh."
+    },
+    {
+      "id": "p05-035",
+      "nomor": 35,
+      "kategori": "TIU",
+      "subtopik": "Analogi",
+      "topik": "Analogi pencipta dan karya ciptaannya",
+      "tingkat": "mudah",
+      "pertanyaan": "PENYAIR : PUISI = KOMPONIS : ....",
+      "opsi": {
+        "A": "piano",
+        "B": "penyanyi",
+        "C": "panggung",
+        "D": "lagu",
+        "E": "konser"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "Hubungan pasangan pertama adalah **pencipta dan karya yang diciptakannya**: penyair menciptakan puisi. Buat kalimat hubungannya: “Penyair adalah orang yang menciptakan puisi.” Lalu terapkan pada pasangan kedua: “Komponis adalah orang yang menciptakan ....” Jawaban yang tepat adalah **lagu** atau gubahan musik. Kalimat hubungan ini harus tetap benar ketika diterapkan pada jawaban; jika kalimatnya menjadi janggal, opsi itu bukan jawabannya. Opsi lain masih berkaitan dengan musik, tetapi hubungannya berbeda.",
+        "opsi": {
+          "A": "Piano adalah **alat** yang mungkin dipakai komponis. Hubungan pelaku dan alat tidak sama dengan pelaku dan karya.",
+          "B": "Penyanyi adalah **orang lain** yang membawakan lagu. Hubungannya pelaku dan pelaku, bukan pelaku dan karya.",
+          "C": "Panggung adalah **tempat** pertunjukan. Komponis tidak menciptakan panggung.",
+          "E": "Konser adalah **acara** tempat karya musik dipentaskan. Komponis menciptakan lagu, bukan konsernya."
+        },
+        "konsep": "**Jenis hubungan analogi yang sering muncul:** pelaku–karya, pelaku–alat, pelaku–tempat kerja, bagian–keseluruhan, sebab–akibat, dan benda–fungsi. Tentukan jenisnya dulu sebelum melihat opsi. Pada soal ini, keempat pengecoh sengaja dipilih dari dunia musik, sehingga hanya jenis hubungan yang dapat membedakannya."
+      },
+      "tips": "Biasakan menyusun **kalimat hubungan** yang spesifik. “Penyair berhubungan dengan puisi” terlalu umum karena semua opsi bisa berhubungan dengan komponis. “Penyair menciptakan puisi” cukup spesifik untuk mengeliminasi pengecoh."
+    },
+    {
+      "id": "p05-036",
+      "nomor": 36,
+      "kategori": "TIU",
+      "subtopik": "Analogi",
+      "topik": "Analogi kumpulan dan satuan anggotanya",
+      "tingkat": "sedang",
+      "pertanyaan": "ARMADA : KAPAL = ....",
+      "opsi": {
+        "A": "Pohon : Hutan",
+        "B": "Kawanan : Serigala",
+        "C": "Kapal : Nakhoda",
+        "D": "Buku : Perpustakaan",
+        "E": "Daun : Ranting"
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "*Armada* adalah kumpulan kapal. Hubungannya **kumpulan : anggota**, dengan kata kumpulan di depan. Kalimat hubungannya: “Armada adalah sekelompok kapal.” Pasangan yang memenuhi kalimat yang sama dengan urutan yang sama adalah **kawanan : serigala**: “Kawanan adalah sekelompok serigala.” Soal ini tergolong sedang karena dua opsi lain juga memuat hubungan kumpulan dan anggota, tetapi urutannya terbalik. Pada analogi, urutan sama pentingnya dengan jenis hubungan.",
+        "opsi": {
+          "A": "Hubungannya anggota : kumpulan (pohon adalah anggota hutan). Jenisnya cocok, tetapi urutannya terbalik dari ARMADA : KAPAL.",
+          "C": "Nakhoda adalah pemimpin kapal. Hubungannya benda : pemimpinnya, bukan kumpulan : anggota. Pengecoh ini memakai kata *kapal* agar terasa berkaitan.",
+          "D": "Buku adalah isi perpustakaan, jadi urutannya anggota : tempat atau kumpulan. Urutan ini juga terbalik.",
+          "E": "Daun adalah bagian dari ranting. Hubungan bagian dan keseluruhan berbeda dengan kumpulan dan anggotanya, karena daun bukan anggota dari kelompok ranting."
+        },
+        "konsep": "**Kata kumpulan dalam bahasa Indonesia:** armada (kapal), kawanan (hewan), rombongan (orang yang bepergian), gugus (pulau atau bintang), regu (prajurit atau pemain), untai (kalung, manik)."
+      },
+      "tips": "Setelah menemukan jenis hubungan, **periksa urutan**. Jika soal berbentuk kumpulan : anggota, coret semua opsi anggota : kumpulan meskipun jenisnya sama."
+    },
+    {
+      "id": "p05-037",
+      "nomor": 37,
+      "kategori": "TIU",
+      "subtopik": "Analogi",
+      "topik": "Analogi dua rumpang: daerah kecil di tengah hamparan luas",
+      "tingkat": "sulit",
+      "pertanyaan": ".... : GURUN = PULAU : ....",
+      "opsi": {
+        "A": "Oasis ; Laut",
+        "B": "Pasir ; Pantai",
+        "C": "Kaktus ; Kelapa",
+        "D": "Unta ; Kapal",
+        "E": "Fatamorgana ; Ombak"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "Soal dua rumpang menuntut kedua pasangan memiliki hubungan yang sama **setelah rumpang diisi**. Coba setiap opsi: isi rumpang pertama dan kedua, lalu buat kalimat hubungan untuk kedua sisi. Dengan opsi A: *oasis : gurun = pulau : laut*. Oasis adalah daerah kecil yang berbeda (subur dan berair) di tengah hamparan gurun; pulau adalah daratan kecil yang berbeda di tengah hamparan laut. Kalimat hubungannya sama: “X adalah daerah kecil yang berbeda sifat di tengah hamparan Y yang luas.” Urutannya juga sama: daerah kecil di depan, hamparan luas di belakang.",
+        "opsi": {
+          "B": "*Pasir : gurun* adalah bahan penyusun dan tempatnya, sedangkan *pulau : pantai* adalah keseluruhan dan bagiannya. Hubungan kedua sisi berbeda.",
+          "C": "*Kaktus : gurun* adalah tumbuhan dan habitatnya. Agar setara, sisi kanan harus *kelapa : pulau* atau *kelapa : pantai*, bukan *pulau : kelapa*. Urutannya terbalik.",
+          "D": "*Unta : gurun* (hewan pengangkut di wilayah itu) terlihat sejajar dengan *kapal : laut*, tetapi soal menempatkan PULAU di sisi kanan, sehingga terbentuk *pulau : kapal*, yang tidak setara.",
+          "E": "*Fatamorgana* adalah gejala optik di gurun, sedangkan *pulau : ombak* tidak memiliki hubungan yang setara dengan itu."
+        },
+        "konsep": "**Pengecoh khas dua rumpang:** opsi yang tampak cocok jika dibaca sendiri-sendiri (unta–gurun, kapal–laut), tetapi rusak setelah ditempatkan di posisi rumpang yang benar. Selalu tulis ulang soal lengkap dengan isian sebelum menilai."
+      },
+      "tips": "Untuk analogi dua rumpang, jangan langsung mencari pasangan yang “terasa cocok”. Tempelkan setiap opsi ke posisi rumpangnya, baca kedua pasangan lengkap, lalu bandingkan kalimat hubungannya."
+    },
+    {
+      "id": "p05-038",
+      "nomor": 38,
+      "kategori": "TIU",
+      "subtopik": "Silogisme",
+      "topik": "Silogisme dengan premis berkata hanya",
+      "tingkat": "sedang",
+      "pertanyaan": "Premis 1: Hanya pegawai yang telah lulus pelatihan K3 yang boleh mengoperasikan forklift di gudang.\nPremis 2: Dimas boleh mengoperasikan forklift di gudang.\n\nKesimpulan yang tepat adalah ....",
+      "opsi": {
+        "A": "Semua pegawai yang lulus pelatihan K3 boleh mengoperasikan forklift",
+        "B": "Dimas belum tentu telah lulus pelatihan K3",
+        "C": "Dimas boleh mengoperasikan forklift walaupun belum lulus pelatihan K3",
+        "D": "Sebagian pegawai yang lulus pelatihan K3 tidak boleh mengoperasikan forklift",
+        "E": "Dimas telah lulus pelatihan K3"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "Kata **hanya** membalik arah premis. “Hanya A yang B” sama artinya dengan “**Semua yang B adalah A**”, bukan “semua A adalah B”. Jadi premis 1 dapat ditulis ulang: “Semua pegawai yang boleh mengoperasikan forklift telah lulus pelatihan K3.” Premis 2 menyatakan Dimas termasuk pegawai yang boleh mengoperasikan forklift. Dengan pola silogisme biasa (semua B adalah A; Dimas adalah B; maka Dimas adalah A), kesimpulannya: **Dimas telah lulus pelatihan K3**. Kesimpulan ini pasti benar jika kedua premis benar.",
+        "opsi": {
+          "A": "Ini membalik arah premis menjadi “semua A adalah B”. Bisa saja ada pegawai lulus K3 yang belum diberi izin, jadi kesimpulan ini tidak dapat ditarik.",
+          "B": "Keliru, karena justru dapat dipastikan. Opsi ini menarik bagi peserta yang tidak yakin cara membaca kata *hanya*.",
+          "C": "Bertentangan langsung dengan premis 1. Tidak ada yang boleh mengoperasikan forklift tanpa lulus pelatihan K3.",
+          "D": "Mungkin saja benar di dunia nyata, tetapi premis tidak memberi informasi tentang pegawai lulus K3 yang tidak diberi izin. Kesimpulan harus pasti benar, bukan sekadar mungkin."
+        },
+        "konsep": "**Terjemahan kata *hanya*:** “Hanya A yang B” ≡ “Semua B adalah A” ≡ “Jika B, maka A”. Contoh: “Hanya peserta terdaftar yang boleh masuk” berarti semua yang masuk adalah peserta terdaftar."
+      },
+      "tips": "Ketika melihat kata *hanya* di premis, tulis ulang premis itu dalam bentuk “Semua ... adalah ...” dengan posisi yang dibalik sebelum menarik kesimpulan. Kesalahan paling umum adalah menerjemahkannya tanpa membalik."
+    },
+    {
+      "id": "p05-039",
+      "nomor": 39,
+      "kategori": "TIU",
+      "subtopik": "Silogisme",
+      "topik": "Memilih pernyataan yang pasti salah dari premis semua dan sebagian",
+      "tingkat": "sedang",
+      "pertanyaan": "Premis 1: Semua arsip rahasia disimpan di lemari besi.\nPremis 2: Sebagian dokumen anggaran adalah arsip rahasia.\n\nPernyataan yang **pasti salah** berdasarkan kedua premis tersebut adalah ....",
+      "opsi": {
+        "A": "Sebagian dokumen anggaran disimpan di lemari besi",
+        "B": "Semua dokumen anggaran disimpan di lemari besi",
+        "C": "Tidak ada dokumen anggaran yang disimpan di lemari besi",
+        "D": "Sebagian dokumen anggaran tidak disimpan di lemari besi",
+        "E": "Semua dokumen di lemari besi adalah arsip rahasia"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "Dari premis 2, ada dokumen anggaran yang merupakan arsip rahasia. Dari premis 1, setiap arsip rahasia disimpan di lemari besi. Jadi **pasti ada dokumen anggaran di lemari besi**, yaitu dokumen anggaran yang sekaligus arsip rahasia. Pernyataan “Tidak ada dokumen anggaran yang disimpan di lemari besi” bertentangan langsung dengan kesimpulan itu, sehingga **pasti salah**. Pernyataan lain bisa benar atau bisa salah bergantung pada keadaan yang tidak disebutkan premis. Hasil ini sudah dicek dengan memeriksa semua kemungkinan susunan himpunan yang memenuhi kedua premis.",
+        "opsi": {
+          "A": "Pernyataan ini **pasti benar**, kebalikan dari yang ditanyakan. Ini adalah kesimpulan sah dari kedua premis.",
+          "B": "**Mungkin benar.** Premis hanya menjamin sebagian dokumen anggaran ada di lemari besi. Sisanya bisa ada di lemari besi, bisa juga tidak.",
+          "D": "**Mungkin benar.** Dokumen anggaran yang bukan arsip rahasia bisa disimpan di tempat lain, tetapi premis tidak memastikannya.",
+          "E": "**Mungkin benar.** Premis 1 hanya menyatakan arsip rahasia pasti ada di lemari besi, tidak menyatakan lemari besi hanya berisi arsip rahasia."
+        },
+        "konsep": "**Tiga status pernyataan:** pasti benar (berlaku di semua keadaan yang sesuai premis), pasti salah (tidak berlaku di keadaan mana pun), dan mungkin (berlaku di sebagian keadaan). Gambar diagram Venn untuk melihat ketiganya."
+      },
+      "tips": "Untuk mencari yang pasti salah, cari dulu yang **pasti benar**, lalu cari opsi yang menjadi lawannya. Lawan dari “sebagian A adalah B” adalah “tidak ada A yang B”."
+    },
+    {
+      "id": "p05-040",
+      "nomor": 40,
+      "kategori": "TIU",
+      "subtopik": "Silogisme",
+      "topik": "Memilih pernyataan yang mungkin benar dari tiga premis",
+      "tingkat": "sulit",
+      "pertanyaan": "Premis 1: Tidak ada pegawai bagian keuangan yang menjadi panitia lelang.\nPremis 2: Semua auditor internal adalah pegawai bagian keuangan.\nPremis 3: Sebagian anggota koperasi kantor adalah panitia lelang.\n\nPernyataan yang **mungkin benar** adalah ....",
+      "opsi": {
+        "A": "Sebagian auditor internal adalah panitia lelang",
+        "B": "Semua anggota koperasi kantor adalah pegawai bagian keuangan",
+        "C": "Ada panitia lelang yang merupakan pegawai bagian keuangan",
+        "D": "Sebagian anggota koperasi kantor adalah auditor internal",
+        "E": "Semua anggota koperasi kantor adalah auditor internal"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "Gabungkan premis 1 dan 2: auditor internal adalah pegawai keuangan, dan tidak ada pegawai keuangan yang menjadi panitia lelang, maka **tidak ada auditor internal yang menjadi panitia lelang**. Dari premis 3, ada anggota koperasi yang menjadi panitia lelang, dan anggota koperasi itu **pasti bukan pegawai keuangan** dan bukan auditor. Namun premis tidak melarang anggota koperasi *lainnya* menjadi pegawai keuangan atau auditor. Jadi “sebagian anggota koperasi adalah auditor internal” **mungkin benar**. Pemeriksaan semua kemungkinan susunan himpunan dengan komputer menunjukkan hanya opsi D yang berstatus mungkin; empat opsi lain pasti salah.",
+        "opsi": {
+          "A": "**Pasti salah.** Auditor internal adalah pegawai keuangan, dan pegawai keuangan tidak ada yang menjadi panitia lelang.",
+          "B": "**Pasti salah.** Ada anggota koperasi yang menjadi panitia lelang, dan orang itu tidak mungkin pegawai keuangan. Jadi tidak semua anggota koperasi adalah pegawai keuangan.",
+          "C": "**Pasti salah.** Bertentangan langsung dengan premis 1.",
+          "E": "**Pasti salah.** Anggota koperasi yang menjadi panitia lelang bukan pegawai keuangan, sehingga juga bukan auditor internal. Kata *semua* membuat pernyataan ini gugur."
+        },
+        "konsep": "**Strategi soal “mungkin benar”:** tandai dulu semua pernyataan yang pasti salah dengan menggabungkan premis. Opsi yang tersisa, yaitu yang tidak bertentangan dengan premis tetapi juga tidak dipastikan, adalah yang mungkin benar."
+      },
+      "tips": "Kata *semua* di opsi sangat rawan. Satu contoh yang berlawanan dari premis sudah cukup untuk membuatnya pasti salah. Sebaliknya, *sebagian* di opsi lebih mudah berstatus mungkin benar."
+    },
+    {
+      "id": "p05-041",
+      "nomor": 41,
+      "kategori": "TIU",
+      "subtopik": "Penalaran Analitis",
+      "topik": "Menjadwalkan lima rapat di dua ruang dan tiga sesi",
+      "tingkat": "sulit",
+      "pertanyaan": "Lima rapat, yaitu P, Q, R, S, dan T, dijadwalkan pada satu hari di Ruang 1 dan Ruang 2. Hari itu dibagi menjadi tiga sesi: pagi, siang, dan sore. Setiap ruang hanya dipakai satu rapat per sesi, sehingga ada satu slot kosong. Ketentuannya:\n\n1. Rapat Q dilaksanakan pada sesi siang.\n2. Rapat R dilaksanakan di Ruang 1.\n3. Rapat S dilaksanakan pada sesi yang lebih awal daripada rapat T.\n4. Ruang 2 tidak dipakai pada sesi sore.\n5. Rapat T tidak dilaksanakan pada sesi yang sama dengan rapat R.\n6. Rapat P dan rapat S dilaksanakan di ruang yang sama.\n\nPernyataan yang **pasti benar** adalah ....",
+      "opsi": {
+        "A": "Rapat P dilaksanakan pada sesi pagi",
+        "B": "Rapat S dilaksanakan pada sesi siang",
+        "C": "Rapat T dilaksanakan pada sesi sore di Ruang 1",
+        "D": "Rapat R dilaksanakan pada sesi siang",
+        "E": "Rapat Q dilaksanakan di Ruang 2"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "Ketentuan 4 membuat slot kosong pasti Ruang 2 sore, sehingga lima slot lain terisi semua. Satu-satunya rapat sore berada di Ruang 1. Ketentuan 1 menempatkan Q di sesi siang. Rapat T tidak mungkin pagi, karena S harus lebih awal (ketentuan 3). Jika T siang, kedua slot siang terpakai Q dan T, S harus pagi, dan P harus seruang dengan S. Jika S di Ruang 2 pagi, P tidak punya slot lagi di Ruang 2. Jika S di Ruang 1 pagi, P harus di Ruang 1 sore, dan R (Ruang 1) tidak mendapat slot. Jadi **T sore di Ruang 1**. Sisa slot: Ruang 1 pagi dan siang, Ruang 2 pagi dan siang. Jika R di Ruang 1 siang, Q terpaksa di Ruang 2 siang, dan P serta S tinggal mendapat Ruang 1 pagi dan Ruang 2 pagi, sehingga tidak seruang. Maka R pagi di Ruang 1, Q siang di Ruang 1, dan P serta S mengisi Ruang 2 pagi dan siang dalam urutan bebas.\n\n| Sesi | Ruang 1 | Ruang 2 |\n|---|---|---|\n| Pagi | R | P atau S |\n| Siang | Q | S atau P |\n| Sore | T | kosong |\n\nPemeriksaan semua susunan dengan komputer menemukan tepat dua jadwal sah, dan keduanya sesuai tabel ini.",
+        "opsi": {
+          "A": "**Mungkin**, tidak pasti. P bisa pagi atau siang di Ruang 2.",
+          "B": "**Mungkin**, tidak pasti. S bisa pagi atau siang, asalkan tetap lebih awal daripada T yang berada di sesi sore.",
+          "D": "**Pasti salah.** R berada di sesi pagi. Slot Ruang 1 siang dipakai Q.",
+          "E": "**Pasti salah.** Q berada di Ruang 1, karena Ruang 2 pagi dan siang dipakai P dan S."
+        },
+        "konsep": "**Mulai dari slot kosong.** Pada soal penjadwalan dengan slot lebih banyak dari kegiatan, ketentuan tentang slot kosong biasanya paling kuat. Setelah itu, tempatkan kegiatan yang sesinya sudah ditentukan, lalu uji kemungkinan untuk kegiatan yang memiliki syarat urutan."
+      },
+      "tips": "Gambar tabel sesi × ruang di kertas buram. Isi yang pasti terlebih dahulu, lalu uji setiap kemungkinan yang tersisa dengan mencoret yang melanggar ketentuan. Untuk pertanyaan “pasti benar”, jawabannya harus muncul di **semua** jadwal sah."
+    },
+    {
+      "id": "p05-042",
+      "nomor": 42,
+      "kategori": "TIU",
+      "subtopik": "Penalaran Analitis",
+      "topik": "Mencocokkan empat pegawai dengan kota asal dan bidang penempatan",
+      "tingkat": "sulit",
+      "pertanyaan": "Empat pegawai baru, yaitu Andi, Bela, Citra, dan Dodi, berasal dari empat kota berbeda (Medan, Makassar, Ambon, dan Kupang) dan ditempatkan di empat bidang berbeda (Keuangan, Hukum, Humas, dan Perencanaan). Diketahui:\n\n1. Pegawai asal Ambon ditempatkan di bidang Hukum.\n2. Bela bukan berasal dari Medan dan tidak ditempatkan di bidang Keuangan.\n3. Citra ditempatkan di bidang Humas.\n4. Andi berasal dari Makassar.\n5. Pegawai asal Kupang tidak ditempatkan di bidang Perencanaan.\n6. Dodi tidak ditempatkan di bidang Hukum.\n7. Pegawai asal Medan tidak ditempatkan di bidang Keuangan maupun Perencanaan.\n\nPegawai asal Kupang dan bidang penempatannya adalah ....",
+      "opsi": {
+        "A": "Citra, di bidang Humas",
+        "B": "Dodi, di bidang Perencanaan",
+        "C": "Andi, di bidang Keuangan",
+        "D": "Bela, di bidang Hukum",
+        "E": "Dodi, di bidang Keuangan"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "Langkah 1: Andi dari Makassar (ketentuan 4). Langkah 2: siapa yang dari Ambon? Orang itu di bidang Hukum (ketentuan 1). Citra di Humas dan Dodi tidak di Hukum, jadi yang tersisa hanya **Bela: Ambon, Hukum**. Langkah 3: Citra dan Dodi berbagi kota Medan dan Kupang, sedangkan Andi dan Dodi berbagi bidang Keuangan dan Perencanaan. Pegawai asal Medan tidak boleh di Keuangan atau Perencanaan (ketentuan 7), padahal Dodi pasti di salah satunya. Jadi **Citra dari Medan** dan **Dodi dari Kupang**. Langkah 4: pegawai asal Kupang tidak di Perencanaan (ketentuan 5), maka **Dodi di Keuangan** dan Andi di Perencanaan.\n\n| Pegawai | Kota | Bidang |\n|---|---|---|\n| Andi | Makassar | Perencanaan |\n| Bela | Ambon | Hukum |\n| Citra | Medan | Humas |\n| Dodi | Kupang | Keuangan |\n\nPemeriksaan semua susunan dengan komputer menunjukkan susunan ini satu-satunya yang memenuhi ketujuh ketentuan.",
+        "opsi": {
+          "A": "Citra berasal dari Medan. Jawaban ini muncul jika ketentuan 7 terlewat, karena tanpa ketentuan itu Citra masih mungkin berasal dari Kupang.",
+          "B": "Dodi memang dari Kupang, tetapi ketentuan 5 melarang pegawai asal Kupang di bidang Perencanaan.",
+          "C": "Andi sudah pasti dari Makassar sejak ketentuan 4, dan bidangnya Perencanaan.",
+          "D": "Bela berasal dari Ambon, bukan Kupang. Bidang Hukum memang benar untuk Bela, sehingga opsi ini menjebak peserta yang hanya mencocokkan bidang."
+        },
+        "konsep": "**Teknik tabel silang:** buat tabel orang × kota dan orang × bidang. Isi tanda ✓ untuk yang pasti dan ✗ untuk yang terlarang. Ketentuan yang menghubungkan dua atribut sekaligus (seperti “asal Ambon di Hukum”) paling berguna setelah salah satu atribut diketahui."
+      },
+      "tips": "Mulailah dari ketentuan yang langsung memastikan sesuatu (ketentuan 3 dan 4), lalu gunakan ketentuan larangan untuk menyempitkan pilihan. Jika tinggal dua kemungkinan, cari ketentuan yang hanya cocok untuk salah satunya."
+    },
+    {
+      "id": "p05-043",
+      "nomor": 43,
+      "kategori": "TIU",
+      "subtopik": "Penalaran Analitis",
+      "topik": "Jarak antarkantor di sepanjang jalan lurus",
+      "tingkat": "sedang",
+      "pertanyaan": "Lima bangunan berada di tepi jalan lurus yang membentang dari barat ke timur: kantor pos, kantor kecamatan, puskesmas, bank, dan kantor dinas. Diketahui:\n\n- Kantor kecamatan berada 300 m di sebelah timur kantor pos.\n- Kantor dinas berada tepat di tengah antara kantor pos dan kantor kecamatan.\n- Bank berada 400 m di sebelah timur kantor kecamatan.\n- Puskesmas berada 200 m di sebelah barat bank.\n\nJarak antara puskesmas dan kantor dinas adalah ....",
+      "opsi": {
+        "A": "350 m",
+        "B": "200 m",
+        "C": "750 m",
+        "D": "550 m",
+        "E": "50 m"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "Letakkan kantor pos di titik 0 dan anggap arah timur bernilai positif.\n\n| Bangunan | Perhitungan | Posisi |\n|---|---|---|\n| Kantor pos | titik acuan | 0 m |\n| Kantor kecamatan | 0 + 300 | 300 m |\n| Kantor dinas | (0 + 300) ÷ 2 | 150 m |\n| Bank | 300 + 400 | 700 m |\n| Puskesmas | 700 − 200 | 500 m |\n\nJarak puskesmas ke kantor dinas = 500 − 150 = **350 m**. Urutan dari barat ke timur: kantor pos, kantor dinas, kantor kecamatan, puskesmas, bank.",
+        "opsi": {
+          "B": "200 m adalah jarak puskesmas ke **kantor kecamatan** (500 − 300). Muncul jika kantor dinas tertukar dengan kantor kecamatan.",
+          "C": "750 m muncul jika puskesmas diletakkan 200 m di **timur** bank (900 − 150). Arah “barat” terbaca sebagai “timur”.",
+          "D": "550 m adalah jarak **bank** ke kantor dinas (700 − 150). Langkah terakhir, mengurangi 200 m untuk puskesmas, terlewat.",
+          "E": "50 m muncul jika jarak 400 m bank diukur dari **kantor pos**, bukan dari kantor kecamatan: bank di 400, puskesmas di 200, lalu 200 − 150 = 50."
+        },
+        "konsep": "**Garis bilangan untuk soal posisi:** pilih satu titik acuan, beri tanda positif untuk satu arah, lalu ubah setiap keterangan menjadi operasi tambah atau kurang. Cara ini mencegah salah arah dan salah titik acuan."
+      },
+      "tips": "Perhatikan **dari mana** setiap jarak diukur. Pada soal ini, jarak bank diukur dari kantor kecamatan, bukan dari kantor pos. Garis bawahi titik acuan setiap keterangan sebelum menghitung."
+    },
+    {
+      "id": "p05-044",
+      "nomor": 44,
+      "kategori": "TIU",
+      "subtopik": "Penalaran Analitis",
+      "topik": "Menentukan hari dari keterangan waktu berlapis",
+      "tingkat": "sedang",
+      "pertanyaan": "Jika tiga hari setelah kemarin adalah hari Kamis, maka empat hari sebelum lusa adalah hari ....",
+      "opsi": {
+        "A": "Senin",
+        "B": "Sabtu",
+        "C": "Selasa",
+        "D": "Minggu",
+        "E": "Kamis"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "Ubah setiap keterangan menjadi angka relatif terhadap hari ini (H). *Kemarin* = H − 1, jadi *tiga hari setelah kemarin* = H − 1 + 3 = **H + 2**. Karena H + 2 adalah Kamis, maka hari ini (H) adalah **Selasa**. Berikutnya, *lusa* = H + 2, jadi *empat hari sebelum lusa* = H + 2 − 4 = **H − 2**. Dua hari sebelum Selasa adalah **Minggu**. Pemeriksaan dengan program yang mencoba ketujuh hari sebagai hari ini hanya menemukan satu jawaban, yaitu Minggu.",
+        "opsi": {
+          "A": "Senin muncul jika *lusa* dianggap tiga hari setelah hari ini (H + 3 − 4 = H − 1).",
+          "B": "Sabtu muncul jika kata *kemarin* diabaikan: H + 3 = Kamis, sehingga hari ini dianggap Senin, lalu Senin + 2 − 4 = Sabtu.",
+          "C": "Selasa adalah **hari ini**, bukan yang ditanyakan. Jawaban ini juga muncul jika lusa dihitung dari hari Kamis: Kamis + 2 − 4 = Selasa.",
+          "E": "Kamis adalah hari **lusa** itu sendiri (H + 2). Muncul jika peserta lupa mengurangi empat hari."
+        },
+        "konsep": "**Kamus waktu relatif:** kemarin = −1, kemarin lusa = −2, besok = +1, lusa = +2. Ubah semua keterangan menjadi angka, jumlahkan, baru terjemahkan kembali ke nama hari."
+      },
+      "tips": "Jangan menghitung dengan menyebut nama hari satu per satu di kepala. Tulis H dan angka relatifnya, karena soal ini sengaja menumpuk keterangan agar peserta kehilangan jejak."
+    },
+    {
+      "id": "p05-045",
+      "nomor": 45,
+      "kategori": "TIU",
+      "subtopik": "Penalaran Analitis",
+      "topik": "Jumlah minimum pengambilan agar pasti mendapat tiga warna sama",
+      "tingkat": "sedang",
+      "pertanyaan": "Sebuah laci gelap berisi 6 kartu akses merah, 8 kartu biru, dan 10 kartu hijau. Seorang petugas mengambil kartu satu per satu tanpa melihat warnanya. Banyak kartu paling sedikit yang harus diambil agar **pasti** diperoleh tiga kartu dengan warna yang sama adalah ....",
+      "opsi": {
+        "A": "3",
+        "B": "7",
+        "C": "9",
+        "D": "21",
+        "E": "4"
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "Kata *pasti* berarti kita harus memikirkan **keadaan paling sial**. Dalam keadaan paling sial, petugas terus mendapat kartu yang tidak membentuk tiga warna sama selama mungkin. Itu terjadi jika ia mendapat 2 merah, 2 biru, dan 2 hijau, yaitu 6 kartu tanpa ada warna yang mencapai tiga. Kartu ke-7, apa pun warnanya, pasti menjadi kartu ketiga untuk salah satu warna. Jadi jawabannya **7**. Jumlah kartu di laci (6, 8, 10) tidak memengaruhi jawaban, karena setiap warna tersedia minimal tiga kartu. Rumusnya: (jumlah warna × (target − 1)) + 1 = 3 × 2 + 1 = 7.",
+        "opsi": {
+          "A": "3 kartu hanya cukup jika kebetulan beruntung. Soal meminta jumlah yang menjamin hasil dalam keadaan apa pun.",
+          "C": "9 muncul jika peserta mengira harus mengambil tiga kartu dari setiap warna (3 × 3). Padahal yang diminta hanya satu warna yang mencapai tiga.",
+          "D": "21 adalah jawaban untuk pertanyaan lain, yaitu agar pasti mendapat tiga kartu **merah**: seluruh 8 biru dan 10 hijau terambil dulu, lalu 3 merah (8 + 10 + 3).",
+          "E": "4 muncul dari pola “satu dari setiap warna ditambah satu”, yang menjamin dua kartu warna sama, bukan tiga."
+        },
+        "konsep": "**Prinsip sarang merpati:** jika n kotak diisi lebih dari n × k benda, setidaknya satu kotak berisi k + 1 benda. Di sini 3 warna × 2 kartu = 6, jadi kartu ke-7 menjamin tiga warna sama."
+      },
+      "tips": "Bedakan dua pertanyaan: “tiga kartu warna **sama**” (warna apa saja) dan “tiga kartu warna **tertentu**”. Untuk warna tertentu, keadaan paling sial adalah semua warna lain habis terambil lebih dulu."
+    },
+    {
+      "id": "p05-046",
+      "nomor": 46,
+      "kategori": "TIU",
+      "subtopik": "Deret Angka",
+      "topik": "Deret dengan pengali yang bertambah satu",
+      "tingkat": "mudah",
+      "pertanyaan": "3, 3, 6, 18, 72, 360, ....",
+      "opsi": {
+        "A": "1.800",
+        "B": "2.520",
+        "C": "432",
+        "D": "720",
+        "E": "2.160"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "Bagi setiap suku dengan suku sebelumnya untuk melihat pengalinya:\n\n| Dari | Ke | Pengali |\n|---|---|---|\n| 3 | 3 | × 1 |\n| 3 | 6 | × 2 |\n| 6 | 18 | × 3 |\n| 18 | 72 | × 4 |\n| 72 | 360 | × 5 |\n| 360 | ? | × 6 |\n\nPengalinya bertambah satu setiap langkah, sehingga suku berikutnya adalah 360 × 6 = **2.160**. Deret ini mirip faktorial: setiap suku sama dengan 3 dikali hasil kali bilangan asli berurutan (3 × 1 × 2 × 3 × 4 × 5 × 6).",
+        "opsi": {
+          "A": "1.800 = 360 × 5. Muncul jika pengali terakhir dipakai lagi, padahal pengalinya terus bertambah.",
+          "B": "2.520 = 360 × 7. Muncul jika satu langkah pengali terlewat.",
+          "C": "432 = 360 + 72. Muncul jika deret dikira menjumlahkan dua suku sebelumnya, pola yang memang cocok untuk beberapa suku awal (3 + 3 = 6) tetapi tidak berlanjut (6 + 3 ≠ 18).",
+          "D": "720 = 360 × 2. Muncul jika deret dianggap berlipat dua seperti pada langkah 3 → 6."
+        },
+        "konsep": "**Cek pembagian jika angka melonjak cepat.** Jika selisih antarsuku tidak berpola tetapi angkanya naik berlipat-lipat, hitung hasil bagi antarsuku. Pola pengali bertambah (× 1, × 2, × 3, …) dan pengali tetap (× 2, × 2, …) adalah dua pola paling umum."
+      },
+      "tips": "Uji pola pada **semua** suku yang diberikan, bukan hanya dua atau tiga suku pertama. Pola jumlah dua suku sebelumnya cocok untuk 3, 3, 6, tetapi gagal di suku keempat."
+    },
+    {
+      "id": "p05-047",
+      "nomor": 47,
+      "kategori": "TIU",
+      "subtopik": "Deret Angka",
+      "topik": "Pola bilangan dalam tabel tiga kolom",
+      "tingkat": "sulit",
+      "pertanyaan": "Perhatikan tabel berikut. Bilangan di setiap baris mengikuti aturan yang sama.\n\n| Kolom 1 | Kolom 2 | Kolom 3 |\n|---|---|---|\n| 2 | 5 | 9 |\n| 3 | 4 | 11 |\n| 6 | 3 | 17 |\n| 4 | 7 | ? |\n\nBilangan yang tepat untuk mengganti tanda tanya adalah ....",
+      "opsi": {
+        "A": "13",
+        "B": "28",
+        "C": "27",
+        "D": "29",
+        "E": "11"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "Cari satu aturan yang berlaku untuk **ketiga baris** yang sudah lengkap. Coba hasil kali kolom 1 dan kolom 2:\n\n| Baris | Kolom 1 × Kolom 2 | Kolom 3 | Selisih |\n|---|---|---|---|\n| 1 | 2 × 5 = 10 | 9 | −1 |\n| 2 | 3 × 4 = 12 | 11 | −1 |\n| 3 | 6 × 3 = 18 | 17 | −1 |\n\nAturannya: **kolom 3 = kolom 1 × kolom 2 − 1**. Untuk baris keempat: 4 × 7 − 1 = 28 − 1 = **27**. Aturan ini sudah dicek dengan program terhadap ketiga baris.",
+        "opsi": {
+          "A": "13 berasal dari aturan kolom 1 + kolom 2 + 2 (4 + 7 + 2). Aturan ini cocok untuk baris pertama (2 + 5 + 2 = 9), tetapi gagal di baris kedua (3 + 4 + 2 = 9, bukan 11).",
+          "B": "28 adalah hasil kali 4 × 7 tanpa dikurangi 1. Langkah terakhir aturan terlewat.",
+          "D": "29 muncul jika selisihnya dibaca +1, bukan −1. Periksa kembali: 10 menjadi 9, jadi berkurang.",
+          "E": "11 adalah jumlah 4 + 7. Aturan penjumlahan tidak cocok dengan baris mana pun (2 + 5 = 7, bukan 9)."
+        },
+        "konsep": "**Uji ke semua baris.** Pada soal tabel, beberapa aturan bisa cocok untuk satu baris secara kebetulan. Aturan yang benar harus berlaku di semua baris yang lengkap. Urutan coba yang efisien: jumlah, selisih, hasil kali, lalu hasil kali ± konstanta."
+      },
+      "tips": "Jika aturan sederhana gagal, hitung **selisih antara kolom 3 dan hasil operasi** di setiap baris. Jika selisihnya sama di semua baris, aturannya adalah operasi itu ditambah atau dikurangi konstanta tersebut."
+    },
+    {
+      "id": "p05-048",
+      "nomor": 48,
+      "kategori": "TIU",
+      "subtopik": "Deret Huruf",
+      "topik": "Deret huruf dengan urutan alfabet berupa bilangan kuadrat",
+      "tingkat": "sedang",
+      "pertanyaan": "A, D, I, P, ..., ....\n\nDua huruf berikutnya adalah ....",
+      "opsi": {
+        "A": "W, D",
+        "B": "Y, J",
+        "C": "Y, Z",
+        "D": "Y, I",
+        "E": "Y, K"
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "Ubah huruf menjadi nomor urut alfabet: A = 1, D = 4, I = 9, P = 16. Keempatnya adalah bilangan kuadrat: 1², 2², 3², 4². Suku berikutnya 5² = 25, yaitu **Y**. Suku setelahnya 6² = 36. Karena alfabet hanya 26 huruf, urutan berputar kembali ke A setelah Z: 36 − 26 = 10, yaitu **J**. Cara lain melihat polanya: selisih nomor urutnya 3, 5, 7, lalu 9 dan 11. Dari P (16) maju 9 menjadi Y (25), lalu maju 11 menjadi 36, yang setelah berputar menjadi J.",
+        "opsi": {
+          "A": "W, D muncul jika selisih terakhir (7) dipakai lagi: 16 + 7 = 23 (W), 23 + 7 = 30, lalu 30 − 26 = 4 (D). Selisihnya seharusnya terus bertambah dua.",
+          "C": "Y benar, tetapi Z muncul karena urutan dihentikan di huruf terakhir alih-alih berputar ke awal alfabet.",
+          "D": "Y benar, tetapi I muncul dari 36 − 27 = 9. Pengurangan untuk putaran alfabet seharusnya 26.",
+          "E": "Y benar, tetapi K muncul dari 36 − 25 = 11. Kesalahan yang sama: jumlah huruf alfabet adalah 26."
+        },
+        "konsep": "**Huruf yang perlu dihafal nomornya:** E = 5, J = 10, O = 15, T = 20, Y = 25. Dari kelima patokan ini, nomor huruf lain mudah dihitung. Jika nomor melebihi 26, kurangi 26."
+      },
+      "tips": "Pada deret huruf yang melompat jauh, langsung ubah ke angka. Jika angkanya 1, 4, 9, 16, curigai bilangan kuadrat. Jika 1, 2, 4, 8, curigai pangkat dua."
+    },
+    {
+      "id": "p05-049",
+      "nomor": 49,
+      "kategori": "TIU",
+      "subtopik": "Aritmetika",
+      "topik": "Pecahan bertingkat",
+      "tingkat": "mudah",
+      "pertanyaan": "Nilai dari 1 + 1/(2 + 1/(3 + 1/2)) adalah ....",
+      "opsi": {
+        "A": "23/16",
+        "B": "23/7",
+        "C": "7/16",
+        "D": "9/7",
+        "E": "16/23"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "Kerjakan pecahan bertingkat **dari bagian paling dalam ke luar**.\n\n1. 3 + 1/2 = 7/2\n2. 1/(7/2) = 2/7\n3. 2 + 2/7 = 16/7\n4. 1/(16/7) = 7/16\n5. 1 + 7/16 = **23/16**\n\nHasil akhirnya 23/16, atau 1 7/16 dalam bentuk pecahan campuran. Membagi 1 dengan suatu pecahan sama dengan membalik pecahan itu, jadi langkah 2 dan 4 cukup dengan menukar pembilang dan penyebut. Pemeriksaan dengan program pecahan eksak memberikan hasil yang sama.",
+        "opsi": {
+          "B": "23/7 = 1 + 16/7. Muncul jika langkah 4 terlewat, yaitu 16/7 tidak dibalik sebelum ditambah 1.",
+          "C": "7/16 adalah hasil langkah 4. Muncul jika angka 1 di depan lupa ditambahkan.",
+          "D": "9/7 = 1 + 2/7. Muncul jika langkah 3 dan 4 terlewat: hasil langkah 2 langsung ditambahkan ke 1.",
+          "E": "16/23 adalah kebalikan dari jawaban. Muncul jika hasil akhir ikut dibalik, padahal langkah terakhir hanya penjumlahan."
+        },
+        "konsep": "**Pola pecahan bertingkat:** (1) mulai dari tingkat terdalam; (2) setiap “1 per sesuatu” berarti membalik pecahan; (3) tambahkan bilangan bulat di depannya; (4) ulangi sampai tingkat terluar."
+      },
+      "tips": "Tulis setiap langkah di baris terpisah. Kesalahan pecahan bertingkat hampir selalu terjadi karena satu langkah membalik atau menambah terlewat, dan setiap kesalahan itu sudah disiapkan sebagai opsi."
+    },
+    {
+      "id": "p05-050",
+      "nomor": 50,
+      "kategori": "TIU",
+      "subtopik": "Perbandingan Kuantitatif",
+      "topik": "Membandingkan rata-rata dan median data dengan pencilan",
+      "tingkat": "sedang",
+      "pertanyaan": "Jumlah pengaduan yang masuk ke sebuah unit layanan selama delapan hari kerja adalah:\n\n12, 7, 15, 9, 30, 11, 8, 12\n\nP = rata-rata jumlah pengaduan per hari\nQ = median jumlah pengaduan per hari\n\nHubungan yang tepat antara P dan Q adalah ....",
+      "opsi": {
+        "A": "P < Q",
+        "B": "P = Q",
+        "C": "P + Q = 25",
+        "D": "P > Q",
+        "E": "Hubungan P dan Q tidak dapat ditentukan"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "**Rata-rata (P):** jumlah semua data = 12 + 7 + 15 + 9 + 30 + 11 + 8 + 12 = 104. P = 104 ÷ 8 = **13**.\n\n**Median (Q):** urutkan dulu datanya: 7, 8, 9, 11, 12, 12, 15, 30. Jumlah data genap (8), jadi median adalah rata-rata data ke-4 dan ke-5: (11 + 12) ÷ 2 = **11,5**.\n\nKarena 13 > 11,5, maka **P > Q**. Rata-rata lebih besar karena tertarik ke atas oleh satu hari dengan 30 pengaduan (pencilan), sedangkan median tidak terpengaruh nilai ekstrem.",
+        "opsi": {
+          "A": "P < Q muncul jika median diambil **tanpa mengurutkan data**: data ke-4 dan ke-5 dalam urutan asli adalah 9 dan 30, sehingga median keliru menjadi 19,5.",
+          "B": "P = Q hanya terjadi jika data tersebar simetris. Data ini tidak simetris karena ada nilai 30 yang jauh di atas yang lain.",
+          "C": "P + Q = 25 muncul jika median dikira 12, yaitu data yang paling sering muncul (modus). Jumlah yang benar 13 + 11,5 = 24,5.",
+          "E": "Semua data diketahui, sehingga P dan Q dapat dihitung pasti. Pilihan “tidak dapat ditentukan” hanya tepat jika ada nilai yang tidak diketahui."
+        },
+        "konsep": "**Pencilan menarik rata-rata, bukan median.** Jika ada satu nilai jauh lebih besar dari data lain, biasanya rata-rata > median. Ini jalan pintas untuk mengecek hasil hitungan."
+      },
+      "tips": "Untuk median, **selalu urutkan data dulu**. Ini langkah yang paling sering dilupakan, dan hasil dari kesalahan itu biasanya sudah tersedia di opsi."
+    },
+    {
+      "id": "p05-051",
+      "nomor": 51,
+      "kategori": "TIU",
+      "subtopik": "Soal Cerita",
+      "topik": "Sudut antara jarum jam dan jarum menit",
+      "tingkat": "sedang",
+      "pertanyaan": "Rapat koordinasi dimulai tepat pukul 15.40. Sudut terkecil yang dibentuk jarum jam dan jarum menit pada saat itu adalah ....",
+      "opsi": {
+        "A": "150°",
+        "B": "230°",
+        "C": "140°",
+        "D": "120°",
+        "E": "130°"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "Pada jam dinding, pukul 15.40 ditunjukkan sebagai pukul 3.40. Ukur posisi setiap jarum dari angka 12, searah jarum jam.\n\n- **Jarum menit** bergerak 360° dalam 60 menit, atau 6° per menit. Pada menit ke-40: 40 × 6° = 240°.\n- **Jarum jam** bergerak 30° per jam ditambah 0,5° per menit, karena ikut bergeser selama satu jam berjalan. Pada pukul 3 lewat 40 menit: 3 × 30° + 40 × 0,5° = 90° + 20° = 110°.\n\nSelisihnya 240° − 110° = **130°**. Karena kurang dari 180°, sudut ini sudah merupakan sudut terkecil. Rumus cepatnya: |30 × jam − 5,5 × menit| = |90 − 220| = 130°.",
+        "opsi": {
+          "A": "150° muncul jika jarum jam dianggap **diam tepat di angka 3** (90°), padahal pada pukul 3.40 jarum jam sudah bergeser mendekati angka 4.",
+          "B": "230° adalah sudut **refleks** (360° − 130°). Soal menanyakan sudut terkecil.",
+          "C": "140° muncul jika pergeseran jarum jam dihitung 0,25° per menit (40 × 0,25° = 10°), sehingga jarum jam di 100°. Laju yang benar adalah 30° ÷ 60 = 0,5° per menit.",
+          "D": "120° muncul jika jarum jam dianggap sudah tepat di angka 4 (120°). Pada menit ke-40 jarum jam baru menempuh dua pertiga jalan menuju angka 4."
+        },
+        "konsep": "**Rumus sudut jarum jam:** sudut = |30H − 5,5M|, dengan H = jam (1–12) dan M = menit. Jika hasilnya lebih dari 180°, kurangkan dari 360° untuk mendapat sudut terkecil."
+      },
+      "tips": "Ingat dua laju: jarum menit 6° per menit, jarum jam 0,5° per menit. Kesalahan paling sering adalah melupakan pergeseran jarum jam."
+    },
+    {
+      "id": "p05-052",
+      "nomor": 52,
+      "kategori": "TIU",
+      "subtopik": "Soal Cerita",
+      "topik": "Kereta yang melewati terowongan seluruhnya",
+      "tingkat": "sulit",
+      "pertanyaan": "Sebuah kereta sepanjang 180 m melaju dengan kecepatan tetap 72 km/jam. Waktu yang diperlukan kereta untuk melewati sebuah terowongan seluruhnya, yaitu sejak ujung depan kereta masuk sampai ujung belakang kereta keluar, adalah 40 detik. Panjang terowongan tersebut adalah ....",
+      "opsi": {
+        "A": "800 m",
+        "B": "980 m",
+        "C": "620 m",
+        "D": "440 m",
+        "E": "2.700 m"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "**Langkah 1, samakan satuan.** 72 km/jam = 72 × 1.000 m ÷ 3.600 detik = 20 m/detik.\n\n**Langkah 2, jarak tempuh.** Dalam 40 detik, kereta menempuh 20 × 40 = 800 m.\n\n**Langkah 3, pahami apa yang ditempuh.** Sejak ujung depan masuk sampai ujung belakang keluar, ujung depan kereta menempuh **panjang terowongan ditambah panjang kereta**. Jadi panjang terowongan + 180 = 800, sehingga panjang terowongan = 800 − 180 = **620 m**.",
+        "opsi": {
+          "A": "800 m adalah jarak tempuh total. Muncul jika panjang kereta lupa dikurangkan.",
+          "B": "980 m muncul jika panjang kereta **ditambahkan** (800 + 180), seolah-olah jarak tempuh hanya panjang terowongan dikurangi kereta.",
+          "D": "440 m muncul jika panjang kereta dikurangkan dua kali (800 − 360), karena menganggap kereta harus masuk seluruhnya dan keluar seluruhnya secara terpisah.",
+          "E": "2.700 m muncul jika kecepatan tidak dikonversi: 72 × 40 − 180. Satuan km/jam dicampur dengan detik dan meter."
+        },
+        "konsep": "**Benda panjang melewati sesuatu:** jarak tempuh = panjang benda + panjang yang dilewati. Melewati tiang atau orang (panjang ≈ 0) berarti jarak tempuh = panjang kereta saja."
+      },
+      "tips": "Konversi cepat: km/jam → m/detik cukup dikali 5/18. Jadi 72 km/jam = 72 × 5/18 = 20 m/detik. Lakukan konversi ini sebelum menghitung apa pun."
+    },
+    {
+      "id": "p05-053",
+      "nomor": 53,
+      "kategori": "TIU",
+      "subtopik": "Soal Cerita",
+      "topik": "Mencampur dua jenis beras untuk harga rata-rata tertentu",
+      "tingkat": "sedang",
+      "pertanyaan": "Pengelola dapur umum mencampur beras jenis A seharga Rp12.000 per kg dan beras jenis B seharga Rp15.000 per kg. Ia ingin memperoleh 60 kg beras campuran dengan harga rata-rata Rp13.000 per kg. Banyak beras jenis B yang harus dicampurkan adalah ....",
+      "opsi": {
+        "A": "40 kg",
+        "B": "30 kg",
+        "C": "36 kg",
+        "D": "20 kg",
+        "E": "24 kg"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "Misalkan beras B = b kg, maka beras A = (60 − b) kg. Total harga campuran harus sama dengan 60 kg × Rp13.000:\n\n12.000 × (60 − b) + 15.000 × b = 13.000 × 60\n720.000 + 3.000b = 780.000\n3.000b = 60.000\n**b = 20 kg**\n\nJadi beras A = 40 kg dan beras B = 20 kg. Cek: 40 × 12.000 + 20 × 15.000 = 480.000 + 300.000 = 780.000 = 60 × 13.000. Cara cepat: perbandingan A : B = (15.000 − 13.000) : (13.000 − 12.000) = 2 : 1, sehingga B = 1/3 × 60 = 20 kg.",
+        "opsi": {
+          "A": "40 kg adalah banyak beras **A**. Muncul jika perbandingan 2 : 1 tertukar.",
+          "B": "30 kg muncul jika kedua beras dicampur sama banyak. Campuran sama banyak menghasilkan harga Rp13.500, bukan Rp13.000.",
+          "C": "36 kg muncul dari perbandingan 3 : 2 (selisih 15.000 − 12.000 dan 15.000 − 13.000), lalu mengambil 3/5 × 60. Selisih yang dipakai seharusnya selisih masing-masing harga terhadap harga campuran.",
+          "E": "24 kg berasal dari perbandingan keliru yang sama (3 : 2), tetapi mengambil 2/5 × 60."
+        },
+        "konsep": "**Aturan campuran (silang selisih):** banyak A : banyak B = (harga B − harga campuran) : (harga campuran − harga A). Harga campuran yang lebih dekat ke harga A berarti beras A lebih banyak."
+      },
+      "tips": "Cek logika sebelum memilih: harga campuran Rp13.000 lebih dekat ke Rp12.000, jadi beras A harus lebih banyak dari beras B. Semua opsi yang membuat B ≥ 30 kg langsung gugur."
+    },
+    {
+      "id": "p05-054",
+      "nomor": 54,
+      "kategori": "TIU",
+      "subtopik": "Soal Cerita",
+      "topik": "Jabat tangan peserta rapat dengan peserta yang datang terlambat",
+      "tingkat": "sedang",
+      "pertanyaan": "Pada awal rapat koordinasi, setiap peserta yang hadir berjabat tangan tepat satu kali dengan setiap peserta lain, dan tercatat 45 jabat tangan. Kemudian 3 peserta datang terlambat. Masing-masing berjabat tangan tepat satu kali dengan setiap orang yang sudah ada di ruangan, termasuk dengan sesama peserta yang terlambat. Total jabat tangan dalam rapat itu adalah ....",
+      "opsi": {
+        "A": "78",
+        "B": "75",
+        "C": "66",
+        "D": "48",
+        "E": "81"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "**Langkah 1, cari jumlah peserta awal.** Jika ada n orang dan setiap pasangan berjabat tangan sekali, banyak jabat tangan = n(n − 1)/2. Dari n(n − 1)/2 = 45 diperoleh n(n − 1) = 90, sehingga **n = 10** (10 × 9 = 90).\n\n**Langkah 2, hitung tambahan.** Setiap peserta terlambat berjabat tangan dengan 10 peserta awal: 3 × 10 = 30. Sesama peserta terlambat berjabat tangan: 3 × 2/2 = 3.\n\n**Langkah 3, jumlahkan.** 45 + 30 + 3 = **78**. Cek dengan cara lain: total 13 orang, sehingga 13 × 12/2 = 78. Kedua cara memberi hasil yang sama.",
+        "opsi": {
+          "B": "75 = 45 + 30. Jabat tangan **sesama peserta terlambat** (3 kali) lupa dihitung.",
+          "C": "66 = 12 × 11/2. Muncul jika jumlah peserta awal salah dihitung menjadi 9 karena memakai rumus n(n + 1)/2 = 45.",
+          "D": "48 = 45 + 3. Hanya menghitung jabat tangan sesama peserta terlambat dan melupakan jabat tangan mereka dengan 10 peserta awal.",
+          "E": "81 = 45 + 3 × 12. Setiap peserta terlambat dianggap berjabat tangan dengan 12 orang, sehingga jabat tangan sesama terlambat terhitung dua kali."
+        },
+        "konsep": "**Rumus jabat tangan:** n orang → n(n − 1)/2. Jabat tangan antara A dan B hanya dihitung satu kali, karena itulah dibagi 2. Jika ada tambahan k orang, total baru = (n + k)(n + k − 1)/2."
+      },
+      "tips": "Jika soal bertahap, hitung total akhir dengan rumus langsung untuk mengecek. Di sini, 13 orang → 78 jabat tangan. Jika hasil bertahap berbeda, ada bagian yang terlewat atau terhitung dua kali."
+    },
+    {
+      "id": "p05-055",
+      "nomor": 55,
+      "kategori": "TIU",
+      "subtopik": "Soal Cerita",
+      "topik": "Kecepatan perahu dan kecepatan arus sungai",
+      "tingkat": "sulit",
+      "pertanyaan": "Sebuah perahu patroli menempuh 36 km searah arus sungai dalam 2 jam, lalu kembali menempuh 36 km melawan arus dalam 3 jam. Jika perahu yang sama dipakai di danau berair tenang dengan kecepatan mesin yang sama, waktu yang diperlukan untuk menempuh 30 km adalah ....",
+      "opsi": {
+        "A": "2 jam 30 menit",
+        "B": "2 jam",
+        "C": "1 jam 40 menit",
+        "D": "10 jam",
+        "E": "2 jam 5 menit"
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "Misalkan kecepatan perahu di air tenang = v dan kecepatan arus = a.\n\n- Searah arus: v + a = 36 ÷ 2 = 18 km/jam\n- Melawan arus: v − a = 36 ÷ 3 = 12 km/jam\n\nJumlahkan kedua persamaan: 2v = 30, sehingga **v = 15 km/jam** dan a = 3 km/jam. Di danau tidak ada arus, sehingga perahu melaju 15 km/jam. Waktu untuk 30 km = 30 ÷ 15 = **2 jam**.\n\nKecepatan di air tenang selalu sama dengan rata-rata biasa dari kecepatan searah dan melawan arus: (18 + 12) ÷ 2 = 15.",
+        "opsi": {
+          "A": "2 jam 30 menit = 30 ÷ 12. Memakai kecepatan **melawan arus**, padahal di danau tidak ada arus.",
+          "C": "1 jam 40 menit = 30 ÷ 18. Memakai kecepatan **searah arus**.",
+          "D": "10 jam = 30 ÷ 3. Memakai **kecepatan arus** sebagai kecepatan perahu, tertukar antara v dan a.",
+          "E": "2 jam 5 menit muncul jika memakai kecepatan rata-rata perjalanan pulang-pergi: total 72 km ÷ 5 jam = 14,4 km/jam, lalu 30 ÷ 14,4. Itu kecepatan rata-rata perjalanan, bukan kecepatan mesin di air tenang."
+        },
+        "konsep": "**Sistem hilir-hulu:** v + a = kecepatan searah arus; v − a = kecepatan melawan arus. Maka v = (searah + melawan) ÷ 2 dan a = (searah − melawan) ÷ 2."
+      },
+      "tips": "Bedakan dua jenis rata-rata. Kecepatan **mesin** di air tenang adalah rata-rata biasa dari dua kecepatan. Kecepatan **rata-rata perjalanan** pulang-pergi adalah total jarak dibagi total waktu, dan hasilnya selalu lebih kecil."
+    },
+    {
+      "id": "p05-056",
+      "nomor": 56,
+      "kategori": "TIU",
+      "subtopik": "Soal Cerita",
+      "topik": "Diagram Venn peserta dua pelatihan",
+      "tingkat": "sedang",
+      "pertanyaan": "Sebuah kantor memiliki 120 pegawai. Sebanyak 70 pegawai mengikuti pelatihan pelayanan prima, 55 pegawai mengikuti pelatihan literasi digital, dan 20 pegawai tidak mengikuti satu pun dari kedua pelatihan itu. Banyak pegawai yang **hanya** mengikuti pelatihan pelayanan prima adalah ....",
+      "opsi": {
+        "A": "50",
+        "B": "25",
+        "C": "65",
+        "D": "45",
+        "E": "30"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "**Langkah 1, cari yang mengikuti minimal satu pelatihan:** 120 − 20 = 100 pegawai.\n\n**Langkah 2, cari irisan.** Jika 70 dan 55 dijumlahkan, pegawai yang mengikuti keduanya terhitung dua kali. Jadi irisan = 70 + 55 − 100 = **25** pegawai.\n\n**Langkah 3, hanya pelayanan prima:** 70 − 25 = **45** pegawai.\n\nCek: hanya pelayanan prima 45 + keduanya 25 + hanya literasi digital (55 − 25 = 30) + tidak keduanya 20 = 120. Jumlahnya cocok dengan total pegawai.",
+        "opsi": {
+          "A": "50 = 70 − 20. Muncul jika pegawai yang tidak mengikuti pelatihan dikurangkan dari peserta pelayanan prima, padahal kedua kelompok itu tidak beririsan.",
+          "B": "25 adalah pegawai yang mengikuti **kedua** pelatihan. Salah membaca kata *hanya*.",
+          "C": "65 muncul jika irisan dihitung tanpa memperhatikan pegawai yang tidak ikut: 70 + 55 − 120 = 5, lalu 70 − 5 = 65.",
+          "E": "30 adalah pegawai yang **hanya** mengikuti literasi digital. Tertukar antara dua kelompok."
+        },
+        "konsep": "**Rumus dua himpunan:** n(A ∪ B) = n(A) + n(B) − n(A ∩ B), dan n(A ∪ B) = total − yang tidak termasuk keduanya. Hanya A = n(A) − n(A ∩ B)."
+      },
+      "tips": "Gambar dua lingkaran beririsan dan isi dari tengah ke luar: irisan dulu, lalu bagian *hanya*, lalu bagian di luar lingkaran. Selalu cek bahwa keempat bagian berjumlah total."
+    },
+    {
+      "id": "p05-057",
+      "nomor": 57,
+      "kategori": "TIU",
+      "subtopik": "Aritmetika Sosial",
+      "topik": "Harga sebelum biaya layanan dan pajak yang dihitung bertingkat",
+      "tingkat": "sulit",
+      "pertanyaan": "Struk konsumsi rapat menunjukkan total Rp138.600. Total itu sudah termasuk biaya layanan 5% yang dihitung dari harga makanan, lalu pajak 10% yang dihitung dari harga makanan ditambah biaya layanan. Harga makanan sebelum biaya layanan dan pajak adalah ....",
+      "opsi": {
+        "A": "Rp120.000",
+        "B": "Rp117.810",
+        "C": "Rp120.522",
+        "D": "Rp124.740",
+        "E": "Rp132.000"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "Misalkan harga makanan = x.\n\n- Setelah biaya layanan 5%: x × 1,05\n- Setelah pajak 10% dari jumlah itu: x × 1,05 × 1,10 = **1,155x**\n\nJadi 1,155x = 138.600, sehingga x = 138.600 ÷ 1,155 = **Rp120.000**.\n\nCek maju: layanan 5% × 120.000 = 6.000, subtotal 126.000; pajak 10% × 126.000 = 12.600; total 138.600. Cocok dengan struk. Perhitungan ini juga dicek dengan pecahan eksak di program.",
+        "opsi": {
+          "B": "Rp117.810 = 138.600 × 0,85. Muncul jika 15% **dikurangkan dari total**. Persen tambahan dihitung dari harga awal, jadi tidak bisa dibalik dengan mengurangi persen dari harga akhir.",
+          "C": "Rp120.522 (dibulatkan) = 138.600 ÷ 1,15. Muncul jika 5% dan 10% dijumlahkan menjadi 15%. Karena pajak dikenakan juga pada biaya layanan, pengalinya 1,155, bukan 1,15.",
+          "D": "Rp124.740 = 138.600 × 0,9. Hanya mengurangi pajak 10% dari total dan melupakan biaya layanan.",
+          "E": "Rp132.000 = 138.600 ÷ 1,05. Hanya menghapus biaya layanan dan melupakan pajak."
+        },
+        "konsep": "**Persen bertingkat:** dikalikan, bukan dijumlahkan. Harga akhir = harga awal × (1 + p₁) × (1 + p₂). Untuk mencari harga awal, bagi harga akhir dengan hasil kali pengali itu."
+      },
+      "tips": "Setelah mendapat jawaban, **hitung maju** dari jawaban Anda sampai ke total struk. Jika tidak cocok, jawabannya salah. Opsi C sangat dekat dengan kunci dan hanya bisa disingkirkan dengan cek ini."
+    },
+    {
+      "id": "p05-058",
+      "nomor": 58,
+      "kategori": "TIU",
+      "subtopik": "Aritmetika Sosial",
+      "topik": "Membandingkan tiga penawaran: diskon tunggal, bonus barang, dan diskon bertingkat",
+      "tingkat": "sedang",
+      "pertanyaan": "Bagian umum membutuhkan 6 botol tinta printer. Harga normal di tiga toko sama, yaitu Rp50.000 per botol. Penawaran masing-masing toko:\n\n- Toko P: diskon 20% untuk seluruh pembelian.\n- Toko Q: setiap pembelian 4 botol mendapat bonus 1 botol.\n- Toko R: diskon 10%, lalu diskon tambahan 15% dari harga setelah diskon pertama.\n\nBiaya paling murah untuk memperoleh 6 botol adalah ....",
+      "opsi": {
+        "A": "Rp225.000",
+        "B": "Rp240.000",
+        "C": "Rp229.500",
+        "D": "Rp250.000",
+        "E": "Rp270.000"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "Hitung biaya 6 botol di setiap toko. Harga normal 6 botol = 6 × 50.000 = Rp300.000.\n\n| Toko | Perhitungan | Biaya |\n|---|---|---|\n| P | 300.000 × 0,80 | Rp240.000 |\n| Q | beli 5 botol: 4 botol pertama mendapat bonus 1, ditambah 1 botol lagi = 6 botol | Rp250.000 |\n| R | 300.000 × 0,90 × 0,85 | Rp229.500 |\n\nBiaya paling murah adalah **Rp229.500** di Toko R. Diskon bertingkat 10% lalu 15% setara dengan diskon 23,5%, sedikit lebih besar daripada diskon tunggal 20% di Toko P.",
+        "opsi": {
+          "A": "Rp225.000 muncul jika diskon Toko R **dijumlahkan** menjadi 25%. Diskon kedua dihitung dari harga yang sudah dipotong, sehingga total potongannya 23,5%.",
+          "B": "Rp240.000 adalah biaya di Toko P. Muncul jika peserta menganggap diskon tunggal 20% pasti lebih besar daripada dua diskon kecil, tanpa menghitung Toko R.",
+          "D": "Rp250.000 adalah biaya di Toko Q. Bonus 1 botol per 4 botol hanya setara potongan sekitar 16,7% untuk kebutuhan 6 botol.",
+          "E": "Rp270.000 = 300.000 × 0,90. Diskon kedua Toko R lupa diterapkan."
+        },
+        "konsep": "**Diskon bertingkat d₁ lalu d₂** setara dengan diskon tunggal 1 − (1 − d₁)(1 − d₂). Untuk 10% lalu 15%: 1 − 0,9 × 0,85 = 0,235 = 23,5%. **Bonus “beli n gratis 1”** paling menguntungkan jika jumlah kebutuhan tepat kelipatan n + 1."
+      },
+      "tips": "Untuk membandingkan penawaran, ubah semuanya ke satu ukuran yang sama, yaitu biaya total untuk kebutuhan yang sama persis. Jangan membandingkan persentase secara kasar."
+    },
+    {
+      "id": "p05-059",
+      "nomor": 59,
+      "kategori": "TIU",
+      "subtopik": "Peluang",
+      "topik": "Peluang setidaknya satu pemeriksa menemukan kesalahan",
+      "tingkat": "sulit",
+      "pertanyaan": "Sebuah dokumen yang mengandung satu kesalahan diperiksa oleh tiga petugas secara terpisah dan saling bebas. Peluang petugas pertama, kedua, dan ketiga menemukan kesalahan itu berturut-turut 0,5; 0,4; dan 0,2. Peluang kesalahan tersebut ditemukan oleh **setidaknya satu** petugas adalah ....",
+      "opsi": {
+        "A": "1,10",
+        "B": "0,76",
+        "C": "0,04",
+        "D": "0,24",
+        "E": "0,37"
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "Kata *setidaknya satu* paling mudah dihitung lewat **komplemennya**, yaitu kejadian tidak ada satu pun petugas yang menemukan kesalahan.\n\n- Peluang petugas pertama tidak menemukan: 1 − 0,5 = 0,5\n- Peluang petugas kedua tidak menemukan: 1 − 0,4 = 0,6\n- Peluang petugas ketiga tidak menemukan: 1 − 0,2 = 0,8\n\nKarena saling bebas, peluang ketiganya tidak menemukan = 0,5 × 0,6 × 0,8 = 0,24.\n\nPeluang setidaknya satu menemukan = 1 − 0,24 = **0,76**.",
+        "opsi": {
+          "A": "1,10 = 0,5 + 0,4 + 0,2. Peluang tidak mungkin lebih dari 1. Menjumlahkan peluang hanya boleh untuk kejadian yang saling lepas, sedangkan ketiga petugas bisa sama-sama menemukan kesalahan.",
+          "C": "0,04 = 0,5 × 0,4 × 0,2, yaitu peluang **ketiga petugas sekaligus** menemukan kesalahan. Itu bukan yang ditanyakan.",
+          "D": "0,24 adalah peluang **tidak ada** yang menemukan. Langkah terakhir, mengurangkan dari 1, terlewat.",
+          "E": "0,37 adalah rata-rata ketiga peluang ((0,5 + 0,4 + 0,2) ÷ 3 ≈ 0,37). Rata-rata peluang tidak memiliki makna dalam soal ini."
+        },
+        "konsep": "**Aturan komplemen:** P(setidaknya satu) = 1 − P(tidak ada satu pun). Untuk kejadian saling bebas, P(semua tidak terjadi) = hasil kali peluang masing-masing tidak terjadi."
+      },
+      "tips": "Setiap kali melihat kata *setidaknya satu* atau *minimal satu*, langsung pikirkan komplemen. Cek juga hasil akhir: peluang selalu antara 0 dan 1, jadi opsi di luar rentang itu bisa langsung dicoret."
+    },
+    {
+      "id": "p05-060",
+      "nomor": 60,
+      "kategori": "TIU",
+      "subtopik": "Logika Proposisi",
+      "topik": "Mengenali invers implikasi",
+      "tingkat": "mudah",
+      "pertanyaan": "Invers dari pernyataan “Jika hujan turun deras, maka apel pagi dibatalkan” adalah ....",
+      "opsi": {
+        "A": "Jika apel pagi dibatalkan, maka hujan turun deras",
+        "B": "Jika apel pagi tidak dibatalkan, maka hujan tidak turun deras",
+        "C": "Hujan turun deras dan apel pagi tidak dibatalkan",
+        "D": "Hujan tidak turun deras atau apel pagi dibatalkan",
+        "E": "Jika hujan tidak turun deras, maka apel pagi tidak dibatalkan"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "Untuk implikasi p → q, dengan p = “hujan turun deras” dan q = “apel pagi dibatalkan”, ada tiga turunan:\n\n| Nama | Bentuk | Kalimat |\n|---|---|---|\n| Konvers | q → p | Jika apel dibatalkan, maka hujan deras |\n| **Invers** | **~p → ~q** | **Jika tidak hujan deras, maka apel tidak dibatalkan** |\n| Kontraposisi | ~q → ~p | Jika apel tidak dibatalkan, maka tidak hujan deras |\n\nInvers dibentuk dengan **menegasikan kedua bagian tanpa menukar posisinya**. Perlu diingat, invers tidak setara dengan pernyataan asal: apel bisa saja dibatalkan karena alasan lain walaupun tidak hujan.",
+        "opsi": {
+          "A": "Ini **konvers** (q → p): posisi ditukar tanpa negasi.",
+          "B": "Ini **kontraposisi** (~q → ~p): posisi ditukar dan keduanya dinegasikan. Kontraposisi setara dengan pernyataan asal.",
+          "C": "Ini **negasi** implikasi (p ∧ ~q), yaitu satu-satunya keadaan yang membuat pernyataan asal salah.",
+          "D": "Ini bentuk **setara** dari implikasi (~p ∨ q). Nilai kebenarannya selalu sama dengan pernyataan asal."
+        },
+        "konsep": "**Hafalan cepat:** konvers = tukar; invers = negasikan; kontraposisi = tukar dan negasikan. Yang setara dengan p → q hanya kontraposisi (~q → ~p) dan disjungsi (~p ∨ q)."
+      },
+      "tips": "Untuk soal turunan implikasi, tandai p dan q di kalimat soal dengan huruf, lalu ubah setiap opsi menjadi simbol. Setelah menjadi simbol, jawaban terlihat dalam hitungan detik."
+    },
+    {
+      "id": "p05-061",
+      "nomor": 61,
+      "kategori": "TIU",
+      "subtopik": "Logika Proposisi",
+      "topik": "Menarik kesimpulan dari empat premis dengan disjungsi dan modus tollens berantai",
+      "tingkat": "sulit",
+      "pertanyaan": "Premis 1: Jika anggaran pelatihan disetujui, maka pegawai baru mengikuti pelatihan.\nPremis 2: Jika pegawai baru mengikuti pelatihan, maka mutu laporan meningkat.\nPremis 3: Mutu laporan tidak meningkat atau target unit tercapai.\nPremis 4: Target unit tidak tercapai.\n\nKesimpulan yang sah adalah ....",
+      "opsi": {
+        "A": "Anggaran pelatihan disetujui, tetapi pegawai baru tidak mengikuti pelatihan",
+        "B": "Mutu laporan meningkat walaupun target unit tidak tercapai",
+        "C": "Pegawai baru mengikuti pelatihan, tetapi mutu laporan tidak meningkat",
+        "D": "Anggaran pelatihan tidak disetujui",
+        "E": "Target unit tercapai karena mutu laporan tidak meningkat"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "Misalkan a = anggaran disetujui, b = pegawai baru ikut pelatihan, c = mutu laporan meningkat, d = target unit tercapai.\n\n1. Premis 3 dan 4: ~c ∨ d, dan ~d. Dengan **silogisme disjungtif**, ~c (mutu laporan tidak meningkat).\n2. Premis 2 dan hasil langkah 1: b → c, dan ~c. Dengan **modus tollens**, ~b (pegawai baru tidak ikut pelatihan).\n3. Premis 1 dan hasil langkah 2: a → b, dan ~b. Dengan **modus tollens**, ~a.\n\nKesimpulan: **anggaran pelatihan tidak disetujui**. Pemeriksaan tabel kebenaran dengan program menunjukkan hanya satu keadaan yang memenuhi keempat premis, yaitu a, b, c, dan d semuanya salah.",
+        "opsi": {
+          "A": "Bertentangan dengan premis 1. Jika anggaran disetujui, pegawai baru pasti ikut pelatihan.",
+          "B": "Bertentangan dengan langkah 1. Dari premis 3 dan 4, mutu laporan pasti tidak meningkat.",
+          "C": "Bertentangan dengan premis 2. Jika pegawai ikut pelatihan, mutu laporan pasti meningkat.",
+          "E": "Bertentangan dengan premis 4. Target unit dinyatakan tidak tercapai."
+        },
+        "konsep": "**Mulai dari premis yang berupa fakta tunggal** (premis 4). Fakta tunggal adalah pintu masuk rantai penalaran. Dari sana, gunakan silogisme disjungtif untuk premis berbentuk *atau*, lalu modus tollens mundur sepanjang rantai *jika–maka*."
+      },
+      "tips": "Pada soal dengan banyak premis, tulis setiap premis dalam simbol pendek dan kerjakan dari fakta tunggal ke belakang. Opsi yang berbentuk “X, tetapi Y” biasanya langsung bertentangan dengan satu premis."
+    },
+    {
+      "id": "p05-062",
+      "nomor": 62,
+      "kategori": "TIU",
+      "subtopik": "Logika Proposisi",
+      "topik": "Menentukan nilai kebenaran pernyataan majemuk dari fakta",
+      "tingkat": "sedang",
+      "pertanyaan": "Diketahui pernyataan p: “Kantor layanan buka pada hari Sabtu” bernilai **salah**, dan pernyataan q: “Layanan daring tersedia 24 jam” bernilai **benar**. Pernyataan majemuk berikut yang bernilai **benar** adalah ....",
+      "opsi": {
+        "A": "Kantor layanan buka pada hari Sabtu dan layanan daring tersedia 24 jam",
+        "B": "Layanan daring tidak tersedia 24 jam atau kantor layanan buka pada hari Sabtu",
+        "C": "Kantor layanan tidak buka pada hari Sabtu dan layanan daring tersedia 24 jam",
+        "D": "Jika layanan daring tersedia 24 jam, maka kantor layanan buka pada hari Sabtu",
+        "E": "Kantor layanan buka pada hari Sabtu jika dan hanya jika layanan daring tersedia 24 jam"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "Dengan p = S (salah) dan q = B (benar), periksa setiap opsi:\n\n| Opsi | Bentuk | Nilai |\n|---|---|---|\n| A | p ∧ q = S ∧ B | S |\n| B | ~q ∨ p = S ∨ S | S |\n| C | ~p ∧ q = B ∧ B | **B** |\n| D | q → p = B → S | S |\n| E | p ↔ q = S ↔ B | S |\n\nHanya opsi C yang bernilai benar. Konjungsi (*dan*) benar hanya jika kedua bagiannya benar; di opsi C, *kantor tidak buka hari Sabtu* bernilai benar karena p salah, dan *layanan daring 24 jam* bernilai benar. Hasil tabel ini juga dicek dengan program.",
+        "opsi": {
+          "A": "Konjungsi dengan p yang salah pasti salah.",
+          "B": "Disjungsi (*atau*) salah jika kedua bagiannya salah. Di sini ~q salah dan p salah.",
+          "D": "Implikasi salah hanya pada keadaan *benar → salah*, dan itulah yang terjadi di sini (q benar, p salah).",
+          "E": "Biimplikasi benar jika kedua bagian bernilai sama. Di sini p salah dan q benar, jadi nilainya salah."
+        },
+        "konsep": "**Kapan bernilai salah?** Konjungsi: salah jika ada satu bagian salah. Disjungsi: salah hanya jika keduanya salah. Implikasi: salah hanya jika B → S. Biimplikasi: salah jika nilainya berbeda."
+      },
+      "tips": "Hafalkan kapan setiap operator bernilai **salah**, karena hanya ada satu atau dua keadaan. Ini lebih cepat daripada menghafal seluruh tabel kebenaran."
+    },
+    {
+      "id": "p05-063",
+      "nomor": 63,
+      "kategori": "TIU",
+      "subtopik": "Aljabar",
+      "topik": "Bilangan dua angka yang angkanya ditukar",
+      "tingkat": "sedang",
+      "pertanyaan": "Sebuah bilangan dua angka memiliki jumlah angka-angka 11. Jika kedua angkanya ditukar, bilangan yang baru 27 lebih besar daripada bilangan semula. Bilangan semula adalah ....",
+      "opsi": {
+        "A": "74",
+        "B": "47",
+        "C": "38",
+        "D": "56",
+        "E": "29"
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "Misalkan angka puluhan = a dan angka satuan = b, sehingga bilangan semula = 10a + b dan bilangan baru = 10b + a.\n\n- Syarat 1: a + b = 11\n- Syarat 2: (10b + a) − (10a + b) = 27, yaitu 9b − 9a = 27, sehingga **b − a = 3**\n\nJumlahkan kedua persamaan: 2b = 14, jadi b = 7 dan a = 4. Bilangan semula = **47**. Cek: 4 + 7 = 11, dan 74 − 47 = 27. Pencarian dengan program pada semua bilangan dua angka juga hanya menemukan 47.",
+        "opsi": {
+          "A": "74 adalah **bilangan baru** setelah ditukar. Jika 74 bilangan semula, bilangan barunya 47, yang justru 27 lebih kecil.",
+          "C": "38 memenuhi syarat jumlah (3 + 8 = 11), tetapi 83 − 38 = 45, bukan 27. Hanya satu syarat yang dicek.",
+          "D": "56 memenuhi syarat jumlah, tetapi 65 − 56 = 9.",
+          "E": "29 memenuhi syarat jumlah, tetapi 92 − 29 = 63."
+        },
+        "konsep": "**Sifat bilangan yang angkanya ditukar:** selisihnya selalu 9 × (selisih kedua angka). Jadi selisih 27 langsung berarti kedua angka berselisih 3."
+      },
+      "tips": "Jika waktunya sempit, uji opsi: cek syarat jumlah dulu, lalu syarat selisih. Pengecoh di soal ini sengaja memenuhi syarat pertama, jadi syarat kedua wajib dicek."
+    },
+    {
+      "id": "p05-064",
+      "nomor": 64,
+      "kategori": "TIU",
+      "subtopik": "Bilangan",
+      "topik": "Banyak faktor positif suatu bilangan dari faktorisasi prima",
+      "tingkat": "mudah",
+      "pertanyaan": "Sebanyak 360 lembar formulir akan dibagikan sama banyak ke beberapa meja pelayanan tanpa sisa. Banyak pilihan jumlah meja yang mungkin, termasuk 1 meja dan 360 meja, adalah ....",
+      "opsi": {
+        "A": "12",
+        "B": "22",
+        "C": "9",
+        "D": "6",
+        "E": "24"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "Jumlah meja harus membagi 360 tanpa sisa, jadi yang dicari adalah **banyak faktor positif dari 360**.\n\n1. Faktorisasi prima: 360 = 2³ × 3² × 5¹.\n2. Banyak faktor = (pangkat 2 + 1) × (pangkat 3 + 1) × (pangkat 5 + 1) = (3 + 1)(2 + 1)(1 + 1) = 4 × 3 × 2 = **24**.\n\nAlasannya: setiap faktor 360 berbentuk 2ᵃ × 3ᵇ × 5ᶜ dengan a dari 0 sampai 3 (4 pilihan), b dari 0 sampai 2 (3 pilihan), dan c dari 0 sampai 1 (2 pilihan). Daftar lengkap yang dicek dengan program juga berisi 24 bilangan.",
+        "opsi": {
+          "A": "12 adalah banyak faktor yang tidak lebih dari √360 (sekitar 19). Muncul jika hanya menghitung setengah pasangan faktor.",
+          "B": "22 muncul jika 1 dan 360 tidak dihitung, padahal soal menyatakan keduanya termasuk.",
+          "C": "9 = 4 + 3 + 2. Muncul jika hasil (pangkat + 1) **dijumlahkan**, bukan dikalikan.",
+          "D": "6 = 3 × 2 × 1. Muncul jika pangkat dikalikan **tanpa ditambah 1**, sehingga pilihan pangkat 0 terlupa."
+        },
+        "konsep": "**Rumus banyak faktor:** jika n = p₁^a × p₂^b × p₃^c, maka banyak faktor = (a + 1)(b + 1)(c + 1). Tambahan 1 berasal dari pilihan pangkat 0."
+      },
+      "tips": "Faktorkan dengan pohon faktor, tulis dalam bentuk pangkat, lalu kalikan setiap pangkat yang sudah ditambah satu. Cara ini jauh lebih cepat daripada mendaftar faktor satu per satu."
+    },
+    {
+      "id": "p05-065",
+      "nomor": 65,
+      "kategori": "TIU",
+      "subtopik": "Perbandingan",
+      "topik": "Membagi insentif dengan perbandingan berbentuk pecahan",
+      "tingkat": "sedang",
+      "pertanyaan": "Insentif sebesar Rp9.360.000 dibagikan kepada tim A, tim B, dan tim C dengan perbandingan 1/2 : 1/3 : 1/4. Bagian yang diterima tim A adalah ....",
+      "opsi": {
+        "A": "Rp4.320.000",
+        "B": "Rp2.080.000",
+        "C": "Rp4.680.000",
+        "D": "Rp3.120.000",
+        "E": "Rp2.880.000"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "Ubah perbandingan pecahan menjadi bilangan bulat dengan mengalikan semuanya dengan KPK penyebut (2, 3, 4), yaitu 12:\n\n1/2 : 1/3 : 1/4 = 6 : 4 : 3\n\nJumlah bagian = 6 + 4 + 3 = 13. Nilai satu bagian = 9.360.000 ÷ 13 = 720.000.\n\nBagian tim A = 6 × 720.000 = **Rp4.320.000**. Tim B mendapat Rp2.880.000 dan tim C Rp2.160.000. Cek: 4.320.000 + 2.880.000 + 2.160.000 = 9.360.000.",
+        "opsi": {
+          "B": "Rp2.080.000 = 2/9 × 9.360.000. Muncul jika perbandingan dibaca dari **penyebutnya** saja (2 : 3 : 4). Perbandingan 1/2 : 1/3 : 1/4 justru terbalik dari 2 : 3 : 4, karena 1/2 adalah pecahan terbesar.",
+          "C": "Rp4.680.000 = 1/2 × 9.360.000. Muncul jika 1/2 diartikan setengah dari total, padahal angka itu hanya bagian dari perbandingan.",
+          "D": "Rp3.120.000 = 9.360.000 ÷ 3. Muncul jika insentif dibagi rata dan perbandingan diabaikan.",
+          "E": "Rp2.880.000 adalah bagian **tim B**. Salah membaca tim yang ditanyakan."
+        },
+        "konsep": "**Perbandingan pecahan:** kalikan semua suku dengan KPK penyebutnya agar menjadi bilangan bulat. Pecahan yang lebih besar selalu mendapat bagian lebih besar."
+      },
+      "tips": "Cek nalar: 1/2 adalah pecahan terbesar, jadi tim A harus mendapat bagian terbesar, lebih dari sepertiga total (Rp3.120.000) tetapi kurang dari setengah total. Hanya satu opsi yang memenuhi rentang itu."
     }
   ]
 }
