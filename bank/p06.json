@@ -1927,11 +1927,11 @@
       "pembahasan": {
         "inti": "Aspek pelayanan publik menilai kesediaan membantu warga sampai kebutuhannya terpenuhi, terutama warga yang kesulitan memakai layanan digital. Bantuan yang baik juga harus menjaga hak warga atas akun dan datanya sendiri, sehingga warga tetap bisa memakai layanan itu tanpa bergantung pada petugas.",
         "opsi": {
-          "A": "Bobot 5. Masalah selesai hari itu juga, akun atas nama Pak Sapto sendiri, dan ia memegang kata sandinya. Inilah pendampingan yang memberdayakan, bukan sekadar mengerjakan untuknya.",
-          "B": "Bobot 3. Tidak salah, tetapi pasif. Warga yang sudah kesulitan memakai ponsel kecil kemungkinan berhasil hanya dengan brosur, dan ia harus datang dua kali.",
-          "C": "Bobot 4. Niatnya baik karena melibatkan keluarga yang bisa membantu ke depannya, tetapi layanan tertunda padahal sebenarnya bisa diselesaikan hari itu dengan pendampingan Anda.",
-          "D": "Bobot 2. Melempar warga ke pihak luar yang belum tentu resmi, berisiko biaya tambahan dan praktik percaloan, padahal layanan ini tugas gerai Anda.",
-          "E": "Bobot 1. Tampak membantu, tetapi akun dan notifikasi usaha warga dikuasai petugas. Ini melanggar prinsip kepemilikan data dan membuat warga bergantung pada Anda."
+          "A": "Masalah selesai hari itu juga, akun atas nama Pak Sapto sendiri, dan ia memegang kata sandinya. Inilah pendampingan yang memberdayakan, bukan sekadar mengerjakan untuknya.",
+          "B": "Tidak salah, tetapi pasif. Warga yang sudah kesulitan memakai ponsel kecil kemungkinan berhasil hanya dengan brosur, dan ia harus datang dua kali.",
+          "C": "Niatnya baik karena melibatkan keluarga yang bisa membantu ke depannya, tetapi layanan tertunda padahal sebenarnya bisa diselesaikan hari itu dengan pendampingan Anda.",
+          "D": "Melempar warga ke pihak luar yang belum tentu resmi, berisiko biaya tambahan dan praktik percaloan, padahal layanan ini tugas gerai Anda.",
+          "E": "Tampak membantu, tetapi akun dan notifikasi usaha warga dikuasai petugas. Ini melanggar prinsip kepemilikan data dan membuat warga bergantung pada Anda."
         },
         "konsep": "**Pola bobot:** 5 = tuntas hari itu + warga tetap memegang kendali akunnya; 4 = baik tetapi menunda; 3 = memberi informasi tanpa pendampingan; 2 = melempar ke pihak lain; 1 = mengambil alih akun atau data warga."
       },
@@ -1962,11 +1962,11 @@
       "pembahasan": {
         "inti": "Pelayanan publik menuntut kepastian: syarat layanan harus jelas, sama di semua kanal informasi, dan dipakai sesuai aturan yang berlaku. Petugas yang menemukan informasi tidak konsisten tidak cukup hanya melayani warga di depannya; ia juga perlu memperbaiki sumber kebingungan supaya warga lain tidak dirugikan.",
         "opsi": {
-          "A": "Bobot 4. Bu Wati terlayani dengan benar dan warga lain mendapat penjelasan, tetapi papan yang salah tetap terpasang. Kebingungan akan terus berulang setiap kali Anda tidak berada di loket.",
-          "B": "Bobot 2. Menyarankan syarat yang Anda tahu sudah tidak berlaku sama dengan memberi informasi keliru dan menambah beban warga, hanya untuk menghindari perbedaan pendapat.",
-          "C": "Bobot 3. Layanan benar, tetapi sikapnya pasif terhadap informasi yang jelas salah. Menunggu akhir tahun membiarkan warga lain bingung selama berbulan-bulan.",
-          "D": "Bobot 1. Kaku dan merugikan warga: berkas yang sudah memenuhi aturan terbaru ditolak karena papan yang usang. Aturan yang berlaku adalah aturan terbaru, bukan papan yang belum diganti.",
-          "E": "Bobot 5. Warga terlayani sesuai aturan, dan masalah informasi dilaporkan kepada pihak yang berwenang agar semua kanal diseragamkan. Masalah hari ini dan sumbernya sama-sama ditangani."
+          "A": "Bu Wati terlayani dengan benar dan warga lain mendapat penjelasan, tetapi papan yang salah tetap terpasang. Kebingungan akan terus berulang setiap kali Anda tidak berada di loket.",
+          "B": "Menyarankan syarat yang Anda tahu sudah tidak berlaku sama dengan memberi informasi keliru dan menambah beban warga, hanya untuk menghindari perbedaan pendapat.",
+          "C": "Layanan benar, tetapi sikapnya pasif terhadap informasi yang jelas salah. Menunggu akhir tahun membiarkan warga lain bingung selama berbulan-bulan.",
+          "D": "Kaku dan merugikan warga: berkas yang sudah memenuhi aturan terbaru ditolak karena papan yang usang. Aturan yang berlaku adalah aturan terbaru, bukan papan yang belum diganti.",
+          "E": "Warga terlayani sesuai aturan, dan masalah informasi dilaporkan kepada pihak yang berwenang agar semua kanal diseragamkan. Masalah hari ini dan sumbernya sama-sama ditangani."
         },
         "konsep": "**Standar pelayanan** wajib memuat persyaratan yang jelas dan dapat diakses publik. Ketidaksesuaian antarkanal informasi adalah masalah layanan yang perlu dilaporkan, bukan sekadar diakali di loket."
       },
@@ -1997,11 +1997,11 @@
       "pembahasan": {
         "inti": "Pengelolaan pengaduan menilai apakah petugas menindaklanjuti aduan secara objektif, melindungi pelapor, dan membawa dugaan pelanggaran ke pihak yang berwenang memeriksa. Kedekatan pribadi dengan pihak terkait tidak boleh memengaruhi proses. Aduan anonim tetap bisa ditindaklanjuti jika memuat informasi yang dapat diverifikasi, seperti waktu dan tempat kejadian.",
         "opsi": {
-          "A": "Bobot 3. Meminta keterangan tambahan memang lazim, tetapi informasi hari dan jam sudah cukup untuk mulai memeriksa. Menjadikan nama petugas sebagai syarat bisa membuat pelapor takut dan aduan berhenti.",
-          "B": "Bobot 1. Menyelesaikan aduan pungli secara kekeluargaan menutupi dugaan pelanggaran, melemahkan pengawasan, dan dipengaruhi kedekatan pribadi. Ini konflik kepentingan.",
-          "C": "Bobot 2. Menyerahkan pemeriksaan kepada unit yang diadukan sama dengan meminta pihak terlapor memeriksa dirinya sendiri. Objektivitasnya hilang.",
-          "D": "Bobot 5. Aduan dicatat, informasi awal diverifikasi dengan data yang tersedia, hasilnya dibawa ke atasan dan inspektorat, dan identitas pelapor dijaga. Lengkap dan sesuai aturan.",
-          "E": "Bobot 4. Pihak yang dilibatkan sudah tepat, tetapi Anda tidak melakukan verifikasi awal yang menjadi tugas pengelola pengaduan, sehingga tindak lanjutnya lebih lambat."
+          "A": "Meminta keterangan tambahan memang lazim, tetapi informasi hari dan jam sudah cukup untuk mulai memeriksa. Menjadikan nama petugas sebagai syarat bisa membuat pelapor takut dan aduan berhenti.",
+          "B": "Menyelesaikan aduan pungli secara kekeluargaan menutupi dugaan pelanggaran, melemahkan pengawasan, dan dipengaruhi kedekatan pribadi. Ini konflik kepentingan.",
+          "C": "Menyerahkan pemeriksaan kepada unit yang diadukan sama dengan meminta pihak terlapor memeriksa dirinya sendiri. Objektivitasnya hilang.",
+          "D": "Aduan dicatat, informasi awal diverifikasi dengan data yang tersedia, hasilnya dibawa ke atasan dan inspektorat, dan identitas pelapor dijaga. Lengkap dan sesuai aturan.",
+          "E": "Pihak yang dilibatkan sudah tepat, tetapi Anda tidak melakukan verifikasi awal yang menjadi tugas pengelola pengaduan, sehingga tindak lanjutnya lebih lambat."
         },
         "konsep": "**Unsur pengelolaan aduan yang baik:** dicatat, diverifikasi, diteruskan ke pihak yang berwenang dan independen dari terlapor, serta kerahasiaan pelapor terjaga. Opsi yang “menyelesaikan secara internal” lewat jalur pribadi hampir selalu bernilai terendah."
       },
@@ -2032,11 +2032,11 @@
       "pembahasan": {
         "inti": "Fasilitas kesehatan wajib melayani semua orang, termasuk orang yang mungkin mengalami gangguan jiwa. Perilaku yang tidak biasa bukan alasan untuk menolak layanan, apalagi jika tidak ada tanda bahaya. Petugas yang baik menenangkan suasana, mendekati orang itu dengan hormat, dan melibatkan tenaga kesehatan yang kompeten, sambil tetap memperhatikan rasa aman pasien lain.",
         "opsi": {
-          "A": "Bobot 3. Menjaga keamanan, tetapi pria itu hanya diawasi, tidak dilayani. Kebutuhannya, yang mungkin berupa pertolongan kesehatan jiwa, tidak tersentuh.",
-          "B": "Bobot 5. Pria itu didekati sebagai calon pasien, ditangani tenaga yang tepat, dan pasien lain ditenangkan. Hak pria itu atas layanan dan rasa aman pasien lain sama-sama terjaga.",
-          "C": "Bobot 2. Menghindari masalah dengan memindahkan pasien, padahal puskesmas punya tenaga yang bisa membantu. Pria itu tetap tidak terlayani.",
-          "D": "Bobot 4. Melibatkan keluarga atau lingkungan sangat berguna untuk pendampingan jangka panjang, tetapi butuh waktu dan pria itu belum mendapat penanganan saat itu juga.",
-          "E": "Bobot 1. Mengusir orang dari fasilitas kesehatan karena perilakunya dianggap aneh adalah diskriminasi dan menolak layanan kepada orang yang mungkin justru paling membutuhkannya."
+          "A": "Menjaga keamanan, tetapi pria itu hanya diawasi, tidak dilayani. Kebutuhannya, yang mungkin berupa pertolongan kesehatan jiwa, tidak tersentuh.",
+          "B": "Pria itu didekati sebagai calon pasien, ditangani tenaga yang tepat, dan pasien lain ditenangkan. Hak pria itu atas layanan dan rasa aman pasien lain sama-sama terjaga.",
+          "C": "Menghindari masalah dengan memindahkan pasien, padahal puskesmas punya tenaga yang bisa membantu. Pria itu tetap tidak terlayani.",
+          "D": "Melibatkan keluarga atau lingkungan sangat berguna untuk pendampingan jangka panjang, tetapi butuh waktu dan pria itu belum mendapat penanganan saat itu juga.",
+          "E": "Mengusir orang dari fasilitas kesehatan karena perilakunya dianggap aneh adalah diskriminasi dan menolak layanan kepada orang yang mungkin justru paling membutuhkannya."
         },
         "konsep": "**Pelayanan nondiskriminatif:** setiap warga berhak dilayani tanpa dibedakan karena kondisi kesehatan, termasuk kesehatan jiwa. Keamanan tetap diperhatikan, tetapi tindakannya proporsional dengan risiko yang nyata."
       },
@@ -2067,11 +2067,11 @@
       "pembahasan": {
         "inti": "UU 25/2009 tentang Pelayanan Publik mewajibkan penyelenggara memberi perlakuan khusus kepada kelompok rentan seperti ibu hamil, lansia, dan penyandang disabilitas. Petugas harus mempertahankan hak itu, tetapi juga menanggapi keluhan warga lain dengan sopan: menjelaskan alasannya, memberi kepastian waktu, dan bila mungkin menawarkan jalan keluar.",
         "opsi": {
-          "A": "Bobot 4. Sikap baik dan penjelasannya benar, tetapi pria itu belum mendapat kepastian kapan ia dilayani atau alternatif yang bisa mempercepat urusannya.",
-          "B": "Bobot 1. Mengorbankan hak kelompok rentan demi meredam keributan melanggar ketentuan layanan prioritas dan mengajarkan bahwa protes keras bisa menggeser antrean.",
-          "C": "Bobot 5. Hak prioritas dipertahankan, keluhan ditanggapi dengan hormat, dan pria itu mendapat kepastian serta alternatif. Ketiga unsur layanan yang baik terpenuhi.",
-          "D": "Bobot 3. Sesuai aturan, tetapi kaku. Mengabaikan protes membuat warga merasa tidak dihargai dan suasana bisa makin panas.",
-          "E": "Bobot 2. Menyerahkan komunikasi dengan warga kepada satpam berarti menghindari tugas menjelaskan, padahal petugas loket yang paling tahu alasan dan perkiraan antrean."
+          "A": "Sikap baik dan penjelasannya benar, tetapi pria itu belum mendapat kepastian kapan ia dilayani atau alternatif yang bisa mempercepat urusannya.",
+          "B": "Mengorbankan hak kelompok rentan demi meredam keributan melanggar ketentuan layanan prioritas dan mengajarkan bahwa protes keras bisa menggeser antrean.",
+          "C": "Hak prioritas dipertahankan, keluhan ditanggapi dengan hormat, dan pria itu mendapat kepastian serta alternatif. Ketiga unsur layanan yang baik terpenuhi.",
+          "D": "Sesuai aturan, tetapi kaku. Mengabaikan protes membuat warga merasa tidak dihargai dan suasana bisa makin panas.",
+          "E": "Menyerahkan komunikasi dengan warga kepada satpam berarti menghindari tugas menjelaskan, padahal petugas loket yang paling tahu alasan dan perkiraan antrean."
         },
         "konsep": "**Pola keluhan antrean:** pertahankan aturan yang melindungi kelompok rentan + jelaskan dengan sopan + beri kepastian atau alternatif. Mengalah pada tekanan dan mengabaikan keluhan sama-sama keliru."
       },
@@ -2102,11 +2102,11 @@
       "pembahasan": {
         "inti": "Pelayanan yang baik memberi tahu warga semua hak yang tersedia, termasuk program keringanan, lalu membantu warga memenuhi syaratnya. Pada saat yang sama, petugas tidak boleh mengambil jalan pintas di luar prosedur, walaupun alasannya manusiawi. Empati diwujudkan dengan membantu menempuh jalur resmi, bukan dengan menabrak aturan.",
         "opsi": {
-          "A": "Bobot 3. Benar bahwa petugas tidak boleh mengubah denda, tetapi Pak Joko tidak diberi tahu adanya program keringanan yang sebenarnya bisa ia manfaatkan. Sesuai aturan, tetapi pelayanannya tidak lengkap.",
-          "B": "Bobot 5. Informasi lengkap, jalur resmi ditempuh, dan Anda aktif membantu warga memenuhi syaratnya. Empati dan kepatuhan pada aturan berjalan bersama.",
-          "C": "Bobot 4. Informasinya lengkap dan sesuai aturan, tetapi semua beban mengurus syarat diserahkan kepada warga tanpa bantuan tambahan.",
-          "D": "Bobot 1. Mengubah data tagihan di luar kewenangan dan prosedur adalah pelanggaran, berapa pun nominalnya dan sebaik apa pun niatnya.",
-          "E": "Bobot 2. Melempar warga ke pimpinan tanpa menjelaskan program yang sudah ada. Warga harus menempuh jalur yang lebih panjang tanpa perlu."
+          "A": "Benar bahwa petugas tidak boleh mengubah denda, tetapi Pak Joko tidak diberi tahu adanya program keringanan yang sebenarnya bisa ia manfaatkan. Sesuai aturan, tetapi pelayanannya tidak lengkap.",
+          "B": "Informasi lengkap, jalur resmi ditempuh, dan Anda aktif membantu warga memenuhi syaratnya. Empati dan kepatuhan pada aturan berjalan bersama.",
+          "C": "Informasinya lengkap dan sesuai aturan, tetapi semua beban mengurus syarat diserahkan kepada warga tanpa bantuan tambahan.",
+          "D": "Mengubah data tagihan di luar kewenangan dan prosedur adalah pelanggaran, berapa pun nominalnya dan sebaik apa pun niatnya.",
+          "E": "Melempar warga ke pimpinan tanpa menjelaskan program yang sudah ada. Warga harus menempuh jalur yang lebih panjang tanpa perlu."
         },
         "konsep": "**Empati yang profesional:** beri tahu hak warga (program keringanan), bantu memenuhi syaratnya, dan tetap di dalam prosedur. Opsi yang “menolong” dengan mengubah data di luar kewenangan selalu bernilai terendah."
       },
@@ -2137,11 +2137,11 @@
       "pembahasan": {
         "inti": "Surat keterangan sehat adalah dokumen resmi yang menyatakan hasil pemeriksaan. Menerbitkannya tanpa memeriksa berarti membuat keterangan yang tidak berdasar. Pelayanan yang baik tetap memegang prosedur itu, tetapi juga peduli pada kebutuhan warga: memastikan ia bisa diperiksa hari itu dan tahu perkiraan waktunya agar dapat mengatur rencananya.",
         "opsi": {
-          "A": "Bobot 4. Prosedur dipegang dan alasannya dijelaskan, tetapi kebutuhan waktu pemuda itu tidak ditanggapi. Ia tidak tahu apakah bisa selesai tepat waktu.",
-          "B": "Bobot 2. Mengalihkan warga ke tempat lain padahal puskesmas bisa melayaninya. Ini menghindari tugas, bukan menyelesaikan kebutuhannya.",
-          "C": "Bobot 1. Surat tanpa pemeriksaan adalah keterangan yang tidak berdasar, ditambah unsur kedekatan pribadi. Ini pelanggaran etika profesi dan integritas.",
-          "D": "Bobot 3. Tidak melanggar aturan, tetapi pasif dan berisiko membuatnya kehilangan kesempatan melamar hari itu, padahal masih bisa dilayani dalam antrean.",
-          "E": "Bobot 5. Prosedur ditegakkan, warga langsung masuk antrean hari itu, dan ia mendapat kepastian waktu. Integritas dan kepedulian berjalan bersama."
+          "A": "Prosedur dipegang dan alasannya dijelaskan, tetapi kebutuhan waktu pemuda itu tidak ditanggapi. Ia tidak tahu apakah bisa selesai tepat waktu.",
+          "B": "Mengalihkan warga ke tempat lain padahal puskesmas bisa melayaninya. Ini menghindari tugas, bukan menyelesaikan kebutuhannya.",
+          "C": "Surat tanpa pemeriksaan adalah keterangan yang tidak berdasar, ditambah unsur kedekatan pribadi. Ini pelanggaran etika profesi dan integritas.",
+          "D": "Tidak melanggar aturan, tetapi pasif dan berisiko membuatnya kehilangan kesempatan melamar hari itu, padahal masih bisa dilayani dalam antrean.",
+          "E": "Prosedur ditegakkan, warga langsung masuk antrean hari itu, dan ia mendapat kepastian waktu. Integritas dan kepedulian berjalan bersama."
         },
         "konsep": "**Dokumen resmi = hasil proses resmi.** Pada TKP, kedekatan pribadi (tetangga, kerabat, teman) adalah ujian integritas. Bobot 5 diberikan kepada opsi yang menolak jalan pintas tetapi tetap membantu warga sejauh aturan mengizinkan."
       },
@@ -2172,11 +2172,11 @@
       "pembahasan": {
         "inti": "Rekaman CCTV kantor adalah data instansi yang juga merekam banyak orang lain. Pengelolaannya harus mengikuti prosedur, dan bukti kejahatan diserahkan kepada aparat penegak hukum, bukan kepada korban untuk diusut sendiri. Di sisi lain, kantor ikut bertanggung jawab melayani warga yang dirugikan di lingkungannya, sehingga petugas perlu aktif mengamankan bukti dan membantu pelaporan.",
         "opsi": {
-          "A": "Bobot 5. Bukti diamankan sebelum tertimpa rekaman baru, warga dibantu melapor, dan rekaman diserahkan kepada pihak berwenang dengan izin pimpinan. Lengkap dan sesuai prosedur.",
-          "B": "Bobot 3. Membantu warga melihat kejadian, tetapi membuka rekaman berisi orang lain tanpa prosedur, dan bukti belum diamankan untuk penyidikan.",
-          "C": "Bobot 2. Lepas tangan. Kejadiannya di lingkungan kantor, dan kantor memegang bukti penting yang hanya bisa diamankan oleh pengelola CCTV.",
-          "D": "Bobot 1. Menyerahkan data rekaman kepada pihak pribadi melanggar prosedur pengelolaan data dan bisa memicu main hakim sendiri atau penyebaran wajah orang yang tidak bersalah.",
-          "E": "Bobot 4. Melibatkan pimpinan dan memeriksa rekaman sudah tepat, tetapi belum mengarahkan warga melapor ke polisi, padahal pencurian adalah tindak pidana yang perlu ditangani aparat."
+          "A": "Bukti diamankan sebelum tertimpa rekaman baru, warga dibantu melapor, dan rekaman diserahkan kepada pihak berwenang dengan izin pimpinan. Lengkap dan sesuai prosedur.",
+          "B": "Membantu warga melihat kejadian, tetapi membuka rekaman berisi orang lain tanpa prosedur, dan bukti belum diamankan untuk penyidikan.",
+          "C": "Lepas tangan. Kejadiannya di lingkungan kantor, dan kantor memegang bukti penting yang hanya bisa diamankan oleh pengelola CCTV.",
+          "D": "Menyerahkan data rekaman kepada pihak pribadi melanggar prosedur pengelolaan data dan bisa memicu main hakim sendiri atau penyebaran wajah orang yang tidak bersalah.",
+          "E": "Melibatkan pimpinan dan memeriksa rekaman sudah tepat, tetapi belum mengarahkan warga melapor ke polisi, padahal pencurian adalah tindak pidana yang perlu ditangani aparat."
         },
         "konsep": "**Pola data instansi dan kejahatan:** amankan bukti → bantu warga melapor → serahkan bukti kepada penegak hukum lewat prosedur resmi. Menyerahkan data mentah kepada warga dan bersikap lepas tangan sama-sama keliru."
       },
@@ -2207,11 +2207,11 @@
       "pembahasan": {
         "inti": "Aspek jejaring kerja menilai kemampuan berkoordinasi dengan mitra saat rencana berubah. Narahubung bertugas menjembatani: memastikan informasi dari mitra akurat, lalu meneruskannya ke semua pihak dengan cara yang efektif. Perubahan dari mitra tidak ditolak secara kaku, tetapi juga tidak dibiarkan menjadi urusan mitra saja.",
         "opsi": {
-          "A": "Bobot 3. Alasannya masuk akal, tetapi kaku. Menolak perubahan berisiko simulasi kehilangan tim pusat yang justru penting bagi kualitas latihan.",
-          "B": "Bobot 2. Lepas tangan dari peran narahubung. BPBD tidak punya jalur komunikasi ke sekolah dan RT sebaik kecamatan.",
-          "C": "Bobot 5. Informasi dipastikan dulu, penyebaran dilakukan bersama mitra lewat banyak kanal, dan kehadiran dikonfirmasi. Koordinasi berjalan dua arah dan tuntas.",
-          "D": "Bobot 4. Cepat dan berinisiatif, tetapi tanpa memastikan ulang kepada BPBD dan tanpa konfirmasi kehadiran. Jika jadwal berubah lagi, informasi bisa simpang siur.",
-          "E": "Bobot 1. Menjalankan simulasi sendiri tanpa tim ahli membahayakan kualitas latihan evakuasi dan merusak kerja sama dengan mitra."
+          "A": "Alasannya masuk akal, tetapi kaku. Menolak perubahan berisiko simulasi kehilangan tim pusat yang justru penting bagi kualitas latihan.",
+          "B": "Lepas tangan dari peran narahubung. BPBD tidak punya jalur komunikasi ke sekolah dan RT sebaik kecamatan.",
+          "C": "Informasi dipastikan dulu, penyebaran dilakukan bersama mitra lewat banyak kanal, dan kehadiran dikonfirmasi. Koordinasi berjalan dua arah dan tuntas.",
+          "D": "Cepat dan berinisiatif, tetapi tanpa memastikan ulang kepada BPBD dan tanpa konfirmasi kehadiran. Jika jadwal berubah lagi, informasi bisa simpang siur.",
+          "E": "Menjalankan simulasi sendiri tanpa tim ahli membahayakan kualitas latihan evakuasi dan merusak kerja sama dengan mitra."
         },
         "konsep": "**Peran narahubung:** memastikan informasi dari mitra, meneruskan ke semua pihak lewat kanal yang tepat, dan memantau tindak lanjutnya. Bobot 5 biasanya memuat ketiga langkah itu."
       },
@@ -2242,11 +2242,11 @@
       "pembahasan": {
         "inti": "Jejaring kerja yang sehat dibangun di atas aturan: setiap instansi hanya menganggarkan kegiatan sesuai tugas dan fungsinya. Menolak permintaan yang menyalahi aturan tidak berarti memutus hubungan. Pegawai dengan jejaring kerja yang baik justru mencari bentuk kerja sama yang sah, sehingga tujuan bersama tetap bisa dicapai tanpa melanggar aturan anggaran.",
         "opsi": {
-          "A": "Bobot 2. Tegas soal aturan, tetapi memutus komunikasi merugikan jejaring yang mungkin berguna untuk kerja sama sah di masa depan.",
-          "B": "Bobot 1. Menyamarkan nama kegiatan agar lolos verifikasi adalah manipulasi perencanaan anggaran. Manfaat kegiatan tidak membenarkan cara yang melanggar aturan.",
-          "C": "Bobot 3. Sesuai aturan dan sopan, tetapi berhenti pada penolakan tanpa membantu mencari jalan keluar.",
-          "D": "Bobot 5. Aturan dipegang, hubungan dijaga, dan tujuan bersama dicari lewat kolaborasi yang sah, yaitu tiap pihak mendanai bagian yang sesuai tugasnya.",
-          "E": "Bobot 4. Sesuai aturan dan memberi arah yang benar, tetapi solusi baru berlaku tahun depan dan tidak membuka peluang kolaborasi."
+          "A": "Tegas soal aturan, tetapi memutus komunikasi merugikan jejaring yang mungkin berguna untuk kerja sama sah di masa depan.",
+          "B": "Menyamarkan nama kegiatan agar lolos verifikasi adalah manipulasi perencanaan anggaran. Manfaat kegiatan tidak membenarkan cara yang melanggar aturan.",
+          "C": "Sesuai aturan dan sopan, tetapi berhenti pada penolakan tanpa membantu mencari jalan keluar.",
+          "D": "Aturan dipegang, hubungan dijaga, dan tujuan bersama dicari lewat kolaborasi yang sah, yaitu tiap pihak mendanai bagian yang sesuai tugasnya.",
+          "E": "Sesuai aturan dan memberi arah yang benar, tetapi solusi baru berlaku tahun depan dan tidak membuka peluang kolaborasi."
         },
         "konsep": "**Pola permintaan dari jejaring yang menyalahi aturan:** tolak bagian yang melanggar → jaga hubungan → tawarkan jalur kolaborasi yang sah. Hubungan pribadi tidak boleh mengalahkan aturan, tetapi aturan juga tidak harus mematikan kerja sama."
       },
@@ -2277,11 +2277,11 @@
       "pembahasan": {
         "inti": "Kemitraan dengan komunitas memperluas manfaat layanan pemerintah tanpa banyak biaya. Pegawai yang baik menyambut peluang itu, tetapi tetap menempuh jalur yang benar: keputusan pemakaian aset kantor ada pada pimpinan, arsip harus ditangani sesuai aturan kearsipan, dan kerja sama perlu dituangkan dalam kesepakatan agar jelas hak dan kewajiban kedua pihak.",
         "opsi": {
-          "A": "Bobot 3. Aman, tetapi melewatkan peluang kemitraan yang bermanfaat hanya karena kendala yang bisa diatasi.",
-          "B": "Bobot 2. Menolak dengan alasan yang keliru. Kantor kelurahan justru wajar menjadi simpul kegiatan warga.",
-          "C": "Bobot 4. Sikapnya terbuka dan melibatkan pimpinan, tetapi penataan arsip dan kesepakatan kerja sama belum dipikirkan.",
-          "D": "Bobot 1. Menyerahkan aset kantor tanpa izin pimpinan dan tanpa penataan arsip melanggar prosedur, dan arsip lama berisiko rusak atau hilang.",
-          "E": "Bobot 5. Peluang disambut, pimpinan dilibatkan, arsip ditangani sesuai aturan, dan kerja sama dibuat jelas. Semua unsur kemitraan yang sehat terpenuhi."
+          "A": "Aman, tetapi melewatkan peluang kemitraan yang bermanfaat hanya karena kendala yang bisa diatasi.",
+          "B": "Menolak dengan alasan yang keliru. Kantor kelurahan justru wajar menjadi simpul kegiatan warga.",
+          "C": "Sikapnya terbuka dan melibatkan pimpinan, tetapi penataan arsip dan kesepakatan kerja sama belum dipikirkan.",
+          "D": "Menyerahkan aset kantor tanpa izin pimpinan dan tanpa penataan arsip melanggar prosedur, dan arsip lama berisiko rusak atau hilang.",
+          "E": "Peluang disambut, pimpinan dilibatkan, arsip ditangani sesuai aturan, dan kerja sama dibuat jelas. Semua unsur kemitraan yang sehat terpenuhi."
         },
         "konsep": "**Kemitraan yang sehat:** terbuka pada tawaran, keputusan lewat pimpinan, aset dan arsip ditangani sesuai aturan, serta kesepakatan tertulis tentang pemakaian. Antusias tanpa prosedur tetap bernilai rendah."
       },
@@ -2312,11 +2312,11 @@
       "pembahasan": {
         "inti": "Kerja sama antarbidang membutuhkan rasa saling percaya, termasuk tanggung jawab atas barang yang dipinjam. Ketika terjadi kerusakan, masalahnya diselesaikan secara terbuka dan sesuai aturan pengelolaan barang milik negara, tanpa mempermalukan pihak lain dan tanpa membiarkan tugas penting terhambat. Jabatan pihak peminjam tidak mengubah cara penyelesaiannya.",
         "opsi": {
-          "A": "Bobot 5. Bukti dicatat, masalah dibicarakan langsung dengan sopan, penyelesaian mengikuti aturan, dan tugas pemetaan banjir diamankan dengan alat cadangan.",
-          "B": "Bobot 3. Melibatkan atasan itu wajar, tetapi sikapnya pasif. Tidak ada komunikasi dengan bidang peminjam dan tidak ada antisipasi untuk tugas minggu depan.",
-          "C": "Bobot 2. Menghindari pembicaraan yang canggung dengan menanggung sendiri biayanya. Tanggung jawab peminjam terabaikan dan anggaran bidang Anda terpakai untuk kerusakan pihak lain.",
-          "D": "Bobot 4. Langsung dan terbuka, tetapi belum memakai jalur aturan barang milik negara dan belum ada rencana cadangan jika perbaikan tidak selesai tepat waktu.",
-          "E": "Bobot 1. Mempermalukan bidang lain di forum terbuka merusak hubungan kerja dan tidak menyelesaikan kerusakan."
+          "A": "Bukti dicatat, masalah dibicarakan langsung dengan sopan, penyelesaian mengikuti aturan, dan tugas pemetaan banjir diamankan dengan alat cadangan.",
+          "B": "Melibatkan atasan itu wajar, tetapi sikapnya pasif. Tidak ada komunikasi dengan bidang peminjam dan tidak ada antisipasi untuk tugas minggu depan.",
+          "C": "Menghindari pembicaraan yang canggung dengan menanggung sendiri biayanya. Tanggung jawab peminjam terabaikan dan anggaran bidang Anda terpakai untuk kerusakan pihak lain.",
+          "D": "Langsung dan terbuka, tetapi belum memakai jalur aturan barang milik negara dan belum ada rencana cadangan jika perbaikan tidak selesai tepat waktu.",
+          "E": "Mempermalukan bidang lain di forum terbuka merusak hubungan kerja dan tidak menyelesaikan kerusakan."
         },
         "konsep": "**Konflik barang pinjaman:** dokumentasikan → bicarakan langsung dengan sopan → selesaikan sesuai aturan → amankan tugas yang terdampak. Rasa sungkan kepada pejabat bukan alasan untuk menghindar."
       },
@@ -2347,11 +2347,11 @@
       "pembahasan": {
         "inti": "Program kesehatan di tingkat desa berjalan lewat jejaring: dinas kesehatan, puskesmas, pemerintah desa, dan kader. Ketika satu simpul bermasalah, pegawai yang baik tidak mengambil alih semuanya atau melempar masalah, tetapi mempertemukan pihak-pihak yang berwenang agar akar masalah selesai dan program tetap berjalan. Kader juga perlu merasa didengar karena mereka mitra sukarela.",
         "opsi": {
-          "A": "Bobot 2. Secara kewenangan benar, tetapi lepas tangan. Program yang Anda bina terancam berhenti dan kader merasa tidak didukung.",
-          "B": "Bobot 3. Program tetap berjalan bulan ini, tetapi akar masalahnya tidak disentuh dan hubungan dengan kader bisa makin renggang.",
-          "C": "Bobot 1. Memakai dana kegiatan untuk membayar kewajiban pihak lain menyalahi peruntukan anggaran, walaupun niatnya menjaga program.",
-          "D": "Bobot 5. Kader didengar, pihak yang berwenang (desa dan puskesmas) dipertemukan, dan dua hal disepakati sekaligus: percepatan pencairan dan jadwal penimbangan.",
-          "E": "Bobot 4. Menyentuh akar masalah lewat kepala desa, tetapi kader tidak dilibatkan secara langsung dan jadwal penimbangan bulan ini belum dipastikan."
+          "A": "Secara kewenangan benar, tetapi lepas tangan. Program yang Anda bina terancam berhenti dan kader merasa tidak didukung.",
+          "B": "Program tetap berjalan bulan ini, tetapi akar masalahnya tidak disentuh dan hubungan dengan kader bisa makin renggang.",
+          "C": "Memakai dana kegiatan untuk membayar kewajiban pihak lain menyalahi peruntukan anggaran, walaupun niatnya menjaga program.",
+          "D": "Kader didengar, pihak yang berwenang (desa dan puskesmas) dipertemukan, dan dua hal disepakati sekaligus: percepatan pencairan dan jadwal penimbangan.",
+          "E": "Menyentuh akar masalah lewat kepala desa, tetapi kader tidak dilibatkan secara langsung dan jadwal penimbangan bulan ini belum dipastikan."
         },
         "konsep": "**Peran fasilitator dalam jejaring:** dengarkan pihak yang terdampak, pertemukan pihak yang berwenang, sepakati solusi bersama. Mengambil alih tugas pihak lain atau menalangi dengan anggaran yang bukan peruntukannya tidak menyelesaikan masalah."
       },
@@ -2382,11 +2382,11 @@
       "pembahasan": {
         "inti": "Jejaring kerja dan hubungan baik harus dijaga, tetapi tidak dengan membocorkan informasi jabatan. Panitia seleksi wajib menjaga kerahasiaan hasil sampai diumumkan, demi keadilan bagi semua peserta. Cara menolaknya juga penting: jujur, sopan, menjelaskan alasan, dan tetap membantu sebatas yang boleh, misalnya memberi tahu kapan dan di mana hasil resmi diumumkan.",
         "opsi": {
-          "A": "Bobot 2. Tidak membocorkan, tetapi berbohong. Kebohongan kecil demi menjaga perasaan tetap merusak integritas dan menghindari penjelasan yang seharusnya diberikan.",
-          "B": "Bobot 5. Rahasia terjaga, alasan disampaikan dengan jujur dan hormat, dan Pak Herman tetap dibantu dengan informasi yang boleh dibagikan. Hubungan baik tetap terpelihara.",
-          "C": "Bobot 3. Kerahasiaan terjaga, tetapi caranya kaku dan bisa menyinggung orang yang dihormati. Hubungan kerja jangka panjang dirugikan.",
-          "D": "Bobot 1. Isyarat adalah bentuk pembocoran informasi secara tidak langsung. Peserta lain dirugikan karena ada pihak yang tahu lebih dulu.",
-          "E": "Bobot 4. Jujur dan menjaga rahasia, tetapi kurang membantu karena tidak memberi tahu kanal pengumuman resmi yang bisa dipantau."
+          "A": "Tidak membocorkan, tetapi berbohong. Kebohongan kecil demi menjaga perasaan tetap merusak integritas dan menghindari penjelasan yang seharusnya diberikan.",
+          "B": "Rahasia terjaga, alasan disampaikan dengan jujur dan hormat, dan Pak Herman tetap dibantu dengan informasi yang boleh dibagikan. Hubungan baik tetap terpelihara.",
+          "C": "Kerahasiaan terjaga, tetapi caranya kaku dan bisa menyinggung orang yang dihormati. Hubungan kerja jangka panjang dirugikan.",
+          "D": "Isyarat adalah bentuk pembocoran informasi secara tidak langsung. Peserta lain dirugikan karena ada pihak yang tahu lebih dulu.",
+          "E": "Jujur dan menjaga rahasia, tetapi kurang membantu karena tidak memberi tahu kanal pengumuman resmi yang bisa dipantau."
         },
         "konsep": "**Pola “orang dekat meminta informasi rahasia”:** 1 = membocorkan (langsung atau tersirat), 2 = berbohong untuk menghindar, 3 = menolak dengan kaku, 4 = menolak dengan alasan, 5 = menolak dengan alasan sambil tetap membantu lewat jalur resmi."
       },
@@ -2417,13 +2417,13 @@
       "pembahasan": {
         "inti": "Jejaring kerja pemerintah tidak boleh hanya menjangkau kelompok yang sudah terorganisasi. Ketika ada pihak yang tertinggal informasi, pegawai yang baik mengakui kekurangan saluran komunikasi, membantu pihak yang dirugikan sejauh aturan memungkinkan, dan memperbaiki jangkauan jejaring agar kejadian serupa tidak terulang.",
         "opsi": {
-          "A": "Bobot 2. Membela diri di ruang publik dan menyalahkan pihak lain. Masalahnya tidak selesai dan kesan eksklusif makin kuat.",
-          "B": "Bobot 3. Sopan dan memberi kesempatan tahun depan, tetapi tidak mengakui masalah saluran informasi dan tidak mencari peluang tahun ini.",
-          "C": "Bobot 5. Komunikasi langsung, pengakuan yang jujur, solusi tahun ini sesuai aturan, dan perbaikan saluran informasi untuk ke depan.",
-          "D": "Bobot 4. Responsif dan mencari solusi, tetapi belum memperbaiki akar masalah, yaitu pengumuman yang hanya beredar lewat asosiasi.",
-          "E": "Bobot 1. Membungkam kritik warga dengan melaporkan unggahannya menyalahgunakan akun instansi dan merusak kepercayaan publik."
+          "A": "Membela diri di ruang publik dan menyalahkan pihak lain. Masalahnya tidak selesai dan kesan eksklusif makin kuat.",
+          "B": "Sopan dan memberi kesempatan tahun depan, tetapi tidak mengakui masalah saluran informasi dan tidak mencari peluang tahun ini.",
+          "C": "Komunikasi langsung, pengakuan yang jujur, solusi tahun ini sesuai aturan, dan perbaikan saluran informasi untuk ke depan.",
+          "D": "Responsif dan mencari solusi, tetapi belum memperbaiki akar masalah, yaitu pengumuman yang hanya beredar lewat asosiasi.",
+          "E": "Membungkam kritik warga dengan melaporkan unggahannya menyalahgunakan akun instansi dan merusak kepercayaan publik."
         },
-        "konsep": "**Jejaring yang inklusif:** informasi program publik harus menjangkau semua calon penerima, bukan hanya anggota organisasi mitra. Kritik adalah masukan untuk memperluas jejaring."
+        "konsep": "**Jejaring yang inklusif:** informasi program publik harus menjangkau semua calon penerima, bukan hanya anggota organisasi mitra. Kritik adalah masukan untuk memperluas jejaring. Contoh perluasan kanal: pengumuman di akun resmi dinas, kantor desa, pasar, dan sentra perajin, bukan hanya melalui asosiasi."
       },
       "tips": "Untuk keluhan di media sosial, opsi bernilai tinggi menghubungi warga **secara langsung** dan menindaklanjuti substansinya. Opsi yang membalas secara defensif di ruang publik atau membungkam kritik bernilai rendah."
     },
@@ -2452,13 +2452,13 @@
       "pembahasan": {
         "inti": "Kemitraan yang berkelanjutan harus adil bagi kedua pihak. Juru bahasa isyarat adalah layanan profesional yang membuat informasi pemerintah dapat diakses warga tuli, jadi kebutuhannya bersifat rutin dan sepatutnya menjadi tanggung jawab kantor. Masukan mitra perlu ditanggapi dengan perbaikan yang melembaga, bukan hanya dengan permintaan maaf.",
         "opsi": {
-          "A": "Bobot 5. Masukan dihargai, dan solusinya melembaga: layanan dianggarkan dan kerja sama dibuat resmi. Kemitraan menjadi adil dan berkelanjutan.",
-          "B": "Bobot 3. Menghormati beban relawan, tetapi mengurangi permintaan berarti mengurangi akses informasi bagi warga tuli. Masalah keadilan bagi mitra juga belum diselesaikan.",
-          "C": "Bobot 2. Menghindari masalah dengan berpindah mitra, sehingga pola memanfaatkan relawan tanpa imbalan berlanjut.",
-          "D": "Bobot 4. Ada penghargaan nyata, tetapi bersumber dari iuran pribadi sehingga tidak berkelanjutan dan bukan tanggung jawab kelembagaan.",
-          "E": "Bobot 1. Meremehkan keluhan mitra dan merusak hubungan dengan komunitas yang selama ini membantu kantor."
+          "A": "Masukan dihargai, dan solusinya melembaga: layanan dianggarkan dan kerja sama dibuat resmi. Kemitraan menjadi adil dan berkelanjutan.",
+          "B": "Menghormati beban relawan, tetapi mengurangi permintaan berarti mengurangi akses informasi bagi warga tuli. Masalah keadilan bagi mitra juga belum diselesaikan.",
+          "C": "Menghindari masalah dengan berpindah mitra, sehingga pola memanfaatkan relawan tanpa imbalan berlanjut.",
+          "D": "Ada penghargaan nyata, tetapi bersumber dari iuran pribadi sehingga tidak berkelanjutan dan bukan tanggung jawab kelembagaan.",
+          "E": "Meremehkan keluhan mitra dan merusak hubungan dengan komunitas yang selama ini membantu kantor."
         },
-        "konsep": "**Kemitraan berkelanjutan:** saling menguntungkan, jelas hak dan kewajibannya, dan didukung kelembagaan (anggaran, kesepakatan). Solusi pribadi yang baik hati bernilai lebih rendah daripada solusi kelembagaan."
+        "konsep": "**Kemitraan berkelanjutan:** saling menguntungkan, jelas hak dan kewajibannya, dan didukung kelembagaan (anggaran, kesepakatan). Solusi pribadi yang baik hati bernilai lebih rendah daripada solusi kelembagaan. Contoh pelembagaan: perjanjian kerja sama yang mengatur jadwal, jumlah juru bahasa, standar honorarium, dan pelatihan bagi pegawai kantor."
       },
       "tips": "Jika mitra mengeluh soal keadilan kerja sama, bobot 5 biasanya diberikan kepada opsi yang mengubah **sistem** (anggaran, kesepakatan resmi), bukan sekadar meminta maaf atau memberi imbalan sekali."
     },
@@ -2487,11 +2487,11 @@
       "pembahasan": {
         "inti": "Aspek sosial budaya menilai kepekaan terhadap keberagaman. Menghargai budaya berbeda dengan menjadikannya bahan tertawaan. Meniru warna kulit atau logat secara berlebihan memperkuat stereotip dan dapat melukai rekan yang berasal dari suku itu, walaupun niatnya bercanda. Sikap terbaik adalah meluruskan konsep dengan alasan yang jelas, menawarkan alternatif yang menghormati budaya, dan melibatkan pihak yang paling terdampak.",
         "opsi": {
-          "A": "Bobot 3. Ada upaya membatasi, tetapi Anda tetap ikut menjalankan konsep yang pada dasarnya merendahkan. Mengikuti mayoritas tidak menghapus dampaknya.",
-          "B": "Bobot 1. Membenarkan candaan yang merendahkan dengan alasan mengenalkan budaya. Yang dikenalkan justru stereotip, bukan budaya.",
-          "C": "Bobot 2. Menghindar dari tanggung jawab. Acara tetap berjalan, dan Anda kehilangan kesempatan memperbaikinya dari dalam.",
-          "D": "Bobot 5. Alasan dijelaskan, alternatif yang menghormati budaya ditawarkan, dan rekan dari suku terkait dimintai masukan. Kepekaan dan solusi berjalan bersama.",
-          "E": "Bobot 4. Alternatifnya tepat, tetapi tanpa penjelasan mengapa konsep awal bermasalah, dan tanpa melibatkan rekan yang berasal dari budaya tersebut."
+          "A": "Ada upaya membatasi, tetapi Anda tetap ikut menjalankan konsep yang pada dasarnya merendahkan. Mengikuti mayoritas tidak menghapus dampaknya.",
+          "B": "Membenarkan candaan yang merendahkan dengan alasan mengenalkan budaya. Yang dikenalkan justru stereotip, bukan budaya.",
+          "C": "Menghindar dari tanggung jawab. Acara tetap berjalan, dan Anda kehilangan kesempatan memperbaikinya dari dalam.",
+          "D": "Alasan dijelaskan, alternatif yang menghormati budaya ditawarkan, dan rekan dari suku terkait dimintai masukan. Kepekaan dan solusi berjalan bersama.",
+          "E": "Alternatifnya tepat, tetapi tanpa penjelasan mengapa konsep awal bermasalah, dan tanpa melibatkan rekan yang berasal dari budaya tersebut."
         },
         "konsep": "**Menghormati vs. mengolok budaya:** memakai busana adat dengan pakem dan penghormatan = apresiasi; meniru ciri fisik, warna kulit, atau logat untuk ditertawakan = merendahkan. Libatkan pemilik budaya saat membuat acara bertema budaya."
       },
@@ -2522,13 +2522,13 @@
       "pembahasan": {
         "inti": "Nama adalah identitas yang sering lahir dari bahasa, budaya, atau harapan keluarga tertentu. Menertawakannya di depan umum merendahkan martabat warga dan mencoreng pelayanan publik. Pegawai yang peka segera memulihkan rasa hormat kepada warga yang dirugikan, lalu meluruskan perilaku rekan dengan cara yang tidak mempermalukannya.",
         "opsi": {
-          "A": "Bobot 3. Rekan akhirnya ditegur, tetapi warga yang malu tidak mendapat pemulihan apa pun saat itu, dan candaan bisa berlanjut ke warga berikutnya.",
-          "B": "Bobot 1. Ikut tertawa memperparah rasa malu warga dan seolah membenarkan perilaku rekan.",
-          "C": "Bobot 4. Menghentikan perilaku rekan dengan cepat dan tidak mempermalukannya, tetapi warga yang tersinggung belum mendapat permintaan maaf.",
-          "D": "Bobot 2. Menghindar dengan alasan sopan santun, padahal warga yang menjadi korban justru dibiarkan.",
-          "E": "Bobot 5. Warga dipulihkan martabatnya lewat permintaan maaf dan layanan yang hormat, dan rekan diingatkan secara pribadi tanpa dipermalukan."
+          "A": "Rekan akhirnya ditegur, tetapi warga yang malu tidak mendapat pemulihan apa pun saat itu, dan candaan bisa berlanjut ke warga berikutnya.",
+          "B": "Ikut tertawa memperparah rasa malu warga dan seolah membenarkan perilaku rekan.",
+          "C": "Menghentikan perilaku rekan dengan cepat dan tidak mempermalukannya, tetapi warga yang tersinggung belum mendapat permintaan maaf.",
+          "D": "Menghindar dengan alasan sopan santun, padahal warga yang menjadi korban justru dibiarkan.",
+          "E": "Warga dipulihkan martabatnya lewat permintaan maaf dan layanan yang hormat, dan rekan diingatkan secara pribadi tanpa dipermalukan."
         },
-        "konsep": "**Urutan respons terhadap perilaku yang merendahkan warga:** pulihkan warga yang dirugikan → layani dengan hormat → luruskan perilaku rekan secara pribadi. Diam dan ikut tertawa bernilai rendah."
+        "konsep": "**Urutan respons terhadap perilaku yang merendahkan warga:** pulihkan warga yang dirugikan → layani dengan hormat → luruskan perilaku rekan secara pribadi. Diam dan ikut tertawa bernilai rendah. Teguran pribadi menjaga martabat rekan sekaligus membuatnya lebih mudah menerima masukan."
       },
       "tips": "Di soal sosial budaya, perhatikan siapa yang **dirugikan**. Opsi bernilai 5 biasanya memulihkan pihak yang dirugikan lebih dulu, lalu menangani pelakunya dengan cara yang santun."
     },
@@ -2557,11 +2557,11 @@
       "pembahasan": {
         "inti": "Perbedaan gaya komunikasi sering muncul di tim yang anggotanya beragam latar belakang. Masalahnya bukan siapa yang benar, tetapi salah paham yang tidak dibicarakan. Ketua tim yang peka budaya menjembatani kedua pihak: membantu tim memahami bahwa gaya itu bukan tanda permusuhan, dan membantu anggota baru memahami kesan yang ditangkap rekan-rekannya, lalu menyepakati cara berdiskusi bersama.",
         "opsi": {
-          "A": "Bobot 3. Mungkin meredakan suasana, tetapi seluruh beban penyesuaian ditimpakan kepada Pak Yosef, seolah gaya bicaranya salah.",
-          "B": "Bobot 1. Mengucilkan anggota karena perbedaan gaya bicara adalah perlakuan tidak adil dan merugikan kinerja tim.",
-          "C": "Bobot 5. Kedua pihak dibantu saling memahami, dan solusinya disepakati bersama sehingga tidak ada pihak yang dipojokkan.",
-          "D": "Bobot 2. Membiarkan salah paham berlarut-larut bisa merusak kerja sama dan membuat Pak Yosef makin terasing.",
-          "E": "Bobot 4. Meluruskan salah paham di pihak tim, tetapi Pak Yosef tidak diajak berdialog sehingga penyesuaian belum berjalan dua arah."
+          "A": "Mungkin meredakan suasana, tetapi seluruh beban penyesuaian ditimpakan kepada Pak Yosef, seolah gaya bicaranya salah.",
+          "B": "Mengucilkan anggota karena perbedaan gaya bicara adalah perlakuan tidak adil dan merugikan kinerja tim.",
+          "C": "Kedua pihak dibantu saling memahami, dan solusinya disepakati bersama sehingga tidak ada pihak yang dipojokkan.",
+          "D": "Membiarkan salah paham berlarut-larut bisa merusak kerja sama dan membuat Pak Yosef makin terasing.",
+          "E": "Meluruskan salah paham di pihak tim, tetapi Pak Yosef tidak diajak berdialog sehingga penyesuaian belum berjalan dua arah."
         },
         "konsep": "**Kepekaan antarbudaya di tim kerja:** perbedaan gaya bukan kesalahan; salah paham diselesaikan dengan dialog dua arah dan kesepakatan bersama. Solusi yang hanya menuntut satu pihak berubah bernilai lebih rendah."
       },
@@ -2592,13 +2592,13 @@
       "pembahasan": {
         "inti": "Bekerja di tengah masyarakat berarti menyesuaikan diri dengan kehidupan budaya setempat tanpa mengorbankan tujuan tugas. Acara adat adalah bagian penting kehidupan warga, sehingga keterlambatan karenanya perlu dimaklumi. Penyuluh yang baik tetap menyampaikan hal terpenting, menghormati jadwal yang lain, dan membangun kesepakatan agar sosialisasi berikutnya lebih tepat waktu.",
         "opsi": {
-          "A": "Bobot 3. Disiplin waktu, tetapi kaku. Sebagian besar warga sedang di acara adat, sehingga tujuan sosialisasi tidak tercapai.",
-          "B": "Bobot 5. Menghormati budaya setempat, materi penting tetap tersampaikan, jadwal lain terjaga, dan tindak lanjut disepakati bersama tokoh desa.",
-          "C": "Bobot 4. Menghormati warga dan materi lengkap, tetapi mengorbankan ketepatan waktu di desa lain yang juga sudah menunggu.",
-          "D": "Bobot 2. Menghindari penyesuaian. Warga yang sudah berkumpul dirugikan dan program tertunda seminggu.",
-          "E": "Bobot 1. Menegur warga di depan umum tentang acara adatnya merendahkan budaya setempat dan merusak hubungan dengan masyarakat."
+          "A": "Disiplin waktu, tetapi kaku. Sebagian besar warga sedang di acara adat, sehingga tujuan sosialisasi tidak tercapai.",
+          "B": "Menghormati budaya setempat, materi penting tetap tersampaikan, jadwal lain terjaga, dan tindak lanjut disepakati bersama tokoh desa.",
+          "C": "Menghormati warga dan materi lengkap, tetapi mengorbankan ketepatan waktu di desa lain yang juga sudah menunggu.",
+          "D": "Menghindari penyesuaian. Warga yang sudah berkumpul dirugikan dan program tertunda seminggu.",
+          "E": "Menegur warga di depan umum tentang acara adatnya merendahkan budaya setempat dan merusak hubungan dengan masyarakat."
         },
-        "konsep": "**Adaptasi budaya di lapangan:** maklumi kegiatan budaya warga, sesuaikan cara kerja (ringkas, fleksibel), lalu bangun kesepakatan dengan tokoh setempat untuk ke depan."
+        "konsep": "**Adaptasi budaya di lapangan:** maklumi kegiatan budaya warga, sesuaikan cara kerja (ringkas, fleksibel), lalu bangun kesepakatan dengan tokoh setempat untuk ke depan. Contoh kesepakatan: jadwal sosialisasi berikutnya disusun bersama kepala desa dengan memperhatikan kalender adat setempat."
       },
       "tips": "Jika ada benturan antara jadwal kerja dan kegiatan budaya, pilih opsi yang **menyesuaikan cara kerja tanpa mengorbankan tugas lain** dan melibatkan tokoh setempat. Opsi yang menyalahkan budaya warga bernilai 1."
     },
@@ -2627,11 +2627,11 @@
       "pembahasan": {
         "inti": "Soal ini mempertemukan dua hal yang sama-sama penting: aturan program yang menjamin bantuan sampai kepada setiap penerima, dan peran tokoh adat yang dihormati warga. Sikap terbaik tidak mengorbankan salah satunya. Aturan tetap dijalankan, tetapi tokoh adat dihormati dengan diberi penjelasan dan peran yang bermakna dalam proses penyaluran, sehingga warga menerima bantuan tanpa merasa adatnya dilangkahi.",
         "opsi": {
-          "A": "Bobot 1. Menyalahi aturan program. Bantuan tidak lagi bisa dipastikan sampai kepada setiap kepala keluarga yang terdata, dan petugas ikut bertanggung jawab jika terjadi penyimpangan.",
-          "B": "Bobot 3. Aturan dipegang, tetapi mengabaikan keberatan tokoh adat berisiko menimbulkan ketegangan dengan masyarakat setempat.",
-          "C": "Bobot 5. Aturan tetap berjalan, tokoh adat dihormati melalui penjelasan dan peran pendampingan, dan warga menerima bantuan secara langsung. Aturan dan budaya sama-sama dihargai.",
-          "D": "Bobot 4. Melibatkan pemerintah setempat itu baik, tetapi Anda sebagai petugas tidak membangun komunikasi langsung dan tokoh adat tidak diberi peran dalam penyaluran.",
-          "E": "Bobot 2. Menunda bantuan bagi korban banjir merugikan warga yang sedang membutuhkan, hanya untuk menghindari ketegangan."
+          "A": "Menyalahi aturan program. Bantuan tidak lagi bisa dipastikan sampai kepada setiap kepala keluarga yang terdata, dan petugas ikut bertanggung jawab jika terjadi penyimpangan.",
+          "B": "Aturan dipegang, tetapi mengabaikan keberatan tokoh adat berisiko menimbulkan ketegangan dengan masyarakat setempat.",
+          "C": "Aturan tetap berjalan, tokoh adat dihormati melalui penjelasan dan peran pendampingan, dan warga menerima bantuan secara langsung. Aturan dan budaya sama-sama dihargai.",
+          "D": "Melibatkan pemerintah setempat itu baik, tetapi Anda sebagai petugas tidak membangun komunikasi langsung dan tokoh adat tidak diberi peran dalam penyaluran.",
+          "E": "Menunda bantuan bagi korban banjir merugikan warga yang sedang membutuhkan, hanya untuk menghindari ketegangan."
         },
         "konsep": "**Menjembatani aturan dan adat:** jalankan aturan yang melindungi hak warga, lalu hormati tokoh adat dengan penjelasan dan peran yang bermakna. Mengalah pada tuntutan yang melanggar aturan atau mengabaikan adat sama-sama bukan jawaban terbaik."
       },
@@ -2662,13 +2662,13 @@
       "pembahasan": {
         "inti": "Pendatang, termasuk mahasiswa KKN, perlu menyesuaikan diri dengan norma masyarakat yang mereka tempati. Pendamping berperan menjembatani: membantu mahasiswa memahami norma setempat, menanggapi keluhan warga dengan serius, dan membangun kesepakatan yang dijalankan bersama, tanpa mempermalukan siapa pun.",
         "opsi": {
-          "A": "Bobot 5. Kedua pihak dipertemukan, norma dijelaskan oleh orang yang paling memahaminya, aturan disepakati bersama, dan pelaksanaannya dipantau.",
-          "B": "Bobot 4. Langsung menangani mahasiswa dengan informasi yang tepat, tetapi warga tidak dilibatkan dalam kesepakatan sehingga hubungan kedua pihak belum dipulihkan.",
-          "C": "Bobot 3. Dosen memang perlu tahu, tetapi Anda sebagai pendamping di lapangan menyerahkan seluruh penanganan kepada pihak lain.",
-          "D": "Bobot 2. Meremehkan keluhan warga dan membiarkan pelanggaran norma berlanjut, sehingga hubungan desa dan mahasiswa memburuk.",
-          "E": "Bobot 1. Teguran di depan umum mempermalukan mahasiswa dan bisa memicu konflik terbuka antara mahasiswa dan warga."
+          "A": "Kedua pihak dipertemukan, norma dijelaskan oleh orang yang paling memahaminya, aturan disepakati bersama, dan pelaksanaannya dipantau.",
+          "B": "Langsung menangani mahasiswa dengan informasi yang tepat, tetapi warga tidak dilibatkan dalam kesepakatan sehingga hubungan kedua pihak belum dipulihkan.",
+          "C": "Dosen memang perlu tahu, tetapi Anda sebagai pendamping di lapangan menyerahkan seluruh penanganan kepada pihak lain.",
+          "D": "Meremehkan keluhan warga dan membiarkan pelanggaran norma berlanjut, sehingga hubungan desa dan mahasiswa memburuk.",
+          "E": "Teguran di depan umum mempermalukan mahasiswa dan bisa memicu konflik terbuka antara mahasiswa dan warga."
         },
-        "konsep": "**Menengahi pendatang dan warga setempat:** dengarkan keluhan, jelaskan norma lewat tokoh setempat, sepakati aturan bersama, dan pantau. Hindari meremehkan keluhan maupun mempermalukan pihak yang melanggar."
+        "konsep": "**Menengahi pendatang dan warga setempat:** dengarkan keluhan, jelaskan norma lewat tokoh setempat, sepakati aturan bersama, dan pantau. Hindari meremehkan keluhan maupun mempermalukan pihak yang melanggar. Contoh aturan posko yang bisa disepakati: jam tenang mulai pukul 22.00, pakaian sopan saat keluar posko, dan izin kepada kepala dusun untuk kegiatan malam."
       },
       "tips": "Untuk konflik antara pendatang dan warga, opsi yang **mempertemukan kedua pihak untuk membuat kesepakatan** biasanya bernilai 5. Opsi yang mempermalukan di depan umum bernilai 1."
     },
@@ -2697,13 +2697,13 @@
       "pembahasan": {
         "inti": "Penyandang disabilitas berhak atas kesempatan kerja yang setara dan akomodasi yang layak, misalnya perangkat pembaca layar. Ketua tim yang inklusif tidak menilai kemampuan dari asumsi, tetapi bertanya langsung kepada orangnya, menyediakan dukungan yang diperlukan, lalu memberi tanggung jawab yang setara dengan anggota lain.",
         "opsi": {
-          "A": "Bobot 2. Terdengar perhatian, tetapi membatasi peran berdasarkan asumsi. Bu Laras tidak diberi kesempatan menunjukkan kemampuannya.",
-          "B": "Bobot 3. Setara secara jumlah, tetapi tanpa akomodasi. Kesetaraan tanpa dukungan alat bantu bisa membuatnya gagal bukan karena kemampuannya.",
-          "C": "Bobot 4. Pendekatannya tepat karena bertanya langsung, tetapi penyediaan alat bantu oleh kantor belum diupayakan, dan tugasnya belum tentu setara.",
-          "D": "Bobot 5. Kebutuhan dibicarakan langsung, akomodasi diusulkan kepada kantor, dan tanggung jawabnya setara. Inilah inklusi yang utuh.",
-          "E": "Bobot 1. Memindahkan pegawai karena disabilitasnya, tanpa menilai kemampuan nyatanya, adalah diskriminasi."
+          "A": "Terdengar perhatian, tetapi membatasi peran berdasarkan asumsi. Bu Laras tidak diberi kesempatan menunjukkan kemampuannya.",
+          "B": "Setara secara jumlah, tetapi tanpa akomodasi. Kesetaraan tanpa dukungan alat bantu bisa membuatnya gagal bukan karena kemampuannya.",
+          "C": "Pendekatannya tepat karena bertanya langsung, tetapi penyediaan alat bantu oleh kantor belum diupayakan, dan tugasnya belum tentu setara.",
+          "D": "Kebutuhan dibicarakan langsung, akomodasi diusulkan kepada kantor, dan tanggung jawabnya setara. Inilah inklusi yang utuh.",
+          "E": "Memindahkan pegawai karena disabilitasnya, tanpa menilai kemampuan nyatanya, adalah diskriminasi."
         },
-        "konsep": "**Inklusi di tempat kerja = kesetaraan + akomodasi yang layak.** Tanyakan kepada orangnya, sediakan dukungan, beri tanggung jawab setara. Membatasi peran karena asumsi termasuk perlakuan diskriminatif walaupun niatnya melindungi."
+        "konsep": "**Inklusi di tempat kerja = kesetaraan + akomodasi yang layak.** Tanyakan kepada orangnya, sediakan dukungan, beri tanggung jawab setara. Membatasi peran karena asumsi termasuk perlakuan diskriminatif walaupun niatnya melindungi. Contoh akomodasi yang layak: aplikasi pembaca layar, dokumen digital yang dapat dibaca perangkat, dan penataan meja yang mudah diakses."
       },
       "tips": "Untuk soal rekan penyandang disabilitas, susun bobot dari yang mengucilkan (1), membatasi karena asumsi (2), setara tanpa dukungan (3), bertanya langsung (4), sampai bertanya, mengakomodasi, dan memberi peran setara (5)."
     },
@@ -2732,11 +2732,11 @@
       "pembahasan": {
         "inti": "Insiden keamanan siber harus ditangani cepat, karena setiap jam unggahan berbahaya dibiarkan, makin banyak warga yang tertipu dan nama instansi makin rusak. Penanganan yang baik memuat tiga hal: memulihkan akses akun, melaporkan insiden kepada atasan dan tim keamanan siber agar ditangani sesuai prosedur, serta memperingatkan publik lewat kanal resmi lain.",
         "opsi": {
-          "A": "Bobot 3. Melapor itu tepat, tetapi menunggu tanpa melakukan langkah darurat apa pun membuat unggahan terus menyebar semalaman.",
-          "B": "Bobot 4. Langkah darurat sudah tepat, tetapi insiden tidak dilaporkan kepada atasan dan tim keamanan siber, sehingga penyebab peretasan dan risiko pada sistem lain tidak diperiksa.",
-          "C": "Bobot 2. Menunda dengan alasan bukan keahlian, padahal langkah awal seperti pemulihan akun dan peringatan publik bisa dilakukan admin.",
-          "D": "Bobot 1. Membuat akun tandingan tanpa izin membingungkan warga dan justru meniru pola akun palsu yang biasa dipakai penipu.",
-          "E": "Bobot 5. Akses dipulihkan, insiden dilaporkan kepada pihak berwenang, dan publik diperingatkan. Ketiga unsur penanganan insiden terpenuhi."
+          "A": "Melapor itu tepat, tetapi menunggu tanpa melakukan langkah darurat apa pun membuat unggahan terus menyebar semalaman.",
+          "B": "Langkah darurat sudah tepat, tetapi insiden tidak dilaporkan kepada atasan dan tim keamanan siber, sehingga penyebab peretasan dan risiko pada sistem lain tidak diperiksa.",
+          "C": "Menunda dengan alasan bukan keahlian, padahal langkah awal seperti pemulihan akun dan peringatan publik bisa dilakukan admin.",
+          "D": "Membuat akun tandingan tanpa izin membingungkan warga dan justru meniru pola akun palsu yang biasa dipakai penipu.",
+          "E": "Akses dipulihkan, insiden dilaporkan kepada pihak berwenang, dan publik diperingatkan. Ketiga unsur penanganan insiden terpenuhi."
         },
         "konsep": "**Respons insiden siber:** pulihkan dan amankan akses → laporkan kepada atasan dan tim keamanan siber (CSIRT) instansi → peringatkan publik lewat kanal resmi lain → evaluasi penyebabnya."
       },
@@ -2767,11 +2767,11 @@
       "pembahasan": {
         "inti": "Kata sandi adalah kunci akun yang berisi data kesehatan pribadi. Petugas tidak boleh menyimpan kata sandi warga karena itu membuka peluang penyalahgunaan data. Namun penolakan saja tidak cukup; warga lansia perlu dibantu agar tetap bisa memakai akunnya sendiri dengan aman, misalnya lewat kata sandi yang mudah diingat dan cara memulihkan akun.",
         "opsi": {
-          "A": "Bobot 3. Prinsip keamanan dijaga, tetapi solusinya dilempar ke keluarga, dan Bu Siti tidak dibekali cara mengelola akunnya sendiri.",
-          "B": "Bobot 5. Keamanan data terjaga dan Bu Siti dibekali dua hal penting: kata sandi yang mudah ia ingat dan cara memulihkan akun jika lupa.",
-          "C": "Bobot 4. Petugas tidak menyimpan kata sandi dan warga tetap memegang kendali, tetapi catatan kertas masih berisiko hilang dan cara pemulihan akun belum diajarkan.",
-          "D": "Bobot 1. Menyimpan kata sandi warga di buku loket yang bisa dibaca banyak orang melanggar prinsip pelindungan data pribadi.",
-          "E": "Bobot 2. Benar secara prinsip, tetapi menolak membantu warga yang jelas membutuhkan pendampingan dan tergesa-gesa memindahkan layanan."
+          "A": "Prinsip keamanan dijaga, tetapi solusinya dilempar ke keluarga, dan Bu Siti tidak dibekali cara mengelola akunnya sendiri.",
+          "B": "Keamanan data terjaga dan Bu Siti dibekali dua hal penting: kata sandi yang mudah ia ingat dan cara memulihkan akun jika lupa.",
+          "C": "Petugas tidak menyimpan kata sandi dan warga tetap memegang kendali, tetapi catatan kertas masih berisiko hilang dan cara pemulihan akun belum diajarkan.",
+          "D": "Menyimpan kata sandi warga di buku loket yang bisa dibaca banyak orang melanggar prinsip pelindungan data pribadi.",
+          "E": "Benar secara prinsip, tetapi menolak membantu warga yang jelas membutuhkan pendampingan dan tergesa-gesa memindahkan layanan."
         },
         "konsep": "**Literasi keamanan digital bagi warga:** kata sandi hanya diketahui pemiliknya, mudah diingat tetapi tidak mudah ditebak, dan pemilik tahu cara memulihkan akun. Petugas membantu tanpa pernah memegang kunci akun warga."
       },
@@ -2802,11 +2802,11 @@
       "pembahasan": {
         "inti": "NIK dan alamat adalah data pribadi yang dilindungi UU 27/2022 tentang Pelindungan Data Pribadi. Data seperti ini bisa disalahgunakan untuk penipuan atau pinjaman daring ilegal. Kebocoran perlu dihentikan secepatnya, digantikan versi yang aman, dan dilaporkan agar ditangani sesuai prosedur, termasuk menilai dampaknya. Fakta bahwa unggahan itu milik bagian lain tidak menghapus tanggung jawab pegawai yang menemukannya.",
         "opsi": {
-          "A": "Bobot 3. Ada tindakan, tetapi tidak mendesak dan lewat jalur informal. Data tetap terbuka entah berapa lama lagi.",
-          "B": "Bobot 2. Menghindar dengan alasan kewenangan. Kebocoran yang dibiarkan memperbesar risiko bagi warga setiap harinya.",
-          "C": "Bobot 5. Kebocoran dihentikan, diganti versi yang aman, dan dilaporkan kepada atasan agar ditangani sesuai prosedur. Cepat dan tuntas.",
-          "D": "Bobot 4. Menghentikan kebocoran dengan cepat dan tepat, tetapi tanpa melapor kepada atasan, sehingga dampak kebocoran selama sebulan tidak ditangani.",
-          "E": "Bobot 1. Menyimpan salinan data pribadi warga untuk arsip pribadi justru menambah titik kebocoran baru."
+          "A": "Ada tindakan, tetapi tidak mendesak dan lewat jalur informal. Data tetap terbuka entah berapa lama lagi.",
+          "B": "Menghindar dengan alasan kewenangan. Kebocoran yang dibiarkan memperbesar risiko bagi warga setiap harinya.",
+          "C": "Kebocoran dihentikan, diganti versi yang aman, dan dilaporkan kepada atasan agar ditangani sesuai prosedur. Cepat dan tuntas.",
+          "D": "Menghentikan kebocoran dengan cepat dan tepat, tetapi tanpa melapor kepada atasan, sehingga dampak kebocoran selama sebulan tidak ditangani.",
+          "E": "Menyimpan salinan data pribadi warga untuk arsip pribadi justru menambah titik kebocoran baru."
         },
         "konsep": "**Respons kebocoran data:** hentikan akses → ganti dengan versi yang menyamarkan data → laporkan agar ditangani sesuai prosedur → cegah terulang. Pengumuman publik cukup memuat nama dan sebagian data yang disamarkan."
       },
@@ -2837,13 +2837,13 @@
       "pembahasan": {
         "inti": "Rapat hibrida hanya efektif jika peserta daring punya kesempatan yang setara untuk didengar. Pemandu rapat bertanggung jawab memakai teknologi untuk menyatukan dua kelompok peserta, bukan membiarkan salah satunya menjadi penonton. Perwakilan desa yang ikut daring justru sering membawa informasi lapangan yang dibutuhkan rapat.",
         "opsi": {
-          "A": "Bobot 5. Ketertinggalan setengah jam segera dipulihkan, dan ada mekanisme yang menjaga keterlibatan peserta daring sampai rapat selesai.",
-          "B": "Bobot 3. Pertanyaan akhirnya dibacakan, tetapi terlambat. Peserta daring tidak ikut memengaruhi diskusi saat keputusan dibahas.",
-          "C": "Bobot 4. Ada mekanisme pemantauan, tetapi pertanyaan yang sudah tertunda setengah jam belum ditanggapi dan peserta daring belum mendapat giliran bicara.",
-          "D": "Bobot 2. Menghindari tugas memandu rapat hibrida. Peserta daring tidak dilibatkan sama sekali dalam diskusi.",
-          "E": "Bobot 1. Menutup satu-satunya saluran peserta daring sama dengan mengucilkan mereka dari rapat."
+          "A": "Ketertinggalan setengah jam segera dipulihkan, dan ada mekanisme yang menjaga keterlibatan peserta daring sampai rapat selesai.",
+          "B": "Pertanyaan akhirnya dibacakan, tetapi terlambat. Peserta daring tidak ikut memengaruhi diskusi saat keputusan dibahas.",
+          "C": "Ada mekanisme pemantauan, tetapi pertanyaan yang sudah tertunda setengah jam belum ditanggapi dan peserta daring belum mendapat giliran bicara.",
+          "D": "Menghindari tugas memandu rapat hibrida. Peserta daring tidak dilibatkan sama sekali dalam diskusi.",
+          "E": "Menutup satu-satunya saluran peserta daring sama dengan mengucilkan mereka dari rapat."
         },
-        "konsep": "**Rapat hibrida yang setara:** pantau kanal daring secara aktif (tunjuk pemantau), beri giliran bicara bergantian antara peserta di ruangan dan daring, dan pastikan materi terlihat oleh keduanya."
+        "konsep": "**Rapat hibrida yang setara:** pantau kanal daring secara aktif (tunjuk pemantau), beri giliran bicara bergantian antara peserta di ruangan dan daring, dan pastikan materi terlihat oleh keduanya. Satu cara sederhana: setiap selesai satu topik, pemandu membuka giliran khusus untuk peserta daring sebelum pindah ke topik berikutnya."
       },
       "tips": "Untuk soal rapat daring atau hibrida, opsi bernilai 5 biasanya **memulihkan keterlibatan peserta jarak jauh sekarang** dan **menyiapkan mekanisme** untuk sisa rapat. Opsi yang menunda atau menutup kanal bernilai rendah."
     },
@@ -2872,11 +2872,11 @@
       "pembahasan": {
         "inti": "Inovasi digital patut didukung, tetapi data kependudukan adalah data pribadi yang aksesnya diatur ketat. Sebelum pihak ketiga diberi akses, perlu dipastikan ada dasar hukumnya, ada perjanjian yang mengikat tentang pelindungan data (sesuai UU 27/2022 tentang Pelindungan Data Pribadi), dan sistemnya aman secara teknis. Tugas pegawai adalah menyiapkan penilaian yang lengkap agar pimpinan memutuskan dengan informasi yang cukup.",
         "opsi": {
-          "A": "Bobot 3. Hati-hati terhadap data, tetapi menolak inovasi secara menyeluruh tanpa penilaian. Peluang memperbaiki layanan hilang.",
-          "B": "Bobot 1. Membuka data warga asli kepada pihak luar hanya berdasarkan janji, tanpa dasar hukum dan perjanjian, melanggar prinsip pelindungan data pribadi.",
-          "C": "Bobot 4. Penilaian teknis penting, tetapi aspek hukum (siapa boleh mengakses data kependudukan dan dengan perjanjian apa) belum diperiksa.",
-          "D": "Bobot 5. Aspek hukum, perjanjian pelindungan data, dan keamanan teknis dinilai, lalu hasilnya disampaikan sebagai rekomendasi tertulis. Mendukung inovasi dengan cara yang aman.",
-          "E": "Bobot 2. Atasan justru meminta Anda menindaklanjuti. Menyerahkan kembali tanpa kajian adalah menghindari tugas."
+          "A": "Hati-hati terhadap data, tetapi menolak inovasi secara menyeluruh tanpa penilaian. Peluang memperbaiki layanan hilang.",
+          "B": "Membuka data warga asli kepada pihak luar hanya berdasarkan janji, tanpa dasar hukum dan perjanjian, melanggar prinsip pelindungan data pribadi.",
+          "C": "Penilaian teknis penting, tetapi aspek hukum (siapa boleh mengakses data kependudukan dan dengan perjanjian apa) belum diperiksa.",
+          "D": "Aspek hukum, perjanjian pelindungan data, dan keamanan teknis dinilai, lalu hasilnya disampaikan sebagai rekomendasi tertulis. Mendukung inovasi dengan cara yang aman.",
+          "E": "Atasan justru meminta Anda menindaklanjuti. Menyerahkan kembali tanpa kajian adalah menghindari tugas."
         },
         "konsep": "**Menilai layanan digital pihak ketiga:** dasar hukum akses data, perjanjian pelindungan data, keamanan teknis, lalu rekomendasi kepada pimpinan. “Gratis” tidak pernah menjadi alasan untuk melewati langkah-langkah itu."
       },
@@ -2907,11 +2907,11 @@
       "pembahasan": {
         "inti": "Instansi pemerintah harus memberi contoh dalam menghormati hak kekayaan intelektual. Memakai lagu berhak cipta tanpa izin tetap pelanggaran walaupun videonya tidak dijual, dan akun resmi bisa diturunkan atau diblokir oleh platform. Sikap terbaik tetap menjaga tujuan video agar menarik, dengan cara yang sah, sambil membagikan pemahaman itu kepada rekan.",
         "opsi": {
-          "A": "Bobot 1. Anggapan bahwa pemakaian nonkomersial bebas dari hak cipta adalah salah kaprah yang umum. Pelanggaran tetap terjadi dan merusak citra instansi.",
-          "B": "Bobot 3. Aman dari pelanggaran, tetapi kaku. Tujuan agar video menarik dikorbankan, padahal ada pilihan musik yang sah.",
-          "C": "Bobot 4. Solusinya sah dan video tetap menarik, tetapi rekan tidak diberi penjelasan sehingga usulan serupa bisa terulang.",
-          "D": "Bobot 2. Menghindari tanggung jawab. Video tetap dibuat oleh Anda dan diunggah di akun resmi kantor.",
-          "E": "Bobot 5. Risiko dijelaskan kepada rekan, dan musik yang dipakai dipastikan sah, baik berlisensi maupun dengan izin pemegang hak. Tujuan dan aturan sama-sama terpenuhi."
+          "A": "Anggapan bahwa pemakaian nonkomersial bebas dari hak cipta adalah salah kaprah yang umum. Pelanggaran tetap terjadi dan merusak citra instansi.",
+          "B": "Aman dari pelanggaran, tetapi kaku. Tujuan agar video menarik dikorbankan, padahal ada pilihan musik yang sah.",
+          "C": "Solusinya sah dan video tetap menarik, tetapi rekan tidak diberi penjelasan sehingga usulan serupa bisa terulang.",
+          "D": "Menghindari tanggung jawab. Video tetap dibuat oleh Anda dan diunggah di akun resmi kantor.",
+          "E": "Risiko dijelaskan kepada rekan, dan musik yang dipakai dipastikan sah, baik berlisensi maupun dengan izin pemegang hak. Tujuan dan aturan sama-sama terpenuhi."
         },
         "konsep": "**Konten instansi yang taat hak cipta:** gunakan karya berlisensi jelas (bebas royalti, lisensi terbuka, atau dengan izin). Mencantumkan nama pencipta atau tujuan nonkomersial tidak sama dengan memiliki izin."
       },
@@ -2942,11 +2942,11 @@
       "pembahasan": {
         "inti": "Tanda tangan elektronik melekat pada pribadi pemiliknya dan memiliki kekuatan hukum seperti tanda tangan basah. Memakai passphrase orang lain sama dengan memalsukan tanda tangannya, walaupun pemiliknya mengizinkan. Pegawai yang profesional menolak dengan sopan, membantu agar surat tetap bisa ditandatangani secara sah, dan mengingatkan bahwa passphrase yang sudah dibagikan perlu diganti.",
         "opsi": {
-          "A": "Bobot 1. Izin pemilik tidak membuat pemakaian passphrase orang lain menjadi sah. Dokumen yang ditandatangani dengan cara ini cacat secara hukum.",
-          "B": "Bobot 5. Aturan dijaga, dua jalan keluar yang sah ditawarkan, dan keamanan akun dipulihkan dengan mengganti passphrase yang sudah terbagi.",
-          "C": "Bobot 4. Menolak dengan alasan yang benar dan membantu menyiapkan surat, tetapi tidak mengingatkan bahwa passphrase yang sudah terkirim perlu diganti.",
-          "D": "Bobot 3. Tidak melanggar, tetapi pasif. Surat mendesak tertahan padahal ada cara sah untuk menyelesaikannya.",
-          "E": "Bobot 2. Melempar keputusan kepada rekan yang tidak berwenang atas tanda tangan kepala bidang."
+          "A": "Izin pemilik tidak membuat pemakaian passphrase orang lain menjadi sah. Dokumen yang ditandatangani dengan cara ini cacat secara hukum.",
+          "B": "Aturan dijaga, dua jalan keluar yang sah ditawarkan, dan keamanan akun dipulihkan dengan mengganti passphrase yang sudah terbagi.",
+          "C": "Menolak dengan alasan yang benar dan membantu menyiapkan surat, tetapi tidak mengingatkan bahwa passphrase yang sudah terkirim perlu diganti.",
+          "D": "Tidak melanggar, tetapi pasif. Surat mendesak tertahan padahal ada cara sah untuk menyelesaikannya.",
+          "E": "Melempar keputusan kepada rekan yang tidak berwenang atas tanda tangan kepala bidang."
         },
         "konsep": "**Tanda tangan elektronik:** passphrase hanya untuk pemiliknya. Jika pejabat berhalangan, gunakan tanda tangan jarak jauh oleh pemilik sendiri atau penunjukan pelaksana harian/pelaksana tugas sesuai aturan. Passphrase yang sudah dibagikan wajib diganti."
       },
@@ -2977,11 +2977,11 @@
       "pembahasan": {
         "inti": "Notula adalah catatan resmi jalannya rapat. Menghapus pernyataan yang benar-benar disampaikan berarti mengubah catatan resmi, walaupun pernyataannya keliru. Kekhawatiran pimpinan tetap masuk akal, karena angka yang salah memang bisa menyesatkan peserta. Jalan tengah yang profesional adalah mempertahankan catatan dan menambahkan ralat resmi, sehingga catatan tetap jujur dan informasi yang benar tetap sampai kepada peserta.",
         "opsi": {
-          "A": "Bobot 1. Mengubah catatan resmi agar sesuai keinginan pimpinan adalah manipulasi dokumen, walaupun alasannya mencegah salah paham.",
-          "B": "Bobot 3. Prinsipnya benar, tetapi kaku. Kekhawatiran pimpinan tentang angka yang menyesatkan tidak ditanggapi dengan solusi.",
-          "C": "Bobot 2. Menghindari tanggung jawab sebagai notulis. Masalah integritas dokumen tetap terjadi, hanya dipindahkan kepada orang lain.",
-          "D": "Bobot 4. Solusinya tepat, tetapi belum memastikan persetujuan pimpinan atas ralat tersebut sebelum notula dibagikan.",
-          "E": "Bobot 5. Fungsi notula dijelaskan dengan santun, kekhawatiran pimpinan dijawab dengan ralat resmi, dan notula dibagikan setelah disepakati. Integritas dan hubungan kerja sama-sama terjaga."
+          "A": "Mengubah catatan resmi agar sesuai keinginan pimpinan adalah manipulasi dokumen, walaupun alasannya mencegah salah paham.",
+          "B": "Prinsipnya benar, tetapi kaku. Kekhawatiran pimpinan tentang angka yang menyesatkan tidak ditanggapi dengan solusi.",
+          "C": "Menghindari tanggung jawab sebagai notulis. Masalah integritas dokumen tetap terjadi, hanya dipindahkan kepada orang lain.",
+          "D": "Solusinya tepat, tetapi belum memastikan persetujuan pimpinan atas ralat tersebut sebelum notula dibagikan.",
+          "E": "Fungsi notula dijelaskan dengan santun, kekhawatiran pimpinan dijawab dengan ralat resmi, dan notula dibagikan setelah disepakati. Integritas dan hubungan kerja sama-sama terjaga."
         },
         "konsep": "**Mengoreksi dokumen resmi:** jangan menghapus, tetapi tambahkan ralat atau catatan yang jelas sumber dan waktunya. Cara ini menjaga kejujuran catatan sekaligus memperbaiki informasi."
       },
@@ -3012,13 +3012,13 @@
       "pembahasan": {
         "inti": "Profesionalisme mencakup menjaga kompetensi yang menjadi syarat jabatan sekaligus menyelesaikan tanggung jawab tepat waktu. Bentrokan jadwal yang sudah diketahui jauh hari bisa diatasi dengan perencanaan: kerjakan lebih awal, komunikasikan kepada atasan, dan jalani keduanya tanpa mengorbankan salah satu.",
         "opsi": {
-          "A": "Bobot 2. Menghindari bentrokan dengan membiarkan sertifikat kedaluwarsa. Akibatnya Anda tidak sah menjalankan tugas pengadaan selama masa itu.",
-          "B": "Bobot 5. Perencanaan yang baik membuat keduanya tercapai, dan atasan mengetahui situasinya. Tanggung jawab dan pengembangan kompetensi sama-sama terpenuhi.",
-          "C": "Bobot 4. Komunikatif dan keduanya bisa tercapai, tetapi sebagian beban dialihkan kepada rekan, padahal bentrokan ini bisa diantisipasi sendiri.",
-          "D": "Bobot 3. Bertanggung jawab, tetapi tanpa perencanaan dan komunikasi. Laporan yang dikerjakan terburu-buru berisiko kurang berkualitas.",
-          "E": "Bobot 1. Meminjam kewenangan orang lain untuk menandatangani dokumen pengadaan melanggar aturan dan menyalahi kompetensi yang dipersyaratkan."
+          "A": "Menghindari bentrokan dengan membiarkan sertifikat kedaluwarsa. Akibatnya Anda tidak sah menjalankan tugas pengadaan selama masa itu.",
+          "B": "Perencanaan yang baik membuat keduanya tercapai, dan atasan mengetahui situasinya. Tanggung jawab dan pengembangan kompetensi sama-sama terpenuhi.",
+          "C": "Komunikatif dan keduanya bisa tercapai, tetapi sebagian beban dialihkan kepada rekan, padahal bentrokan ini bisa diantisipasi sendiri.",
+          "D": "Bertanggung jawab, tetapi tanpa perencanaan dan komunikasi. Laporan yang dikerjakan terburu-buru berisiko kurang berkualitas.",
+          "E": "Meminjam kewenangan orang lain untuk menandatangani dokumen pengadaan melanggar aturan dan menyalahi kompetensi yang dipersyaratkan."
         },
-        "konsep": "**Profesionalisme = kompeten + tepat waktu + komunikatif.** Bentrokan yang bisa diperkirakan sebaiknya diselesaikan dengan perencanaan, bukan dengan mengorbankan salah satu tanggung jawab."
+        "konsep": "**Profesionalisme = kompeten + tepat waktu + komunikatif.** Bentrokan yang bisa diperkirakan sebaiknya diselesaikan dengan perencanaan, bukan dengan mengorbankan salah satu tanggung jawab. Contoh perencanaan: memajukan tenggat internal laporan dua hari sebelum ujian dan menyampaikan jadwal itu kepada atasan sejak awal bulan."
       },
       "tips": "Jika bentrokan jadwal diketahui lebih awal, opsi bernilai 5 biasanya berisi **perencanaan ulang + komunikasi dengan atasan**. Opsi yang meminjam nama atau kewenangan orang lain selalu bernilai 1."
     },
@@ -3047,13 +3047,13 @@
       "pembahasan": {
         "inti": "Masalah kinerja rekan yang berulang perlu diselesaikan, bukan terus ditutupi. Pegawai yang profesional membicarakannya langsung dengan rekan yang bersangkutan untuk memahami penyebabnya, menyepakati perbaikan yang terukur, dan menyiapkan langkah berikutnya bila tidak berhasil. Tujuannya kualitas kerja tim, bukan menyalahkan orang.",
         "opsi": {
-          "A": "Bobot 3. Laporan selesai, tetapi masalahnya terus berulang dan beban kerja tidak adil. Ini sikap aman yang pasif.",
-          "B": "Bobot 2. Melompati dialog langsung bisa merusak kepercayaan, dan Bagas tidak diberi kesempatan menjelaskan atau memperbaiki diri.",
-          "C": "Bobot 1. Mengorbankan kualitas laporan tim demi mempermalukan rekan merugikan organisasi.",
-          "D": "Bobot 5. Dialog langsung, perbaikan yang terukur (tenggat antara), dan jalur eskalasi yang jelas bila tidak berhasil. Masalah ditangani tuntas.",
-          "E": "Bobot 4. Dialog dan bantuan sudah baik, tetapi belum ada kesepakatan yang terukur dan rencana jika pola itu terulang."
+          "A": "Laporan selesai, tetapi masalahnya terus berulang dan beban kerja tidak adil. Ini sikap aman yang pasif.",
+          "B": "Melompati dialog langsung bisa merusak kepercayaan, dan Bagas tidak diberi kesempatan menjelaskan atau memperbaiki diri.",
+          "C": "Mengorbankan kualitas laporan tim demi mempermalukan rekan merugikan organisasi.",
+          "D": "Dialog langsung, perbaikan yang terukur (tenggat antara), dan jalur eskalasi yang jelas bila tidak berhasil. Masalah ditangani tuntas.",
+          "E": "Dialog dan bantuan sudah baik, tetapi belum ada kesepakatan yang terukur dan rencana jika pola itu terulang."
         },
-        "konsep": "**Menangani masalah kinerja rekan:** bicarakan langsung → cari penyebab → sepakati perbaikan terukur → eskalasi ke ketua tim bila tetap berulang. Menutupi terus-menerus dan mempermalukan sama-sama tidak profesional."
+        "konsep": "**Menangani masalah kinerja rekan:** bicarakan langsung → cari penyebab → sepakati perbaikan terukur → eskalasi ke ketua tim bila tetap berulang. Menutupi terus-menerus dan mempermalukan sama-sama tidak profesional. Tenggat antara berarti bagian kerja diserahkan bertahap, misalnya draf pertama seminggu sebelum tenggat akhir, sehingga masalah terlihat lebih awal."
       },
       "tips": "Bandingkan dua opsi yang sama-sama mengajak berdiskusi: opsi yang memuat **kesepakatan konkret dan langkah lanjutan** lebih tinggi daripada yang hanya menawarkan bantuan."
     },
@@ -3082,13 +3082,13 @@
       "pembahasan": {
         "inti": "Profesionalisme menuntut inisiatif ketika aturan kerja tertinggal dari perubahan, tetapi inisiatif itu tetap lewat jalur yang sah. Pegawai tidak boleh membuat aturan sendiri, namun bisa menyiapkan bahan dan mengusulkan solusi sementara kepada pimpinan agar layanan tidak tertahan selama revisi resmi berlangsung.",
         "opsi": {
-          "A": "Bobot 3. Patuh pada aturan tertulis, tetapi kaku. Berkas warga terus tertahan dan aplikasi baru tidak dimanfaatkan.",
-          "B": "Bobot 1. Membuat dan memberlakukan alur kerja tanpa penetapan pimpinan melampaui kewenangan dan bisa menimbulkan masalah hukum pada izin yang diterbitkan.",
-          "C": "Bobot 5. Inisiatif konkret (memetakan perbedaan), solusi jangka pendek yang ditetapkan pimpinan, dan dorongan perbaikan jangka panjang. Layanan berjalan dan tetap sah.",
-          "D": "Bobot 4. Memberi masukan yang berguna, tetapi tanpa solusi sementara selama dua bulan revisi, sehingga berkas tetap tertahan.",
-          "E": "Bobot 2. Menghindari inisiatif dengan alasan kewenangan, padahal Anda bisa memberi masukan berharga."
+          "A": "Patuh pada aturan tertulis, tetapi kaku. Berkas warga terus tertahan dan aplikasi baru tidak dimanfaatkan.",
+          "B": "Membuat dan memberlakukan alur kerja tanpa penetapan pimpinan melampaui kewenangan dan bisa menimbulkan masalah hukum pada izin yang diterbitkan.",
+          "C": "Inisiatif konkret (memetakan perbedaan), solusi jangka pendek yang ditetapkan pimpinan, dan dorongan perbaikan jangka panjang. Layanan berjalan dan tetap sah.",
+          "D": "Memberi masukan yang berguna, tetapi tanpa solusi sementara selama dua bulan revisi, sehingga berkas tetap tertahan.",
+          "E": "Menghindari inisiatif dengan alasan kewenangan, padahal Anda bisa memberi masukan berharga."
         },
-        "konsep": "**Inisiatif yang sah:** identifikasi masalah → siapkan usulan → minta penetapan pimpinan → dorong perbaikan permanen. Inisiatif tanpa persetujuan dan kepatuhan yang kaku sama-sama bukan jawaban terbaik."
+        "konsep": "**Inisiatif yang sah:** identifikasi masalah → siapkan usulan → minta penetapan pimpinan → dorong perbaikan permanen. Inisiatif tanpa persetujuan dan kepatuhan yang kaku sama-sama bukan jawaban terbaik. Panduan sementara cukup berupa alur singkat yang ditandatangani pimpinan sampai SOP resmi selesai direvisi."
       },
       "tips": "Pada soal aturan yang tertinggal, cari opsi yang memadukan **solusi sementara yang disahkan pimpinan** dengan **perbaikan aturan permanen**. Opsi yang memberlakukan aturan buatan sendiri bernilai 1."
     },
@@ -3117,11 +3117,11 @@
       "pembahasan": {
         "inti": "Berbagi pengetahuan tentang program instansi kepada kampus bermanfaat dan sejalan dengan tugas ASN. Karena materinya menyangkut tugas jabatan dan diadakan pada jam kerja, kehadiran Anda harus diketahui instansi, misalnya melalui izin atau surat tugas. Honorarium boleh diterima selama sesuai ketentuan yang berlaku, dan bila ada kewajiban melapor, kewajiban itu dijalankan.",
         "opsi": {
-          "A": "Bobot 5. Kegiatan bermanfaat dijalankan secara terbuka dan resmi, dan penerimaan honorarium mengikuti aturan. Transparan dan sesuai ketentuan.",
-          "B": "Bobot 4. Terbuka kepada atasan dan sangat hati-hati, tetapi menolak seluruh honorarium tanpa memeriksa ketentuannya tidak diperlukan. Sikapnya sedikit berlebihan.",
-          "C": "Bobot 3. Aman, tetapi melewatkan kesempatan berbagi pengetahuan dan membangun hubungan dengan kampus, padahal ada jalur izin resmi.",
-          "D": "Bobot 1. Menyembunyikan kegiatan yang membawakan program instansi demi honorarium penuh tidak jujur dan berpotensi melanggar aturan gratifikasi.",
-          "E": "Bobot 2. Melempar undangan kepada staf tanpa sepengetahuan atasan. Kampus mengundang Anda, dan instansi tidak mengetahui siapa yang mewakilinya."
+          "A": "Kegiatan bermanfaat dijalankan secara terbuka dan resmi, dan penerimaan honorarium mengikuti aturan. Transparan dan sesuai ketentuan.",
+          "B": "Terbuka kepada atasan dan sangat hati-hati, tetapi menolak seluruh honorarium tanpa memeriksa ketentuannya tidak diperlukan. Sikapnya sedikit berlebihan.",
+          "C": "Aman, tetapi melewatkan kesempatan berbagi pengetahuan dan membangun hubungan dengan kampus, padahal ada jalur izin resmi.",
+          "D": "Menyembunyikan kegiatan yang membawakan program instansi demi honorarium penuh tidak jujur dan berpotensi melanggar aturan gratifikasi.",
+          "E": "Melempar undangan kepada staf tanpa sepengetahuan atasan. Kampus mengundang Anda, dan instansi tidak mengetahui siapa yang mewakilinya."
         },
         "konsep": "**Kegiatan di luar kantor yang berkaitan dengan jabatan:** beri tahu atasan dan minta izin/surat tugas, terima imbalan hanya sesuai ketentuan, laporkan bila diwajibkan. Keterbukaan adalah kunci profesionalisme dan integritas."
       },
@@ -3152,13 +3152,13 @@
       "pembahasan": {
         "inti": "Pendelegasian wewenang membawa tanggung jawab: keputusan yang Anda buat adalah keputusan Anda, termasuk kekeliruannya. Pegawai yang profesional mengakui kesalahan, memperbaikinya dengan memakai kewenangan yang sudah didelegasikan, dan tetap melaporkan kepada atasan agar ia mengetahui perkembangannya.",
         "opsi": {
-          "A": "Bobot 3. Hati-hati, tetapi pasif. Warga dua desa kehilangan layanan selama seminggu, padahal Anda berwenang memperbaikinya.",
-          "B": "Bobot 2. Defensif dan memindahkan beban kepada warga, tanpa memperbaiki kekeliruan yang Anda buat.",
-          "C": "Bobot 1. Melempar kesalahan kepada atasan tidak jujur, karena jadwal itu Anda sendiri yang menetapkan atas pendelegasian.",
-          "D": "Bobot 5. Mengakui kesalahan, memperbaikinya segera sesuai wewenang yang didelegasikan, dan atasan tetap mendapat laporan. Tanggung jawab penuh.",
-          "E": "Bobot 4. Komunikatif dan berorientasi solusi, tetapi meminta persetujuan untuk hal yang sudah didelegasikan memperlambat perbaikan, dan belum ada pengakuan kepada kepala desa."
+          "A": "Hati-hati, tetapi pasif. Warga dua desa kehilangan layanan selama seminggu, padahal Anda berwenang memperbaikinya.",
+          "B": "Defensif dan memindahkan beban kepada warga, tanpa memperbaiki kekeliruan yang Anda buat.",
+          "C": "Melempar kesalahan kepada atasan tidak jujur, karena jadwal itu Anda sendiri yang menetapkan atas pendelegasian.",
+          "D": "Mengakui kesalahan, memperbaikinya segera sesuai wewenang yang didelegasikan, dan atasan tetap mendapat laporan. Tanggung jawab penuh.",
+          "E": "Komunikatif dan berorientasi solusi, tetapi meminta persetujuan untuk hal yang sudah didelegasikan memperlambat perbaikan, dan belum ada pengakuan kepada kepala desa."
         },
-        "konsep": "**Tanggung jawab atas wewenang yang didelegasikan:** akui kesalahan, perbaiki dengan kewenangan yang ada, laporkan kepada pemberi delegasi. Menyalahkan orang lain dan menunggu tanpa bertindak sama-sama tidak profesional."
+        "konsep": "**Tanggung jawab atas wewenang yang didelegasikan:** akui kesalahan, perbaiki dengan kewenangan yang ada, laporkan kepada pemberi delegasi. Menyalahkan orang lain dan menunggu tanpa bertindak sama-sama tidak profesional. Mengakui kekeliruan kepada mitra (kepala desa) juga memulihkan kepercayaan, sehingga perubahan jadwal lebih mudah diterima warga."
       },
       "tips": "Perhatikan kata **didelegasikan** di soal. Itu tanda Anda berwenang bertindak. Opsi terbaik memakai kewenangan itu untuk memperbaiki keadaan, lalu tetap melapor."
     },
@@ -3187,11 +3187,11 @@
       "pembahasan": {
         "inti": "Profesionalisme berarti menerima koreksi berdasarkan isinya, bukan berdasarkan senioritas orang yang mengoreksi. Pegawai yang profesional menghargai masukan, memperbaiki seluruh kesalahan, dan belajar dari polanya agar kualitas kerjanya meningkat. Sikap ini juga membangun budaya kerja yang membuat rekan junior berani menyampaikan temuan.",
         "opsi": {
-          "A": "Bobot 3. Kesalahan diperbaiki, tetapi tanpa apresiasi kepada pemeriksa dan tanpa upaya mencegah kesalahan serupa.",
-          "B": "Bobot 2. Menghindari koreksi dengan alasan senioritas. Kualitas pemeriksaan bukan ditentukan oleh masa kerja.",
-          "C": "Bobot 1. Membiarkan sebagian kesalahan dan meremehkan temuan yang benar merugikan kualitas laporan dan tidak jujur kepada atasan.",
-          "D": "Bobot 4. Menghargai masukan dan memperbaiki semuanya, tetapi belum belajar dari penyebab kesalahan.",
-          "E": "Bobot 5. Menghargai masukan, memperbaiki seluruhnya, dan mencari akar masalah agar tidak terulang. Lengkap dan berorientasi perbaikan."
+          "A": "Kesalahan diperbaiki, tetapi tanpa apresiasi kepada pemeriksa dan tanpa upaya mencegah kesalahan serupa.",
+          "B": "Menghindari koreksi dengan alasan senioritas. Kualitas pemeriksaan bukan ditentukan oleh masa kerja.",
+          "C": "Membiarkan sebagian kesalahan dan meremehkan temuan yang benar merugikan kualitas laporan dan tidak jujur kepada atasan.",
+          "D": "Menghargai masukan dan memperbaiki semuanya, tetapi belum belajar dari penyebab kesalahan.",
+          "E": "Menghargai masukan, memperbaiki seluruhnya, dan mencari akar masalah agar tidak terulang. Lengkap dan berorientasi perbaikan."
         },
         "konsep": "**Menerima koreksi secara profesional:** hargai pemberi masukan → perbaiki seluruh temuan yang benar → cari penyebab dan cegah terulang. Ego atau senioritas tidak menjadi ukuran. Mencari penyebab bisa berupa memeriksa ulang rumus lembar kerja, membuat daftar periksa sebelum menyerahkan laporan, atau meminta pemeriksaan silang secara rutin."
       },
@@ -3222,11 +3222,11 @@
       "pembahasan": {
         "inti": "Hubungan pribadi tidak boleh memengaruhi hubungan kerja. Ketika teman menjadi atasan, kedua pihak perlu menyesuaikan diri. Pegawai yang profesional membantu atasan barunya dengan membicarakan batas hubungan kerja secara terbuka, menerima perlakuan yang sama dengan rekan lain, dan membuktikan lewat kinerja bahwa tidak ada perlakuan istimewa.",
         "opsi": {
-          "A": "Bobot 3. Mencegah kesan pilih kasih, tetapi menjauh justru bisa membuat kerja sama kaku. Kecanggungan Dimas juga tidak terselesaikan.",
-          "B": "Bobot 5. Kecanggungan dibicarakan secara terbuka, perlakuan disamakan dengan rekan lain, dan kinerja yang terukur menjawab gunjingan.",
-          "C": "Bobot 4. Profesional dalam bekerja, tetapi tidak membantu Dimas mengatasi kecanggungannya karena tidak ada pembicaraan terbuka.",
-          "D": "Bobot 1. Memanfaatkan pertemanan untuk mendapat keringanan adalah perlakuan istimewa yang tidak adil bagi rekan lain.",
-          "E": "Bobot 2. Menghindari situasi, padahal masalahnya bisa diselesaikan dengan komunikasi dan sikap profesional."
+          "A": "Mencegah kesan pilih kasih, tetapi menjauh justru bisa membuat kerja sama kaku. Kecanggungan Dimas juga tidak terselesaikan.",
+          "B": "Kecanggungan dibicarakan secara terbuka, perlakuan disamakan dengan rekan lain, dan kinerja yang terukur menjawab gunjingan.",
+          "C": "Profesional dalam bekerja, tetapi tidak membantu Dimas mengatasi kecanggungannya karena tidak ada pembicaraan terbuka.",
+          "D": "Memanfaatkan pertemanan untuk mendapat keringanan adalah perlakuan istimewa yang tidak adil bagi rekan lain.",
+          "E": "Menghindari situasi, padahal masalahnya bisa diselesaikan dengan komunikasi dan sikap profesional."
         },
         "konsep": "**Teman menjadi atasan:** bicarakan batas hubungan kerja, minta diperlakukan sama, buktikan dengan kinerja. Menjaga jarak secara berlebihan atau meminta keistimewaan sama-sama keliru. Bagi atasan baru, dukungan terbuka dari teman lama justru memudahkannya bersikap adil kepada seluruh anggota seksi."
       },
@@ -3257,11 +3257,11 @@
       "pembahasan": {
         "inti": "Unggahan yang menyebut aparat negara sebagai pihak yang “halal diperangi” adalah narasi yang membenarkan kekerasan dan merupakan tanda bahaya radikalisme. Pegawai yang menemukannya wajib mendokumentasikan dan melaporkan melalui jalur resmi agar aparat yang berwenang menilai dan menindaklanjuti. Di sisi lain, proses administrasi tetap dijalankan sesuai prosedur, tanpa tindakan sepihak di luar kewenangan.",
         "opsi": {
-          "A": "Bobot 3. Prosedural, tetapi mengabaikan tanda bahaya yang jelas. Informasi penting tidak sampai kepada pihak yang berwenang.",
-          "B": "Bobot 1. Menyebarkan temuan ke media sosial pribadi dapat memicu kepanikan, persekusi, atau membuat kelompok itu menghapus jejak sebelum diperiksa.",
-          "C": "Bobot 5. Bukti didokumentasikan, informasi dibawa ke pimpinan dan aparat lewat jalur resmi, dan proses administrasi tetap sesuai prosedur.",
-          "D": "Bobot 4. Melapor dengan tepat, tetapi mengusulkan penundaan sebelum ada penilaian aparat berarti mendahului kewenangan pihak yang berwenang.",
-          "E": "Bobot 2. Melempar tanggung jawab, padahal Anda yang menemukan informasi itu dan instansi Anda memang menangani kewaspadaan nasional."
+          "A": "Prosedural, tetapi mengabaikan tanda bahaya yang jelas. Informasi penting tidak sampai kepada pihak yang berwenang.",
+          "B": "Menyebarkan temuan ke media sosial pribadi dapat memicu kepanikan, persekusi, atau membuat kelompok itu menghapus jejak sebelum diperiksa.",
+          "C": "Bukti didokumentasikan, informasi dibawa ke pimpinan dan aparat lewat jalur resmi, dan proses administrasi tetap sesuai prosedur.",
+          "D": "Melapor dengan tepat, tetapi mengusulkan penundaan sebelum ada penilaian aparat berarti mendahului kewenangan pihak yang berwenang.",
+          "E": "Melempar tanggung jawab, padahal Anda yang menemukan informasi itu dan instansi Anda memang menangani kewaspadaan nasional."
         },
         "konsep": "**Pola penanganan tanda radikalisme di tempat kerja:** dokumentasikan → laporkan lewat jalur resmi → koordinasikan dengan aparat berwenang → jalankan tugas sesuai prosedur. Hindari menyebarkan sendiri, mengabaikan, atau bertindak di luar kewenangan."
       },
@@ -3292,11 +3292,11 @@
       "pembahasan": {
         "inti": "Ajaran yang membenarkan pengafiran dan permusuhan terhadap orang yang berbeda pandangan dapat menjadi pintu masuk radikalisme. Penyebarannya di grup kantor perlu dihentikan. Rekan yang membagikan juga perlu diajak berdialog, karena ia mungkin sedang terpapar, dan penanganan lanjutannya diserahkan kepada atasan melalui pembinaan, bukan dengan mempermalukannya di depan umum.",
         "opsi": {
-          "A": "Bobot 5. Penyebaran dihentikan, rekan didekati secara pribadi, dan atasan dilibatkan untuk pembinaan. Pencegahan dan pendekatan manusiawi berjalan bersama.",
-          "B": "Bobot 4. Menghentikan penyebaran dengan cepat, tetapi rekan yang mungkin terpapar tidak didekati dan atasan tidak dilibatkan.",
-          "C": "Bobot 2. Melindungi diri sendiri, tetapi membiarkan anggota grup lain terpapar dan rekan itu tidak mendapat pembinaan.",
-          "D": "Bobot 3. Melapor itu tepat, tetapi pasif. Berkas tetap beredar di grup sampai atasan bertindak, dan rekan tidak diajak berdialog.",
-          "E": "Bobot 1. Mempermalukan rekan di depan umum bisa membuatnya makin defensif dan memicu perdebatan yang memperkeruh suasana kantor."
+          "A": "Penyebaran dihentikan, rekan didekati secara pribadi, dan atasan dilibatkan untuk pembinaan. Pencegahan dan pendekatan manusiawi berjalan bersama.",
+          "B": "Menghentikan penyebaran dengan cepat, tetapi rekan yang mungkin terpapar tidak didekati dan atasan tidak dilibatkan.",
+          "C": "Melindungi diri sendiri, tetapi membiarkan anggota grup lain terpapar dan rekan itu tidak mendapat pembinaan.",
+          "D": "Melapor itu tepat, tetapi pasif. Berkas tetap beredar di grup sampai atasan bertindak, dan rekan tidak diajak berdialog.",
+          "E": "Mempermalukan rekan di depan umum bisa membuatnya makin defensif dan memicu perdebatan yang memperkeruh suasana kantor."
         },
         "konsep": "**Menangani konten radikal dari rekan:** hentikan penyebaran → dekati rekan secara pribadi → libatkan atasan untuk pembinaan. Pendekatan yang mempermalukan sering justru mendorong orang makin dalam ke kelompok tertutup."
       },
@@ -3327,11 +3327,11 @@
       "pembahasan": {
         "inti": "Memandang orang berbeda agama sebagai najis dan menolak bergaul dengannya adalah sikap intoleran yang bisa berkembang menjadi radikalisme, terutama pada remaja yang aktif mengikuti kajian daring tertentu. Pembimbing perlu mendekati Rafi dengan dialog, karena ia masih belajar, sambil menanamkan nilai saling menghormati dan melibatkan sekolah agar pembinaannya berlanjut.",
         "opsi": {
-          "A": "Bobot 2. Menghindari gesekan dengan mengikuti sikap intoleran Rafi. Pandangannya justru makin kuat karena seolah dibenarkan.",
-          "B": "Bobot 5. Dialog yang menggali sumber pandangan, penanaman nilai saling menghormati, dan koordinasi dengan sekolah untuk pembinaan berkelanjutan.",
-          "C": "Bobot 4. Dialog dan arahan sudah tepat, tetapi sumber pandangannya tidak digali dan sekolah tidak dilibatkan.",
-          "D": "Bobot 3. Melibatkan sekolah itu tepat, tetapi Anda sebagai pembimbing di tempat magang tidak berdialog langsung dengan Rafi.",
-          "E": "Bobot 1. Mempermalukan remaja di depan umum dapat membuatnya merasa dimusuhi dan makin dekat dengan kelompok yang menanamkan pandangan itu."
+          "A": "Menghindari gesekan dengan mengikuti sikap intoleran Rafi. Pandangannya justru makin kuat karena seolah dibenarkan.",
+          "B": "Dialog yang menggali sumber pandangan, penanaman nilai saling menghormati, dan koordinasi dengan sekolah untuk pembinaan berkelanjutan.",
+          "C": "Dialog dan arahan sudah tepat, tetapi sumber pandangannya tidak digali dan sekolah tidak dilibatkan.",
+          "D": "Melibatkan sekolah itu tepat, tetapi Anda sebagai pembimbing di tempat magang tidak berdialog langsung dengan Rafi.",
+          "E": "Mempermalukan remaja di depan umum dapat membuatnya merasa dimusuhi dan makin dekat dengan kelompok yang menanamkan pandangan itu."
         },
         "konsep": "**Pencegahan radikalisme pada remaja:** dekati dengan dialog, pahami sumber pandangannya (termasuk kajian daring), tanamkan nilai saling menghormati, dan libatkan pihak yang membinanya (sekolah, keluarga)."
       },
@@ -3362,11 +3362,11 @@
       "pembahasan": {
         "inti": "Narasi bahwa negara tidak sah dan bekerja untuk negara itu haram adalah salah satu pola rekrutmen kelompok radikal. Rekan yang mulai ragu perlu didampingi: didengarkan, diberi penjelasan yang benar, dan dihubungkan dengan rujukan keagamaan yang moderat dan tepercaya. Akun penyebar ajakan juga perlu dilaporkan agar tidak menjangkau orang lain.",
         "opsi": {
-          "A": "Bobot 3. Arah sarannya benar, tetapi keraguan rekan tidak dijawab. Keraguan yang dibiarkan mudah diisi oleh pihak yang mengajaknya.",
-          "B": "Bobot 4. Memberi penjelasan yang benar dan memutus kontak, tetapi tanpa mendengarkan keraguannya, tanpa rujukan keagamaan yang moderat, dan tanpa melaporkan akun.",
-          "C": "Bobot 2. Menghindar dari tanggung jawab moral, padahal rekan sedang menjadi sasaran ajakan yang berbahaya.",
-          "D": "Bobot 1. Membalas dengan kasar tidak menyelesaikan masalah, bisa memancing konflik, dan memberi bahan bagi kelompok itu untuk memojokkan ASN.",
-          "E": "Bobot 5. Rekan didengarkan, diberi penjelasan dan rujukan yang tepercaya, dan sumber ajakan dilaporkan. Pendampingan dan pencegahan berjalan bersama."
+          "A": "Arah sarannya benar, tetapi keraguan rekan tidak dijawab. Keraguan yang dibiarkan mudah diisi oleh pihak yang mengajaknya.",
+          "B": "Memberi penjelasan yang benar dan memutus kontak, tetapi tanpa mendengarkan keraguannya, tanpa rujukan keagamaan yang moderat, dan tanpa melaporkan akun.",
+          "C": "Menghindar dari tanggung jawab moral, padahal rekan sedang menjadi sasaran ajakan yang berbahaya.",
+          "D": "Membalas dengan kasar tidak menyelesaikan masalah, bisa memancing konflik, dan memberi bahan bagi kelompok itu untuk memojokkan ASN.",
+          "E": "Rekan didengarkan, diberi penjelasan dan rujukan yang tepercaya, dan sumber ajakan dilaporkan. Pendampingan dan pencegahan berjalan bersama."
         },
         "konsep": "**Menghadapi ajakan radikal yang menyasar rekan:** dengarkan → luruskan dengan penjelasan yang benar → hubungkan dengan rujukan moderat → laporkan sumber ajakan. Mengabaikan dan membalas dengan kasar sama-sama tidak efektif."
       },
@@ -3397,11 +3397,11 @@
       "pembahasan": {
         "inti": "Informasi warga tentang aktivitas yang mencurigakan perlu ditanggapi serius dan diteruskan kepada aparat yang berwenang, tanpa menuduh siapa pun lebih dulu. Ada dua risiko yang harus dicegah bersamaan: ancaman nyata yang terlambat ditangani, dan warga yang main hakim sendiri, yang bisa membahayakan warga sendiri maupun orang yang belum tentu bersalah.",
         "opsi": {
-          "A": "Bobot 2. Menunda pelaporan padahal tanda-tandanya cukup untuk diperiksa aparat. Jika memang ada ancaman, penundaan bisa berakibat fatal.",
-          "B": "Bobot 1. Penggerebekan oleh warga adalah main hakim sendiri. Selain melanggar hukum, tindakan ini berbahaya jika bahan kimia itu memang bahan peledak, dan merugikan penghuni jika ternyata tidak bersalah.",
-          "C": "Bobot 3. Pendataan sesuai aturan itu berguna, tetapi lambat dan tidak menjawab dua risiko utama: ancaman yang mungkin nyata dan rencana penggerebekan.",
-          "D": "Bobot 5. Rencana main hakim sendiri dicegah, keterangan dicatat, dan informasi segera disampaikan kepada lurah dan aparat keamanan di tingkat kelurahan.",
-          "E": "Bobot 4. Pelaporannya cepat dan tepat, tetapi rencana penggerebekan oleh warga belum dicegah."
+          "A": "Menunda pelaporan padahal tanda-tandanya cukup untuk diperiksa aparat. Jika memang ada ancaman, penundaan bisa berakibat fatal.",
+          "B": "Penggerebekan oleh warga adalah main hakim sendiri. Selain melanggar hukum, tindakan ini berbahaya jika bahan kimia itu memang bahan peledak, dan merugikan penghuni jika ternyata tidak bersalah.",
+          "C": "Pendataan sesuai aturan itu berguna, tetapi lambat dan tidak menjawab dua risiko utama: ancaman yang mungkin nyata dan rencana penggerebekan.",
+          "D": "Rencana main hakim sendiri dicegah, keterangan dicatat, dan informasi segera disampaikan kepada lurah dan aparat keamanan di tingkat kelurahan.",
+          "E": "Pelaporannya cepat dan tepat, tetapi rencana penggerebekan oleh warga belum dicegah."
         },
         "konsep": "**Laporan aktivitas mencurigakan:** cegah tindakan sepihak warga → catat informasi → laporkan segera kepada aparat berwenang (Bhabinkamtibmas, polisi) → jangan menuduh atau menyebarkan identitas sebelum ada pemeriksaan."
       },
@@ -3432,11 +3432,11 @@
       "pembahasan": {
         "inti": "Menanamkan kebencian terhadap pemeluk agama lain sejak usia dini adalah benih intoleransi dan radikalisme. Orang tua yang menyadarinya perlu mengingatkan dengan santun agar penyebaran berhenti, dan melibatkan sekolah sebagai pihak yang berwenang membina lingkungan belajar anak. Caranya harus meredakan, bukan memperuncing perselisihan antarorang tua.",
         "opsi": {
-          "A": "Bobot 3. Anak Anda terlindungi, tetapi anak-anak lain tetap terpapar dan orang tua lain mengira isi itu wajar karena tidak ada yang mengingatkan.",
-          "B": "Bobot 4. Mengingatkan dengan santun dan menghentikan penyebaran, tetapi sekolah tidak dilibatkan untuk memastikan materi semacam itu tidak masuk ke kelas.",
-          "C": "Bobot 5. Teguran santun menghentikan penyebaran, dan sekolah dilibatkan untuk menindaklanjuti. Pencegahan berjalan di grup dan di lingkungan belajar anak.",
-          "D": "Bobot 1. Membuka nama orang di media sosial memicu perundungan dan konflik terbuka, tanpa menyelesaikan masalah di lingkungan sekolah.",
-          "E": "Bobot 2. Menghindar. Anak Anda mungkin aman dari grup, tetapi masalahnya tetap ada di kelas yang sama."
+          "A": "Anak Anda terlindungi, tetapi anak-anak lain tetap terpapar dan orang tua lain mengira isi itu wajar karena tidak ada yang mengingatkan.",
+          "B": "Mengingatkan dengan santun dan menghentikan penyebaran, tetapi sekolah tidak dilibatkan untuk memastikan materi semacam itu tidak masuk ke kelas.",
+          "C": "Teguran santun menghentikan penyebaran, dan sekolah dilibatkan untuk menindaklanjuti. Pencegahan berjalan di grup dan di lingkungan belajar anak.",
+          "D": "Membuka nama orang di media sosial memicu perundungan dan konflik terbuka, tanpa menyelesaikan masalah di lingkungan sekolah.",
+          "E": "Menghindar. Anak Anda mungkin aman dari grup, tetapi masalahnya tetap ada di kelas yang sama."
         },
         "konsep": "**Mencegah intoleransi pada anak:** hentikan penyebaran materi kebencian dengan cara santun dan libatkan sekolah sebagai pembina. Hindari diam, menghindar, maupun mempermalukan pihak lain di ruang publik."
       },
@@ -3467,11 +3467,11 @@
       "pembahasan": {
         "inti": "Penegakan peraturan adalah kewenangan aparat negara, bukan kelompok masyarakat, walaupun tujuannya terdengar baik. Membiarkan kelompok mana pun menertibkan warga lain atas nama keyakinan membuka jalan bagi kekerasan dan intoleransi. Aparat harus melindungi warga yang taat aturan, mencegah tindakan sepihak, dan tetap memastikan aturan yang berlaku dijalankan oleh semua pihak.",
         "opsi": {
-          "A": "Bobot 5. Pencegahan lewat jalur resmi, kewenangan dijelaskan kepada ormas secara dialogis, dan aturan perda tetap ditegakkan kepada pemilik warung. Adil bagi semua pihak.",
-          "B": "Bobot 4. Melindungi warga dengan tepat, tetapi tanpa dialog dengan ormas dan tanpa memastikan warung mematuhi ketentuan penutup.",
-          "C": "Bobot 3. Menegakkan perda, tetapi mengabaikan ancaman tindakan sepihak terhadap warga yang meminta perlindungan.",
-          "D": "Bobot 2. Menghindari konflik dengan membatasi hak usaha yang sah. Warga yang taat aturan justru menanggung kerugian.",
-          "E": "Bobot 1. Menyerahkan kewenangan penertiban kepada ormas membenarkan main hakim sendiri dan berisiko memicu kekerasan."
+          "A": "Pencegahan lewat jalur resmi, kewenangan dijelaskan kepada ormas secara dialogis, dan aturan perda tetap ditegakkan kepada pemilik warung. Adil bagi semua pihak.",
+          "B": "Melindungi warga dengan tepat, tetapi tanpa dialog dengan ormas dan tanpa memastikan warung mematuhi ketentuan penutup.",
+          "C": "Menegakkan perda, tetapi mengabaikan ancaman tindakan sepihak terhadap warga yang meminta perlindungan.",
+          "D": "Menghindari konflik dengan membatasi hak usaha yang sah. Warga yang taat aturan justru menanggung kerugian.",
+          "E": "Menyerahkan kewenangan penertiban kepada ormas membenarkan main hakim sendiri dan berisiko memicu kekerasan."
         },
         "konsep": "**Negara hukum dan kerukunan:** penertiban hanya oleh aparat berwenang dan sesuai aturan; warga yang taat aturan dilindungi; kelompok yang ingin bertindak sendiri diajak dialog dan dicegah. Menghormati keyakinan tidak boleh diwujudkan dengan memaksa warga lain."
       },
