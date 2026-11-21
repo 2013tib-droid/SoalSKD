@@ -1907,6 +1907,1596 @@
         "konsep": "**Gerak relatif:** jika dua hal bergerak searah, jaraknya dijumlahkan; waktu = banyak langkah sendiri : kecepatan sendiri. Bentuk umum: N = s₁ + k·s₁/c₁ = s₂ + k·s₂/c₂."
       },
       "tips": "Buat dua persamaan untuk dua keadaan dengan N yang sama, lalu cari perbandingan kecepatan k. Setelah mendapat N, cek pada kedua keadaan."
+    },
+    {
+      "id": "p07-066",
+      "nomor": 66,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Melayani warga yang tidak bisa membaca saat mengisi formulir pernyataan",
+      "tingkat": "mudah",
+      "pertanyaan": "Mbah Sarinah (72 tahun) datang sendirian ke kantor kelurahan untuk mengurus surat keterangan tidak mampu. Ia tidak bisa membaca, padahal formulirnya memuat pernyataan yang harus ia setujui dan tandatangani. Antrean di belakangnya cukup panjang. Sebagai petugas loket, tindakan Anda adalah ....",
+      "opsi": {
+        "A": "Membacakan isi formulir dan pernyataannya pelan-pelan sampai Mbah Sarinah paham, lalu mengisinya sesuai jawabannya untuk dibubuhi cap jempol",
+        "B": "Mengisi formulir berdasarkan data di KTP dan KK yang ia bawa, lalu langsung meminta cap jempolnya agar antrean tidak terhambat lama",
+        "C": "Memintanya duduk menunggu sampai antrean sepi, kemudian membantunya mengisi formulir, menjelaskan isinya, dan meminta cap jempolnya dengan leluasa",
+        "D": "Menyarankan Mbah Sarinah pulang dulu dan kembali bersama keluarga yang bisa membaca",
+        "E": "Meminta warga lain di ruang tunggu yang bisa membaca untuk membantu mengisikan formulir Mbah Sarinah sementara Anda melayani antrean"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 3,
+        "C": 4,
+        "D": 2,
+        "E": 1
+      },
+      "pembahasan": {
+        "inti": "Pelayanan publik wajib memberi **kemudahan bagi warga yang memiliki keterbatasan**, termasuk yang tidak bisa membaca. Formulir ini memuat pernyataan, sehingga yang terpenting bukan hanya formulir terisi, tetapi **Mbah Sarinah memahami apa yang ia setujui**. Membacakan isi formulir hanya memakan beberapa menit dan tidak merugikan antrean secara berarti. Cap jempol adalah pengganti tanda tangan yang lazim bagi warga yang tidak dapat menulis. Respons terbaik menuntaskan layanan saat itu juga, menjaga hak warga atas informasi, dan tetap menjaga data pribadinya.",
+        "opsi": {
+          "A": "Tuntas di tempat, menjamin pemahaman atas pernyataan yang ditandatangani, dan data pribadi tetap ditangani petugas.",
+          "B": "Cepat dan datanya kemungkinan benar, tetapi Mbah Sarinah menandatangani pernyataan tanpa tahu isinya. Kurang menghormati haknya atas informasi.",
+          "C": "Layanan lengkap dan penuh perhatian, tetapi warga lansia yang datang sendiri harus menunggu lebih lama padahal bantuan bisa diberikan saat itu juga.",
+          "D": "Menghindari tugas dan membebani lansia dengan kedatangan berulang. Keterbatasan membaca bukan alasan menunda layanan.",
+          "E": "Melempar tanggung jawab kepada orang asing dan membuka data pribadi serta kondisi ekonomi Mbah Sarinah kepada warga lain."
+        },
+        "konsep": "**Layanan bagi kelompok rentan (UU 25/2009):** penyelenggara wajib memberikan perlakuan khusus kepada lansia, penyandang disabilitas, dan kelompok rentan. Perlakuan khusus berarti menyesuaikan cara melayani, bukan menunda atau mengalihkan layanan."
+      },
+      "tips": "Jika warga harus menyetujui sesuatu, opsi terbaik memastikan **warga paham isinya**. Opsi yang cepat tetapi membuat warga menandatangani tanpa mengerti bernilai sedang, dan opsi yang membuka data pribadi kepada orang lain bernilai terendah.",
+      "rujukan": [
+        "UU 25/2009 tentang Pelayanan Publik"
+      ]
+    },
+    {
+      "id": "p07-067",
+      "nomor": 67,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Perekaman KTP-el bagi penghuni panti werdha yang sulit datang ke kantor",
+      "tingkat": "mudah",
+      "pertanyaan": "Anda petugas Dinas Kependudukan dan Pencatatan Sipil. Pengurus sebuah panti werdha melapor bahwa 15 penghuninya belum merekam KTP-el, dan sebagian besar tidak kuat bepergian jauh. Tanggapan Anda adalah ....",
+      "opsi": {
+        "A": "Meminta pengurus panti menunggu program perekaman massal berikutnya dari pemerintah pusat, karena biasanya program itu menjangkau panti",
+        "B": "Menyiapkan antrean prioritas di kantor untuk para lansia itu dan meminta panti mengatur kendaraan serta pendamping untuk membawa mereka",
+        "C": "Mengusulkan kepada atasan layanan perekaman keliling ke panti werdha itu dengan menyiapkan data penghuni bersama pengurus panti",
+        "D": "Menyarankan pengurus membawa foto dan KTP lama para penghuni agar perekamannya bisa diwakilkan",
+        "E": "Menjelaskan syarat perekaman kepada pengurus panti agar mereka menyiapkan dokumen dan membawa penghuni ke kantor secara bergiliran"
+      },
+      "bobot": {
+        "A": 2,
+        "B": 4,
+        "C": 5,
+        "D": 1,
+        "E": 3
+      },
+      "pembahasan": {
+        "inti": "Pelayanan publik yang baik **mendekatkan layanan kepada warga yang sulit menjangkaunya**. Perekaman KTP-el memerlukan kehadiran langsung karena mengambil data biometrik (foto, sidik jari, iris mata), sehingga solusinya bukan mewakilkan, melainkan petugas yang datang. Layanan jemput bola seperti perekaman keliling lazim dipakai untuk lansia, penyandang disabilitas, dan warga di lokasi terpencil. Langkah terbaik melibatkan atasan (karena menyangkut jadwal dan peralatan) dan pengurus panti (karena mereka memegang data penghuni), sehingga 15 lansia terlayani tanpa harus bepergian.",
+        "opsi": {
+          "A": "Pasif dan tanpa kepastian. Lansia dibiarkan menunggu program yang belum tentu ada, padahal dinas bisa bertindak sendiri.",
+          "B": "Ada perhatian khusus berupa antrean prioritas, tetapi beban perjalanan tetap ditanggung lansia yang tidak kuat bepergian jauh.",
+          "C": "Proaktif, sesuai kebutuhan lansia, dan melibatkan pihak yang tepat: atasan untuk jadwal dan peralatan, pengurus panti untuk data penghuni.",
+          "D": "Melanggar ketentuan, karena perekaman data biometrik tidak dapat diwakilkan. Saran ini juga memberi harapan palsu.",
+          "E": "Sesuai prosedur dan informatif, tetapi menyerahkan seluruh kesulitan kepada panti tanpa menyesuaikan cara layanan."
+        },
+        "konsep": "**Pelayanan jemput bola:** ketika warga tidak mampu datang karena usia, sakit, atau disabilitas, penyelenggara menyesuaikan cara melayani. Nilai tertinggi diberikan kepada respons yang proaktif, sesuai aturan, dan mengajak pihak yang berwenang."
+      },
+      "tips": "Dalam soal layanan kelompok rentan, bandingkan **siapa yang menanggung beban**. Opsi yang memindahkan beban dari warga rentan ke penyelenggara biasanya bernilai tertinggi.",
+      "rujukan": [
+        "UU 25/2009 tentang Pelayanan Publik"
+      ]
+    },
+    {
+      "id": "p07-068",
+      "nomor": 68,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Calon pengantin meminta berkas nikah diproses walau surat pengantar belum ada",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda staf KUA kecamatan. Sepasang calon pengantin datang untuk pemeriksaan berkas, lalu baru menyadari surat pengantar dari kelurahan belum dibawa. Undangan sudah tersebar. Mereka meminta berkas tetap diproses dan surat itu menyusul. Kantor kelurahan masih buka sampai pukul 15.00, dan sekarang pukul 10.00. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menerima dan mencatat dokumen lain yang sudah lengkap, lalu meminta mereka segera mengurus surat pengantar sebelum pemeriksaan berkas dilanjutkan",
+        "B": "Menjelaskan dokumen yang kurang, menyarankan mengurusnya ke kelurahan hari ini, dan menyiapkan pemeriksaan begitu surat itu datang",
+        "C": "Menjelaskan bahwa berkas yang belum lengkap tidak dapat diproses dan mempersilakan mereka datang kembali di lain hari setelah semuanya lengkap",
+        "D": "Memproses berkas dan mencatat bahwa surat pengantar menyusul sesudah akad, karena undangan sudah tersebar dan acara tidak mungkin ditunda",
+        "E": "Menyarankan calon pengantin memundurkan tanggal akad nikah agar pengurusan berkas tidak terburu-buru dan tidak ada yang terlewat"
+      },
+      "bobot": {
+        "A": 4,
+        "B": 5,
+        "C": 3,
+        "D": 1,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Kelengkapan berkas nikah adalah syarat yang tidak boleh dilonggarkan, karena menyangkut keabsahan data pernikahan. Namun petugas tetap bisa **membantu warga memenuhi syarat secepat mungkin**. Kendala di soal ini sebenarnya bisa diselesaikan hari itu: kelurahan masih buka lima jam lagi. Respons terbaik memegang aturan sambil memberi jalan keluar yang konkret: jelaskan yang kurang, arahkan ke tempat mengurusnya, dan siapkan pemeriksaan agar begitu surat datang, layanan langsung berlanjut. Dengan cara ini rencana akad tetap aman tanpa ada aturan yang dilanggar.",
+        "opsi": {
+          "A": "Aturan dijaga dan ada langkah awal yang membantu, tetapi tidak ada arahan bahwa surat bisa diurus hari ini dan tidak ada kepastian kapan pemeriksaan dilanjutkan.",
+          "B": "Tegas pada syarat, solutif, dan memanfaatkan waktu yang tersedia hari itu. Warga tahu persis apa yang harus dilakukan dan kapan dilayani.",
+          "C": "Sesuai aturan, tetapi kaku. Warga dibiarkan mencari jalan sendiri padahal masalahnya bisa diselesaikan hari itu juga.",
+          "D": "Melonggarkan syarat yang bersifat wajib dan mengambil risiko atas keabsahan data pernikahan. Tekanan acara tidak membenarkan pelanggaran prosedur.",
+          "E": "Menghindari masalah dengan memindahkan beban ke warga. Saran memundurkan akad tidak perlu karena kekurangannya bisa dilengkapi hari itu."
+        },
+        "konsep": "**Pola “syarat kurang, waktu mendesak”:** aturan tetap ditegakkan, tetapi petugas aktif membantu warga melengkapi syarat secepat mungkin. Nilai tertinggi untuk respons yang tegas dan sekaligus memberi jalan keluar konkret."
+      },
+      "tips": "Cari detail waktu atau tempat dalam soal (misalnya “kantor masih buka sampai pukul 15.00”). Detail itu biasanya petunjuk bahwa ada solusi sah yang bisa dilakukan hari itu juga."
+    },
+    {
+      "id": "p07-069",
+      "nomor": 69,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Pemohon izin berulang kali menelepon menanyakan status permohonan",
+      "tingkat": "sedang",
+      "pertanyaan": "Pak Darman sudah empat kali menelepon unit perizinan minggu ini untuk menanyakan izin usahanya yang masih menunggu verifikasi lapangan. Rekan-rekan mulai kesal. Anda juga memperhatikan bahwa banyak pemohon lain sering menelepon untuk pertanyaan serupa. Saat Pak Darman menelepon lagi, tindakan Anda adalah ....",
+      "opsi": {
+        "A": "Menjelaskan bahwa permohonannya masih diproses sesuai SOP dan memintanya menunggu kabar dari kantor tanpa perlu menelepon berulang kali",
+        "B": "Menjanjikan verifikasinya dipercepat besok agar ia tenang, walau jadwal itu ditentukan tim lapangan",
+        "C": "Menjelaskan tahap permohonannya serta perkiraan jadwal verifikasi, lalu berjanji menghubunginya sendiri begitu ada perkembangan",
+        "D": "Meminta rekan lain menerima telepon dari Pak Darman berikutnya, karena Anda sudah beberapa kali menjelaskan hal yang sama kepadanya",
+        "E": "Menjelaskan tahap dan perkiraan jadwalnya kepada Pak Darman, lalu mengusulkan kepada atasan pemberitahuan status otomatis untuk semua pemohon"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 1,
+        "C": 4,
+        "D": 2,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Telepon berulang biasanya tanda bahwa **warga kekurangan informasi**, bukan tanda warga menyulitkan. Pak Darman perlu tahu posisi permohonannya dan perkiraan waktunya. Namun soal ini juga memberi petunjuk penting: banyak pemohon lain melakukan hal yang sama. Artinya masalahnya ada pada sistem informasi layanan, bukan pada satu orang. Respons terbaik menjawab kebutuhan Pak Darman sekarang dan **mengusulkan perbaikan bagi semua pemohon**, misalnya notifikasi status lewat pesan singkat atau laman pelacakan, melalui atasan yang berwenang memutuskan.",
+        "opsi": {
+          "A": "Sopan dan sesuai prosedur, tetapi informasinya umum dan tidak menjawab kecemasan warga. Telepon berikutnya kemungkinan tetap datang.",
+          "B": "Janji yang bukan wewenang Anda menyesatkan warga dan bisa merugikan pemohon lain yang antre lebih dulu.",
+          "C": "Informatif dan personal, sehingga Pak Darman kemungkinan berhenti menelepon. Namun akar masalah yang dialami banyak pemohon tidak tersentuh.",
+          "D": "Menghindar dengan melempar warga kepada rekan. Masalahnya tidak selesai, hanya berpindah meja.",
+          "E": "Menjawab kebutuhan warga saat itu dan memperbaiki sistem untuk semua pemohon melalui pihak yang berwenang."
+        },
+        "konsep": "**Masalah berulang = sinyal perbaikan sistem.** Jika soal menyebut banyak warga mengalami hal serupa, nilai tertinggi biasanya untuk opsi yang menyelesaikan kasus individu sekaligus mengusulkan perbaikan layanan bagi semua."
+      },
+      "tips": "Perhatikan kalimat seperti “banyak pemohon lain juga …”. Kalimat itu membedakan opsi bernilai 5 (perbaiki sistem) dari opsi bernilai 4 (tuntas untuk satu orang saja)."
+    },
+    {
+      "id": "p07-070",
+      "nomor": 70,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Warga menerima dua SPPT PBB untuk bidang tanah yang sama",
+      "tingkat": "sedang",
+      "pertanyaan": "Bu Lina datang ke loket Badan Pendapatan Daerah membawa dua lembar SPPT PBB untuk bidang tanah yang sama: satu atas namanya, satu lagi atas nama pemilik lama. Petugas desa memintanya membayar keduanya. Ia kesal karena merasa ditagih dua kali. Sebagai petugas loket, Anda ....",
+      "opsi": {
+        "A": "menerima pembayaran SPPT atas nama Bu Lina, lalu menyarankan ia menanyakan SPPT satunya ke kantor desa yang membagikannya",
+        "B": "menyarankan ia membayar keduanya terlebih dahulu agar tidak terkena denda, karena pembetulan data biasanya memerlukan waktu lama",
+        "C": "memeriksa data objek pajak, memastikan ia hanya membayar SPPT yang sah, lalu meminta ia sendiri mengajukan pembetulan ke bagian pendataan dan menunggu hasilnya",
+        "D": "membantunya mengajukan pembetulan SPPT ganda sesuai prosedur setelah memeriksa data, serta melaporkan kasus itu untuk perbaikan basis data",
+        "E": "menawarkan bantuan mengurus penghapusan SPPT ganda dalam sehari dengan imbalan biaya tambahan yang dibayarkan langsung kepada Anda"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 2,
+        "C": 4,
+        "D": 5,
+        "E": 1
+      },
+      "pembahasan": {
+        "inti": "SPPT ganda untuk satu objek pajak adalah **kesalahan data**, dan wajib pajak tidak boleh menanggung akibatnya dengan membayar dua kali. Petugas loket perlu **memastikan dulu dari data** mana SPPT yang sah, lalu menyelesaikan masalahnya melalui prosedur pembetulan yang berlaku. Respons terbaik tidak berhenti pada Bu Lina. Kasus SPPT ganda biasanya muncul karena balik nama yang belum diperbarui di basis data, sehingga mencatat dan melaporkannya mencegah warga lain mengalami hal serupa.",
+        "opsi": {
+          "A": "Sebagian masalah terselesaikan, tetapi warga diarahkan kembali ke desa yang justru memberi informasi keliru. Kesalahan data tetap ada.",
+          "B": "Merugikan warga dengan membayar pajak yang tidak terutang, demi menghindari repot. Petugas tidak memeriksa data sama sekali.",
+          "C": "Memeriksa data dan melindungi warga dari pembayaran ganda, tetapi pembetulan diserahkan kepada warga sendiri dan akar masalah data tidak dicatat.",
+          "D": "Melindungi hak warga, menuntaskan pembetulan sesuai prosedur, dan memperbaiki data agar kasus serupa tidak berulang.",
+          "E": "Pungutan di luar ketentuan untuk kepentingan pribadi adalah pungutan liar dan termasuk pelanggaran berat."
+        },
+        "konsep": "**Pola kesalahan administrasi:** (1) periksa data, (2) lindungi warga dari kerugian, (3) selesaikan lewat prosedur resmi, (4) perbaiki sumber kesalahannya. Semakin lengkap keempatnya, semakin tinggi nilainya."
+      },
+      "tips": "Jika masalah berasal dari kesalahan data instansi, opsi terbaik tidak membebani warga dan ikut memperbaiki datanya. Opsi “bayar dulu, urus nanti” merugikan warga."
+    },
+    {
+      "id": "p07-071",
+      "nomor": 71,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Gerai instansi lain di Mal Pelayanan Publik tutup sebelum jam layanan berakhir",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda bertugas di gerai Disdukcapil pada Mal Pelayanan Publik (MPP). Pukul 14.30, gerai Samsat di sebelah Anda sudah tutup, padahal jam layanan MPP sampai pukul 15.00. Beberapa warga kebingungan dan bertanya kepada Anda. Tindakan Anda adalah ....",
+      "opsi": {
+        "A": "Segera melaporkan penutupan itu kepada pengelola MPP, meminta petugas Samsat dihubungi, lalu meminta warga menunggu dan bersabar sampai ada kabar",
+        "B": "Menyarankan warga kembali besok pagi saat gerai Samsat sudah dibuka, karena hari ini jam pelayanan gerai itu tampaknya sudah berakhir",
+        "C": "Memotret gerai yang kosong dan mengunggahnya ke media sosial sambil menyindir instansi tersebut",
+        "D": "Menjelaskan kepada warga bahwa Anda bukan petugas Samsat, sehingga tidak bisa memberikan informasi apa pun tentang layanan itu",
+        "E": "Memberi informasi yang Anda ketahui tentang layanan Samsat dan mencatat kontak warga, lalu melaporkan penutupan dini itu kepada pengelola MPP"
+      },
+      "bobot": {
+        "A": 4,
+        "B": 3,
+        "C": 1,
+        "D": 2,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Di Mal Pelayanan Publik, warga memandang semua gerai sebagai satu wajah pelayanan pemerintah. Walaupun gerai itu bukan tanggung jawab Anda, Anda tetap bisa **membantu sebatas yang Anda ketahui** dan **meneruskan masalah kepada pihak yang berwenang**, yaitu pengelola MPP. Mencatat kontak warga memungkinkan mereka dihubungi bila layanan dibuka kembali. Laporan kepada pengelola penting agar penutupan sebelum waktunya tidak berulang. Respons terbaik menggabungkan pertolongan langsung bagi warga dan penyelesaian lewat jalur resmi.",
+        "opsi": {
+          "A": "Melibatkan pihak yang berwenang dengan cepat, tetapi warga hanya diminta menunggu tanpa kepastian dan tanpa informasi yang sebenarnya bisa Anda berikan.",
+          "B": "Informasi yang aman, tetapi pasif. Penutupan dini dianggap wajar dan tidak dilaporkan.",
+          "C": "Mempermalukan instansi lain di ruang publik. Kritik semacam ini merusak hubungan antarinstansi tanpa menyelesaikan masalah warga.",
+          "D": "Menolak membantu dengan alasan batas tugas. Warga makin bingung, dan citra MPP secara keseluruhan ikut rusak.",
+          "E": "Membantu warga sebatas kemampuan, menjaga tindak lanjut, dan meneruskan masalah kepada pengelola yang berwenang."
+        },
+        "konsep": "**Layanan terpadu:** di tempat layanan bersama, setiap petugas ikut menjaga pengalaman warga secara keseluruhan. Bantu sebatas kewenangan, lalu teruskan kepada pihak yang berwenang. Jangan menolak mentah-mentah dan jangan mengkritik di ruang publik."
+      },
+      "tips": "Ketika masalah ada di luar tugas Anda, nilai tertinggi biasanya untuk opsi yang **membantu warga sekarang** dan **melapor kepada pihak berwenang**, bukan salah satunya saja."
+    },
+    {
+      "id": "p07-072",
+      "nomor": 72,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Peserta JKN meminta rujukan langsung ke rumah sakit pilihannya tanpa indikasi medis",
+      "tingkat": "sulit",
+      "pertanyaan": "Anda dokter di puskesmas. Pak Herman, peserta JKN, meminta surat rujukan langsung ke rumah sakit besar di ibu kota provinsi karena menurutnya dokter di sana lebih bagus. Berdasarkan pemeriksaan, kondisinya dapat ditangani rumah sakit umum daerah di kabupaten. Ia mengancam akan melapor kepada bupati jika permintaannya ditolak. Anda memutuskan untuk ....",
+      "opsi": {
+        "A": "Menolak permintaannya dengan menunjukkan ketentuan rujukan berjenjang yang berlaku, lalu memanggil pasien berikutnya agar antrean tidak tertahan",
+        "B": "Merujuk ke rumah sakit provinsi sesuai permintaannya dengan menuliskan diagnosis yang lebih berat",
+        "C": "Merujuk ke RSUD kabupaten sesuai kebutuhan medisnya, menuliskan alasannya di surat rujukan, dan mempersilakannya menyampaikan keberatan lewat kanal pengaduan resmi",
+        "D": "Menjelaskan hasil pemeriksaan dan alasan medisnya kepada Pak Herman sebelum merujuk ke RSUD kabupaten, yang dapat merujuk lanjut bila diperlukan",
+        "E": "Menyarankan Pak Herman berobat langsung ke rumah sakit provinsi sebagai pasien umum dengan biaya sendiri, sehingga tidak memerlukan rujukan"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 1,
+        "C": 4,
+        "D": 5,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Rujukan dalam JKN diberikan **berdasarkan kebutuhan medis** dan mengikuti jenjang layanan, bukan berdasarkan keinginan pasien. Ancaman melapor tidak boleh mengubah keputusan medis. Namun, keputusan yang benar tetap perlu **dijelaskan dengan baik**. Pasien yang memahami hasil pemeriksaannya dan tahu bahwa rumah sakit kabupaten dapat merujuknya lagi bila perlu akan lebih mudah menerima keputusan itu. Soal ini sulit karena opsi 4 dan 5 sama-sama benar secara aturan. Pembedanya adalah apakah pasien **diyakinkan dengan penjelasan** atau hanya diarahkan untuk mengadu.",
+        "opsi": {
+          "A": "Aturan dipegang, tetapi pasien diperlakukan secara kaku. Menunjukkan aturan tanpa menjelaskan kondisi medisnya membuat keberatannya tidak terjawab.",
+          "B": "Memalsukan diagnosis adalah pelanggaran berat: merugikan keuangan JKN dan melanggar etika profesi, demi menghindari ancaman.",
+          "C": "Keputusan medisnya tepat dan hak pasien untuk mengadu dihormati, tetapi alasannya hanya tertulis di surat rujukan. Pasien belum diajak memahami hasil pemeriksaannya, sehingga keberatannya belum terjawab.",
+          "D": "Tegas pada kebutuhan medis, menjelaskan alasannya, dan menunjukkan jalur lanjutan yang sah. Pasien terlayani dengan benar dan dihormati.",
+          "E": "Informasinya tidak salah, tetapi menghindari masalah dengan memindahkan beban biaya kepada pasien, padahal haknya sebagai peserta JKN bisa dipenuhi."
+        },
+        "konsep": "**Pola tekanan dari warga:** keputusan tetap berdasarkan aturan dan pertimbangan profesional, bukan ancaman. Pembeda nilai 5 dan 4 sering terletak pada **kualitas komunikasi**: menjelaskan alasan dan langkah lanjutan, bukan hanya memutuskan."
+      },
+      "tips": "Jika dua opsi sama-sama taat aturan, pilih yang **menjelaskan alasannya kepada warga** dan memberi jalan lanjutan yang sah. Opsi yang menyerah pada ancaman dengan memalsukan data selalu bernilai terendah."
+    },
+    {
+      "id": "p07-073",
+      "nomor": 73,
+      "kategori": "TKP",
+      "subtopik": "Pelayanan Publik",
+      "topik": "Rekan mengisi sendiri formulir survei kepuasan masyarakat agar indeks unit naik",
+      "tingkat": "sulit",
+      "pertanyaan": "Menjelang penilaian unit pelayanan, Anda melihat rekan Anda, Fitri, mengisi sendiri puluhan formulir survei kepuasan masyarakat dengan nilai tinggi. Alasannya, “warga malas mengisi, padahal layanan kita sudah bagus.” Indeks kepuasan unit Anda naik dan atasan tampak senang. Respons Anda yang paling tepat adalah ....",
+      "opsi": {
+        "A": "Menegur Fitri secara pribadi, memintanya tidak mengulangi, dan tidak mengungkit formulir yang sudah terlanjur masuk penghitungan indeks",
+        "B": "Mengingatkan Fitri, meminta atasan tidak memakai formulir isian sendiri itu, dan mengusulkan cara agar warga mudah mengisi survei di loket",
+        "C": "Ikut membantu mengisi beberapa formulir survei agar jumlah responden unit Anda memenuhi target minimal penilaian tahun ini",
+        "D": "Melaporkan kepada atasan bahwa sebagian data survei tidak berasal dari warga, menunjukkan formulir yang dimaksud, dan meminta data itu dikeluarkan dari penghitungan",
+        "E": "Membiarkannya karena hasilnya menguntungkan unit dan survei bukan tugas pokok Anda"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 5,
+        "C": 1,
+        "D": 4,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Survei kepuasan masyarakat berguna hanya jika **datanya berasal dari warga**. Data rekayasa membuat unit kehilangan gambaran nyata tentang kekurangannya dan menyesatkan pimpinan. Ini termasuk pelanggaran integritas dalam pelayanan, walaupun niatnya “membela unit”. Respons terbaik memiliki tiga unsur: **mengingatkan pelaku**, **memastikan data rekayasa tidak dipakai** melalui atasan yang berwenang, dan **memperbaiki penyebabnya**. Penyebabnya adalah warga enggan mengisi survei, sehingga perlu cara yang lebih mudah, misalnya kode QR di loket atau survei singkat tiga pertanyaan.",
+        "opsi": {
+          "A": "Ada keberanian menegur, tetapi data rekayasa tetap dipakai dalam penilaian. Masalah integritas dibiarkan setengah selesai.",
+          "B": "Lengkap: pelaku diingatkan, data diluruskan lewat atasan yang berwenang, dan akar masalah (warga enggan mengisi) diperbaiki.",
+          "C": "Ikut memalsukan data. Mengejar target tidak membenarkan rekayasa hasil survei.",
+          "D": "Jujur dan meluruskan data melalui atasan, tetapi tidak menyelesaikan penyebabnya, sehingga survei berikutnya bisa kembali kekurangan responden.",
+          "E": "Membiarkan pelanggaran yang diketahui dengan alasan menguntungkan dan bukan tugasnya. Ini sikap menghindar."
+        },
+        "konsep": "**Data layanan yang jujur adalah dasar perbaikan.** Pola bobot untuk pelanggaran oleh rekan: ikut melanggar (1) < membiarkan (2) < menegur tanpa meluruskan (3) < meluruskan tanpa perbaikan sistem (4) < meluruskan dan memperbaiki penyebab (5)."
+      },
+      "tips": "Untuk pelanggaran yang menguntungkan unit sendiri, jangan terkecoh oleh “atasan senang”. Opsi terbaik tetap meluruskan data dan menutup celah penyebabnya."
+    },
+    {
+      "id": "p07-074",
+      "nomor": 74,
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "topik": "Menjadi narahubung studi tiru dari pemerintah daerah lain pada minggu sibuk",
+      "tingkat": "mudah",
+      "pertanyaan": "Bagian Anda menjadi tuan rumah studi tiru dari pemerintah kabupaten lain tentang aplikasi pengaduan warga yang dikembangkan kantor Anda. Jadwalnya bertepatan dengan minggu penyusunan laporan triwulan, dan Anda ditunjuk sebagai narahubung. Pilihan Anda adalah ....",
+      "opsi": {
+        "A": "Menyiapkan kunjungan dengan baik, membagi tugas laporan triwulan bersama tim, dan bertukar kontak dengan rombongan untuk kerja sama lanjutan",
+        "B": "Mengirimkan bahan paparan tentang aplikasi kepada rombongan tamu dan meminta mereka mempelajarinya sendiri karena tim Anda sedang sibuk",
+        "C": "Menerima kunjungan dengan ramah, menjelaskan aplikasi secara lengkap, dan menemani rombongan sepanjang hari, walaupun laporan triwulan Anda tertunda",
+        "D": "Meminta rombongan membayar biaya narasumber secara langsung kepada Anda karena pemaparan itu menyita waktu kerja di minggu sibuk",
+        "E": "Mengusulkan kunjungan dijadwalkan ulang ke bulan depan tanpa tanggal pengganti yang pasti"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 3,
+        "C": 4,
+        "D": 1,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Studi tiru adalah kesempatan **berbagi praktik baik antardaerah** dan membangun jejaring yang berguna di kemudian hari. Kesibukan laporan triwulan adalah kendala nyata, tetapi bisa diatasi dengan **pembagian tugas dalam tim**, bukan dengan mengorbankan salah satunya. Respons terbaik menjalankan kedua tugas dengan baik dan menjaga hubungan setelah kunjungan berakhir, misalnya lewat kontak narahubung, sehingga kedua daerah bisa terus saling belajar. Contoh pembagian tugas: rekan menyusun data laporan pada pagi hari, sementara Anda memandu sesi tanya jawab dan praktik aplikasi.",
+        "opsi": {
+          "A": "Kunjungan berjalan baik, laporan tetap terkendali lewat pembagian tugas, dan hubungan antardaerah dirawat untuk jangka panjang.",
+          "B": "Masih berbagi informasi, tetapi minimal. Tamu yang datang jauh-jauh tidak mendapat penjelasan langsung, dan kesempatan membangun jejaring terlewat.",
+          "C": "Sangat terbuka kepada mitra, tetapi tugas laporan dikorbankan. Kurang mengatur prioritas bersama tim.",
+          "D": "Meminta imbalan pribadi atas tugas kedinasan adalah pungutan yang melanggar aturan dan merusak nama instansi.",
+          "E": "Menghindari tugas dan berisiko merusak hubungan dengan daerah mitra karena tidak ada kepastian jadwal pengganti."
+        },
+        "konsep": "**Jejaring kerja antardaerah:** berbagi pengetahuan, menjaga hubungan, dan tetap menjalankan tugas pokok melalui kerja tim. Nilai tertinggi untuk opsi yang tidak mengorbankan satu tugas demi tugas lain."
+      },
+      "tips": "Jika dua tugas bentrok, cari opsi yang **membagi beban dalam tim** sehingga keduanya tetap berjalan. Opsi yang mengorbankan salah satu tugas biasanya bernilai 4 atau 3."
+    },
+    {
+      "id": "p07-075",
+      "nomor": 75,
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "topik": "Melibatkan Bhabinkamtibmas dan Babinsa sejak perencanaan penyaluran bantuan pangan",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda koordinator penyaluran bantuan pangan di kelurahan. Tahun lalu penyaluran sempat ricuh karena warga berdesakan sejak subuh. Tahun ini jumlah penerima bertambah. Langkah yang Anda ambil adalah ....",
+      "opsi": {
+        "A": "Menyusun jadwal penyaluran per RT dan mengumumkannya kepada warga, lalu meminta Bhabinkamtibmas hadir di lokasi pada hari penyaluran",
+        "B": "Menyerahkan penyaluran sepenuhnya kepada ketua RT agar kantor kelurahan tidak ricuh",
+        "C": "Mengajak Bhabinkamtibmas, Babinsa, serta para ketua RT menyusun rencana penyaluran dan pengamanan bersama sejak jauh hari",
+        "D": "Mendahulukan warga yang dikenal dekat dengan perangkat kelurahan agar penyaluran cepat selesai sebelum kerumunan bertambah",
+        "E": "Menambah jumlah petugas kelurahan pada hari penyaluran supaya antrean lebih mudah diatur dan warga bisa dilayani dengan cepat"
+      },
+      "bobot": {
+        "A": 4,
+        "B": 2,
+        "C": 5,
+        "D": 1,
+        "E": 3
+      },
+      "pembahasan": {
+        "inti": "Kericuhan tahun lalu menunjukkan bahwa penyaluran bantuan bukan pekerjaan yang bisa diselesaikan kelurahan sendirian. **Bhabinkamtibmas** (Polri) dan **Babinsa** (TNI) adalah mitra resmi di tingkat desa atau kelurahan untuk keamanan dan ketertiban, sedangkan **ketua RT** paling mengenal warganya. Melibatkan mereka **sejak perencanaan** membuat jadwal dan pengamanan disusun bersama, sehingga setiap pihak paham perannya. Hasilnya, warga tidak perlu berdesakan dan risiko kericuhan berkurang jauh sebelum hari penyaluran.",
+        "opsi": {
+          "A": "Perencanaannya baik dan aparat dilibatkan, tetapi baru pada hari pelaksanaan. Masukan mereka untuk menyusun jadwal dan pengamanan terlewat.",
+          "B": "Melepas tanggung jawab koordinasi. Kericuhan bisa berpindah ke tingkat RT tanpa pengawasan yang memadai.",
+          "C": "Membangun kerja sama dengan pihak yang tepat sejak tahap perencanaan, sehingga pencegahan kericuhan disiapkan bersama.",
+          "D": "Pilih kasih dalam penyaluran bantuan melanggar prinsip keadilan dan justru memicu kecemburuan serta kericuhan.",
+          "E": "Upaya internal yang aman, tetapi tidak memanfaatkan jejaring yang tersedia dan tidak mengatasi penyebab warga berdesakan."
+        },
+        "konsep": "**Mitra kelurahan atau desa:** Bhabinkamtibmas (Polri), Babinsa (TNI), RT/RW, tokoh masyarakat, dan kader. Melibatkan mitra **sejak perencanaan** bernilai lebih tinggi daripada memanggil mereka saat pelaksanaan."
+      },
+      "tips": "Bandingkan **kapan** mitra dilibatkan. Sejak awal (menyusun rencana bersama) > saat pelaksanaan (dimintai bantuan) > tidak dilibatkan sama sekali."
+    },
+    {
+      "id": "p07-076",
+      "nomor": 76,
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "topik": "Berkas usulan dari bidang lain berulang kali datang tidak lengkap",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda staf bagian kepegawaian. Berkas usulan kenaikan pangkat dari Bidang Pendidikan hampir selalu datang tidak lengkap, sehingga Anda harus mengembalikannya berkali-kali dan tenggat pengusulan beberapa kali nyaris terlewat. Anda memutuskan untuk ....",
+      "opsi": {
+        "A": "Tetap mengembalikan setiap berkas yang tidak lengkap sesuai prosedur, disertai catatan tertulis tentang dokumen-dokumen yang masih kurang",
+        "B": "Menemui pengelola berkas di Bidang Pendidikan untuk menyusun daftar periksa bersama dan menyepakati pemeriksaan awal sebelum berkas dikirim",
+        "C": "Melengkapi sendiri dokumen yang kurang dengan data perkiraan agar tenggat tidak terlewat",
+        "D": "Mengirimkan daftar persyaratan yang lengkap kepada Bidang Pendidikan dan meminta setiap berkas dicocokkan dengan daftar itu sebelum dikirim",
+        "E": "Melaporkan kepada atasan bahwa staf Bidang Pendidikan tidak cermat, lalu menunggu atasan mengambil tindakan terhadap bidang tersebut"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 5,
+        "C": 1,
+        "D": 4,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Masalah yang berulang antarunit paling efektif diselesaikan dengan **duduk bersama pihak yang mengerjakan**, bukan hanya dengan surat atau pengaduan. Menemui pengelola berkas di Bidang Pendidikan membuka kesempatan untuk mengetahui penyebab berkas selalu kurang. Mungkin persyaratannya membingungkan, mungkin pengelolanya baru. Daftar periksa yang disusun bersama lebih mungkin dipakai, dan pemeriksaan awal sebelum berkas resmi dikirim mencegah bolak-balik. Hasilnya, hubungan kerja membaik dan tenggat aman. Langkah ini juga sejalan dengan nilai kolaboratif: masalah antarunit diselesaikan bersama, bukan saling menyalahkan.",
+        "opsi": {
+          "A": "Sesuai prosedur dan informatif, tetapi pola masalahnya tidak berubah, sehingga bolak-balik berkas akan terus terjadi.",
+          "B": "Kolaboratif dan menyentuh akar masalah. Penyelesaian dirancang bersama pihak yang mengerjakan berkas.",
+          "C": "Mengisi dokumen kepegawaian dengan data perkiraan melanggar aturan dan dapat merugikan pegawai yang diusulkan.",
+          "D": "Langkah perbaikan yang baik, tetapi satu arah. Tanpa komunikasi langsung, penyebab sebenarnya belum tentu terjawab.",
+          "E": "Menyalahkan tanpa mencoba bekerja sama, dan menyerahkan penyelesaian kepada atasan. Hubungan antarunit bisa memburuk."
+        },
+        "konsep": "**Masalah berulang antarunit:** prosedur saja (3) < perbaikan satu arah (4) < perbaikan yang dirancang bersama (5). Melanggar aturan demi tenggat selalu bernilai terendah."
+      },
+      "tips": "Untuk masalah yang terus berulang dengan unit lain, opsi terbaik biasanya **mengajak bertemu dan menyusun solusi bersama**. Surat dan daftar persyaratan saja masih kurang satu langkah."
+    },
+    {
+      "id": "p07-077",
+      "nomor": 77,
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "topik": "Ditunjuk mendampingi petugas BPS dalam pendataan lapangan di tengah pekerjaan rutin",
+      "tingkat": "sedang",
+      "pertanyaan": "Petugas Badan Pusat Statistik (BPS) meminta kelurahan menyediakan pendamping yang mengenal wilayah untuk pendataan lapangan selama satu minggu. Atasan menunjuk Anda, padahal pekerjaan rutin Anda sedang cukup banyak. Yang Anda lakukan adalah ....",
+      "opsi": {
+        "A": "Meminta atasan menunjuk pegawai lain yang pekerjaannya lebih ringan, karena tugas rutin Anda sedang menumpuk minggu ini",
+        "B": "Mendampingi petugas BPS sesuai jadwal, menyelesaikan pekerjaan rutin di luar jam pendampingan, dan lembur sendiri bila pekerjaan belum selesai",
+        "C": "Memberikan peta wilayah dan daftar nomor telepon ketua RT kepada petugas BPS tanpa ikut turun ke lapangan selama pendataan",
+        "D": "Mendampingi sesuai jadwal setelah mengatur pekerjaan rutin bersama atasan, sekaligus memperkenalkan petugas kepada ketua RT",
+        "E": "Mengisikan data warga dari arsip kelurahan ke formulir BPS agar petugas tidak perlu mendatangi rumah warga satu per satu"
+      },
+      "bobot": {
+        "A": 2,
+        "B": 4,
+        "C": 3,
+        "D": 5,
+        "E": 1
+      },
+      "pembahasan": {
+        "inti": "Pendataan BPS menghasilkan data yang dipakai untuk perencanaan, termasuk perencanaan di kelurahan Anda sendiri. Peran pendamping bukan hanya menunjukkan jalan, tetapi **menjembatani petugas dengan warga dan tokoh setempat**, sehingga warga lebih terbuka dan pendataan lancar. Beban kerja rutin adalah kendala nyata yang sebaiknya **dikomunikasikan kepada atasan** agar ada pengaturan, bukan ditanggung diam-diam atau dijadikan alasan menolak. Respons terbaik menjalankan penugasan, mengelola beban kerja secara terbuka, dan memperkuat jejaring antara BPS dan warga.",
+        "opsi": {
+          "A": "Menghindari penugasan. Kesibukan seharusnya diatur bersama atasan, bukan dijadikan alasan menolak tugas.",
+          "B": "Bertanggung jawab atas kedua tugas, tetapi beban ditanggung sendiri tanpa dikomunikasikan, dan peran menjembatani petugas dengan warga belum dimanfaatkan.",
+          "C": "Membantu sebagian, tetapi peran pendamping yang mengenal wilayah tidak dijalankan.",
+          "D": "Penugasan dijalankan, beban kerja dikelola secara terbuka, dan hubungan petugas dengan warga dijembatani.",
+          "E": "Mengganti pendataan lapangan dengan data arsip merusak kualitas data statistik dan melanggar prosedur pendataan."
+        },
+        "konsep": "**Pendamping lintas instansi:** jalankan tugas, atur beban kerja secara terbuka dengan atasan, dan hubungkan mitra dengan jejaring lokal. Memalsukan atau mengganti data lapangan selalu bernilai terendah."
+      },
+      "tips": "Bedakan nilai 5 dan 4 dari **cara mengelola beban** (dikomunikasikan atau ditanggung sendiri) dan **nilai tambah jejaring** (memperkenalkan mitra kepada tokoh setempat)."
+    },
+    {
+      "id": "p07-078",
+      "nomor": 78,
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "topik": "Menggandeng pemuka agama untuk mencegah perkawinan anak",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda penyuluh di Dinas Pemberdayaan Perempuan dan Perlindungan Anak. Angka perkawinan anak di sebuah kecamatan tinggi, tetapi sosialisasi Anda di balai desa selalu sepi. Warga lebih mendengarkan ustaz dan pendeta setempat daripada petugas dinas. Langkah Anda selanjutnya adalah ....",
+      "opsi": {
+        "A": "Mengajak para pemuka agama berdiskusi tentang dampak perkawinan anak, lalu menyusun pesan bersama yang mereka sampaikan di pengajian dan ibadah",
+        "B": "Menambah jadwal sosialisasi di balai desa dan membagikan brosur ke rumah-rumah warga agar informasi tentang perkawinan anak lebih luas",
+        "C": "Mengundang para pemuka agama sebagai narasumber pada sosialisasi berikutnya di balai desa, lalu membagikan materi dan brosur yang sudah Anda siapkan sendiri",
+        "D": "Meminta kepala desa mengancam warga yang menikahkan anaknya dengan pencabutan bantuan sosial",
+        "E": "Melaporkan kepada atasan bahwa warga kecamatan itu sulit diubah, sehingga program sebaiknya dialihkan ke kecamatan lain"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 3,
+        "C": 4,
+        "D": 1,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Pesan akan lebih mudah diterima jika disampaikan oleh **orang yang dipercaya warga**. Di kecamatan ini, orang itu adalah pemuka agama. Jejaring kerja yang efektif tidak menjadikan mereka sekadar pengeras suara, tetapi **mitra sejajar**: diajak memahami data dan dampak perkawinan anak, lalu bersama-sama merumuskan pesan dengan bahasa yang sesuai dengan jemaahnya. Pesan yang lahir dari diskusi bersama lebih mungkin disampaikan dengan sungguh-sungguh dan diterima warga, karena tempat penyampaiannya pun sudah menjadi bagian dari kehidupan mereka sehari-hari.",
+        "opsi": {
+          "A": "Membangun kemitraan sejajar dengan tokoh yang dipercaya warga dan memakai saluran yang sudah mereka datangi setiap pekan.",
+          "B": "Upaya yang aman, tetapi mengulang cara yang sudah terbukti sepi. Jejaring yang berpengaruh tidak dimanfaatkan.",
+          "C": "Sudah melibatkan pemuka agama, tetapi peran mereka terbatas sebagai pembicara materi Anda, dan tempatnya tetap balai desa yang selama ini sepi.",
+          "D": "Ancaman tanpa dasar aturan merugikan keluarga miskin dan merusak kepercayaan warga kepada pemerintah.",
+          "E": "Menyerah dan menghindar. Kecamatan dengan angka perkawinan anak tinggi justru paling membutuhkan program ini."
+        },
+        "konsep": "**Bekerja dengan tokoh masyarakat:** libatkan sejak perumusan pesan, bukan hanya saat penyampaian. Semakin besar peran mitra dalam merancang, semakin besar rasa memilikinya terhadap program."
+      },
+      "tips": "Bedakan opsi yang **mengundang tokoh untuk bicara** (bernilai 4) dari opsi yang **merancang bersama tokoh** (bernilai 5). Keduanya melibatkan mitra, tetapi kedalaman kemitraannya berbeda."
+    },
+    {
+      "id": "p07-079",
+      "nomor": 79,
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "topik": "Pemengaruh lokal meminta bayaran yang tidak tersedia dalam anggaran kampanye",
+      "tingkat": "sulit",
+      "pertanyaan": "Anda staf humas dinas kesehatan yang menyiapkan kampanye imunisasi anak. Anda menghubungi seorang pemengaruh (influencer) lokal dengan 200 ribu pengikut. Ia bersedia membantu, tetapi meminta bayaran Rp5 juta, sedangkan anggaran kampanye tidak memiliki pos untuk itu. Tanggapan Anda adalah ....",
+      "opsi": {
+        "A": "Membatalkan rencana kerja sama itu dan kembali menjalankan kampanye melalui spanduk dan akun media sosial resmi dinas seperti tahun lalu",
+        "B": "Mengusulkan kepada atasan agar honor pemengaruh dianggarkan tahun depan, sementara kampanye tahun ini memakai akun resmi dinas saja",
+        "C": "Menjelaskan keterbatasan anggaran secara terbuka dan menawarkan kemitraan nonfinansial yang sah, misalnya sebagai mitra resmi kampanye",
+        "D": "Membayar pemengaruh itu dari sisa pos konsumsi rapat, lalu mempertanggungjawabkannya sebagai biaya rapat koordinasi",
+        "E": "Menunda kampanye imunisasi sampai ada pemengaruh lain yang bersedia membantu tanpa bayaran"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 4,
+        "C": 5,
+        "D": 1,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Pemengaruh lokal adalah mitra yang berharga untuk menjangkau orang tua muda. Namun pembayaran hanya boleh dilakukan jika ada pos anggaran yang sesuai. Sikap terbaik adalah **jujur tentang batas anggaran** sambil **mencari bentuk kerja sama lain yang sah**, misalnya pelibatan sebagai mitra resmi kampanye, undangan ke acara pencanangan, atau pengakuan publik dari dinas. Banyak pemengaruh lokal bersedia ikut jika merasa dihargai dan kegiatannya bermanfaat bagi komunitasnya. Dengan cara ini, kampanye tahun ini tetap berjalan tanpa melanggar aturan pengelolaan keuangan.",
+        "opsi": {
+          "A": "Aman dan sesuai anggaran, tetapi menyerah terlalu cepat. Peluang menjangkau warga lewat mitra yang berpengaruh terlewat.",
+          "B": "Taat anggaran dan memikirkan jangka panjang, tetapi kampanye tahun ini kehilangan jangkauan yang sebenarnya masih bisa diusahakan.",
+          "C": "Terbuka, taat aturan, dan tetap berusaha membangun kemitraan agar kampanye menjangkau lebih banyak warga.",
+          "D": "Memakai anggaran tidak sesuai peruntukannya dan memalsukan pertanggungjawaban adalah pelanggaran pengelolaan keuangan negara.",
+          "E": "Menunda program kesehatan anak demi menunggu kondisi ideal merugikan masyarakat yang membutuhkan informasi imunisasi."
+        },
+        "konsep": "**Kemitraan saat sumber daya terbatas:** jujur soal batasan, tawarkan nilai lain yang sah (pengakuan, keterlibatan, akses acara), dan jangan pernah menyiasati anggaran. Opsi yang menunda atau membatalkan biasanya bernilai di tengah ke bawah."
+      },
+      "tips": "Jika ada kendala biaya, cari opsi yang **tetap memperjuangkan kerja sama dengan cara sah**. Opsi yang “mengakali” pos anggaran selalu bernilai terendah walaupun tujuannya baik."
+    },
+    {
+      "id": "p07-080",
+      "nomor": 80,
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "topik": "Rekan menyalahkan bidang lain dalam rapat padahal tim sendiri ikut terlambat",
+      "tingkat": "sulit",
+      "pertanyaan": "Dalam rapat evaluasi lintas bidang, rekan satu tim Anda menyebut bahwa keterlambatan program bantuan disebabkan Bidang Perencanaan yang lambat. Kepala Bidang Perencanaan yang hadir tampak tersinggung. Anda tahu sebagian keterlambatan juga berasal dari tim Anda sendiri. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menemui Kepala Bidang Perencanaan seusai rapat untuk meminta maaf atas pernyataan rekan Anda dan menjelaskan kendala yang dialami tim Anda",
+        "B": "Menambahkan contoh-contoh kelambatan Bidang Perencanaan dalam rapat agar tim Anda tidak dinilai buruk oleh pimpinan",
+        "C": "Tetap diam selama rapat, lalu seusai rapat meminta rekan Anda lebih berhati-hati menyampaikan pendapat dalam forum lintas bidang",
+        "D": "Membiarkannya karena pernyataan itu disampaikan oleh rekan Anda dan rapat sudah berlanjut ke agenda lain",
+        "E": "Menyampaikan dalam rapat bahwa tim Anda juga ikut terlambat, lalu mengajak kedua bidang menelusuri hambatannya bersama"
+      },
+      "bobot": {
+        "A": 4,
+        "B": 1,
+        "C": 3,
+        "D": 2,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Hubungan kerja lintas bidang rusak ketika satu pihak disalahkan di depan umum secara tidak utuh. Karena pernyataan itu muncul **di forum rapat**, pelurusan yang paling adil juga disampaikan **di forum yang sama**, supaya pimpinan dan peserta lain mendapat gambaran lengkap. Mengakui bagian kesalahan tim sendiri bukan kelemahan. Justru itu membuka jalan untuk menelusuri hambatan bersama dan memperbaikinya. Soal ini sulit karena opsi meminta maaf secara pribadi juga baik. Bedanya, catatan rapat yang tidak adil tetap tertinggal jika pelurusan hanya dilakukan di belakang.",
+        "opsi": {
+          "A": "Menjaga hubungan dengan cara yang tulus, tetapi pelurusan dilakukan secara pribadi, sehingga kesan di forum rapat tetap tidak adil.",
+          "B": "Memperkeruh suasana dan tidak jujur, karena menutupi kesalahan tim sendiri dengan menambah tuduhan.",
+          "C": "Mengingatkan rekan itu ada gunanya, tetapi kesan keliru dalam rapat dibiarkan dan hubungan dengan Bidang Perencanaan tidak diperbaiki.",
+          "D": "Menghindar dari tanggung jawab moral untuk meluruskan informasi yang Anda ketahui tidak utuh.",
+          "E": "Jujur, adil kepada mitra, dan langsung mengarahkan forum ke penyelesaian bersama."
+        },
+        "konsep": "**Meluruskan di forum yang sama.** Informasi yang keliru di depan umum sebaiknya diluruskan di depan umum dengan cara yang tidak menyerang. Lalu arahkan pembicaraan dari mencari kesalahan ke mencari penyelesaian."
+      },
+      "tips": "Bandingkan **tempat** pelurusan: di forum (5) lebih baik daripada secara pribadi (4). Opsi yang menambah tuduhan atau membiarkan selalu bernilai rendah."
+    },
+    {
+      "id": "p07-081",
+      "nomor": 81,
+      "kategori": "TKP",
+      "subtopik": "Jejaring Kerja",
+      "topik": "Kepala bidang lain meminta bantuan staf tanpa sepengetahuan atasan langsung",
+      "tingkat": "sulit",
+      "pertanyaan": "Kepala Bidang Pengembangan meminta Anda, staf Bidang Pelayanan, membantu proyeknya dua hari setiap minggu selama sebulan karena keahlian Anda dalam analisis data. Permintaan itu disampaikan langsung kepada Anda, tanpa sepengetahuan atasan Anda. Anda memutuskan untuk ....",
+      "opsi": {
+        "A": "Menyampaikan permintaan itu kepada atasan Anda dan mengikuti apa pun keputusannya, tanpa memberi tanggapan lebih dulu kepada Kepala Bidang Pengembangan",
+        "B": "Menyatakan bersedia membantu, lalu meminta permintaan itu dikoordinasikan dengan atasan Anda agar penugasannya resmi",
+        "C": "Menolak secara halus dengan alasan pekerjaan di Bidang Pelayanan sedang padat, tanpa menyampaikannya kepada atasan",
+        "D": "Langsung menyanggupi dan mulai membantu minggu ini, kemudian memberi tahu atasan Anda setelah jadwal bantuannya tersusun",
+        "E": "Menyanggupi dan diam-diam mengurangi jam layanan di loket agar bisa membantu proyek itu"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 5,
+        "C": 2,
+        "D": 4,
+        "E": 1
+      },
+      "pembahasan": {
+        "inti": "Berbagi keahlian dengan bidang lain adalah bagian dari jejaring kerja yang sehat. Namun penugasan yang memakai jam kerja harus **diketahui dan disetujui atasan langsung**, karena atasan bertanggung jawab atas layanan di bidang Anda. Respons terbaik menggabungkan dua hal: **sikap terbuka kepada peminta** (menyatakan kesediaan) dan **jalur resmi** (koordinasi antara kedua kepala bidang). Dengan begitu, hubungan baik terjaga, layanan tidak terganggu tanpa sepengetahuan atasan, dan bantuan Anda tercatat sebagai penugasan yang sah.",
+        "opsi": {
+          "A": "Tertib, tetapi pasif dan kurang menjaga hubungan. Peminta tidak mendapat tanggapan apa pun dari Anda.",
+          "B": "Kolaboratif dan tertib: kesediaan disampaikan, sementara keputusan penugasan diambil lewat koordinasi resmi kedua atasan.",
+          "C": "Menghindari permintaan dan menutup peluang kerja sama, sementara atasan tidak tahu ada kebutuhan dari bidang lain.",
+          "D": "Semangat bekerja sama tinggi dan atasan akhirnya diberi tahu, tetapi urutannya terbalik: komitmen dibuat sebelum ada persetujuan.",
+          "E": "Mengorbankan layanan kepada warga secara diam-diam. Ini melanggar disiplin dan merugikan masyarakat."
+        },
+        "konsep": "**Permintaan lintas bidang:** sambut dengan terbuka, lalu salurkan melalui atasan langsung. Urutan penting: persetujuan dulu, komitmen kemudian. Mengorbankan tugas pokok diam-diam selalu bernilai terendah."
+      },
+      "tips": "Jika dua opsi sama-sama melibatkan atasan, lihat **urutannya**. Menyanggupi sebelum ada persetujuan (4) kalah dari menyalurkan permintaan secara resmi sambil menjaga hubungan (5)."
+    },
+    {
+      "id": "p07-082",
+      "nomor": 82,
+      "kategori": "TKP",
+      "subtopik": "Sosial Budaya",
+      "topik": "Petani menentukan waktu tanam dengan kalender adat yang berbeda dari anjuran dinas",
+      "tingkat": "mudah",
+      "pertanyaan": "Anda penyuluh pertanian yang baru ditempatkan di sebuah desa di Nusa Tenggara Timur. Petani setempat menentukan waktu tanam berdasarkan tanda-tanda alam dan kalender adat, yang berbeda dari jadwal tanam anjuran dinas. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menyampaikan jadwal tanam dari dinas dalam pertemuan kelompok tani sesuai tugas penyuluhan, lalu menyerahkan keputusannya kepada petani",
+        "B": "Menyebut kalender adat sebagai takhayul di depan kelompok tani agar petani beralih ke jadwal dinas",
+        "C": "Menghormati kebiasaan petani dan tetap menawarkan jadwal anjuran dinas sebagai pilihan yang bisa mereka pertimbangkan sendiri",
+        "D": "Mempelajari dasar kalender adat dari para tetua untuk dipadukan dengan data cuaca dinas dalam jadwal tanam yang disusun bersama petani",
+        "E": "Mengikuti kebiasaan petani tanpa memberi penyuluhan agar tidak menimbulkan ketegangan"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 1,
+        "C": 4,
+        "D": 5,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Kearifan lokal seperti kalender tanam adat sering berasal dari pengamatan alam selama ratusan tahun dan memiliki nilai nyata. Penyuluh yang baik **belajar dulu sebelum mengajar**. Dengan mempelajari dasar kalender adat dari petani dan tetua, lalu **memadukannya dengan data cuaca** dari dinas, jadwal tanam yang dihasilkan lebih mungkin diterima dan lebih tepat menghadapi perubahan iklim. Pendekatan ini menghormati budaya setempat tanpa meninggalkan tugas penyuluhan. Contohnya, tanda alam yang dipakai petani bisa dicocokkan dengan prakiraan awal musim hujan dari BMKG, sehingga keduanya saling menguatkan.",
+        "opsi": {
+          "A": "Menjalankan tugas sesuai prosedur dan memberi kebebasan memilih, tetapi tidak ada upaya memahami pengetahuan setempat.",
+          "B": "Merendahkan budaya setempat di depan umum. Sikap ini merusak kepercayaan petani dan membuat penyuluhan ditolak.",
+          "C": "Menghormati budaya dan tetap menawarkan informasi, tetapi dua pengetahuan itu dibiarkan berjalan sendiri-sendiri tanpa dipadukan.",
+          "D": "Menghormati, belajar, dan memadukan pengetahuan lokal dengan data dinas bersama petani sendiri.",
+          "E": "Menghindari tugas penyuluhan demi menghindari ketegangan. Petani kehilangan manfaat informasi cuaca dari dinas."
+        },
+        "konsep": "**Pola budaya lokal dan program pemerintah:** merendahkan (1) < menghindar (2) < menjalankan program tanpa memahami budaya (3) < menghormati tanpa memadukan (4) < belajar lalu memadukan bersama warga (5)."
+      },
+      "tips": "Dalam soal sosial budaya, opsi terbaik biasanya mengandung kata kerja **mempelajari** atau **berdialog** sebelum **menyusun bersama**. Opsi yang menganggap budaya setempat salah atau kuno hampir selalu bernilai 1."
+    },
+    {
+      "id": "p07-083",
+      "nomor": 83,
+      "kategori": "TKP",
+      "subtopik": "Sosial Budaya",
+      "topik": "Pasien perempuan meminta diperiksa oleh petugas perempuan",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda perawat laki-laki di sebuah puskesmas. Seorang pasien perempuan menolak diperiksa oleh Anda dan meminta diperiksa petugas perempuan karena alasan keyakinan. Satu-satunya bidan perempuan sedang menangani persalinan, dan kondisi pasien tidak gawat. Tindakan Anda adalah ....",
+      "opsi": {
+        "A": "Menjelaskan bahwa semua tenaga kesehatan bekerja secara profesional dan memintanya bersedia diperiksa agar antrean tidak tertahan",
+        "B": "Tetap memeriksa pasien itu tanpa persetujuannya karena prosedur pemeriksaan oleh petugas laki-laki dan perempuan sama saja",
+        "C": "Menghormati permintaannya, mempersilakannya duduk di ruang tunggu, dan memanggilnya kembali setelah bidan selesai menangani persalinan",
+        "D": "Menyarankan pasien pulang dan datang lagi besok pagi saat jadwal petugas perempuan lebih banyak",
+        "E": "Menghormati permintaannya, menjelaskan perkiraan waktu tunggu, dan menawarkan pemeriksaan awal yang tidak memerlukan sentuhan"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 1,
+        "C": 4,
+        "D": 2,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Pasien berhak menentukan persetujuan atas tindakan terhadap tubuhnya, dan permintaan diperiksa petugas sesama jenis karena keyakinan **patut dihormati** selama kondisinya tidak gawat. Pelayanan tetap bisa berjalan: pasien diberi **kepastian waktu tunggu**, dan pemeriksaan awal yang tidak memerlukan sentuhan, seperti wawancara keluhan, bisa dilakukan bila ia bersedia. Dengan cara ini, keyakinan pasien dihormati dan waktunya tidak terbuang. Jika kondisinya berubah menjadi gawat, keselamatan pasien menjadi prioritas dan penjelasannya disampaikan dengan hormat. Kunci penilaiannya: hormati pilihan pasien, lalu kurangi kerugiannya karena menunggu.",
+        "opsi": {
+          "A": "Profesional dan tidak kasar, tetapi menekan pasien untuk mengabaikan keyakinannya padahal ada pilihan lain.",
+          "B": "Memeriksa tanpa persetujuan melanggar hak pasien dan tidak menghormati keyakinannya.",
+          "C": "Menghormati keyakinan pasien, tetapi pasien menunggu tanpa kepastian berapa lama, dan layanan awal yang sebenarnya bisa diberikan tidak ditawarkan.",
+          "D": "Menghindari pelayanan dan membebani pasien dengan kedatangan berulang, padahal bidan akan tersedia dalam waktu dekat.",
+          "E": "Menghormati keyakinan, memberi kepastian, dan tetap melayani sejauh yang diizinkan pasien."
+        },
+        "konsep": "**Menghormati keyakinan dalam layanan:** penuhi sejauh tidak membahayakan, beri kepastian, dan tetap layani bagian yang bisa dilakukan. Persetujuan pasien adalah syarat setiap tindakan medis yang tidak gawat."
+      },
+      "tips": "Dalam soal permintaan berbasis keyakinan, opsi terbaik **menghormati sekaligus tetap melayani**. Opsi yang menghormati tetapi membiarkan warga menunggu tanpa kepastian biasanya bernilai 4."
+    },
+    {
+      "id": "p07-084",
+      "nomor": 84,
+      "kategori": "TKP",
+      "subtopik": "Sosial Budaya",
+      "topik": "Pegawai senior membagikan lelucon yang merendahkan perempuan di grup kantor",
+      "tingkat": "sedang",
+      "pertanyaan": "Di grup pesan kantor, Pak Rudi, pegawai senior, sering membagikan lelucon yang merendahkan perempuan. Rekan-rekan perempuan diam di grup, tetapi beberapa mengaku kepada Anda bahwa mereka merasa tidak nyaman. Yang Anda lakukan adalah ....",
+      "opsi": {
+        "A": "Menyampaikan secara pribadi kepada Pak Rudi bahwa leluconnya membuat rekan tidak nyaman, lalu mengusulkan aturan bersama penggunaan grup",
+        "B": "Membiarkannya karena Pak Rudi adalah pegawai senior dan lelucon di grup kantor sudah dianggap sebagai hiburan biasa",
+        "C": "Menegur Pak Rudi secara pribadi dengan sopan dan memintanya tidak lagi membagikan lelucon semacam itu di grup kantor",
+        "D": "Ikut menanggapi lelucon itu dengan stiker tertawa supaya suasana grup tetap akrab",
+        "E": "Tidak menanggapi lelucon di grup, lalu menyarankan rekan-rekan perempuan mematikan notifikasi grup itu agar tidak terganggu"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 2,
+        "C": 4,
+        "D": 1,
+        "E": 3
+      },
+      "pembahasan": {
+        "inti": "Lelucon yang merendahkan satu jenis kelamin membuat lingkungan kerja tidak nyaman dan tidak setara, walaupun dimaksudkan sebagai hiburan. Rekan perempuan yang diam bukan berarti tidak keberatan. Mereka mungkin sungkan karena pelakunya senior. Respons terbaik adalah **menyampaikan secara pribadi dan sopan** agar Pak Rudi tidak merasa dipermalukan, lalu **mengusulkan aturan bersama** penggunaan grup kantor agar masalah serupa tidak bergantung pada keberanian satu orang. Aturan bersama juga melindungi rekan-rekan yang sungkan bersuara.",
+        "opsi": {
+          "A": "Menegur dengan cara yang menjaga martabat pelaku dan mencegah masalah serupa lewat aturan bersama.",
+          "B": "Membiarkan perlakuan yang merendahkan karena alasan senioritas. Rekan yang dirugikan tetap tidak nyaman.",
+          "C": "Berani dan sopan, tetapi penyelesaiannya hanya untuk satu orang dan tidak mencegah hal serupa dari anggota grup lain.",
+          "D": "Ikut mendukung perilaku yang merendahkan perempuan. Ini memperburuk lingkungan kerja.",
+          "E": "Menghindari konflik, tetapi beban justru dipindahkan kepada pihak yang dirugikan. Perilaku yang salah tetap berjalan."
+        },
+        "konsep": "**Menghadapi perilaku merendahkan dari senior:** tegur secara pribadi dan sopan (menjaga martabat), lalu buat kesepakatan bersama (mencegah berulang). Senioritas bukan alasan membiarkan perlakuan yang tidak setara."
+      },
+      "tips": "Opsi yang menyarankan korban menghindar (mematikan notifikasi, keluar grup) biasanya bernilai rendah, karena beban dipindahkan kepada pihak yang dirugikan, bukan kepada pelaku."
+    },
+    {
+      "id": "p07-085",
+      "nomor": 85,
+      "kategori": "TKP",
+      "subtopik": "Sosial Budaya",
+      "topik": "Pegawai menjelang pensiun tidak dilibatkan dalam proyek aplikasi karena dianggap gagap teknologi",
+      "tingkat": "sedang",
+      "pertanyaan": "Tim Anda ditugasi membuat aplikasi pendataan. Pak Hasan, yang dua tahun lagi pensiun, tidak dilibatkan karena dianggap gagap teknologi, padahal ia paling memahami alur pendataan manual selama 20 tahun terakhir. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Membiarkan susunan tim seperti yang sudah ditetapkan, sambil sesekali bertanya kepada Pak Hasan bila tim menemui kesulitan memahami alur pendataan",
+        "B": "Ikut menjadikan kebiasaan Pak Hasan mencatat di buku tulis sebagai bahan candaan tim",
+        "C": "Mengusulkan agar Pak Hasan dilibatkan untuk memetakan alur pendataan, dan menawarkan diri mendampinginya mencoba aplikasi",
+        "D": "Meminta waktu Pak Hasan, mewawancarainya tentang alur pendataan manual, lalu memakai hasilnya sebagai bahan rancangan aplikasi tim",
+        "E": "Menganggap keputusan itu wajar karena Pak Hasan akan segera pensiun"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 1,
+        "C": 5,
+        "D": 4,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Menilai kemampuan seseorang dari usianya adalah bentuk **prasangka**, dan dalam soal ini juga merugikan tim. Aplikasi pendataan yang baik harus berdasar alur kerja nyata, dan orang yang paling paham alur itu adalah Pak Hasan. Melibatkannya sebagai anggota tim, bukan hanya narasumber, **menghargai pengalamannya** dan **membuka kesempatan belajar** teknologi baru. Pendampingan dari rekan yang lebih muda membuat perbedaan generasi menjadi kekuatan: satu pihak membawa pengalaman, pihak lain membawa keterampilan digital. Prasangka usia juga merugikan kantor, karena pengetahuan yang tidak tertulis ikut hilang saat pegawai senior pensiun tanpa sempat dibagikan.",
+        "opsi": {
+          "A": "Pengetahuan Pak Hasan sesekali dipakai, tetapi prasangka terhadapnya dibiarkan dan ia tetap di luar tim.",
+          "B": "Merendahkan rekan karena kebiasaan generasinya. Ini memperkuat prasangka dan merusak suasana kerja.",
+          "C": "Melawan prasangka usia dengan tindakan nyata: pengalaman Pak Hasan dihargai dan ia dibantu beradaptasi dengan aplikasi.",
+          "D": "Memanfaatkan pengetahuannya dengan sungguh-sungguh, tetapi ia hanya menjadi sumber informasi, bukan bagian dari tim.",
+          "E": "Membenarkan pengucilan berdasarkan usia. Masa kerja dua tahun cukup panjang untuk berkontribusi."
+        },
+        "konsep": "**Keberagaman generasi di kantor:** perbedaan usia adalah bagian dari keberagaman sosial. Respons terbaik melibatkan, menghargai, dan saling mengajari, bukan memisahkan berdasarkan anggapan."
+      },
+      "tips": "Bedakan **dilibatkan sebagai anggota** (bernilai 5) dari **dimintai keterangan saja** (bernilai 4). Keduanya memanfaatkan pengalaman, tetapi hanya yang pertama menghapus pengucilan."
+    },
+    {
+      "id": "p07-086",
+      "nomor": 86,
+      "kategori": "TKP",
+      "subtopik": "Sosial Budaya",
+      "topik": "Keberatan memakai peralatan makan bersama di pantry kantor karena perbedaan aturan agama",
+      "tingkat": "sedang",
+      "pertanyaan": "Di pantry kantor ada satu set peralatan makan bersama. Rekan Muslim Anda, Ahmad, mengeluh karena peralatan itu juga dipakai untuk makanan yang tidak halal baginya. Rekan lain, Yohanes, tersinggung karena merasa dituduh “mengotori”. Suasana tim menjadi canggung. Langkah Anda adalah ....",
+      "opsi": {
+        "A": "Mengusulkan kepada pengelola kantor peralatan makan terpisah, memberi tanda yang jelas, dan menempelkan pengumuman, tanpa membicarakannya dengan Ahmad dan Yohanes",
+        "B": "Tidak ikut campur karena masalah itu menyangkut keyakinan pribadi masing-masing",
+        "C": "Mendukung larangan membawa makanan tidak halal ke kantor supaya masalah selesai",
+        "D": "Mengajak Ahmad dan Yohanes berbicara dengan tenang, lalu mengusulkan peralatan makan terpisah yang diberi tanda jelas",
+        "E": "Menyarankan setiap pegawai membawa peralatan makannya sendiri dari rumah agar tidak ada lagi yang merasa terganggu di pantry"
+      },
+      "bobot": {
+        "A": 4,
+        "B": 2,
+        "C": 1,
+        "D": 5,
+        "E": 3
+      },
+      "pembahasan": {
+        "inti": "Masalah ini punya dua sisi: **kebutuhan praktis** (Ahmad memerlukan peralatan yang sesuai aturan agamanya) dan **perasaan** (Yohanes merasa dituduh). Solusi teknis saja tidak memulihkan hubungan yang canggung. Respons terbaik **mempertemukan keduanya dalam percakapan yang tenang**, sehingga Ahmad bisa menjelaskan bahwa ini soal aturan agamanya, bukan tuduhan, dan Yohanes merasa dihargai. Setelah itu, usulan peralatan terpisah yang diberi tanda jelas memudahkan semua orang tanpa membatasi makanan siapa pun. Percakapan itu sebaiknya dilakukan di tempat yang tenang, bukan di depan banyak orang, agar tidak ada yang merasa dipermalukan.",
+        "opsi": {
+          "A": "Solusinya praktis dan adil bagi semua, tetapi hubungan yang retak tidak dipulihkan karena kedua pihak tidak diajak bicara.",
+          "B": "Membiarkan ketegangan antarrekan berlarut-larut dengan alasan urusan pribadi, padahal pantry adalah ruang bersama.",
+          "C": "Membatasi hak rekan lain atas makanannya. Ini diskriminatif dan memperuncing perbedaan.",
+          "D": "Memulihkan hubungan lewat dialog, lalu memberi solusi praktis yang menghormati kebutuhan semua pihak.",
+          "E": "Masalah praktis selesai, tetapi hubungan tidak dipulihkan dan semua pegawai dibebani karena masalah dua orang."
+        },
+        "konsep": "**Perbedaan aturan agama di ruang bersama:** pulihkan hubungan dengan dialog, lalu sediakan solusi yang memungkinkan setiap orang menjalankan keyakinannya tanpa membatasi orang lain."
+      },
+      "tips": "Jika ada dua pihak yang sama-sama tersinggung, opsi terbaik biasanya **mengajak keduanya bicara** sebelum menawarkan solusi teknis."
+    },
+    {
+      "id": "p07-087",
+      "nomor": 87,
+      "kategori": "TKP",
+      "subtopik": "Sosial Budaya",
+      "topik": "Ketegangan warga asli dan warga transmigran karena ternak masuk ke ladang",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda penyuluh peternakan di sebuah kecamatan. Di salah satu desa, warga asli dan warga transmigran bersitegang karena ternak milik warga transmigran sering masuk ke ladang warga asli. Dua hari lalu terjadi adu mulut di balai desa. Anda memutuskan untuk ....",
+      "opsi": {
+        "A": "Memberikan penyuluhan kepada kelompok peternak transmigran tentang cara membuat kandang dan mengatur pakan agar ternak tidak lepas",
+        "B": "Memfasilitasi pertemuan kedua kelompok bersama kepala desa dan tokoh adat untuk menyepakati aturan penggembalaan",
+        "C": "Meminta warga transmigran mengalah karena mereka adalah pendatang di desa itu",
+        "D": "Mengusulkan kepada kepala desa agar segera menerbitkan peraturan desa tentang penggembalaan ternak beserta sanksi bagi pelanggarnya",
+        "E": "Tidak berkunjung ke desa itu untuk sementara waktu sampai suasana mereda"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 5,
+        "C": 1,
+        "D": 4,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Konflik antara warga asli dan pendatang mudah melebar dari masalah ternak menjadi sentimen kelompok. Karena itu, penyelesaiannya perlu **melibatkan kedua pihak secara setara** dan **tokoh yang dihormati**, yaitu kepala desa dan tokoh adat. Kesepakatan yang disusun bersama, misalnya jalur dan jam penggembalaan atau kewajiban mengandangkan ternak pada musim tanam, lebih dipatuhi daripada aturan yang datang dari atas. Peran penyuluh di sini adalah memfasilitasi dialog dan menyumbang pengetahuan teknis, bukan memihak salah satu kelompok.",
+        "opsi": {
+          "A": "Bantuan teknis yang berguna, tetapi hanya menyasar satu pihak dan tidak memulihkan hubungan kedua kelompok.",
+          "B": "Dialog setara dengan tokoh yang dihormati menghasilkan kesepakatan yang lebih mungkin dipatuhi kedua kelompok.",
+          "C": "Memihak berdasarkan asal-usul. Ini diskriminatif dan memperuncing konflik.",
+          "D": "Mendorong aturan yang jelas lewat pihak berwenang, tetapi tanpa dialog kedua kelompok, aturan bisa dirasa memihak dan sulit diterima.",
+          "E": "Menghindari tugas saat warga paling membutuhkan penengah. Konflik bisa membesar tanpa ditangani."
+        },
+        "konsep": "**Konflik antarkelompok warga:** fasilitasi dialog setara + libatkan tokoh yang dihormati + sepakati aturan bersama. Memihak berdasarkan asal-usul (pendatang atau asli) selalu bernilai terendah."
+      },
+      "tips": "Bandingkan opsi aturan dari atas (4) dengan opsi kesepakatan bersama (5). Untuk konflik antarkelompok, kesepakatan yang dibuat bersama hampir selalu lebih tinggi."
+    },
+    {
+      "id": "p07-088",
+      "nomor": 88,
+      "kategori": "TKP",
+      "subtopik": "Sosial Budaya",
+      "topik": "Aturan adat melarang memotret padahal formulir bantuan mewajibkan foto rumah",
+      "tingkat": "sulit",
+      "pertanyaan": "Anda petugas pendataan bantuan rumah tidak layak huni. Di sebuah kampung adat, aturan adat melarang memotret rumah dan warga. Padahal formulir pendataan mewajibkan foto rumah sebagai bukti. Beberapa rumah di kampung itu tampak sangat membutuhkan bantuan. Tindakan Anda adalah ....",
+      "opsi": {
+        "A": "Menghormati larangan itu, mencatat kondisi setiap rumah secara rinci, lalu menyerahkan formulir tanpa foto dengan catatan alasan adat",
+        "B": "Menunda pendataan di kampung itu sampai ada petunjuk tertulis dari kantor pusat tentang wilayah yang memiliki larangan adat",
+        "C": "Menghormati larangan itu dan berkonsultasi dengan atasan tentang bukti pengganti yang sah, misalnya berita acara bersama kepala adat",
+        "D": "Memotret rumah-rumah warga secara diam-diam dari kejauhan agar formulir dapat dilengkapi",
+        "E": "Mengeluarkan kampung itu dari pendataan karena syarat foto tidak bisa dipenuhi"
+      },
+      "bobot": {
+        "A": 4,
+        "B": 3,
+        "C": 5,
+        "D": 1,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Soal ini mempertemukan dua kewajiban: **menghormati aturan adat** dan **memenuhi syarat program**. Melanggar adat merusak kepercayaan warga, tetapi mengabaikan syarat bisa membuat data ditolak sehingga warga yang membutuhkan justru tidak menerima bantuan. Jalan keluarnya adalah mencari **bukti pengganti yang sah** melalui atasan yang berwenang, misalnya berita acara pemeriksaan yang ditandatangani petugas dan kepala adat, atau sketsa dan deskripsi rinci. Dengan begitu, adat dihormati, prosedur tetap dipatuhi, dan warga tetap berpeluang dibantu. Soal ini sulit karena opsi 4 juga menghormati adat; bedanya, opsi 4 belum memastikan bukti itu diterima.",
+        "opsi": {
+          "A": "Menghormati adat dan tetap bekerja, tetapi tanpa kepastian apakah formulir tanpa foto akan diterima. Data warga berisiko ditolak.",
+          "B": "Aman, tetapi pasif. Warga yang membutuhkan menunggu tanpa kepastian, padahal Anda bisa mengusulkan jalan keluar.",
+          "C": "Menghormati adat, mencari solusi resmi melalui pihak berwenang, dan melibatkan kepala adat sebagai saksi yang dipercaya.",
+          "D": "Melanggar aturan adat dan privasi warga secara diam-diam. Kepercayaan warga kepada pemerintah bisa hilang.",
+          "E": "Menghindari kesulitan dengan mengorbankan warga yang paling membutuhkan bantuan."
+        },
+        "konsep": "**Adat vs prosedur:** jangan melanggar salah satunya diam-diam. Hormati adat, lalu cari penyesuaian prosedur yang sah melalui atasan, dengan melibatkan tokoh adat."
+      },
+      "tips": "Jika aturan adat bertentangan dengan syarat administrasi, cari opsi yang **menghormati adat** dan **mencari solusi resmi melalui atasan**. Opsi yang hanya menghormati adat tanpa kepastian administrasi biasanya bernilai 4."
+    },
+    {
+      "id": "p07-089",
+      "nomor": 89,
+      "kategori": "TKP",
+      "subtopik": "Teknologi Informasi dan Komunikasi",
+      "topik": "Data layanan hanya tersimpan di satu komputer tua tanpa salinan cadangan",
+      "tingkat": "mudah",
+      "pertanyaan": "Data permohonan layanan di bagian Anda selama tiga tahun hanya tersimpan di satu komputer tua yang mulai sering mati sendiri. Belum pernah ada salinan cadangan. Anda bertanggung jawab mengelola data itu. Langkah Anda adalah ....",
+      "opsi": {
+        "A": "Segera mencadangkan data ke penyimpanan resmi kantor, lalu mengusulkan jadwal pencadangan rutin kepada atasan",
+        "B": "Melaporkan kerusakan komputer kepada bagian TI dan menunggu perbaikan atau penggantiannya sebelum memikirkan pencadangan data",
+        "C": "Menyalin seluruh data ke flashdisk pribadi lalu membawanya pulang supaya aman bila komputer rusak",
+        "D": "Mencadangkan data ke penyimpanan resmi kantor, memeriksa hasilnya, dan mengulanginya setiap kali komputer itu tampak bermasalah",
+        "E": "Tetap memakai komputer itu seperti biasa sambil berharap komputer tidak rusak sebelum ada penggantinya"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 3,
+        "C": 1,
+        "D": 4,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Data permohonan warga adalah aset instansi. Kehilangannya merugikan warga dan kantor, misalnya riwayat permohonan hilang dan berkas harus diulang. Langkah pertama adalah **mengamankan data sekarang** dengan mencadangkannya ke **penyimpanan resmi kantor**, bukan ke perangkat pribadi. Langkah kedua adalah **membuat pencadangan menjadi rutin**, karena risiko kehilangan data tidak hanya datang dari komputer tua. Jadwal rutin perlu persetujuan atasan agar menjadi prosedur kerja, bukan bergantung pada ingatan satu orang. Pencadangan sebaiknya juga diuji sesekali dengan membuka kembali salinannya, karena salinan yang rusak sama berbahayanya dengan tidak punya salinan.",
+        "opsi": {
+          "A": "Mengamankan data segera di tempat resmi dan menjadikan pencadangan sebagai prosedur rutin melalui atasan.",
+          "B": "Melapor itu perlu, tetapi data dibiarkan berisiko selama menunggu perbaikan. Prioritasnya terbalik.",
+          "C": "Membawa data warga ke perangkat dan rumah pribadi berisiko kebocoran dan melanggar aturan keamanan data.",
+          "D": "Data diamankan di tempat resmi dan hasilnya diperiksa, tetapi pencadangan hanya dilakukan saat ada gejala kerusakan, bukan terjadwal.",
+          "E": "Mengabaikan risiko yang sudah terlihat. Jika komputer rusak, data tiga tahun bisa hilang."
+        },
+        "konsep": "**Prinsip pencadangan data:** segera, di penyimpanan resmi, dan terjadwal. Data milik instansi tidak boleh dipindahkan ke perangkat pribadi."
+      },
+      "tips": "Untuk soal pengamanan data, cari opsi yang **segera bertindak di jalur resmi** dan **membuat prosedur rutin**. Opsi “bawa pulang supaya aman” selalu jebakan."
+    },
+    {
+      "id": "p07-090",
+      "nomor": 90,
+      "kategori": "TKP",
+      "subtopik": "Teknologi Informasi dan Komunikasi",
+      "topik": "Akun tak dikenal menampilkan konten tidak senonoh saat webinar instansi",
+      "tingkat": "mudah",
+      "pertanyaan": "Anda menjadi moderator webinar sosialisasi instansi yang diikuti 300 peserta. Tautan webinar dibagikan terbuka di media sosial. Di tengah acara, sebuah akun tak dikenal membagikan layar berisi gambar tidak senonoh. Langkah pertama Anda adalah ....",
+      "opsi": {
+        "A": "Melanjutkan acara sambil meminta peserta mengabaikan tampilan itu dan menunggu panitia teknis menanganinya",
+        "B": "Merekam tampilan akun pelaku lalu menyebarkannya di media sosial instansi untuk mempermalukan pelaku",
+        "C": "Menghentikan siaran sementara, mengeluarkan akun itu, dan memeriksa daftar peserta satu per satu sebelum acara dilanjutkan kembali",
+        "D": "Mengakhiri webinar lebih cepat dan menjadwalkannya ulang pada hari lain",
+        "E": "Segera mengeluarkan akun itu dan membatasi berbagi layar hanya untuk panitia, lalu melanjutkan acara setelah meminta maaf"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 1,
+        "C": 4,
+        "D": 2,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Gangguan semacam ini dikenal sebagai *zoombombing*: penyusup masuk lewat tautan terbuka dan menampilkan konten yang mengganggu. Moderator perlu bertindak **cepat** untuk menghentikan gangguan (mengeluarkan akun) dan **mencegah pengulangan** (membatasi fitur berbagi layar hanya untuk panitia), lalu **mengembalikan acara** dengan permintaan maaf singkat kepada peserta. Langkah ini melindungi 300 peserta tanpa membuang waktu mereka. Untuk acara berikutnya, panitia dapat memakai ruang tunggu, pendaftaran, atau tautan yang tidak dibagikan terbuka.",
+        "opsi": {
+          "A": "Peserta dibiarkan terpapar konten tidak pantas lebih lama. Moderator memiliki kendali tetapi tidak memakainya.",
+          "B": "Menyebarkan konten tidak senonoh, walaupun untuk mempermalukan pelaku, melanggar aturan dan merusak citra instansi.",
+          "C": "Gangguan teratasi dengan teliti, tetapi memeriksa 300 peserta satu per satu membuang waktu, sedangkan pencegahan sederhana tidak dilakukan.",
+          "D": "Menghindari masalah dengan mengorbankan acara dan waktu ratusan peserta, padahal gangguan bisa diatasi dalam hitungan detik.",
+          "E": "Cepat, mencegah gangguan berulang dengan pengaturan yang tepat, dan acara tetap berjalan untuk peserta."
+        },
+        "konsep": "**Penanganan gangguan rapat daring:** keluarkan pelaku → kunci fitur yang disalahgunakan → lanjutkan acara. Pencegahan: ruang tunggu, tautan terdaftar, dan hak berbagi layar hanya untuk panitia."
+      },
+      "tips": "Dalam soal gangguan digital saat acara berlangsung, opsi terbaik **menghentikan gangguan sekaligus menutup celahnya** tanpa membuang waktu banyak orang."
+    },
+    {
+      "id": "p07-091",
+      "nomor": 91,
+      "kategori": "TKP",
+      "subtopik": "Teknologi Informasi dan Komunikasi",
+      "topik": "Rekan hendak mengunggah daftar penerima bantuan ke situs konversi PDF gratis",
+      "tingkat": "sedang",
+      "pertanyaan": "Rekan Anda, Sinta, hendak mengubah berkas berisi nama, NIK, dan alamat ratusan penerima bantuan menjadi PDF lewat situs konversi gratis di internet, karena aplikasi PDF di kantor sedang bermasalah. Laporan itu harus dikirim siang ini. Anda kebetulan melihatnya. Anda akan ....",
+      "opsi": {
+        "A": "Mengingatkan Sinta agar tidak memakai situs itu, menyarankannya menunggu aplikasi kantor pulih, lalu melaporkan masalah aplikasi ke bagian TI",
+        "B": "Membiarkannya karena situs konversi itu dipakai banyak orang dan laporannya harus segera dikirim",
+        "C": "Mengingatkan Sinta tentang risiko data warga tersimpan di situs itu dan membantunya memakai fitur simpan sebagai PDF di komputer kantor",
+        "D": "Menyarankan Sinta mengirim berkas itu ke surel pribadinya agar bisa diubah menjadi PDF di laptop rumah",
+        "E": "Menyarankan Sinta menghapus kolom NIK dan alamat sebelum mengunggah berkas, lalu menambahkannya lagi secara manual di PDF"
+      },
+      "bobot": {
+        "A": 4,
+        "B": 2,
+        "C": 5,
+        "D": 1,
+        "E": 3
+      },
+      "pembahasan": {
+        "inti": "Berkas yang diunggah ke situs gratis dapat **tersimpan di server pihak lain** yang tidak kita kendalikan. Nama, NIK, dan alamat ratusan warga adalah data pribadi yang wajib dilindungi instansi. Namun tenggat laporan juga nyata, sehingga respons terbaik **mencegah risiko sekaligus memberi jalan keluar yang aman**. Sebagian besar aplikasi pengolah kata sudah memiliki fitur menyimpan atau mengekspor ke PDF tanpa koneksi internet, jadi pekerjaan tetap selesai tanpa data keluar dari komputer kantor.",
+        "opsi": {
+          "A": "Data terlindungi dan masalah aplikasi dilaporkan, tetapi laporan berisiko terlambat padahal ada cara aman yang bisa dipakai saat itu juga.",
+          "B": "Membiarkan risiko kebocoran data warga demi kecepatan. Ini sikap menghindar dari tanggung jawab bersama menjaga data.",
+          "C": "Mencegah kebocoran data dan menuntaskan pekerjaan dengan alat yang aman dan tersedia di kantor.",
+          "D": "Memindahkan data warga ke surel dan perangkat pribadi memperbesar risiko kebocoran dan melanggar aturan pengelolaan data.",
+          "E": "Mengurangi sebagian risiko, tetapi nama penerima tetap terunggah dan penambahan data manual rawan salah ketik."
+        },
+        "konsep": "**Data pribadi dan layanan daring gratis:** anggap setiap berkas yang diunggah ke layanan luar dapat disimpan pihak lain. Pilih alat resmi atau fitur luring yang tersedia. Pelindungan data pribadi diatur dalam UU 27/2022."
+      },
+      "tips": "Jika ada tenggat dan risiko data, cari opsi yang **aman sekaligus menyelesaikan pekerjaan**. Opsi yang aman tetapi membuat tugas terlambat biasanya bernilai 4.",
+      "rujukan": [
+        "UU 27/2022 tentang Pelindungan Data Pribadi"
+      ]
+    },
+    {
+      "id": "p07-092",
+      "nomor": 92,
+      "kategori": "TKP",
+      "subtopik": "Teknologi Informasi dan Komunikasi",
+      "topik": "Chatbot layanan instansi memberikan syarat yang sudah tidak berlaku",
+      "tingkat": "sedang",
+      "pertanyaan": "Instansi Anda memakai chatbot di WhatsApp untuk menjawab pertanyaan layanan. Anda menemukan bahwa chatbot masih memberikan daftar syarat lama pembuatan akta kelahiran, sehingga beberapa warga datang ke loket membawa berkas yang keliru. Langkah Anda adalah ....",
+      "opsi": {
+        "A": "Memberi tahu setiap warga yang datang dengan berkas keliru tentang syarat yang benar, tanpa melaporkan kesalahan chatbot itu",
+        "B": "Mengunggah tangkapan layar kesalahan chatbot ke media sosial pribadi sambil mengkritik pengelola aplikasi",
+        "C": "Menyarankan warga bertanya langsung ke loket saja karena jawaban chatbot sering keliru",
+        "D": "Melaporkan kesalahan itu kepada pengelola chatbot dengan contoh percakapannya, sekaligus meminta petugas loket membantu warga yang membawa berkas lama",
+        "E": "Melaporkan kesalahan itu kepada pengelola chatbot, meminta jawabannya segera diperbaiki, dan menyarankan pemeriksaan rutin atas semua jawaban otomatis setiap kali aturan berubah"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 1,
+        "C": 2,
+        "D": 5,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Kesalahan pada layanan otomatis berdampak luas karena satu jawaban keliru diterima banyak warga. Respons terbaik menangani **dua sisi masalah sekaligus**: **memperbaiki sumbernya** dengan melapor kepada pengelola chatbot disertai bukti percakapan, dan **mengurangi kerugian warga yang sudah terkena**, yaitu memastikan petugas loket membantu warga yang membawa berkas lama, misalnya dengan menjelaskan kekurangannya dan memberi kemudahan melengkapinya. Soal ini sedang karena opsi lain yang juga melapor terlihat lebih lengkap, padahal warga yang sudah dirugikan tidak tersentuh.",
+        "opsi": {
+          "A": "Warga yang datang terbantu satu per satu, tetapi sumber kesalahan dibiarkan sehingga warga lain terus menerima informasi keliru.",
+          "B": "Mengkritik instansi sendiri di media sosial pribadi merusak citra instansi tanpa memperbaiki apa pun.",
+          "C": "Menghindari masalah dan melemahkan kepercayaan pada layanan digital instansi, padahal kesalahannya bisa diperbaiki.",
+          "D": "Sumber kesalahan diperbaiki melalui pengelola yang berwenang, dan warga yang sudah dirugikan tetap dibantu.",
+          "E": "Perbaikan sumber dan pencegahan jangka panjang sudah ada, tetapi warga yang terlanjur datang dengan berkas keliru tidak diperhatikan."
+        },
+        "konsep": "**Kesalahan informasi layanan:** perbaiki sumbernya dan bantu warga yang sudah terdampak. Opsi yang hanya memperbaiki sistem atau hanya membantu warga belum lengkap."
+      },
+      "tips": "Jangan memilih opsi terpanjang secara otomatis. Periksa apakah opsi itu **memperhatikan warga yang sudah dirugikan**. Di soal ini, unsur itulah yang membedakan bobot 5 dan 4."
+    },
+    {
+      "id": "p07-093",
+      "nomor": 93,
+      "kategori": "TKP",
+      "subtopik": "Teknologi Informasi dan Komunikasi",
+      "topik": "Kolom komentar siaran langsung rapat dengar pendapat dipenuhi kritik dan hinaan",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda admin akun media sosial dinas perhubungan yang menyiarkan langsung rapat dengar pendapat tentang kenaikan tarif parkir. Kolom komentar dipenuhi kritik warga. Sebagian sopan, tetapi sebagian lagi kasar dan menghina pribadi pejabat. Tindakan Anda adalah ....",
+      "opsi": {
+        "A": "Menyematkan pengingat agar warga berkomentar dengan sopan, lalu membiarkan semua komentar tampil apa adanya sampai siaran selesai",
+        "B": "Menyembunyikan komentar yang menghina sesuai pedoman akun, membiarkan kritik yang sopan tetap tampil, dan meneruskan pertanyaan warga kepada panitia",
+        "C": "Menghapus semua komentar kritis, termasuk yang sopan, agar siaran tampak mendukung kebijakan",
+        "D": "Menonaktifkan kolom komentar sampai siaran selesai agar suasana tidak memanas",
+        "E": "Menyematkan pengingat aturan berkomentar, menyembunyikan komentar yang menghina, dan membiarkan kritik yang sopan tetap tampil sampai siaran selesai"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 5,
+        "C": 1,
+        "D": 2,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Siaran rapat dengar pendapat bertujuan **membuka ruang partisipasi warga**. Kritik yang sopan adalah masukan yang sah dan harus tetap tampil, sedangkan hinaan pribadi boleh disembunyikan sesuai pedoman komunitas akun resmi. Namun, admin yang baik tidak hanya menjadi penyaring. Pertanyaan dan masukan warga perlu **diteruskan kepada panitia rapat**, agar partisipasi warga benar-benar sampai kepada pengambil kebijakan. Unsur terakhir inilah yang membedakan pengelolaan kanal yang aktif dari yang sekadar menjaga ketertiban. Pedoman komunitas yang dipasang di profil akun membuat keputusan menyembunyikan komentar dapat dipertanggungjawabkan dan tidak dianggap sewenang-wenang.",
+        "opsi": {
+          "A": "Mengingatkan dengan baik, tetapi membiarkan hinaan pribadi tetap tampil, dan masukan warga tidak diteruskan.",
+          "B": "Ruang kritik terjaga, hinaan ditangani sesuai pedoman, dan suara warga sampai kepada panitia rapat.",
+          "C": "Menyensor kritik yang sah membuat siaran menyesatkan dan merusak kepercayaan publik.",
+          "D": "Menutup ruang partisipasi sepenuhnya demi menghindari keributan.",
+          "E": "Moderasi sudah adil dan tertib, tetapi masukan warga berhenti di kolom komentar dan tidak sampai kepada panitia."
+        },
+        "konsep": "**Moderasi kanal resmi:** bedakan kritik (dipertahankan) dari hinaan (ditangani sesuai pedoman), lalu teruskan masukan kepada pengambil keputusan. Menyensor kritik dan menutup komentar sama-sama bernilai rendah."
+      },
+      "tips": "Jika dua opsi sama-sama memoderasi dengan adil, pilih yang **meneruskan suara warga** kepada pihak yang berwenang."
+    },
+    {
+      "id": "p07-094",
+      "nomor": 94,
+      "kategori": "TKP",
+      "subtopik": "Teknologi Informasi dan Komunikasi",
+      "topik": "Telepon dengan suara mirip kepala dinas meminta transfer dana mendesak",
+      "tingkat": "sulit",
+      "pertanyaan": "Pukul 16.45, Anda, bendahara pengeluaran dinas, menerima telepon dari nomor tak dikenal. Suaranya sangat mirip suara kepala dinas. Ia meminta Anda segera mentransfer Rp25 juta ke rekening “panitia acara gubernur” karena mendesak, dan dokumennya akan menyusul. Kepala dinas memang sedang bertugas di luar kota. Tindakan Anda adalah ....",
+      "opsi": {
+        "A": "Meminta penelepon mengirim surat permintaan resmi lewat surel lebih dulu sebelum Anda memproses transfer",
+        "B": "Segera mentransfer dana karena suaranya jelas suara kepala dinas dan permintaannya sangat mendesak",
+        "C": "Menahan transfer, menelepon balik nomor resmi kepala dinas, dan meminta dokumen pendukung dikirim sebelum permintaan itu diproses",
+        "D": "Mengabaikan telepon itu dan menunggu kepala dinas kembali ke kantor besok untuk menanyakannya",
+        "E": "Menahan transfer sampai memverifikasi lewat nomor resmi kepala dinas yang Anda simpan, lalu melaporkan upaya penipuan itu"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 1,
+        "C": 4,
+        "D": 2,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Teknologi kecerdasan buatan kini dapat **meniru suara seseorang** dengan sangat mirip, sehingga suara yang familier bukan lagi bukti identitas. Tanda bahaya dalam soal ini lengkap: nomor tak dikenal, desakan waktu menjelang jam pulang, rekening pihak ketiga, dan dokumen yang “menyusul”. Langkah aman adalah **tidak memproses apa pun** sebelum **memverifikasi lewat saluran yang Anda kenal sendiri**, yaitu nomor resmi kepala dinas yang tersimpan, bukan nomor yang menelepon. Jika terbukti penipuan, **laporkan** agar rekan lain dan instansi waspada. Soal ini sulit karena opsi 4 juga memverifikasi, tetapi masih membuka kemungkinan memproses jika dokumen datang dan tidak melaporkan upaya penipuan.",
+        "opsi": {
+          "A": "Ada kehati-hatian, tetapi surel bisa dipalsukan oleh penipu yang sama. Verifikasi dilakukan lewat saluran yang dikendalikan penelepon.",
+          "B": "Melanggar prosedur pengeluaran dana dan sangat mungkin merugikan keuangan negara.",
+          "C": "Verifikasi lewat saluran yang benar sudah dilakukan, tetapi permintaan masih bisa diproses jika dokumen datang, dan upaya penipuan tidak dilaporkan.",
+          "D": "Dana memang aman, tetapi Anda menghindari masalah tanpa verifikasi dan tanpa laporan, sehingga penipu bebas mencoba korban lain.",
+          "E": "Menahan dana, memverifikasi lewat saluran tepercaya, dan melaporkan agar instansi dapat mencegah percobaan berikutnya."
+        },
+        "konsep": "**Rekayasa sosial dengan suara tiruan:** jangan percaya suara atau nomor, percayai saluran yang Anda kenal. Pengeluaran dana tetap mengikuti prosedur dan dokumen sah, walaupun yang meminta tampak seperti pimpinan."
+      },
+      "tips": "Untuk permintaan uang atau data yang mendesak, cari opsi yang **memverifikasi lewat saluran yang Anda kendalikan sendiri** dan **melaporkan**. Opsi yang meminta bukti dari pihak yang mencurigakan sendiri masih bisa ditipu."
+    },
+    {
+      "id": "p07-095",
+      "nomor": 95,
+      "kategori": "TKP",
+      "subtopik": "Teknologi Informasi dan Komunikasi",
+      "topik": "Stiker QRIS palsu ditempel di atas kode pembayaran retribusi pasar",
+      "tingkat": "sulit",
+      "pertanyaan": "Anda petugas retribusi di sebuah pasar daerah. Seorang pedagang melapor bahwa stiker QRIS di pos pembayaran retribusi tampak ditempel di atas stiker lama. Saat dipindai, nama penerima berbeda dari nama rekening resmi pemerintah daerah. Beberapa pedagang ternyata sudah membayar melalui kode itu. Anda akan ....",
+      "opsi": {
+        "A": "Mengamankan stiker itu sebagai bukti, melapor kepada atasan dan bank penerbit, lalu memberi tahu pedagang cara mengecek nama penerima",
+        "B": "Mencabut stiker palsu, lalu meminta pedagang membayar retribusi secara tunai sampai kode yang baru tersedia",
+        "C": "Meminta pedagang yang terlanjur membayar lewat kode palsu untuk membayar ulang tanpa mencatat kejadiannya",
+        "D": "Mencabut stiker palsu, menempelkan kode resmi yang baru, lalu meminta pedagang memeriksa nama penerima dan menyimpan bukti bayar masing-masing",
+        "E": "Membiarkan stiker itu sampai ada petunjuk atasan karena urusan QRIS dikelola bagian keuangan"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 3,
+        "C": 1,
+        "D": 4,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Stiker QRIS palsu adalah **penipuan yang merugikan pedagang dan pendapatan daerah**. Tindakan yang tepat mencakup tiga hal. Pertama, **mengamankan bukti**: stiker itu memuat identitas rekening penerima yang dibutuhkan untuk penelusuran. Kedua, **melapor kepada pihak berwenang**: atasan (yang mengurus pembayaran resmi dan korban) dan bank atau penyelenggara pembayaran (yang dapat menelusuri dan menindak rekening penipu). Ketiga, **mencegah korban baru** dengan mengajari pedagang mengecek nama penerima sebelum membayar. Soal ini sulit karena opsi 4 tampak lebih praktis: stiker baru langsung dipasang. Namun bukti hilang dan pedagang yang sudah tertipu tidak ditangani.",
+        "opsi": {
+          "A": "Bukti diamankan, kasus dilaporkan kepada pihak yang dapat menelusuri, dan pedagang dibekali cara mencegah penipuan serupa.",
+          "B": "Menghentikan kerugian baru dengan cara yang aman, tetapi bukti dibuang dan korban tidak ditangani.",
+          "C": "Membebani korban dua kali dan menutupi kejadian. Merugikan pedagang dan menghilangkan jejak penipuan.",
+          "D": "Layanan cepat pulih dan pedagang diajari waspada, tetapi bukti untuk menelusuri penipu hilang dan kasus tidak dilaporkan.",
+          "E": "Menunda tindakan atas penipuan yang sedang berlangsung, sehingga korban bisa terus bertambah."
+        },
+        "konsep": "**Penipuan pembayaran digital:** amankan bukti → laporkan kepada atasan dan penyelenggara pembayaran → cegah korban baru. Jangan langsung membuang barang bukti, walaupun tujuannya memulihkan layanan."
+      },
+      "tips": "Jika ada kejahatan digital yang sudah memakan korban, opsi terbaik memuat unsur **bukti, laporan, dan pencegahan**. Opsi yang hanya memulihkan layanan biasanya bernilai 4."
+    },
+    {
+      "id": "p07-096",
+      "nomor": 96,
+      "kategori": "TKP",
+      "subtopik": "Profesionalisme",
+      "topik": "Ditugaskan mengikuti pelatihan dasar yang materinya sudah dikuasai",
+      "tingkat": "mudah",
+      "pertanyaan": "Anda ditugaskan mengikuti pelatihan lembar kerja (spreadsheet) tingkat dasar selama tiga hari. Padahal Anda sudah mahir dan sering membantu rekan memakai rumus dan tabel pivot. Kuota peserta dari kantor Anda hanya dua orang. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Mengikuti pelatihan sesuai penugasan karena sudah ditetapkan atasan, walaupun materinya tidak menambah kemampuan Anda",
+        "B": "Menyampaikan kemampuan Anda kepada atasan dan mengusulkan kursi itu dialihkan ke rekan yang lebih membutuhkan",
+        "C": "Mengikuti pelatihan dengan sungguh-sungguh, membantu peserta lain yang kesulitan, dan mempelajari materi lanjutan sendiri di sela sesi",
+        "D": "Meminta rekan mengisi daftar hadir pelatihan atas nama Anda sementara Anda tetap bekerja di kantor",
+        "E": "Mengikuti pelatihan seadanya sambil mengerjakan pekerjaan kantor di laptop selama sesi berlangsung"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 5,
+        "C": 4,
+        "D": 1,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Pelatihan adalah sumber daya terbatas: kuota hanya dua orang, dan biaya serta waktu tiga hari ditanggung instansi. Profesionalisme berarti **jujur tentang kompetensi diri** dan **memikirkan manfaat terbesar bagi organisasi**. Menyampaikan bahwa Anda sudah menguasai materi, sambil mengusulkan rekan yang lebih membutuhkan, membuat kuota terpakai tepat sasaran. Keputusan akhir tetap di tangan atasan. Jika atasan tetap menugaskan Anda, misalnya karena alasan lain, Anda mengikutinya dengan sungguh-sungguh. Sikap ini juga mencerminkan nilai akuntabel: memakai fasilitas negara, termasuk anggaran pelatihan, secara bertanggung jawab.",
+        "opsi": {
+          "A": "Patuh, tetapi pasif. Kuota pelatihan tidak dimanfaatkan secara optimal dan atasan tidak mendapat informasi yang berguna.",
+          "B": "Jujur tentang kompetensi dan memikirkan manfaat organisasi, sambil tetap menyerahkan keputusan kepada atasan.",
+          "C": "Sikap positif dan bermanfaat bagi peserta lain, tetapi kuota tetap terpakai oleh orang yang sudah menguasai materinya.",
+          "D": "Memalsukan kehadiran adalah pelanggaran disiplin dan integritas.",
+          "E": "Hadir tetapi tidak sungguh-sungguh. Sumber daya pelatihan terbuang dan tugas kantor tidak dikerjakan dengan baik."
+        },
+        "konsep": "**Profesional terhadap pengembangan diri:** jujur menilai kemampuan, gunakan kesempatan belajar secara tepat, dan pikirkan manfaat bagi organisasi, bukan hanya bagi diri sendiri."
+      },
+      "tips": "Jika soal menyebut sumber daya terbatas (kuota, anggaran), opsi terbaik biasanya **memastikan sumber daya itu dipakai paling tepat** melalui keputusan atasan."
+    },
+    {
+      "id": "p07-097",
+      "nomor": 97,
+      "kategori": "TKP",
+      "subtopik": "Profesionalisme",
+      "topik": "Kebiasaan menunda membuat tugas kajian tertinggal menjelang tenggat",
+      "tingkat": "mudah",
+      "pertanyaan": "Anda diberi waktu tiga minggu untuk menyusun kajian kebutuhan pelatihan pegawai. Dua minggu sudah berlalu, dan Anda baru menyelesaikan kerangkanya karena terus menunda. Tenggatnya tinggal satu minggu. Yang Anda lakukan adalah ....",
+      "opsi": {
+        "A": "Menyusun target harian untuk sisa pekerjaan mulai hari ini dan melaporkan perkembangannya kepada atasan secara jujur",
+        "B": "Meminta perpanjangan waktu dengan alasan pekerjaan lain sedang menumpuk, padahal penyebabnya kebiasaan menunda",
+        "C": "Mengerjakan bagian yang paling mudah lebih dulu dan menyerahkan apa pun yang sudah selesai pada hari tenggat",
+        "D": "Menyalin kajian dari instansi lain yang ditemukan di internet lalu mengganti nama instansinya",
+        "E": "Lembur setiap malam, mengerjakan semua bagian sendirian, dan menyerahkannya tepat waktu tanpa memberi tahu atasan kendalanya"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 2,
+        "C": 3,
+        "D": 1,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Mengakui kesalahan sendiri, dalam hal ini kebiasaan menunda, adalah langkah pertama sikap profesional. Satu minggu masih cukup jika pekerjaan **dipecah menjadi target harian** dan **dimulai hari ini**. Melaporkan perkembangan kepada atasan secara jujur memberi kesempatan atasan membantu, misalnya mengurangi tugas lain atau memberi masukan, sebelum terlambat. Respons terbaik memperbaiki cara kerja, bukan hanya mengejar tenggat dengan cara apa pun. Kebiasaan menunda juga bisa dicegah ke depan, misalnya dengan menetapkan target mingguan sejak hari pertama penugasan.",
+        "opsi": {
+          "A": "Mengambil tanggung jawab, merencanakan sisa pekerjaan dengan realistis, dan terbuka kepada atasan.",
+          "B": "Tidak jujur tentang penyebab keterlambatan dan menghindari tanggung jawab atas kebiasaan sendiri.",
+          "C": "Pasrah pada hasil. Kajian yang diserahkan berisiko tidak lengkap dan kualitasnya rendah.",
+          "D": "Plagiarisme adalah pelanggaran integritas, dan kajian kebutuhan pelatihan harus berdasar data instansi sendiri.",
+          "E": "Kerja keras dan tepat waktu, tetapi ditanggung sendirian tanpa komunikasi, sehingga kualitas berisiko dan atasan tidak tahu kendalanya."
+        },
+        "konsep": "**Mengelola keterlambatan karena kesalahan sendiri:** akui, rencanakan ulang dengan target kecil, mulai segera, dan komunikasikan. Kejujuran tentang penyebab lebih bernilai daripada alasan yang terdengar baik."
+      },
+      "tips": "Opsi yang mengandung alasan tidak jujur atau menyalin karya orang lain selalu bernilai rendah, walaupun membuat tenggat terpenuhi."
+    },
+    {
+      "id": "p07-098",
+      "nomor": 98,
+      "kategori": "TKP",
+      "subtopik": "Profesionalisme",
+      "topik": "Dimutasi ke bagian yang dianggap rekan-rekan sebagai tempat buangan",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda dimutasi dari bagian perencanaan yang sibuk ke bagian kearsipan. Beberapa rekan menyebut bagian itu sebagai “tempat buangan”. Anda merasa kecewa karena tidak tahu alasan mutasi tersebut. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Menjalankan tugas kearsipan sesuai uraian tugas sambil menunggu kesempatan mutasi berikutnya",
+        "B": "Mengajukan permohonan pindah kembali ke bagian perencanaan pada minggu pertama karena merasa tidak cocok",
+        "C": "Menjalankan tugas kearsipan dengan baik, menanyakan alasan mutasi kepada atasan, dan menyampaikan minat Anda di bidang perencanaan",
+        "D": "Mempelajari tugas kearsipan dengan sungguh-sungguh untuk menemukan perbaikan yang bisa diusulkan, misalnya digitalisasi arsip",
+        "E": "Bekerja seadanya dan sering meninggalkan meja karena merasa pekerjaan arsip tidak penting"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 2,
+        "C": 4,
+        "D": 5,
+        "E": 1
+      },
+      "pembahasan": {
+        "inti": "Mutasi adalah bagian dari pembinaan karier ASN, dan setiap bagian memiliki peran. Arsip yang tertata, misalnya, menentukan cepat lambatnya layanan dan menjadi bukti akuntabilitas instansi. Sikap profesional adalah **beradaptasi dan berkontribusi** di tempat baru, bukan menilai tempat itu dari anggapan orang lain. Mempelajari tugas dengan sungguh-sungguh sering memperlihatkan peluang perbaikan, seperti digitalisasi, yang justru membuat kinerja Anda terlihat. Perasaan kecewa itu wajar, tetapi tidak menentukan kualitas kerja.",
+        "opsi": {
+          "A": "Patuh dan menjalankan tugas, tetapi pasif dan tidak berusaha memberi nilai tambah.",
+          "B": "Menolak beradaptasi sebelum mencoba. Kesan tidak cocok pada minggu pertama belum menjadi dasar yang kuat.",
+          "C": "Bekerja dengan baik dan berkomunikasi terbuka dengan atasan, tetapi perhatian masih tertuju pada bagian lama, bukan pada kontribusi di tempat baru.",
+          "D": "Beradaptasi penuh dan mencari kontribusi nyata di tempat baru. Ini sikap profesional terhadap penugasan.",
+          "E": "Melanggar disiplin kerja dan merugikan layanan yang bergantung pada arsip."
+        },
+        "konsep": "**Profesional terhadap penugasan yang kurang diinginkan:** terima, pelajari, dan beri nilai tambah. Komunikasi tentang aspirasi karier tetap boleh, tetapi tidak menggantikan kesungguhan di tugas yang sekarang."
+      },
+      "tips": "Bedakan opsi yang **fokus berkontribusi di tempat baru** (5) dari opsi yang bekerja baik sambil **memikirkan kembali ke tempat lama** (4)."
+    },
+    {
+      "id": "p07-099",
+      "nomor": 99,
+      "kategori": "TKP",
+      "subtopik": "Profesionalisme",
+      "topik": "Diminta bekerja pada hari Sabtu yang bentrok dengan acara keluarga",
+      "tingkat": "sedang",
+      "pertanyaan": "Menjelang batas akhir laporan, atasan meminta seluruh tim bekerja pada hari Sabtu. Anda sudah lama berjanji menghadiri wisuda adik Anda di luar kota pada hari yang sama. Bagian laporan Anda masih tersisa sekitar enam jam kerja. Anda akan ....",
+      "opsi": {
+        "A": "Membatalkan kehadiran di wisuda adik Anda dan masuk kerja pada hari Sabtu, karena tugas kantor harus selalu didahulukan",
+        "B": "Meminta surat keterangan sakit agar tidak perlu masuk kerja pada hari Sabtu",
+        "C": "Menyelesaikan sebagian bagian Anda sampai larut Jumat malam, menitipkan sisanya kepada rekan satu tim, lalu memberi tahu atasan pada Sabtu pagi",
+        "D": "Berangkat ke wisuda dan menyampaikan kepada atasan bahwa hari Sabtu adalah hak libur Anda",
+        "E": "Menyampaikan rencana Anda kepada atasan lebih awal dan menawarkan menyelesaikan bagian Anda pada Jumat malam atau Minggu"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 1,
+        "C": 4,
+        "D": 2,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Situasi ini bukan pilihan mutlak antara kantor dan keluarga. Sisa pekerjaan Anda jelas ukurannya, sekitar enam jam, sehingga bisa dijadwalkan ulang. Sikap profesional adalah **berkomunikasi lebih awal** dengan atasan dan **menawarkan jalan keluar yang memastikan tanggung jawab Anda tetap selesai**, misalnya Jumat malam atau Minggu. Atasan mendapat kepastian, tim tidak terbebani, dan janji kepada keluarga tetap ditepati. Keputusan akhir tetap di tangan atasan setelah mendengar usulan itu.",
+        "opsi": {
+          "A": "Menunjukkan dedikasi, tetapi kaku. Ada pilihan yang memenuhi kedua tanggung jawab tanpa perlu mengorbankan salah satunya.",
+          "B": "Berbohong dengan surat sakit adalah pelanggaran integritas dan disiplin.",
+          "C": "Bertanggung jawab atas sebagian pekerjaan, tetapi sisanya dipindahkan kepada rekan yang juga sibuk, dan atasan baru diberi tahu pada hari Sabtu.",
+          "D": "Memakai hak libur sebagai alasan tanpa menawarkan solusi. Tanggung jawab bersama tim diabaikan.",
+          "E": "Terbuka sejak awal, menawarkan solusi yang realistis, dan memastikan bagian Anda tetap selesai tanpa membebani rekan."
+        },
+        "konsep": "**Bentrok tugas dan urusan pribadi:** komunikasikan lebih awal, tawarkan alternatif yang menjamin tugas selesai, dan jangan membebani rekan atau berbohong. Pilihan ekstrem (mengorbankan sepenuhnya atau menolak sepenuhnya) biasanya bukan nilai tertinggi."
+      },
+      "tips": "Cari detail ukuran pekerjaan dalam soal (di sini “enam jam kerja”). Detail itu menandakan pekerjaan bisa dijadwalkan ulang, sehingga opsi solutif bernilai tertinggi."
+    },
+    {
+      "id": "p07-100",
+      "nomor": 100,
+      "kategori": "TKP",
+      "subtopik": "Profesionalisme",
+      "topik": "Dua atasan memberi tugas dengan tenggat yang sama",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda staf di Subbagian Keuangan. Kepala Bagian, atasan dari kepala subbagian Anda, langsung meminta Anda menyiapkan data untuk rapat besok pagi. Sementara itu, Kepala Subbagian meminta Anda menyelesaikan rekap anggaran yang tenggatnya juga besok pagi. Keduanya tidak mungkin selesai tepat waktu. Tindakan Anda adalah ....",
+      "opsi": {
+        "A": "Mengerjakan data rapat untuk Kepala Bagian lebih dulu karena jabatannya lebih tinggi, lalu memberi tahu Kepala Subbagian bahwa rekap akan terlambat",
+        "B": "Mencoba mengerjakan keduanya sekaligus sampai larut malam tanpa memberi tahu siapa pun bahwa tenggatnya bentrok",
+        "C": "Segera menyampaikan kedua permintaan itu kepada Kepala Subbagian agar prioritasnya diputuskan bersama Kepala Bagian",
+        "D": "Menyerahkan data rapat seadanya dengan angka perkiraan agar kedua tugas tampak selesai tepat waktu",
+        "E": "Mengerjakan permintaan Kepala Subbagian saja karena ia atasan langsung Anda, dan mengabaikan permintaan Kepala Bagian"
+      },
+      "bobot": {
+        "A": 4,
+        "B": 3,
+        "C": 5,
+        "D": 1,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Ketika dua perintah bertabrakan, staf tidak perlu memutuskan sendiri mana yang lebih penting, karena ia tidak selalu tahu konteks kedua tugas. Langkah profesional adalah **segera menyampaikan bentrok itu secara terbuka** kepada atasan langsung, agar **prioritas diputuskan oleh pihak yang berwenang** dan kedua atasan memiliki informasi yang sama. Kata *segera* penting, karena semakin cepat bentrok diketahui, semakin besar kesempatan atasan mencari solusi, misalnya membagi tugas kepada staf lain atau menunda salah satu tenggat. Saat menyampaikan bentrok, sertakan perkiraan waktu yang dibutuhkan setiap tugas agar atasan dapat memutuskan dengan cepat.",
+        "opsi": {
+          "A": "Masuk akal dan ada pemberitahuan, tetapi prioritas diputuskan sendiri berdasarkan jabatan, bukan berdasarkan kepentingan tugas yang diketahui atasan.",
+          "B": "Berusaha keras, tetapi diam-diam. Jika gagal, kedua atasan terkejut pada saat terakhir dan tidak sempat mencari solusi.",
+          "C": "Terbuka, cepat, dan menyerahkan penentuan prioritas kepada pihak yang berwenang memutuskannya.",
+          "D": "Data rapat berisi angka perkiraan menyesatkan pengambilan keputusan dan melanggar integritas kerja.",
+          "E": "Mengabaikan permintaan pejabat yang lebih tinggi tanpa komunikasi. Ini menghindari masalah, bukan menyelesaikannya."
+        },
+        "konsep": "**Perintah yang bertabrakan:** jangan memilih diam-diam dan jangan mengorbankan kualitas. Sampaikan segera kepada atasan langsung agar prioritas ditetapkan pihak yang berwenang."
+      },
+      "tips": "Jika ada dua perintah yang bentrok, opsi terbaik biasanya **melaporkan bentrok itu segera** kepada atasan langsung, bukan memilih sendiri berdasarkan jabatan."
+    },
+    {
+      "id": "p07-101",
+      "nomor": 101,
+      "kategori": "TKP",
+      "subtopik": "Profesionalisme",
+      "topik": "Atasan meminta nilai kinerja staf dinaikkan karena alasan kasihan",
+      "tingkat": "sulit",
+      "pertanyaan": "Anda kepala subbagian yang menilai kinerja lima staf. Atasan Anda meminta nilai kinerja Pak Joni dinaikkan menjadi “sangat baik” karena ia sedang mengurus kenaikan pangkat dan anaknya baru masuk kuliah. Padahal catatan kinerja sepanjang tahun menunjukkan banyak tugasnya terlambat dan hasilnya di bawah ekspektasi. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Memberi nilai sesuai bukti kinerja, menjelaskan dasarnya kepada atasan secara tertulis, dan melampirkan catatan tugas yang terlambat",
+        "B": "Menaikkan nilai Pak Joni sesuai permintaan atasan karena alasannya manusiawi",
+        "C": "Memberi nilai sesuai bukti kinerja tanpa menanggapi permintaan atasan, supaya tidak terjadi perdebatan yang tidak perlu",
+        "D": "Meminta atasan menilai Pak Joni sendiri agar Anda tidak terlibat dalam keputusan itu",
+        "E": "Menyampaikan kepada atasan bahwa penilaian harus sesuai bukti kinerja, lalu menawarkan rencana pembinaan bagi Pak Joni"
+      },
+      "bobot": {
+        "A": 4,
+        "B": 1,
+        "C": 3,
+        "D": 2,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Penilaian kinerja ASN harus **objektif dan berdasar bukti**, karena hasilnya dipakai untuk keputusan kepegawaian seperti kenaikan pangkat. Nilai yang dinaikkan karena kasihan merugikan staf lain yang bekerja baik dan membuat Pak Joni kehilangan kesempatan memperbaiki diri. Namun, profesionalisme bukan hanya menolak. Pemimpin yang baik juga **peduli pada perkembangan stafnya**. Menawarkan rencana pembinaan, misalnya target bulanan dan pendampingan, menjawab niat baik atasan dengan cara yang benar: membantu Pak Joni benar-benar layak naik pangkat. Soal ini sulit karena opsi 4 juga tegas dan terdokumentasi, tetapi tidak menawarkan jalan keluar bagi staf yang dinilai.",
+        "opsi": {
+          "A": "Objektif, berani, dan terdokumentasi dengan baik, tetapi berhenti pada penolakan tanpa membantu Pak Joni memperbaiki kinerjanya.",
+          "B": "Memanipulasi penilaian kinerja demi alasan pribadi melanggar prinsip objektivitas dan merugikan pegawai lain.",
+          "C": "Penilaiannya benar, tetapi permintaan atasan diabaikan tanpa komunikasi, sehingga hubungan kerja bisa memburuk dan masalah tidak dibicarakan.",
+          "D": "Menghindari tanggung jawab sebagai penilai yang sudah ditetapkan.",
+          "E": "Tegas pada objektivitas penilaian sekaligus peduli pada pengembangan staf melalui jalur yang benar."
+        },
+        "konsep": "**Penilaian kinerja yang profesional:** objektif, berbasis bukti, dan diikuti pembinaan bagi yang belum mencapai target. Menolak manipulasi adalah syarat minimal; menawarkan perbaikan adalah nilai tambah."
+      },
+      "tips": "Jika atasan meminta hal yang salah dengan alasan kemanusiaan, cari opsi yang **menolak manipulasinya** sekaligus **menjawab kepedulian itu dengan cara yang sah**, misalnya pembinaan."
+    },
+    {
+      "id": "p07-102",
+      "nomor": 102,
+      "kategori": "TKP",
+      "subtopik": "Profesionalisme",
+      "topik": "Diminta kompak berkata tidak tahu saat dimintai keterangan oleh inspektorat",
+      "tingkat": "sulit",
+      "pertanyaan": "Inspektorat memeriksa dugaan penyimpangan pengadaan di bidang Anda dan memanggil Anda sebagai saksi. Sebelum pemeriksaan, kepala bidang meminta semua staf “kompak” dengan mengatakan tidak tahu apa-apa. Anda pernah melihat dokumen penawaran yang tanggalnya diubah setelah batas waktu. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Memberikan keterangan lengkap sesuai yang Anda ketahui, termasuk dokumen yang tanggalnya diubah tanpa menambah dugaan pribadi",
+        "B": "Memberikan keterangan jujur, tetapi lebih dulu memberi tahu kepala bidang hal-hal yang akan Anda sampaikan kepada pemeriksa",
+        "C": "Meminta izin tidak hadir dalam pemeriksaan dengan alasan sedang banyak pekerjaan",
+        "D": "Menjawab jujur setiap pertanyaan pemeriksa, tetapi tidak menyinggung dokumen yang tanggalnya diubah kecuali ditanyakan secara khusus",
+        "E": "Mengikuti permintaan kepala bidang dengan mengatakan tidak tahu apa-apa demi menjaga kekompakan bidang"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 3,
+        "C": 2,
+        "D": 4,
+        "E": 1
+      },
+      "pembahasan": {
+        "inti": "Saksi dalam pemeriksaan wajib memberikan keterangan yang **benar dan lengkap**. Kekompakan bidang tidak boleh mengalahkan kejujuran, apalagi dalam pemeriksaan dugaan penyimpangan keuangan negara. Sikap profesional adalah menyampaikan **fakta yang Anda ketahui sendiri**, termasuk informasi penting yang mungkin tidak ditanyakan, misalnya dokumen yang tanggalnya diubah. Namun, kejujuran juga berarti **tidak menambah dugaan** di luar yang Anda lihat. Penilaian atas fakta itu adalah tugas pemeriksa, bukan saksi. Soal ini sulit karena beberapa opsi sama-sama jujur, tetapi berbeda dalam kelengkapan dan independensinya.",
+        "opsi": {
+          "A": "Jujur, lengkap, dan proporsional. Fakta penting disampaikan tanpa menambah tuduhan yang tidak Anda ketahui.",
+          "B": "Keterangannya jujur, tetapi memberi tahu pihak yang diperiksa lebih dulu dapat membuka peluang penghilangan bukti atau tekanan kepada saksi.",
+          "C": "Menghindari pemeriksaan dengan alasan pekerjaan. Kewajiban memberi keterangan diabaikan.",
+          "D": "Tidak berbohong, tetapi menyimpan informasi penting yang Anda tahu relevan. Kejujuran yang pasif belum cukup.",
+          "E": "Memberi keterangan palsu kepada pemeriksa adalah pelanggaran integritas yang berat dan dapat berakibat hukum."
+        },
+        "konsep": "**Saksi dalam pemeriksaan:** benar (tidak berbohong), lengkap (menyampaikan fakta penting walau tidak ditanya), proporsional (tidak menambah dugaan), dan independen (tidak berkoordinasi dengan pihak yang diperiksa)."
+      },
+      "tips": "Bedakan tiga tingkat kejujuran: berbohong (1), jujur tetapi menyimpan fakta penting (4), jujur dan lengkap (5). Opsi yang “memberi tahu pihak terperiksa dulu” merusak independensi."
+    },
+    {
+      "id": "p07-103",
+      "nomor": 103,
+      "kategori": "TKP",
+      "subtopik": "Profesionalisme",
+      "topik": "Rekan menyarankan memotong tahap verifikasi agar target harian tercapai",
+      "tingkat": "sulit",
+      "pertanyaan": "Anda verifikator berkas bantuan modal usaha mikro. Target harian 60 berkas, padahal verifikasi lengkap, termasuk mencocokkan NIK dengan data kependudukan, rata-rata hanya selesai 40 berkas sehari. Rekan menyarankan Anda cukup memeriksa kelengkapan dokumen tanpa mencocokkan NIK agar target tercapai. Yang Anda lakukan adalah ....",
+      "opsi": {
+        "A": "Tetap memverifikasi lengkap dan bekerja lembur setiap hari agar capaian mendekati target, tanpa melaporkan kendala itu",
+        "B": "Tetap memverifikasi lengkap sesuai prosedur, mencatat capaian harian dengan rinci, dan melaporkan kepada atasan bahwa target harian belum dapat dipenuhi",
+        "C": "Tetap memverifikasi lengkap, lalu melaporkan kepada atasan bahwa target tidak realistis disertai data capaian dan usulan perbaikan alur",
+        "D": "Menyerahkan sebagian berkas kepada rekan lain tanpa sepengetahuan atasan agar beban Anda berkurang",
+        "E": "Mengikuti saran rekan untuk semua berkas agar target harian dapat tercapai"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 4,
+        "C": 5,
+        "D": 2,
+        "E": 1
+      },
+      "pembahasan": {
+        "inti": "Pencocokan NIK adalah tahap yang mencegah bantuan jatuh kepada penerima fiktif atau ganda. Melewatkannya demi target berarti **mengorbankan tujuan program**. Profesionalisme menuntut prosedur tetap dijalankan. Namun, target yang tidak realistis juga masalah organisasi yang perlu diketahui atasan. Respons terbaik **melaporkan dengan data** (rata-rata 40 berkas per hari dengan verifikasi lengkap) dan **mengusulkan perbaikan**, misalnya akses pencocokan data yang lebih cepat, tambahan verifikator, atau penyesuaian target. Dengan cara itu, atasan dapat mengambil keputusan yang tepat. Data capaian harian yang dicatat rapi juga melindungi Anda: kinerja dinilai dari kualitas verifikasi, bukan dari kesan lambat bekerja.",
+        "opsi": {
+          "A": "Prosedur dijaga dengan kerja keras, tetapi masalah target disimpan sendiri dan tidak dapat diperbaiki organisasi.",
+          "B": "Prosedur dijaga dan atasan diberi tahu dengan data, tetapi belum ada usulan jalan keluar.",
+          "C": "Prosedur dijaga, masalah dilaporkan dengan data, dan perbaikan diusulkan agar atasan bisa mengambil keputusan.",
+          "D": "Memindahkan beban diam-diam merusak kerja tim dan tidak menyelesaikan masalah target.",
+          "E": "Melewatkan tahap verifikasi yang penting membuka peluang bantuan salah sasaran dan melanggar prosedur."
+        },
+        "konsep": "**Target vs prosedur:** jangan korbankan prosedur penting demi angka. Laporkan kesenjangan antara target dan kemampuan dengan data, lalu usulkan perbaikan."
+      },
+      "tips": "Jika target bertabrakan dengan prosedur, urutan nilainya: melanggar prosedur (1) < memindahkan beban diam-diam (2) < menanggung sendiri (3) < melapor dengan data (4) < melapor dan mengusulkan perbaikan (5)."
+    },
+    {
+      "id": "p07-104",
+      "nomor": 104,
+      "kategori": "TKP",
+      "subtopik": "Antiradikalisme",
+      "topik": "Pegawai baru memasang foto profil bergambar bendera organisasi yang dibubarkan pemerintah",
+      "tingkat": "mudah",
+      "pertanyaan": "Dani, pegawai baru di unit Anda, memasang foto profil aplikasi pesan bergambar bendera organisasi yang sudah dibubarkan pemerintah karena bertentangan dengan Pancasila. Beberapa rekan mulai membicarakannya di belakang. Tindakan Anda adalah ....",
+      "opsi": {
+        "A": "Meminta Dani mengganti foto profilnya tanpa menjelaskan alasan atau menanyakan maksudnya",
+        "B": "Ikut membicarakan Dani bersama rekan-rekan lain tanpa menyampaikan apa pun kepadanya",
+        "C": "Melaporkan foto profil itu kepada atasan, menyertakan tangkapan layarnya, dan meminta atasan segera memanggil serta membina Dani",
+        "D": "Mengajak Dani berbicara secara pribadi untuk menanyakan alasannya dan menjelaskan status hukum organisasi itu",
+        "E": "Menyebarkan tangkapan layar foto profil Dani ke grup lain dan menyebutnya teroris"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 2,
+        "C": 4,
+        "D": 5,
+        "E": 1
+      },
+      "pembahasan": {
+        "inti": "Pegawai baru bisa saja memasang simbol tanpa memahami status organisasi di baliknya, atau bisa juga ada keterkaitan yang lebih dalam. Langkah pertama yang tepat adalah **dialog pribadi**: menanyakan alasannya dengan tenang, lalu menjelaskan bahwa organisasi itu telah dibubarkan karena bertentangan dengan Pancasila, sehingga simbolnya tidak pantas dipakai ASN. Dialog memberi kesempatan Dani memperbaiki diri tanpa dipermalukan. Jika dari percakapan muncul tanda keterlibatan aktif atau penolakan terhadap Pancasila, barulah hal itu dilaporkan kepada atasan.",
+        "opsi": {
+          "A": "Menyelesaikan gejala, tetapi tanpa penjelasan Dani tidak memahami masalahnya, dan kemungkinan keterlibatan yang lebih dalam tidak terungkap.",
+          "B": "Menggunjing tanpa menyelesaikan apa pun dan memperburuk suasana kerja.",
+          "C": "Prosedural dan berdasar bukti, tetapi melewatkan kesempatan memahami dan meluruskan Dani secara langsung sebelum ke atasan.",
+          "D": "Mengedepankan dialog yang menghormati Dani sambil meluruskan pemahamannya tentang organisasi terlarang.",
+          "E": "Memberi label tanpa dasar dan menyebarkannya adalah fitnah yang merugikan Dani dan melanggar etika."
+        },
+        "konsep": "**Gejala awal paham terlarang:** mulai dengan dialog pribadi untuk memahami dan meluruskan, lalu laporkan jika ada indikasi keterlibatan. Melabeli tanpa dasar sama berbahayanya dengan membiarkan."
+      },
+      "tips": "Untuk tanda-tanda awal yang belum jelas maksudnya, opsi **dialog pribadi yang meluruskan** biasanya lebih tinggi daripada langsung melapor. Untuk ajakan kekerasan yang nyata, melapor menjadi prioritas."
+    },
+    {
+      "id": "p07-105",
+      "nomor": 105,
+      "kategori": "TKP",
+      "subtopik": "Antiradikalisme",
+      "topik": "Rekan menyebut aksi teror sebagai rekayasa dan membagikan video yang membela pelaku",
+      "tingkat": "sedang",
+      "pertanyaan": "Setelah terjadi serangan bom bunuh diri di sebuah rumah ibadah, Andi, rekan kerja Anda, berkata di ruang istirahat bahwa kejadian itu rekayasa. Ia lalu memutar video yang menyebut pelaku sebagai “pejuang yang difitnah”. Beberapa rekan mulai ikut mengangguk. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Membantah Andi dengan suara keras di depan rekan-rekan lain sampai terjadi perdebatan yang panas",
+        "B": "Menanggapi dengan informasi resmi, meminta Andi tidak menyebarkan video itu, dan melapor kepada atasan bila ia terus membagikannya",
+        "C": "Diam saja karena tidak ingin berdebat soal agama dan politik dengan rekan kerja",
+        "D": "Ikut membagikan video itu ke grup keluarga untuk “membuka wawasan” mereka",
+        "E": "Melaporkan perkataan dan video Andi kepada atasan, menyertakan buktinya, dan meminta atasan menindaklanjutinya tanpa berbicara dulu dengan Andi"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 5,
+        "C": 2,
+        "D": 1,
+        "E": 4
+      },
+      "pembahasan": {
+        "inti": "Narasi yang menyebut aksi teror sebagai rekayasa dan memuja pelakunya berbahaya karena **membenarkan kekerasan** dan dapat memengaruhi orang lain, terutama ketika rekan-rekan mulai setuju. Respons terbaik bertahap: **meluruskan dengan informasi resmi** secara tenang di tempat itu juga, **menghentikan penyebaran** video, dan **melapor kepada atasan** jika Andi terus menyebarkannya. Cara ini mencegah pengaruh meluas tanpa langsung mempermalukan Andi, dan tetap memberi jalur penanganan resmi bila perilakunya berlanjut. Jika Andi menolak berhenti, laporan kepada atasan menjadi langkah yang wajib, bukan lagi pilihan.",
+        "opsi": {
+          "A": "Berani meluruskan, tetapi debat panas jarang mengubah pendirian dan bisa membuat rekan lain bersimpati kepada Andi.",
+          "B": "Meluruskan dengan tenang, menghentikan penyebaran, dan menyiapkan jalur resmi bila perilakunya berlanjut.",
+          "C": "Membiarkan narasi yang membenarkan kekerasan menyebar di tempat kerja.",
+          "D": "Ikut menyebarkan konten yang memuja pelaku teror memperluas bahaya dan melanggar aturan.",
+          "E": "Menempuh jalur resmi dengan bukti, tetapi melewatkan kesempatan meluruskan saat itu juga kepada rekan-rekan yang mulai terpengaruh."
+        },
+        "konsep": "**Menghadapi narasi pembenaran teror:** luruskan dengan fakta resmi, hentikan penyebaran, dan laporkan bila berlanjut. Konten yang memuja pelaku teror termasuk propaganda yang harus dicegah penyebarannya."
+      },
+      "tips": "Untuk narasi yang membenarkan kekerasan, cari opsi yang **meluruskan dengan tenang sekarang** dan **menyiapkan jalur resmi**. Diam dan ikut menyebarkan selalu bernilai rendah."
+    },
+    {
+      "id": "p07-106",
+      "nomor": 106,
+      "kategori": "TKP",
+      "subtopik": "Antiradikalisme",
+      "topik": "Ajakan membakar fasilitas umum saat unjuk rasa di grup komunitas pemuda",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda pegawai dinas kepemudaan yang mendampingi sebuah komunitas pemuda. Di grup percakapan komunitas, beberapa anggota mengajak “aksi langsung” membakar halte dan pos polisi saat unjuk rasa pekan depan karena negara dianggap musuh rakyat. Sebagian anggota lain mulai menyetujui. Yang paling tepat Anda lakukan adalah ....",
+      "opsi": {
+        "A": "Menyatakan di grup bahwa berpendapat dijamin tetapi perusakan adalah kekerasan, lalu melaporkan rencana itu kepada atasan dan pihak berwenang",
+        "B": "Mengingatkan di grup bahwa merusak fasilitas umum melanggar hukum, tanpa melaporkan rencana itu kepada siapa pun",
+        "C": "Diam-diam mendukung rencana itu karena Anda juga kecewa pada kebijakan pemerintah",
+        "D": "Melaporkan rencana itu kepada atasan dan kepolisian dengan tangkapan layar percakapan, lalu menunggu tindak lanjut mereka tanpa menanggapi apa pun di grup",
+        "E": "Keluar dari grup itu supaya Anda tidak dianggap ikut terlibat dalam rencana tersebut"
+      },
+      "bobot": {
+        "A": 5,
+        "B": 3,
+        "C": 1,
+        "D": 4,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Radikalisme tidak hanya berbasis agama. Ajakan merusak fasilitas umum dan menyerang aparat karena negara dianggap musuh juga merupakan **ajakan kekerasan** untuk tujuan politik. Sebagai pendamping, Anda punya dua tanggung jawab. Pertama, **meluruskan di forum itu**: kebebasan menyampaikan pendapat dijamin, tetapi perusakan dan penyerangan adalah tindak pidana. Ini penting karena anggota lain mulai terpengaruh. Kedua, **melaporkan** rencana yang spesifik (waktu dan sasaran) kepada atasan dan pihak berwenang agar dapat dicegah. Kedua langkah ini saling melengkapi: pelurusan menyelamatkan anggota yang ragu, laporan mencegah rencana yang sudah matang.",
+        "opsi": {
+          "A": "Meluruskan anggota yang mulai terpengaruh sekaligus melaporkan rencana kekerasan kepada pihak berwenang.",
+          "B": "Meluruskan di grup itu baik, tetapi rencana kekerasan yang spesifik tidak dilaporkan dan bisa tetap terjadi.",
+          "C": "Mendukung rencana kekerasan adalah pelanggaran berat bagi ASN dan berbahaya bagi masyarakat.",
+          "D": "Melapor dengan bukti itu tepat, tetapi anggota yang mulai terpengaruh dibiarkan tanpa diluruskan oleh pendampingnya.",
+          "E": "Menyelamatkan diri sendiri dengan meninggalkan tanggung jawab sebagai pendamping."
+        },
+        "konsep": "**Radikalisme kekerasan dalam bentuk apa pun** (agama, etnis, atau ideologi politik) ditangani dengan pola yang sama: luruskan pemahaman, cegah penyebaran, dan laporkan rencana kekerasan kepada pihak berwenang."
+      },
+      "tips": "Jika ada **rencana kekerasan yang spesifik**, opsi terbaik harus memuat laporan kepada pihak berwenang. Bandingkan apakah opsi itu juga meluruskan orang-orang yang mulai terpengaruh."
+    },
+    {
+      "id": "p07-107",
+      "nomor": 107,
+      "kategori": "TKP",
+      "subtopik": "Antiradikalisme",
+      "topik": "Sekolah swasta menolak upacara bendera dan lagu Indonesia Raya",
+      "tingkat": "sedang",
+      "pertanyaan": "Anda pengawas sekolah di dinas pendidikan. Saat kunjungan, Anda menemukan sebuah sekolah swasta tidak pernah mengadakan upacara bendera dan tidak mengajarkan lagu Indonesia Raya, karena pengurus yayasan menganggapnya bertentangan dengan keyakinan mereka. Tindakan Anda adalah ....",
+      "opsi": {
+        "A": "Mengingatkan kepala sekolah secara lisan agar mulai mengadakan upacara, tanpa mencatat temuan itu dalam laporan pengawasan",
+        "B": "Mendialogkan kewajiban itu dengan pengurus yayasan, lalu mencatatnya dalam laporan sebagai dasar pembinaan oleh dinas",
+        "C": "Mencatat temuan itu dalam laporan pengawasan, melampirkan bukti, dan mengusulkan dinas memberi sanksi kepada sekolah sesuai ketentuan",
+        "D": "Mengumumkan nama sekolah itu di media sosial dan menyebutnya sebagai sarang radikal",
+        "E": "Tidak mempersoalkannya karena sekolah swasta berwenang mengatur kegiatannya sendiri"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 5,
+        "C": 4,
+        "D": 1,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Sekolah swasta tetap bagian dari sistem pendidikan nasional dan wajib menanamkan **wawasan kebangsaan**. Undang-Undang Sistem Pendidikan Nasional mewajibkan kurikulum pendidikan dasar dan menengah memuat pendidikan kewarganegaraan. Penolakan terhadap simbol negara karena alasan keyakinan perlu ditangani dengan **dialog** terlebih dahulu, karena pengurus yayasan mungkin memiliki pemahaman keliru yang bisa diluruskan. Namun, temuan itu juga harus **tercatat resmi** dan diikuti **pembinaan oleh dinas**, agar perubahan terpantau dan tidak bergantung pada janji lisan. Dialog juga membuka kesempatan menjelaskan bahwa menghormati simbol negara tidak sama dengan beribadah kepadanya.",
+        "opsi": {
+          "A": "Ada teguran, tetapi tanpa catatan resmi tidak ada tindak lanjut dan pemantauan.",
+          "B": "Dialog untuk meluruskan pemahaman, pencatatan resmi, dan pembinaan oleh dinas sebagai pihak yang berwenang.",
+          "C": "Prosedural dan berdasar bukti, tetapi langsung mengarah ke sanksi tanpa upaya dialog untuk meluruskan pemahaman yayasan.",
+          "D": "Melabeli di media sosial tanpa proses resmi adalah tindakan yang merugikan dan dapat memperuncing masalah.",
+          "E": "Membiarkan pelanggaran kewajiban kebangsaan dengan alasan otonomi sekolah swasta."
+        },
+        "konsep": "**Penolakan simbol negara di lembaga pendidikan:** dialog untuk meluruskan, catat secara resmi, lalu bina melalui pihak berwenang. Sanksi adalah langkah lanjutan bila pembinaan tidak diindahkan."
+      },
+      "tips": "Untuk lembaga yang menolak simbol negara karena pemahaman keliru, urutan terbaik adalah **dialog → catatan resmi → pembinaan**. Opsi yang langsung ke sanksi biasanya bernilai 4.",
+      "rujukan": [
+        "UU 20/2003 tentang Sistem Pendidikan Nasional Pasal 37 ayat (1)"
+      ]
+    },
+    {
+      "id": "p07-108",
+      "nomor": 108,
+      "kategori": "TKP",
+      "subtopik": "Antiradikalisme",
+      "topik": "Diminta memberi legitimasi gagasan mengganti NKRI dalam diskusi kampus",
+      "tingkat": "sulit",
+      "pertanyaan": "Anda diundang menjadi narasumber diskusi di sebuah kampus bertema “Sistem pemerintahan dalam sejarah Islam”. Belakangan Anda mengetahui panitianya adalah kelompok mahasiswa yang menolak demokrasi dan ingin mengganti NKRI. Panitia secara terang-terangan meminta Anda “memberi legitimasi” pada gagasan mereka. Sikap Anda adalah ....",
+      "opsi": {
+        "A": "Membatalkan kehadiran sebagai narasumber, lalu melaporkan rencana diskusi itu kepada pimpinan kampus dan atasan Anda",
+        "B": "Membatalkan undangan dengan alasan sibuk tanpa menyampaikan alasan sebenarnya kepada siapa pun",
+        "C": "Berkoordinasi dengan atasan serta pimpinan kampus, lalu hadir membawakan materi berimbang yang menegaskan NKRI sebagai kesepakatan final",
+        "D": "Hadir dan menyampaikan bahwa gagasan mengganti NKRI layak dipertimbangkan agar diskusinya lebih menarik",
+        "E": "Hadir dan menyampaikan materi sejarah secara netral dan akademis, tanpa menanggapi sedikit pun permintaan panitia untuk memberi legitimasi pada gagasan itu"
+      },
+      "bobot": {
+        "A": 4,
+        "B": 2,
+        "C": 5,
+        "D": 1,
+        "E": 3
+      },
+      "pembahasan": {
+        "inti": "Kampus adalah ruang kajian, dan sejarah sistem pemerintahan boleh dibahas secara akademik. Masalahnya muncul ketika forum dipakai untuk **mempromosikan penggantian dasar negara** dan meminta narasumber memberi pembenaran. Soal ini sulit karena dua sikap sama-sama tampak benar: menolak hadir atau hadir untuk meluruskan. Sikap terbaik adalah **berkoordinasi dengan pihak berwenang** (atasan dan pimpinan kampus) lalu **hadir dengan kontra-narasi yang jelas**: membahas sejarah secara ilmiah sambil menegaskan bahwa Pancasila dan NKRI adalah kesepakatan final bangsa. Peserta yang belum terpengaruh mendapat sudut pandang lain, dan pihak berwenang mengetahui kegiatan itu.",
+        "opsi": {
+          "A": "Aman dan pihak berwenang mengetahuinya, tetapi kesempatan meluruskan pemahaman mahasiswa yang hadir terlewat.",
+          "B": "Menghindar tanpa memberi tahu pihak yang berwenang, sehingga kegiatan berjalan tanpa diketahui siapa pun.",
+          "C": "Koordinasi resmi dan kontra-narasi yang tegas di forum yang paling membutuhkannya.",
+          "D": "Memberi pembenaran pada gagasan mengganti dasar negara adalah pelanggaran berat bagi ASN.",
+          "E": "Tidak memberi legitimasi, tetapi sikap netral di forum yang jelas mempromosikan penggantian dasar negara melewatkan kewajiban menegaskan kebangsaan."
+        },
+        "konsep": "**Diskusi akademik vs propaganda:** kajian sejarah boleh, tetapi promosi penggantian dasar negara harus dijawab dengan kontra-narasi dan diketahui pihak berwenang. Netral di forum propaganda belum cukup bagi ASN."
+      },
+      "tips": "Jika ada kesempatan meluruskan di forum yang berisiko, opsi terbaik biasanya **hadir dengan kontra-narasi setelah berkoordinasi**. Menolak hadir sambil melapor bernilai 4."
+    },
+    {
+      "id": "p07-109",
+      "nomor": 109,
+      "kategori": "TKP",
+      "subtopik": "Antiradikalisme",
+      "topik": "Pesan berantai mengajak mengusir pendatang dari suku tertentu setelah bentrokan pemuda",
+      "tingkat": "sulit",
+      "pertanyaan": "Anda lurah di sebuah kelurahan. Setelah bentrokan antarpemuda dua hari lalu, beredar pesan berantai di grup-grup warga yang mengajak “mengusir semua pendatang dari suku X” dan menyebut mereka penyakit. Suasana kelurahan tegang. Langkah Anda adalah ....",
+      "opsi": {
+        "A": "Mengeluarkan imbauan tertulis agar warga menjaga ketertiban, tanpa menyinggung isi pesan berantai itu",
+        "B": "Meminta warga dari suku X meninggalkan kelurahan untuk sementara agar konflik tidak meluas",
+        "C": "Melaporkan pesan itu kepada kepolisian, meminta para admin grup menghapusnya, dan mengimbau seluruh warga agar tidak ikut menyebarkan pesan tersebut",
+        "D": "Mengajak tokoh kedua kelompok menyerukan damai bersama aparat keamanan, sambil melaporkan penyebar ajakan pengusiran kepada polisi",
+        "E": "Menunggu situasi tenang dengan sendirinya karena bentrokan antarpemuda sudah berhenti"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 1,
+        "C": 4,
+        "D": 5,
+        "E": 2
+      },
+      "pembahasan": {
+        "inti": "Ajakan mengusir kelompok suku tertentu dan menyebut mereka penyakit adalah **ujaran kebencian yang mengarah ke kekerasan**. Ini bentuk radikalisme berbasis etnis yang dapat meledak menjadi konflik besar. Lurah perlu menangani dua hal sekaligus: **penegakan hukum** terhadap penyebar ajakan (melalui kepolisian) dan **pemulihan hubungan** antarkelompok. Seruan damai paling didengar jika disampaikan **bersama tokoh dari kedua kelompok**, karena warga melihat pemimpinnya sendiri menolak permusuhan. Soal ini sulit karena opsi 4 juga tegas terhadap pesan itu, tetapi belum memulihkan hubungan kedua kelompok.",
+        "opsi": {
+          "A": "Imbauan yang aman, tetapi tidak menyentuh ajakan kekerasan yang sedang beredar. Pesan itu terus menyebar tanpa bantahan.",
+          "B": "Mengusir korban sasaran kebencian berarti menuruti tuntutan diskriminatif dan melanggar hak warga negara.",
+          "C": "Tegas menghentikan penyebaran dan melibatkan polisi, tetapi hubungan antarkelompok yang retak belum dipulihkan.",
+          "D": "Penegakan hukum terhadap penyebar dan pemulihan hubungan melalui tokoh yang dihormati kedua kelompok.",
+          "E": "Mengabaikan tanda bahaya. Ajakan kekerasan yang beredar bisa memicu bentrokan baru."
+        },
+        "konsep": "**Ujaran kebencian berbasis SARA pascakonflik:** tindak penyebarnya lewat jalur hukum dan pulihkan hubungan lewat tokoh kedua pihak. Jangan pernah memindahkan atau membatasi kelompok yang menjadi sasaran."
+      },
+      "tips": "Bedakan opsi yang **hanya menghentikan pesan** (4) dari opsi yang **menghentikan pesan dan memulihkan hubungan** (5). Opsi yang mengorbankan kelompok sasaran selalu bernilai 1."
+    },
+    {
+      "id": "p07-110",
+      "nomor": 110,
+      "kategori": "TKP",
+      "subtopik": "Antiradikalisme",
+      "topik": "Warga melaporkan aktivis yang mengkritik keras kebijakan sebagai terpapar radikalisme",
+      "tingkat": "sulit",
+      "pertanyaan": "Anda staf Badan Kesatuan Bangsa dan Politik. Seorang warga melaporkan aktivis lingkungan, Pak Rahmat, sebagai “terpapar radikalisme” karena sering mengkritik keras kebijakan tambang pemerintah daerah di media sosial. Setelah Anda periksa, unggahannya berisi data dan argumen, tanpa ujaran kebencian dan tanpa ajakan kekerasan. Tindakan Anda adalah ....",
+      "opsi": {
+        "A": "Meneruskan laporan itu kepada atasan apa adanya dan menyerahkan seluruh penilaiannya kepada atasan",
+        "B": "Memanggil Pak Rahmat dan memintanya berhenti mengkritik pemerintah agar tidak dicap radikal",
+        "C": "Mencatat laporan sesuai prosedur, memeriksa unggahan, dan menutup laporan karena tidak ada unsur radikalisme, tanpa penjelasan kepada pelapor",
+        "D": "Meminta pelapor tidak membesar-besarkan masalah tanpa mencatat laporannya sama sekali",
+        "E": "Mencatat laporan sesuai prosedur dan menjelaskan kepada pelapor bahwa kritik tanpa kekerasan dan kebencian bukan radikalisme"
+      },
+      "bobot": {
+        "A": 3,
+        "B": 1,
+        "C": 4,
+        "D": 2,
+        "E": 5
+      },
+      "pembahasan": {
+        "inti": "Antiradikalisme bukan berarti mencurigai setiap kritik. **Kritik terhadap kebijakan, termasuk yang keras, adalah hak warga** yang dijamin Pasal 28E ayat (3) UUD 1945. Radikalisme yang perlu dicegah adalah paham yang membenarkan kekerasan, menolak dasar negara, atau menyebarkan kebencian. Unggahan Pak Rahmat tidak memenuhi ciri itu. Petugas yang profesional **tetap mencatat laporan sesuai prosedur**, karena setiap laporan warga harus ditangani, dan **menjelaskan kepada pelapor** perbedaan kritik dan radikalisme. Penjelasan itu mendidik masyarakat dan mencegah pelabelan yang merugikan orang lain. Soal ini sulit karena peserta mudah terjebak menganggap semua sikap “anti” pemerintah sebagai radikal.",
+        "opsi": {
+          "A": "Prosedural, tetapi pasif. Penilaian yang sudah bisa Anda lakukan diserahkan begitu saja tanpa pertimbangan.",
+          "B": "Membungkam kritik yang sah dengan ancaman label. Ini melanggar hak warga dan menyalahgunakan isu radikalisme.",
+          "C": "Penanganannya benar dan sesuai prosedur, tetapi pelapor tidak mendapat penjelasan, sehingga salah paham tentang radikalisme tetap ada.",
+          "D": "Menolak laporan tanpa mencatatnya melanggar prosedur pelayanan pengaduan.",
+          "E": "Prosedural, adil kepada pihak yang dilaporkan, dan mendidik pelapor tentang batas antara kritik dan radikalisme."
+        },
+        "konsep": "**Kritik ≠ radikalisme.** Ciri radikalisme yang dicegah: membenarkan kekerasan, menolak Pancasila dan NKRI, serta menyebarkan kebencian berbasis SARA. Kritik berbasis data tanpa kekerasan adalah bagian dari demokrasi."
+      },
+      "tips": "Dalam soal antiradikalisme, waspadai opsi yang **membungkam kritik sah** atas nama mencegah radikalisme. Nilai tertinggi untuk opsi yang adil kepada terlapor dan tetap menjalankan prosedur.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 28E ayat (3)"
+      ]
     }
   ]
 }
