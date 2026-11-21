@@ -1,7 +1,7 @@
 import "server-only";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { PENAWARAN } from "@/config/landing";
+import { FITUR_BUNDEL, PENAWARAN } from "@/config/landing";
 import { BERLAKU_SEJAK, DIPERBARUI, EMAIL_KONTAK, PENGELOLA, PENGEMBALIAN_DANA, WA_KONTAK } from "@/config/legal";
 
 /**
@@ -40,9 +40,17 @@ function kontak() {
 }
 
 function penawaran() {
-  if (!PENAWARAN) return "";
-  const isi = PENAWARAN.isi.map((x) => `- **${x.judul}**: ${x.detail}`).join("\n");
-  return `Yang kamu dapat dengan membeli **${PENAWARAN.nama}** (${PENAWARAN.harga}):\n\n${isi}`;
+  if (PENAWARAN.length === 0) return "";
+  const bundel = PENAWARAN.map((x) => {
+    const isi = x.isi.map((i) => `  - **${i.judul}**: ${i.detail}`).join("\n");
+    return `- **${x.nama}** (${x.harga}):\n${isi}`;
+  }).join("\n");
+  const fitur = FITUR_BUNDEL.map((f) => `- **${f.judul}**: ${f.detail}`).join("\n");
+  const pembuka =
+    PENAWARAN.length > 1
+      ? "Produk berbayar yang tersedia. Setiap bundel dibeli terpisah dan punya kode aktivasinya sendiri:"
+      : "Yang kamu dapat dengan membeli:";
+  return `${pembuka}\n\n${bundel}\n\nDi setiap bundel:\n\n${fitur}`;
 }
 
 const PENGGANTI: Record<string, () => string> = {

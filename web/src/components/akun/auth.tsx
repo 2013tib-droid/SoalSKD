@@ -2,6 +2,7 @@
 
 import type { User } from "firebase/auth";
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import type { IdEdisi } from "@/config/akses";
 import { ambilFirebase, LOGIN_AKTIF } from "@/lib/firebase/klien";
 import { aturUidSinkron, hapusDataLokal, kirimAntrean, sinkronkanAkun } from "@/lib/sinkron";
 
@@ -37,8 +38,8 @@ type NilaiAkun = {
   cekVerifikasi: () => Promise<boolean>;
   ambilToken: () => Promise<string | null>;
   tukarKode: (kode: string) => Promise<{ paket: string[]; sudah: boolean }>;
-  /** Signed URL ebook PDF (±10 menit) dari Cloud Function `unduhEbook`; server yang mengecek hak. */
-  unduhEbook: () => Promise<{ url: string; namaFile: string }>;
+  /** Signed URL ebook PDF satu edisi (±10 menit) dari Cloud Function `unduhEbook`; server yang mengecek hak edisi itu. */
+  unduhEbook: (edisi: IdEdisi) => Promise<{ url: string; namaFile: string }>;
   /** Galat dari alur pindah-halaman Google, ditampilkan di /masuk. */
   galatGoogle: string | null;
 };
@@ -210,10 +211,10 @@ export function PenyediaAkun({ children }: { children: ReactNode }) {
         if (auth.currentUser) await muatPaket(auth.currentUser.uid).catch(() => undefined);
         return data;
       },
-      async unduhEbook() {
+      async unduhEbook(edisi) {
         const [{ functions }, { httpsCallable }] = await Promise.all([ambilFirebase(), import("firebase/functions")]);
-        const minta = httpsCallable<Record<string, never>, { url: string; namaFile: string }>(functions, "unduhEbook");
-        return (await minta({})).data;
+        const minta = httpsCallable<{ edisi: IdEdisi }, { url: string; namaFile: string }>(functions, "unduhEbook");
+        return (await minta({ edisi })).data;
       },
     }),
     [status, pengguna, paket, galatGoogle, muatPaket],

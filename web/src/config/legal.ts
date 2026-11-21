@@ -27,7 +27,7 @@ export const DIPERBARUI = "2026-11-07";
  * Kebijakan pengembalian dana (Markdown), tampil di /syarat#pengembalian-dana.
  * USULAN, BELUM DISETUJUI PEMILIK. Ubah di sini sebelum situs pembeli dibuka.
  */
-export const PENGEMBALIAN_DANA = `Bundel ini produk digital yang langsung bisa dipakai setelah kode ditukar, jadi pembayaran yang berhasil pada umumnya tidak bisa dikembalikan. Kami mengembalikan dana penuh kalau:
+export const PENGEMBALIAN_DANA = `Setiap bundel adalah produk digital yang langsung bisa dipakai setelah kode ditukar, jadi pembayaran yang berhasil pada umumnya tidak bisa dikembalikan. Kami mengembalikan dana penuh kalau:
 
 - pembayaranmu tercatat di Mayar, tapi kode aktivasi tidak sampai ke emailmu dan kami tidak berhasil mengirimkannya ulang;
 - kode tidak bisa ditukar karena kesalahan di pihak kami, dan kami tidak bisa memperbaikinya; atau

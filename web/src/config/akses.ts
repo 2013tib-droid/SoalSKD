@@ -1,13 +1,15 @@
+import { PRODUK, type IdProduk } from "@/config/produk";
+
 /**
  * Paket yang boleh dikerjakan tanpa login. Paket lain di `bank/` hanya untuk akun
  * yang memilikinya (`users/{uid}.paket`, ditulis Cloud Function `redeemActivationCode`).
- * Daftar produk → paket ada di functions/src/index.ts (`PRODUK`).
+ * Daftar produk → paket ada di functions/src/produk.ts (`PRODUK`), cerminnya di config/produk.ts.
  */
 export const PAKET_TERBUKA = ["p01"] as const;
 
 /**
  * SAKLAR SEMENTARA untuk cek ulang pemilik: `true` = semua paket terbuka di build statis
- * (GitHub Pages dev), soal + kunci p02–p04 ikut ke `out/`. Tidak berlaku di build server
+ * (GitHub Pages dev), soal + kunci paket berbayar ikut ke `out/`. Tidak berlaku di build server
  * (produksi tetap bergerbang). Kembalikan ke `false` sebelum deploy produksi.
  */
 export const DEV_BUKA_SEMUA = true;
@@ -22,12 +24,22 @@ export function paketTerbuka(paket: string): boolean {
 }
 
 /**
- * Paket bundel yang ikut membuka ebook PDF (minimal satu dimiliki). Hanya untuk
- * menampilkan tombol unduh; haknya dicek Cloud Function `unduhEbook`
- * (functions/src/index.ts, `EBOOK.paket`). Build statis tidak pernah menampilkannya.
+ * Edisi ebook PDF → paket yang membukanya (cukup satu dimiliki). Cermin `EBOOK` di
+ * functions/src/produk.ts: ubah juga di functions. Hanya untuk menampilkan tombol
+ * unduh; haknya dicek Cloud Function `unduhEbook` per edisi. Build statis tidak
+ * pernah menampilkannya.
  */
-export const PAKET_EBOOK = ["p02", "p03", "p04"] as const;
+export const EBOOK_EDISI = {
+  "edisi-1": { judul: "Ebook PDF Edisi 1", produk: "bundel-3to", paket: PRODUK["bundel-3to"].paket },
+  "edisi-2": { judul: "Ebook PDF Edisi 2", produk: "bundel-3to-2", paket: PRODUK["bundel-3to-2"].paket },
+} as const satisfies Record<string, { judul: string; produk: IdProduk; paket: readonly string[] }>;
 
-export function punyaEbook(milik: readonly string[] | null | undefined): boolean {
-  return (milik ?? []).some((p) => (PAKET_EBOOK as readonly string[]).includes(p));
+export type IdEdisi = keyof typeof EBOOK_EDISI;
+
+/** Edisi ebook yang boleh diunduh akun ini, urut dari Edisi 1. */
+export function edisiMilik(milik: readonly string[] | null | undefined): IdEdisi[] {
+  const punya = milik ?? [];
+  return (Object.keys(EBOOK_EDISI) as IdEdisi[]).filter((e) =>
+    (EBOOK_EDISI[e].paket as readonly string[]).some((p) => punya.includes(p)),
+  );
 }
