@@ -79,7 +79,7 @@ async function panggil(nama, token, data) {
   return r.error ? { galat: r.error.status, pesan: r.error.message } : { hasil: r.result };
 }
 const tukar = (token, kode) => panggil('redeemActivationCode', token, { kode });
-const unduh = (token) => panggil('unduhEbook', token, {});
+const unduh = (token, edisi) => panggil('unduhEbook', token, edisi === undefined ? {} : { edisi });
 
 // Storage REST sebagai client (rules berlaku).
 async function stGet(token, path) {
@@ -163,9 +163,28 @@ const dAsing = (await db.doc('orders/trx-asing').get()).data();
 cek('produk tak dikenal → dicatat manual', asing.json?.reason === 'unknown-product' && dAsing?.problem === 'produk-tidak-dikenal');
 cek('nama "Bundel 5 Try Out" tidak ditebak', (await webhook(bayar('trx-5', { productId: '', productName: 'Bundel 5 Try Out' }))).json?.reason === 'unknown-product');
 
-await db.doc('config/mayar_products').set({ 'prod-khusus': 'bundel-3to' });
+await db.doc('config/mayar_products').set({ 'prod-khusus': 'bundel-3to', 'prod-b2': 'bundel-3to-2' });
 const peta = await webhook(bayar('trx-peta', { productId: 'prod-khusus', productName: 'Nama Bebas' }));
 cek('pemetaan config/mayar_products diutamakan', peta.json?.ok === true);
+
+console.log('Webhook Mayar: Bundel 2');
+const produkPesanan = async (id) => {
+  const kode = (await db.doc(`orders/${id}`).get()).data()?.code;
+  return kode ? (await db.doc(`activation_codes/${kode.replace(/-/g, '')}`).get()).data()?.produk : null;
+};
+const b2 = await webhook(bayar('trx-b2', { productId: 'tanpa-peta', productName: 'SoalSKD Bundel 2: 3 Try Out SKD + Ebook' }));
+cek('nama "Bundel 2: 3 Try Out" → kode bundel-3to-2', b2.json?.ok === true && (await produkPesanan('trx-b2')) === 'bundel-3to-2', b2);
+await webhook(bayar('trx-b2-romawi', { productId: '', productName: 'Bundel 3 Try Out SKD Edisi II' }));
+cek('nama "Bundel 3 Try Out Edisi II" tidak terbaca Bundel 1', (await produkPesanan('trx-b2-romawi')) === 'bundel-3to-2');
+await webhook(bayar('trx-b1-nama', { productId: '', productName: 'SoalSKD Bundel 1: 3 Try Out SKD + Ebook' }));
+cek('nama "Bundel 1: 3 Try Out" → bundel-3to', (await produkPesanan('trx-b1-nama')) === 'bundel-3to');
+const ambigu = await webhook(bayar('trx-ambigu', { productId: '', productName: 'Bundel 1 dan 2: 6 Try Out SKD' }));
+cek('nama ambigu (bundel 1 dan 2) → manual', ambigu.json?.reason === 'unknown-product'
+  && (await db.doc('orders/trx-ambigu').get()).data()?.problem === 'produk-tidak-dikenal');
+const petaB2 = await webhook(bayar('trx-peta-b2', { productId: 'prod-b2', productName: 'Bundel 3 Try Out SKD' }));
+cek('config/mayar_products menang atas nama produk', petaB2.json?.ok === true && (await produkPesanan('trx-peta-b2')) === 'bundel-3to-2');
+const kodeB2 = (await db.doc('orders/trx-b2').get()).data()?.code;
+const kodeB2b = (await db.doc('orders/trx-peta-b2').get()).data()?.code;
 
 cek('data tanpa email → incomplete', (await webhook(bayar('trx-x', { customerEmail: '' }))).json?.reason === 'incomplete');
 
@@ -189,6 +208,18 @@ const r2 = await tukar(andi.token, kode1);
 cek('akun sama menukar lagi → sudah: true', r2.hasil?.sudah === true, r2);
 const r3 = await tukar(sari.token, kode1);
 cek('akun lain memakai kode terpakai → NOT_FOUND (pesan sama)', r3.galat === 'NOT_FOUND' && r3.pesan === (await tukar(sari.token, 'QQQ-QQQ-QQQ')).pesan);
+
+const budi = await daftar('budi@contoh.test', true);
+const rb2 = await tukar(budi.token, kodeB2);
+cek('kode Bundel 2 → paket p05–p07', JSON.stringify(rb2.hasil?.paket) === '["p05","p06","p07"]', rb2);
+const userBudi = (await db.doc(`users/${budi.uid}`).get()).data();
+cek('users/{uid}: paket p05–p07 + produk bundel-3to-2', JSON.stringify(userBudi?.paket) === '["p05","p06","p07"]'
+  && JSON.stringify(userBudi?.produk) === '["bundel-3to-2"]');
+const rAndiB2 = await tukar(andi.token, kodeB2b);
+const userAndi2 = (await db.doc(`users/${andi.uid}`).get()).data();
+cek('pemilik Bundel 1 menukar Bundel 2 → enam paket, dua produk',
+  rAndiB2.hasil?.sudah === false && JSON.stringify(userAndi2?.paket) === '["p02","p03","p04","p05","p06","p07"]'
+  && JSON.stringify(userAndi2?.produk) === '["bundel-3to","bundel-3to-2"]', userAndi2);
 
 const penebak = await daftar('penebak@contoh.test', true);
 for (let i = 0; i < 10; i++) await tukar(penebak.token, `AAA-AAA-AA${i + 2}`);
@@ -222,6 +253,14 @@ await db.doc(`users/${gratisan.uid}`).set({ paket: ['p01'] });
 cek('hanya paket gratis p01 → PERMISSION_DENIED', (await unduh(gratisan.token)).galat === 'PERMISSION_DENIED');
 const belumAda = await unduh(andi.token);
 cek('pemilik bundel, file belum diunggah → NOT_FOUND', belumAda.galat === 'NOT_FOUND', belumAda);
+cek('edisi tidak dikenal → INVALID_ARGUMENT', (await unduh(andi.token, 'edisi-9')).galat === 'INVALID_ARGUMENT');
+cek('edisi bukan teks → INVALID_ARGUMENT', (await unduh(andi.token, 2)).galat === 'INVALID_ARGUMENT');
+const b1Saja = await daftar('b1saja@contoh.test', true);
+await db.doc(`users/${b1Saja.uid}`).set({ paket: ['p02', 'p03', 'p04'] });
+const tolakE2 = await unduh(b1Saja.token, 'edisi-2');
+cek('Bundel 1 saja minta edisi-2 → PERMISSION_DENIED', tolakE2.galat === 'PERMISSION_DENIED' && /Bundel 2/.test(tolakE2.pesan), tolakE2);
+cek('Bundel 2 saja minta edisi-1 → PERMISSION_DENIED', (await unduh(budi.token, 'edisi-1')).galat === 'PERMISSION_DENIED');
+cek('Bundel 2, edisi-2 belum diunggah → NOT_FOUND', (await unduh(budi.token, 'edisi-2')).galat === 'NOT_FOUND');
 
 await getStorage().bucket().file(PATH_EBOOK).save(Buffer.from('%PDF-1.4 uji'), { contentType: 'application/pdf' });
 const u1 = await unduh(andi.token);
@@ -232,6 +271,22 @@ cek('URL berlaku 10 menit', url?.searchParams.get('X-Goog-Expires') === '600'
 cek('nama file unduhan SoalSKD-Edisi-1.pdf', u1.hasil?.namaFile === 'SoalSKD-Edisi-1.pdf'
   && url?.searchParams.get('response-content-disposition') === 'attachment; filename="SoalSKD-Edisi-1.pdf"');
 cek('URL bertanda tangan v4', Boolean(url?.searchParams.get('X-Goog-Signature')) && url?.searchParams.get('X-Goog-Algorithm') === 'GOOG4-RSA-SHA256');
+const e1 = await unduh(andi.token, 'edisi-1');
+cek('edisi-1 eksplisit sama dengan tanpa edisi', e1.hasil?.namaFile === 'SoalSKD-Edisi-1.pdf'
+  && new URL(e1.hasil.url).pathname.endsWith(`/${PATH_EBOOK}`));
+
+const PATH_EBOOK_2 = 'ebook/edisi-2.pdf';
+await getStorage().bucket().file(PATH_EBOOK_2).save(Buffer.from('%PDF-1.4 uji 2'), { contentType: 'application/pdf' });
+const e2 = await unduh(budi.token, 'edisi-2');
+const url2 = e2.hasil?.url ? new URL(e2.hasil.url) : null;
+cek('Bundel 2 → signed URL edisi-2', url2 !== null && url2.pathname.endsWith(`/${BUCKET}/${PATH_EBOOK_2}`), e2);
+cek('nama file unduhan SoalSKD-Edisi-2.pdf', e2.hasil?.namaFile === 'SoalSKD-Edisi-2.pdf'
+  && url2?.searchParams.get('response-content-disposition') === 'attachment; filename="SoalSKD-Edisi-2.pdf"');
+const aE1 = await unduh(andi.token, 'edisi-1');
+const aE2 = await unduh(andi.token, 'edisi-2');
+cek('pemilik dua bundel mengunduh kedua edisi', aE1.hasil?.namaFile === 'SoalSKD-Edisi-1.pdf' && aE2.hasil?.namaFile === 'SoalSKD-Edisi-2.pdf');
+cek('Bundel 1 saja tetap ditolak setelah edisi-2 diunggah', (await unduh(b1Saja.token, 'edisi-2')).galat === 'PERMISSION_DENIED');
+
 const satuPaket = await daftar('satu@contoh.test', true);
 await db.doc(`users/${satuPaket.uid}`).set({ paket: ['p03'] });
 cek('cukup satu paket bundel (p03) → boleh', typeof (await unduh(satuPaket.token)).hasil?.url === 'string');
@@ -242,6 +297,7 @@ cek('tanpa login tidak bisa membaca PDF', (await stGet(null, PATH_EBOOK)) === 40
 cek('tidak bisa mendaftar isi ebook/', (await stList(andi.token, 'ebook/')) === 403);
 cek('client tidak bisa mengunggah', (await stUpload(andi.token, 'ebook/palsu.pdf')) === 403);
 cek('client tidak bisa menimpa PDF', (await stUpload(andi.token, PATH_EBOOK)) === 403);
+cek('pemilik Bundel 2 tidak bisa membaca PDF edisi-2 langsung', (await stGet(budi.token, 'ebook/edisi-2.pdf')) === 403);
 
 console.log(`\n${lulus} lulus, ${gagal.length} gagal`);
 if (gagal.length) {

@@ -5,14 +5,16 @@ yang membingungkan, kirim tangkapan layarnya ke Claude (tanpa kata sandi/token).
 
 ## Gambaran alurnya
 
-1. Pembeli membayar **Bundel 3 Try Out SKD** di Mayar (QRIS/e-wallet).
+1. Pembeli membayar **Bundel 1** (p02–p04) atau **Bundel 2** (p05–p07), masing-masing
+   Rp9.900 dan dijual terpisah, di Mayar (QRIS/e-wallet).
 2. Mayar memberi tahu server kita (webhook). Server membuat **satu kode aktivasi
    baru** untuk pesanan itu dan mengirimnya ke **email pembeli**.
 3. Pembeli membuka situs → **Masuk** (email + kata sandi, atau Google) →
    halaman **Aktivasi kode** → memasukkan kode.
-4. Paket p02, p03, p04 terbuka di akun itu, di HP mana pun ia login.
-   Tombol **Unduh ebook PDF** muncul di halaman Try out; server memberi tautan
-   unduh yang hanya berlaku ±10 menit.
+4. Paket bundel itu terbuka di akun tersebut, di HP mana pun ia login. Kode kedua
+   bundel bisa ditukar di akun yang sama.
+   Tombol **Unduh Ebook PDF Edisi 1/2** (sesuai bundel) muncul di halaman Try out;
+   server memberi tautan unduh yang hanya berlaku ±10 menit.
 5. Paket p01 tetap gratis tanpa login.
 
 Jawaban dan riwayat skor pembeli yang login tersimpan di akunnya, jadi pindah HP
@@ -187,12 +189,20 @@ setelah dicoba di alamat App Hosting.
 
 ## 9. Mayar
 
-1. **Produk**: buat produk digital dengan nama yang memuat kata **Bundel** dan
-   angka **3**, mis. `Bundel 3 Try Out SKD`, harga Rp9.900.
-   Server menebak produk dari nama itu. Nama lain (atau bundel dengan angka lain)
-   **tidak dikirimi kode otomatis**, dicatat untuk ditangani manual.
-   Kalau ingin nama bebas: Firestore → koleksi `config` → dokumen
-   `mayar_products` → field bernama **id produk Mayar**, nilai `bundel-3to`.
+1. **Produk**: buat satu produk digital per bundel, harga Rp9.900 masing-masing.
+   Nama yang disarankan (persis):
+   - `SoalSKD Bundel 1: 3 Try Out SKD + Ebook` → Bundel 1 (p02–p04, Ebook Edisi 1)
+   - `SoalSKD Bundel 2: 3 Try Out SKD + Ebook` → Bundel 2 (p05–p07, Ebook Edisi 2)
+
+   **Cara paling aman** (wajib kalau ada dua bundel): Firestore → koleksi `config`
+   → dokumen `mayar_products` → satu field per produk, nama field = **id produk
+   Mayar**, nilai `bundel-3to` (Bundel 1) atau `bundel-3to-2` (Bundel 2). Pemetaan
+   ini selalu diutamakan dan bisa diubah tanpa deploy.
+   Cadangannya, server menebak dari nama produk (`functions/src/produk.ts`): nama
+   harus memuat **Bundel** dan angka **3**; penanda edisi 2 (`2`, `II`, `dua`,
+   `kedua`, `p05–p07`) selalu dibaca Bundel 2, tidak pernah Bundel 1. Nama yang
+   ragu (mis. menyebut bundel 1 dan 2 sekaligus, atau angka lain) **tidak dikirimi
+   kode otomatis** dan dicatat untuk ditangani manual.
 2. **Catatan produk** (tampil setelah bayar):
    > Terima kasih sudah membeli SoalSKD. Kode aktivasi dikirim otomatis ke email
    > yang kamu isi saat membayar, biasanya dalam beberapa menit. Cek juga folder
@@ -209,17 +219,24 @@ setelah dicoba di alamat App Hosting.
    `https://DOMAIN/syarat#pengembalian-dana` (pengembalian dana). Teks
    pengembalian dana ada di `PENGEMBALIAN_DANA` (`web/src/config/legal.ts`) dan
    masih **usulan**: setujui atau ubah dulu (langkah 12).
-5. Kirim **tautan produk Mayar** ke Claude. Claude mengisinya di `TAUTAN_BELI`
-   (`web/src/config/landing.ts`) supaya tombol beli di landing aktif.
+5. Kirim **tautan kedua produk Mayar** ke Claude. Claude mengisinya di `TAUTAN_BELI`
+   (`web/src/config/landing.ts`, satu per bundel) supaya tombol beli di landing dan
+   /try-out aktif. Bundel yang tautannya masih kosong tampil "Pembelian segera dibuka".
 
 ## 10. Ebook PDF di Storage (privat)
 
-Ebook dijanjikan di kartu harga. File-nya **tidak boleh** ada di repo, `web/public`,
-atau situs dev (repo ini publik). Tempatnya di Storage dengan path
-`ebook/edisi-1.pdf`, tertutup untuk semua client (`storage.rules`). Pembeli
-menekan **Unduh ebook PDF** di halaman Try out; Cloud Function `unduhEbook` mengecek
-akunnya punya paket bundel (p02/p03/p04), lalu memberi tautan bertanda tangan
-yang berlaku **10 menit** dengan nama file `SoalSKD-Edisi-1.pdf`.
+Ebook dijanjikan di kartu harga, satu edisi per bundel. File-nya **tidak boleh** ada
+di repo, `web/public`, atau situs dev (repo ini publik). Tempatnya di Storage,
+tertutup untuk semua client (`storage.rules`):
+
+| Edisi | Path di Storage | Dibuka oleh | Nama unduhan |
+|---|---|---|---|
+| `edisi-1` | `ebook/edisi-1.pdf` | Bundel 1 (p02/p03/p04) | `SoalSKD-Edisi-1.pdf` |
+| `edisi-2` | `ebook/edisi-2.pdf` | Bundel 2 (p05/p06/p07) | `SoalSKD-Edisi-2.pdf` |
+
+Pembeli menekan **Unduh Ebook PDF Edisi N** di halaman Try out (satu kartu per edisi
+yang dimilikinya); Cloud Function `unduhEbook` mengecek akunnya punya paket dari
+bundel edisi itu, lalu memberi tautan bertanda tangan yang berlaku **10 menit**.
 
 ### 10a. Aktifkan Storage di Jakarta (sekali)
 
@@ -251,29 +268,33 @@ Di komputer dengan Node 22, Python 3, Chromium (Playwright), dan
 dengan akun pemilik proyek:
 
 ```sh
-sh tools/unggah-ebook.sh soalskd-1a2b3.firebasestorage.app   # ganti dengan nama bucket
+sh tools/unggah-ebook.sh soalskd-1a2b3.firebasestorage.app edisi-1   # ganti dengan nama bucket
+sh tools/unggah-ebook.sh soalskd-1a2b3.firebasestorage.app edisi-2
 ```
 
-Skrip ini memvalidasi `bank/p02–p04`, membuat `ebook/dist/edisi-1.pdf` (Edisi 1,
-330 soal), lalu `gsutil cp` ke `gs://<bucket>/ebook/edisi-1.pdf`. Hanya ingin
-membuat PDF: `sh tools/unggah-ebook.sh --cuma-buat`.
+Skrip ini memvalidasi paket edisi itu (`edisi-1` = p02–p04, `edisi-2` = p05–p07),
+membuat `ebook/dist/<edisi>.pdf` (330 soal), lalu `gsutil cp` ke
+`gs://<bucket>/ebook/<edisi>.pdf`. Tanpa argumen edisi = `edisi-1`. Hanya ingin
+membuat PDF: `sh tools/unggah-ebook.sh --cuma-buat edisi-2`.
 
 Tanpa skrip: buat PDF dengan
 `node ebook/buat-ebook.mjs bank/p02.json bank/p03.json bank/p04.json --judul "Edisi 1" --keluar ebook/dist/edisi-1.pdf`,
 lalu Console → **Storage → Create folder** `ebook` → buka folder → **Upload file**
 → pilih PDF-nya dan beri nama persis `edisi-1.pdf` (ganti nama di komputer dulu
-kalau perlu).
+kalau perlu). Edisi 2 sama, dengan `bank/p05.json bank/p06.json bank/p07.json`,
+`--judul "Edisi 2"`, dan nama `edisi-2.pdf`.
 
 **Jangan** klik "Create new access token" atau membagikan tautan dari Console:
 tautan semacam itu berlaku selamanya dan bisa disebar.
 
 ### 10d. Setiap kali isi bank berubah
 
-Soal p02–p04 diperbaiki atau ditambah → jalankan lagi **10c**. File lama ditimpa
-di path yang sama, jadi tombol unduh langsung memberi versi baru. Pembeli yang
-sudah mengunduh tetap memegang versi lamanya. Edisi baru dengan nama file lain
-(mis. "Edisi 2") butuh perubahan kecil di `functions/src/index.ts` (`EBOOK`) dan
-skrip; minta Claude.
+Soal p02–p04 (Edisi 1) atau p05–p07 (Edisi 2) diperbaiki → jalankan lagi **10c**
+untuk edisi itu. File lama ditimpa di path yang sama, jadi tombol unduh langsung
+memberi versi baru. Pembeli yang sudah mengunduh tetap memegang versi lamanya.
+Edisi atau bundel baru (mis. Bundel 3) butuh perubahan kecil di
+`functions/src/produk.ts` (`PRODUK`, `EBOOK`), cerminnya di `web/src/config/produk.ts`
+dan `web/src/config/akses.ts`, serta skrip; minta Claude.
 
 ## 11. Uji sekali dengan uang sungguhan
 
@@ -304,6 +325,26 @@ nasihat hukum; baca ulang (atau minta orang yang paham hukum membacanya)
 sebelum situs pembeli dibuka.
 
 ---
+
+## 13. Bundel 2 (p05–p07 + Ebook Edisi 2)
+
+Kode untuk Bundel 2 sudah ada di repo (`bundel-3to-2` di `functions/src/produk.ts`),
+tetapi belum hidup sampai langkah berikut selesai. Kerjakan setelah langkah 1–12
+(atau bersamaan, kalau backend belum pernah di-deploy):
+
+1. **Deploy backend, target functions** (langkah 7c, dry run dulu). Tanpa ini,
+   function di produksi belum mengenal Bundel 2 dan edisi 2: kode Bundel 2 akan
+   ditolak "bermasalah" dan tombol unduh Edisi 2 gagal.
+2. **Mayar**: buat produk `SoalSKD Bundel 2: 3 Try Out SKD + Ebook`, harga Rp9.900,
+   catatan produk sama dengan Bundel 1 (langkah 9.2).
+3. **`config/mayar_products`**: tambahkan field id produk Mayar Bundel 2 dengan
+   nilai `bundel-3to-2` (langkah 9.1). Periksa juga Bundel 1 bernilai `bundel-3to`.
+4. **Ebook Edisi 2**: `sh tools/unggah-ebook.sh <bucket> edisi-2` (langkah 10c).
+5. **Uji sekali** seperti langkah 11, dengan produk Bundel 2: bayar → email kode →
+   /aktivasi → p05–p07 terbuka → kartu **Unduh Ebook PDF Edisi 2** muncul. Akun yang
+   punya dua bundel melihat dua kartu ebook.
+6. Kirim tautan produk Mayar Bundel 2 ke Claude untuk `TAUTAN_BELI["bundel-3to-2"]`.
+7. Review isi p05–p07 (status masih `draf`), lalu buat ulang Edisi 2 bila ada perubahan.
 
 ## Memantau dan menangani masalah
 
@@ -353,7 +394,7 @@ harga resmi sebelum memutuskan ulang.)
 ## Untuk developer: uji di emulator
 
 ```sh
-cd functions && npm ci && npm run uji          # 55 skenario: webhook, tukar kode, unduh ebook, rules Firestore + Storage
+cd functions && npm ci && npm run uji          # 42 tes unit (nama produk, hak edisi) + 74 skenario emulator: webhook, tukar kode, unduh ebook dua edisi, rules
 ```
 
 Butuh Java 21. Untuk mencoba situs dengan emulator: jalankan
@@ -365,5 +406,5 @@ boleh asal) dan `npm run dev` di `web/`.
 Di emulator, `unduhEbook` menandatangani tautan dengan kunci sekali pakai (tanpa
 kredensial Google), dan tautannya mengarah ke emulator Storage.
 
-Build statis GitHub Pages (`STATIK=1`): login dan gerbang mati, p02–p04
-terkunci, kartu ebook tidak ikut dibundel. Hanya untuk penguji.
+Build statis GitHub Pages (`STATIK=1`): login dan gerbang mati, paket berbayar
+terkunci (kecuali `DEV_BUKA_SEMUA`), kartu ebook tidak ikut dibundel. Hanya untuk penguji.

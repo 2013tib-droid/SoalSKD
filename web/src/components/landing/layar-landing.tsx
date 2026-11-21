@@ -25,7 +25,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import { AMBANG_TIMER, DURASI_LATIHAN_MENIT_PER_SOAL } from "@/config/skd";
-import { PAKET_GRATIS, PENAWARAN, TAUTAN_BELI, TESTIMONI } from "@/config/landing";
+import { FITUR_BUNDEL, PAKET_GRATIS, PENAWARAN, TAUTAN_BELI, TESTIMONI } from "@/config/landing";
 import type { SoalUjian } from "@/lib/soal";
 import { MenuAkun } from "@/components/akun/menu-akun";
 import { LOGIN_AKTIF } from "@/lib/firebase/klien";
@@ -161,6 +161,14 @@ export function LayarLanding({ data, soalHero }: Props) {
           : "Kami belum mencantumkan angkanya sampai ada pengumuman resmi tahun ini."
       } Selalu cek aturan BKN dan KemenPAN-RB terbaru.`,
     },
+    ...(PENAWARAN.length > 1
+      ? [
+          {
+            t: "Apa bedanya Bundel 1 dan Bundel 2?",
+            j: `Isinya berbeda. ${PENAWARAN.map((x) => `${x.nama.split(":")[0]} berisi ${x.isi.map((i) => i.judul).join(" dan ")}`).join(", sedangkan ")}. Soal di setiap paket tidak berulang, jadi keduanya bisa dikerjakan berurutan. Setiap bundel dibeli terpisah dengan kode aktivasinya sendiri, dan semua kode bisa ditukar di akun yang sama.`,
+          },
+        ]
+      : []),
     {
       t: "Apakah ada ranking antar peserta?",
       j: "Belum. Ranking butuh akun dan server untuk membandingkan skor antar peserta. Untuk sekarang kamu bisa membandingkan skormu sendiri lewat riwayat.",
@@ -184,7 +192,7 @@ export function LayarLanding({ data, soalHero }: Props) {
           <ul className="hidden items-center md:flex">
             {[
               ["#cara-kerja", "Cara Kerja"],
-              ...(PENAWARAN ? [["#harga", "Harga"]] : []),
+              ...(PENAWARAN.length > 0 ? [["#harga", "Harga"]] : []),
               ["#faq", "FAQ"],
             ].map(([href, label]) => (
               <li key={href}>
@@ -302,73 +310,107 @@ export function LayarLanding({ data, soalHero }: Props) {
           </div>
         </section>
 
-        {/* Harga: tampil hanya jika sudah diisi di config/landing.ts */}
-        {PENAWARAN && (
+        {/* Harga: satu kartu per bundel dari config/landing.ts (PENAWARAN); kosong = section disembunyikan */}
+        {PENAWARAN.length > 0 && (
           <section id="harga" aria-labelledby="judul-harga" className="scroll-mt-20 py-16 lg:py-24">
             <Muncul className={`${wadah} flex flex-col gap-8`}>
               <div className="flex flex-col gap-3">
                 <h2 id="judul-harga" className={judulSection}>
-                  Semua paket latihan, harga satu gelas kopi
+                  {PENAWARAN.length > 1 ? "Pilih bundelmu, harga satu gelas kopi" : "Semua paket latihan, harga satu gelas kopi"}
                 </h2>
                 <p className="body-3 max-w-[680px] text-pretty text-text-muted">
-                  Kerjakan di HP, baca ulang pembahasannya lewat ebook. Belum yakin? Coba paket gratis dulu.
+                  {PENAWARAN.length > 1
+                    ? "Setiap bundel berisi tiga try out yang berbeda dan dibeli terpisah. Belum yakin? Coba paket gratis dulu."
+                    : "Kerjakan di HP, baca ulang pembahasannya lewat ebook. Belum yakin? Coba paket gratis dulu."}
                 </p>
               </div>
 
-              <div className="grid overflow-hidden rounded-2xl border border-primary/40 bg-surface lg:grid-cols-[5fr_7fr]">
-                <div className="flex flex-col gap-6 bg-primary/[0.06] p-6 sm:p-10">
-                  <p className="caption-4 w-fit rounded-full bg-primary px-3 py-1 text-on-primary">{PENAWARAN.label}</p>
-                  <div className="flex flex-col gap-2">
-                    <h3 className="title-2">{PENAWARAN.nama}</h3>
-                    <p className="heading-1 tracking-tight text-text tabular-nums">{PENAWARAN.harga}</p>
-                    <p className="body-6 text-text-muted">Sekali bayar untuk seluruh isi bundel.</p>
-                  </div>
-                  <div className="mt-auto flex flex-col gap-3">
-                    {TAUTAN_BELI ? (
-                      <a href={TAUTAN_BELI} target="_blank" rel="noopener" className={`${tombolUtama} w-full`}>
-                        <ShoppingBag size={20} aria-hidden />
-                        Beli bundel {PENAWARAN.harga}
-                      </a>
-                    ) : (
-                      <span
-                        role="link"
-                        aria-disabled="true"
-                        className="button-md flex h-12 w-full cursor-not-allowed items-center justify-center gap-2 rounded-lg bg-surface-muted px-4 text-text-muted"
-                      >
-                        <ShoppingBag size={20} aria-hidden />
-                        Pembelian segera dibuka
-                      </span>
-                    )}
-                    {data.soalGratis > 0 && (
-                      <Link href={`/ujian/${PAKET_GRATIS}`} className={`${tombolKedua} w-full`}>
-                        <Gift size={20} aria-hidden className="text-primary" />
-                        Coba {data.soalGratis} soal gratis
-                      </Link>
-                    )}
-                    {LOGIN_AKTIF && (
-                      <Link
-                        href="/aktivasi"
-                        className="title-4 flex h-11 items-center justify-center rounded-lg text-text-muted hover:text-text"
-                      >
-                        Sudah bayar? Masukkan kode aktivasi
-                      </Link>
-                    )}
-                  </div>
-                </div>
-
-                <ul className="flex flex-col gap-6 border-t border-border p-6 sm:p-10 lg:border-t-0 lg:border-l">
-                  {PENAWARAN.isi.map((x) => (
-                    <li key={x.judul} className="flex items-start gap-4">
-                      <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                        <CheckCircle size={20} weight="fill" aria-hidden />
-                      </span>
-                      <span className="flex flex-col gap-1">
-                        <span className="title-3">{x.judul}</span>
-                        <span className="body-6 text-text-muted">{x.detail}</span>
-                      </span>
+              <ul className={`grid gap-4 ${PENAWARAN.length > 1 ? "lg:grid-cols-2" : ""}`}>
+                {PENAWARAN.map((x) => {
+                  const beli = TAUTAN_BELI[x.produk];
+                  return (
+                    <li
+                      key={x.produk}
+                      className="flex flex-col overflow-hidden rounded-2xl border border-primary/40 bg-surface"
+                    >
+                      <div className="flex flex-col gap-4 bg-primary/[0.06] p-6 sm:p-8">
+                        {x.label && (
+                          <p className="caption-4 w-fit rounded-full bg-primary px-3 py-1 text-on-primary">{x.label}</p>
+                        )}
+                        <div className="flex flex-col gap-2">
+                          <h3 className="title-2">{x.nama}</h3>
+                          <p className="heading-2 tracking-tight text-text tabular-nums">{x.harga}</p>
+                          <p className="body-6 text-text-muted">Sekali bayar untuk seluruh isi bundel ini.</p>
+                        </div>
+                      </div>
+                      <div className="flex flex-1 flex-col gap-6 border-t border-border p-6 sm:p-8">
+                        <ul className="flex flex-col gap-5">
+                          {x.isi.map((i) => (
+                            <li key={i.judul} className="flex items-start gap-4">
+                              <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                                <CheckCircle size={20} weight="fill" aria-hidden />
+                              </span>
+                              <span className="flex flex-col gap-1">
+                                <span className="title-3">{i.judul}</span>
+                                <span className="body-6 text-pretty text-text-muted">{i.detail}</span>
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                        <div className="mt-auto">
+                          {beli ? (
+                            <a href={beli} target="_blank" rel="noopener" className={`${tombolUtama} w-full`}>
+                              <ShoppingBag size={20} aria-hidden />
+                              Beli {x.nama.split(":")[0]} {x.harga}
+                            </a>
+                          ) : (
+                            <span
+                              role="link"
+                              aria-disabled="true"
+                              className="button-md flex h-12 w-full cursor-not-allowed items-center justify-center gap-2 rounded-lg bg-surface-muted px-4 text-text-muted"
+                            >
+                              <ShoppingBag size={20} aria-hidden />
+                              Pembelian segera dibuka
+                            </span>
+                          )}
+                        </div>
+                      </div>
                     </li>
-                  ))}
-                </ul>
+                  );
+                })}
+              </ul>
+
+              <div className="grid gap-6 rounded-2xl border border-border bg-surface p-6 sm:p-8 lg:grid-cols-[2fr_1fr] lg:items-center">
+                <div className="flex flex-col gap-4">
+                  <p className="title-3">{PENAWARAN.length > 1 ? "Di setiap bundel" : "Termasuk"}</p>
+                  <ul className="grid gap-4 sm:grid-cols-3">
+                    {FITUR_BUNDEL.map((f) => (
+                      <li key={f.judul} className="flex items-start gap-3">
+                        <CheckCircle size={20} weight="fill" className="mt-0.5 shrink-0 text-primary" aria-hidden />
+                        <span className="flex flex-col gap-1">
+                          <span className="title-4">{f.judul}</span>
+                          <span className="body-6 text-text-muted">{f.detail}</span>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="flex flex-col gap-3">
+                  {data.soalGratis > 0 && (
+                    <Link href={`/ujian/${PAKET_GRATIS}`} className={`${tombolKedua} w-full`}>
+                      <Gift size={20} aria-hidden className="text-primary" />
+                      Coba {data.soalGratis} soal gratis
+                    </Link>
+                  )}
+                  {LOGIN_AKTIF && (
+                    <Link
+                      href="/aktivasi"
+                      className="title-4 flex h-11 items-center justify-center rounded-lg text-text-muted hover:text-text"
+                    >
+                      Sudah bayar? Masukkan kode aktivasi
+                    </Link>
+                  )}
+                </div>
               </div>
             </Muncul>
           </section>
@@ -581,10 +623,16 @@ export function LayarLanding({ data, soalHero }: Props) {
                 </p>
               </div>
               <div className="relative flex flex-col gap-4 sm:flex-row sm:items-center lg:border-l lg:border-on-primary/25 lg:pl-10">
-                {PENAWARAN && (
+                {PENAWARAN.length > 0 && (
                   <p className="flex flex-col">
-                    <span className="caption-4 opacity-90">Bundel lengkap</span>
-                    <span className="heading-4 tracking-tight text-accent tabular-nums">{PENAWARAN.harga}</span>
+                    <span className="caption-4 opacity-90">
+                      {PENAWARAN.length === 1
+                        ? "Bundel lengkap"
+                        : PENAWARAN.every((x) => x.harga === PENAWARAN[0].harga)
+                          ? "Per bundel"
+                          : "Mulai dari"}
+                    </span>
+                    <span className="heading-4 tracking-tight text-accent tabular-nums">{PENAWARAN[0].harga}</span>
                   </p>
                 )}
                 <Link

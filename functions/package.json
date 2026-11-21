@@ -10,7 +10,8 @@
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",
-    "uji": "npm run build && sh test/jalankan.sh"
+    "uji": "npm run build && node test/produk.mjs && sh test/jalankan.sh",
+    "uji:unit": "npm run build && node test/produk.mjs"
   },
   "dependencies": {
     "firebase-admin": "^13.0.2",

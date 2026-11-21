@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowCounterClockwise, ArrowLeft, ArrowRight, ClockCountdown, Info, LockKey, Play } from "@phosphor-icons/react";
+import { ArrowCounterClockwise, ArrowLeft, ArrowRight, ClockCountdown, Info, LockKey, Play, ShoppingBag } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { type ReactNode, useEffect, useState } from "react";
@@ -10,7 +10,9 @@ import { EVENT_SINKRON } from "@/lib/sinkron";
 import { useAkun } from "@/components/akun/auth";
 import { MenuAkun } from "@/components/akun/menu-akun";
 import { KartuEbook } from "@/components/beranda/kartu-ebook";
-import { PENAWARAN } from "@/config/landing";
+import { penawaranUntuk, TAUTAN_BELI } from "@/config/landing";
+import { DAFTAR_PRODUK, PRODUK, produkDariPaket, type IdProduk } from "@/config/produk";
+import { EBOOK_EDISI } from "@/config/akses";
 
 export type PaketBeranda = {
   id: string;
@@ -90,18 +92,24 @@ export function LayarBeranda({ paket, panduan }: { paket: PaketBeranda[]; pandua
   const tujuanBuka =
     akun.status === "mati" ? "/#harga" : akun.status === "masuk" ? "/aktivasi?lanjut=/try-out" : "/masuk?lanjut=/try-out";
 
-  // Paket berbayar yang belum dimiliki tampil sebagai satu kartu bundel; yang sudah dibuka tampil biasa.
+  // Paket berbayar yang belum dimiliki dikelompokkan per bundel (config/produk.ts): satu kartu
+  // per bundel dengan harga dan tombolnya sendiri. Paket yang sudah dibuka tampil biasa.
   const masihMemuat = !dimuat || !aksesDimuat;
   const tampil = paket.filter((p) => p.terbuka || (!masihMemuat && !terkunci(p)));
-  const bundel = paket.filter((p) => !tampil.includes(p));
-  const ringkasBundel = (() => {
-    const [a] = bundel;
+  const terkunciSemua = paket.filter((p) => !tampil.includes(p));
+  const kelompok: { produk: IdProduk | null; paket: PaketBeranda[] }[] = [
+    ...DAFTAR_PRODUK.map((id) => ({ produk: id, paket: terkunciSemua.filter((p) => produkDariPaket(p.id) === id) })),
+    // Paket berbayar yang belum masuk bundel mana pun (misalnya paket baru yang belum dijual).
+    { produk: null, paket: terkunciSemua.filter((p) => produkDariPaket(p.id) === null) },
+  ].filter((k) => k.paket.length > 0);
+  const ringkas = (isi: PaketBeranda[]) => {
+    const [a] = isi;
     if (!a) return "";
     const kunci = (p: PaketBeranda) => `${p.jumlahSoal}|${p.perSubtes.map((x) => `${x.subtes} ${x.jumlah}`).join(" · ")}`;
-    return bundel.every((p) => kunci(p) === kunci(a))
+    return isi.every((p) => kunci(p) === kunci(a))
       ? `${a.jumlahSoal} soal per paket · ${a.perSubtes.map((x) => `${x.subtes} ${x.jumlah}`).join(" · ")}`
-      : `${bundel.reduce((n, p) => n + p.jumlahSoal, 0)} soal`;
-  })();
+      : `${isi.reduce((n, p) => n + p.jumlahSoal, 0)} soal`;
+  };
 
   const berjalan = paket.find((p) => sesi[p.id]?.jenis === "berjalan");
   const sesiBerjalan = berjalan ? (sesi[berjalan.id] as Extract<Sesi, { jenis: "berjalan" }>) : null;
@@ -235,41 +243,63 @@ export function LayarBeranda({ paket, panduan }: { paket: PaketBeranda[]; pandua
                 </li>
               );
             })}
-            {bundel.length > 0 && (
-              <li className="flex flex-col gap-4 rounded-xl border border-border bg-surface p-4">
-                <div className="flex flex-col gap-2">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <h3 className="title-3">{PENAWARAN?.nama ?? `Bundel ${bundel.length} try out`}</h3>
-                    <span className="caption-4 flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-text-muted">
-                      <LockKey size={12} aria-hidden />
-                      Berbayar
-                    </span>
+            {kelompok.map(({ produk, paket: isi }) => {
+              const tawar = produk ? penawaranUntuk(produk) : undefined;
+              const beli = produk ? TAUTAN_BELI[produk] : null;
+              return (
+                <li key={produk ?? "lainnya"} className="flex flex-col gap-4 rounded-xl border border-border bg-surface p-4">
+                  <div className="flex flex-col gap-2">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <h3 className="title-3">{produk ? PRODUK[produk].nama : "Paket berbayar lainnya"}</h3>
+                      <span className="caption-4 flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-text-muted">
+                        <LockKey size={12} aria-hidden />
+                        Berbayar
+                      </span>
+                    </div>
+                    <p className="body-6 text-text-muted">{isi.map((p) => p.judul).join(", ")}</p>
+                    <p className="body-6 text-text-muted">{ringkas(isi)}</p>
+                    {produk && tawar && (
+                      <p className="body-6">
+                        <span className="mono-number title-4">{tawar.harga}</span>{" "}
+                        <span className="text-text-muted">
+                          untuk {PRODUK[produk].paket.length} paket, plus {EBOOK_EDISI[PRODUK[produk].edisi].judul}
+                        </span>
+                      </p>
+                    )}
                   </div>
-                  <p className="body-6 text-text-muted">
-                    {bundel.map((p) => p.judul).join(", ")}
-                  </p>
-                  <p className="body-6 text-text-muted">{ringkasBundel}</p>
-                  {PENAWARAN && (
-                    <p className="body-6">
-                      <span className="mono-number title-4">{PENAWARAN.harga}</span>{" "}
-                      <span className="text-text-muted">untuk semua paket, plus ebook PDF</span>
-                    </p>
+                  {masihMemuat ? (
+                    <div className="h-12 animate-pulse rounded-lg bg-surface-muted" aria-hidden />
+                  ) : (
+                    <div className="flex flex-col gap-3 sm:grid sm:grid-cols-2">
+                      {tawar &&
+                        (beli ? (
+                          <a href={beli} target="_blank" rel="noopener" className={tombolUtama}>
+                            <ShoppingBag size={20} aria-hidden />
+                            Beli {tawar.harga}
+                          </a>
+                        ) : (
+                          <span
+                            role="link"
+                            aria-disabled="true"
+                            className="button-md flex h-12 cursor-not-allowed items-center justify-center gap-2 rounded-lg bg-surface-muted px-4 text-text-muted"
+                          >
+                            <ShoppingBag size={20} aria-hidden />
+                            Pembelian segera dibuka
+                          </span>
+                        ))}
+                      <Link href={tujuanBuka} className={tombolSekunder}>
+                        <LockKey size={20} aria-hidden />
+                        {akun.status === "mati"
+                          ? "Lihat penawaran"
+                          : akun.status === "masuk"
+                            ? "Masukkan kode aktivasi"
+                            : "Masuk untuk membuka"}
+                      </Link>
+                    </div>
                   )}
-                </div>
-                {masihMemuat ? (
-                  <div className="h-12 animate-pulse rounded-lg bg-surface-muted" aria-hidden />
-                ) : (
-                  <Link href={tujuanBuka} className={tombolSekunder}>
-                    <LockKey size={20} aria-hidden />
-                    {akun.status === "mati"
-                      ? "Lihat penawaran"
-                      : akun.status === "masuk"
-                        ? "Masukkan kode aktivasi"
-                        : "Masuk untuk membuka"}
-                  </Link>
-                )}
-              </li>
-            )}
+                </li>
+              );
+            })}
             {/* Build statis: dibandingkan langsung (bukan BUILD_STATIK) supaya minifier membuang kartu ebook dari bundel. */}
             {process.env.STATIK !== "1" && <KartuEbook />}
           </ul>
