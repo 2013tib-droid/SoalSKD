@@ -12,8 +12,9 @@
  *      melarang client menulis dokumen user sama sekali.
  *   3. Kode dari Mayar dibuat per pesanan, idempoten, dan dikirim ke email
  *      pembeli. Kode tidak pernah dicatat di log.
- *   4. Ebook PDF ada di Storage privat (storage.rules menolak semua client);
- *      `unduhEbook` memberi signed URL berumur pendek ke pemilik paket bundel.
+ *   4. Ebook PDF per edisi ada di Storage privat (storage.rules menolak semua
+ *      client); `unduhEbook` memberi signed URL berumur pendek, hanya untuk
+ *      pemilik paket dari bundel edisi yang diminta.
  *
  * Pola ini meniru game edukasi (functions/src/index.ts di repo itu), tapi
  * yang dibuka di sini daftar PAKET, bukan kelompok umur.
@@ -27,6 +28,7 @@ import { defineSecret, defineString } from 'firebase-functions/params';
 import { setGlobalOptions } from 'firebase-functions/v2';
 import { HttpsError, onCall, onRequest, type CallableRequest } from 'firebase-functions/v2/https';
 import { createTransport } from 'nodemailer';
+import { EBOOK, isEdisi, isProduk, produkDariNama, PRODUK, punyaEdisi, type IdEdisi, type IdProduk } from './produk';
 
 initializeApp();
 const db = getFirestore();
@@ -35,19 +37,8 @@ const db = getFirestore();
 // (web/src/lib/firebase/klien.ts, FUNCTIONS_REGION).
 setGlobalOptions({ region: 'asia-southeast2', maxInstances: 10 });
 
-/**
- * Produk yang dijual dan paket yang dibukanya. Sengaja diulang di sini (bukan
- * diimpor dari web/): functions di-deploy terpisah. Kalau menambah produk,
- * ubah juga `PAKET_TERBUKA` / daftar paket di web bila perlu.
- */
-const PRODUK = {
-  'bundel-3to': { judul: 'Bundel 3 Try Out SKD', paket: ['p02', 'p03', 'p04'] },
-} as const;
-type IdProduk = keyof typeof PRODUK;
-
-function isProduk(v: unknown): v is IdProduk {
-  return typeof v === 'string' && Object.prototype.hasOwnProperty.call(PRODUK, v);
-}
+// Produk, paket, dan ebook per edisi ada di ./produk (modul murni, diuji
+// tanpa emulator). Cerminnya di web/src/config/produk.ts: ubah bersamaan.
 
 /** Rem percobaan kode: 10 kegagalan per jam per akun. */
 const MAKS_GAGAL = 10;
@@ -175,17 +166,8 @@ export const redeemActivationCode = onCall(async (request) => {
 
 // --- 2. Unduh ebook PDF -----------------------------------------------------
 
-/**
- * Ebook yang ikut produk bundel. PDF dibuat dari bank/p02–p04 (ebook/README.md)
- * dan diunggah pemilik ke path ini (docs/firebase.md). Nama file unduhan dipaksa
- * lewat Content-Disposition, jadi path di bucket tidak terlihat di nama file.
- */
-const EBOOK = {
-  path: 'ebook/edisi-1.pdf',
-  namaFile: 'SoalSKD-Edisi-1.pdf',
-  paket: PRODUK['bundel-3to'].paket as readonly string[],
-  berlakuMs: 10 * 60 * 1000,
-} as const;
+/** Umur signed URL ebook. PDF tiap edisi dibuat dari bank/ (ebook/README.md). */
+const EBOOK_BERLAKU_MS = 10 * 60 * 1000;
 
 let appEmulator: App | null = null;
 
@@ -213,19 +195,26 @@ function bucketEbook() {
 }
 
 /**
- * Tautan unduh ebook untuk akun yang memiliki minimal satu paket bundel.
- * Hak dibaca dari `users/{uid}.paket` (hanya ditulis `redeemActivationCode`).
- * URL berlaku 10 menit; tidak disimpan di mana pun.
+ * Tautan unduh ebook satu edisi (`{ edisi: 'edisi-1' | 'edisi-2' }`) untuk akun
+ * yang memiliki minimal satu paket dari bundel edisi itu. Tanpa `edisi` = edisi-1
+ * (client lama). Hak dibaca dari `users/{uid}.paket` (hanya ditulis
+ * `redeemActivationCode`). URL berlaku 10 menit; tidak disimpan di mana pun.
  */
 export const unduhEbook = onCall(async (request) => {
   const uid = wajibUid(request);
+  const diminta = (request.data as { edisi?: unknown } | undefined)?.edisi ?? 'edisi-1';
+  if (!isEdisi(diminta)) throw new HttpsError('invalid-argument', 'Edisi ebook tidak dikenal.');
+  const edisi: IdEdisi = diminta;
+  const ebook = EBOOK[edisi];
   const milik: unknown = (await db.doc(`users/${uid}`).get()).get('paket');
-  const punya = Array.isArray(milik) && milik.some((p) => typeof p === 'string' && EBOOK.paket.includes(p));
-  if (!punya) {
-    throw new HttpsError('permission-denied', 'Ebook ikut paket bundel. Tukar kode aktivasimu dulu di halaman Aktivasi.');
+  if (!punyaEdisi(milik, edisi)) {
+    throw new HttpsError(
+      'permission-denied',
+      `${ebook.judul} ikut ${PRODUK[ebook.produk].judul}. Tukar kode aktivasi bundel itu dulu di halaman Aktivasi.`,
+    );
   }
 
-  const file = bucketEbook().file(EBOOK.path);
+  const file = bucketEbook().file(ebook.path);
   let ada = false;
   try {
     [ada] = await file.exists();
@@ -234,21 +223,21 @@ export const unduhEbook = onCall(async (request) => {
     throw new HttpsError('internal', 'Ebook belum bisa diambil. Coba lagi sebentar lagi.');
   }
   if (!ada) {
-    logger.error('unduhEbook: file belum diunggah', { path: EBOOK.path });
+    logger.error('unduhEbook: file belum diunggah', { path: ebook.path });
     throw new HttpsError('not-found', 'Ebook sedang disiapkan. Coba lagi nanti, atau balas email pembelianmu.');
   }
 
   try {
-    const berakhir = Date.now() + EBOOK.berlakuMs;
+    const berakhir = Date.now() + EBOOK_BERLAKU_MS;
     const [url] = await file.getSignedUrl({
       version: 'v4',
       action: 'read',
       expires: berakhir,
-      responseDisposition: `attachment; filename="${EBOOK.namaFile}"`,
+      responseDisposition: `attachment; filename="${ebook.namaFile}"`,
       responseType: 'application/pdf',
     });
-    logger.info('unduhEbook: tautan dibuat', { uid });
-    return { url, namaFile: EBOOK.namaFile, berakhirPada: berakhir };
+    logger.info('unduhEbook: tautan dibuat', { uid, edisi });
+    return { url, namaFile: ebook.namaFile, berakhirPada: berakhir };
   } catch (e) {
     // Biasanya: service account function belum punya peran Service Account Token Creator.
     logger.error('unduhEbook: gagal menandatangani URL', { pesan: (e as Error).message });
@@ -279,9 +268,10 @@ function buatKode(): { id: string; tampil: string } {
 
 /**
  * Produk Mayar → produk SoalSKD. Diutamakan dokumen `config/mayar_products`
- * (`{ "<productId Mayar>": "bundel-3to" }`, diisi pemilik di Console, tanpa
- * deploy). Cadangannya nama produk. Tidak cocok → null → ditangani manual:
- * lebih baik satu pembeli dibalas manual daripada menerima akses yang salah.
+ * (`{ "<productId Mayar>": "bundel-3to" | "bundel-3to-2" }`, diisi pemilik di
+ * Console, tanpa deploy). Cadangannya nama produk (`produkDariNama`). Tidak
+ * cocok → null → ditangani manual: lebih baik satu pembeli dibalas manual
+ * daripada menerima akses bundel yang salah.
  */
 async function produkDari(productId: string, productName: string): Promise<IdProduk | null> {
   if (productId) {
@@ -289,14 +279,6 @@ async function produkDari(productId: string, productName: string): Promise<IdPro
     if (isProduk(peta[productId])) return peta[productId];
   }
   return produkDariNama(productName);
-}
-
-/** "Bundel 3 Try Out SKD" → bundel-3to. Hanya kalau menyebut bundel DAN angka 3. */
-export function produkDariNama(nama: string): IdProduk | null {
-  const n = nama.toLowerCase();
-  const angka: string[] = n.match(/\b\d+\b/g) ?? [];
-  if (/bundel|bundle/.test(n) && angka.length === 1 && angka[0] === '3') return 'bundel-3to';
-  return null;
 }
 
 /** Nilai pertama yang ada dari beberapa kandidat nama field (boleh bertitik). */
