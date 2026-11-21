@@ -1,0 +1,926 @@
+{
+  "skema": 1,
+  "meta": {
+    "id": "p06",
+    "judul": "Paket 06",
+    "versi": 1,
+    "dibuat": "2026-11-21",
+    "status": "draf"
+  },
+  "soal": [
+    {
+      "id": "p06-001",
+      "nomor": 1,
+      "kategori": "TWK",
+      "subtopik": "Pancasila",
+      "topik": "Sila ketiga: mendukung timnas tanpa merendahkan bangsa lain di media sosial",
+      "tingkat": "mudah",
+      "pertanyaan": "Setelah tim nasional kalah di laga kualifikasi, ribuan warganet membanjiri akun media sosial pemain tim lawan dengan hinaan bernada rasial. Sikap yang paling mencerminkan sila ketiga Pancasila adalah ....",
+      "opsi": {
+        "A": "Tetap mendukung tim nasional sambil menghormati pemain dan suporter negara lawan",
+        "B": "Membalas hinaan suporter lawan agar martabat bangsa sendiri tidak terus direndahkan",
+        "C": "Berhenti mendukung tim nasional sampai prestasinya benar-benar membanggakan bangsa",
+        "D": "Memaklumi warganet karena hinaan itu lahir dari rasa cinta yang besar kepada bangsa",
+        "E": "Menyerahkan urusan itu kepada federasi karena olahraga tidak berkaitan dengan Pancasila"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "Sila ketiga, *Persatuan Indonesia*, menuntut rasa bangga dan cinta pada bangsa sendiri. Namun cinta itu tidak boleh berubah menjadi sikap merendahkan bangsa lain. Nasionalisme Indonesia sejak awal bersifat terbuka: Pembukaan UUD 1945 alinea keempat menyebut tujuan ikut melaksanakan ketertiban dunia berdasarkan perdamaian abadi. Hinaan rasial kepada pemain lawan justru mencoreng nama bangsa di mata dunia. Jadi, sikap yang tepat adalah tetap mendukung tim nasional dengan antusias sekaligus menghormati lawan. Dukungan dan sportivitas tidak saling meniadakan.",
+        "opsi": {
+          "B": "Membalas hinaan dengan hinaan adalah wujud *chauvinisme*, yaitu cinta tanah air yang berlebihan sampai merendahkan bangsa lain. Martabat bangsa tidak dijaga dengan cara yang sama buruknya.",
+          "C": "Kecintaan pada bangsa tidak bergantung pada prestasi. Menarik dukungan saat tim kalah menunjukkan rasa kebangsaan yang rapuh, bukan sikap persatuan.",
+          "D": "Distraktor yang menjebak karena memakai alasan cinta bangsa. Niat baik tidak membenarkan cara yang merendahkan martabat manusia, yang juga bertentangan dengan sila kedua.",
+          "E": "Keliru. Nilai Pancasila berlaku dalam seluruh kehidupan bermasyarakat, termasuk olahraga dan media sosial. Federasi berwenang soal disiplin, tetapi sikap pribadi tetap tanggung jawab setiap warga."
+        },
+        "konsep": "**Nasionalisme yang sehat** = bangga pada bangsa sendiri + menghormati bangsa lain. Lawannya ada dua: *chauvinisme* (memuja bangsa sendiri dan merendahkan bangsa lain) dan sikap acuh pada bangsa sendiri. Sila ketiga dijiwai sila kedua, sehingga persatuan tidak boleh dibangun dengan merendahkan martabat manusia."
+      },
+      "tips": "Pada soal sikap Pancasila, coret opsi yang membalas keburukan dengan keburukan dan opsi yang menganggap Pancasila tidak berlaku di bidang tertentu. Jawaban terbaik biasanya menggabungkan dua nilai sekaligus, di sini cinta tanah air dan penghormatan kepada sesama manusia.",
+      "rujukan": [
+        "Pembukaan UUD NRI 1945 alinea keempat"
+      ]
+    },
+    {
+      "id": "p06-002",
+      "nomor": 2,
+      "kategori": "TWK",
+      "subtopik": "Pancasila",
+      "topik": "Sila kedua: menolak persekusi dan main hakim sendiri yang diviralkan",
+      "tingkat": "sedang",
+      "pertanyaan": "Seorang remaja kedapatan mencuri ponsel di pasar. Sejumlah warga mengaraknya keliling kampung sambil merekam, lalu mengunggah videonya lengkap dengan wajah dan nama si remaja. Video itu sampai di grup percakapan Anda.\n\nTindakan yang paling sesuai dengan sila kedua Pancasila adalah ....",
+      "opsi": {
+        "A": "Meneruskan video itu ke grup lain supaya calon pelaku pencurian di kampung lain menjadi jera",
+        "B": "Membiarkan arak-arakan itu karena merupakan sanksi sosial yang sudah lama disepakati warga",
+        "C": "Tidak menyebarkan video itu dan mendorong agar kasusnya diserahkan kepada pihak kepolisian",
+        "D": "Mengunggah ulang video dengan wajah disamarkan agar warga tetap waspada terhadap pencurian",
+        "E": "Meminta remaja itu dan keluarganya pindah dari kampung supaya suasana segera kembali tenang"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "Sila kedua, *Kemanusiaan yang adil dan beradab*, menuntut kita memperlakukan setiap orang sesuai harkat dan martabatnya, termasuk orang yang bersalah. Mengarak dan mempermalukan pelaku di depan umum adalah perlakuan yang merendahkan martabat manusia, yang dilarang Pasal 28G ayat (2) UUD 1945. Indonesia juga negara hukum (Pasal 1 ayat 3), jadi yang berwenang menghukum adalah aparat dan pengadilan, bukan massa. Sikap yang tepat ada dua: memutus penyebaran video yang mempermalukan, lalu mendorong penyelesaian lewat jalur hukum.",
+        "opsi": {
+          "A": "Alasan efek jera terdengar masuk akal, tetapi menyebarkan video persekusi berarti ikut mempermalukan seseorang di luar proses hukum. Remaja itu juga masih anak sehingga identitasnya patut dilindungi.",
+          "B": "Kesepakatan warga tidak bisa mengesampingkan hak asasi dan hukum negara. Sanksi yang merendahkan martabat tetap persekusi walaupun sudah menjadi kebiasaan.",
+          "D": "Lebih baik daripada A karena wajah disamarkan, tetapi video arak-arakan tetap tersebar dan perbuatan main hakim sendiri tidak dihentikan. Unsur jalur hukum juga tidak ada.",
+          "E": "Mengusir keluarga adalah hukuman tambahan tanpa dasar hukum yang juga menimpa orang yang tidak bersalah. Sikap ini bertentangan dengan sila kedua dan kelima."
+        },
+        "konsep": "**Main hakim sendiri** (eigenrichting) bertentangan dengan dua prinsip sekaligus: martabat manusia (sila kedua, Pasal 28G ayat 2) dan negara hukum (Pasal 1 ayat 3). Pelaku kejahatan tetap punya hak untuk diperlakukan secara manusiawi dan diadili secara adil."
+      },
+      "tips": "Jika soal menyebut pelaku yang jelas bersalah, jangan terpancing opsi yang “menghukum” lewat jalur nonhukum. Cari opsi yang menghentikan pelanggaran martabat dan mengembalikan kasus ke aparat yang berwenang.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 1 ayat (3)",
+        "UUD NRI 1945 Pasal 28G ayat (2)"
+      ]
+    },
+    {
+      "id": "p06-003",
+      "nomor": 3,
+      "kategori": "TWK",
+      "subtopik": "Pancasila",
+      "topik": "Sila pertama: tidak memaksakan keyakinan kepada teman sekamar di asrama pelatihan",
+      "tingkat": "mudah",
+      "pertanyaan": "Selama pelatihan dasar CPNS di asrama, Rudi berkali-kali mengajak teman sekamarnya yang berbeda agama untuk mengikuti kegiatan ibadah agamanya dan terus mengirimi bahan bacaan keagamaan. Temannya sudah menolak dengan halus. Sikap yang seharusnya diambil Rudi sesuai sila pertama adalah ....",
+      "opsi": {
+        "A": "Terus mengajak dengan lebih sopan, karena menyampaikan ajaran agama merupakan bagian dari ibadah",
+        "B": "Menghindari teman sekamarnya selama pelatihan agar tidak timbul perdebatan tentang agama",
+        "C": "Meminta panitia memindahkan temannya ke kamar lain yang penghuninya seagama dengan temannya",
+        "D": "Menghormati keyakinan temannya dan berhenti mengajak setelah ajakannya ditolak",
+        "E": "Mengajak temannya berdiskusi terbuka untuk membuktikan ajaran agama mana yang paling benar"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "Sila pertama, *Ketuhanan Yang Maha Esa*, tidak hanya berarti percaya kepada Tuhan, tetapi juga menghormati kebebasan orang lain dalam beragama. Pasal 29 ayat (2) UUD 1945 menjamin kemerdekaan tiap penduduk untuk memeluk agamanya masing-masing, dan Pasal 28E ayat (1) menjamin kebebasan memeluk agama. Ketika teman sudah menolak, ajakan yang terus diulang berubah menjadi tekanan. Sikap yang tepat adalah menghormati keputusan itu dan tetap berteman baik tanpa membawa urusan keyakinan.",
+        "opsi": {
+          "A": "Distraktor terkuat. Menyampaikan ajaran memang bagian dari ajaran banyak agama, tetapi setelah ditolak, mengulang ajakan sudah termasuk memaksakan keyakinan. Kata “lebih sopan” tidak mengubah sifat pemaksaannya.",
+          "B": "Menghindari teman membuat hubungan renggang dan tidak sesuai semangat kerukunan. Masalahnya ada pada ajakan, bukan pada pertemanan.",
+          "C": "Memisahkan orang berdasarkan agama adalah segregasi. Tindakan ini justru bertentangan dengan semangat persatuan dalam keberagaman.",
+          "E": "Debat untuk membuktikan agama mana yang paling benar mudah memicu ketersinggungan dan tidak sejalan dengan sikap saling menghormati antarpemeluk agama."
+        },
+        "konsep": "**Toleransi beragama** dalam Pancasila berarti: bebas menjalankan agama sendiri, menghormati agama orang lain, dan **tidak memaksakan** agama atau kepercayaan kepada orang lain. Kebebasan beragama setiap orang dibatasi oleh kebebasan beragama orang lain."
+      },
+      "tips": "Kata kunci soal ini adalah “sudah menolak”. Setelah ada penolakan, opsi apa pun yang tetap mengajak, mendebat, atau memisahkan orang tidak lagi menghormati kebebasan beragama. Pilih opsi yang menghentikan tekanan tanpa memutus hubungan.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 28E ayat (1)",
+        "UUD NRI 1945 Pasal 29 ayat (2)"
+      ]
+    },
+    {
+      "id": "p06-004",
+      "nomor": 4,
+      "kategori": "TWK",
+      "subtopik": "Pancasila",
+      "topik": "Sila kelima: PNS yang masih terdata sebagai penerima bantuan sosial",
+      "tingkat": "sedang",
+      "pertanyaan": "Bu Lestari, seorang PNS, baru tahu bahwa namanya masih tercatat sebagai penerima bantuan sosial karena memakai data lama ketika ia belum bekerja. Bantuan bulan ini sudah masuk ke rekeningnya. Tindakan yang paling mencerminkan sila kelima adalah ....",
+      "opsi": {
+        "A": "Menyerahkan uang bantuan itu kepada tetangga yang lebih membutuhkan tanpa perlu melapor",
+        "B": "Melapor agar namanya dicoret dan mengembalikan bantuan sesuai prosedur yang berlaku",
+        "C": "Menyimpan bantuan itu karena kesalahan pendataan bukan merupakan tanggung jawab dirinya",
+        "D": "Menolak bantuan bulan berikutnya, tetapi membiarkan datanya karena prosedur pencoretan rumit",
+        "E": "Menunggu pemutakhiran data periode berikutnya karena pendataan adalah tugas petugas dinas sosial"
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "Sila kelima, *Keadilan sosial bagi seluruh rakyat Indonesia*, mengandung sikap menghormati hak orang lain dan tidak mengambil sesuatu yang bukan haknya. Bantuan sosial disediakan untuk warga yang memenuhi kriteria. Selama nama Bu Lestari masih tercatat, kuota bantuan itu tertahan dan tidak sampai ke warga yang berhak. Karena itu, tindakan yang adil adalah memperbaiki sumber masalahnya, yaitu datanya, lalu mengembalikan bantuan melalui jalur resmi agar uang negara tercatat dengan benar.",
+        "opsi": {
+          "A": "Distraktor yang terdengar mulia. Uang memang sampai ke orang lain, tetapi datanya tetap salah, kuota tetap tertahan, dan penyaluran di luar prosedur tidak bisa dipertanggungjawabkan.",
+          "C": "Mengetahui sesuatu bukan haknya lalu tetap menyimpannya bertentangan dengan sila kelima. Kesalahan awal memang ada pada data, tetapi setelah tahu, ia ikut bertanggung jawab.",
+          "D": "Separuh benar. Menolak bantuan berikutnya baik, tetapi bantuan yang sudah diterima tidak dikembalikan dan datanya tetap keliru sehingga warga yang berhak tetap dirugikan.",
+          "E": "Sikap pasif. Pemutakhiran berkala bisa memakan waktu lama, dan selama itu bantuan terus mengalir kepada orang yang tidak berhak."
+        },
+        "konsep": "**Keadilan sosial** bukan hanya urusan pemerintah. Warga juga ikut mewujudkannya dengan sikap seperti menghormati hak orang lain, tidak memakai sesuatu yang bukan haknya, dan membantu agar program negara tepat sasaran."
+      },
+      "tips": "Bandingkan opsi dengan pertanyaan “apakah sumber masalahnya ikut dibereskan?”. Opsi yang hanya memindahkan uang (A) atau menunggu (E) tidak memperbaiki ketidakadilannya. Jawaban terbaik memperbaiki data dan mengembalikan hak melalui jalur resmi."
+    },
+    {
+      "id": "p06-005",
+      "nomor": 5,
+      "kategori": "TWK",
+      "subtopik": "Pancasila",
+      "topik": "Mufakat warga yang melanggar hak asasi: sila keempat dijiwai sila kedua",
+      "tingkat": "sulit",
+      "pertanyaan": "Dalam rapat RT, seluruh warga yang hadir bermufakat menyegel rumah kontrakan seorang warga yang *diduga* mengedarkan narkoba dan mengusirnya dalam tiga hari. Kasus itu tidak dilaporkan ke polisi. Penilaian yang paling tepat berdasarkan Pancasila adalah ....",
+      "opsi": {
+        "A": "Keputusan itu sah karena diambil melalui musyawarah untuk mufakat sebagaimana amanat sila keempat",
+        "B": "Keputusan itu sah asalkan warga yang diduga sudah diberi kesempatan membela diri dalam rapat",
+        "C": "Keputusan itu bertentangan dengan sila keempat karena seharusnya diambil melalui pemungutan suara",
+        "D": "Keputusan itu bertentangan dengan Pancasila karena urusan dugaan narkoba hanya boleh diputuskan dalam rapat tingkat RW",
+        "E": "Keputusan itu bertentangan dengan Pancasila karena mufakat tidak boleh meniadakan hak orang atas proses hukum"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "Soal ini butuh dua langkah. **Langkah 1:** cara pengambilan keputusannya memang musyawarah mufakat, jadi sekilas sesuai sila keempat. **Langkah 2:** sila-sila Pancasila bersifat *hierarkis piramidal*; sila keempat dijiwai sila pertama, kedua, dan ketiga. Artinya, hasil musyawarah harus dapat dipertanggungjawabkan secara moral, menjunjung martabat manusia, serta nilai kebenaran dan keadilan. Menyegel dan mengusir orang yang baru *diduga* bersalah meniadakan haknya atas proses hukum yang adil (Pasal 28D ayat 1) dan melanggar prinsip negara hukum. Jadi, kesepakatan bulat pun tidak membuat keputusan itu sah.",
+        "opsi": {
+          "A": "Jebakan jalan pintas: hanya melihat **cara** (mufakat) tanpa menilai **isi** keputusan. Musyawarah yang hasilnya melanggar hak asasi tidak sesuai dengan sila keempat yang utuh.",
+          "B": "Memberi kesempatan membela diri memperbaiki prosedur rapat, tetapi rapat RT tetap tidak berwenang menjatuhkan hukuman penyegelan dan pengusiran. Yang berwenang menilai dugaan pidana adalah aparat dan pengadilan.",
+          "C": "Alasannya terbalik. Pancasila justru mengutamakan mufakat; pemungutan suara adalah jalan terakhir. Masalahnya ada pada isi keputusan, bukan cara mengambilnya.",
+          "D": "Mengganti forum dari RT ke RW tidak menyelesaikan apa pun. Forum warga mana pun tidak berwenang menghukum dugaan tindak pidana."
+        },
+        "konsep": "**Batas musyawarah:** keputusan musyawarah harus (1) dapat dipertanggungjawabkan secara moral kepada Tuhan Yang Maha Esa, (2) menjunjung harkat dan martabat manusia, (3) menjunjung kebenaran dan keadilan, serta (4) mengutamakan persatuan. Ini konsekuensi susunan sila yang saling menjiwai."
+      },
+      "tips": "Jika soal menekankan bahwa keputusan diambil “secara mufakat” atau “disetujui semua”, curigai jebakan. Periksa isi keputusannya: apakah melanggar hak orang lain atau hukum? Jika ya, cara yang demokratis tidak menyelamatkannya.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 1 ayat (3)",
+        "UUD NRI 1945 Pasal 28D ayat (1)"
+      ]
+    },
+    {
+      "id": "p06-006",
+      "nomor": 6,
+      "kategori": "TWK",
+      "subtopik": "UUD 1945",
+      "topik": "Hak memperoleh informasi publik (Pasal 28F) saat warga meminta rincian anggaran desa",
+      "tingkat": "sedang",
+      "pertanyaan": "Pak Darto meminta salinan rincian APBDes tahun berjalan ke kantor desa karena ingin tahu anggaran perbaikan jalan di dusunnya. Sekretaris desa menolak dengan alasan dokumen itu “hanya untuk internal pemerintah desa”. Penilaian yang paling tepat atas penolakan itu adalah ....",
+      "opsi": {
+        "A": "Penolakan itu tepat karena pengawasan anggaran desa sepenuhnya menjadi tugas Badan Permusyawaratan Desa",
+        "B": "Penolakan itu keliru karena rincian anggaran desa merupakan informasi publik yang dapat diakses warga",
+        "C": "Penolakan itu tepat karena anggaran desa baru boleh dibuka setelah selesai diperiksa oleh auditor negara",
+        "D": "Penolakan itu keliru hanya jika Pak Darto melampirkan surat pengantar dari camat ketika meminta salinannya",
+        "E": "Penolakan itu tepat karena hak mencari dan memperoleh informasi dalam UUD 1945 hanya diberikan kepada pers"
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "Pasal 28F UUD 1945 menjamin hak setiap orang untuk berkomunikasi serta mencari, memperoleh, memiliki, menyimpan, mengolah, dan menyampaikan informasi. Hak ini dijabarkan dalam UU 14/2008 tentang Keterbukaan Informasi Publik, yang menyatakan bahwa setiap informasi publik pada dasarnya terbuka dan dapat diakses (Pasal 2 ayat 1). Pemerintah desa mengelola dana publik, jadi rincian APBDes termasuk informasi publik. Anggaran bukan jenis informasi yang dikecualikan seperti rahasia pertahanan atau data pribadi. Karena itu, permintaan Pak Darto seharusnya dilayani sesuai prosedur.",
+        "opsi": {
+          "A": "BPD memang mengawasi kinerja kepala desa, tetapi itu tidak menghapus hak warga untuk memperoleh informasi. Pengawasan oleh lembaga dan hak warga atas informasi berjalan bersamaan.",
+          "C": "Tidak ada syarat bahwa anggaran baru boleh dibuka setelah diaudit. Anggaran justru perlu terbuka sejak direncanakan supaya warga bisa ikut mengawasi.",
+          "D": "Hak atas informasi tidak bergantung pada surat pengantar pejabat lain. Prosedur permohonan informasi cukup dengan identitas pemohon dan keterangan informasi yang diminta.",
+          "E": "Keliru membaca pasal. Pasal 28F memakai frasa “setiap orang”, bukan hanya pers. Kebebasan pers diatur tersendiri dalam undang-undang pers."
+        },
+        "konsep": "**Asas keterbukaan informasi:** informasi publik pada dasarnya terbuka; pengecualian bersifat ketat dan terbatas (misalnya membahayakan pertahanan negara, mengganggu penegakan hukum, atau membuka data pribadi). Pembatasan hak asasi juga harus ditetapkan dengan undang-undang (Pasal 28J ayat 2), bukan dengan alasan sepihak pejabat."
+      },
+      "tips": "Untuk soal hak warga, cari kata “setiap orang” atau “setiap warga negara” dalam pasal. Opsi yang mempersempit hak menjadi milik kelompok tertentu (pers, BPD) atau menambah syarat yang tidak ada (surat camat, audit) hampir selalu salah.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 28F",
+        "UU 14/2008 tentang Keterbukaan Informasi Publik Pasal 2 ayat (1)"
+      ]
+    },
+    {
+      "id": "p06-007",
+      "nomor": 7,
+      "kategori": "TWK",
+      "subtopik": "UUD 1945",
+      "topik": "Kewajiban pemerintah membiayai pendidikan dasar (Pasal 31 ayat 2)",
+      "tingkat": "sedang",
+      "pertanyaan": "Sebuah SD negeri mewajibkan setiap siswa membayar “uang pembangunan” dengan nominal yang sudah ditentukan. Siswa yang belum membayar tidak diberi rapor. Ketentuan UUD 1945 yang paling tepat untuk menilai kebijakan sekolah itu adalah ....",
+      "opsi": {
+        "A": "Pasal 31 ayat (4), karena negara wajib menyediakan anggaran pendidikan minimal 20 persen",
+        "B": "Pasal 28C ayat (1), karena setiap orang berhak mengembangkan diri melalui kebutuhan dasarnya",
+        "C": "Pasal 31 ayat (1), karena hanya ayat itu yang mewajibkan pendidikan dasar diberikan gratis",
+        "D": "Pasal 31 ayat (2), karena warga wajib mengikuti pendidikan dasar dan pemerintah wajib membiayainya",
+        "E": "Pasal 34 ayat (1), karena biaya sekolah bagi anak dari keluarga tidak mampu harus ditanggung negara sepenuhnya"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "Pasal 31 ayat (2) UUD 1945 berbunyi: “Setiap warga negara wajib mengikuti pendidikan dasar dan pemerintah wajib membiayainya.” SD adalah pendidikan dasar, dan sekolahnya negeri. Karena pendidikan dasar adalah kewajiban warga, negara menanggung pembiayaannya. Pungutan dengan nominal tetap yang diwajibkan, apalagi dijadikan syarat menerima rapor, bertentangan dengan amanat ini. Sumbangan sukarela dari orang tua masih dimungkinkan, tetapi tidak boleh ditentukan jumlahnya, diwajibkan, atau dikaitkan dengan hak siswa.",
+        "opsi": {
+          "A": "Pasal 31 ayat (4) mengatur besaran anggaran pendidikan dalam APBN dan APBD. Ayat ini tidak menjawab boleh tidaknya sekolah memungut biaya dari siswa.",
+          "B": "Pasal 28C ayat (1) memang terkait hak mendapat pendidikan, tetapi rumusannya umum. Pasal 31 ayat (2) lebih tepat karena secara langsung mengatur kewajiban pemerintah membiayai pendidikan dasar.",
+          "C": "Salah ayat. Pasal 31 ayat (1) menyatakan setiap warga negara berhak mendapat pendidikan; ayat ini tidak menyebut pembiayaan oleh pemerintah.",
+          "E": "Pasal 34 ayat (1) mengatur fakir miskin dan anak terlantar yang dipelihara negara. Pembiayaan pendidikan dasar berlaku bagi semua siswa, bukan hanya siswa tidak mampu."
+        },
+        "konsep": "**Isi Pasal 31 secara ringkas:** (1) hak mendapat pendidikan; (2) wajib belajar pendidikan dasar dan pemerintah wajib membiayai; (3) satu sistem pendidikan nasional; (4) anggaran pendidikan minimal 20% APBN dan APBD; (5) kemajuan ilmu pengetahuan dan teknologi."
+      },
+      "tips": "Jika beberapa pasal terasa relevan, pilih yang **paling langsung** menjawab inti kasus. Kasus ini tentang siapa yang membiayai pendidikan dasar, jadi pasal yang menyebut kata “membiayai” lebih tepat daripada pasal tentang hak secara umum.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 31 ayat (1), (2), dan (4)"
+      ]
+    },
+    {
+      "id": "p06-008",
+      "nomor": 8,
+      "kategori": "TWK",
+      "subtopik": "UUD 1945",
+      "topik": "Jalur menguji perda yang dianggap bertentangan dengan undang-undang (Pasal 24A)",
+      "tingkat": "sulit",
+      "pertanyaan": "Paguyuban pedagang pasar menilai Peraturan Daerah Kabupaten X tentang retribusi pasar bertentangan dengan undang-undang tentang pajak dan retribusi daerah. Mereka ingin perda itu dinyatakan tidak berlaku melalui jalur peradilan. Langkah yang paling tepat adalah mengajukan ....",
+      "opsi": {
+        "A": "pengujian ke Mahkamah Konstitusi, karena lembaga itulah yang menguji peraturan terhadap peraturan yang lebih tinggi",
+        "B": "permohonan kepada Menteri Dalam Negeri agar perda itu dibatalkan dengan surat keputusan menteri",
+        "C": "laporan kepada Komisi Yudisial agar memeriksa anggota DPRD dan bupati yang membentuk perda itu",
+        "D": "permohonan kepada DPR agar mencabut perda itu, karena DPR adalah pembentuk undang-undang",
+        "E": "permohonan uji materi perda itu terhadap undang-undang ke Mahkamah Agung"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "Ada dua langkah. **Langkah 1, tentukan tingkat peraturannya:** perda berada di bawah undang-undang, dan batu ujinya di sini adalah undang-undang. **Langkah 2, cocokkan dengan lembaga:** Pasal 24A ayat (1) UUD 1945 memberi Mahkamah Agung wewenang menguji peraturan perundang-undangan di bawah undang-undang terhadap undang-undang. Mahkamah Konstitusi (Pasal 24C ayat 1) hanya menguji undang-undang terhadap UUD. Jadi, perda yang dianggap bertentangan dengan undang-undang diuji di Mahkamah Agung melalui permohonan hak uji materiil.",
+        "opsi": {
+          "A": "Jebakan paling umum. MK hanya menguji **undang-undang terhadap UUD**. Peraturan di bawah undang-undang, termasuk perda, diuji di MA.",
+          "B": "Pembatalan perda kabupaten/kota dan provinsi oleh menteri atau gubernur pernah diatur dalam UU Pemerintahan Daerah, tetapi kewenangan itu dinyatakan tidak berlaku oleh putusan MK pada 2017. Lagi pula, langkah ini bukan jalur peradilan seperti yang diminta soal.",
+          "C": "Komisi Yudisial berwenang menjaga kehormatan dan perilaku **hakim** (Pasal 24B), bukan memeriksa pembentuk perda.",
+          "D": "DPR membentuk undang-undang, bukan perda. DPR tidak berwenang mencabut perda."
+        },
+        "konsep": "**Peta pengujian peraturan:**\n\n| Yang diuji | Batu uji | Lembaga |\n|---|---|---|\n| Undang-undang | UUD 1945 | Mahkamah Konstitusi |\n| PP, perpres, perda, dan peraturan di bawah UU lainnya | Undang-undang | Mahkamah Agung |"
+      },
+      "tips": "Tanyakan dua hal: **apa yang diuji** dan **terhadap apa**. Jika yang diuji adalah undang-undang, jawabannya MK. Jika yang diuji ada di bawah undang-undang, jawabannya MA. Opsi yang menyebut lembaga eksekutif atau DPR bukan jalur peradilan.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 24A ayat (1)",
+        "UUD NRI 1945 Pasal 24C ayat (1)"
+      ]
+    },
+    {
+      "id": "p06-009",
+      "nomor": 9,
+      "kategori": "TWK",
+      "subtopik": "NKRI",
+      "topik": "Urusan pemerintahan wajib yang berkaitan dengan pelayanan dasar (UU 23/2014)",
+      "tingkat": "sulit",
+      "pertanyaan": "Bupati sebuah kabupaten pesisir ingin memprioritaskan anggaran untuk urusan pemerintahan wajib yang **berkaitan dengan pelayanan dasar**. Di antara program berikut, yang termasuk kelompok urusan tersebut adalah ....",
+      "opsi": {
+        "A": "Pengembangan wisata bahari dan pemberdayaan nelayan perikanan tangkap",
+        "B": "Percepatan pelayanan KTP-el dan penerbitan akta kelahiran bagi seluruh warga kabupaten",
+        "C": "Penguatan satuan perlindungan masyarakat dan penanganan ketertiban umum",
+        "D": "Pengendalian pencemaran udara dari kegiatan pabrik di kawasan industri",
+        "E": "Pengamanan informasi pemerintah daerah melalui penguatan persandian"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "UU 23/2014 tentang Pemerintahan Daerah membagi urusan konkuren menjadi urusan wajib dan urusan pilihan. Urusan wajib dibagi lagi menjadi yang **berkaitan** dan yang **tidak berkaitan** dengan pelayanan dasar. Menurut Pasal 12 ayat (1), urusan wajib yang berkaitan dengan pelayanan dasar hanya enam: pendidikan; kesehatan; pekerjaan umum dan penataan ruang; perumahan rakyat dan kawasan permukiman; **ketenteraman, ketertiban umum, dan pelindungan masyarakat**; serta sosial. Program satuan perlindungan masyarakat dan ketertiban umum termasuk urusan kelima.",
+        "opsi": {
+          "A": "Pariwisata serta kelautan dan perikanan termasuk **urusan pilihan** (Pasal 12 ayat 3), yang dipilih daerah sesuai potensinya.",
+          "B": "Jebakan terkuat. Administrasi kependudukan dan pencatatan sipil memang terasa sangat dasar, tetapi undang-undang menggolongkannya sebagai urusan wajib yang **tidak berkaitan** dengan pelayanan dasar (Pasal 12 ayat 2).",
+          "D": "Pengendalian pencemaran termasuk urusan lingkungan hidup, yang tergolong urusan wajib **tidak berkaitan** dengan pelayanan dasar.",
+          "E": "Persandian juga termasuk urusan wajib yang **tidak berkaitan** dengan pelayanan dasar."
+        },
+        "konsep": "**Pembagian urusan pemerintahan (UU 23/2014):**\n- *Absolut* (pusat): politik luar negeri, pertahanan, keamanan, yustisi, moneter dan fiskal nasional, agama.\n- *Konkuren wajib-pelayanan dasar*: pendidikan, kesehatan, PU dan penataan ruang, perumahan rakyat dan kawasan permukiman, trantibum dan linmas, sosial.\n- *Konkuren wajib-nonpelayanan dasar*: antara lain tenaga kerja, pangan, lingkungan hidup, adminduk, perhubungan, kominfo, persandian.\n- *Konkuren pilihan*: kelautan dan perikanan, pariwisata, pertanian, kehutanan, ESDM, perdagangan, perindustrian, transmigrasi."
+      },
+      "tips": "Hafalkan enam urusan pelayanan dasar dengan singkatan **“Pen-Kes-PU-Rum-Tram-Sos”** (pendidikan, kesehatan, PU, perumahan, trantibum-linmas, sosial). Apa pun di luar enam itu bukan pelayanan dasar, walaupun terdengar penting seperti adminduk.",
+      "rujukan": [
+        "UU 23/2014 tentang Pemerintahan Daerah Pasal 9 dan Pasal 12"
+      ]
+    },
+    {
+      "id": "p06-010",
+      "nomor": 10,
+      "kategori": "TWK",
+      "subtopik": "NKRI",
+      "topik": "Pendekatan kesejahteraan dan keamanan dalam pembangunan kawasan perbatasan",
+      "tingkat": "sedang",
+      "pertanyaan": "Pemerintah membangun Pos Lintas Batas Negara (PLBN) di beberapa perbatasan darat, lengkap dengan pasar, jalan penghubung, dan kantor layanan publik. Makna kebijakan ini bagi keutuhan NKRI yang paling tepat adalah ....",
+      "opsi": {
+        "A": "Kedaulatan di perbatasan dijaga melalui kesejahteraan warga dan kehadiran layanan negara, bukan hanya penjagaan militer",
+        "B": "Perbatasan dibuka sepenuhnya sehingga warga kedua negara dapat keluar masuk tanpa dokumen perjalanan apa pun",
+        "C": "Pembangunan perbatasan kini diserahkan kepada daerah sehingga pemerintah pusat cukup menyediakan dana saja",
+        "D": "Tujuan utamanya mendatangkan wisatawan asing sehingga aspek kedaulatan negara tidak perlu lagi diutamakan",
+        "E": "Kawasan perbatasan dijadikan zona militer tertutup agar penyelundupan dan pelintas ilegal dapat dicegah sepenuhnya"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "Kawasan perbatasan adalah “beranda depan” negara. Jika warga perbatasan lebih mudah mendapat layanan, pekerjaan, dan barang dari negara tetangga, ikatan mereka dengan NKRI bisa melemah. Karena itu, pengelolaan perbatasan memakai pendekatan **kesejahteraan** (ekonomi dan layanan publik) bersama pendekatan **keamanan**. PLBN yang dilengkapi pasar dan layanan publik menghadirkan negara secara nyata, sekaligus tetap mengatur lalu lintas orang dan barang secara resmi. Keutuhan wilayah tidak hanya dijaga dengan senjata, tetapi juga dengan rasa memiliki warga.",
+        "opsi": {
+          "B": "Keliru. PLBN justru berfungsi mengatur dan memeriksa lalu lintas orang dan barang. Perbatasan yang dibuka tanpa dokumen melemahkan kedaulatan.",
+          "C": "Pengelolaan perbatasan negara melibatkan pemerintah pusat secara langsung karena menyangkut kedaulatan. Daerah ikut berperan, tetapi tidak menggantikan pusat.",
+          "D": "Pariwisata mungkin menjadi manfaat tambahan, tetapi bukan makna utama, dan kedaulatan tidak pernah dikesampingkan.",
+          "E": "Distraktor yang terdengar tegas. Pendekatan keamanan semata justru mengabaikan kesejahteraan warga perbatasan dan bertentangan dengan fungsi PLBN sebagai pusat kegiatan ekonomi dan layanan."
+        },
+        "konsep": "**Dua pendekatan pengelolaan perbatasan:** *security approach* (penjagaan dan penegakan hukum) dan *prosperity approach* (pembangunan ekonomi, infrastruktur, dan layanan). Keduanya dijalankan bersamaan. Dasar hukum wilayah negara dan kawasan perbatasan adalah UU 43/2008 tentang Wilayah Negara."
+      },
+      "tips": "Untuk soal NKRI dan perbatasan, waspadai dua opsi ekstrem: “dibuka sepenuhnya” dan “ditutup sepenuhnya”. Jawaban terbaik biasanya menyeimbangkan kedaulatan dengan kesejahteraan warga.",
+      "rujukan": [
+        "UU 43/2008 tentang Wilayah Negara"
+      ]
+    },
+    {
+      "id": "p06-011",
+      "nomor": 11,
+      "kategori": "TWK",
+      "subtopik": "NKRI",
+      "topik": "Larangan memperlakukan Bendera Negara menurut UU 24/2009",
+      "tingkat": "sedang",
+      "pertanyaan": "Menjelang peringatan Hari Kemerdekaan, panitia kampung mencatat beberapa praktik di lingkungannya. Praktik yang **tidak** melanggar ketentuan tentang Bendera Negara adalah ....",
+      "opsi": {
+        "A": "Bendera lama yang warnanya sudah luntur tetap dipasang di gapura karena merah dan putihnya masih bisa dibedakan",
+        "B": "Bendera dikibarkan setengah tiang di halaman balai desa sebagai tanda berkabung atas wafatnya tokoh bangsa",
+        "C": "Kelompok suporter menuliskan nama klub dan tanda tangan para pemain langsung di kain Bendera Negara",
+        "D": "Kain Bendera Negara dipakai sebagai pembungkus hadiah lomba agar suasana tujuh belasan semakin meriah",
+        "E": "Pemilik toko memakai Bendera Negara sebagai bagian iklan komersial produknya selama bulan Agustus"
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "UU 24/2009 tentang Bendera, Bahasa, dan Lambang Negara, serta Lagu Kebangsaan mengatur cara menghormati Bendera Negara. Pasal 24 melarang setiap orang, antara lain, mengibarkan bendera yang rusak, robek, luntur, kusut, atau kusam; mencetak atau menulis huruf, angka, gambar, atau tanda lain pada bendera; memakai bendera untuk reklame atau iklan komersial; serta memakainya sebagai pembungkus atau tutup barang yang menurunkan kehormatannya. Sebaliknya, pengibaran setengah tiang adalah tata cara resmi untuk menyatakan berkabung. Jadi, opsi B tidak melanggar.",
+        "opsi": {
+          "A": "Melanggar larangan mengibarkan bendera yang rusak, robek, **luntur**, kusut, atau kusam. Masih bisa dibedakan warnanya tidak membuat bendera luntur layak dikibarkan.",
+          "C": "Melanggar larangan menulis huruf, angka, gambar, atau tanda lain pada Bendera Negara. Kecintaan pada klub tidak boleh diwujudkan dengan mencoret bendera.",
+          "D": "Melanggar larangan memakai Bendera Negara sebagai pembungkus barang yang dapat menurunkan kehormatannya.",
+          "E": "Melanggar larangan memakai Bendera Negara untuk reklame atau iklan komersial. Menghias toko dengan bendera untuk merayakan kemerdekaan berbeda dengan memakainya sebagai bagian iklan produk."
+        },
+        "konsep": "**Kehormatan simbol negara:** Bendera Negara Sang Merah Putih diatur dalam Pasal 35 UUD 1945 dan dirinci dalam UU 24/2009. Prinsipnya, bendera hanya dipakai dengan cara yang menjaga kehormatannya: utuh, bersih, tidak dicoret, dan tidak dijadikan alat dagang."
+      },
+      "tips": "Perhatikan kata **tidak** dalam pertanyaan. Untuk soal seperti ini, periksa setiap opsi satu per satu dengan pertanyaan: “apakah bendera dirusak, dicoret, dikomersialkan, atau direndahkan?”. Opsi yang menyisakan bendera tetap terhormat adalah jawabannya.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 35",
+        "UU 24/2009 tentang Bendera, Bahasa, dan Lambang Negara, serta Lagu Kebangsaan Pasal 24"
+      ]
+    },
+    {
+      "id": "p06-012",
+      "nomor": 12,
+      "kategori": "TWK",
+      "subtopik": "Bhinneka Tunggal Ika",
+      "topik": "Konten candaan yang meniru ibadah agama lain di media sosial",
+      "tingkat": "mudah",
+      "pertanyaan": "Seorang kreator konten mengunggah video yang menirukan gerakan ibadah agama lain secara asal-asalan demi lucu-lucuan. Video itu ramai dibagikan dan menuai protes. Sikap yang paling sesuai dengan semangat Bhinneka Tunggal Ika adalah ....",
+      "opsi": {
+        "A": "Ikut membagikan video itu karena konten humor tidak perlu ditanggapi dengan terlalu serius",
+        "B": "Membuat video tandingan yang menirukan ibadah agama si kreator agar ia merasakan hal yang sama",
+        "C": "Tidak ikut menyebarkan video itu dan mengingatkan bahwa candaan atas ibadah dapat melukai pemeluknya",
+        "D": "Menyebarkan alamat rumah kreator itu agar warga sekitar dapat langsung memberinya pelajaran",
+        "E": "Diam saja karena kreator itu kemungkinan besar tidak berniat menghina dan hanya sedang mencari penonton"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "Bhinneka Tunggal Ika menuntut sikap saling menghormati di tengah perbedaan, termasuk perbedaan agama. Ibadah adalah hal yang sangat dihormati pemeluknya, sehingga menjadikannya bahan candaan mudah melukai perasaan dan memicu konflik. Sikap yang tepat memuat dua hal: **tidak memperluas penyebaran** konten itu dan **mengingatkan dengan cara yang baik**. Dengan begitu, kita menjaga kerukunan tanpa membalas dengan cara yang sama atau main hakim sendiri.",
+        "opsi": {
+          "A": "Ikut membagikan berarti ikut memperluas dampak konten yang melukai pemeluk agama lain. Alasan “hanya humor” tidak menghapus dampaknya.",
+          "B": "Membalas dengan konten serupa menggandakan masalah dan memancing konflik antarpemeluk agama yang lebih besar.",
+          "D": "Menyebarkan alamat pribadi (doxing) dan mengajak orang “memberi pelajaran” adalah ajakan main hakim sendiri yang membahayakan keselamatan orang.",
+          "E": "Niat pembuat memang belum tentu menghina, tetapi diam membiarkan konten itu terus dianggap wajar. Sikap pasif tidak membantu menjaga kerukunan."
+        },
+        "konsep": "**Toleransi di ruang digital** = tidak membuat, tidak menyebarkan, dan mengingatkan dengan santun konten yang merendahkan simbol atau ibadah agama mana pun. Jika ada dugaan pelanggaran hukum, penyelesaiannya lewat pelaporan resmi, bukan amukan massa."
+      },
+      "tips": "Untuk soal sikap terhadap konten bermasalah, urutan terbaik biasanya: jangan sebarkan, ingatkan atau laporkan lewat jalur yang tepat. Opsi yang membalas atau mengajak menghukum sendiri hampir selalu salah."
+    },
+    {
+      "id": "p06-013",
+      "nomor": 13,
+      "kategori": "TWK",
+      "subtopik": "Bhinneka Tunggal Ika",
+      "topik": "Peran FKUB saat rencana pendirian rumah ibadah memicu keberatan warga",
+      "tingkat": "sedang",
+      "pertanyaan": "Rencana pembangunan sebuah rumah ibadah di Kecamatan Sukamaju memicu keberatan sebagian warga, padahal panitia menyatakan sudah melengkapi dukungan yang disyaratkan. Suasana mulai memanas. Langkah penyelesaian yang paling sesuai aturan dan semangat kerukunan adalah ....",
+      "opsi": {
+        "A": "Membawa persoalan itu ke Forum Kerukunan Umat Beragama kabupaten untuk dialog dan rekomendasi",
+        "B": "Menyerahkan keputusan kepada pemungutan suara seluruh warga kecamatan agar hasilnya demokratis",
+        "C": "Menghentikan rencana pembangunan untuk sementara waktu agar suasana tenang, berapa pun lamanya",
+        "D": "Segera mendirikan bangunan karena kebebasan beribadah sudah dijamin oleh UUD 1945",
+        "E": "Meminta organisasi kemasyarakatan terbesar di daerah itu memutuskan boleh tidaknya pembangunan"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "Pendirian rumah ibadah diatur dalam Peraturan Bersama Menteri Agama dan Menteri Dalam Negeri Nomor 9 dan 8 Tahun 2006. Aturan itu membentuk **Forum Kerukunan Umat Beragama (FKUB)** di tingkat provinsi dan kabupaten/kota. FKUB kabupaten/kota bertugas melakukan dialog dengan pemuka agama dan tokoh masyarakat, menampung aspirasi, serta memberi rekomendasi tertulis atas permohonan pendirian rumah ibadah. Jika terjadi perselisihan, penyelesaiannya diutamakan lewat musyawarah. Karena itu, membawa masalah ke FKUB memenuhi dua hal sekaligus: sesuai prosedur dan menjaga dialog.",
+        "opsi": {
+          "B": "Hak beribadah kelompok mana pun tidak boleh ditentukan oleh suara mayoritas. Pemungutan suara massal justru dapat menindas kelompok yang jumlahnya kecil.",
+          "C": "Menunda tanpa batas waktu sama dengan mengabaikan hak kelompok yang sudah memenuhi syarat. Ketenangan semu ini tidak menyelesaikan akar masalah.",
+          "D": "Kebebasan beribadah memang dijamin Pasal 29 ayat (2), tetapi pelaksanaannya tetap mengikuti prosedur. Membangun tanpa proses justru berisiko memicu konflik terbuka.",
+          "E": "Ormas tidak memiliki kewenangan memberi izin atau memutuskan pendirian rumah ibadah. Kewenangan itu ada pada pemerintah daerah dengan rekomendasi FKUB dan kantor Kementerian Agama."
+        },
+        "konsep": "**FKUB** beranggotakan pemuka agama setempat dan difasilitasi pemerintah daerah. Fungsinya: dialog antarumat, menampung dan menyalurkan aspirasi, sosialisasi peraturan, serta memberi rekomendasi pendirian rumah ibadah. Lembaga ini menjadi jembatan antara hak beribadah dan kerukunan warga."
+      },
+      "tips": "Dalam soal konflik keagamaan, jawaban terbaik hampir selalu menggabungkan **jalur resmi** dan **dialog**. Coret opsi yang menyerahkan keputusan kepada mayoritas atau kelompok yang tidak berwenang, juga opsi yang menabrak prosedur.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 29 ayat (2)",
+        "Peraturan Bersama Menteri Agama dan Menteri Dalam Negeri Nomor 9 dan 8 Tahun 2006"
+      ]
+    },
+    {
+      "id": "p06-014",
+      "nomor": 14,
+      "kategori": "TWK",
+      "subtopik": "Bhinneka Tunggal Ika",
+      "topik": "Penghayat kepercayaan dan isi kolom agama pada KTP-el",
+      "tingkat": "sulit",
+      "pertanyaan": "Seorang warga penghayat kepercayaan meminta agar kolom agama di KTP-el miliknya tidak lagi dikosongkan. Petugas dukcapil ragu karena baru bertugas. Tindakan petugas yang paling tepat adalah ....",
+      "opsi": {
+        "A": "Tetap mengosongkan kolom itu karena kolom agama hanya boleh diisi salah satu dari enam agama",
+        "B": "Meminta warga memilih salah satu dari enam agama yang dilayani agar data kependudukan seragam",
+        "C": "Menunda layanan sampai warga membawa surat keterangan dari tokoh agama yang dikenal di desanya",
+        "D": "Menuliskan nama aliran kepercayaan warga itu secara lengkap di kolom agama sesuai permintaannya",
+        "E": "Mencantumkan “Kepercayaan terhadap Tuhan Yang Maha Esa” sesuai Putusan Mahkamah Konstitusi"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "Soal ini menuntut dua pengetahuan. **Pertama**, aturannya sudah berubah: melalui Putusan MK Nomor 97/PUU-XIV/2016 (dibacakan November 2017), ketentuan UU Administrasi Kependudukan yang membuat kolom agama penghayat dikosongkan dinyatakan bertentangan dengan UUD 1945, karena membedakan perlakuan terhadap warga. **Kedua**, cara pencantumannya: kolom itu diisi “Kepercayaan terhadap Tuhan Yang Maha Esa”, bukan nama aliran masing-masing. Putusan ini sejalan dengan Pasal 29 ayat (2) yang menjamin kemerdekaan beribadat menurut agama dan *kepercayaannya*, serta hak bebas dari perlakuan diskriminatif (Pasal 28I ayat 2).",
+        "opsi": {
+          "A": "Ini aturan lama sebelum putusan MK. Petugas yang belum mengikuti perkembangan hukum akan memilih opsi ini.",
+          "B": "Memaksa warga memilih agama yang tidak dianutnya melanggar kebebasan berkeyakinan dan membuat data kependudukan tidak sesuai kenyataan.",
+          "C": "Surat dari tokoh agama tidak menjadi syarat. Persyaratan tambahan yang tidak diatur justru menghambat pelayanan.",
+          "D": "Jebakan setengah benar. Kolomnya memang boleh diisi, tetapi formatnya seragam, yaitu “Kepercayaan terhadap Tuhan Yang Maha Esa”, bukan nama aliran kepercayaan tertentu."
+        },
+        "konsep": "**Kesetaraan dalam keberagaman keyakinan:** negara tidak boleh membedakan pelayanan administrasi berdasarkan keyakinan warga. Penghayat kepercayaan adalah bagian dari kebinekaan Indonesia, dan haknya atas dokumen kependudukan sama dengan warga lain."
+      },
+      "tips": "Soal tentang pelayanan kepada kelompok minoritas sering menguji apakah kamu tahu aturan terbaru. Jika ada opsi yang memakai “aturan lama”, bandingkan dengan prinsip nondiskriminasi (Pasal 28I ayat 2). Lalu periksa detail pelaksanaannya, karena distraktor kuat sering benar arahnya tetapi salah caranya.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 28I ayat (2)",
+        "UUD NRI 1945 Pasal 29 ayat (2)",
+        "Putusan MK Nomor 97/PUU-XIV/2016"
+      ]
+    },
+    {
+      "id": "p06-015",
+      "nomor": 15,
+      "kategori": "TWK",
+      "subtopik": "Bhinneka Tunggal Ika",
+      "topik": "Hak siswa minoritas atas pendidikan agama sesuai agamanya",
+      "tingkat": "sedang",
+      "pertanyaan": "Di sebuah SMP negeri, hanya ada tiga siswa beragama Hindu. Karena belum ada guru agama Hindu, sekolah meminta ketiganya mengikuti pelajaran agama yang dianut mayoritas siswa dan menilai mereka dari pelajaran itu. Penilaian yang paling tepat atas kebijakan tersebut adalah ....",
+      "opsi": {
+        "A": "Kebijakan itu tepat karena jumlah siswa terlalu sedikit untuk dibuatkan kelas agama tersendiri",
+        "B": "Kebijakan itu tepat asalkan nilai pelajaran agama ketiga siswa tidak dicantumkan di rapor",
+        "C": "Kebijakan itu keliru, sehingga ketiga siswa sebaiknya dibebaskan dari pelajaran agama apa pun",
+        "D": "Kebijakan itu keliru karena siswa berhak mendapat pendidikan agama sesuai agamanya dari pendidik seagama",
+        "E": "Kebijakan itu keliru karena sekolah negeri seharusnya tidak memberikan pelajaran agama sama sekali"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "UU 20/2003 tentang Sistem Pendidikan Nasional Pasal 12 ayat (1) huruf a menyatakan bahwa setiap peserta didik berhak mendapatkan pendidikan agama sesuai dengan agama yang dianutnya dan diajarkan oleh pendidik yang seagama. Hak ini tidak bergantung pada jumlah siswa. Sekolah wajib mencari jalan keluar, misalnya bekerja sama dengan sekolah lain, kantor Kementerian Agama, atau tokoh agama setempat yang memenuhi syarat untuk mengajar. Meminta siswa mengikuti pelajaran agama lain tidak menghormati keyakinan mereka dan tidak sesuai semangat Bhinneka Tunggal Ika.",
+        "opsi": {
+          "A": "Jumlah siswa yang sedikit tidak mengurangi haknya. Prinsip keberagaman justru menuntut perlindungan bagi kelompok kecil.",
+          "B": "Menghapus nilai dari rapor tidak menyelesaikan masalah. Siswa tetap diminta mengikuti pelajaran agama yang tidak dianutnya, dan haknya atas pendidikan agamanya sendiri tetap tidak terpenuhi.",
+          "C": "Separuh benar karena mengakui kebijakan itu keliru, tetapi solusinya salah. Membebaskan siswa dari pelajaran agama juga menghilangkan haknya.",
+          "E": "Keliru. Pendidikan agama justru wajib dimuat dalam kurikulum pendidikan dasar dan menengah, termasuk di sekolah negeri."
+        },
+        "konsep": "**Bhinneka Tunggal Ika di sekolah:** keberagaman dihormati dengan memenuhi hak setiap kelompok, bukan dengan meleburkan kelompok kecil ke dalam kelompok besar. Persatuan tidak sama dengan penyeragaman."
+      },
+      "tips": "Jika soal menyebut kelompok kecil diminta “mengikuti mayoritas”, curigai pelanggaran hak. Pilih opsi yang tetap memenuhi hak kelompok kecil, bukan yang meniadakan haknya atau menghapus kewajiban sekolah.",
+      "rujukan": [
+        "UU 20/2003 tentang Sistem Pendidikan Nasional Pasal 12 ayat (1) huruf a"
+      ]
+    },
+    {
+      "id": "p06-016",
+      "nomor": 16,
+      "kategori": "TWK",
+      "subtopik": "Bhinneka Tunggal Ika",
+      "topik": "Afiliasi silang dan konsolidasi dalam meredam atau memperluas konflik",
+      "tingkat": "sulit",
+      "pertanyaan": "Kampung Hulu dihuni mayoritas suku X, sedangkan Kampung Hilir dihuni mayoritas suku Y. Saat terjadi perkelahian antarpemuda, konflik tidak meluas karena banyak warga kedua kampung tergabung dalam koperasi nelayan, klub voli, dan kelompok pengajian atau paduan suara yang sama.\n\nKonsep yang paling tepat untuk menjelaskan mengapa konflik itu mereda, beserta kondisi yang justru akan membuatnya meluas, adalah ....",
+      "opsi": {
+        "A": "Afiliasi silang meredam konflik; asimilasi kedua budaya menjadi budaya baru akan memperluasnya",
+        "B": "Konsolidasi meredam konflik; keanggotaan bersama dalam banyak kelompok akan memperluasnya",
+        "C": "Afiliasi silang meredam konflik; perbedaan suku yang bertumpuk dengan perbedaan lain akan memperluasnya",
+        "D": "Akulturasi meredam konflik; pemisahan tempat tinggal kedua suku akan memperluasnya",
+        "E": "Konsolidasi meredam konflik; pemisahan tempat tinggal kedua suku akan memperluasnya"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "Soal ini meminta dua konsep yang berpasangan. **Afiliasi silang** (*cross-cutting affiliation*) terjadi ketika anggota kelompok yang berbeda suku sekaligus menjadi anggota kelompok lain yang sama, misalnya koperasi atau klub olahraga. Kesetiaan mereka menjadi berlapis, sehingga konflik suku tidak mudah meluas. Kebalikannya adalah **konsolidasi**, yaitu ketika perbedaan suku bertumpuk dengan perbedaan lain (pekerjaan, wilayah, kelas ekonomi). Batas kelompok makin tajam, dan perselisihan kecil mudah berubah menjadi konflik besar.",
+        "opsi": {
+          "A": "Bagian pertama benar, tetapi asimilasi (peleburan budaya) tidak memperluas konflik. Asimilasi justru mengurangi batas antarkelompok.",
+          "B": "Kedua bagian terbalik. Konsolidasi menajamkan konflik, sedangkan keanggotaan bersama meredamnya.",
+          "D": "Akulturasi adalah percampuran budaya tanpa menghilangkan unsur asli. Yang diceritakan soal adalah keanggotaan bersama dalam organisasi, bukan percampuran budaya. Bagian kedua mungkin benar, tetapi bagian pertama salah konsep.",
+          "E": "Konsolidasi tidak meredam konflik. Opsi ini memakai istilah yang terdengar seperti “persatuan” untuk menjebak."
+        },
+        "konsep": "**Rumus singkat:**\n- *Afiliasi silang*: perbedaan saling memotong → kesetiaan berlapis → konflik teredam.\n- *Konsolidasi*: perbedaan saling bertumpuk → batas kelompok makin tajam → konflik mudah meluas.\n\nKegiatan lintas suku dan agama, seperti koperasi, olahraga, dan kerja bakti, memperkuat afiliasi silang."
+      },
+      "tips": "Hati-hati dengan istilah “konsolidasi”, karena dalam bahasa sehari-hari berarti penguatan. Dalam sosiologi konflik, konsolidasi justru menajamkan perbedaan. Untuk soal berpasangan, periksa kedua bagian opsi; satu bagian yang salah membuat opsi itu salah."
+    },
+    {
+      "id": "p06-017",
+      "nomor": 17,
+      "kategori": "TWK",
+      "subtopik": "Bhinneka Tunggal Ika",
+      "topik": "Urutan stereotip, prasangka, dan diskriminasi dalam satu kasus",
+      "tingkat": "sulit",
+      "pertanyaan": "Perhatikan tiga keadaan berikut.\n\n1. Pak Hendra yakin bahwa orang dari daerah tertentu “pasti keras dan suka ribut”.\n2. Akibatnya, ia selalu merasa tidak nyaman dan curiga setiap kali bertemu orang dari daerah itu.\n3. Sebagai pemilik kos, ia menolak calon penyewa yang berasal dari daerah tersebut.\n\nKonsep yang tepat untuk keadaan 1, 2, dan 3 berturut-turut adalah ....",
+      "opsi": {
+        "A": "stereotip, prasangka, diskriminasi",
+        "B": "prasangka, stereotip, diskriminasi",
+        "C": "stereotip, diskriminasi, segregasi",
+        "D": "etnosentrisme, prasangka, diskriminasi",
+        "E": "stereotip, prasangka, primordialisme"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "Ketiga konsep ini membentuk tangga dari pikiran ke perasaan lalu ke tindakan. **Stereotip** adalah keyakinan atau gambaran umum yang disamaratakan kepada semua anggota suatu kelompok (keadaan 1: “pasti keras”). **Prasangka** adalah sikap atau perasaan negatif terhadap kelompok itu sebelum mengenal orangnya (keadaan 2: tidak nyaman dan curiga). **Diskriminasi** adalah tindakan membedakan perlakuan karena keanggotaan kelompok (keadaan 3: menolak penyewa). Urutannya: stereotip → prasangka → diskriminasi.",
+        "opsi": {
+          "B": "Dua konsep pertama tertukar. Keyakinan yang disamaratakan (keadaan 1) adalah stereotip, sedangkan perasaan negatifnya (keadaan 2) adalah prasangka.",
+          "C": "Keadaan 2 masih berupa perasaan, belum tindakan, jadi belum diskriminasi. Segregasi adalah pemisahan kelompok secara fisik atau sosial, misalnya wilayah tinggal yang dipisah.",
+          "D": "Etnosentrisme adalah menilai budaya lain dengan ukuran budaya sendiri dan menganggap budaya sendiri paling baik. Keadaan 1 tidak membandingkan dengan kelompok sendiri, hanya menyamaratakan kelompok lain.",
+          "E": "Primordialisme adalah keterikatan berlebihan pada kelompok asal sendiri. Keadaan 3 adalah tindakan membedakan perlakuan kepada orang lain, jadi diskriminasi."
+        },
+        "konsep": "**Tangga sikap antarkelompok:**\n\n| Tingkat | Konsep | Contoh |\n|---|---|---|\n| Pikiran | Stereotip | “Orang X pasti malas.” |\n| Perasaan | Prasangka | Curiga, tidak suka |\n| Tindakan | Diskriminasi | Menolak, membedakan layanan |"
+      },
+      "tips": "Bedakan tiga kata kunci: **yakin/menganggap** → stereotip, **merasa/curiga/benci** → prasangka, **menolak/membedakan perlakuan** → diskriminasi. Pemutus rantainya adalah mengenal orang sebagai individu, bukan sebagai label kelompok."
+    },
+    {
+      "id": "p06-018",
+      "nomor": 18,
+      "kategori": "TWK",
+      "subtopik": "Nasionalisme",
+      "topik": "Makna kalimat kedua teks Proklamasi tentang pemindahan kekuasaan",
+      "tingkat": "sedang",
+      "pertanyaan": "Kalimat kedua teks Proklamasi berbunyi: “Hal-hal yang mengenai pemindahan kekuasaan d.l.l., diselenggarakan dengan cara saksama dan dalam tempo yang sesingkat-singkatnya.” Makna kalimat tersebut yang paling tepat adalah ....",
+      "opsi": {
+        "A": "Kemerdekaan Indonesia baru berlaku setelah seluruh kekuasaan Jepang selesai dipindahkan",
+        "B": "Pemindahan kekuasaan diserahkan kepada Sekutu sebagai pihak yang memenangkan perang",
+        "C": "Rakyat diperintahkan segera merebut senjata dan kantor-kantor dari tentara Jepang melalui perjuangan fisik",
+        "D": "Kalimat kedua menyatakan berdirinya negara, sedangkan kalimat pertama hanya pernyataan sikap",
+        "E": "Pengambilalihan pemerintahan harus dilakukan teratur dan cepat agar tidak terjadi kekosongan kekuasaan"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "Teks Proklamasi terdiri atas dua kalimat dengan fungsi berbeda. Kalimat pertama adalah **pernyataan kemerdekaan**: sejak dibacakan, bangsa Indonesia menyatakan dirinya merdeka. Kalimat kedua mengatur **tindak lanjutnya**: pengambilalihan kekuasaan dari pemerintah pendudukan dilakukan dengan cara saksama (teratur dan cermat) dan dalam tempo sesingkat-singkatnya (cepat). Tujuannya agar tidak terjadi kekosongan pemerintahan dan kekacauan. Tindak lanjut ini segera terlihat pada sidang PPKI 18 Agustus 1945 yang mengesahkan UUD serta memilih presiden dan wakil presiden.",
+        "opsi": {
+          "A": "Salah urutan makna. Kemerdekaan berlaku sejak proklamasi dibacakan (kalimat pertama); pemindahan kekuasaan adalah tindak lanjut, bukan syarat.",
+          "B": "Bertentangan dengan semangat proklamasi. Kekuasaan diambil alih oleh bangsa Indonesia sendiri, bukan diserahkan kepada pihak asing.",
+          "C": "Kata “saksama” justru menekankan cara yang teratur. Perebutan senjata memang terjadi di berbagai daerah, tetapi bukan isi atau makna kalimat kedua.",
+          "D": "Fungsi kedua kalimat tertukar. Kalimat pertama yang menyatakan kemerdekaan, sedangkan kalimat kedua mengatur pelaksanaannya."
+        },
+        "konsep": "**Dua kalimat Proklamasi:**\n1. Pernyataan kemerdekaan (aspek politik dan hukum: bangsa menyatakan diri merdeka).\n2. Pengalihan kekuasaan secara saksama dan cepat (aspek pelaksanaan).\n\nKata kunci: *saksama* = teratur dan cermat; *tempo sesingkat-singkatnya* = secepat mungkin."
+      },
+      "tips": "Untuk soal makna teks sejarah, artikan kata kuncinya satu per satu (saksama, sesingkat-singkatnya), lalu coret opsi yang menambahkan makna di luar teks, seperti perjuangan bersenjata atau peran Sekutu.",
+      "rujukan": [
+        "Teks Proklamasi Kemerdekaan Indonesia, 17 Agustus 1945"
+      ]
+    },
+    {
+      "id": "p06-019",
+      "nomor": 19,
+      "kategori": "TWK",
+      "subtopik": "Nasionalisme",
+      "topik": "Menyikapi klaim budaya oleh negara lain di media sosial",
+      "tingkat": "sedang",
+      "pertanyaan": "Sebuah tarian daerah Indonesia muncul dalam video promosi pariwisata negara tetangga tanpa menyebut asal-usulnya. Warganet Indonesia ramai menyerbu akun-akun warga negara itu dengan makian. Sikap nasionalisme yang paling tepat adalah ....",
+      "opsi": {
+        "A": "Ikut memaki akun-akun warga negara tetangga agar mereka jera dan tidak mengulanginya lagi",
+        "B": "Mendorong pencatatan resmi tarian itu sebagai warisan budaya dan aktif melestarikannya",
+        "C": "Menuntut pemerintah segera memutus hubungan diplomatik dengan negara tetangga tersebut",
+        "D": "Tidak peduli karena budaya pada dasarnya milik seluruh umat manusia tanpa batas negara",
+        "E": "Melarang penampilan budaya Indonesia di luar negeri agar tidak mudah ditiru bangsa lain"
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "Nasionalisme yang dewasa diwujudkan dengan tindakan nyata yang melindungi dan memajukan budaya sendiri, bukan dengan kemarahan. Cara paling efektif menjaga budaya adalah **mendokumentasikan dan mencatatkannya secara resmi** (misalnya sebagai warisan budaya takbenda), lalu **melestarikannya** lewat pengajaran dan pertunjukan. Perlu diingat, beberapa budaya memang hidup di lebih dari satu negara karena kedekatan sejarah dan wilayah. Bukti dan diplomasi budaya lebih kuat daripada makian, yang justru merusak citra bangsa.",
+        "opsi": {
+          "A": "Memaki warga negara lain adalah wujud *chauvinisme* dan tidak menyelesaikan masalah. Makian juga menyasar warga biasa yang tidak membuat video itu.",
+          "C": "Reaksi berlebihan. Persoalan budaya diselesaikan lewat dialog, diplomasi, dan pencatatan, bukan dengan memutus hubungan antarnegara.",
+          "D": "Ini sikap *kosmopolitan* yang mengabaikan tanggung jawab menjaga identitas budaya bangsa sendiri. Budaya memang bisa dinikmati semua orang, tetapi asal-usulnya tetap perlu dihormati.",
+          "E": "Menutup diri merugikan budaya sendiri. Budaya justru dikenal dunia dan diakui asal-usulnya melalui penampilan yang aktif."
+        },
+        "konsep": "**Nasionalisme konstruktif** = melindungi identitas bangsa lewat tindakan nyata (mencatat, melestarikan, mempromosikan) dan tetap menghormati bangsa lain. Dua penyimpangannya: *chauvinisme* (merendahkan bangsa lain) dan *kosmopolitanisme* berlebihan (tidak peduli pada identitas bangsa)."
+      },
+      "tips": "Dalam soal nasionalisme, pilih opsi yang **konstruktif dan berjangka panjang**. Opsi yang emosional (memaki, memutus hubungan) dan opsi yang apatis (tidak peduli) sama-sama keliru."
+    },
+    {
+      "id": "p06-020",
+      "nomor": 20,
+      "kategori": "TWK",
+      "subtopik": "Nasionalisme",
+      "topik": "Dukungan Indonesia bagi kemerdekaan Palestina dan alinea pertama Pembukaan UUD 1945",
+      "tingkat": "sedang",
+      "pertanyaan": "Indonesia konsisten mendukung perjuangan rakyat Palestina untuk merdeka di berbagai forum internasional. Bagian Pembukaan UUD 1945 yang menjadi dasar paling langsung bagi penolakan terhadap segala bentuk penjajahan adalah ....",
+      "opsi": {
+        "A": "alinea kedua, tentang perjuangan pergerakan kemerdekaan yang sampai di depan pintu gerbang kemerdekaan",
+        "B": "alinea ketiga, tentang kemerdekaan yang dinyatakan atas berkat rahmat Allah Yang Maha Kuasa",
+        "C": "alinea keempat, tentang tujuan membentuk pemerintah yang melindungi segenap bangsa Indonesia",
+        "D": "alinea pertama, tentang kemerdekaan sebagai hak segala bangsa sehingga penjajahan harus dihapuskan",
+        "E": "alinea keempat, tentang susunan Negara Republik Indonesia yang berkedaulatan rakyat"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "Alinea pertama Pembukaan UUD 1945 berbunyi: “Bahwa sesungguhnya kemerdekaan itu ialah hak segala bangsa dan oleh sebab itu, maka penjajahan di atas dunia harus dihapuskan, karena tidak sesuai dengan perikemanusiaan dan perikeadilan.” Kalimat ini tidak hanya berlaku bagi bangsa Indonesia, tetapi bagi **segala bangsa**. Karena itu, dukungan Indonesia terhadap kemerdekaan bangsa lain yang masih terjajah adalah pelaksanaan langsung amanat alinea pertama. Alinea keempat (ikut melaksanakan ketertiban dunia) memperkuatnya, tetapi rumusan penolakan penjajahan ada di alinea pertama.",
+        "opsi": {
+          "A": "Alinea kedua menggambarkan perjuangan pergerakan kemerdekaan Indonesia sendiri, bukan sikap terhadap penjajahan bangsa lain.",
+          "B": "Alinea ketiga memuat pengakuan bahwa kemerdekaan Indonesia dicapai atas berkat rahmat Tuhan. Isinya tidak menyinggung penjajahan di dunia.",
+          "C": "Kutipan ini memang ada di alinea keempat, tetapi tujuan melindungi segenap bangsa Indonesia berkaitan dengan perlindungan warga sendiri, bukan penolakan penjajahan.",
+          "E": "Susunan negara yang berkedaulatan rakyat menjelaskan bentuk dan dasar negara, bukan sikap terhadap penjajahan."
+        },
+        "konsep": "**Isi pokok Pembukaan UUD 1945:**\n1. Alinea 1: kemerdekaan hak segala bangsa; penjajahan harus dihapuskan.\n2. Alinea 2: perjuangan pergerakan kemerdekaan Indonesia.\n3. Alinea 3: pernyataan kemerdekaan atas berkat rahmat Allah.\n4. Alinea 4: tujuan negara, bentuk negara, dan dasar negara (Pancasila)."
+      },
+      "tips": "Cari kata kunci soal di teks Pembukaan: **penjajahan** hanya disebut di alinea pertama. Jika soal bertanya “paling langsung”, pilih bagian yang memuat kata atau gagasan inti itu secara tersurat.",
+      "rujukan": [
+        "Pembukaan UUD NRI 1945 alinea pertama"
+      ]
+    },
+    {
+      "id": "p06-021",
+      "nomor": 21,
+      "kategori": "TWK",
+      "subtopik": "Bela Negara",
+      "topik": "Mengenali nilai kemampuan awal bela negara dari kesiapan relawan bencana",
+      "tingkat": "sedang",
+      "pertanyaan": "Sejak setahun terakhir, Dimas rutin berolahraga, mengikuti pelatihan pertolongan pertama dan pencarian korban, serta belajar mengelola stres agar tetap tenang ketika membantu korban bencana. Nilai dasar bela negara yang **paling menonjol** dari kegiatan Dimas adalah ....",
+      "opsi": {
+        "A": "cinta tanah air",
+        "B": "sadar berbangsa dan bernegara",
+        "C": "setia pada Pancasila sebagai ideologi negara",
+        "D": "rela berkorban untuk bangsa dan negara",
+        "E": "kemampuan awal bela negara"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "UU 23/2019 tentang Pengelolaan Sumber Daya Nasional untuk Pertahanan Negara Pasal 7 ayat (3) menyebut lima nilai dasar bela negara: cinta tanah air; sadar berbangsa dan bernegara; setia pada Pancasila sebagai ideologi negara; rela berkorban untuk bangsa dan negara; serta **kemampuan awal bela negara**. Nilai terakhir menekankan kesiapan diri, yaitu kondisi fisik dan psikis yang prima serta keterampilan yang berguna saat negara atau masyarakat membutuhkan. Kegiatan Dimas berfokus pada menyiapkan kemampuan: olahraga (fisik), pertolongan pertama dan pencarian korban (keterampilan), serta pengelolaan stres (psikis).",
+        "opsi": {
+          "A": "Cinta tanah air terlihat dari rasa bangga, menjaga nama baik, dan melestarikan lingkungan serta budaya bangsa. Kegiatan Dimas memang bisa didorong rasa itu, tetapi yang ditonjolkan soal adalah penyiapan kemampuan.",
+          "B": "Sadar berbangsa dan bernegara tampak dari sikap seperti menaati hukum, ikut pemilu, dan menghargai keberagaman. Tidak ada unsur itu dalam kegiatan Dimas.",
+          "C": "Setia pada Pancasila tampak dari pengamalan nilai Pancasila dan menolak ideologi yang bertentangan. Soal tidak menyinggung hal itu.",
+          "D": "Distraktor terkuat. Membantu korban bencana memang bisa menjadi wujud rela berkorban. Namun soal menekankan **persiapan** (berlatih, menjaga kesehatan fisik dan mental), bukan pengorbanan waktu, tenaga, atau harta dalam peristiwa tertentu."
+        },
+        "konsep": "**Lima nilai dasar bela negara** (UU 23/2019 Pasal 7 ayat 3): cinta tanah air, sadar berbangsa dan bernegara, setia pada Pancasila, rela berkorban, dan kemampuan awal bela negara. Indikator kemampuan awal bela negara antara lain kesehatan fisik dan mental, kedisiplinan, keterampilan, dan kesiapsiagaan."
+      },
+      "tips": "Jika beberapa nilai tampak cocok, cari kata kerja yang paling dominan di soal. Kata seperti **berlatih, menjaga kebugaran, menyiapkan diri** mengarah ke kemampuan awal bela negara; kata seperti **menyumbangkan, mengorbankan, mendahulukan kepentingan umum** mengarah ke rela berkorban.",
+      "rujukan": [
+        "UU 23/2019 tentang Pengelolaan Sumber Daya Nasional untuk Pertahanan Negara Pasal 7 ayat (3)"
+      ]
+    },
+    {
+      "id": "p06-022",
+      "nomor": 22,
+      "kategori": "TWK",
+      "subtopik": "Bela Negara",
+      "topik": "Pengabdian dokter di pulau terluar sebagai bela negara sesuai profesi",
+      "tingkat": "mudah",
+      "pertanyaan": "dr. Nadia memilih tetap bertugas di puskesmas sebuah pulau terluar meski berkali-kali ditawari pindah ke kota. Ia melayani warga setiap hari dan melatih kader posyandu setempat. Pernyataan yang paling tepat tentang tindakan dr. Nadia adalah ....",
+      "opsi": {
+        "A": "Tindakannya bukan bela negara karena bela negara hanya dilakukan oleh anggota TNI",
+        "B": "Tindakannya merupakan wujud bela negara melalui pengabdian sesuai profesi",
+        "C": "Tindakannya lebih tepat disebut pengabdian profesi biasa, sedangkan bela negara berkaitan dengan pertahanan",
+        "D": "Tindakannya baru disebut bela negara jika pulau itu sedang dalam konflik bersenjata",
+        "E": "Tindakannya termasuk pelayanan publik, sedangkan bela negara tenaga kesehatan diwujudkan lewat Komponen Cadangan"
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "Pasal 27 ayat (3) UUD 1945 menyatakan bahwa setiap warga negara berhak dan wajib ikut serta dalam upaya pembelaan negara. UU 3/2002 tentang Pertahanan Negara Pasal 9 ayat (2) merinci bentuk keikutsertaan itu, salah satunya **pengabdian sesuai dengan profesi**. Seorang dokter yang memilih mengabdi di pulau terluar menjaga kesehatan warga dan menghadirkan layanan negara di wilayah perbatasan. Ini bela negara nonfisik yang nyata dan berdampak langsung pada ketahanan bangsa.",
+        "opsi": {
+          "A": "Keliru. Bela negara adalah hak dan kewajiban **setiap warga negara**, bukan hanya anggota TNI.",
+          "C": "Memisahkan pengabdian profesi dari bela negara adalah anggapan keliru. UU 3/2002 justru menyebut pengabdian sesuai profesi sebagai salah satu bentuk keikutsertaan dalam bela negara, dan pertahanan negara tidak hanya bersifat militer.",
+          "D": "Bela negara tidak terbatas pada keadaan perang atau konflik. Bela negara dilakukan dalam keadaan damai melalui berbagai bidang kehidupan.",
+          "E": "Komponen Cadangan bersifat sukarela dan hanya salah satu jalur. Pelayanan publik yang dijalankan dr. Nadia di pulau terluar sudah merupakan bela negara melalui profesi, tanpa harus bergabung dengan Komponen Cadangan."
+        },
+        "konsep": "**Bentuk keikutsertaan bela negara** (UU 3/2002 Pasal 9 ayat 2): pendidikan kewarganegaraan; pelatihan dasar kemiliteran; pengabdian sebagai prajurit TNI secara sukarela atau wajib; dan **pengabdian sesuai dengan profesi**."
+      },
+      "tips": "Bela negara bersifat luas: dilakukan setiap warga, di berbagai bidang, dalam keadaan damai maupun darurat. Opsi yang mempersempitnya menjadi urusan militer, keadaan perang, atau satu jalur tertentu adalah pengecoh.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 27 ayat (3)",
+        "UU 3/2002 tentang Pertahanan Negara Pasal 9 ayat (2)"
+      ]
+    },
+    {
+      "id": "p06-023",
+      "nomor": 23,
+      "kategori": "TWK",
+      "subtopik": "Bela Negara",
+      "topik": "Bela negara oleh mahasiswa Indonesia yang belajar di luar negeri",
+      "tingkat": "mudah",
+      "pertanyaan": "Raka sedang kuliah di luar negeri dengan beasiswa pemerintah. Wujud bela negara yang paling tepat bagi Raka selama masa studinya adalah ....",
+      "opsi": {
+        "A": "Berprestasi, menaati hukum setempat, dan memperkenalkan budaya Indonesia secara positif",
+        "B": "Menghindari pergaulan dengan mahasiswa asing agar tidak terpengaruh budaya negara lain",
+        "C": "Membalas dengan keras setiap kritik tentang Indonesia yang muncul dalam diskusi di kelas",
+        "D": "Menunda kegiatan akademik demi pulang mengikuti upacara bendera setiap tanggal 17 Agustus",
+        "E": "Fokus menyelesaikan kuliah saja karena bela negara baru wajib dilakukan setelah kembali"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "Bela negara tidak dibatasi wilayah. Warga negara Indonesia di luar negeri tetap dapat membela negara lewat cara yang sesuai keadaannya. Bagi mahasiswa, wujud yang paling tepat adalah **berprestasi** (membangun kemampuan untuk bangsa), **menaati hukum setempat** (menjaga nama baik bangsa), dan **memperkenalkan budaya Indonesia secara positif** (diplomasi budaya). Raka juga menjadi “duta” Indonesia: perilakunya akan membentuk cara pandang orang asing terhadap bangsanya.",
+        "opsi": {
+          "B": "Menutup diri tidak sejalan dengan tujuan belajar ke luar negeri. Kita bisa bergaul luas sambil tetap memegang nilai bangsa sendiri.",
+          "C": "Membalas kritik dengan keras justru merusak citra bangsa. Kritik sebaiknya ditanggapi dengan data dan diskusi yang santun.",
+          "D": "Menunda kewajiban akademik merugikan studi yang dibiayai negara. Upacara dapat diikuti di perwakilan RI setempat bila memungkinkan, tanpa mengorbankan kuliah.",
+          "E": "Keliru. Bela negara adalah sikap dan perilaku yang dijalankan kapan pun dan di mana pun, termasuk selama masa studi."
+        },
+        "konsep": "**Bela negara di luar negeri** antara lain: menjaga nama baik bangsa, menaati hukum negara setempat, berprestasi, mempromosikan budaya, dan berkontribusi kembali untuk Indonesia, misalnya membagikan ilmu yang dipelajari."
+      },
+      "tips": "Soal bela negara untuk pelajar atau mahasiswa biasanya berkunci pada **prestasi dan perilaku baik**. Coret opsi yang menutup diri, emosional, atau menunda bela negara ke masa depan.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 27 ayat (3)"
+      ]
+    },
+    {
+      "id": "p06-024",
+      "nomor": 24,
+      "kategori": "TWK",
+      "subtopik": "Integritas",
+      "topik": "Memanfaatkan informasi rencana proyek pemerintah untuk keuntungan keluarga",
+      "tingkat": "sedang",
+      "pertanyaan": "Wulan, staf perencanaan di pemerintah kabupaten, mengetahui rute jalan lingkar baru yang belum diumumkan ke publik. Kakaknya meminta informasi rute itu agar bisa membeli tanah di sekitarnya sebelum harganya naik. Sikap Wulan yang paling mencerminkan integritas adalah ....",
+      "opsi": {
+        "A": "Memberikan informasi itu asalkan kakaknya membeli tanah dengan uang pribadinya sendiri",
+        "B": "Memberikan gambaran umum kecamatan yang akan dilalui jalan itu tanpa menyebut titik rutenya secara persis",
+        "C": "Memberikan informasi itu, tetapi menolak menerima bagian keuntungan dari penjualan tanah",
+        "D": "Menolak memberikan informasi karena informasi jabatan tidak boleh dipakai untuk kepentingan keluarga",
+        "E": "Menyarankan kakaknya membeli tanah memakai nama orang lain agar hubungan keluarga tidak terlihat"
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "Informasi yang diperoleh karena jabatan, terutama yang belum diumumkan, dipercayakan kepada pegawai untuk kepentingan tugas. Memakainya untuk menguntungkan keluarga adalah **penyalahgunaan informasi jabatan** dan menciptakan **konflik kepentingan**. Akibatnya nyata: warga pemilik tanah dirugikan karena menjual murah, sementara pihak yang tahu lebih dulu mendapat untung. Integritas berarti konsisten antara aturan dan tindakan, termasuk ketika yang meminta adalah keluarga sendiri. Jadi, Wulan harus menolak dengan tegas.",
+        "opsi": {
+          "A": "Sumber uang tidak penting. Pelanggarannya terletak pada pemakaian informasi jabatan yang belum terbuka untuk keuntungan pribadi atau keluarga.",
+          "B": "Jebakan “setengah bocor”. Gambaran umum tetap memberi keuntungan yang tidak dimiliki warga lain, jadi tetap penyalahgunaan informasi.",
+          "C": "Tidak menerima keuntungan tidak menghapus pelanggaran. Keluarganya tetap diuntungkan dari informasi jabatan.",
+          "E": "Ini memperparah pelanggaran karena menambahkan upaya menyembunyikan konflik kepentingan."
+        },
+        "konsep": "**Konflik kepentingan** terjadi ketika kepentingan pribadi atau keluarga dapat memengaruhi atau diuntungkan oleh pelaksanaan jabatan. Pegawai yang berintegritas tidak memakai jabatan, wewenang, maupun informasi jabatan untuk kepentingan pribadi, keluarga, atau kroni."
+      },
+      "tips": "Dalam soal integritas, opsi yang menawarkan “jalan tengah” (sedikit informasi, tanpa imbalan, memakai nama orang lain) tetap pelanggaran. Pilih opsi yang menolak secara utuh dan menyebut alasan yang tepat."
+    },
+    {
+      "id": "p06-025",
+      "nomor": 25,
+      "kategori": "TWK",
+      "subtopik": "Integritas",
+      "topik": "Menolak jasa joki laporan aktualisasi pelatihan dasar CPNS",
+      "tingkat": "mudah",
+      "pertanyaan": "Menjelang tenggat laporan aktualisasi pelatihan dasar CPNS, seorang teman seangkatan menawarkan jasa joki penyusunan laporan dengan imbalan uang. Sikap yang paling tepat adalah ....",
+      "opsi": {
+        "A": "Memakai jasa itu hanya untuk bagian laporan yang paling sulit dikerjakan sendiri",
+        "B": "Memakai jasa itu karena laporan aktualisasi hanya syarat administrasi kelulusan",
+        "C": "Menolak dan menyusun laporan sendiri, serta meminta bimbingan coach atau mentor jika kesulitan",
+        "D": "Menolak tawaran itu, lalu menyalin laporan aktualisasi angkatan sebelumnya dengan sedikit perubahan",
+        "E": "Menerima tawaran itu asalkan isi laporan dari joki tetap dibaca dan diperiksa sendiri"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "Integritas berarti jujur dan konsisten, termasuk dalam proses belajar. Laporan aktualisasi dimaksudkan sebagai bukti bahwa peserta mampu menerapkan nilai dasar ASN di tempat kerjanya. Memakai joki berarti mengaku-aku hasil kerja orang lain dan menipu penilai. Sikap yang benar adalah menolak dan mengerjakan sendiri. Jika kesulitan, peserta tidak sendirian: pelatihan dasar menyediakan *coach* dari lembaga pelatihan dan *mentor* (biasanya atasan langsung) yang tugasnya membimbing.",
+        "opsi": {
+          "A": "Menyerahkan sebagian pekerjaan tetap tidak jujur. Bagian yang paling sulit justru menunjukkan kemampuan yang harus dibuktikan sendiri.",
+          "B": "Keliru memahami tujuan. Aktualisasi bukan formalitas, melainkan latihan menerapkan nilai dasar ASN yang akan dipakai sepanjang karier.",
+          "D": "Menolak joki tetapi menyalin karya orang lain sama-sama tidak jujur. Ini plagiarisme.",
+          "E": "Membaca dan memeriksa tidak mengubah fakta bahwa laporan dibuat orang lain. Penilai tetap tertipu."
+        },
+        "konsep": "**Integritas akademik ASN:** karya yang dinilai harus hasil kerja sendiri. Kecurangan kecil saat pelatihan membentuk kebiasaan yang berbahaya ketika kelak menangani anggaran dan layanan publik. Bimbingan dari coach dan mentor adalah jalur yang sah, karena memang disediakan untuk membantu peserta menyusun rancangan dan laporan aktualisasinya sendiri."
+      },
+      "tips": "Untuk soal integritas, coret semua opsi yang masih memakai cara curang, sekecil apa pun. Di antara opsi yang jujur, pilih yang juga menyelesaikan masalah, di sini dengan meminta bimbingan."
+    },
+    {
+      "id": "p06-026",
+      "nomor": 26,
+      "kategori": "TWK",
+      "subtopik": "Integritas",
+      "topik": "Penggelapan dalam jabatan oleh bendahara yang mengembalikan uang sebelum diperiksa",
+      "tingkat": "sulit",
+      "pertanyaan": "Seorang bendahara pengeluaran dinas memakai Rp40 juta dari kas kantor untuk biaya pengobatan anaknya. Dua bulan kemudian, sebelum ada pemeriksaan, ia mengembalikan seluruh uang itu. Penilaian yang paling tepat atas perbuatannya adalah ....",
+      "opsi": {
+        "A": "Bukan tindak pidana korupsi karena seluruh uang sudah dikembalikan sebelum pemeriksaan dilakukan",
+        "B": "Termasuk gratifikasi karena bendahara memperoleh manfaat dari jabatan yang dipegangnya",
+        "C": "Termasuk pemerasan karena bendahara memakai kewenangannya untuk mengambil uang negara",
+        "D": "Hanya pelanggaran disiplin karena tujuannya kemanusiaan dan pada akhirnya tidak ada kerugian",
+        "E": "Termasuk penggelapan dalam jabatan, dan pengembalian uang tidak menghapus pidananya"
+      },
+      "kunci": "E",
+      "pembahasan": {
+        "inti": "Ada dua langkah penilaian. **Langkah 1, jenis perbuatan:** pegawai yang karena jabatannya memegang uang negara, lalu memakainya untuk kepentingan pribadi, melakukan **penggelapan dalam jabatan** sebagaimana diatur Pasal 8 UU 20/2001 tentang perubahan UU Pemberantasan Tindak Pidana Korupsi. **Langkah 2, akibat pengembalian:** Pasal 4 UU 31/1999 menegaskan bahwa pengembalian kerugian keuangan negara tidak menghapuskan dipidananya pelaku. Pengembalian bisa menjadi pertimbangan yang meringankan, tetapi perbuatannya tetap tindak pidana korupsi. Alasan pengobatan anak juga tidak mengubah sifat perbuatannya.",
+        "opsi": {
+          "A": "Jebakan jalan pintas yang paling sering dipilih. Pasal 4 UU 31/1999 justru menyatakan pengembalian tidak menghapus pidana.",
+          "B": "Gratifikasi adalah **pemberian** dari pihak lain kepada pegawai yang berhubungan dengan jabatannya. Di kasus ini tidak ada pihak yang memberi; bendahara sendiri yang memakai uang yang dipegangnya.",
+          "C": "Pemerasan adalah memaksa **orang lain** memberikan sesuatu dengan menyalahgunakan kekuasaan. Di kasus ini tidak ada pihak yang dipaksa.",
+          "D": "Motif kemanusiaan tidak menghapus unsur pidana. Kerugian juga sempat terjadi selama dua bulan, dan perbuatannya sudah selesai ketika uang dipakai."
+        },
+        "konsep": "**Tujuh kelompok tindak pidana korupsi** (UU 31/1999 jo. UU 20/2001): merugikan keuangan negara, suap-menyuap, **penggelapan dalam jabatan**, pemerasan, perbuatan curang, benturan kepentingan dalam pengadaan, dan gratifikasi. Pembedanya: penggelapan = memakai uang yang dikuasai karena jabatan; suap dan gratifikasi = menerima pemberian; pemerasan = memaksa orang lain memberi."
+      },
+      "tips": "Tentukan **arah aliran uang**. Uang yang dipegang karena jabatan lalu dipakai sendiri → penggelapan. Uang datang dari pihak luar → suap atau gratifikasi. Uang diminta dengan paksaan → pemerasan. Ingat juga: mengembalikan uang tidak pernah menghapus pidana korupsi.",
+      "rujukan": [
+        "UU 31/1999 tentang Pemberantasan Tindak Pidana Korupsi Pasal 4",
+        "UU 20/2001 tentang Perubahan atas UU 31/1999 Pasal 8"
+      ]
+    },
+    {
+      "id": "p06-027",
+      "nomor": 27,
+      "kategori": "TWK",
+      "subtopik": "Integritas",
+      "topik": "Nilai BerAKHLAK kompeten: membantu rekan belajar aplikasi baru",
+      "tingkat": "sulit",
+      "pertanyaan": "Setelah mengikuti pelatihan aplikasi arsip digital, Fajar menyusun panduan singkat dan meluangkan waktu mengajari rekan-rekannya sampai mereka bisa memakai aplikasi itu sendiri. Menurut panduan perilaku nilai dasar ASN BerAKHLAK, perilaku Fajar paling tepat dikategorikan sebagai ....",
+      "opsi": {
+        "A": "Harmonis, karena Fajar suka menolong rekan kerja yang kesulitan",
+        "B": "Kolaboratif, karena Fajar bekerja sama dengan rekan satu kantornya",
+        "C": "Kompeten, karena Fajar membantu orang lain belajar",
+        "D": "Adaptif, karena Fajar cepat menyesuaikan diri dengan aplikasi baru",
+        "E": "Berorientasi pelayanan, karena Fajar melayani kebutuhan rekan kerja"
+      },
+      "kunci": "C",
+      "pembahasan": {
+        "inti": "Setiap nilai BerAKHLAK punya tiga panduan perilaku. Nilai **Kompeten** berbunyi: meningkatkan kompetensi diri untuk menjawab tantangan yang selalu berubah; **membantu orang lain belajar**; dan melaksanakan tugas dengan kualitas terbaik. Fajar melakukan dua di antaranya: ia meningkatkan kompetensi lewat pelatihan, lalu membantu rekan belajar sampai mandiri. Karena tindakan intinya adalah *mengajari* dan *menularkan kemampuan*, kategori yang paling tepat adalah kompeten, bukan sekadar menolong.",
+        "opsi": {
+          "A": "Distraktor terkuat. Harmonis memang memuat perilaku “suka menolong orang lain”, tetapi pertolongan dalam bentuk **mengajarkan keterampilan** dirumuskan secara khusus dalam nilai kompeten. Pilih rumusan yang paling spesifik.",
+          "B": "Kolaboratif menekankan memberi kesempatan berbagai pihak berkontribusi, terbuka bekerja sama, dan menggerakkan sumber daya untuk tujuan bersama. Kasus ini bukan tentang kerja sama menghasilkan sesuatu, melainkan mengajari.",
+          "D": "Adaptif menekankan cepat menyesuaikan diri, berinovasi, dan proaktif. Fajar memang beradaptasi, tetapi yang ditonjolkan soal adalah kegiatannya mengajari orang lain.",
+          "E": "Berorientasi pelayanan ditujukan untuk memenuhi kebutuhan masyarakat sebagai penerima layanan, bukan membantu rekan belajar."
+        },
+        "konsep": "**Panduan perilaku BerAKHLAK yang sering tertukar:**\n- Kompeten: tingkatkan kompetensi diri, **bantu orang lain belajar**, kualitas terbaik.\n- Harmonis: hargai setiap orang, **suka menolong**, bangun lingkungan kondusif.\n- Kolaboratif: beri kesempatan berkontribusi, terbuka bekerja sama, gerakkan sumber daya.\n- Adaptif: cepat menyesuaikan diri, berinovasi, proaktif."
+      },
+      "tips": "Jika dua nilai sama-sama cocok, pilih nilai yang panduan perilakunya **paling persis** dengan kata kerja dalam soal. “Mengajari” atau “membantu belajar” → kompeten; “menolong” secara umum → harmonis.",
+      "rujukan": [
+        "Surat Edaran Menteri PANRB Nomor 20 Tahun 2021 tentang Implementasi Core Values dan Employer Branding ASN"
+      ]
+    },
+    {
+      "id": "p06-028",
+      "nomor": 28,
+      "kategori": "TWK",
+      "subtopik": "Bahasa Indonesia",
+      "topik": "Penulisan partikel pun yang dipisah dan yang dirangkai",
+      "tingkat": "sedang",
+      "pertanyaan": "Kalimat yang penulisan partikel *pun*-nya benar seluruhnya adalah ....",
+      "opsi": {
+        "A": "Apapun keputusannya, kami tetap hadir walaupun hujan turun deras.",
+        "B": "Apa pun keputusannya, kami tetap hadir walau pun hujan turun deras.",
+        "C": "Siapapun yang datang tetap dilayani, meskipun antrean sangat panjang.",
+        "D": "Apa pun keputusannya, kami tetap hadir walaupun hujan turun deras.",
+        "E": "Siapa pun yang datang tetap dilayani, meski pun antrean sangat panjang."
+      },
+      "kunci": "D",
+      "pembahasan": {
+        "inti": "Menurut EYD, partikel *pun* ditulis **terpisah** dari kata yang mendahuluinya, misalnya *apa pun*, *siapa pun*, *di mana pun*, dan *satu kali pun*. Pengecualiannya adalah kelompok kata yang sudah dianggap padu, yang ditulis **serangkai**: *adapun, andaipun, ataupun, bagaimanapun, biarpun, kalaupun, kendatipun, maupun, meskipun, sekalipun, sungguhpun,* dan *walaupun*. Opsi D benar seluruhnya: *apa pun* dipisah, *walaupun* dirangkai. Contoh lain yang benar: *Ia pun setuju*, *Siapa pun boleh mendaftar*, *Sekalipun lelah, ia tetap datang*, dan *Bagaimanapun caranya, laporan harus selesai*.",
+        "opsi": {
+          "A": "*Apapun* seharusnya ditulis terpisah: *apa pun*. Bagian *walaupun* sudah benar.",
+          "B": "*Apa pun* sudah benar, tetapi *walau pun* salah karena *walaupun* termasuk kata padu yang ditulis serangkai.",
+          "C": "*Siapapun* seharusnya *siapa pun*. Bagian *meskipun* sudah benar.",
+          "E": "*Siapa pun* sudah benar, tetapi *meski pun* salah karena *meskipun* ditulis serangkai."
+        },
+        "konsep": "**Cara cepat:** *pun* yang berarti “juga” atau “saja” dan melekat pada kata tanya atau kata benda → dipisah (*apa pun, siapa pun, ia pun*). *Pun* yang sudah menjadi bagian kata penghubung → dirangkai (*walaupun, meskipun, sekalipun, ataupun, maupun, adapun, bagaimanapun*)."
+      },
+      "tips": "Hafalkan daftar kata penghubung padu yang ditulis serangkai; di luar daftar itu, *pun* dipisah. Pada soal seperti ini, setiap opsi biasanya punya tepat satu kesalahan, jadi periksa kedua kata ber-*pun* di setiap opsi.",
+      "rujukan": [
+        "Pedoman Umum Ejaan Bahasa Indonesia yang Disempurnakan (EYD) Edisi V, 2022: penulisan partikel"
+      ]
+    },
+    {
+      "id": "p06-029",
+      "nomor": 29,
+      "kategori": "TWK",
+      "subtopik": "Bahasa Indonesia",
+      "topik": "Kalimat yang merusak kepaduan paragraf tentang antrean daring",
+      "tingkat": "sedang",
+      "pertanyaan": "(1) Sejak Januari, kantor kecamatan menerapkan antrean daring untuk layanan administrasi kependudukan. (2) Warga cukup memilih jadwal kedatangan melalui aplikasi di ponsel. (3) Kantor kecamatan juga baru selesai merenovasi ruang tunggu dengan pendingin ruangan baru. (4) Dengan cara itu, penumpukan warga di loket berkurang drastis. (5) Meski begitu, warga lansia tetap dapat datang langsung dan dilayani di loket khusus.\n\nKalimat yang merusak kepaduan paragraf tersebut adalah ....",
+      "opsi": {
+        "A": "kalimat (3)",
+        "B": "kalimat (5)",
+        "C": "kalimat (4)",
+        "D": "kalimat (2)",
+        "E": "kalimat (1)"
+      },
+      "kunci": "A",
+      "pembahasan": {
+        "inti": "Gagasan utama paragraf ini adalah **penerapan antrean daring dan manfaatnya**. Kalimat (1) memperkenalkan antrean daring, (2) menjelaskan caranya, (4) menyebut manfaatnya, dan (5) menjelaskan pengecualian bagi lansia. Kalimat (3) membahas renovasi ruang tunggu, yang tidak berhubungan dengan sistem antrean. Buktinya, frasa *dengan cara itu* di kalimat (4) seharusnya merujuk pada cara memilih jadwal di kalimat (2); kalimat (3) memutus rujukan itu sehingga pembaca bisa salah mengira renovasi yang mengurangi penumpukan. Jadi, kalimat (3) adalah kalimat sumbang.",
+        "opsi": {
+          "B": "Distraktor terkuat karena diawali *meski begitu* dan tampak berbeda arah. Namun kalimat ini tetap membahas sistem antrean, yaitu layanan langsung bagi lansia yang mungkin kesulitan memakai aplikasi. Isinya memperjelas cakupan kebijakan.",
+          "C": "Kalimat (4) menyatakan manfaat antrean daring dan berhubungan langsung dengan gagasan utama.",
+          "D": "Kalimat (2) menjelaskan cara kerja antrean daring, jadi padu dengan kalimat (1).",
+          "E": "Kalimat (1) adalah kalimat utama yang memperkenalkan topik paragraf."
+        },
+        "konsep": "**Paragraf padu** memiliki satu gagasan utama, dan setiap kalimat penjelas mendukung gagasan itu. Kalimat sumbang biasanya membahas hal yang **masih satu latar** (sama-sama di kantor kecamatan) tetapi **beda topik**. Kata penghubung seperti *meski begitu* atau *namun* tidak otomatis menandakan kalimat sumbang."
+      },
+      "tips": "Rumuskan dulu gagasan utama dalam satu frasa (di sini: “antrean daring”). Lalu uji setiap kalimat: apakah kalimat itu berbicara tentang frasa tersebut? Periksa juga kata rujukan seperti *dengan cara itu* atau *hal tersebut*; kalimat sumbang sering memutus rujukan ini."
+    },
+    {
+      "id": "p06-030",
+      "nomor": 30,
+      "kategori": "TWK",
+      "subtopik": "Bahasa Indonesia",
+      "topik": "Ketepatan makna kata acuh, bergeming, absen, dan bentuk kata mengubah",
+      "tingkat": "sulit",
+      "pertanyaan": "Kalimat yang seluruh katanya dipakai dengan tepat, baik makna maupun bentuk bakunya, adalah ....",
+      "opsi": {
+        "A": "Petugas itu acuh terhadap keluhan warga sehingga warga merasa kecewa.",
+        "B": "Meskipun didesak kerumunan, petugas jaga itu tetap bergeming di depan gerbang.",
+        "C": "Walaupun didesak massa, petugas jaga itu tidak bergeming sedikit pun dari posisinya.",
+        "D": "Pagi ini saya sudah absen melalui aplikasi presensi sebelum pukul 07.30.",
+        "E": "Pemerintah daerah akan merubah jadwal layanan keliling mulai bulan depan."
+      },
+      "kunci": "B",
+      "pembahasan": {
+        "inti": "Soal ini menguji kata yang sering dipakai terbalik maknanya. Dalam KBBI, **bergeming** berarti *tidak bergerak sedikit pun; diam saja*. Kalimat B memakainya dengan tepat: meski didesak, petugas tetap diam di tempat. Kata lain di kalimat B juga baku. Perhatikan bahwa banyak orang menulis *tidak bergeming* untuk maksud “tidak bergerak”, padahal itu justru berarti “bergerak”. Opsi lain masing-masing mengandung satu kata yang maknanya terbalik atau bentuknya tidak baku.",
+        "opsi": {
+          "A": "*Acuh* dalam KBBI berarti *peduli; mengindahkan*. Untuk maksud tidak peduli, kata yang tepat adalah *tak acuh* atau *acuh tak acuh*.",
+          "C": "*Tidak bergeming* berarti “bergerak”, bertentangan dengan maksud kalimat bahwa petugas tetap di posisinya. Cukup tulis *tetap bergeming* atau *tidak bergerak*.",
+          "D": "*Absen* berarti *tidak hadir*. Maksud kalimat adalah sudah mengisi daftar hadir, jadi kata yang tepat adalah *presensi* atau *mengisi daftar hadir*.",
+          "E": "*Merubah* tidak baku. Kata dasarnya *ubah*, sehingga bentuk yang benar *mengubah*. Kata *rubah* adalah nama hewan."
+        },
+        "konsep": "**Kata yang sering terbalik maknanya:**\n\n| Kata | Makna KBBI | Salah kaprah |\n|---|---|---|\n| acuh | peduli | dipakai untuk “tidak peduli” |\n| bergeming | diam, tidak bergerak | “tidak bergeming” untuk “diam” |\n| absen | tidak hadir | dipakai untuk “mengisi daftar hadir” |"
+      },
+      "tips": "Untuk kata yang mencurigakan, ganti dengan definisi KBBI-nya lalu baca ulang kalimat. “Petugas itu *peduli* terhadap keluhan warga sehingga warga kecewa” terasa janggal, berarti kata *acuh* salah pakai. Cara ini juga cepat untuk menguji *bergeming* dan *absen*."
+    }
+  ]
+}
