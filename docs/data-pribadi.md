@@ -29,7 +29,7 @@ Tidak ada: cookie buatan app, analytics, piksel, pelacak pihak ketiga (grep `ana
 | Signed URL ebook | `unduhEbook` | tidak disimpan | unduh PDF (10 menit) | — | `functions/src/index.ts` |
 | Email kode (nama, kode, email penerima) | function | Gmail SMTP (nodemailer); salinan di folder Terkirim Gmail pengirim | kirim kode | sampai dihapus pemilik Gmail | `functions/src/index.ts` (`kirimEmail`) |
 | Email verifikasi & reset sandi | Firebase Auth | Firebase | verifikasi email, lupa sandi | — | `web/src/components/akun/auth.tsx` |
-| Log yang ditulis app: `orderId`, `productId`, `productName`, `produk`, `status`, nama field webhook, `uid` (unduh ebook), pesan galat | function | Cloud Logging | diagnosa | bawaan Cloud Logging (30 hari) | `functions/src/index.ts` (`logger.*`) |
+| Log yang ditulis app: `orderId`, `productId`, `productName`, `produk`, `status`, nama field webhook, `uid` dan `edisi` (unduh ebook), pesan galat | function | Cloud Logging | diagnosa | bawaan Cloud Logging (30 hari) | `functions/src/index.ts` (`logger.*`) |
 | Log permintaan platform: IP, user agent, URL, waktu | Cloud Run (App Hosting, Functions v2) | Cloud Logging | bawaan platform | bawaan Cloud Logging (30 hari) | — |
 
 Tidak pernah ditulis ke log: kode aktivasi, token webhook, email pembeli (kecuali termuat di pesan galat server email). Tidak diterima: data kartu/rekening/e-wallet (diproses Mayar).

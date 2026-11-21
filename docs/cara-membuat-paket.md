@@ -54,6 +54,33 @@ Pakai lagi untuk Paket 3, 4, dan seterusnya.
 - **Validator bisa salah.** Di p02 cek opsi kembar sempat menganggap `x > y` sama dengan
   `x < y`. Jika galat terasa janggal, periksa validatornya (dan tambahkan kasus uji).
 
+## Pelajaran dari Paket 7
+
+- **Cek bentuk opsi TKP, bukan hanya panjangnya.** Di p05, opsi bobot 5 adalah opsi dengan
+  klausa terbanyak (koma, *dan*, *lalu*, *serta*) di 38 dari 45 soal (p06: 30 dari 45), jadi
+  peserta bisa menebak tanpa membaca soal. Setelah opsi 5 diringkas, polanya berbalik: opsi 5
+  menjadi yang **terpendek** (9 dari 12 soal di batch pertama). Ukur tiga pola sekaligus
+  (terpanjang, terpendek, klausa terbanyak) dan jaga masing-masing di bawah sekitar 20%.
+  Caranya: opsi 4 dan 3 ditulis sama berlapisnya dengan opsi 5, dan opsi 5 kadang ringkas.
+  Hasil p07: terpanjang 2/45, terpendek 0/45, klausa terbanyak 1/45.
+- **TWK: paling banyak satu distraktor ekstrem.** Soal perbatasan p05/p06 punya tiga atau
+  empat opsi ekstrem ("ditutup sepenuhnya", "dibuka tanpa dokumen"), sehingga kunci tertebak.
+  Distraktor yang kuat adalah yang setengah benar: pasal yang mirip (Pasal 18B ayat 1 vs 2,
+  Pasal 28D ayat 3 vs 27 ayat 1), "jalan tengah" yang tetap melanggar, atau hak yang benar
+  tetapi dipakai untuk hal yang salah.
+- **Teka-teki “informasi tambahan” dan “tidak dapat ditentukan”:** uji **setiap opsi**
+  dengan program, bukan hanya kuncinya. Di draf p07-045, tiga opsi sama-sama membuat urutan
+  tunggal. Untuk silogisme “premis yang hilang”, uji dengan dan tanpa anggapan setiap
+  himpunan tidak kosong; beberapa premis sah hanya dengan anggapan itu, jadi jangan dipakai
+  sebagai distraktor.
+- **Soal rute terpendek atau optimasi:** pastikan strategi serakah (“selalu yang terdekat”)
+  menghasilkan jawaban salah, supaya soal benar-benar menguji penalaran, dan jadikan hasil
+  serakah itu distraktor.
+- **Variasikan kalimat tanya TKP**: paling banyak sekitar 10 soal per bentuk (“Sikap Anda
+  adalah”, “Tindakan Anda adalah”, “Anda akan”, “Langkah pertama Anda”, dan seterusnya).
+- **Sebaran bundel:** sebelum menyusun kerangka, hitung subtopik paket lain dalam bundel yang
+  sama, lalu isi celahnya supaya ketiga paket bersama-sama seimbang.
+
 ## Alat
 
 | Perintah | Fungsi |
