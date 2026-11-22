@@ -24,7 +24,7 @@ export default async function Beranda() {
   const komposisi = format.urutan.map((kode) => ({ kode, jumlah: format.subtes[kode].jumlahSoal }));
   const panduan = soal && (
     <PanduanUjian
-      soal={{ kategori: soal.kategori, pertanyaan: soal.pertanyaan, opsi: soal.opsi }}
+      soal={{ kategori: soal.kategori, pertanyaan: soal.pertanyaan, opsi: soal.opsi, gambar: soal.gambar }}
       data={{ komposisi, soalPerPaket: komposisi.reduce((n, s) => n + s.jumlah, 0) }}
     />
   );

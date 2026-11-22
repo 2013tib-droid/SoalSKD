@@ -42,9 +42,10 @@ Paket di `bank/`: `p01` gratis (20 dari 110 soal); Bundel 1 = `p02`–`p04`, Bun
 - **Belum ada aturan lama simpan** untuk `orders` dan `activation_codes`; /privasi menulisnya apa adanya.
 - **Nilai legal belum diisi**: `PENGELOLA`, `EMAIL_KONTAK`, `BERLAKU_SEJAK` masih `null`, dan `PENGEMBALIAN_DANA` masih usulan (`web/src/config/legal.ts`, `docs/firebase.md` langkah 12). Wajib sebelum jualan.
 - **Belum ada bottom nav.** Ditambahkan saat halaman Riwayat dan Profil terpisah sudah ada.
-- **Soal bergambar (`gambar`) belum ditampilkan** di app. Belum ada di `p01`.
+- **Soal figural** tampil di ujian dan pembahasan (`GambarSoal`). Teks alt menggambarkan isi gambar, tetapi soal rotasi/pencerminan (mis. p03-063) tetap sulit dikerjakan dengan pembaca layar. `p01` belum punya soal figural.
 - **Simbol `∧ ∨ ≡ ✓ ✗`** di pembahasan TIU `p01` dicetak dengan DejaVu Sans di PDF karena Geist tidak punya glyph-nya. Diputuskan dibiarkan.
-- **Durasi dan ambang batas resmi** masih `null` di `config/skd.json`. Durasi latihan 1 menit per soal; ambang batas hanya dibandingkan untuk paket lengkap. Cek aturan BKN/KemenPAN-RB terbaru sebelum mengisinya.
+- **Durasi** paket lengkap 100 menit (SKD CPNS TA 2024, KepmenPANRB 321/2024, `config/skd.json`); teks PDF-nya belum dicocokkan langsung (bkn.go.id diblokir dari lingkungan kerja). Paket belum lengkap (p01) tetap 1 menit per soal. **Ambang batas** masih `null`. Cek aturan BKN/KemenPAN-RB terbaru.
+- **Ebook PDF Edisi 1 dan 2 belum memuat revisi audit 2026-11-22** (soal figural baru, perbaikan p02/p05/p07). Buat ulang dan unggah sebelum jualan.
 - **Branch `claude/skema-json-bank`** masih ada di GitHub; pemilik menghapusnya manual.
 
 ## Langkah berikutnya (pilih salah satu)
@@ -61,7 +62,7 @@ Syarat minimal sebelum jualan: backend hidup (1), review + cek fakta p02–p07 l
 Setelah backend hidup: fitur hapus akun di /profil (hapus Auth + `users/{uid}` dan subkoleksi lewat Cloud Function) dan aturan lama simpan data pesanan.
 
 Setelah itu: halaman Riwayat dan Profil terpisah + bottom nav 4 item (Beranda, Try out, Riwayat, Profil),
-sakelar tema terang/gelap di Profil, tampilan soal bergambar.
+sakelar tema terang/gelap di Profil.
 
 ## Keputusan yang masih terbuka
 

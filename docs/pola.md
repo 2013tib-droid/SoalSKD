@@ -16,6 +16,7 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 
 - `web/src/components/landing/gerak.tsx` · `Muncul` (section naik 32px sekali saat masuk layar) dan `TaglineBertahap` (kata menyala satu per satu saat lewat garis 60% layar) · keduanya mati di `prefers-reduced-motion`
 - `web/src/components/panduan/panduan-ujian.tsx` · `PratinjauUjian` (layar ujian statis dari soal bank, opsi `beranotasi`/`tanpaBingkai`), `CaraBaca` (keterangan bernomor), `PanduanUjian` (`<details>` "Cara membaca layar ujian" di /try-out, dirender server lalu jadi slot `panduan` di `LayarBeranda`), `BAGIAN_SKD`
+- `web/src/components/gambar-soal.tsx` · `GambarSoal` gambar TIU figural (SVG bank sebagai data URI, ikut gerbang paket) di bawah teks soal, di layar ujian dan pembahasan · SVG dibuat `tools/buat_figural.py`
 - `web/src/components/teks-md.tsx` · render Markdown GFM soal/pembahasan (tanpa HTML, italic jadi medium) · `inline` untuk di dalam tombol
 - `web/src/components/hasil/kartu-skor.tsx` · kartu KPI skor (nilai/maks, bar, status ambang ikon + teks) · `utama` untuk kartu total selebar grid
 - `web/src/components/hasil/item-pembahasan.tsx` · `<details>` per soal: ringkas (status, subtopik, poin, ragu) lalu tiap opsi + alasannya (`pembahasan.opsi`), bobot TKP, inti, konsep, tips, rujukan

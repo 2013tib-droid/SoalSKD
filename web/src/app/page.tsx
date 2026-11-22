@@ -39,13 +39,13 @@ export default async function Landing() {
         totalSoal: paket.reduce((n, p) => n + p.jumlahSoal, 0),
         soalPerPaket,
         durasiMenit: durasiPaket(format, soalPerPaket),
-        durasiResmi: format.durasiResmiMenit !== null,
+        acuanDurasi: format.durasiResmiMenit !== null ? format.acuanDurasi : null,
         komposisi,
         nilaiBenar: format.subtes.TWK.nilaiBenar,
         ambang,
         soalGratis: paket.find((p) => p.id === PAKET_GRATIS)?.jumlahSoal ?? 0,
       }}
-      soalHero={hero && { kategori: hero.kategori, pertanyaan: hero.pertanyaan, opsi: hero.opsi }}
+      soalHero={hero && { kategori: hero.kategori, pertanyaan: hero.pertanyaan, opsi: hero.opsi, gambar: hero.gambar }}
     />
   );
 }

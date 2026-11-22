@@ -6,6 +6,7 @@ import { DURASI_LATIHAN_MENIT_PER_SOAL, type Subtes } from "@/config/skd";
 /** Bentuk `config/skd.json` di root repo. Satu sumber untuk app dan ebook. */
 type ConfigSkd = {
   durasi_menit: number | null;
+  acuan_durasi?: string | null;
   sumber: string | null;
   subtes: {
     kode: Subtes;
@@ -23,6 +24,8 @@ export type FormatSkd = {
   urutan: Subtes[];
   sumber: string | null;
   durasiResmiMenit: number | null;
+  /** Nama aturan yang menjadi acuan `durasiResmiMenit`, mis. "SKD CPNS TA 2024 (KepmenPANRB No. 321 Tahun 2024)". */
+  acuanDurasi: string | null;
   subtes: Record<
     Subtes,
     { jumlahSoal: number; nilaiBenar: number; nilaiSalah: number; nilaiMaks: number; ambangBatas: number | null }
@@ -44,17 +47,28 @@ export async function ambilFormatSkd(): Promise<FormatSkd> {
       },
     ]),
   ) as FormatSkd["subtes"];
-  return { urutan: c.urutan_soal, sumber: c.sumber, durasiResmiMenit: c.durasi_menit, subtes };
+  return {
+    urutan: c.urutan_soal,
+    sumber: c.sumber,
+    durasiResmiMenit: c.durasi_menit,
+    acuanDurasi: c.acuan_durasi ?? null,
+    subtes,
+  };
+}
+
+/** Jumlah soal satu paket lengkap menurut format (TWK + TIU + TKP). */
+export function soalPaketLengkap(format: FormatSkd): number {
+  return Object.values(format.subtes).reduce((n, s) => n + s.jumlahSoal, 0);
 }
 
 /**
- * Durasi untuk sebuah paket. Kalau durasi resmi sudah diisi, diskalakan sesuai jumlah soal
- * paket terhadap jumlah soal resmi. Kalau belum, pakai durasi latihan per soal.
+ * Durasi untuk sebuah paket. Paket lengkap memakai durasi resmi (simulasi) kalau sudah diisi.
+ * Paket yang belum lengkap (mis. demo p01) dan semua paket selama durasi resmi null
+ * memakai durasi latihan per soal, supaya paket pendek tidak mendapat waktu yang dipotong-potong.
  */
 export function durasiPaket(format: FormatSkd, jumlahSoal: number): number {
-  const totalResmi = Object.values(format.subtes).reduce((n, s) => n + s.jumlahSoal, 0);
-  if (format.durasiResmiMenit !== null) {
-    return Math.max(1, Math.round((format.durasiResmiMenit * jumlahSoal) / totalResmi));
+  if (format.durasiResmiMenit !== null && jumlahSoal === soalPaketLengkap(format)) {
+    return format.durasiResmiMenit;
   }
   return Math.max(1, Math.round(jumlahSoal * DURASI_LATIHAN_MENIT_PER_SOAL));
 }

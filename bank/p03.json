@@ -1800,57 +1800,73 @@
       "id": "p03-062",
       "nomor": 62,
       "kategori": "TIU",
-      "subtopik": "Logika Proposisi",
-      "topik": "Silogisme disjungtif yang dilanjutkan modus ponens",
+      "subtopik": "Analogi Gambar",
+      "topik": "Analogi gambar: bangun diputar 90° searah jarum jam dan warnanya dibalik",
       "tingkat": "sedang",
-      "pertanyaan": "Premis 1: Rapat koordinasi dilaksanakan secara luring atau daring.\nPremis 2: Jika rapat koordinasi dilaksanakan secara daring, notulen dikirim melalui surel.\nPremis 3: Rapat koordinasi tidak dilaksanakan secara luring.\n\nKesimpulan yang sah adalah ....",
+      "pertanyaan": "Perhatikan hubungan antargambar berikut. Pilihan A–E ada pada gambar kedua.\n\nGambar yang tepat untuk mengisi tanda tanya adalah ....",
       "opsi": {
-        "A": "Notulen dikirim melalui surel",
-        "B": "Rapat koordinasi dilaksanakan secara luring dan daring",
-        "C": "Notulen tidak dikirim melalui surel",
-        "D": "Rapat koordinasi tidak dilaksanakan sama sekali",
-        "E": "Notulen dikirim melalui surel hanya jika rapat dilaksanakan secara luring"
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
       "kunci": "A",
       "pembahasan": {
-        "inti": "Misalkan p: *rapat luring*, q: *rapat daring*, r: *notulen dikirim melalui surel*.\n\n1. Premis 1 dan 3: p ∨ q benar dan ¬p benar. Dengan **silogisme disjungtif**, q pasti benar. Jadi, rapat dilaksanakan secara daring.\n2. Premis 2: q → r. Karena q benar, dengan **modus ponens** r pasti benar.\n\nKesimpulannya: **notulen dikirim melalui surel**. Penarikan kesimpulan seperti ini disebut berantai, karena kesimpulan langkah pertama menjadi premis untuk langkah kedua.",
+        "inti": "Ada dua perubahan dari gambar pertama ke kedua:\n\n1. **Posisi:** bangun tegak menjadi rebah. Batang yang semula tegak di kiri kini mendatar di atas, dan persegi yang semula di kanan bawah kini di kiri bawah. Ini putaran **90° searah jarum jam**. Bangun L tidak simetris, jadi pencerminan atau putaran ke arah lain akan menghasilkan posisi yang berbeda.\n2. **Warna:** hitam menjadi putih.\n\nTerapkan pada gambar ketiga (bangun putih, blok 2 × 2 di kanan dan satu persegi di kiri atas). Putar 90° searah jarum jam: blok 2 × 2 pindah ke bawah dan persegi tunggal ke kanan atas. Warna putih menjadi hitam. Hasilnya gambar **A**.",
         "opsi": {
-          "B": "Premis 3 menyatakan rapat **tidak** luring, sehingga rapat tidak mungkin luring dan daring sekaligus.",
-          "C": "Bertentangan dengan hasil modus ponens. Karena rapat daring, notulen pasti dikirim melalui surel.",
-          "D": "Premis 1 menjamin rapat terlaksana, entah luring atau daring. Karena tidak luring, rapat terlaksana secara daring.",
-          "E": "Pengecoh terpanjang. Tidak ada premis yang mengaitkan pengiriman notulen dengan rapat luring. Kalimat ini juga membalik arah hubungan sebab-akibat yang ada di premis 2."
+          "B": "Posisinya benar, tetapi warnanya tetap putih. Hanya satu dari dua aturan yang dipakai.",
+          "C": "Hasil putaran 90° **berlawanan** arah jarum jam. Arahnya terbalik dari pasangan pertama.",
+          "D": "Hasil pencerminan, bukan putaran. Persegi tunggal berada di kiri atas, padahal putaran menempatkannya di kanan atas. Bangun ini tidak bisa diperoleh dengan memutar saja.",
+          "E": "Warnanya sudah dibalik, tetapi bangunnya tidak diputar sama sekali."
         },
-        "konsep": "**Silogisme disjungtif:** p ∨ q, ¬p ⊢ q. **Modus ponens:** q → r, q ⊢ r. Kedua aturan ini sering digabung dalam satu soal tiga premis."
+        "konsep": "**Putaran vs pencerminan:** bangun tak simetris yang dicerminkan tidak akan pernah sama dengan bangun asalnya yang diputar ke arah mana pun. Untuk membedakannya, ikuti satu bagian khas (di sini persegi tunggal) dan lihat ke mana bagian itu berpindah."
       },
-      "tips": "Mulailah dari premis yang **paling pasti**, biasanya pernyataan tunggal tanpa *jika* atau *atau* (premis 3). Gunakan premis itu untuk membuka premis lain satu per satu."
+      "tips": "Untuk analogi gambar, tulis dulu perubahan dari gambar pertama ke kedua dalam kata-kata (misalnya \"diputar 90° searah jarum jam dan warnanya dibalik\"). Pastikan tafsiran lain tidak cocok, lalu terapkan perubahan yang sama persis pada gambar ketiga.",
+      "gambar": [
+        {
+          "file": "gambar/p03-062-soal.svg",
+          "alt": "Analogi dengan bangun dari persegi-persegi kecil. Gambar pertama: bangun hitam dari empat persegi, tiga tersusun tegak dan satu menempel di kanan persegi paling bawah. Gambar kedua: bangun yang sama berwarna putih, tiga persegi mendatar di atas dan satu menempel di bawah persegi paling kiri. Gambar ketiga: bangun putih dari lima persegi, blok 2 × 2 di kanan dan satu persegi di kiri baris atas. Gambar keempat bertanda tanya."
+        },
+        {
+          "file": "gambar/p03-062-opsi.svg",
+          "alt": "Pilihan bangun dari lima persegi: A hitam, blok 2 × 2 di bawah dan satu persegi di kanan atas; B putih, blok 2 × 2 di bawah dan satu persegi di kanan atas; C hitam, blok 2 × 2 di atas dan satu persegi di kiri bawah; D hitam, blok 2 × 2 di bawah dan satu persegi di kiri atas; E hitam, blok 2 × 2 di kanan dan satu persegi di kiri baris atas."
+        }
+      ]
     },
     {
       "id": "p03-063",
       "nomor": 63,
       "kategori": "TIU",
-      "subtopik": "Logika Proposisi",
-      "topik": "Negasi biimplikasi",
+      "subtopik": "Ketidaksamaan Gambar",
+      "topik": "Ketidaksamaan gambar: satu bangun hasil pencerminan di antara bangun yang diputar",
       "tingkat": "sulit",
-      "pertanyaan": "Negasi dari pernyataan “Kantor buka jika dan hanya jika hari kerja” adalah ....",
+      "pertanyaan": "Perhatikan lima gambar berikut.\n\nGambar yang **tidak** memiliki kesamaan pola dengan gambar lainnya adalah ....",
       "opsi": {
-        "A": "Kantor tidak buka jika dan hanya jika bukan hari kerja",
-        "B": "Kantor buka dan bukan hari kerja",
-        "C": "Jika kantor buka, maka bukan hari kerja",
-        "D": "Kantor buka padahal bukan hari kerja, atau kantor tidak buka padahal hari kerja",
-        "E": "Jika bukan hari kerja, kantor tidak buka, dan jika hari kerja, kantor buka seperti biasanya"
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
       "kunci": "D",
       "pembahasan": {
-        "inti": "Misalkan p: *kantor buka* dan q: *hari kerja*. Pernyataan asal adalah **p ↔ q**, yang benar jika p dan q bernilai sama (keduanya benar atau keduanya salah).\n\nNegasinya benar tepat ketika p dan q bernilai **berbeda**:\n\n¬(p ↔ q) ≡ (p ∧ ¬q) ∨ (¬p ∧ q)\n\nDalam kalimat: *Kantor buka padahal bukan hari kerja, atau kantor tidak buka padahal hari kerja.* Ini opsi D. Bentuk lain yang juga setara adalah p ↔ ¬q: *Kantor buka jika dan hanya jika bukan hari kerja.*",
+        "inti": "Kelima gambar memakai bangun yang sama: lima persegi dengan bentuk khas, mirip huruf F. Pembedanya adalah cara bangun itu diubah posisinya.\n\nGambar A, B, C, dan E adalah **putaran** dari bangun yang sama. Misalnya, B adalah A yang diputar 180°, C adalah A yang diputar 90° berlawanan arah jarum jam, dan E adalah A yang diputar 90° searah jarum jam. Gambar **D** tidak bisa diperoleh dengan memutar A ke arah mana pun. D adalah **bayangan cermin** dari E: keduanya punya baris tengah penuh dan satu persegi di tengah bawah, tetapi persegi di baris atas E ada di tengah, sedangkan pada D ada di kanan, dan persegi di baris bawah E ada di kanan, sedangkan D di tengah.\n\nJadi D yang tidak memiliki kesamaan dengan gambar lainnya.",
         "opsi": {
-          "A": "¬p ↔ ¬q setara dengan p ↔ q, yaitu pernyataan **asal**, bukan negasinya.",
-          "B": "p ∧ ¬q hanya **separuh** dari negasi. Kemungkinan kantor tidak buka pada hari kerja terlewat.",
-          "C": "p → ¬q tidak setara dengan negasi. Bentuk ini tetap benar ketika kantor tidak buka dan bukan hari kerja, padahal pada keadaan itu pernyataan asal juga benar.",
-          "E": "Pengecoh terpanjang. Isinya (¬q → ¬p) ∧ (q → p), yang setara dengan p ↔ q. Jadi, opsi ini hanya menulis ulang pernyataan asal."
+          "A": "Bangun dasar. Gambar lain (B, C, E) dapat diperoleh dengan memutar A.",
+          "B": "Putaran 180° dari A. Bentuknya tampak berbeda, tetapi tetap bangun yang sama.",
+          "C": "Putaran 90° berlawanan arah jarum jam dari A. Baris tengahnya penuh, sama seperti D dan E, jadi ciri ini bukan pembeda.",
+          "E": "Putaran 90° searah jarum jam dari A. E dan D tampak sangat mirip, tetapi hanya E yang dapat diperoleh dengan memutar."
         },
-        "konsep": "**Rumus negasi:** ¬(p ↔ q) ≡ (p ∧ ¬q) ∨ (¬p ∧ q) ≡ p ↔ ¬q ≡ ¬p ↔ q. Bandingkan dengan negasi implikasi: ¬(p → q) ≡ p ∧ ¬q."
+        "konsep": "**Uji putaran:** pilih satu bagian khas (misalnya persegi yang menjulur sendirian) lalu putar gambar dalam bayangan 90°, 180°, dan 270°. Jika tidak ada putaran yang cocok, gambar itu hasil pencerminan. Pada soal sulit, pengecohnya sering berupa pasangan bangun yang tampak hampir sama."
       },
-      "tips": "Uji opsi dengan **tabel kebenaran singkat**. Negasi harus bernilai benar tepat pada baris ketika pernyataan asal salah, yaitu ketika p dan q berbeda nilai."
+      "tips": "Untuk ketidaksamaan gambar, jangan berhenti pada perbedaan yang paling mencolok (warna atau bentuk luar). Cari aturan yang dipenuhi **empat** gambar sekaligus. Jika suatu ciri hanya membuat satu gambar unik tetapi gambar lain juga unik dengan cara serupa, ciri itu bukan aturannya.",
+      "gambar": [
+        {
+          "file": "gambar/p03-063-soal.svg",
+          "alt": "Lima gambar berlabel A sampai E, masing-masing bangun hitam dari lima persegi kecil pada kisi 3 × 3. A: baris atas tengah dan kanan; baris tengah kiri dan tengah; baris bawah tengah. B: baris atas tengah; baris tengah tengah dan kanan; baris bawah kiri dan tengah. C: baris atas kiri; baris tengah penuh; baris bawah tengah. D: baris atas kanan; baris tengah penuh; baris bawah tengah. E: baris atas tengah; baris tengah penuh; baris bawah kanan."
+        }
+      ]
     },
     {
       "id": "p03-064",
@@ -1884,29 +1900,39 @@
       "id": "p03-065",
       "nomor": 65,
       "kategori": "TIU",
-      "subtopik": "Bilangan",
-      "topik": "Angka satuan bilangan berpangkat besar dengan pola berulang",
+      "subtopik": "Serial Gambar",
+      "topik": "Serial gambar: banyak sisi bertambah satu dan warna berselang-seling",
       "tingkat": "sedang",
-      "pertanyaan": "Angka satuan dari 7²⁰²⁶ adalah ....",
+      "pertanyaan": "Perhatikan deret gambar berikut. Pilihan A–E ada pada gambar kedua.\n\nGambar yang tepat untuk mengisi tanda tanya adalah ....",
       "opsi": {
-        "A": "7",
-        "B": "1",
-        "C": "9",
-        "D": "3",
-        "E": "2"
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
       "kunci": "C",
       "pembahasan": {
-        "inti": "Angka satuan perpangkatan 7 membentuk **pola berulang**. Cukup perhatikan angka satuannya saja.\n\n- 7¹ → 7\n- 7² = 49 → 9\n- 7³ → 9 × 7 = 63 → 3\n- 7⁴ → 3 × 7 = 21 → 1\n- 7⁵ → 1 × 7 = 7 (pola kembali ke awal)\n\nPolanya 7, 9, 3, 1 dengan **panjang siklus 4**. Bagi pangkatnya dengan 4: 2026 = 4 × 506 + 2, sisanya **2**. Sisa 2 berarti angka satuannya sama dengan suku kedua pola, yaitu **9**.",
+        "inti": "Ada dua aturan yang berjalan bersamaan:\n\n1. **Banyak sisi** bertambah satu: segitiga (3), persegi (4), segi lima (5), segi enam (6). Gambar berikutnya bersisi **7**.\n2. **Warna** berselang-seling: putih, hitam, putih, hitam. Gambar berikutnya **putih**.\n\nGabungkan kedua aturan: **segi tujuh putih**, yaitu gambar **C**. Hitung sisinya dengan teliti karena segi tujuh dan segi delapan tampak mirip pada layar kecil.",
         "opsi": {
-          "A": "7 adalah suku **pertama** pola, yang berlaku jika sisa pembagian pangkat dengan 4 adalah 1. Sisa sebenarnya 2.",
-          "B": "1 adalah suku keempat pola, yang berlaku jika pangkatnya habis dibagi 4. Opsi ini menjebak peserta yang mengira 2026 habis dibagi 4 karena berakhiran angka genap.",
-          "D": "3 adalah suku **ketiga** pola (sisa 3). Opsi ini muncul jika sisa pembagian salah dihitung atau pola dibaca bergeser satu langkah.",
-          "E": "2 adalah **sisa pembagian** 2026 ÷ 4, bukan angka satuannya. Sisa hanya menunjukkan posisi dalam pola, lalu angka pada posisi itu yang menjadi jawaban."
+          "A": "Banyak sisinya benar (7), tetapi warnanya hitam. Setelah segi enam hitam, giliran warna putih.",
+          "B": "Segi enam putih: warnanya benar, tetapi banyak sisinya tidak bertambah.",
+          "D": "Segi delapan putih: warnanya benar, tetapi sisinya bertambah dua dari segi enam.",
+          "E": "Segi lima hitam mengulang bangun sebelumnya. Tidak mengikuti aturan bertambah satu."
         },
-        "konsep": "**Siklus angka satuan:** 2 → (2, 4, 8, 6); 3 → (3, 9, 7, 1); 7 → (7, 9, 3, 1); 8 → (8, 4, 2, 6) dengan siklus 4. Bilangan berakhiran 0, 1, 5, dan 6 selalu menghasilkan angka satuan yang sama. Jika sisa pembagian 0, ambil suku **terakhir** siklus."
+        "konsep": "**Serial dua aturan:** pisahkan aturan bentuk dan aturan warna, lanjutkan masing-masing, lalu gabungkan. Pengecoh biasanya hanya memenuhi salah satu aturan. Pada soal ini, A hanya memenuhi aturan sisi, B dan D hanya memenuhi aturan warna, dan E tidak memenuhi keduanya. Saat menghitung sisi bangun yang banyak, mulailah dari satu titik sudut yang mudah dikenali (misalnya puncak atas) lalu hitung searah jarum jam sampai kembali ke titik itu."
       },
-      "tips": "Untuk menghitung sisa pembagian dengan 4, cukup lihat **dua angka terakhir** pangkatnya. Pada 2026, 26 ÷ 4 bersisa 2."
+      "tips": "Untuk serial gambar, amati **satu unsur sekaligus**: arah, posisi, jumlah, bentuk, lalu warna. Catat perubahannya dari gambar 1 ke 2, 2 ke 3, dan seterusnya. Jika ada dua unsur yang berubah, lanjutkan keduanya secara terpisah, lalu cari opsi yang memenuhi **semua** aturan sekaligus.",
+      "gambar": [
+        {
+          "file": "gambar/p03-065-soal.svg",
+          "alt": "Empat gambar berurutan: segitiga putih, persegi hitam, segi lima putih, segi enam hitam, lalu sel kelima bertanda tanya."
+        },
+        {
+          "file": "gambar/p03-065-opsi.svg",
+          "alt": "Pilihan: A segi tujuh hitam, B segi enam putih, C segi tujuh putih, D segi delapan putih, E segi lima hitam."
+        }
+      ]
     },
     {
       "id": "p03-066",

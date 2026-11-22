@@ -19,22 +19,26 @@
       "opsi": {
         "A": "Menolak permintaan tersebut karena pelayanan harus berjalan tanpa gangguan dan semua warga diperlakukan sama dalam antrean",
         "B": "Mengizinkan hanya jika warga lain yang antre memiliki agama yang sama",
-        "C": "Mempersilakan warga beribadah dan menjaga nomor antreannya agar tetap dilayani setelah kembali",
+        "C": "Mempersilakan warga beribadah lalu memanggilnya kembali sesudah layanan yang sedang berjalan selesai",
         "D": "Menghentikan seluruh layanan sampai semua warga selesai beribadah",
         "E": "Meminta warga memilih antara beribadah atau tetap antre, karena nomor antrean tidak dapat disimpan untuk siapa pun"
       },
       "kunci": "C",
       "pembahasan": {
-        "inti": "Sila pertama, **Ketuhanan Yang Maha Esa**, mengandung nilai menghormati kebebasan setiap orang menjalankan ibadah sesuai agama dan kepercayaannya. Dalam konteks pelayanan publik, nilai ini diwujudkan dengan memberi ruang bagi warga untuk beribadah **tanpa merugikan hak pelayanannya**. Opsi C memenuhi keduanya: warga bisa beribadah, dan nomor antreannya tetap berlaku. Sikap ini juga adil bagi warga lain karena layanan tetap berjalan.",
+        "inti": "Sila pertama, **Ketuhanan Yang Maha Esa**, mengandung nilai menghormati kebebasan setiap orang menjalankan ibadah sesuai agama dan kepercayaannya. Nilai ini juga dijamin konstitusi: Pasal 28E ayat (1) UUD NRI 1945 menyatakan setiap orang bebas memeluk agama dan beribadat menurut agamanya, dan Pasal 29 ayat (2) menyatakan negara menjamin kemerdekaan tiap-tiap penduduk untuk beribadat menurut agamanya dan kepercayaannya. Petugas kelurahan bertindak atas nama negara, sehingga ikut terikat untuk menghormati hak itu.\n\nDalam pelayanan publik, nilai ini diwujudkan dengan memberi ruang bagi warga untuk beribadah **tanpa menghapus hak pelayanannya** dan **tanpa merugikan warga lain**. Opsi C memenuhi keduanya: warga yang kembali dipanggil lagi sesudah layanan yang sedang berjalan selesai. Ia tidak kehilangan giliran, tetapi juga tidak memotong layanan warga yang sedang dilayani.",
         "opsi": {
           "A": "Mengutamakan kelancaran layanan dengan menutup kesempatan beribadah. Ini bertentangan dengan nilai menghormati kebebasan beribadah dalam sila pertama.",
           "B": "Diskriminatif. Izin beribadah dikaitkan dengan agama warga lain, padahal sila pertama menuntut sikap hormat kepada semua pemeluk agama secara setara.",
-          "D": "Berlebihan dan merugikan warga lain yang tidak sedang beribadah. Menghormati ibadah tidak berarti menghentikan seluruh pelayanan.",
+          "D": "Berlebihan dan merugikan warga lain yang tidak sedang beribadah. Menghormati ibadah tidak berarti menghentikan seluruh pelayanan, dan Pasal 29 ayat (2) tidak mewajibkan hal itu.",
           "E": "Memaksa warga memilih antara hak beribadah dan hak dilayani. Pilihan seperti ini justru menekan kebebasan beribadah."
         },
         "konsep": "**Pola soal pengamalan sila:** jawaban terbaik biasanya menjaga **dua hak sekaligus** (hak beribadah dan hak dilayani) tanpa mengorbankan pihak lain. Opsi yang ekstrem ke salah satu sisi hampir selalu salah."
       },
-      "tips": "Untuk soal penerapan sila, cari opsi yang **menghormati, tidak memaksa, dan tidak membeda-bedakan**. Coret opsi yang mengandung syarat berdasarkan agama tertentu atau yang menghentikan hak orang lain."
+      "tips": "Untuk soal penerapan sila, cari opsi yang **menghormati, tidak memaksa, dan tidak membeda-bedakan**. Coret opsi yang mengandung syarat berdasarkan agama tertentu atau yang menghentikan hak orang lain.",
+      "rujukan": [
+        "UUD NRI 1945 Pasal 28E ayat (1)",
+        "UUD NRI 1945 Pasal 29 ayat (2)"
+      ]
     },
     {
       "id": "p02-002",
@@ -1776,29 +1780,39 @@
       "id": "p02-062",
       "nomor": 62,
       "kategori": "TIU",
-      "subtopik": "Logika Proposisi",
-      "topik": "Negasi konjungsi dengan hukum De Morgan",
+      "subtopik": "Analogi Gambar",
+      "topik": "Analogi gambar: bangun luar dan bangun dalam bertukar tempat",
       "tingkat": "sedang",
-      "pertanyaan": "Negasi dari pernyataan “Pegawai itu disiplin dan jujur” adalah ....",
+      "pertanyaan": "Perhatikan hubungan antargambar berikut. Pilihan A–E ada pada gambar kedua.\n\nGambar yang tepat untuk mengisi tanda tanya adalah ....",
       "opsi": {
-        "A": "Pegawai itu tidak disiplin atau tidak jujur.",
-        "B": "Pegawai itu tidak disiplin dan tidak jujur.",
-        "C": "Pegawai itu disiplin atau jujur.",
-        "D": "Pegawai itu tidak disiplin, tetapi jujur.",
-        "E": "Pegawai itu jujur, tetapi tidak disiplin."
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
       "kunci": "A",
       "pembahasan": {
-        "inti": "Misalkan p = pegawai itu disiplin dan q = pegawai itu jujur. Pernyataan soal adalah **p ∧ q**.\n\nMenurut **hukum De Morgan**: ~(p ∧ q) ≡ ~p ∨ ~q. Kata *dan* berubah menjadi *atau*, dan setiap bagian dinegasikan.\n\nJadi, negasinya: **pegawai itu tidak disiplin atau tidak jujur**.\n\nLogikanya: pernyataan “disiplin dan jujur” sudah salah jika **salah satu** sifat tidak terpenuhi. Karena itu, negasinya cukup menyatakan bahwa paling tidak satu sifat tidak terpenuhi.",
+        "inti": "Bandingkan gambar pertama dan kedua. Gambar pertama: **persegi besar** berisi **lingkaran kecil hitam**. Gambar kedua: **lingkaran besar** berisi **persegi kecil hitam**. Bangun luar menjadi bangun dalam, dan bangun dalam menjadi bangun luar. Ukuran dan warnanya mengikuti posisi barunya: bangun luar besar dan putih, bangun dalam kecil dan hitam.\n\nTerapkan pada gambar ketiga: **segitiga besar** berisi **segi enam kecil hitam**. Setelah ditukar, hasilnya **segi enam besar** berisi **segitiga kecil hitam**, yaitu gambar **A**.",
         "opsi": {
-          "B": "Jebakan paling umum: menegasikan kedua bagian tetapi lupa mengubah *dan* menjadi *atau*. Pernyataan ini terlalu kuat, karena mensyaratkan kedua sifat tidak terpenuhi.",
-          "C": "Tidak menegasikan apa pun, hanya mengganti *dan* menjadi *atau*.",
-          "D": "Hanya satu kemungkinan dari negasi yang benar. Negasi harus mencakup semua keadaan ketika pernyataan asal salah.",
-          "E": "Sama seperti D, hanya satu kemungkinan dari negasi. Pegawai yang tidak disiplin dan tidak jujur juga membuat pernyataan asal salah, tetapi tidak tercakup dalam opsi ini."
+          "B": "Sama persis dengan gambar ketiga. Tidak ada pertukaran sama sekali.",
+          "C": "Bangun luarnya sudah benar (segi enam), tetapi bangun dalamnya lingkaran. Lingkaran berasal dari pasangan pertama, bukan dari gambar ketiga.",
+          "D": "Hanya bangun dalam yang diganti menjadi segitiga, sedangkan bangun luar tetap segitiga.",
+          "E": "Bangun dalamnya benar (segitiga), tetapi bangun luarnya lingkaran, tercampur dengan pasangan pertama."
         },
-        "konsep": "**Hukum De Morgan:** ~(p ∧ q) ≡ ~p ∨ ~q dan ~(p ∨ q) ≡ ~p ∧ ~q. Bentuk lain yang setara: ~(p ∧ q) ≡ p → ~q (jika disiplin, maka tidak jujur)."
+        "konsep": "**Analogi tukar posisi:** jika dua unsur bertukar peran (luar ↔ dalam, atas ↔ bawah), jawaban harus memakai **unsur dari gambar ketiga itu sendiri**. Opsi yang membawa bentuk dari pasangan pertama (di sini lingkaran) adalah pengecoh."
       },
-      "tips": "Ingat rumus singkat: **negasi “dan” menjadi “atau”, negasi “atau” menjadi “dan”**, dan setiap bagian ikut dinegasikan. Waspadai opsi yang hanya mengubah salah satunya."
+      "tips": "Untuk analogi gambar, tulis dulu perubahan dari gambar pertama ke kedua dalam kata-kata (misalnya \"diputar 90° searah jarum jam dan warnanya dibalik\"). Pastikan tafsiran lain tidak cocok, lalu terapkan perubahan yang sama persis pada gambar ketiga.",
+      "gambar": [
+        {
+          "file": "gambar/p02-062-soal.svg",
+          "alt": "Analogi: gambar pertama persegi besar berisi lingkaran kecil hitam; gambar kedua lingkaran besar berisi persegi kecil hitam; gambar ketiga segitiga besar berisi segi enam kecil hitam; gambar keempat bertanda tanya."
+        },
+        {
+          "file": "gambar/p02-062-opsi.svg",
+          "alt": "Pilihan: A segi enam besar berisi segitiga kecil hitam; B segitiga besar berisi segi enam kecil hitam; C segi enam besar berisi lingkaran kecil hitam; D segitiga besar berisi segitiga kecil hitam; E lingkaran besar berisi segitiga kecil hitam."
+        }
+      ]
     },
     {
       "id": "p02-063",
@@ -1807,7 +1821,7 @@
       "subtopik": "Perbandingan Kuantitatif",
       "topik": "Akar persamaan kuadrat dibandingkan konstanta",
       "tingkat": "sulit",
-      "pertanyaan": "Diketahui x adalah penyelesaian dari persamaan x² − 5x + 6 = 0, dan y = 2,5.\n\nHubungan yang tepat antara x dan y adalah ....",
+      "pertanyaan": "Diketahui x adalah salah satu akar persamaan x² − 5x + 6 = 0, dan y = 2,5.\n\nHubungan yang tepat antara x dan y adalah ....",
       "opsi": {
         "A": "x > y",
         "B": "x < y",
@@ -1817,7 +1831,7 @@
       },
       "kunci": "E",
       "pembahasan": {
-        "inti": "Faktorkan persamaan kuadratnya:\n\nx² − 5x + 6 = 0\n(x − 2)(x − 3) = 0\nx = 2 atau x = 3\n\nBandingkan setiap kemungkinan dengan y = 2,5:\n\n- Jika x = 2, maka x < y.\n- Jika x = 3, maka x > y.\n\nKarena x bisa lebih kecil **atau** lebih besar daripada y, hubungan keduanya **tidak dapat ditentukan** secara pasti.\n\nPerhatikan bahwa y = 2,5 tepat berada di tengah kedua akar. Penyusun soal sengaja memilih angka ini agar peserta yang hanya memakai satu akar terjebak.",
+        "inti": "Faktorkan persamaan kuadratnya:\n\nx² − 5x + 6 = 0\n(x − 2)(x − 3) = 0\nx = 2 atau x = 3\n\nFrasa *salah satu akar* berarti x bernilai 2 **atau** 3, tetapi soal tidak menyebut akar yang mana. Relasi x terhadap y = 2,5 bergantung pada akar yang dipilih:\n\n- Jika x = 2, maka x < y.\n- Jika x = 3, maka x > y.\n\nKarena tidak ada satu relasi yang berlaku untuk kedua akar, hubungan x dan y **tidak dapat ditentukan**.\n\nPerhatikan bahwa y = 2,5 tepat berada di tengah kedua akar. Penyusun soal sengaja memilih angka ini agar peserta yang hanya memakai satu akar terjebak.",
         "opsi": {
           "A": "Hanya benar jika x = 3. Peserta yang memakai akar terbesar saja akan memilih opsi ini.",
           "B": "Hanya benar jika x = 2. Peserta yang memakai akar pertama yang ditemukan akan memilih opsi ini.",
@@ -1832,57 +1846,73 @@
       "id": "p02-064",
       "nomor": 64,
       "kategori": "TIU",
-      "subtopik": "Aljabar",
-      "topik": "Sistem persamaan linear dua variabel harga barang",
+      "subtopik": "Ketidaksamaan Gambar",
+      "topik": "Ketidaksamaan gambar: banyak titik sama dengan banyak sisi bangun",
       "tingkat": "sedang",
-      "pertanyaan": "Harga 2 buku tulis dan 3 pulpen adalah Rp31.000. Harga 3 buku tulis dan 2 pulpen adalah Rp34.000. Harga 2 buku tulis dan 1 pulpen adalah ....",
+      "pertanyaan": "Perhatikan lima gambar berikut.\n\nGambar yang **tidak** memiliki kesamaan pola dengan gambar lainnya adalah ....",
       "opsi": {
-        "A": "Rp13.000",
-        "B": "Rp18.000",
-        "C": "Rp16.000",
-        "D": "Rp21.000",
-        "E": "Rp26.000"
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
       "kunci": "D",
       "pembahasan": {
-        "inti": "Misalkan b = harga buku tulis dan p = harga pulpen.\n\n- 2b + 3p = 31.000 ... (1)\n- 3b + 2p = 34.000 ... (2)\n\n**Cara cepat:** jumlahkan dan kurangkan kedua persamaan.\n\n- (1) + (2): 5b + 5p = 65.000, sehingga b + p = 13.000.\n- (2) − (1): b − p = 3.000.\n\nDari b + p = 13.000 dan b − p = 3.000 diperoleh b = 8.000 dan p = 5.000.\n\nHarga 2 buku tulis dan 1 pulpen = 2 × 8.000 + 5.000 = **Rp21.000**.",
+        "inti": "Hitung sisi bangun dan titik di dalamnya:\n\n| Gambar | Sisi | Titik |\n|---|---|---|\n| A | 3 | 3 |\n| B | 5 | 5 |\n| C | 6 | 6 |\n| D | 5 | 4 |\n| E | 4 | 4 |\n\nPada A, B, C, dan E, banyak titik **sama dengan** banyak sisi bangunnya. Hanya **D** yang melanggar: segi lima, tetapi berisi 4 titik. Jadi D tidak memiliki kesamaan pola dengan gambar lainnya.\n\nWarna bangun bukan aturannya. Ada dua bangun hitam (C dan E) dan tiga bangun putih, jadi warna tidak membuat satu gambar pun berbeda sendiri.",
         "opsi": {
-          "A": "Rp13.000 adalah harga 1 buku dan 1 pulpen (b + p). Peserta yang berhenti setelah menjumlahkan persamaan memilih opsi ini.",
-          "B": "Rp18.000 adalah harga 1 buku dan 2 pulpen (8.000 + 10.000). Peserta tertukar menghitung buku dan pulpen.",
-          "C": "Rp16.000 adalah harga 2 buku saja, tanpa pulpen.",
-          "E": "Rp26.000 adalah 2 × (b + p). Peserta mengira yang ditanyakan dua pasang buku dan pulpen."
+          "A": "Segitiga berisi 3 titik, sesuai aturan. Bentuk segitiganya memang hanya satu, tetapi C dan E juga berbentuk unik, jadi bentuk bukan pembeda tunggal.",
+          "B": "Segi lima berisi 5 titik, sesuai aturan. Bandingkan dengan D yang bentuknya sama tetapi titiknya kurang satu.",
+          "C": "Segi enam berisi 6 titik, sesuai aturan. Warna hitamnya tidak unik karena E juga hitam.",
+          "E": "Persegi berisi 4 titik, sesuai aturan. Banyak titiknya sama dengan D, tetapi bangunnya bersisi 4."
         },
-        "konsep": "**Trik koefisien tertukar:** jika koefisien kedua persamaan saling bertukar (2b + 3p dan 3b + 2p), jumlahkan untuk mendapat b + p dan kurangkan untuk mendapat b − p. Cara ini jauh lebih cepat daripada eliminasi biasa."
+        "konsep": "**Ketidaksamaan berbasis hitungan:** jika bangun dan titik sama-sama berbeda di setiap gambar, coba hubungkan keduanya (sama dengan, satu lebih banyak, dua kali). Membuat tabel kecil sisi–titik mempercepat pemeriksaan."
       },
-      "tips": "Perhatikan bentuk yang ditanyakan. Kadang yang ditanyakan langsung b + p, sehingga **tidak perlu mencari harga satuan**. Baca pertanyaan sebelum mulai menghitung."
+      "tips": "Untuk ketidaksamaan gambar, jangan berhenti pada perbedaan yang paling mencolok (warna atau bentuk luar). Cari aturan yang dipenuhi **empat** gambar sekaligus. Jika suatu ciri hanya membuat satu gambar unik tetapi gambar lain juga unik dengan cara serupa, ciri itu bukan aturannya.",
+      "gambar": [
+        {
+          "file": "gambar/p02-064-soal.svg",
+          "alt": "Lima gambar berlabel A sampai E. A: segitiga putih berisi 3 titik. B: segi lima putih berisi 5 titik. C: segi enam hitam berisi 6 titik putih. D: segi lima putih berisi 4 titik. E: persegi hitam berisi 4 titik putih."
+        }
+      ]
     },
     {
       "id": "p02-065",
       "nomor": 65,
       "kategori": "TIU",
-      "subtopik": "Bilangan",
-      "topik": "KPK pada lampu yang berkedip bersamaan",
+      "subtopik": "Serial Gambar",
+      "topik": "Serial gambar: panah yang berputar 45° searah jarum jam",
       "tingkat": "mudah",
-      "pertanyaan": "Tiga lampu sinyal berkedip masing-masing setiap 6 detik, 8 detik, dan 12 detik. Jika ketiganya berkedip bersamaan pada pukul 07.00.00, ketiganya akan berkedip bersamaan lagi untuk pertama kalinya setelah ... detik.",
+      "pertanyaan": "Perhatikan deret gambar berikut. Pilihan A–E ada pada gambar kedua.\n\nGambar yang tepat untuk mengisi tanda tanya adalah ....",
       "opsi": {
-        "A": "12",
-        "B": "48",
-        "C": "24",
-        "D": "26",
-        "E": "576"
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
       "kunci": "C",
       "pembahasan": {
-        "inti": "Ketiga lampu berkedip bersamaan lagi pada waktu yang merupakan **kelipatan persekutuan** dari 6, 8, dan 12. Yang pertama kali adalah **KPK**-nya.\n\nFaktorisasi prima:\n\n- 6 = 2 × 3\n- 8 = 2³\n- 12 = 2² × 3\n\nKPK = pangkat tertinggi dari setiap faktor = 2³ × 3 = **24**.\n\nPeriksa: 24 ÷ 6 = 4, 24 ÷ 8 = 3, dan 24 ÷ 12 = 2. Semuanya bulat, dan tidak ada bilangan lebih kecil yang habis dibagi ketiganya.",
+        "inti": "Unsur yang berubah hanya **arah panah**. Gambar 1 menunjuk ke atas, gambar 2 ke kanan atas, gambar 3 ke kanan, dan gambar 4 ke kanan bawah. Setiap langkah, panah berputar **45° searah jarum jam** (seperdelapan putaran). Bentuk, ukuran, dan warna panah tidak berubah.\n\nLanjutkan satu langkah lagi: dari kanan bawah, putaran 45° searah jarum jam menghasilkan panah yang menunjuk **ke bawah**. Itu gambar **C**.",
         "opsi": {
-          "A": "12 habis dibagi 6 dan 12, tetapi **tidak** habis dibagi 8. Lampu kedua belum berkedip pada detik ke-12.",
-          "B": "48 memang kelipatan persekutuan, tetapi bukan yang **terkecil**. Ketiganya sudah berkedip bersamaan pada detik ke-24.",
-          "D": "26 adalah jumlah 6 + 8 + 12. Menjumlahkan interval tidak berkaitan dengan waktu berkedip bersamaan.",
-          "E": "576 adalah hasil kali 6 × 8 × 12. Hasil kali memang kelipatan persekutuan, tetapi jauh dari yang terkecil."
+          "A": "Panah ke kiri bawah adalah hasil dua langkah (90°) dari gambar 4, bukan satu langkah.",
+          "B": "Panah ke kanan sama dengan gambar 3. Peserta yang mengira polanya bolak-balik akan memilih ini.",
+          "D": "Panah ke atas berarti kembali ke gambar 1, seolah putaran 180° sekaligus. Tidak sesuai langkah 45°.",
+          "E": "Panah ke kiri adalah hasil tiga langkah (135°) dari gambar 4."
         },
-        "konsep": "**KPK vs FPB:** kata kunci *bersamaan lagi*, *bertemu lagi*, atau *serentak lagi* berarti KPK. Kata kunci *dibagi rata sebanyak-banyaknya* atau *kelompok terbesar* berarti FPB."
+        "konsep": "**Putaran pada serial gambar:** hitung besar sudut per langkah (45°, 90°, atau 180°) dan arahnya (searah atau berlawanan jarum jam). Bantu dengan membayangkan jarum jam: 45° searah jarum jam dari arah kanan bawah berakhir di arah bawah."
       },
-      "tips": "Untuk bilangan kecil, KPK bisa dicari dengan **mendaftar kelipatan bilangan terbesar** (12, 24, 36, ...) lalu memeriksa apakah habis dibagi bilangan lain. Cara ini sering lebih cepat daripada faktorisasi."
+      "tips": "Untuk serial gambar, amati **satu unsur sekaligus**: arah, posisi, jumlah, bentuk, lalu warna. Catat perubahannya dari gambar 1 ke 2, 2 ke 3, dan seterusnya. Jika ada dua unsur yang berubah, lanjutkan keduanya secara terpisah, lalu cari opsi yang memenuhi **semua** aturan sekaligus.",
+      "gambar": [
+        {
+          "file": "gambar/p02-065-soal.svg",
+          "alt": "Empat gambar berurutan berisi satu panah hitam: gambar 1 menunjuk ke atas, gambar 2 ke kanan atas, gambar 3 ke kanan, gambar 4 ke kanan bawah, lalu sel kelima bertanda tanya."
+        },
+        {
+          "file": "gambar/p02-065-opsi.svg",
+          "alt": "Pilihan: A panah ke kiri bawah, B panah ke kanan, C panah ke bawah, D panah ke atas, E panah ke kiri."
+        }
+      ]
     },
     {
       "id": "p02-066",

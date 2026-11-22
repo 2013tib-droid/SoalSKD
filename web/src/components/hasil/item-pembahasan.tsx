@@ -3,6 +3,7 @@
 import { BookOpen, CaretDown, CheckCircle, Flag, Lightbulb, MinusCircle, XCircle } from "@phosphor-icons/react";
 import type { ItemHasil, StatusJawaban } from "@/lib/nilai";
 import { TeksMd } from "@/components/teks-md";
+import { GambarSoal } from "@/components/gambar-soal";
 
 const ikonStatus: Record<StatusJawaban, { Ikon: typeof CheckCircle; kelas: string; label: string }> = {
   benar: { Ikon: CheckCircle, kelas: "text-success", label: "Benar" },
@@ -58,6 +59,7 @@ export function ItemPembahasan({ item, ragu }: { item: ItemHasil; ragu: boolean 
         <div className="body-5 text-text">
           <TeksMd>{item.pertanyaan}</TeksMd>
         </div>
+        <GambarSoal gambar={item.gambar} />
 
         <ul className="flex flex-col gap-2">
           {item.opsi.map(({ huruf, teks }) => {

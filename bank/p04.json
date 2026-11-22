@@ -1666,29 +1666,39 @@
       "id": "p04-058",
       "nomor": 58,
       "kategori": "TIU",
-      "subtopik": "Soal Cerita",
-      "topik": "Volume balok untuk menghitung air yang perlu ditambahkan",
+      "subtopik": "Serial Gambar",
+      "topik": "Serial gambar: titik berpindah pojok dan garis bertambah satu",
       "tingkat": "sedang",
-      "pertanyaan": "Bak penampungan air berbentuk balok dengan ukuran bagian dalam 2 m × 1,5 m × 1,2 m. Bak itu sudah terisi air ⅔ bagian. Banyak air yang masih harus ditambahkan agar bak penuh adalah ....",
+      "pertanyaan": "Perhatikan deret gambar berikut. Pilihan A–E ada pada gambar kedua.\n\nGambar yang tepat untuk mengisi tanda tanya adalah ....",
       "opsi": {
-        "A": "2.400 liter",
-        "B": "1.200 liter",
-        "C": "3.600 liter",
-        "D": "120 liter",
-        "E": "12.000 liter"
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
       "kunci": "B",
       "pembahasan": {
-        "inti": "Hitung volume penuh, lalu cari bagian yang masih kosong.\n\n- Volume penuh = 2 × 1,5 × 1,2 = **3,6 m³**\n- Air yang sudah ada = ⅔ × 3,6 = 2,4 m³\n- Bagian yang kosong = 3,6 − 2,4 = 1,2 m³, atau langsung ⅓ × 3,6 = **1,2 m³**\n\nUbah ke liter: 1 m³ = 1.000 liter, jadi 1,2 m³ = **1.200 liter**.\n\nCara lebih cepat: yang ditanyakan adalah bagian kosong, yaitu 1 − ⅔ = ⅓ dari volume penuh. Hitung langsung ⅓ × 3,6 m³ tanpa menghitung air yang sudah ada.",
+        "inti": "Amati dua unsur secara terpisah:\n\n1. **Titik hitam** berpindah ke pojok berikutnya **searah jarum jam**: kiri atas → kanan atas → kanan bawah → kiri bawah. Langkah berikutnya kembali ke **kiri atas**.\n2. **Garis tegak** di dalam persegi bertambah satu: 1, 2, 3, 4. Gambar berikutnya berisi **5 garis**.\n\nGambar yang memenuhi kedua aturan adalah titik di kiri atas dengan 5 garis, yaitu gambar **B**.",
         "opsi": {
-          "A": "2.400 liter adalah air yang **sudah ada** di bak. Peserta salah membaca yang ditanyakan.",
-          "C": "3.600 liter adalah volume **bak penuh**. Peserta lupa mengurangi air yang sudah ada.",
-          "D": "120 liter didapat jika peserta menganggap 1 m³ = 100 liter.",
-          "E": "12.000 liter didapat jika peserta menganggap 1 m³ = 10.000 liter."
+          "A": "Titiknya benar (kiri atas), tetapi garisnya tetap 4. Aturan garis bertambah tidak dipakai.",
+          "C": "Garisnya benar (5), tetapi titik berada di kanan atas, seolah melompat dua pojok.",
+          "D": "Garisnya benar (5), tetapi titik tetap di kiri bawah seperti gambar 4.",
+          "E": "Titiknya benar, tetapi garisnya 6, bertambah dua dari gambar 4."
         },
-        "konsep": "**Volume balok** = panjang × lebar × tinggi. **Konversi:** 1 m³ = 1.000 dm³ = 1.000 liter, dan 1 dm³ = 1 liter. Untuk soal “berapa lagi agar penuh”, hitung langsung bagian yang kosong."
+        "konsep": "**Gerak memutar:** pada serial yang bergerak mengelilingi pojok, setelah pojok terakhir gerakan kembali ke pojok pertama. Hitung garis dengan menyentuhkan ujung pensil satu per satu agar tidak terlewat. Pengecoh pada soal ini dibuat dengan mengubah hanya satu unsur, jadi periksa titik dan garis secara terpisah sebelum memilih."
       },
-      "tips": "Dalam soal bangun ruang berisi air, semua angka antara (volume penuh, volume terisi, dan volume kosong) biasanya muncul di opsi. **Baca ulang pertanyaannya** sebelum memilih, dan periksa konversi satuan."
+      "tips": "Untuk serial gambar, amati **satu unsur sekaligus**: arah, posisi, jumlah, bentuk, lalu warna. Catat perubahannya dari gambar 1 ke 2, 2 ke 3, dan seterusnya. Jika ada dua unsur yang berubah, lanjutkan keduanya secara terpisah, lalu cari opsi yang memenuhi **semua** aturan sekaligus.",
+      "gambar": [
+        {
+          "file": "gambar/p04-058-soal.svg",
+          "alt": "Empat gambar berurutan, masing-masing persegi bergaris tegak dengan satu titik hitam di salah satu pojok sel. Gambar 1: titik kiri atas, 1 garis. Gambar 2: titik kanan atas, 2 garis. Gambar 3: titik kanan bawah, 3 garis. Gambar 4: titik kiri bawah, 4 garis. Sel kelima bertanda tanya."
+        },
+        {
+          "file": "gambar/p04-058-opsi.svg",
+          "alt": "Pilihan: A titik kiri atas, 4 garis; B titik kiri atas, 5 garis; C titik kanan atas, 5 garis; D titik kiri bawah, 5 garis; E titik kiri atas, 6 garis."
+        }
+      ]
     },
     {
       "id": "p04-059",
@@ -1722,57 +1732,73 @@
       "id": "p04-060",
       "nomor": 60,
       "kategori": "TIU",
-      "subtopik": "Logika Proposisi",
-      "topik": "Kontraposisi sebagai pernyataan ekuivalen implikasi",
+      "subtopik": "Ketidaksamaan Gambar",
+      "topik": "Ketidaksamaan gambar: letak titik terhadap dua bangun yang bertumpang tindih",
       "tingkat": "sedang",
-      "pertanyaan": "Pernyataan yang ekuivalen dengan “Jika berkas lengkap, maka permohonan diproses” adalah ....",
+      "pertanyaan": "Perhatikan lima gambar berikut.\n\nGambar yang **tidak** memiliki kesamaan pola dengan gambar lainnya adalah ....",
       "opsi": {
-        "A": "Jika permohonan diproses, maka berkas lengkap",
-        "B": "Jika berkas tidak lengkap, maka permohonan tidak diproses",
-        "C": "Berkas lengkap dan permohonan tidak diproses",
-        "D": "Berkas tidak lengkap atau permohonan tidak diproses",
-        "E": "Jika permohonan tidak diproses, maka berkas tidak lengkap"
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
       "kunci": "E",
       "pembahasan": {
-        "inti": "Misalkan p = berkas lengkap, q = permohonan diproses. Pernyataan soal adalah **p → q**.\n\nBentuk yang ekuivalen dengan implikasi adalah **kontraposisi**: ~q → ~p, yaitu “Jika permohonan **tidak diproses**, maka berkas **tidak lengkap**.” Itulah opsi E.\n\nLogikanya sederhana. Jika setiap berkas lengkap pasti diproses, maka permohonan yang tidak diproses tidak mungkin berasal dari berkas lengkap. Implikasi dan kontraposisinya selalu memiliki nilai kebenaran yang sama untuk setiap kemungkinan.",
+        "inti": "Setiap gambar berisi satu lingkaran dan satu segitiga yang saling bertumpang tindih, ditambah satu titik hitam. Posisi, ukuran, dan arah bangunnya berbeda-beda, jadi yang perlu dibandingkan adalah **letak titik** terhadap kedua bangun.\n\n- A, B, C, D: titik berada **di dalam segitiga** tetapi **di luar lingkaran**.\n- E: titik berada di dalam segitiga **dan juga** di dalam lingkaran, yaitu di daerah irisan.\n\nJadi **E** yang tidak memiliki kesamaan dengan gambar lainnya.",
         "opsi": {
-          "A": "Ini **konvers** (q → p). Konvers tidak ekuivalen dengan implikasi. Permohonan bisa saja diproses karena alasan lain walaupun berkas belum lengkap.",
-          "B": "Jebakan terkuat. Ini **invers** (~p → ~q). Invers juga tidak ekuivalen. Kalimat ini sering dipilih karena terasa wajar dalam kehidupan sehari-hari.",
-          "C": "Ini **negasi** dari implikasi (p ∧ ~q). Nilainya selalu berlawanan dengan pernyataan soal.",
-          "D": "Ini ~p ∨ ~q, yang ekuivalen dengan p → ~q. Bentuk ekuivalen disjungsi yang benar adalah ~p ∨ q, yaitu “berkas tidak lengkap atau permohonan diproses”."
+          "A": "Titik di dalam segitiga, di luar lingkaran. Sesuai pola.",
+          "B": "Segitiganya terbalik arah, tetapi titik tetap di dalam segitiga dan di luar lingkaran. Arah segitiga bukan aturannya.",
+          "C": "Lingkaran berada di atas segitiga dan tampak paling berbeda susunannya, tetapi titiknya tetap di dalam segitiga dan di luar lingkaran.",
+          "D": "Susunannya miring, tetapi letak titik sama dengan A, B, dan C."
         },
-        "konsep": "**Empat bentuk turunan p → q:** konvers q → p, invers ~p → ~q, kontraposisi ~q → ~p, dan negasi p ∧ ~q. Yang **ekuivalen** dengan p → q hanya kontraposisi dan ~p ∨ q. Konvers dan invers saling ekuivalen satu sama lain, tetapi tidak dengan implikasi asal."
+        "konsep": "**Letak relatif:** pada gambar dengan bangun bertumpang tindih, bagi bidang menjadi daerah: hanya di bangun pertama, hanya di bangun kedua, di irisan, dan di luar keduanya. Lalu tentukan daerah tempat titik berada di setiap gambar."
       },
-      "tips": "Ingat rumus **“tukar dan negasikan”**: kontraposisi menukar posisi p dan q **sekaligus** menegasikan keduanya. Jika hanya ditukar (konvers) atau hanya dinegasikan (invers), hasilnya tidak ekuivalen."
+      "tips": "Untuk ketidaksamaan gambar, jangan berhenti pada perbedaan yang paling mencolok (warna atau bentuk luar). Cari aturan yang dipenuhi **empat** gambar sekaligus. Jika suatu ciri hanya membuat satu gambar unik tetapi gambar lain juga unik dengan cara serupa, ciri itu bukan aturannya.",
+      "gambar": [
+        {
+          "file": "gambar/p04-060-soal.svg",
+          "alt": "Lima gambar berlabel A sampai E. Setiap gambar berisi satu lingkaran dan satu segitiga yang saling bertumpang tindih dengan posisi dan ukuran berbeda, serta satu titik hitam. Letak titik: A, B, C, dan D di dalam segitiga tetapi di luar lingkaran; E di dalam segitiga dan di dalam lingkaran."
+        }
+      ]
     },
     {
       "id": "p04-061",
       "nomor": 61,
       "kategori": "TIU",
-      "subtopik": "Logika Proposisi",
-      "topik": "Mengenali konvers implikasi",
+      "subtopik": "Analogi Gambar",
+      "topik": "Analogi gambar: pencerminan kiri-kanan pada bangun tak simetris",
       "tingkat": "mudah",
-      "pertanyaan": "Konvers dari pernyataan “Jika hujan turun, maka apel pagi ditiadakan” adalah ....",
+      "pertanyaan": "Perhatikan hubungan antargambar berikut. Pilihan A–E ada pada gambar kedua.\n\nGambar yang tepat untuk mengisi tanda tanya adalah ....",
       "opsi": {
-        "A": "Jika apel pagi ditiadakan, maka hujan turun",
-        "B": "Jika hujan tidak turun, maka apel pagi tidak ditiadakan",
-        "C": "Jika apel pagi tidak ditiadakan, maka hujan tidak turun",
-        "D": "Hujan turun dan apel pagi tidak ditiadakan",
-        "E": "Hujan tidak turun atau apel pagi ditiadakan"
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
       "kunci": "A",
       "pembahasan": {
-        "inti": "Misalkan p = hujan turun, q = apel pagi ditiadakan. Pernyataan soal adalah **p → q**.\n\n**Konvers** dibentuk dengan **menukar posisi** sebab dan akibat tanpa menegasikan: **q → p**. Hasilnya: “Jika apel pagi ditiadakan, maka hujan turun.” Itulah opsi A.\n\nPerlu diingat, konvers tidak ekuivalen dengan pernyataan asal. Apel pagi bisa ditiadakan karena alasan lain, misalnya ada kegiatan mendesak, walaupun tidak hujan. Soal ini hanya menanyakan bentuk konversnya, bukan pernyataan yang ekuivalen.",
+        "inti": "Gambar pertama: bendera dengan **tiang di kiri** dan kain menunjuk ke kanan di bagian atas. Gambar kedua: **tiang di kanan** dan kain menunjuk ke kiri, tetap di bagian atas. Bagian atas dan bawah tidak berubah, hanya kiri dan kanan yang tertukar. Ini **pencerminan kiri-kanan** (cermin tegak).\n\nPutaran 180° tidak cocok karena kain akan pindah ke bawah. Pencerminan atas-bawah juga tidak cocok karena tiang tetap di kiri.\n\nTerapkan pada gambar ketiga (batang tegak di kiri, kaki menjulur ke kanan di bawah). Cerminkan kiri-kanan: batang pindah ke kanan dan kaki menjulur ke kiri, tetap di bawah. Itu gambar **A**.",
         "opsi": {
-          "B": "Ini **invers** (~p → ~q): kedua bagian dinegasikan tanpa ditukar.",
-          "C": "Ini **kontraposisi** (~q → ~p): kedua bagian ditukar sekaligus dinegasikan. Jebakan ini muncul karena kontraposisi juga melibatkan pertukaran posisi.",
-          "D": "Ini **negasi** dari implikasi (p ∧ ~q).",
-          "E": "Ini bentuk disjungsi yang **ekuivalen** dengan implikasi asal (~p ∨ q), bukan konversnya."
+          "B": "Hasil pencerminan atas-bawah: kaki pindah ke atas, batang tetap di kiri.",
+          "C": "Hasil putaran 180°: batang di kanan, tetapi kaki pindah ke atas.",
+          "D": "Sama dengan gambar ketiga. Tidak ada perubahan.",
+          "E": "Hasil putaran 90° searah jarum jam. Bangunnya menjadi rebah."
         },
-        "konsep": "**Ringkasan:** implikasi p → q; konvers q → p (tukar); invers ~p → ~q (negasikan); kontraposisi ~q → ~p (tukar dan negasikan). Konvers dan invers selalu ekuivalen satu sama lain."
+        "konsep": "**Membedakan transformasi:** cermin kiri-kanan menukar kiri dan kanan saja; cermin atas-bawah menukar atas dan bawah saja; putaran 180° menukar keduanya sekaligus. Periksa satu bagian khas (kain bendera, kaki bangun) untuk menentukan transformasi yang dipakai."
       },
-      "tips": "Hafalkan pasangan kata kerjanya: **konvers = tukar**, **invers = negasikan**, **kontraposisi = tukar + negasikan**. Cocokkan setiap opsi dengan tiga aturan ini."
+      "tips": "Untuk analogi gambar, tulis dulu perubahan dari gambar pertama ke kedua dalam kata-kata (misalnya \"diputar 90° searah jarum jam dan warnanya dibalik\"). Pastikan tafsiran lain tidak cocok, lalu terapkan perubahan yang sama persis pada gambar ketiga.",
+      "gambar": [
+        {
+          "file": "gambar/p04-061-soal.svg",
+          "alt": "Analogi: gambar pertama bendera dengan tiang di kiri dan kain segitiga hitam menunjuk ke kanan di bagian atas; gambar kedua bendera dengan tiang di kanan dan kain menunjuk ke kiri di bagian atas; gambar ketiga bangun hitam berbentuk huruf L (batang tegak di kiri, kaki menjulur ke kanan di bawah); gambar keempat bertanda tanya."
+        },
+        {
+          "file": "gambar/p04-061-opsi.svg",
+          "alt": "Pilihan: A bangun L dengan batang di kanan dan kaki ke kiri di bawah; B batang di kiri dan kaki ke kanan di atas; C batang di kanan dan kaki ke kiri di atas; D sama dengan gambar ketiga; E bangun rebah dengan batang mendatar di atas dan kaki menurun di kiri."
+        }
+      ]
     },
     {
       "id": "p04-062",

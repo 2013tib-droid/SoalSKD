@@ -25,6 +25,10 @@ Pakai lagi untuk Paket 3, 4, dan seterusnya.
    Field `id` dan `nomor` tidak perlu diisi.
 5. **Gabung dan validasi setelah setiap batch:**
    `python3 tools/bangun_paket.py gabung p03 <folder-batch>`. Perbaiki semua galat.
+   TIU wajib memuat minimal satu analogi gambar, satu ketidaksamaan gambar, dan satu serial
+   gambar. Definisikan gambarnya di `tools/buat_figural.py` (state + aturan), jalankan skrip itu,
+   lalu pastikan "0 galat" (jawaban tunggal, kunci di bank cocok). Pola dan cara berpikirnya
+   jangan diulang antarpaket.
 6. **Commit dan push setiap satu subtes selesai** (TWK, lalu TIU, lalu TKP). Container
    bisa hilang, jadi jangan menunggu sampai 110 soal.
 7. **Akhiri dengan:** validator 0 galat dan 0 peringatan, `node ebook/buat-ebook.mjs bank/p03.json`
