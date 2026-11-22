@@ -1604,29 +1604,39 @@
       "id": "p07-055",
       "nomor": 55,
       "kategori": "TIU",
-      "subtopik": "Aritmetika Sosial",
-      "topik": "Bruto, tara, dan netto pada keuntungan penjualan beras",
+      "subtopik": "Analogi Gambar",
+      "topik": "Analogi gambar: juring dibagi dua tanpa mengubah daerah berarsir",
       "tingkat": "sedang",
-      "pertanyaan": "Koperasi pegawai membeli 5 karung beras dengan bruto masing-masing 50 kg dan tara 2%. Harga seluruhnya Rp2.940.000. Semua beras dijual eceran dengan harga Rp13.000 per kg. Keuntungan koperasi adalah ....",
+      "pertanyaan": "Perhatikan hubungan antargambar berikut. Pilihan A–E ada pada gambar kedua.\n\nGambar yang tepat untuk mengisi tanda tanya adalah ....",
       "opsi": {
-        "A": "Rp310.000",
-        "B": "Rp297.000",
-        "C": "Rp180.000",
-        "D": "Rp250.000",
-        "E": "Rp245.000"
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
-      "kunci": "E",
+      "kunci": "D",
       "pembahasan": {
-        "inti": "**Bruto** adalah berat kotor (beras + karung), **tara** adalah berat kemasan, dan **netto** adalah berat bersih yang benar-benar bisa dijual.\n\n1. Bruto total = 5 × 50 = 250 kg.\n2. Tara 2% berlaku untuk setiap karung, jadi tara total = 2% × 250 = 5 kg (1 kg per karung).\n3. Netto = 250 − 5 = **245 kg**.\n4. Hasil penjualan = 245 × Rp13.000 = Rp3.185.000.\n5. Keuntungan = Rp3.185.000 − Rp2.940.000 = **Rp245.000**.\n\nHarga beli per kg netto adalah Rp2.940.000 : 245 = Rp12.000, sehingga untung per kg Rp1.000. Kunci soal ini adalah memastikan yang dikalikan dengan harga jual adalah **netto**, bukan bruto.",
+        "inti": "Gambar pertama: lingkaran dibagi **2** juring, setengah kanan hitam. Gambar kedua: lingkaran dibagi **4** juring, dua juring kanan hitam. Setiap juring dibelah menjadi dua, sehingga banyak juring **dua kali lipat**, tetapi **daerah yang hitam tetap sama** (tetap setengah lingkaran bagian kanan).\n\nGambar ketiga: lingkaran dibagi **3** juring, satu juring hitam mulai dari arah atas searah jarum jam. Belah setiap juring menjadi dua: lingkaran terbagi **6** juring, dan juring hitam tadi menjadi **dua juring bersebelahan** yang mulai dari arah atas. Itu gambar **D**.",
         "opsi": {
-          "A": "Menjual bruto 250 kg, seolah-olah karungnya ikut terjual: 250 × 13.000 − 2.940.000.",
-          "B": "Tara 2% dihitung dari satu karung saja (1 kg), sehingga netto dianggap 249 kg.",
-          "C": "Tara 2% dibaca sebagai 2 kg per karung, sehingga netto dianggap 240 kg.",
-          "D": "Untung per kg (Rp1.000) benar, tetapi dikalikan dengan bruto 250 kg, bukan netto 245 kg."
+          "A": "Banyak juringnya benar (6), tetapi tiga juring hitam berarti setengah lingkaran, lebih luas dari daerah hitam semula (sepertiga).",
+          "B": "Banyak juring tidak berubah dan juring hitamnya bergeser. Tidak ada pembelahan.",
+          "C": "Banyak juringnya benar, tetapi hanya satu juring hitam. Daerah hitam menyusut menjadi seperenam.",
+          "E": "Lingkaran dibagi 4, bukan 6. Ini meniru gambar kedua, bukan menerapkan aturannya pada gambar ketiga."
         },
-        "konsep": "**Bruto = netto + tara.** Tara dalam persen dihitung dari bruto. Harga jual dan harga beli per kg dihitung berdasarkan netto, karena hanya berat bersih yang bernilai jual."
+        "konsep": "**Pecahan senilai dalam gambar:** 1/2 = 2/4 dan 1/3 = 2/6. Membelah setiap bagian menjadi dua mengubah banyak bagian, tetapi tidak mengubah besar daerah yang diarsir. Periksa juga **letak** daerah berarsir, bukan hanya banyaknya."
       },
-      "tips": "Tulis tiga angka (bruto, tara, netto) sebelum menghitung uang. Jika tara dalam persen, hitung dari bruto total agar tidak lupa mengalikan dengan banyak karung."
+      "tips": "Untuk analogi gambar, tulis dulu perubahan dari gambar pertama ke kedua dalam kata-kata (misalnya \"diputar 90° searah jarum jam dan warnanya dibalik\"). Pastikan tafsiran lain tidak cocok, lalu terapkan perubahan yang sama persis pada gambar ketiga.",
+      "gambar": [
+        {
+          "file": "gambar/p07-055-soal.svg",
+          "alt": "Analogi dengan lingkaran yang dibagi menjadi juring sama besar. Gambar pertama: lingkaran dibagi 2, setengah kanan hitam. Gambar kedua: lingkaran dibagi 4, dua juring kanan hitam. Gambar ketiga: lingkaran dibagi 3, satu juring hitam mulai dari arah atas searah jarum jam. Gambar keempat bertanda tanya."
+        },
+        {
+          "file": "gambar/p07-055-opsi.svg",
+          "alt": "Pilihan: A dibagi 6, tiga juring hitam; B dibagi 3, satu juring hitam di posisi lain; C dibagi 6, satu juring hitam; D dibagi 6, dua juring hitam bersebelahan mulai dari atas; E dibagi 4, dua juring hitam."
+        }
+      ]
     },
     {
       "id": "p07-056",
@@ -1688,29 +1698,39 @@
       "id": "p07-058",
       "nomor": 58,
       "kategori": "TIU",
-      "subtopik": "Perbandingan",
-      "topik": "Perbandingan senilai takaran bahan untuk jumlah porsi berbeda",
+      "subtopik": "Serial Gambar",
+      "topik": "Serial gambar: bilangan ganjil berurutan dengan bentuk berselang-seling",
       "tingkat": "mudah",
-      "pertanyaan": "Petugas dapur umum di posko pengungsian memakai resep bubur: 750 gram beras untuk 12 porsi. Untuk membuat 30 porsi dengan resep yang sama, beras yang diperlukan adalah ....",
+      "pertanyaan": "Perhatikan deret gambar berikut. Pilihan A–E ada pada gambar kedua.\n\nGambar yang tepat untuk mengisi tanda tanya adalah ....",
       "opsi": {
-        "A": "1.875 gram",
-        "B": "300 gram",
-        "C": "2.250 gram",
-        "D": "1.500 gram",
-        "E": "1.800 gram"
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
       "kunci": "A",
       "pembahasan": {
-        "inti": "Banyak porsi dan banyak beras adalah **perbandingan senilai**: makin banyak porsi, makin banyak beras dengan perbandingan yang sama.\n\nBeras = 750 × 30/12 = 750 × 2,5 = **1.875 gram**.\n\nCara lain: beras per porsi = 750 : 12 = 62,5 gram, lalu 62,5 × 30 = 1.875 gram. Cek kewajaran: 30 porsi adalah 2,5 kali 12 porsi, sehingga berasnya juga 2,5 kali 750 gram. Dalam kilogram, hasilnya 1,875 kg. Pada soal perbandingan, langkah pertama selalu menentukan apakah dua besaran senilai (naik bersama) atau berbalik nilai (yang satu naik, yang lain turun). Contoh berbalik nilai sebagai pembanding: jika 12 relawan memasak dalam 5 jam, 30 relawan tidak memerlukan beras lebih sedikit, tetapi memerlukan waktu lebih singkat.",
+        "inti": "Ada dua aturan:\n\n1. **Banyak benda:** 1, 3, 5, 7. Bertambah dua setiap langkah (bilangan ganjil berurutan), jadi berikutnya **9**.\n2. **Bentuk:** lingkaran hitam, persegi putih, lingkaran hitam, persegi putih. Berselang-seling, jadi berikutnya **lingkaran hitam**.\n\nGambar yang tepat: 9 lingkaran hitam, yaitu gambar **A**. Pada gambar ini, sembilan lingkaran mengisi penuh susunan 3 × 3, sehingga mudah dibedakan dari 8 lingkaran (petak tengah kosong).",
         "opsi": {
-          "B": "Memakai perbandingan berbalik nilai (750 × 12/30). Makin banyak porsi tidak mungkin memerlukan beras lebih sedikit.",
-          "C": "Membulatkan 30 porsi menjadi tiga kali lipat 12 porsi (36 porsi).",
-          "D": "Membulatkan 30 porsi menjadi dua kali lipat 12 porsi (24 porsi).",
-          "E": "Beras per porsi 62,5 gram dibulatkan menjadi 60 gram, lalu dikali 30."
+          "B": "Banyaknya benar (9), tetapi bentuknya persegi. Setelah persegi, giliran lingkaran.",
+          "C": "Bentuknya benar, tetapi banyaknya 8 (petak tengah kosong). Pola bertambah dua dari 7 menghasilkan 9.",
+          "D": "Bentuknya benar, tetapi banyaknya tetap 7, sama dengan gambar 4.",
+          "E": "Banyaknya benar, tetapi bentuknya segitiga, yang tidak pernah muncul di deret."
         },
-        "konsep": "**Senilai:** a₁/b₁ = a₂/b₂ (porsi–bahan, jarak–bensin, waktu–upah). **Berbalik nilai:** a₁ × b₁ = a₂ × b₂ (pekerja–waktu, kecepatan–waktu)."
+        "konsep": "**Hitung dengan pola susunan:** benda yang disusun dalam kisi lebih cepat dihitung dengan melihat petak yang kosong. Pada serial dua aturan, satu aturan biasanya angka dan satu lagi bentuk atau warna. Periksa keduanya sebelum memilih, karena setiap pengecoh di sini hanya salah pada satu aturan."
       },
-      "tips": "Hitung faktor pengalinya lebih dulu (30 : 12 = 2,5), lalu kalikan bahan dengan faktor itu. Jangan membulatkan di tengah jalan."
+      "tips": "Untuk serial gambar, amati **satu unsur sekaligus**: arah, posisi, jumlah, bentuk, lalu warna. Catat perubahannya dari gambar 1 ke 2, 2 ke 3, dan seterusnya. Jika ada dua unsur yang berubah, lanjutkan keduanya secara terpisah, lalu cari opsi yang memenuhi **semua** aturan sekaligus.",
+      "gambar": [
+        {
+          "file": "gambar/p07-058-soal.svg",
+          "alt": "Empat gambar berurutan: 1 lingkaran hitam kecil, 3 persegi putih kecil, 5 lingkaran hitam kecil, 7 persegi putih kecil, lalu sel kelima bertanda tanya."
+        },
+        {
+          "file": "gambar/p07-058-opsi.svg",
+          "alt": "Pilihan: A 9 lingkaran hitam kecil; B 9 persegi putih kecil; C 8 lingkaran hitam kecil; D 7 lingkaran hitam kecil; E 9 segitiga hitam kecil."
+        }
+      ]
     },
     {
       "id": "p07-059",
@@ -1809,20 +1829,20 @@
         "B": "P < Q",
         "C": "P = Q",
         "D": "Hubungan P dan Q tidak dapat ditentukan",
-        "E": "P ≥ Q"
+        "E": "P ≤ Q"
       },
-      "kunci": "D",
+      "kunci": "E",
       "pembahasan": {
-        "inti": "**Cari semua nilai x.** x² = 4x → x² − 4x = 0 → x(x − 4) = 0 → **x = 0 atau x = 4**.\n\n**Cari nilai y.** Simbol √16 berarti akar kuadrat tak negatif, sehingga **y = 4** (bukan ±4).\n\n**Bandingkan.** Jika x = 0, maka P < Q. Jika x = 4, maka P = Q. Karena hubungannya bisa berbeda tergantung nilai x, dan tidak ada opsi yang mencakup kedua kemungkinan secara tepat, jawabannya **hubungan P dan Q tidak dapat ditentukan**. Kesalahan paling umum adalah membagi kedua ruas dengan x sehingga hanya memperoleh x = 4. Pembagian dengan x hanya sah jika x ≠ 0, dan justru x = 0 adalah salah satu penyelesaiannya. Kedua akar diperiksa dengan program.",
+        "inti": "**Cari semua nilai x.** x² = 4x → x² − 4x = 0 → x(x − 4) = 0 → **x = 0 atau x = 4**.\n\n**Cari nilai y.** Simbol √16 berarti akar kuadrat tak negatif, sehingga **y = 4** (bukan ±4).\n\n**Bandingkan setiap kemungkinan.**\n\n- Jika x = 0, maka P = 0 dan Q = 4, jadi P < Q.\n- Jika x = 4, maka P = 4 dan Q = 4, jadi P = Q.\n\nKedua kemungkinan sama-sama memenuhi **P ≤ Q** (kurang dari **atau** sama dengan). Jadi P ≤ Q pasti benar, dan hubungan P dan Q **dapat** ditentukan. Kesalahan paling umum adalah membagi kedua ruas dengan x sehingga hanya memperoleh x = 4. Pembagian dengan x hanya sah jika x ≠ 0, dan justru x = 0 adalah salah satu penyelesaiannya.",
         "opsi": {
-          "A": "Tidak ada nilai x yang membuat x > 4.",
-          "B": "Hanya benar untuk x = 0. Untuk x = 4, P = Q.",
-          "C": "Muncul jika kedua ruas dibagi x sehingga x = 0 hilang.",
-          "E": "Salah untuk x = 0, karena 0 ≥ 4 tidak benar. Bisa muncul jika y dianggap −4 atau 4."
+          "A": "Tidak ada nilai x yang membuat x > 4, jadi P > Q tidak pernah terjadi.",
+          "B": "Hanya benar untuk x = 0. Untuk x = 4, P = Q, sehingga P < Q tidak pasti.",
+          "C": "Hanya benar untuk x = 4. Muncul jika kedua ruas dibagi x sehingga penyelesaian x = 0 hilang.",
+          "D": "Jebakan utama. Relasinya memang berganti antara < dan =, tetapi kedua kemungkinan tercakup oleh ≤. Selama ada opsi yang berlaku untuk semua kemungkinan, hubungan itu dapat ditentukan."
         },
         "konsep": "**Jangan membagi dengan variabel** yang mungkin bernilai nol; faktorkan saja. **√a** (a > 0) selalu bernilai positif. Nilai ± hanya muncul saat menyelesaikan persamaan y² = a."
       },
-      "tips": "Dalam perbandingan kuantitatif, cari **semua** nilai variabel, lalu bandingkan setiap kemungkinan. Jika hasil perbandingannya berbeda-beda, pilih “tidak dapat ditentukan”."
+      "tips": "Dalam perbandingan kuantitatif, cari **semua** nilai variabel, lalu bandingkan setiap kemungkinan. Jika hasilnya berbeda-beda, periksa dulu apakah ada opsi gabungan (≤ atau ≥) yang mencakup semua kemungkinan. Pilih “tidak dapat ditentukan” hanya jika tidak ada relasi yang selalu berlaku."
     },
     {
       "id": "p07-063",
@@ -1884,29 +1904,35 @@
       "id": "p07-065",
       "nomor": 65,
       "kategori": "TIU",
-      "subtopik": "Soal Cerita",
-      "topik": "Banyak anak tangga eskalator yang bergerak",
+      "subtopik": "Ketidaksamaan Gambar",
+      "topik": "Ketidaksamaan gambar: banyak titik dua lebih sedikit dari banyak sisi",
       "tingkat": "sulit",
-      "pertanyaan": "Andi menaiki eskalator yang sedang bergerak naik. Jika ia melangkah dengan kecepatan biasanya, ia menapak 20 anak tangga sampai di atas. Jika ia melangkah dua kali lebih cepat, ia menapak 32 anak tangga. Banyak anak tangga eskalator yang terlihat dari bawah sampai atas adalah ....",
+      "pertanyaan": "Perhatikan lima gambar berikut.\n\nGambar yang **tidak** memiliki kesamaan pola dengan gambar lainnya adalah ....",
       "opsi": {
-        "A": "60",
-        "B": "80",
-        "C": "52",
-        "D": "128",
-        "E": "48"
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
       "kunci": "B",
       "pembahasan": {
-        "inti": "Misalkan kecepatan langkah Andi v anak tangga per detik, kecepatan eskalator e anak tangga per detik, dan banyak anak tangga N. Selama Andi naik, N = anak tangga yang ia tapak + anak tangga yang dibawa eskalator.\n\n- **Keadaan 1:** waktu = 20/v. N = 20 + e × 20/v.\n- **Keadaan 2:** kecepatan 2v, waktu = 32/(2v) = 16/v. N = 32 + e × 16/v.\n\nMisalkan k = e/v. Maka 20 + 20k = 32 + 16k → 4k = 12 → **k = 3**. Jadi N = 20 + 20 × 3 = **80**. Cek dengan keadaan 2: 32 + 16 × 3 = 80. Kuncinya adalah menyadari bahwa melangkah dua kali lebih cepat memotong waktu menjadi 32/(2v), sehingga eskalator membawa lebih sedikit anak tangga. Persamaan dan akarnya diperiksa dengan program.",
+        "inti": "Hitung sisi bangun dan titik di dalamnya:\n\n| Gambar | Sisi | Titik | Sisi − 2 |\n|---|---|---|---|\n| A | 5 | 3 | 3 |\n| B | 6 | 3 | 4 |\n| C | 4 | 2 | 2 |\n| D | 3 | 1 | 1 |\n| E | 6 | 4 | 4 |\n\nPada A, C, D, dan E, banyak titik **sama dengan banyak sisi dikurangi 2**. Hanya **B** yang melanggar: segi enam berisi 3 titik, padahal seharusnya 4.\n\nPengecohnya: B dan E sama-sama segi enam, dan warna bangun (hitam pada C dan E, putih pada A, B, dan D) tidak membuat satu gambar pun berbeda sendiri. Pembedanya hanya hubungan sisi dan titik.",
         "opsi": {
-          "A": "Hanya menghitung anak tangga yang dibawa eskalator pada keadaan 1 (20k = 60), lupa menambah anak tangga yang ditapak Andi.",
-          "C": "Menjumlahkan kedua angka di soal (20 + 32) tanpa model.",
-          "D": "Waktu keadaan 2 dihitung 32/v (lupa kecepatan menjadi 2v), lalu memakai k = 3: 32 + 32 × 3.",
-          "E": "Menganggap eskalator sama cepat dengan langkah biasa Andi (k = 1), lalu memakai keadaan 2: 32 + 16."
+          "A": "Segi lima berisi 3 titik (5 − 2 = 3). Sesuai pola. Banyak titiknya sama dengan B, tetapi bangunnya berbeda.",
+          "C": "Persegi berisi 2 titik (4 − 2 = 2). Sesuai pola. Warna hitamnya tidak unik karena E juga hitam.",
+          "D": "Segitiga berisi 1 titik (3 − 2 = 1). Sesuai pola. Banyak titiknya paling sedikit, tetapi itu karena sisinya juga paling sedikit.",
+          "E": "Segi enam berisi 4 titik (6 − 2 = 4). Sesuai pola. Bandingkan dengan B yang bangunnya sama tetapi titiknya kurang satu."
         },
-        "konsep": "**Gerak relatif:** jika dua hal bergerak searah, jaraknya dijumlahkan; waktu = banyak langkah sendiri : kecepatan sendiri. Bentuk umum: N = s₁ + k·s₁/c₁ = s₂ + k·s₂/c₂."
+        "konsep": "**Hubungan selisih:** jika banyak titik tidak sama dengan banyak sisi, coba selisih tetap (sisi − 1, sisi − 2) atau kelipatan. Dua gambar dengan bangun sama tetapi isi berbeda (di sini B dan E) sering menjadi petunjuk letak gambar yang menyimpang."
       },
-      "tips": "Buat dua persamaan untuk dua keadaan dengan N yang sama, lalu cari perbandingan kecepatan k. Setelah mendapat N, cek pada kedua keadaan."
+      "tips": "Untuk ketidaksamaan gambar, jangan berhenti pada perbedaan yang paling mencolok (warna atau bentuk luar). Cari aturan yang dipenuhi **empat** gambar sekaligus. Jika suatu ciri hanya membuat satu gambar unik tetapi gambar lain juga unik dengan cara serupa, ciri itu bukan aturannya.",
+      "gambar": [
+        {
+          "file": "gambar/p07-065-soal.svg",
+          "alt": "Lima gambar berlabel A sampai E. A: segi lima putih berisi 3 titik. B: segi enam putih berisi 3 titik. C: persegi hitam berisi 2 titik putih. D: segitiga putih berisi 1 titik. E: segi enam hitam berisi 4 titik putih."
+        }
+      ]
     },
     {
       "id": "p07-066",

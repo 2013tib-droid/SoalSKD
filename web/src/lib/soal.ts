@@ -19,6 +19,7 @@ type SoalBank = {
   pembahasan: { inti: string; opsi: Record<string, string>; konsep?: string };
   tips: string;
   rujukan?: string[];
+  gambar?: { file: string; alt: string }[];
 };
 
 type PaketBank = { skema: number; meta: { id: string; judul: string; status: string }; soal: SoalBank[] };
@@ -37,7 +38,11 @@ export type SoalUjian = {
   kategori: Subtes;
   pertanyaan: string;
   opsi: { huruf: string; teks: string }[];
+  /** TIU figural: SVG dari `bank/gambar/` sebagai data URI, jadi ikut gerbang paket seperti teks soal. */
+  gambar: GambarSoal[];
 };
+
+export type GambarSoal = { src: string; alt: string };
 
 /** Soal lengkap untuk halaman hasil, dikirim hanya setelah jawaban dikumpulkan. */
 export type SoalPembahasan = SoalUjian & {
@@ -68,6 +73,22 @@ async function bacaPaket(paket: string): Promise<PaketBank | null> {
   }
 }
 
+const DIR_BANK = path.join(ROOT, "bank");
+
+/** Baca SVG soal dari `bank/` (path relatif, tidak boleh keluar folder) menjadi data URI. */
+async function muatGambar(s: SoalBank): Promise<GambarSoal[]> {
+  return Promise.all(
+    (s.gambar ?? []).map(async (g) => {
+      const file = path.resolve(DIR_BANK, g.file);
+      if (!file.startsWith(DIR_BANK + path.sep) || !file.endsWith(".svg")) {
+        throw new Error(`path gambar tidak sah: ${g.file}`);
+      }
+      const svg = await readFile(file);
+      return { src: `data:image/svg+xml;base64,${svg.toString("base64")}`, alt: g.alt };
+    }),
+  );
+}
+
 const keOpsi = (s: SoalBank) => Object.entries(s.opsi).map(([huruf, teks]) => ({ huruf, teks }));
 
 const kunciDari = (s: SoalBank) =>
@@ -79,28 +100,35 @@ export async function ambilJudulPaket(paket: string): Promise<string | null> {
 
 export async function ambilSoalUjian(paket: string): Promise<SoalUjian[] | null> {
   const data = await bacaPaket(paket);
-  return (
-    data &&
-    data.soal.map((s) => ({ id: s.id, kategori: s.kategori, pertanyaan: s.pertanyaan, opsi: keOpsi(s) }))
+  if (!data) return null;
+  return Promise.all(
+    data.soal.map(async (s) => ({
+      id: s.id,
+      kategori: s.kategori,
+      pertanyaan: s.pertanyaan,
+      opsi: keOpsi(s),
+      gambar: await muatGambar(s),
+    })),
   );
 }
 
 export async function ambilSoalPembahasan(paket: string): Promise<SoalPembahasan[] | null> {
   const data = await bacaPaket(paket);
-  return (
-    data &&
-    data.soal.map((s) => ({
+  if (!data) return null;
+  return Promise.all(
+    data.soal.map(async (s) => ({
       id: s.id,
       kategori: s.kategori,
       subtopik: s.subtopik,
       pertanyaan: s.pertanyaan,
       opsi: keOpsi(s),
+      gambar: await muatGambar(s),
       kunci: kunciDari(s),
       bobot: s.bobot ?? null,
       pembahasan: { inti: s.pembahasan.inti, opsi: s.pembahasan.opsi, konsep: s.pembahasan.konsep ?? null },
       tips: s.tips,
       rujukan: s.rujukan ?? [],
-    }))
+    })),
   );
 }
 

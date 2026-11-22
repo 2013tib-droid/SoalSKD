@@ -1218,7 +1218,7 @@
       },
       "kunci": "C",
       "pembahasan": {
-        "inti": "Ketentuan 4 membuat slot kosong pasti Ruang 2 sore, sehingga lima slot lain terisi semua. Satu-satunya rapat sore berada di Ruang 1. Ketentuan 1 menempatkan Q di sesi siang. Rapat T tidak mungkin pagi, karena S harus lebih awal (ketentuan 3). Jika T siang, kedua slot siang terpakai Q dan T, S harus pagi, dan P harus seruang dengan S. Jika S di Ruang 2 pagi, P tidak punya slot lagi di Ruang 2. Jika S di Ruang 1 pagi, P harus di Ruang 1 sore, dan R (Ruang 1) tidak mendapat slot. Jadi **T sore di Ruang 1**. Sisa slot: Ruang 1 pagi dan siang, Ruang 2 pagi dan siang. Jika R di Ruang 1 siang, Q terpaksa di Ruang 2 siang, dan P serta S tinggal mendapat Ruang 1 pagi dan Ruang 2 pagi, sehingga tidak seruang. Maka R pagi di Ruang 1, Q siang di Ruang 1, dan P serta S mengisi Ruang 2 pagi dan siang dalam urutan bebas.\n\n| Sesi | Ruang 1 | Ruang 2 |\n|---|---|---|\n| Pagi | R | P atau S |\n| Siang | Q | S atau P |\n| Sore | T | kosong |\n\nPemeriksaan semua susunan dengan komputer menemukan tepat dua jadwal sah, dan keduanya sesuai tabel ini.",
+        "inti": "Ketentuan 4 membuat slot kosong pasti Ruang 2 sore, sehingga lima slot lain terisi semua. Satu-satunya rapat sore berada di Ruang 1. Ketentuan 1 menempatkan Q di sesi siang. Rapat T tidak mungkin pagi, karena S harus lebih awal (ketentuan 3). Jika T siang, Q dan T memakai kedua slot siang, sehingga P, R, dan S tinggal mendapat Ruang 1 pagi, Ruang 2 pagi, dan Ruang 1 sore. R wajib di Ruang 1, jadi Ruang 1 tinggal punya satu slot dan Ruang 2 juga hanya punya satu slot. P dan S harus seruang dan membutuhkan dua slot di ruang yang sama, jadi T siang mustahil. Jadi **T sore di Ruang 1**. Sisa slot: Ruang 1 pagi dan siang, Ruang 2 pagi dan siang. Jika R di Ruang 1 siang, Q terpaksa di Ruang 2 siang, dan P serta S tinggal mendapat Ruang 1 pagi dan Ruang 2 pagi, sehingga tidak seruang. Maka R pagi di Ruang 1, Q siang di Ruang 1, dan P serta S mengisi Ruang 2 pagi dan siang dalam urutan bebas.\n\n| Sesi | Ruang 1 | Ruang 2 |\n|---|---|---|\n| Pagi | R | P atau S |\n| Siang | Q | S atau P |\n| Sore | T | kosong |\n\nPemeriksaan semua susunan dengan komputer menemukan tepat dua jadwal sah, dan keduanya sesuai tabel ini.",
         "opsi": {
           "A": "**Mungkin**, tidak pasti. P bisa pagi atau siang di Ruang 2.",
           "B": "**Mungkin**, tidak pasti. S bisa pagi atau siang, asalkan tetap lebih awal daripada T yang berada di sesi sore.",
@@ -1541,57 +1541,77 @@
       "id": "p05-053",
       "nomor": 53,
       "kategori": "TIU",
-      "subtopik": "Soal Cerita",
-      "topik": "Mencampur dua jenis beras untuk harga rata-rata tertentu",
+      "subtopik": "Analogi Gambar",
+      "topik": "Analogi gambar: hanya panah yang diputar, titik tetap di tempat",
       "tingkat": "sedang",
-      "pertanyaan": "Pengelola dapur umum mencampur beras jenis A seharga Rp12.000 per kg dan beras jenis B seharga Rp15.000 per kg. Ia ingin memperoleh 60 kg beras campuran dengan harga rata-rata Rp13.000 per kg. Banyak beras jenis B yang harus dicampurkan adalah ....",
+      "pertanyaan": "Perhatikan hubungan antargambar berikut. Pilihan A–E ada pada gambar kedua.\n\nGambar yang tepat untuk mengisi tanda tanya adalah ....",
       "opsi": {
-        "A": "40 kg",
-        "B": "30 kg",
-        "C": "36 kg",
-        "D": "20 kg",
-        "E": "24 kg"
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
       "kunci": "D",
       "pembahasan": {
-        "inti": "Misalkan beras B = b kg, maka beras A = (60 − b) kg. Total harga campuran harus sama dengan 60 kg × Rp13.000:\n\n12.000 × (60 − b) + 15.000 × b = 13.000 × 60\n720.000 + 3.000b = 780.000\n3.000b = 60.000\n**b = 20 kg**\n\nJadi beras A = 40 kg dan beras B = 20 kg. Cek: 40 × 12.000 + 20 × 15.000 = 480.000 + 300.000 = 780.000 = 60 × 13.000. Cara cepat: perbandingan A : B = (15.000 − 13.000) : (13.000 − 12.000) = 2 : 1, sehingga B = 1/3 × 60 = 20 kg.",
+        "inti": "Bandingkan gambar pertama dan kedua dengan teliti. **Panah** berputar 90° searah jarum jam (dari atas ke kanan), tetapi **titik hitam tetap** di pojok kiri atas. Jadi yang diputar hanya panahnya, bukan seluruh gambar. Jika seluruh gambar diputar, titik akan ikut pindah ke pojok kanan atas.\n\nTerapkan pada gambar ketiga (panah ke kiri, titik di pojok kanan bawah). Panah diputar 90° searah jarum jam menjadi menunjuk **ke atas**, dan titik **tetap di kanan bawah**. Itu gambar **D**.",
         "opsi": {
-          "A": "40 kg adalah banyak beras **A**. Muncul jika perbandingan 2 : 1 tertukar.",
-          "B": "30 kg muncul jika kedua beras dicampur sama banyak. Campuran sama banyak menghasilkan harga Rp13.500, bukan Rp13.000.",
-          "C": "36 kg muncul dari perbandingan 3 : 2 (selisih 15.000 − 12.000 dan 15.000 − 13.000), lalu mengambil 3/5 × 60. Selisih yang dipakai seharusnya selisih masing-masing harga terhadap harga campuran.",
-          "E": "24 kg berasal dari perbandingan keliru yang sama (3 : 2), tetapi mengambil 2/5 × 60."
+          "A": "Jebakan utama. Ini hasil memutar **seluruh** gambar 90° searah jarum jam: panah ke atas, tetapi titik ikut pindah ke kiri bawah. Pasangan pertama menunjukkan titik tidak ikut berputar.",
+          "B": "Panah diputar 90° berlawanan arah jarum jam (dari kiri ke bawah).",
+          "C": "Panah diputar 180° (dari kiri ke kanan).",
+          "E": "Arah panah benar, tetapi titik dipindahkan ke kiri atas, meniru letak titik pada pasangan pertama."
         },
-        "konsep": "**Aturan campuran (silang selisih):** banyak A : banyak B = (harga B − harga campuran) : (harga campuran − harga A). Harga campuran yang lebih dekat ke harga A berarti beras A lebih banyak."
+        "konsep": "**Putaran sebagian:** sebelum menerapkan aturan, periksa unsur mana yang berubah dan mana yang tetap. Pengecoh favorit pada analogi gambar adalah memutar seluruh gambar padahal hanya satu unsur yang diputar."
       },
-      "tips": "Cek logika sebelum memilih: harga campuran Rp13.000 lebih dekat ke Rp12.000, jadi beras A harus lebih banyak dari beras B. Semua opsi yang membuat B ≥ 30 kg langsung gugur."
+      "tips": "Untuk analogi gambar, tulis dulu perubahan dari gambar pertama ke kedua dalam kata-kata (misalnya \"diputar 90° searah jarum jam dan warnanya dibalik\"). Pastikan tafsiran lain tidak cocok, lalu terapkan perubahan yang sama persis pada gambar ketiga.",
+      "gambar": [
+        {
+          "file": "gambar/p05-053-soal.svg",
+          "alt": "Analogi: gambar pertama panah hitam ke atas dengan titik hitam di pojok kiri atas; gambar kedua panah ke kanan dengan titik di pojok kiri atas; gambar ketiga panah ke kiri dengan titik di pojok kanan bawah; gambar keempat bertanda tanya."
+        },
+        {
+          "file": "gambar/p05-053-opsi.svg",
+          "alt": "Pilihan: A panah ke atas, titik kiri bawah; B panah ke bawah, titik kanan bawah; C panah ke kanan, titik kanan bawah; D panah ke atas, titik kanan bawah; E panah ke atas, titik kiri atas."
+        }
+      ]
     },
     {
       "id": "p05-054",
       "nomor": 54,
       "kategori": "TIU",
-      "subtopik": "Soal Cerita",
-      "topik": "Jabat tangan peserta rapat dengan peserta yang datang terlambat",
+      "subtopik": "Serial Gambar",
+      "topik": "Serial gambar: dua penanda bergerak berlawanan arah pada kisi 3 × 3",
       "tingkat": "sedang",
-      "pertanyaan": "Pada awal rapat koordinasi, setiap peserta yang hadir berjabat tangan tepat satu kali dengan setiap peserta lain, dan tercatat 45 jabat tangan. Kemudian 3 peserta datang terlambat. Masing-masing berjabat tangan tepat satu kali dengan setiap orang yang sudah ada di ruangan, termasuk dengan sesama peserta yang terlambat. Total jabat tangan dalam rapat itu adalah ....",
+      "pertanyaan": "Perhatikan deret gambar berikut. Pilihan A–E ada pada gambar kedua.\n\nGambar yang tepat untuk mengisi tanda tanya adalah ....",
       "opsi": {
-        "A": "78",
-        "B": "75",
-        "C": "66",
-        "D": "48",
-        "E": "81"
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
       "kunci": "A",
       "pembahasan": {
-        "inti": "**Langkah 1, cari jumlah peserta awal.** Jika ada n orang dan setiap pasangan berjabat tangan sekali, banyak jabat tangan = n(n − 1)/2. Dari n(n − 1)/2 = 45 diperoleh n(n − 1) = 90, sehingga **n = 10** (10 × 9 = 90).\n\n**Langkah 2, hitung tambahan.** Setiap peserta terlambat berjabat tangan dengan 10 peserta awal: 3 × 10 = 30. Sesama peserta terlambat berjabat tangan: 3 × 2/2 = 3.\n\n**Langkah 3, jumlahkan.** 45 + 30 + 3 = **78**. Cek dengan cara lain: total 13 orang, sehingga 13 × 12/2 = 78. Kedua cara memberi hasil yang sama.",
+        "inti": "Beri nomor petak 1–9 dari kiri atas, baris demi baris. Amati kedua penanda secara terpisah:\n\n1. **Petak hitam:** 1 → 3 → 5 → 7. Maju **dua petak** setiap langkah, jadi berikutnya **9**.\n2. **Tanda silang:** 9 → 8 → 7 → 6. Mundur **satu petak** setiap langkah, jadi berikutnya **5**.\n\nGambar yang tepat: petak hitam di 9 (kanan bawah) dan silang di 5 (tengah), yaitu gambar **A**.",
         "opsi": {
-          "B": "75 = 45 + 30. Jabat tangan **sesama peserta terlambat** (3 kali) lupa dihitung.",
-          "C": "66 = 12 × 11/2. Muncul jika jumlah peserta awal salah dihitung menjadi 9 karena memakai rumus n(n + 1)/2 = 45.",
-          "D": "48 = 45 + 3. Hanya menghitung jabat tangan sesama peserta terlambat dan melupakan jabat tangan mereka dengan 10 peserta awal.",
-          "E": "81 = 45 + 3 × 12. Setiap peserta terlambat dianggap berjabat tangan dengan 12 orang, sehingga jabat tangan sesama terlambat terhitung dua kali."
+          "B": "Petak hitamnya benar, tetapi silang mundur dua petak (ke 4).",
+          "C": "Silangnya benar, tetapi petak hitam hanya maju satu petak (ke 8).",
+          "D": "Silangnya benar, tetapi petak hitam kembali ke petak 1, seolah polanya berulang dari awal.",
+          "E": "Petak hitamnya benar, tetapi silang tidak bergerak (tetap di 6)."
         },
-        "konsep": "**Rumus jabat tangan:** n orang → n(n − 1)/2. Jabat tangan antara A dan B hanya dihitung satu kali, karena itulah dibagi 2. Jika ada tambahan k orang, total baru = (n + k)(n + k − 1)/2."
+        "konsep": "**Penomoran petak:** pada kisi, beri nomor petak agar gerakan bisa ditulis sebagai angka. Dua penanda yang bergerak dengan langkah berbeda harus dilacak sendiri-sendiri, lalu digabungkan di akhir. Jika langkah melewati petak 9, lanjutkan lagi dari petak 1 (berputar), dan sebaliknya untuk gerak mundur."
       },
-      "tips": "Jika soal bertahap, hitung total akhir dengan rumus langsung untuk mengecek. Di sini, 13 orang → 78 jabat tangan. Jika hasil bertahap berbeda, ada bagian yang terlewat atau terhitung dua kali."
+      "tips": "Untuk serial gambar, amati **satu unsur sekaligus**: arah, posisi, jumlah, bentuk, lalu warna. Catat perubahannya dari gambar 1 ke 2, 2 ke 3, dan seterusnya. Jika ada dua unsur yang berubah, lanjutkan keduanya secara terpisah, lalu cari opsi yang memenuhi **semua** aturan sekaligus.",
+      "gambar": [
+        {
+          "file": "gambar/p05-054-soal.svg",
+          "alt": "Empat gambar berurutan berupa kisi 3 × 3 (petak dinomori 1–9 dari kiri atas, baris demi baris) dengan satu petak hitam dan satu tanda silang. Gambar 1: hitam di petak 1, silang di petak 9. Gambar 2: hitam 3, silang 8. Gambar 3: hitam 5, silang 7. Gambar 4: hitam 7, silang 6. Sel kelima bertanda tanya."
+        },
+        {
+          "file": "gambar/p05-054-opsi.svg",
+          "alt": "Pilihan: A hitam 9, silang 5; B hitam 9, silang 4; C hitam 8, silang 5; D hitam 1, silang 5; E hitam 9, silang 6."
+        }
+      ]
     },
     {
       "id": "p05-055",
@@ -1737,29 +1757,35 @@
       "id": "p05-060",
       "nomor": 60,
       "kategori": "TIU",
-      "subtopik": "Logika Proposisi",
-      "topik": "Mengenali invers implikasi",
+      "subtopik": "Ketidaksamaan Gambar",
+      "topik": "Ketidaksamaan gambar: bangun tanpa sumbu simetri",
       "tingkat": "mudah",
-      "pertanyaan": "Invers dari pernyataan “Jika hujan turun deras, maka apel pagi dibatalkan” adalah ....",
+      "pertanyaan": "Perhatikan lima gambar berikut.\n\nGambar yang **tidak** memiliki kesamaan pola dengan gambar lainnya adalah ....",
       "opsi": {
-        "A": "Jika apel pagi dibatalkan, maka hujan turun deras",
-        "B": "Jika apel pagi tidak dibatalkan, maka hujan tidak turun deras",
-        "C": "Hujan turun deras dan apel pagi tidak dibatalkan",
-        "D": "Hujan tidak turun deras atau apel pagi dibatalkan",
-        "E": "Jika hujan tidak turun deras, maka apel pagi tidak dibatalkan"
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
       "kunci": "E",
       "pembahasan": {
-        "inti": "Untuk implikasi p → q, dengan p = “hujan turun deras” dan q = “apel pagi dibatalkan”, ada tiga turunan:\n\n| Nama | Bentuk | Kalimat |\n|---|---|---|\n| Konvers | q → p | Jika apel dibatalkan, maka hujan deras |\n| **Invers** | **~p → ~q** | **Jika tidak hujan deras, maka apel tidak dibatalkan** |\n| Kontraposisi | ~q → ~p | Jika apel tidak dibatalkan, maka tidak hujan deras |\n\nInvers dibentuk dengan **menegasikan kedua bagian tanpa menukar posisinya**. Perlu diingat, invers tidak setara dengan pernyataan asal: apel bisa saja dibatalkan karena alasan lain walaupun tidak hujan.",
+        "inti": "Periksa apakah setiap bangun punya **sumbu simetri**, yaitu garis yang membagi bangun menjadi dua bagian yang saling bercermin.\n\n- A (rumah): sumbu simetri tegak di tengah.\n- B (panah ke kanan): sumbu simetri mendatar di tengah.\n- C (trapesium dengan sisi sejajar tegak): sumbu simetri mendatar di tengah.\n- D (tanda tambah): punya beberapa sumbu simetri.\n- E: persegi panjang yang satu pojoknya terpotong. Tidak ada garis yang membaginya menjadi dua bagian bercermin.\n\nJadi **E** yang tidak memiliki kesamaan dengan gambar lainnya.",
         "opsi": {
-          "A": "Ini **konvers** (q → p): posisi ditukar tanpa negasi.",
-          "B": "Ini **kontraposisi** (~q → ~p): posisi ditukar dan keduanya dinegasikan. Kontraposisi setara dengan pernyataan asal.",
-          "C": "Ini **negasi** implikasi (p ∧ ~q), yaitu satu-satunya keadaan yang membuat pernyataan asal salah.",
-          "D": "Ini bentuk **setara** dari implikasi (~p ∨ q). Nilai kebenarannya selalu sama dengan pernyataan asal."
+          "A": "Simetris terhadap garis tegak. Satu-satunya bangun bersisi lima, tetapi bangun lain juga punya banyak sisi yang berbeda-beda, jadi banyak sisi bukan aturannya.",
+          "B": "Simetris terhadap garis mendatar. Arah panah ke kanan tidak memengaruhi kesimetrisannya.",
+          "C": "Simetris terhadap garis mendatar. Trapesium ini diputar, sehingga sumbunya mendatar, bukan tegak.",
+          "D": "Simetris terhadap garis tegak, mendatar, dan diagonal."
         },
-        "konsep": "**Hafalan cepat:** konvers = tukar; invers = negasikan; kontraposisi = tukar dan negasikan. Yang setara dengan p → q hanya kontraposisi (~q → ~p) dan disjungsi (~p ∨ q)."
+        "konsep": "**Uji lipat:** bayangkan melipat gambar di sepanjang sebuah garis. Jika kedua bagian bertumpuk tepat, garis itu sumbu simetri. Coba lipatan tegak, mendatar, dan diagonal, karena bangun bisa saja diputar."
       },
-      "tips": "Untuk soal turunan implikasi, tandai p dan q di kalimat soal dengan huruf, lalu ubah setiap opsi menjadi simbol. Setelah menjadi simbol, jawaban terlihat dalam hitungan detik."
+      "tips": "Untuk ketidaksamaan gambar, jangan berhenti pada perbedaan yang paling mencolok (warna atau bentuk luar). Cari aturan yang dipenuhi **empat** gambar sekaligus. Jika suatu ciri hanya membuat satu gambar unik tetapi gambar lain juga unik dengan cara serupa, ciri itu bukan aturannya.",
+      "gambar": [
+        {
+          "file": "gambar/p05-060-soal.svg",
+          "alt": "Lima bangun putih bergaris tepi hitam berlabel A sampai E. A: bentuk rumah (segi lima). B: panah menunjuk ke kanan. C: trapesium yang sisi sejajarnya tegak. D: tanda tambah. E: persegi panjang yang pojok kanan bawahnya terpotong berbentuk persegi panjang kecil."
+        }
+      ]
     },
     {
       "id": "p05-061",

@@ -38,7 +38,8 @@ export type DataLanding = {
   totalSoal: number;
   soalPerPaket: number;
   durasiMenit: number;
-  durasiResmi: boolean;
+  /** Aturan acuan durasi paket lengkap; null = durasi resmi belum diisi, pakai durasi latihan. */
+  acuanDurasi: string | null;
   komposisi: { kode: string; jumlah: number; nilaiMaks: number }[];
   nilaiBenar: number;
   ambang: { kode: string; nilai: number }[] | null;
@@ -130,8 +131,8 @@ export function LayarLanding({ data, soalHero }: Props) {
     {
       t: "Berapa soal dan berapa lama satu paket?",
       j: `${data.soalPerPaket} soal (${komposisi}) dengan waktu ${data.durasiMenit} menit.${
-        data.durasiResmi
-          ? ""
+        data.acuanDurasi
+          ? ` Durasinya mengikuti ${data.acuanDurasi}. Cek aturan BKN/KemenPAN-RB terbaru.`
           : ` Untuk sementara durasinya ${DURASI_LATIHAN_MENIT_PER_SOAL} menit per soal, sampai durasi resmi tahun ini kami catat.`
       }`,
     },

@@ -1570,29 +1570,39 @@
       "id": "p06-054",
       "nomor": 54,
       "kategori": "TIU",
-      "subtopik": "Bilangan",
-      "topik": "Jumlah bilangan prima dalam suatu rentang",
+      "subtopik": "Analogi Gambar",
+      "topik": "Analogi gambar: bangun dibelah tegak dan hanya setengah kiri yang tersisa",
       "tingkat": "mudah",
-      "pertanyaan": "Jumlah semua bilangan prima di antara 40 dan 60 adalah ....",
+      "pertanyaan": "Perhatikan hubungan antargambar berikut. Pilihan A–E ada pada gambar kedua.\n\nGambar yang tepat untuk mengisi tanda tanya adalah ....",
       "opsi": {
-        "A": "294",
-        "B": "243",
-        "C": "184",
-        "D": "292",
-        "E": "300"
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
       "kunci": "B",
       "pembahasan": {
-        "inti": "Bilangan prima hanya memiliki dua faktor: 1 dan dirinya sendiri. Di antara 40 dan 60, coret dulu bilangan genap dan kelipatan 5, lalu uji sisanya dengan pembagi 3 dan 7 (cukup sampai √60 ≈ 7,7):\n\n- 41 ✔, 43 ✔, 47 ✔\n- 49 = 7 × 7 ✘\n- 51 = 3 × 17 ✘\n- 53 ✔\n- 57 = 3 × 19 ✘\n- 59 ✔\n\nPrima: 41, 43, 47, 53, 59. Jumlahnya 41 + 43 + 47 + 53 + 59 = **243**.",
+        "inti": "Gambar pertama: **lingkaran hitam utuh**. Gambar kedua: lingkaran yang sama, tetapi hanya **setengah kiri** yang masih hitam; setengah kanan tinggal garis putus-putus. Artinya, bangun dibelah dengan garis tegak di tengah, lalu hanya bagian kiri yang dipertahankan. Bentuk dan posisinya tidak berubah.\n\nTerapkan pada gambar ketiga, yaitu **rumah hitam utuh**. Belah dengan garis tegak di tengah dan sisakan bagian kiri: separuh kiri atap dan separuh kiri badan rumah tetap hitam, sedangkan separuh kanan tinggal garis putus-putus. Itu gambar **B**.\n\nGaris putus-putus membantu melihat bagian mana yang hilang, jadi yang perlu dicocokkan adalah **arah potongan** (tegak, bukan mendatar) dan **sisi yang disisakan** (kiri, bukan kanan).",
         "opsi": {
-          "A": "294 = 243 + 51. Bilangan 51 tampak prima, tetapi 5 + 1 = 6 habis dibagi 3, jadi 51 = 3 × 17.",
-          "C": "184 = 243 − 59. Bilangan 59 terlewat, mungkin karena dianggap di luar rentang atau tidak diuji.",
-          "D": "292 = 243 + 49. Bilangan 49 = 7 × 7, bukan prima.",
-          "E": "300 = 243 + 57. Bilangan 57 = 3 × 19; jumlah angkanya 12 habis dibagi 3."
+          "A": "Potongannya tegak, tetapi yang disisakan setengah kanan. Arah sisanya terbalik dari pasangan pertama.",
+          "C": "Yang disisakan setengah atas. Ini hasil potongan mendatar, bukan tegak.",
+          "D": "Yang disisakan setengah bawah, juga hasil potongan mendatar.",
+          "E": "Rumah masih utuh. Tidak ada bagian yang dihilangkan, padahal pada pasangan pertama setengah bangun hilang."
         },
-        "konsep": "**Uji prima cepat:** untuk n < 100, cukup uji pembagi 2, 3, 5, dan 7. Pengecoh favorit adalah bilangan ganjil yang “terlihat prima”: 49, 51, 57, 77, 87, 91."
+        "konsep": "**Analogi pemotongan:** tentukan dua hal dari pasangan pertama, yaitu **arah garis potong** (tegak, mendatar, atau diagonal) dan **bagian yang disisakan**. Pada lingkaran, potongan tegak dan mendatar sama-sama menghasilkan setengah lingkaran, jadi perhatikan posisinya, bukan hanya bentuknya."
       },
-      "tips": "Hafalkan bilangan ganjil di bawah 100 yang bukan prima tetapi sering dikira prima: **51, 57, 87** (kelipatan 3) dan **49, 77, 91** (kelipatan 7). Pakai uji jumlah angka untuk kelipatan 3."
+      "tips": "Untuk analogi gambar, tulis dulu perubahan dari gambar pertama ke kedua dalam kata-kata (misalnya \"diputar 90° searah jarum jam dan warnanya dibalik\"). Pastikan tafsiran lain tidak cocok, lalu terapkan perubahan yang sama persis pada gambar ketiga.",
+      "gambar": [
+        {
+          "file": "gambar/p06-054-soal.svg",
+          "alt": "Analogi: gambar pertama lingkaran hitam utuh; gambar kedua hanya setengah kiri lingkaran yang hitam, setengah kanan tinggal garis putus-putus; gambar ketiga bangun rumah hitam utuh (atap segitiga di atas badan persegi); gambar keempat bertanda tanya."
+        },
+        {
+          "file": "gambar/p06-054-opsi.svg",
+          "alt": "Pilihan, semuanya dengan garis putus-putus bentuk rumah utuh: A hanya setengah kanan yang hitam; B hanya setengah kiri yang hitam; C hanya setengah atas yang hitam; D hanya setengah bawah yang hitam; E rumah hitam utuh."
+        }
+      ]
     },
     {
       "id": "p06-055",
@@ -1626,29 +1636,35 @@
       "id": "p06-056",
       "nomor": 56,
       "kategori": "TIU",
-      "subtopik": "Peluang",
-      "topik": "Peluang dua orang tertentu duduk berdampingan dalam satu baris",
+      "subtopik": "Ketidaksamaan Gambar",
+      "topik": "Ketidaksamaan gambar: tiga petak hitam yang tidak segaris",
       "tingkat": "sedang",
-      "pertanyaan": "Lima orang, termasuk Rani dan Sinta, duduk secara acak di lima kursi yang berjajar dalam satu baris. Peluang Rani dan Sinta duduk berdampingan adalah ....",
+      "pertanyaan": "Perhatikan lima gambar berikut.\n\nGambar yang **tidak** memiliki kesamaan pola dengan gambar lainnya adalah ....",
       "opsi": {
-        "A": "1/5",
-        "B": "1/10",
-        "C": "1/20",
-        "D": "3/5",
-        "E": "2/5"
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
       "kunci": "E",
       "pembahasan": {
-        "inti": "**Banyak susunan seluruhnya:** 5! = 120.\n\n**Banyak susunan yang membuat Rani dan Sinta berdampingan:** satukan mereka sebagai satu blok. Sekarang ada 4 unsur (blok + 3 orang lain) yang bisa disusun 4! = 24 cara. Di dalam blok, Rani dan Sinta bisa bertukar tempat (RS atau SR), jadi dikali 2: 24 × 2 = 48.\n\nPeluang = 48/120 = **2/5**.\n\nCara lain yang lebih cepat: Ada 10 pasang kursi yang mungkin ditempati Rani dan Sinta (5C2 = 10), dan 4 di antaranya bersebelahan (1–2, 2–3, 3–4, 4–5). Peluang = 4/10 = 2/5.",
+        "inti": "Setiap kisi memiliki tepat tiga petak hitam, jadi banyak petak bukan pembedanya. Perhatikan **susunan** ketiga petak itu (petak dinomori 1–9 dari kiri atas):\n\n- A: 4, 5, 6, satu baris mendatar.\n- B: 1, 4, 7, satu kolom tegak.\n- C: 1, 5, 9, diagonal.\n- D: 3, 5, 7, diagonal lainnya.\n- E: 1, 5, 8, **tidak segaris**. Petak 1 dan 5 ada di diagonal, tetapi petak 8 keluar dari garis itu.\n\nJadi **E** yang tidak memiliki kesamaan dengan gambar lainnya.",
         "opsi": {
-          "A": "1/5 = 24/120: blok sudah benar, tetapi lupa mengalikan 2 untuk pertukaran posisi Rani dan Sinta di dalam blok.",
-          "B": "1/10: hanya menghitung satu pasang kursi dari 10 pasang yang mungkin, padahal ada 4 pasang kursi yang bersebelahan.",
-          "C": "1/20 = 1/5 × 1/4: peluang Rani di satu kursi tertentu dan Sinta di satu kursi tertentu di sebelahnya. Ini hanya satu dari banyak posisi yang memenuhi.",
-          "D": "3/5 adalah peluang **tidak** berdampingan (1 − 2/5). Hitungannya benar, tetapi menjawab kejadian sebaliknya."
+          "A": "Tiga petak segaris mendatar. Sesuai pola.",
+          "B": "Tiga petak segaris tegak. Sesuai pola, meskipun posisinya di tepi.",
+          "C": "Tiga petak segaris diagonal. Petak tengah dipakai, sama seperti A, D, dan E, jadi petak tengah bukan pembeda.",
+          "D": "Tiga petak segaris pada diagonal lainnya. Sesuai pola."
         },
-        "konsep": "**Teknik blok:** unsur yang harus berdekatan disatukan sebagai satu unsur, lalu dikali banyak susunan di dalam blok. Untuk n kursi berjajar, peluang dua orang tertentu berdampingan = 2/n."
+        "konsep": "**Garis pada kisi 3 × 3:** ada tepat delapan garis lurus yang memuat tiga petak, yaitu 3 baris, 3 kolom, dan 2 diagonal. Hafalkan bentuknya agar susunan yang tidak segaris cepat dikenali."
       },
-      "tips": "Untuk peluang kedudukan, sering ada jalan pintas dengan menghitung **pasangan kursi** saja: banyak pasangan bersebelahan dibagi banyak semua pasangan. Cara ini menghindari hitungan faktorial yang panjang."
+      "tips": "Untuk ketidaksamaan gambar, jangan berhenti pada perbedaan yang paling mencolok (warna atau bentuk luar). Cari aturan yang dipenuhi **empat** gambar sekaligus. Jika suatu ciri hanya membuat satu gambar unik tetapi gambar lain juga unik dengan cara serupa, ciri itu bukan aturannya.",
+      "gambar": [
+        {
+          "file": "gambar/p06-056-soal.svg",
+          "alt": "Lima kisi 3 × 3 berlabel A sampai E (petak dinomori 1–9 dari kiri atas, baris demi baris), masing-masing dengan tiga petak hitam. A: petak 4, 5, 6. B: petak 1, 4, 7. C: petak 1, 5, 9. D: petak 3, 5, 7. E: petak 1, 5, 8."
+        }
+      ]
     },
     {
       "id": "p06-057",
@@ -1682,29 +1698,39 @@
       "id": "p06-058",
       "nomor": 58,
       "kategori": "TIU",
-      "subtopik": "Peluang",
-      "topik": "Banyak kode genap empat angka tanpa pengulangan dengan pembagian kasus angka nol",
+      "subtopik": "Serial Gambar",
+      "topik": "Serial gambar: dua benda berputar pada bingkai dengan arah dan langkah berbeda",
       "tingkat": "sulit",
-      "pertanyaan": "Kode akses terdiri atas empat angka berbeda yang disusun dari angka 0–9. Angka pertama tidak boleh 0, dan kode harus membentuk bilangan genap. Banyak kode yang dapat dibuat adalah ....",
+      "pertanyaan": "Perhatikan deret gambar berikut. Pilihan A–E ada pada gambar kedua.\n\nGambar yang tepat untuk mengisi tanda tanya adalah ....",
       "opsi": {
-        "A": "2.520",
-        "B": "2.268",
-        "C": "2.240",
-        "D": "2.296",
-        "E": "1.792"
+        "A": "Gambar A",
+        "B": "Gambar B",
+        "C": "Gambar C",
+        "D": "Gambar D",
+        "E": "Gambar E"
       },
       "kunci": "D",
       "pembahasan": {
-        "inti": "Dua syarat (angka pertama bukan 0, angka terakhir genap) sama-sama melibatkan angka 0, jadi pisahkan kasus berdasarkan angka terakhir.\n\n**Kasus 1, angka terakhir 0:** angka pertama bebas dari 1–9 (9 pilihan), angka kedua 8 pilihan, angka ketiga 7 pilihan. Banyak kode = 9 × 8 × 7 = 504.\n\n**Kasus 2, angka terakhir 2, 4, 6, atau 8** (4 pilihan): angka pertama tidak boleh 0 dan tidak boleh sama dengan angka terakhir, jadi 8 pilihan. Angka kedua 8 pilihan (0 sekarang boleh), angka ketiga 7 pilihan. Banyak kode = 4 × 8 × 8 × 7 = 1.792.\n\nTotal = 504 + 1.792 = **2.296**.",
+        "inti": "Bingkai memiliki delapan titik letak: empat pojok dan empat tengah sisi. Lacak setiap benda sendiri-sendiri:\n\n1. **Lingkaran putih:** kiri atas → tengah atas → kanan atas → tengah kanan. Maju **satu titik searah jarum jam**, jadi berikutnya **pojok kanan bawah**.\n2. **Segitiga hitam:** tengah bawah → tengah kanan → tengah atas → tengah kiri. Mundur **dua titik berlawanan arah jarum jam** (melewati satu pojok setiap langkah), jadi berikutnya **tengah bawah**.\n\nGambar yang tepat: lingkaran di pojok kanan bawah dan segitiga di tengah bawah, yaitu gambar **D**.",
         "opsi": {
-          "A": "2.520 = 5 × 9 × 8 × 7: angka terakhir dipilih dari 5 angka genap, lalu angka pertama dianggap selalu punya 9 pilihan. Padahal jika angka terakhir bukan 0, angka pertama hanya punya 8 pilihan.",
-          "B": "2.268 = 4.536 ÷ 2: semua kode tanpa syarat genap (9 × 9 × 8 × 7) dibagi dua dengan anggapan separuhnya genap. Karena angka 0 tidak boleh di depan, banyak kode genap dan ganjil tidak sama.",
-          "C": "2.240 = 5 × 8 × 8 × 7: kasus 2 diterapkan juga untuk angka terakhir 0, sehingga pilihan angka pertama pada kasus 1 kurang satu.",
-          "E": "1.792 hanya kasus 2. Kasus angka terakhir 0 terlupa."
+          "A": "Segitiganya benar, tetapi lingkaran tidak bergerak (tetap di tengah kanan).",
+          "B": "Lingkarannya benar, tetapi segitiga bergerak searah jarum jam ke tengah kanan, berlawanan dengan arah geraknya selama ini.",
+          "C": "Lingkaran maju dua titik dan segitiga di pojok kanan bawah. Langkah keduanya tertukar.",
+          "E": "Lingkarannya benar, tetapi segitiga tidak bergerak (tetap di tengah kiri)."
         },
-        "konsep": "**Pembagian kasus pada kaidah pencacahan:** jika satu angka (biasanya 0) dibatasi di dua posisi sekaligus, pisahkan kasus “angka itu dipakai di posisi terbatas” dan “tidak dipakai di sana”. Isi dulu posisi yang paling dibatasi."
+        "konsep": "**Dua benda, dua aturan:** pada serial sulit, benda yang berbeda sering bergerak dengan arah dan besar langkah yang berbeda. Beri nomor delapan titik letak (1–8 searah jarum jam) agar langkahnya bisa dihitung."
       },
-      "tips": "Urutan pengisian kotak: posisi dengan syarat paling ketat lebih dulu (angka terakhir, lalu angka pertama), baru posisi bebas. Setiap kali ada angka 0 yang terlibat di dua syarat, langsung pecah menjadi dua kasus."
+      "tips": "Untuk serial gambar, amati **satu unsur sekaligus**: arah, posisi, jumlah, bentuk, lalu warna. Catat perubahannya dari gambar 1 ke 2, 2 ke 3, dan seterusnya. Jika ada dua unsur yang berubah, lanjutkan keduanya secara terpisah, lalu cari opsi yang memenuhi **semua** aturan sekaligus.",
+      "gambar": [
+        {
+          "file": "gambar/p06-058-soal.svg",
+          "alt": "Empat gambar berurutan. Setiap gambar memiliki bingkai persegi putus-putus dengan delapan titik letak: empat pojok dan empat tengah sisi. Ada satu lingkaran putih dan satu segitiga hitam. Gambar 1: lingkaran di pojok kiri atas, segitiga di tengah sisi bawah. Gambar 2: lingkaran di tengah sisi atas, segitiga di tengah sisi kanan. Gambar 3: lingkaran di pojok kanan atas, segitiga di tengah sisi atas. Gambar 4: lingkaran di tengah sisi kanan, segitiga di tengah sisi kiri. Sel kelima bertanda tanya."
+        },
+        {
+          "file": "gambar/p06-058-opsi.svg",
+          "alt": "Pilihan: A lingkaran di tengah sisi kanan, segitiga di tengah sisi bawah; B lingkaran di pojok kanan bawah, segitiga di tengah sisi kanan; C lingkaran di tengah sisi bawah, segitiga di pojok kanan bawah; D lingkaran di pojok kanan bawah, segitiga di tengah sisi bawah; E lingkaran di pojok kanan bawah, segitiga di tengah sisi kiri."
+        }
+      ]
     },
     {
       "id": "p06-059",

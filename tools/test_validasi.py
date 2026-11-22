@@ -32,6 +32,15 @@ def ganti_topik(p):
 jalan("salinan unik lolos", ganti_topik, 0, "0 galat")
 jalan("topik berulang dengan p01", ganti_id, 1, "topik TWK berulang")
 jalan("pertanyaan sama persis", lambda p: (ganti_id(p), [q.update(topik=q["topik"]+"x") for q in p["soal"]]), 1, "pertanyaan sama persis")
+def tanya_sama_gambar(beda):
+    def ubah(p):
+        ganti_topik(p)
+        gambar = sorted((root/"bank/gambar").glob("*.svg"))[:2]
+        for q, g in zip((s(p,8), s(p,9)), gambar if beda else gambar[:1]*2):
+            q.update(pertanyaan="Gambar yang tepat adalah ....", gambar=[{"file": f"gambar/{g.name}", "alt": "x"}])
+    return ubah
+jalan("pertanyaan sama, gambar beda", tanya_sama_gambar(True), 0, "0 galat")
+jalan("pertanyaan dan gambar sama", tanya_sama_gambar(False), 1, "pertanyaan sama persis")
 jalan("id sama dengan p01", lambda p: (ganti_topik(p), s(p,1).update(id="p01-001")), 1, "id p01-001")
 jalan("galat skema", lambda p: (ganti_topik(p), s(p,14).update(kunci="C")), 1, "GALAT")
 jalan("bobot TKP ganda", lambda p: (ganti_topik(p), s(p,14)["bobot"].update(A=5)), 1, "bobot TKP harus")
@@ -54,7 +63,7 @@ jalan("final + catatan_review", lambda p: (ganti_topik(p), p["meta"].update(stat
 jalan("gambar hilang", lambda p: (ganti_topik(p), s(p,7).update(gambar=[{"file":"gambar/tidak-ada.svg","alt":"x"}])), 1, "tidak ditemukan")
 jalan("** tak berpasangan", lambda p: (ganti_topik(p), s(p,1).update(tips="Ini **tebal")), 0, "tidak berpasangan")
 jalan("LaTeX", lambda p: (ganti_topik(p), s(p,12)["pembahasan"].update(konsep="$\\frac{1}{2}$")), 0, "LaTeX")
-jalan("kunci beruntun", lambda p: (ganti_topik(p), [s(p,n).update(kunci="A") for n in (1,2,3,4)], [s(p,n)["pembahasan"]["opsi"].update({h:"Penjelasan opsi ini cukup panjang untuk lolos." for h in "BCDE"}) for n in (1,2,3,4)]), 1, "berturut-turut")
+jalan("kunci beruntun", lambda p: (ganti_topik(p), [s(p,n).update(kunci="A") for n in (1,2,3,4)], [s(p,n)["pembahasan"]["opsi"].update({h:"Penjelasan opsi ini cukup panjang untuk lolos." for h in "BCDE"}) for n in (1,2,3,4)]), 0, "berturut-turut")
 
 # Argumen berupa folder (python3 tools/validasi.py bank/).
 def jalan_folder(nama, isi, harap_kode, harap_teks):

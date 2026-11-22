@@ -3,6 +3,7 @@
 import { CheckCircle } from "@phosphor-icons/react";
 import type { SoalUjian } from "@/lib/soal";
 import { TeksMd } from "@/components/teks-md";
+import { GambarSoal } from "@/components/gambar-soal";
 
 type Props = {
   soal: SoalUjian;
@@ -21,6 +22,7 @@ export function KartuSoal({ soal, nomor, terpilih, onPilih, terkunci }: Props) {
         <span className="sr-only">Soal nomor {nomor}. </span>
         <TeksMd>{soal.pertanyaan}</TeksMd>
       </div>
+      <GambarSoal gambar={soal.gambar} />
       <div role="radiogroup" aria-labelledby={idJudul} className="flex flex-col gap-3">
         {soal.opsi.map(({ huruf, teks }) => {
           const aktif = terpilih === huruf;

@@ -195,7 +195,9 @@ def cek_lintas_paket(daftar, lap):
             asal = f"{path.name} #{s['nomor']}"
             id_ke[s["id"]].append(asal)
             topik_ke[(s["kategori"], normal(s["topik"]))].append(asal)
-            tanya_ke[normal(s["pertanyaan"])].append(asal)
+            # Soal figural boleh memakai kalimat tanya yang sama selama gambarnya berbeda.
+            gambar = tuple(g["file"] for g in s.get("gambar", []))
+            tanya_ke[(normal(s["pertanyaan"]), gambar)].append(asal)
     for x, asal in id_ke.items():
         if len(asal) > 1:
             lap.g(", ".join(asal), f"id {x} dipakai lebih dari sekali")

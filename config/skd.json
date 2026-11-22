@@ -1,8 +1,9 @@
 {
-  "catatan": "Cek aturan BKN/KemenPAN-RB terbaru. Durasi dan ambang batas sengaja null sampai sumber resminya dicatat di `sumber`. Jumlah soal per subtes adalah standar komposisi produk ini (mengikuti proporsi SKD CAT).",
-  "sumber": null,
-  "bahan_cek": "Dari ingatan, BUKAN sumber: SKD CPNS 2023–2024 memakai 110 soal, 100 menit, ambang batas TWK 65, TIU 80, TKP 166. Cocokkan dengan pengumuman 2026 sebelum mengisi field di atas.",
-  "durasi_menit": null,
+  "catatan": "Cek aturan BKN/KemenPAN-RB terbaru. `durasi_menit` adalah durasi simulasi paket lengkap (110 soal) menurut acuan di `acuan_durasi`; paket yang belum lengkap (mis. demo p01) memakai durasi latihan per soal dari app (web/src/config/skd.ts). Ambang batas sengaja null sampai nilainya dicocokkan dengan dokumen di `sumber`. Jumlah soal per subtes adalah standar komposisi produk ini (mengikuti proporsi SKD CAT).",
+  "sumber": "https://www.bkn.go.id/storage/2024/08/2024kepmenpanrb321-Nilai-Ambang-Batas.pdf",
+  "acuan_durasi": "SKD CPNS TA 2024 (KepmenPANRB No. 321 Tahun 2024)",
+  "bahan_cek": "Durasi 100 menit diisi atas arahan audit 2026-11-22 dengan acuan KepmenPANRB 321/2024 (CPNS TA 2024); PDF di `sumber` belum bisa dibuka dari lingkungan kerja saat itu, jadi cocokkan lagi dengan teks resminya. Dari ingatan, BUKAN sumber: ambang batas TWK 65, TIU 80, TKP 166. Jika seleksi tahun berikutnya memakai aturan baru, ganti `acuan_durasi` dan `sumber`.",
+  "durasi_menit": 100,
   "subtes": [
     {
       "kode": "TWK",

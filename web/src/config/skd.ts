@@ -6,7 +6,7 @@
 
 export type Subtes = "TWK" | "TIU" | "TKP";
 
-/** Dipakai selama `durasi_menit` di config/skd.json masih null. Angka latihan, bukan aturan resmi. */
+/** Untuk paket yang belum lengkap (mis. demo p01), atau semua paket selama `durasi_menit` di config/skd.json null. Angka latihan, bukan aturan resmi. */
 export const DURASI_LATIHAN_MENIT_PER_SOAL = 1;
 
 /** Ambang status timer, sebagai pecahan dari durasi paket (minimal 1 menit). */
