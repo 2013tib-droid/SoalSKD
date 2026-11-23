@@ -147,17 +147,17 @@
       "subtopik": "UUD 1945",
       "topik": "Syarat pembatasan HAM (Pasal 28J ayat 2)",
       "tingkat": "sulit",
-      "pertanyaan": "Pemerintah berencana membatasi pelaksanaan suatu hak warga negara yang tidak termasuk hak yang tidak dapat dikurangi dalam keadaan apa pun. Berdasarkan Pasal 28J ayat (2) UUD NRI Tahun 1945, pembatasan tersebut sah secara konstitusional apabila ....",
+      "pertanyaan": "Pemerintah berencana membatasi pelaksanaan suatu hak warga negara yang tidak termasuk hak yang tidak dapat dikurangi dalam keadaan apa pun. Manakah yang paling tepat menggambarkan syarat pembatasan tersebut menurut Pasal 28J ayat (2) UUD NRI Tahun 1945?",
       "opsi": {
         "A": "Ditetapkan melalui peraturan presiden demi menjaga stabilitas pembangunan nasional dan ketertiban umum",
         "B": "Disetujui oleh mayoritas masyarakat melalui jajak pendapat yang terbuka",
-        "C": "Ditetapkan dengan undang-undang semata-mata untuk menghormati hak orang lain dan memenuhi tuntutan yang adil dalam masyarakat demokratis",
+        "C": "Ditetapkan dengan undang-undang semata-mata untuk menjamin pengakuan serta penghormatan atas hak dan kebebasan orang lain dan untuk memenuhi tuntutan yang adil sesuai dengan pertimbangan moral, nilai-nilai agama, keamanan, dan ketertiban umum dalam suatu masyarakat demokratis",
         "D": "Ditetapkan dengan undang-undang dengan tujuan menjaga kewibawaan pemerintah dan efektivitas pelaksanaan program pembangunan nasional di seluruh daerah",
         "E": "Ditetapkan dengan peraturan daerah sesuai kearifan lokal di masing-masing daerah"
       },
       "kunci": "C",
       "pembahasan": {
-        "inti": "Pasal 28J ayat (2) berbunyi: *\"Dalam menjalankan hak dan kebebasannya, setiap orang wajib tunduk kepada pembatasan yang ditetapkan dengan undang-undang dengan maksud semata-mata untuk menjamin pengakuan serta penghormatan atas hak dan kebebasan orang lain dan untuk memenuhi tuntutan yang adil sesuai dengan pertimbangan moral, nilai-nilai agama, keamanan, dan ketertiban umum dalam suatu masyarakat demokratis.\"*\n\nDari bunyi pasal itu, pembatasan hak harus memenuhi unsur-unsur berikut:\n\n1. **Bentuk:** ditetapkan dengan *undang-undang*, produk DPR bersama Presiden.\n2. **Maksud yang tertutup:** *semata-mata* untuk (a) menjamin pengakuan serta penghormatan atas hak dan kebebasan orang lain, dan (b) memenuhi tuntutan yang adil.\n3. **Ukuran tuntutan yang adil:** pertimbangan moral, nilai-nilai agama, keamanan, dan ketertiban umum.\n4. **Konteks:** dalam suatu masyarakat demokratis.\n\nOpsi C memuat bentuk (undang-undang), kata *semata-mata*, kedua maksud, dan konteks masyarakat demokratis. Ukuran tuntutan yang adil (unsur 3) tidak ditulis ulang di opsi, tetapi tidak ada unsur yang bertentangan dengan pasal.",
+        "inti": "Pasal 28J ayat (2) berbunyi: *\"Dalam menjalankan hak dan kebebasannya, setiap orang wajib tunduk kepada pembatasan yang ditetapkan dengan undang-undang dengan maksud semata-mata untuk menjamin pengakuan serta penghormatan atas hak dan kebebasan orang lain dan untuk memenuhi tuntutan yang adil sesuai dengan pertimbangan moral, nilai-nilai agama, keamanan, dan ketertiban umum dalam suatu masyarakat demokratis.\"*\n\nDari bunyi pasal itu, pembatasan hak harus memenuhi unsur-unsur berikut:\n\n1. **Bentuk:** ditetapkan dengan *undang-undang*, produk DPR bersama Presiden.\n2. **Maksud yang tertutup:** *semata-mata* untuk (a) menjamin pengakuan serta penghormatan atas hak dan kebebasan orang lain, dan (b) memenuhi tuntutan yang adil.\n3. **Ukuran tuntutan yang adil:** pertimbangan moral, nilai-nilai agama, keamanan, dan ketertiban umum.\n4. **Konteks:** dalam suatu masyarakat demokratis.\n\nOpsi C memuat keempat unsur tersebut: bentuk (undang-undang), kata *semata-mata* dengan kedua maksudnya (pengakuan serta penghormatan atas hak dan kebebasan orang lain, dan tuntutan yang adil), ukuran tuntutan yang adil (pertimbangan moral, nilai-nilai agama, keamanan, dan ketertiban umum), serta konteks masyarakat demokratis.",
         "opsi": {
           "A": "Gagal di syarat bentuk karena peraturan presiden bukan undang-undang. \"Ketertiban umum\" memang disebut dalam pasal, tetapi \"stabilitas pembangunan\" tidak, dan bentuk yang salah sudah cukup membuat pembatasan ini tidak sah.",
           "B": "Keliru karena HAM tidak bisa dibatasi oleh suara mayoritas. Hak justru dilindungi agar tidak bergantung pada kehendak mayoritas.",
@@ -552,7 +552,7 @@
       "pertanyaan": "Anda sedang menyelesaikan laporan yang harus diserahkan besok pagi. Menjelang jam pulang, atasan memberikan tugas mendadak yang juga harus selesai besok pagi. Sikap Anda adalah ....",
       "opsi": {
         "A": "Memberi tahu atasan pekerjaan yang sedang berjalan, meminta penetapan prioritas, dan mengusulkan pembagian kerja atau tenggat realistis",
-        "B": "Mengerjakan tugas dari atasan terlebih dahulu, lalu meminta perpanjangan tenggat laporan kepada pihak yang akan menerima laporan tersebut",
+        "B": "Memprioritaskan tugas mendadak dari atasan dan, sebelum mulai mengerjakannya, segera menghubungi penerima laporan untuk meminta perpanjangan tenggat",
         "C": "Menerima tugas tersebut dan lembur untuk menyelesaikan keduanya tanpa perlu memberi tahu atasan",
         "D": "Meminta rekan kerja mengerjakan tugas mendadak tersebut karena Anda sedang sibuk",
         "E": "Menolak tugas tersebut karena laporan Anda sudah lebih dulu dijadwalkan"
@@ -567,13 +567,13 @@
       "pembahasan": {
         "inti": "Aspek profesionalisme menilai **tanggung jawab, manajemen prioritas, dan komunikasi kerja** saat menghadapi tekanan. Saat dua tenggat bertabrakan, keputusan prioritas adalah wewenang atasan. Tugas pegawai adalah memberi informasi yang cukup supaya keputusan itu tepat.",
         "opsi": {
-          "A": "Menunjukkan komunikasi yang transparan dan manajemen prioritas yang tepat. Atasan mengetahui beban kerja Anda sehingga bisa memutuskan prioritas dengan informasi lengkap. Usulan pembagian kerja (misalnya sebagian tugas dikerjakan rekan atas persetujuan atasan) atau tenggat yang realistis menjaga mutu kedua pekerjaan. Lembur tetap bisa menjadi bagian dari rencana, tetapi sebagai hasil kesepakatan, bukan langkah otomatis.",
-          "B": "Ada komunikasi kepada pihak yang terdampak: penerima laporan diberi tahu lebih awal dan diminta perpanjangan, sehingga tidak ada kejutan di hari tenggat. Kekurangannya, keputusan prioritas diambil sendiri tanpa berkonsultasi dengan atasan, padahal atasan perlu tahu bahwa ada tenggat lain yang tergeser.",
-          "C": "Menunjukkan kemauan bekerja keras, tetapi tanpa komunikasi sama sekali. Lembur tidak otomatis profesional: jika ternyata keduanya tidak selesai atau mutunya turun, atasan maupun penerima laporan tidak punya kesempatan mengantisipasi. Karena itu C berada di bawah B, yang setidaknya mengelola harapan pihak terdampak.",
+          "A": "Paling tepat karena meminta atasan menetapkan prioritas sambil menawarkan solusi. Atasan mengetahui beban kerja Anda sehingga bisa memutuskan prioritas dengan informasi lengkap. Usulan pembagian kerja (misalnya sebagian tugas dikerjakan rekan atas persetujuan atasan) atau tenggat yang realistis menjaga mutu kedua pekerjaan. Lembur tetap bisa menjadi bagian dari rencana, tetapi sebagai hasil kesepakatan, bukan langkah otomatis.",
+          "B": "Mengelola ekspektasi penerima laporan lebih awal: sebelum mulai mengerjakan tugas mendadak, ia segera meminta perpanjangan tenggat sehingga tidak ada kejutan di hari tenggat. Kekurangannya, prioritas ditetapkan sendiri tanpa berkonsultasi dengan atasan, padahal keputusan prioritas adalah wewenang atasan dan atasan perlu tahu bahwa ada tenggat lain yang tergeser.",
+          "C": "Berinisiatif lembur dan menunjukkan kemauan bekerja keras, tetapi tidak mengomunikasikan benturan tenggat kepada atasan maupun penerima laporan. Jika ternyata keduanya tidak selesai atau mutunya turun, tidak ada pihak yang sempat mengantisipasi. Karena itu C berada di bawah B, yang setidaknya mengelola ekspektasi penerima laporan sejak awal.",
           "D": "Melempar tugas kepada rekan tanpa wewenang mendelegasikan. Tugas itu diberikan atasan kepada Anda, bukan kepada rekan.",
           "E": "Menolak tugas atasan secara langsung tanpa mencari jalan keluar. Ini menunjukkan kurangnya fleksibilitas terhadap kebutuhan organisasi."
         },
-        "konsep": "**Urutan bobot:** A (komunikasi + prioritas + rencana realistis) > B (komunikasi ke pihak terdampak, tetapi prioritas diputuskan sendiri) > C (kerja keras tanpa komunikasi) > D (melempar tugas) > E (menolak). Profesionalisme menilai **komunikasi dan perencanaan** sama pentingnya dengan kerja keras. Dedikasi tanpa koordinasi berisiko menghasilkan dua pekerjaan setengah matang."
+        "konsep": "**Urutan bobot:** A (meminta atasan menetapkan prioritas sambil menawarkan solusi) > B (mengelola ekspektasi penerima laporan lebih awal, tetapi prioritas ditetapkan sendiri) > C (lembur atas inisiatif sendiri tanpa mengomunikasikan benturan tenggat) > D (melempar tugas) > E (menolak). Profesionalisme menilai **komunikasi dan perencanaan** sama pentingnya dengan kerja keras. Dedikasi tanpa koordinasi berisiko menghasilkan dua pekerjaan setengah matang."
       },
       "tips": "Untuk soal konflik prioritas, opsi bernilai 5 biasanya mengandung tiga unsur: **komunikasi kepada atasan**, **penetapan prioritas**, dan **rencana penyelesaian yang realistis**. Jangan otomatis memilih opsi lembur. Opsi yang menolak atau melempar tugas berada di nilai terbawah."
     },
@@ -584,7 +584,7 @@
       "subtopik": "Antiradikalisme",
       "topik": "Ajakan mengganti dasar negara di grup kantor",
       "tingkat": "sulit",
-      "pertanyaan": "Di grup percakapan daring kantor, seorang rekan membagikan tulisan yang menyebut Pancasila bertentangan dengan ajaran agama dan mengajak anggota grup mendukung penggantian dasar negara. Beberapa anggota grup menanggapinya dengan tanda setuju. Pedoman kantor Anda mewajibkan pegawai **segera** melaporkan konten semacam ini kepada atasan atau unit kepatuhan agar bukti tidak hilang dan penanganan tidak tertunda. Sikap Anda adalah ....",
+      "pertanyaan": "Di grup percakapan daring kantor, seorang rekan membagikan tulisan yang menyebut Pancasila bertentangan dengan ajaran agama dan mengajak anggota grup mendukung penggantian dasar negara. Beberapa anggota grup menanggapinya dengan tanda setuju. Pedoman kantor Anda mewajibkan pegawai segera melaporkan konten semacam ini kepada atasan atau unit kepatuhan agar bukti tidak hilang dan penanganan tidak tertunda. Sikap Anda adalah ....",
       "opsi": {
         "A": "Menyampaikan bantahan di grup dengan argumen bahwa nilai-nilai Pancasila sejalan dengan ajaran agama",
         "B": "Tidak menanggapi karena unggahan tersebut merupakan bagian dari kebebasan berpendapat setiap orang",
@@ -600,21 +600,17 @@
         "E": 5
       },
       "pembahasan": {
-        "inti": "Aspek antiradikalisme menilai **kesetiaan pada Pancasila, UUD 1945, NKRI, dan pemerintahan yang sah**, serta kemampuan bersikap tepat terhadap paham yang mengancam dasar negara. Setia dan taat pada Pancasila dan UUD 1945 adalah kewajiban ASN menurut UU No. 20 Tahun 2023 tentang ASN dan PP No. 94 Tahun 2021 tentang Disiplin PNS. Ajakan mengganti dasar negara bukan sekadar beda pendapat, melainkan pelanggaran kewajiban tersebut.",
+        "inti": "Aspek antiradikalisme menilai kemampuan bersikap tepat terhadap konten yang mengajak mengganti dasar negara. Dalam skenario ini, ukuran sikap yang tepat sudah ditetapkan oleh pedoman kantor: pegawai wajib segera melaporkan konten semacam ini kepada atasan atau unit kepatuhan agar bukti tidak hilang dan penanganan tidak tertunda. Setiap opsi dinilai dari seberapa jauh tindakan pegawai memenuhi pedoman tersebut.",
         "opsi": {
-          "A": "Berani bersikap dan meluruskan narasi. Namun berdebat di grup berisiko memperluas polemik, dan tanpa pelaporan, pedoman kantor tidak dijalankan.",
-          "B": "Keliru menempatkan ajakan mengganti dasar negara sebagai kebebasan berpendapat. Pasal 28J ayat (2) UUD 1945 menegaskan bahwa kebebasan dibatasi oleh undang-undang demi keamanan dan ketertiban umum, dan ASN terikat kewajiban setia pada Pancasila.",
-          "C": "Sikapnya menolak dan akhirnya melapor, tetapi menunda pelaporan yang menurut pedoman harus segera. Teguran pribadi juga tidak menjamin penyebaran berhenti, dan bisa membuat konten dihapus sebelum ditangani sehingga bukti hilang. Karena itu C berada di bawah E.",
-          "D": "Menghindar. Diri sendiri aman, tetapi konten yang mengajak mengganti dasar negara dibiarkan.",
-          "E": "Paling tepat dalam skenario ini. Pelaporan dilakukan **segera** sesuai pedoman, kepada pihak yang berwenang, dan disertai bukti (tangkapan layar). Penanganan selanjutnya, termasuk pembinaan kepada rekan tersebut, menjadi tugas atasan atau unit kepatuhan."
+          "A": "Menunjukkan sikap menolak dan berusaha meluruskan narasi, tetapi tidak melapor sehingga pedoman kantor tidak dijalankan. Berdebat di grup juga berisiko memperluas polemik.",
+          "B": "Tidak memenuhi kewajiban melapor dalam pedoman kantor. Konten dibiarkan tanpa penanganan, dan alasan yang dipakai tidak mengubah kewajiban pegawai dalam skenario ini.",
+          "C": "Akhirnya melapor, tetapi menunda pelaporan demi menegur rekan terlebih dahulu, padahal pedoman meminta pelaporan segera. Teguran pribadi juga bisa membuat konten dihapus sebelum ditangani sehingga bukti hilang, hal yang justru ingin dicegah pedoman. Karena itu C berada di bawah E.",
+          "D": "Menghindar. Diri sendiri aman, tetapi tidak melapor sehingga konten dibiarkan tanpa penanganan dan pedoman kantor tidak dijalankan.",
+          "E": "Paling tepat. Memenuhi pedoman kantor: melapor segera, kepada pihak yang berwenang (atasan atau unit kepatuhan), dan menyertakan bukti berupa tangkapan layar. Penanganan selanjutnya, termasuk pembinaan kepada rekan tersebut, menjadi tugas atasan atau unit kepatuhan."
         },
-        "konsep": "**Mengapa soal ini sulit:** Tiga opsi teratas (E, C, A) semuanya menolak paham yang mengancam dasar negara. Pembedanya ada pada **ketepatan cara sesuai aturan yang berlaku**. Skenario menyebut pedoman pelaporan segera, jadi opsi yang menunda pelaporan demi pendekatan pribadi turun satu tingkat. Tanpa pedoman seperti itu, mengingatkan secara pribadi lalu melapor bisa saja dinilai setara. Opsi B sengaja dibungkus konsep yang terdengar demokratis (\"kebebasan berpendapat\") untuk menjebak."
+        "konsep": "**Mengapa soal ini sulit:** Tiga opsi teratas (E, C, A) semuanya menolak konten tersebut. Pembedanya ada pada **ketepatan cara sesuai pedoman kantor**. Skenario menyebut kewajiban pelaporan segera, jadi opsi yang menunda pelaporan demi pendekatan pribadi turun satu tingkat, dan opsi yang tidak melapor sama sekali berada lebih rendah lagi. Opsi B memakai alasan yang terdengar wajar, tetapi tetap tidak memenuhi kewajiban melapor."
       },
-      "tips": "Untuk soal antiradikalisme, baca dulu apakah skenario menyebut **aturan atau pedoman** (misalnya wajib lapor segera). Jika ada, opsi yang paling patuh pada aturan itu dan menempuh jalur resmi bernilai tertinggi. Diam, menghindar, atau membenarkan paham radikal atas nama kebebasan selalu bernilai rendah.",
-      "rujukan": [
-        "UU No. 20 Tahun 2023 tentang Aparatur Sipil Negara",
-        "UUD NRI 1945 Pasal 28J ayat (2)"
-      ]
+      "tips": "Untuk soal antiradikalisme, baca dulu apakah skenario menyebut **aturan atau pedoman** (misalnya wajib lapor segera). Jika ada, opsi yang paling patuh pada aturan itu dan menempuh jalur resmi bernilai tertinggi. Diam atau menghindar berarti pedoman tidak dijalankan, sehingga bernilai rendah."
     },
     {
       "id": "p01-020",
@@ -643,8 +639,8 @@
         "opsi": {
           "A": "Diskriminatif dan melanggar integritas. Kedekatan dengan pejabat dijadikan dasar perlakuan istimewa, dan pemohon lain dirugikan.",
           "B": "Menyiratkan bahwa keputusan bergantung pada status kekerabatan. Apa pun jawaban kepala dinas, hal itu tidak relevan dengan pelayanan, dan langkah ini membuka celah intervensi.",
-          "C": "Adil dalam urutan antrean dan tampak membantu, tetapi **melanggar standar persyaratan**. Jika pengecualian ini diberikan kepada satu orang, pemohon lain berhak menuntut hal yang sama.",
-          "D": "Memenuhi semua prinsip: **sopan** (pelayanan ramah), **solutif** (memberi tahu cara tercepat melengkapi dokumen), **patuh prosedur** (berkas diproses setelah lengkap), dan **adil** (sesuai urutan antrean, tanpa keistimewaan).",
+          "C": "Menjaga urutan antrean dan berusaha membantu, tetapi memproses berkas yang belum memenuhi syarat sehingga **melanggar standar persyaratan**. Jika pengecualian ini diberikan kepada satu orang, pemohon lain berhak menuntut hal yang sama. C tetap di atas B karena C berusaha membantu pemohon dalam urutan antrean, sedangkan B menjadikan hubungan kekerabatan sebagai pertimbangan, padahal hal itu tidak relevan dengan pelayanan.",
+          "D": "Paling tepat karena membantu pemohon melengkapi berkas serta menerapkan prosedur dan antrean secara konsisten. Opsi ini memenuhi semua prinsip: **sopan** (pelayanan ramah), **solutif** (memberi tahu cara tercepat melengkapi dokumen), **patuh prosedur** (berkas diproses setelah lengkap), dan **adil** (sesuai urutan antrean, tanpa keistimewaan).",
           "E": "Patuh prosedur dan adil, tetapi kurang solutif. Pemohon hanya ditolak tanpa diberi arahan untuk mempercepat penyelesaian."
         },
         "konsep": "**Mengapa soal ini sulit:** Ada tiga sumber tekanan sekaligus (status pemohon, urgensi, dan antrean) serta dua opsi yang sama-sama patuh prosedur (D dan E). Selain itu, opsi C terlihat sangat \"melayani\", padahal ia melanggar standar."
