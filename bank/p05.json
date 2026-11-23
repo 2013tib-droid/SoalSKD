@@ -1376,7 +1376,7 @@
       "subtopik": "Deret Angka",
       "topik": "Pola bilangan dalam tabel tiga kolom",
       "tingkat": "sulit",
-      "pertanyaan": "Perhatikan tabel berikut. Bilangan di setiap baris mengikuti aturan yang sama.\n\n| Kolom 1 | Kolom 2 | Kolom 3 |\n|---|---|---|\n| 2 | 5 | 9 |\n| 3 | 4 | 11 |\n| 6 | 3 | 17 |\n| 4 | 7 | ? |\n\nBilangan yang tepat untuk mengganti tanda tanya adalah ....",
+      "pertanyaan": "Perhatikan tabel berikut. Bilangan di setiap baris mengikuti aturan yang sama.\n\n| Kolom 1 | Kolom 2 | Kolom 3 |\n|---|---|---|\n| 2 | 5 | 9 |\n| 3 | 4 | 11 |\n| 6 | 3 | 17 |\n| 2 | 6 | 11 |\n| 4 | 7 | ? |\n\nBilangan yang tepat untuk mengganti tanda tanya adalah ....",
       "opsi": {
         "A": "13",
         "B": "28",
@@ -1386,14 +1386,14 @@
       },
       "kunci": "C",
       "pembahasan": {
-        "inti": "Cari satu aturan yang berlaku untuk **ketiga baris** yang sudah lengkap. Coba hasil kali kolom 1 dan kolom 2:\n\n| Baris | Kolom 1 × Kolom 2 | Kolom 3 | Selisih |\n|---|---|---|---|\n| 1 | 2 × 5 = 10 | 9 | −1 |\n| 2 | 3 × 4 = 12 | 11 | −1 |\n| 3 | 6 × 3 = 18 | 17 | −1 |\n\nAturannya: **kolom 3 = kolom 1 × kolom 2 − 1**. Untuk baris keempat: 4 × 7 − 1 = 28 − 1 = **27**. Aturan ini sudah dicek dengan program terhadap ketiga baris.",
+        "inti": "Cari satu aturan yang berlaku untuk **keempat baris** yang sudah lengkap. Hati-hati, tiga baris pertama cocok dengan dua aturan sekaligus: **2 × kolom 1 + 5** dan **kolom 1 × kolom 2 − 1**. Baris keempat (2 | 6 | 11) memisahkan keduanya:\n\n| Baris | 2 × Kolom 1 + 5 | Kolom 1 × Kolom 2 − 1 | Kolom 3 |\n|---|---|---|---|\n| 1 | 2 × 2 + 5 = 9 | 2 × 5 − 1 = 9 | 9 |\n| 2 | 2 × 3 + 5 = 11 | 3 × 4 − 1 = 11 | 11 |\n| 3 | 2 × 6 + 5 = 17 | 6 × 3 − 1 = 17 | 17 |\n| 4 | 2 × 2 + 5 = 9 (tidak cocok) | 2 × 6 − 1 = 11 | 11 |\n\nHanya aturan **kolom 3 = kolom 1 × kolom 2 − 1** yang berlaku di semua baris. Untuk baris yang ditanyakan: 4 × 7 − 1 = 28 − 1 = **27**. Aturan ini sudah dicek dengan program terhadap keempat baris.",
         "opsi": {
-          "A": "13 berasal dari aturan kolom 1 + kolom 2 + 2 (4 + 7 + 2). Aturan ini cocok untuk baris pertama (2 + 5 + 2 = 9), tetapi gagal di baris kedua (3 + 4 + 2 = 9, bukan 11).",
+          "A": "13 berasal dari aturan 2 × kolom 1 + 5 (2 × 4 + 5). Aturan ini cocok untuk tiga baris pertama, tetapi gugur di baris keempat: 2 × 2 + 5 = 9, bukan 11.",
           "B": "28 adalah hasil kali 4 × 7 tanpa dikurangi 1. Langkah terakhir aturan terlewat.",
           "D": "29 muncul jika selisihnya dibaca +1, bukan −1. Periksa kembali: 10 menjadi 9, jadi berkurang.",
           "E": "11 adalah jumlah 4 + 7. Aturan penjumlahan tidak cocok dengan baris mana pun (2 + 5 = 7, bukan 9)."
         },
-        "konsep": "**Uji ke semua baris.** Pada soal tabel, beberapa aturan bisa cocok untuk satu baris secara kebetulan. Aturan yang benar harus berlaku di semua baris yang lengkap. Urutan coba yang efisien: jumlah, selisih, hasil kali, lalu hasil kali ± konstanta."
+        "konsep": "**Uji ke semua baris.** Pada soal tabel, beberapa aturan bisa cocok untuk sebagian baris secara kebetulan, seperti 2 × kolom 1 + 5 pada tiga baris pertama soal ini. Aturan yang benar harus berlaku di semua baris yang lengkap. Urutan coba yang efisien: jumlah, selisih, hasil kali, lalu hasil kali ± konstanta."
       },
       "tips": "Jika aturan sederhana gagal, hitung **selisih antara kolom 3 dan hasil operasi** di setiap baris. Jika selisihnya sama di semua baris, aturannya adalah operasi itu ditambah atau dikurangi konstanta tersebut."
     },

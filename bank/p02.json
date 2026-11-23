@@ -2207,12 +2207,12 @@
       "subtopik": "Jejaring Kerja",
       "topik": "Permintaan data mendesak dari unit lain tanpa surat resmi",
       "tingkat": "sedang",
-      "pertanyaan": "Rekan dari unit lain menghubungi Anda dan meminta data rekap kegiatan untuk bahan rapat pimpinan satu jam lagi. Menurut prosedur, permintaan data antarunit harus disertai surat resmi, tetapi surat itu belum ada. Sikap Anda adalah ....",
+      "pertanyaan": "Rekan dari unit lain menghubungi Anda dan meminta data rekap kegiatan untuk bahan rapat pimpinan satu jam lagi. Menurut prosedur, permintaan data antarunit harus disertai surat resmi. Untuk kebutuhan mendesak, prosedur memberi pengecualian: data boleh dikirim lebih dulu dengan persetujuan tertulis pejabat berwenang, dan surat resminya menyusul. Saat ini surat resmi itu belum ada. Sikap Anda adalah ....",
       "opsi": {
         "A": "Langsung mengirim seluruh data yang diminta karena masih satu instansi",
         "B": "Menolak dengan sopan sampai surat resmi diterima, karena prosedur permintaan data antarunit sudah ditetapkan dengan jelas",
         "C": "Mengirim data dengan syarat unit tersebut membantu pekerjaan Anda di lain waktu",
-        "D": "Meminta persetujuan cepat dari atasan, mengirim data sesuai izin, dan meminta surat resminya menyusul",
+        "D": "Meminta persetujuan tertulis pejabat berwenang, lalu setelah disetujui mengirim data yang diizinkan dan meminta surat resminya menyusul",
         "E": "Mengirim data yang tidak bersifat rahasia terlebih dahulu dan meminta rekan tersebut menyusulkan surat resminya"
       },
       "bobot": {
@@ -2223,17 +2223,17 @@
         "E": 4
       },
       "pembahasan": {
-        "inti": "Aspek jejaring kerja menilai kemampuan **bekerja sama lintas unit** tanpa mengabaikan aturan. Dalam keadaan mendesak, kerja sama tetap bisa dilakukan dengan cara yang sah, yaitu meminta persetujuan pihak berwenang dan melengkapi administrasinya kemudian. Pemantauan diperlukan agar instansi tahu apakah perbaikan benar-benar menaikkan kepuasan warga.",
+        "inti": "Aspek jejaring kerja menilai kemampuan **bekerja sama lintas unit** tanpa mengabaikan aturan. Dalam skenario ini, prosedur sudah menyediakan jalur sah untuk kebutuhan mendesak: persetujuan tertulis pejabat berwenang lebih dulu, dengan surat resmi menyusul. Kerja sama yang profesional memakai jalur itu, bukan memotongnya.",
         "opsi": {
-          "A": "Kooperatif, tetapi mengabaikan prosedur dan berisiko membocorkan data yang seharusnya dibatasi.",
-          "B": "Taat prosedur, tetapi kaku. Kebutuhan rapat pimpinan tidak terbantu, dan hubungan kerja antarunit bisa terganggu.",
+          "A": "Kooperatif, tetapi mengabaikan prosedur beserta jalur pengecualiannya, dan berisiko membocorkan data yang seharusnya dibatasi.",
+          "B": "Taat pada aturan umum, tetapi kaku. Prosedur sebenarnya menyediakan pengecualian untuk kebutuhan mendesak, dan jalur itu tidak dimanfaatkan sehingga kebutuhan rapat pimpinan tidak terbantu.",
           "C": "Paling buruk karena kerja sama dijadikan alat tawar-menawar. Ini bertentangan dengan semangat saling mendukung dalam organisasi.",
-          "D": "Paling ideal. Kebutuhan mendesak terpenuhi, keputusan diambil oleh pihak berwenang, dan administrasi tetap dilengkapi.",
-          "E": "Cerdas karena membatasi risiko kebocoran data. Namun, Anda memutuskan sendiri tanpa persetujuan atasan, dan data penting mungkin tidak terkirim."
+          "D": "Paling ideal. Memakai jalur pengecualian yang disediakan prosedur: persetujuan tertulis pejabat berwenang diperoleh sebelum data dikirim, data yang dikirim sebatas yang diizinkan, dan surat resmi tetap menyusul.",
+          "E": "Membatasi risiko dengan hanya mengirim data nonrahasia, tetapi tetap melewati prosedur. Pengecualian untuk kebutuhan mendesak mensyaratkan persetujuan tertulis pejabat berwenang, dan sifat data yang nonrahasia tidak menggantikan syarat itu. Data yang dibutuhkan rapat juga mungkin tidak lengkap."
         },
-        "konsep": "**Pola bobot kerja sama mendesak:** 5 = membantu + izin pihak berwenang + administrasi menyusul; 4 = membantu dengan membatasi risiko; 3 = taat prosedur tetapi tidak membantu; 2 = membantu dengan mengabaikan aturan; 1 = membantu dengan pamrih."
+        "konsep": "**Pola bobot kerja sama mendesak:** 5 = membantu lewat jalur pengecualian resmi (persetujuan tertulis + surat menyusul); 4 = membantu dengan membatasi risiko, tetapi tanpa persetujuan; 3 = taat aturan umum tetapi tidak memanfaatkan pengecualian; 2 = membantu dengan mengabaikan aturan; 1 = membantu dengan pamrih."
       },
-      "tips": "Ketika kerja sama berbenturan dengan prosedur, cari opsi yang **memenuhi keduanya**: kebutuhan tetap terbantu dan aturan tetap dihormati melalui izin atasan. Opsi yang meminta imbalan selalu bernilai terendah."
+      "tips": "Ketika kerja sama berbenturan dengan prosedur, cari opsi yang **memenuhi keduanya**: kebutuhan tetap terbantu dan aturan tetap dihormati melalui jalur pengecualian dan persetujuan pejabat berwenang. Opsi yang meminta imbalan selalu bernilai terendah."
     },
     {
       "id": "p02-075",
@@ -3019,7 +3019,7 @@
       "opsi": {
         "A": "Membalas kritik itu saat rapat untuk membela diri di depan rekan-rekan",
         "B": "Menerima kritik tanpa berkata apa-apa, lalu mengerjakan tugas berikutnya seperti biasa",
-        "C": "Menerima kritik dengan tenang, mencatat poin perbaikan, dan memperbaiki hasil kerja",
+        "C": "Menerima kritik dengan tenang, meminta contoh atau klarifikasi tentang bagian hasil kerja yang perlu diperbaiki, lalu memperbaikinya",
         "D": "Menceritakan perlakuan atasan kepada rekan lain setelah rapat untuk mendapat dukungan",
         "E": "Menerima kritik dan memperbaiki hasil kerja, lalu menyampaikan secara pribadi kepada atasan bahwa Anda lebih nyaman menerima masukan di ruang tertutup"
       },
@@ -3031,17 +3031,17 @@
         "E": 4
       },
       "pembahasan": {
-        "inti": "Aspek profesionalisme menilai kemampuan **mengendalikan emosi** dan **menjadikan kritik sebagai bahan perbaikan**. Cara penyampaian atasan mungkin kurang nyaman, tetapi isi kritik yang benar tetap perlu ditindaklanjuti. Fokus pada perbaikan hasil kerja menunjukkan kedewasaan dan tanggung jawab. Sikap ini juga menjaga suasana rapat tetap kondusif. Jika cara penyampaian atasan terus mengganggu, hal itu bisa dibicarakan kemudian secara pribadi dan santun.",
+        "inti": "Aspek profesionalisme menilai kemampuan **mengendalikan emosi** dan **menjadikan kritik sebagai bahan perbaikan**. Cara penyampaian atasan mungkin kurang nyaman, tetapi isi kritik yang benar tetap perlu ditindaklanjuti. Karena kritiknya hanya sebagian benar, langkah yang tepat adalah mengklarifikasi bagian mana yang perlu diperbaiki sebelum memperbaikinya. Fokus pada perbaikan hasil kerja menunjukkan kedewasaan dan tanggung jawab. Sikap ini juga menjaga suasana rapat tetap kondusif. Jika cara penyampaian atasan terus mengganggu, hal itu bisa dibicarakan kemudian secara pribadi dan santun.",
         "opsi": {
           "A": "Paling buruk. Membalas di depan umum memperpanjang ketegangan dan menunjukkan kurangnya pengendalian diri.",
           "B": "Tenang, tetapi kritik tidak dimanfaatkan untuk perbaikan. Kesalahan yang sama bisa terulang.",
-          "C": "Paling ideal. Emosi terkendali, poin perbaikan dicatat, dan hasil kerja benar-benar diperbaiki.",
+          "C": "Paling ideal. Emosi terkendali, dan karena kritiknya hanya sebagian benar, bagian yang perlu diperbaiki diklarifikasi lebih dulu, misalnya dengan meminta contoh, sebelum hasil kerja diperbaiki. Perbaikannya jadi tepat sasaran.",
           "D": "Mencari dukungan dengan membicarakan atasan dapat menimbulkan kubu dan merusak suasana kerja.",
-          "E": "Memperbaiki hasil kerja dan berkomunikasi asertif. Namun, fokusnya mulai bergeser ke cara atasan menyampaikan kritik, bukan isi perbaikannya."
+          "E": "Memperbaiki hasil kerja dan menyampaikan masukan kepada atasan secara asertif dan santun di ruang tertutup, cara yang wajar. Kekurangannya, kritik yang hanya sebagian benar langsung ditindaklanjuti tanpa diklarifikasi, sehingga perbaikannya berisiko tidak tepat sasaran. Karena itu E sedikit di bawah C."
         },
-        "konsep": "**Pola bobot menerima kritik:** 5 = tenang + catat + perbaiki; 4 = perbaiki + komunikasi asertif; 3 = diam tanpa perbaikan; 2 = membicarakan di belakang; 1 = membalas di depan umum."
+        "konsep": "**Pola bobot menerima kritik:** 5 = tenang + klarifikasi bagian yang perlu diperbaiki + perbaiki; 4 = perbaiki + komunikasi asertif, tanpa klarifikasi; 3 = diam tanpa perbaikan; 2 = membicarakan di belakang; 1 = membalas di depan umum."
       },
-      "tips": "Dalam soal kritik dari atasan, pilih opsi yang **berfokus pada perbaikan diri**. Opsi yang menilai cara atasan, walaupun disampaikan sopan, biasanya bernilai sedikit di bawah opsi terbaik."
+      "tips": "Dalam soal kritik dari atasan, pilih opsi yang **berfokus pada perbaikan hasil kerja**. Jika kritiknya hanya sebagian benar, opsi yang **mengklarifikasi dulu** bagian yang perlu diperbaiki biasanya bernilai tertinggi."
     },
     {
       "id": "p02-098",

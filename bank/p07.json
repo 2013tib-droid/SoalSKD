@@ -723,21 +723,24 @@
         "A": "Membayar setengahnya lebih dulu, lalu melunasi sisanya hanya jika nama sang adik benar-benar diumumkan lulus seleksi",
         "B": "Menolak tawaran tersebut, tetapi tidak perlu melaporkannya karena belum ada uang yang berpindah tangan kepada orang itu",
         "C": "Meminta orang itu menunjukkan bukti kedekatannya dengan panitia seleksi lebih dulu sebelum sang adik memutuskan membayar",
-        "D": "Menolak tawaran, menjelaskan bahwa kelulusan ditentukan nilai ujian berbasis komputer, dan melaporkan penawarnya",
+        "D": "Menolak tawaran, menjelaskan bahwa kelulusan ditentukan melalui tahapan dan ketentuan seleksi resmi, lalu melaporkan tawaran tersebut",
         "E": "Menerima tawaran demi masa depan sang adik, karena praktik seperti itu dianggap sudah biasa dalam setiap seleksi pegawai"
       },
       "kunci": "D",
       "pembahasan": {
-        "inti": "Seleksi CPNS memakai **Computer Assisted Test (CAT)**: nilai peserta muncul langsung setelah ujian dan dapat dipantau, sehingga tidak ada pihak yang bisa “menjamin” kelulusan. Tawaran semacam ini adalah **penipuan**, dan jika uang dibayarkan untuk memengaruhi hasil seleksi, pemberinya ikut terlibat dalam praktik suap. Integritas menuntut tiga hal sekaligus: **menolak**, **meluruskan pemahaman** sang adik tentang cara seleksi yang benar, dan **melaporkan** penawar agar korban lain tidak tertipu. Laporan dapat disampaikan kepada kepolisian atau saluran pengaduan instansi penyelenggara seleksi.",
+        "inti": "Kelulusan CPNS ditentukan melalui **tahapan dan ketentuan seleksi resmi** (seleksi administrasi, Seleksi Kompetensi Dasar, dan Seleksi Kompetensi Bidang), yang untuk seleksi 2024 diatur dalam Permen PANRB No. 6 Tahun 2024 tentang Pengadaan Pegawai ASN. Pada tahap ujian, Seleksi Kompetensi Dasar memakai **Computer Assisted Test (CAT)**: nilai peserta muncul langsung setelah ujian dan dapat dipantau. Karena itu, tidak ada pihak yang bisa “menjamin” kelulusan. Tawaran semacam ini adalah **penipuan**, dan jika uang dibayarkan untuk memengaruhi hasil seleksi, pemberinya ikut terlibat dalam praktik suap. Integritas menuntut tiga hal sekaligus: **menolak**, **meluruskan pemahaman** sang adik bahwa kelulusan ditentukan oleh tahapan seleksi resmi, dan **melaporkan** penawar agar korban lain tidak tertipu. Laporan dapat disampaikan kepada kepolisian atau saluran pengaduan instansi penyelenggara seleksi.",
         "opsi": {
           "A": "Skema “bayar sebagian dulu” adalah pola umum penipuan. Lagi pula, membayar untuk memengaruhi seleksi tetap salah, berhasil ataupun tidak.",
           "B": "Menolak sudah benar, tetapi tanpa laporan, penawar bebas mencari korban lain. Integritas juga mencakup mencegah kecurangan merugikan orang lain.",
           "C": "Meminta bukti berarti masih membuka kemungkinan membayar. Bukti apa pun tidak membuat praktik ini sah.",
-          "E": "Anggapan “sudah biasa” tidak mengubah pelanggaran menjadi benar, dan seleksi berbasis CAT justru dirancang untuk menutup praktik itu."
+          "E": "Anggapan “sudah biasa” tidak mengubah pelanggaran menjadi benar, dan tahapan seleksi resmi, termasuk ujian berbasis CAT, justru dirancang untuk menutup praktik itu."
         },
         "konsep": "**Integritas = menolak + meluruskan + melaporkan.** Dalam seleksi aparatur, kecurangan merugikan peserta lain yang jujur dan menghasilkan pegawai yang tidak kompeten. Panitia seleksi berulang kali mengumumkan bahwa kelulusan tidak dapat dibeli."
       },
-      "tips": "Dalam soal tawaran curang, opsi yang **menolak saja** biasanya kalah dari opsi yang menolak **dan** menindaklanjuti lewat jalur resmi. Opsi yang menunda keputusan (minta bukti dulu, bayar sebagian) tetap pengecoh."
+      "tips": "Dalam soal tawaran curang, opsi yang **menolak saja** biasanya kalah dari opsi yang menolak **dan** menindaklanjuti lewat jalur resmi. Opsi yang menunda keputusan (minta bukti dulu, bayar sebagian) tetap pengecoh.",
+      "rujukan": [
+        "Permen PANRB No. 6 Tahun 2024 tentang Pengadaan Pegawai Aparatur Sipil Negara"
+      ]
     },
     {
       "id": "p07-025",
@@ -3181,7 +3184,7 @@
         "B": "Menaikkan nilai Pak Joni sesuai permintaan atasan karena alasannya manusiawi",
         "C": "Memberi nilai sesuai bukti kinerja tanpa menanggapi permintaan atasan, supaya tidak terjadi perdebatan yang tidak perlu",
         "D": "Meminta atasan menilai Pak Joni sendiri agar Anda tidak terlibat dalam keputusan itu",
-        "E": "Menyampaikan kepada atasan bahwa penilaian harus sesuai bukti kinerja, lalu menawarkan rencana pembinaan bagi Pak Joni"
+        "E": "Memberi nilai sesuai bukti kinerja, menjelaskan dasarnya kepada atasan, dan menawarkan rencana pembinaan bagi Pak Joni"
       },
       "bobot": {
         "A": 4,
@@ -3191,13 +3194,13 @@
         "E": 5
       },
       "pembahasan": {
-        "inti": "Penilaian kinerja ASN harus **objektif dan berdasar bukti**, karena hasilnya dipakai untuk keputusan kepegawaian seperti kenaikan pangkat. Nilai yang dinaikkan karena kasihan merugikan staf lain yang bekerja baik dan membuat Pak Joni kehilangan kesempatan memperbaiki diri. Namun, profesionalisme bukan hanya menolak. Pemimpin yang baik juga **peduli pada perkembangan stafnya**. Menawarkan rencana pembinaan, misalnya target bulanan dan pendampingan, menjawab niat baik atasan dengan cara yang benar: membantu Pak Joni benar-benar layak naik pangkat. Soal ini sulit karena opsi 4 juga tegas dan terdokumentasi, tetapi tidak menawarkan jalan keluar bagi staf yang dinilai.",
+        "inti": "Penilaian kinerja ASN harus **objektif dan berdasar bukti**, karena hasilnya dipakai untuk keputusan kepegawaian seperti kenaikan pangkat. Nilai yang dinaikkan karena kasihan merugikan staf lain yang bekerja baik dan membuat Pak Joni kehilangan kesempatan memperbaiki diri. Namun, profesionalisme bukan hanya menolak. Pemimpin yang baik juga **peduli pada perkembangan stafnya**. Menawarkan rencana pembinaan, misalnya target bulanan dan pendampingan, menjawab niat baik atasan dengan cara yang benar: membantu Pak Joni benar-benar layak naik pangkat. Soal ini sulit karena opsi A juga objektif dan terdokumentasi. Pembedanya, E tidak berhenti pada penetapan nilai, tetapi juga menindaklanjuti masalah kinerja lewat pembinaan.",
         "opsi": {
-          "A": "Objektif, berani, dan terdokumentasi dengan baik, tetapi berhenti pada penolakan tanpa membantu Pak Joni memperbaiki kinerjanya.",
+          "A": "Objektif dan terdokumentasi: nilai sesuai bukti, dasarnya dijelaskan secara tertulis kepada atasan, dan catatan tugas dilampirkan. Kekurangannya, masalah kinerja Pak Joni tidak ditindaklanjuti dengan pembinaan.",
           "B": "Memanipulasi penilaian kinerja demi alasan pribadi melanggar prinsip objektivitas dan merugikan pegawai lain.",
           "C": "Penilaiannya benar, tetapi permintaan atasan diabaikan tanpa komunikasi, sehingga hubungan kerja bisa memburuk dan masalah tidak dibicarakan.",
           "D": "Menghindari tanggung jawab sebagai penilai yang sudah ditetapkan.",
-          "E": "Tegas pada objektivitas penilaian sekaligus peduli pada pengembangan staf melalui jalur yang benar."
+          "E": "Paling tepat. Nilai ditetapkan sesuai bukti kinerja dan dasarnya dijelaskan kepada atasan, sama objektifnya dengan A. Selain itu, masalah kinerja ditindaklanjuti dengan menawarkan rencana pembinaan bagi Pak Joni."
         },
         "konsep": "**Penilaian kinerja yang profesional:** objektif, berbasis bukti, dan diikuti pembinaan bagi yang belum mencapai target. Menolak manipulasi adalah syarat minimal; menawarkan perbaikan adalah nilai tambah."
       },

@@ -1583,9 +1583,9 @@
       "nomor": 55,
       "kategori": "TIU",
       "subtopik": "Soal Cerita",
-      "topik": "Kerja sama dua pegawai dengan kecepatan kerja berbeda",
+      "topik": "Kerja sama dua pegawai dengan laju kerja berbeda",
       "tingkat": "sedang",
-      "pertanyaan": "Seorang pegawai senior dapat menginput data 1,5 kali lebih cepat daripada pegawai baru. Jika bekerja bersama, mereka menyelesaikan input data dalam 6 jam. Waktu yang diperlukan pegawai baru jika menyelesaikan pekerjaan itu sendirian adalah ....",
+      "pertanyaan": "Laju input pegawai senior adalah 1,5 kali laju input pegawai baru. Jika bekerja bersama, mereka menyelesaikan input data dalam 6 jam. Waktu yang diperlukan pegawai baru jika menyelesaikan pekerjaan itu sendirian adalah ....",
       "opsi": {
         "A": "10 jam",
         "B": "12 jam",
@@ -1595,14 +1595,14 @@
       },
       "kunci": "C",
       "pembahasan": {
-        "inti": "Misalkan kecepatan pegawai baru = **r** bagian pekerjaan per jam. Kecepatan pegawai senior = **1,5r**.\n\nKecepatan bersama = r + 1,5r = **2,5r**.\n\nBersama-sama selesai dalam 6 jam, jadi 2,5r × 6 = 1 pekerjaan.\n15r = 1, sehingga r = 1/15.\n\nPegawai baru menyelesaikan 1/15 pekerjaan per jam, jadi sendirian butuh **15 jam**.\n\nPemeriksaan: pegawai senior butuh 15 ÷ 1,5 = 10 jam. Dalam satu jam, mereka bersama mengerjakan 1/15 + 1/10 = 2/30 + 3/30 = 5/30 = 1/6 pekerjaan. Jadi, bersama selesai dalam 6 jam. Hasilnya cocok dengan soal.",
+        "inti": "Misalkan laju pegawai baru = **r** bagian pekerjaan per jam. Laju pegawai senior = **1,5r**.\n\nLaju bersama = r + 1,5r = **2,5r**.\n\nBersama-sama selesai dalam 6 jam, jadi 2,5r × 6 = 1 pekerjaan.\n15r = 1, sehingga r = 1/15.\n\nPegawai baru menyelesaikan 1/15 pekerjaan per jam, jadi sendirian butuh **15 jam**.\n\nPemeriksaan: pegawai senior butuh 15 ÷ 1,5 = 10 jam. Dalam satu jam, mereka bersama mengerjakan 1/15 + 1/10 = 2/30 + 3/30 = 5/30 = 1/6 pekerjaan. Jadi, bersama selesai dalam 6 jam. Hasilnya cocok dengan soal.",
         "opsi": {
           "A": "10 jam adalah waktu pegawai **senior** jika bekerja sendirian. Peserta salah membaca siapa yang ditanyakan.",
-          "B": "12 jam = 6 × 2. Peserta menganggap kecepatan keduanya **sama**, sehingga waktu sendirian dua kali waktu bersama.",
-          "D": "9 jam = 6 × 1,5. Peserta mengalikan waktu bersama dengan perbandingan kecepatan, padahal kecepatan dan waktu tidak berhubungan secara langsung seperti itu.",
+          "B": "12 jam = 6 × 2. Peserta menganggap laju keduanya **sama**, sehingga waktu sendirian dua kali waktu bersama.",
+          "D": "9 jam = 6 × 1,5. Peserta mengalikan waktu bersama dengan perbandingan laju, padahal laju dan waktu tidak berhubungan secara langsung seperti itu.",
           "E": "4 jam = 6 ÷ 1,5. Hasil ini lebih cepat daripada waktu bersama, padahal satu orang sendirian pasti butuh **lebih lama** dari 6 jam."
         },
-        "konsep": "**Soal kerja sama:** jumlahkan **kecepatan** (bagian pekerjaan per jam), bukan waktunya. Kecepatan bersama × waktu bersama = 1 pekerjaan. Jika kecepatan dinyatakan sebagai kelipatan, nyatakan semuanya dalam satu variabel."
+        "konsep": "**Soal kerja sama:** jumlahkan **laju** (bagian pekerjaan per jam), bukan waktunya. Laju bersama × waktu bersama = 1 pekerjaan. Jika laju dinyatakan sebagai kelipatan, nyatakan semuanya dalam satu variabel."
       },
       "tips": "Periksa kewajaran: waktu kerja sendirian **pasti lebih lama** daripada waktu bersama, dan orang yang lebih lambat butuh waktu paling lama. Opsi di bawah 6 jam dapat langsung dicoret."
     },

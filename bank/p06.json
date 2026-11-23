@@ -330,25 +330,26 @@
       "pertanyaan": "Menjelang peringatan Hari Kemerdekaan, panitia kampung mencatat beberapa praktik di lingkungannya. Praktik yang **tidak** melanggar ketentuan tentang Bendera Negara adalah ....",
       "opsi": {
         "A": "Bendera lama yang warnanya sudah luntur tetap dipasang di gapura karena merah dan putihnya masih bisa dibedakan",
-        "B": "Bendera dikibarkan setengah tiang di halaman balai desa sebagai tanda berkabung atas wafatnya tokoh bangsa",
+        "B": "Bendera dikibarkan setengah tiang selama satu hari di kantor bupati sebagai tanda berkabung atas wafatnya bupati yang sedang menjabat",
         "C": "Kelompok suporter menuliskan nama klub dan tanda tangan para pemain langsung di kain Bendera Negara",
         "D": "Kain Bendera Negara dipakai sebagai pembungkus hadiah lomba agar suasana tujuh belasan semakin meriah",
         "E": "Pemilik toko memakai Bendera Negara sebagai bagian iklan komersial produknya selama bulan Agustus"
       },
       "kunci": "B",
       "pembahasan": {
-        "inti": "UU 24/2009 tentang Bendera, Bahasa, dan Lambang Negara, serta Lagu Kebangsaan mengatur cara menghormati Bendera Negara. Pasal 24 melarang setiap orang, antara lain, mengibarkan bendera yang rusak, robek, luntur, kusut, atau kusam; mencetak atau menulis huruf, angka, gambar, atau tanda lain pada bendera; memakai bendera untuk reklame atau iklan komersial; serta memakainya sebagai pembungkus atau tutup barang yang menurunkan kehormatannya. Sebaliknya, pengibaran setengah tiang adalah tata cara resmi untuk menyatakan berkabung. Jadi, opsi B tidak melanggar.",
+        "inti": "UU 24/2009 tentang Bendera, Bahasa, dan Lambang Negara, serta Lagu Kebangsaan mengatur cara menghormati Bendera Negara. Pasal 24 melarang setiap orang, antara lain, mengibarkan bendera yang rusak, robek, luntur, kusut, atau kusam; mencetak atau menulis huruf, angka, gambar, atau tanda lain pada bendera; memakai bendera untuk reklame atau iklan komersial; serta memakainya sebagai pembungkus atau tutup barang yang menurunkan kehormatannya. Sebaliknya, opsi B mengikuti Pasal 12 UU 24/2009. Pengibaran setengah tiang sebagai tanda berkabung berlaku antara lain apabila kepala daerah meninggal dunia (ayat (4) dan (5)). Untuk kepala daerah, ayat (8) mengatur: *\"pengibaran Bendera Negara setengah tiang dilakukan selama satu hari, terbatas pada gedung atau kantor pejabat yang bersangkutan.\"* Bupati adalah kepala daerah, kantor bupati adalah kantor pejabat yang bersangkutan, dan durasinya satu hari. Jadi, opsi B tidak melanggar.",
         "opsi": {
           "A": "Melanggar larangan mengibarkan bendera yang rusak, robek, **luntur**, kusut, atau kusam. Masih bisa dibedakan warnanya tidak membuat bendera luntur layak dikibarkan.",
           "C": "Melanggar larangan menulis huruf, angka, gambar, atau tanda lain pada Bendera Negara. Kecintaan pada klub tidak boleh diwujudkan dengan mencoret bendera.",
           "D": "Melanggar larangan memakai Bendera Negara sebagai pembungkus barang yang dapat menurunkan kehormatannya.",
           "E": "Melanggar larangan memakai Bendera Negara untuk reklame atau iklan komersial. Menghias toko dengan bendera untuk merayakan kemerdekaan berbeda dengan memakainya sebagai bagian iklan produk."
         },
-        "konsep": "**Kehormatan simbol negara:** Bendera Negara Sang Merah Putih diatur dalam Pasal 35 UUD 1945 dan dirinci dalam UU 24/2009. Prinsipnya, bendera hanya dipakai dengan cara yang menjaga kehormatannya: utuh, bersih, tidak dicoret, dan tidak dijadikan alat dagang."
+        "konsep": "**Kehormatan simbol negara:** Bendera Negara Sang Merah Putih diatur dalam Pasal 35 UUD 1945 dan dirinci dalam UU 24/2009. Prinsipnya, bendera hanya dipakai dengan cara yang menjaga kehormatannya: utuh, bersih, tidak dicoret, dan tidak dijadikan alat dagang. **Setengah tiang bukan untuk sembarang duka:** Pasal 12 menyebut pejabat yang wafatnya ditandai pengibaran setengah tiang, dan lama serta lokasinya berbeda menurut jabatan. Untuk kepala daerah, satu hari dan terbatas pada gedung atau kantor pejabat yang bersangkutan."
       },
       "tips": "Perhatikan kata **tidak** dalam pertanyaan. Untuk soal seperti ini, periksa setiap opsi satu per satu dengan pertanyaan: “apakah bendera dirusak, dicoret, dikomersialkan, atau direndahkan?”. Opsi yang menyisakan bendera tetap terhormat adalah jawabannya.",
       "rujukan": [
         "UUD NRI 1945 Pasal 35",
+        "UU 24/2009 tentang Bendera, Bahasa, dan Lambang Negara, serta Lagu Kebangsaan Pasal 12 ayat (4), (5), dan (8)",
         "UU 24/2009 tentang Bendera, Bahasa, dan Lambang Negara, serta Lagu Kebangsaan Pasal 24"
       ]
     },
