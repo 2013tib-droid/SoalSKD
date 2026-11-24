@@ -70,7 +70,7 @@ export function ItemPembahasan({ item, ragu }: { item: ItemHasil; ragu: boolean 
               <li
                 key={huruf}
                 className={`flex items-start gap-3 rounded-lg border p-3 ${
-                  kunci ? "border-success" : dipilih ? "border-danger" : "border-border"
+                  kunci ? "border-success bg-success/5" : dipilih ? "border-danger bg-danger/5" : "border-border"
                 }`}
               >
                 <span className="mono-number w-4 shrink-0 text-text-muted">{huruf}</span>
@@ -102,8 +102,11 @@ export function ItemPembahasan({ item, ragu }: { item: ItemHasil; ragu: boolean 
                   )}
                 </div>
                 {tkp && (
-                  <span className="mono-number shrink-0 text-text-muted" aria-label={`Bobot ${item.bobot![huruf]}`}>
-                    {item.bobot![huruf]}
+                  <span className="flex shrink-0 flex-col items-end" aria-label={`Bobot ${item.bobot![huruf]} poin`}>
+                    <span className={`mono-number ${kunci ? "text-text" : "text-text-muted"}`}>{item.bobot![huruf]}</span>
+                    <span aria-hidden className="caption-4 text-text-muted">
+                      poin
+                    </span>
                   </span>
                 )}
               </li>

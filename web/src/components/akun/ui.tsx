@@ -4,10 +4,10 @@ import { ArrowLeft, CheckCircle, Eye, EyeSlash, GoogleLogo, Info, WarningCircle 
 import Link from "next/link";
 import { useId, useState, type InputHTMLAttributes, type ReactNode } from "react";
 
-const tombolDasar =
-  "flex h-12 w-full items-center justify-center gap-2 rounded-lg px-4 title-4 transition-[background-color,transform,opacity] duration-200 ease-[var(--ease-out-house)] active:scale-[0.98] disabled:pointer-events-none disabled:opacity-60";
-export const tombolUtama = `${tombolDasar} bg-primary text-on-primary hover:bg-primary-hover`;
-export const tombolSekunder = `${tombolDasar} border border-border bg-surface text-text hover:bg-surface-muted`;
+import { tombolSekunder as sekunder, tombolUtama as utama } from "@/components/tombol";
+
+export const tombolUtama = `${utama} w-full`;
+export const tombolSekunder = `${sekunder} w-full`;
 export const tautanTeks = "title-4 inline-flex min-h-11 items-center rounded-lg px-1 text-primary underline-offset-4 hover:underline";
 
 /** Kerangka layar akun: tautan kembali, judul, isi satu kolom (nyaman satu tangan). */

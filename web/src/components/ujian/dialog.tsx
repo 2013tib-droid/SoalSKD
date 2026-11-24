@@ -1,7 +1,7 @@
 "use client";
 
 import { X } from "@phosphor-icons/react";
-import { useEffect, useRef } from "react";
+import { useEffect, useId, useRef } from "react";
 
 type Props = {
   terbuka: boolean;
@@ -16,6 +16,8 @@ type Props = {
 /** Dialog berbasis <dialog> native: fokus terkunci di dalam, Esc menutup. */
 export function Dialog({ terbuka, onTutup, judul, varian = "tengah", children, footer }: Props) {
   const ref = useRef<HTMLDialogElement>(null);
+  // Beberapa dialog ada di DOM sekaligus (grid, kumpulkan, keluar): id judul harus unik.
+  const idJudul = useId();
 
   useEffect(() => {
     const el = ref.current;
@@ -34,12 +36,12 @@ export function Dialog({ terbuka, onTutup, judul, varian = "tengah", children, f
       ref={ref}
       onClose={onTutup}
       onClick={(e) => e.target === ref.current && onTutup()}
-      aria-labelledby="judul-dialog"
+      aria-labelledby={idJudul}
       className={`${posisi} border border-border bg-surface p-0 text-text backdrop:bg-overlay`}
     >
       <div className="flex max-h-[inherit] flex-col">
         <header className="flex items-center justify-between gap-4 border-b border-border px-4 py-3">
-          <h2 id="judul-dialog" className="title-3">
+          <h2 id={idJudul} className="title-3">
             {judul}
           </h2>
           <button

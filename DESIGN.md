@@ -198,6 +198,8 @@ Tanpa bayangan dekoratif. Kedalaman ditunjukkan dengan border dan perbedaan `sur
 
 **Pengecualian landing (`/`) saja:** latar hero boleh bercahaya biru lembut (`primary/7%` + blob blur), mockup HP miring 4° dengan bayangan biru, strip angka dan banner CTA berbayangan biru lembut, banner CTA bergradien `primary` → `primary-hover` (gelap: blue-800 → blue-950, teks putih). Aksen kuning `accent` (#FBBF24, `accent-soft` untuk badge) hanya untuk dekorasi landing: garis coret, kilau, badge, harga di banner. Layar aplikasi tetap datar.
 
+Landing tetap menjaga makna warna status: ikon kartu keunggulan semuanya `primary/10` + `primary` (bukan `danger`/`success`), tanpa ikon dekoratif yang menimpa teks (smiley di kartu masalah/solusi dihapus), dan kartu yang tidak bisa diklik tidak naik saat hover. Pratinjau hasil di landing memakai label `accent-soft` "Contoh hasil try out" + keterangan "angka ilustrasi".
+
 ## Shapes
 
 `rounded.md` (8px) untuk tombol dan sel grid, `rounded.lg` (12px) untuk kartu dan pilihan jawaban, `rounded.full` untuk chip dan badge. Elemen bersarang memakai radius dalam = radius luar − jarak.
@@ -223,6 +225,8 @@ Tanpa bayangan dekoratif. Kedalaman ditunjukkan dengan border dan perbedaan `sur
 - **Layar akun (/masuk, /daftar, /aktivasi):** satu kolom `max-w-md`, satu kartu berisi form. /masuk dan /daftar: merek (kotak `primary` + ikon `Exam`) + judul `heading-4` sapaan, sakelar segmen Masuk/Daftar, form, lalu tiga manfaat ber-ikon + pratinjau grid nomor dekoratif; desktop ≥1024px dua kolom (panel kiri `surface-muted` berisi pratinjau + manfaat). Isi naik 8px sekali saat dibuka (`.masuk-naik`). Google di atas, pemisah "atau", lalu email + sandi. Input 48px dengan teks 16px (iOS tidak zoom) dan label di atas. Galat = ikon + teks `danger` tepat di atas tombol kirim. Kode aktivasi memakai Geist Mono huruf besar.
 - **Menu akun:** "Masuk" teks di nav (sebelum "Mulai Try Out"); setelah login ikon `UserCircle` 44px → panel ber-border tanpa bayangan: email, Aktivasi kode, Keluar.
 - **Gambar soal figural:** SVG dengan latar putih sendiri (tetap terbaca di tema gelap), bingkai sel `rounded.md` abu, tinta `text` terang. Pola hanya memakai hitam, putih, garis putus-putus, bentuk, jumlah, posisi, dan arah, tidak pernah warna saja. Garis 3 satuan per sel 100 satuan agar tetap tebal saat sel ±60px di HP; pilihan A–E disusun 3 + 2 supaya sel cukup besar. Lebar penuh kolom soal, maksimal `max-w-xl`.
+- **Chip status paket:** `caption-4`, `rounded.full`, tinggi ±20px. `Gratis` = `primary/10` + teks `primary`; jenis/terkunci/dimiliki = border `border` + `text-muted`; progres (Sedang dikerjakan, Selesai) = `surface-muted` + ikon 12px. Tidak memakai `success`/`doubt` supaya maknanya tetap khusus.
+- **Ringkasan hasil:** empat petak `surface-muted` (`caption-4` label + angka Geist Mono 18px), lalu saran subtes terlemah dengan ikon `Target`. Opsi pembahasan: kunci = border `success` + latar `success/5`, jawabanmu yang keliru = border `danger` + latar `danger/5`, selalu dengan ikon + teks.
 - **Ikon:** Phosphor (regular, 20px). Jangan pakai emoji atau Material.
 
 ## Do's and Don'ts

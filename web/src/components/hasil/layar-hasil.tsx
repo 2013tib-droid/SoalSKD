@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowCounterClockwise, ArrowLeft, Info } from "@phosphor-icons/react";
+import { ArrowCounterClockwise, ArrowLeft, ArrowRight, Info, Target } from "@phosphor-icons/react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
@@ -15,6 +15,7 @@ import { paketTerbuka } from "@/config/akses";
 import { useAkun } from "@/components/akun/auth";
 import { ItemPembahasan } from "./item-pembahasan";
 import { KartuSkor } from "./kartu-skor";
+import { tombolSekunder, tombolUtama } from "@/components/tombol";
 
 const FILTER = [
   { id: "semua", label: "Semua" },
@@ -24,10 +25,6 @@ const FILTER = [
 ] as const;
 type IdFilter = (typeof FILTER)[number]["id"];
 
-const tombolDasar =
-  "flex h-12 items-center justify-center gap-2 rounded-lg px-4 title-4 transition-[background-color,transform] duration-200 ease-[var(--ease-out-house)] active:scale-[0.98]";
-const tombolUtama = `${tombolDasar} bg-primary text-on-primary hover:bg-primary-hover`;
-const tombolSekunder = `${tombolDasar} border border-border bg-surface text-text hover:bg-surface-muted`;
 
 type Keadaan =
   | { jenis: "memuat" }
@@ -107,13 +104,17 @@ export function LayarHasil({ paket, dataStatik }: { paket: string; dataStatik?: 
     keadaan.jenis === "siap"
       ? (keadaan.hasil.perSubtes.find((p) => p.subtes === params.get("subtes"))?.subtes ?? null)
       : null;
-  const setParam = (kunci: string, nilai: string | null) => {
+  const setParams = (ubah: Record<string, string | null>, gulir = false) => {
     const q = new URLSearchParams(params.toString());
-    if (nilai === null) q.delete(kunci);
-    else q.set(kunci, nilai);
+    for (const [kunci, nilai] of Object.entries(ubah)) {
+      if (nilai === null) q.delete(kunci);
+      else q.set(kunci, nilai);
+    }
     const s = q.toString();
     router.replace(s ? `${pathname}?${s}` : pathname, { scroll: false });
+    if (gulir) document.getElementById("judul-pembahasan")?.scrollIntoView({ block: "start" });
   };
+  const setParam = (kunci: string, nilai: string | null) => setParams({ [kunci]: nilai });
 
   const ulangi = () => {
     hapusRekaman(paket);
@@ -141,7 +142,7 @@ export function LayarHasil({ paket, dataStatik }: { paket: string; dataStatik?: 
           className="caption-4 -ml-2 flex h-11 items-center gap-1 self-start rounded-lg px-2 text-text-muted hover:bg-surface-muted"
         >
           <ArrowLeft size={16} aria-hidden />
-          Beranda
+          Daftar try out
         </Link>
         <h1 className="heading-5">Hasil try out</h1>
         <p className="body-6 text-text-muted">
@@ -217,7 +218,13 @@ export function LayarHasil({ paket, dataStatik }: { paket: string; dataStatik?: 
               : `Paket ini berisi ${keadaan.hasil.items.length} soal, bukan paket penuh, jadi skor tidak dibandingkan dengan ambang batas. Cek aturan BKN/KemenPAN-RB terbaru.`}
           </p>
 
-          <section aria-labelledby="judul-pembahasan" className="flex flex-col gap-4">
+          <Ringkasan
+            hasil={keadaan.hasil}
+            rekaman={keadaan.rekaman}
+            onPelajari={(sub, st) => setParams({ subtes: sub, filter: st }, true)}
+          />
+
+          <section aria-labelledby="judul-pembahasan" className="flex scroll-mt-4 flex-col gap-4">
             <div className="flex flex-col gap-3">
               <h2 id="judul-pembahasan" className="title-3">
                 Pembahasan
@@ -271,13 +278,89 @@ export function LayarHasil({ paket, dataStatik }: { paket: string; dataStatik?: 
             )}
           </section>
 
-          <button type="button" onClick={ulangi} className={`${tombolUtama} self-start`}>
-            <ArrowCounterClockwise size={20} aria-hidden />
-            Ulangi paket ini
-          </button>
+          <section aria-labelledby="judul-lanjut" className="flex flex-col gap-3 rounded-xl border border-border bg-surface p-4">
+            <h2 id="judul-lanjut" className="title-3">
+              Langkah berikutnya
+            </h2>
+            <p className="body-6 text-pretty text-text-muted">
+              {keadaan.hasil.paketLengkap
+                ? "Setelah membaca pembahasan, kerjakan paket lain atau ulangi paket ini untuk melihat kemajuanmu."
+                : "Paket ini versi mini. Untuk merasakan jumlah soal dan durasi SKD sebenarnya, lanjut ke simulasi lengkap."}
+            </p>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <Link href="/try-out" className={tombolUtama}>
+                {keadaan.hasil.paketLengkap ? "Pilih paket lain" : "Lihat simulasi lengkap"}
+                <ArrowRight size={20} aria-hidden />
+              </Link>
+              <button type="button" onClick={ulangi} className={tombolSekunder}>
+                <ArrowCounterClockwise size={20} aria-hidden />
+                Ulangi paket ini
+              </button>
+            </div>
+          </section>
         </>
       )}
     </main>
+  );
+}
+
+/**
+ * Ringkasan performa: jumlah benar/salah/kosong/ragu dan subtes dengan persentase skor terendah
+ * sebagai saran tempat mulai belajar. Hanya membaca hasil yang sudah dihitung.
+ */
+function Ringkasan({
+  hasil,
+  rekaman,
+  onPelajari,
+}: {
+  hasil: HasilUjian;
+  rekaman: Rekaman;
+  onPelajari: (subtes: string, filter: "salah" | "kosong") => void;
+}) {
+  const hitung = (st: ItemHasil["status"]) => hasil.items.filter((it) => it.status === st).length;
+  const angka = [
+    { label: "Benar", nilai: hitung("benar") },
+    { label: "Salah", nilai: hitung("salah") },
+    { label: "Kosong", nilai: hitung("kosong") },
+    { label: "Ragu", nilai: hasil.items.filter((it) => rekaman.ragu[it.id]).length },
+  ];
+  const persen = (p: { skor: number; maks: number }) => (p.maks > 0 ? p.skor / p.maks : 0);
+  const terlemah = [...hasil.perSubtes].sort((a, b) => persen(a) - persen(b))[0];
+  // Filter hanya bisa satu status: arahkan ke yang salah dulu, kalau tidak ada ke yang kosong.
+  const diSubtes = (st: ItemHasil["status"]) =>
+    terlemah ? hasil.items.filter((it) => it.kategori === terlemah.subtes && it.status === st).length : 0;
+  const tujuan: "salah" | "kosong" = diSubtes("salah") > 0 ? "salah" : "kosong";
+  const perluDipelajari = diSubtes(tujuan);
+  return (
+    <section aria-labelledby="judul-ringkasan" className="flex flex-col gap-4 rounded-xl border border-border bg-surface p-4">
+      <h2 id="judul-ringkasan" className="title-3">
+        Ringkasan
+      </h2>
+      <dl className="grid grid-cols-4 gap-2">
+        {angka.map((a) => (
+          <div key={a.label} className="flex flex-col gap-0.5 rounded-lg bg-surface-muted px-3 py-2">
+            <dt className="caption-4 text-text-muted">{a.label}</dt>
+            <dd className="font-mono text-lg font-semibold tabular-nums">{a.nilai}</dd>
+          </div>
+        ))}
+      </dl>
+      <p className="caption-4 text-text-muted">TKP dihitung benar kalau memilih opsi berbobot tertinggi.</p>
+      {terlemah && perluDipelajari > 0 && (
+        <div className="flex flex-col gap-3 border-t border-border pt-4 sm:flex-row sm:items-center sm:justify-between">
+          <p className="body-6 flex items-start gap-2 text-pretty">
+            <Target size={20} aria-hidden className="mt-px shrink-0 text-primary" />
+            <span>
+              Mulai dari <strong className="font-semibold">{terlemah.subtes}</strong>: skornya{" "}
+              <span className="mono-number">{Math.round(persen(terlemah) * 100)}%</span> dari maksimal, dengan{" "}
+              <span className="mono-number">{perluDipelajari}</span> soal {tujuan === "salah" ? "salah" : "belum dijawab"}.
+            </span>
+          </p>
+          <button type="button" onClick={() => onPelajari(terlemah.subtes, tujuan)} className={`${tombolSekunder} shrink-0`}>
+            Pelajari soal {terlemah.subtes}
+          </button>
+        </div>
+      )}
+    </section>
   );
 }
 
