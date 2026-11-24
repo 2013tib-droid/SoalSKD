@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { connection } from "next/server";
 import { BUILD_STATIK } from "@/config/build";
 import { PAKET_GRATIS, SOAL_HERO } from "@/config/landing";
+import { DAFTAR_PRODUK, PRODUK } from "@/config/produk";
 import { LayarLanding } from "@/components/landing/layar-landing";
 import { ambilFormatSkd, durasiPaket } from "@/lib/format-skd";
 import { ambilSoalPembahasan, daftarPaket } from "@/lib/soal";
@@ -44,6 +45,15 @@ export default async function Landing() {
         nilaiBenar: format.subtes.TWK.nilaiBenar,
         ambang,
         soalGratis: paket.find((p) => p.id === PAKET_GRATIS)?.jumlahSoal ?? 0,
+        // Jumlah soal per bundel dari bank (bukan angka tulisan tangan di kartu harga).
+        soalProduk: Object.fromEntries(
+          DAFTAR_PRODUK.map((id) => [
+            id,
+            paket
+              .filter((p) => (PRODUK[id].paket as readonly string[]).includes(p.id))
+              .reduce((n, p) => n + p.jumlahSoal, 0),
+          ]),
+        ),
       }}
       soalHero={hero && { kategori: hero.kategori, pertanyaan: hero.pertanyaan, opsi: hero.opsi, gambar: hero.gambar }}
     />

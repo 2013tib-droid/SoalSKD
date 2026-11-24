@@ -14,8 +14,9 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 
 ## Komponen
 
+- `web/src/components/tombol.ts` · kelas tombol satu sumber: `tombolUtama`, `tombolSekunder`, `tombolNonaktif` (aksi belum bisa dipakai, mis. "Pembelian segera dibuka"), `tombolDasar`, `tombolBesar(kelas)` untuk landing (teks 16px) · modul biasa, bisa dipakai server component; `akun/ui.tsx` menambah `w-full`
 - `web/src/components/landing/gerak.tsx` · `Muncul` (section naik 32px sekali saat masuk layar) dan `TaglineBertahap` (kata menyala satu per satu saat lewat garis 60% layar) · keduanya mati di `prefers-reduced-motion`
-- `web/src/components/panduan/panduan-ujian.tsx` · `PratinjauUjian` (layar ujian statis dari soal bank, opsi `beranotasi`/`tanpaBingkai`), `CaraBaca` (keterangan bernomor), `PanduanUjian` (`<details>` "Cara membaca layar ujian" di /try-out, dirender server lalu jadi slot `panduan` di `LayarBeranda`), `BAGIAN_SKD`
+- `web/src/components/panduan/panduan-ujian.tsx` · `PratinjauUjian` (layar ujian statis dari soal bank, opsi `beranotasi`/`tanpaBingkai`), `CaraBaca` (keterangan bernomor), `PanduanUjian` (`<details>` "Cara membaca layar ujian" di /try-out, dirender server lalu jadi slot `panduan` di `LayarBeranda`), `PratinjauHasil` (contoh halaman hasil di landing, angka dari rasio ilustrasi × nilai maks config, selalu berlabel "Contoh hasil try out · angka ilustrasi"), `BAGIAN_SKD`
 - `web/src/components/gambar-soal.tsx` · `GambarSoal` gambar TIU figural (SVG bank sebagai data URI, ikut gerbang paket) di bawah teks soal, di layar ujian dan pembahasan · SVG dibuat `tools/buat_figural.py`
 - `web/src/components/teks-md.tsx` · render Markdown GFM soal/pembahasan (tanpa HTML, italic jadi medium) · `inline` untuk di dalam tombol
 - `web/src/components/hasil/kartu-skor.tsx` · kartu KPI skor (nilai/maks, bar, status ambang ikon + teks) · `utama` untuk kartu total selebar grid
@@ -23,7 +24,7 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 - `web/src/components/ujian/kartu-soal.tsx` · teks soal + pilihan A–E (radiogroup) · `terpilih`, `onPilih`, `terkunci`
 - `web/src/components/ujian/grid-nomor.tsx` · grid nomor per subtes + legenda jumlah · status belum / dijawab / ragu (ragu juga diberi titik)
 - `web/src/components/ujian/timer.tsx` · timer `jj:mm:dd`, status normal / peringatan / kritis lewat `statusTimer()` · ambang dari config
-- `web/src/components/ujian/dialog.tsx` · `<dialog>` native, varian `sheet` / `tengah`, Esc + klik backdrop menutup
+- `web/src/components/ujian/dialog.tsx` · `<dialog>` native, varian `sheet` / `tengah`, Esc + klik backdrop menutup, id judul unik (`useId`) karena beberapa dialog ada di DOM sekaligus
 - `web/src/components/ujian/indikator-simpan.tsx` · status simpan otomatis (tersimpan / gagal)
 
 - `web/src/components/akun/ui.tsx` · `Kolom` (input 48px, teks 16px, label di atas), `KolomSandi` (tombol lihat 44px), `Pesan` (galat/sukses/info, ikon + teks), `TombolGoogle`, `Pemisah`, `Kerangka`, `tombolUtama`/`tombolSekunder`/`tautanTeks`, `tujuanAman(lanjut)`
@@ -58,7 +59,9 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 - Toast satu kali saat timer masuk ambang peringatan dan kritis (tidak muncul saat sesi dipulihkan)
 - Setelah kumpul (manual atau waktu habis) layar ujian pindah ke `/ujian/<paket>/hasil`; buka ujian yang sudah selesai juga diarahkan ke hasil. "Ulangi" menghapus rekaman.
 - Empty state hasil: belum ada jawaban / belum dikumpulkan / filter tanpa hasil (tombol hapus filter)
+- Urutan halaman hasil: skor total → per subtes → catatan ambang → `Ringkasan` (benar/salah/kosong/ragu + subtes berpersentase terendah dengan tombol yang memasang `?subtes=&filter=salah|kosong`) → pembahasan → "Langkah berikutnya" (paket lain / simulasi lengkap + Ulangi)
+- Chip status kartu paket di /try-out (`caption-4 rounded-full`): jenis `Gratis` (biru muda) + `Paket mini` / `Simulasi lengkap`, lalu `Sudah dimiliki` / `Sedang dikerjakan` (ikon jam) / `Selesai` (ikon centang); kartu bundel `Terkunci` (ikon gembok). Status bank (`draf`/`review`) tidak pernah tampil ke pengguna
 - Pintasan ujian: A–E / 1–5 pilih, ← → pindah, R ragu-ragu
-- Paket berbayar terkunci di /try-out dikelompokkan per bundel (`produkDariPaket`): satu kartu per bundel (nama dari `PRODUK`, harga dari `penawaranUntuk()`, daftar paket, badge "Berbayar") + tombol beli (`TAUTAN_BELI[bundel]`, null = nonaktif "Pembelian segera dibuka") dan tombol sekunder ber-ikon gembok ke /masuk atau /aktivasi (`?lanjut=` kembali); paket yang sudah dimiliki keluar dari kartu bundel jadi kartu biasa
+- Paket berbayar terkunci di /try-out dikelompokkan per bundel (`produkDariPaket`): satu kartu per bundel (nama dari `PRODUK`, harga dari `penawaranUntuk()`, daftar paket, chip "Terkunci") + tombol beli (`TAUTAN_BELI[bundel]`, null = nonaktif "Pembelian segera dibuka") dan tombol sekunder ber-ikon gembok ke /masuk atau /aktivasi (`?lanjut=` kembali); paket yang sudah dimiliki keluar dari kartu bundel jadi kartu biasa
 - Galat login/kode: `Pesan jenis="galat"` di atas tombol kirim; login Google dibatalkan = info, bukan galat; "tidak ada" dan "sudah dipakai" satu pesan
-- Tautan kembali di header: `caption-4 -ml-2 flex h-11 items-center gap-1 rounded-lg px-2` + `ArrowLeft` 16 · `/try-out` → `/` ("Halaman utama"), hasil → `/try-out` ("Beranda")
+- Tautan kembali di header: `caption-4 -ml-2 flex h-11 items-center gap-1 rounded-lg px-2` + `ArrowLeft` 16 · `/try-out` → `/` ("Halaman utama"), hasil dan gerbang ujian → `/try-out` ("Daftar try out")

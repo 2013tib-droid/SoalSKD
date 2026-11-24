@@ -17,6 +17,7 @@ import { IndikatorSimpan } from "./indikator-simpan";
 import { KartuSoal } from "./kartu-soal";
 import { statusTimer, Timer, type StatusTimer } from "./timer";
 import { useUjian } from "./use-ujian";
+import { tombolDasar, tombolSekunder, tombolUtama } from "@/components/tombol";
 
 type Props = {
   paket: string;
@@ -26,10 +27,6 @@ type Props = {
   kritisMenit: number;
 };
 
-const tombolDasar =
-  "flex h-12 items-center justify-center gap-2 rounded-lg px-4 title-4 transition-[background-color,transform] duration-200 ease-[var(--ease-out-house)] active:scale-[0.98] disabled:opacity-40 disabled:active:scale-100";
-const tombolUtama = `${tombolDasar} bg-primary text-on-primary hover:bg-primary-hover`;
-const tombolSekunder = `${tombolDasar} border border-border bg-surface text-text hover:bg-surface-muted`;
 
 export function LayarUjian({
   paket,
@@ -252,7 +249,12 @@ export function LayarUjian({
           <h2 className="title-3">Nomor soal</h2>
         </div>
         <div className="flex-1 overflow-y-auto p-4">{grid}</div>
-        <div className="border-t border-border p-4">
+        <div className="flex flex-col gap-3 border-t border-border p-4">
+          <p className="caption-4 text-text-muted">
+            Pintasan: <kbd className="font-mono">A</kbd>–<kbd className="font-mono">E</kbd> pilih ·{" "}
+            <kbd className="font-mono">←</kbd> <kbd className="font-mono">→</kbd> pindah ·{" "}
+            <kbd className="font-mono">R</kbd> ragu-ragu
+          </p>
           <button
             type="button"
             onClick={() => setKonfirmasiTerbuka(true)}

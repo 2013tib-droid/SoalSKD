@@ -6,7 +6,7 @@ import { PanduanUjian } from "@/components/panduan/panduan-ujian";
 import { SOAL_HERO } from "@/config/landing";
 import { ambilFormatSkd, durasiPaket } from "@/lib/format-skd";
 import { ambilSoalUjian, daftarPaket } from "@/lib/soal";
-import { paketTerbuka } from "@/config/akses";
+import { PAKET_TERBUKA, paketTerbuka } from "@/config/akses";
 
 export const metadata: Metadata = { title: "Pilih paket · SoalSKD" };
 
@@ -30,7 +30,15 @@ export default async function Beranda() {
   );
   return (
     <LayarBeranda
-      paket={paket.map((p) => ({ ...p, durasiMenit: durasiPaket(format, p.jumlahSoal), terbuka: paketTerbuka(p.id) }))}
+      paket={paket.map((p) => ({
+        ...p,
+        durasiMenit: durasiPaket(format, p.jumlahSoal),
+        terbuka: paketTerbuka(p.id),
+        gratis: (PAKET_TERBUKA as readonly string[]).includes(p.id),
+        lengkap: format.urutan.every(
+          (k) => p.perSubtes.find((x) => x.subtes === k)?.jumlah === format.subtes[k].jumlahSoal,
+        ),
+      }))}
       panduan={panduan}
     />
   );

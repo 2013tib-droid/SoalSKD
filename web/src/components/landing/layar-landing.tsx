@@ -3,24 +3,19 @@ import {
   BookOpen,
   CaretDown,
   ChartBar,
-  ChartLineUp,
   Check,
   CheckCircle,
-  DeviceMobile,
+  ClockCountdown,
   Exam,
   Gift,
   Lightning,
-  Megaphone,
+  ListChecks,
   PlayCircle,
-  ShieldCheck,
   ShoppingBag,
-  SmileyNervous,
-  SmileyWink,
   Stack,
   Star,
-  Target,
+  Student,
   Timer,
-  Trophy,
   XCircle,
 } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
@@ -29,7 +24,10 @@ import { FITUR_BUNDEL, PAKET_GRATIS, PENAWARAN, TAUTAN_BELI, TESTIMONI } from "@
 import type { SoalUjian } from "@/lib/soal";
 import { MenuAkun } from "@/components/akun/menu-akun";
 import { LOGIN_AKTIF } from "@/lib/firebase/klien";
-import { BAGIAN_SKD, PratinjauUjian } from "@/components/panduan/panduan-ujian";
+import { BAGIAN_SKD, PratinjauHasil, PratinjauUjian } from "@/components/panduan/panduan-ujian";
+import { tombolBesar, tombolNonaktif, tombolSekunder, tombolUtama as tombolUtamaApp } from "@/components/tombol";
+import { EMAIL_KONTAK } from "@/config/legal";
+import { PRODUK, type IdProduk } from "@/config/produk";
 import { Muncul } from "./gerak";
 
 export type DataLanding = {
@@ -44,6 +42,8 @@ export type DataLanding = {
   nilaiBenar: number;
   ambang: { kode: string; nilai: number }[] | null;
   soalGratis: number;
+  /** Jumlah soal per bundel, dihitung dari bank. */
+  soalProduk: Partial<Record<IdProduk, number>>;
 };
 
 type Props = {
@@ -52,10 +52,10 @@ type Props = {
 };
 
 const CTA = "Mulai Try Out";
-const tombolUtama =
-  "button-md flex h-12 items-center justify-center gap-2 rounded-lg bg-primary px-4 text-on-primary transition-[background-color,transform] duration-300 ease-[var(--ease-out-house)] hover:bg-primary-hover active:scale-[0.98]";
-const tombolKedua =
-  "button-md flex h-12 items-center justify-center gap-2 rounded-lg border border-border bg-surface px-4 text-text transition-[background-color,transform] duration-300 ease-[var(--ease-out-house)] hover:bg-surface-muted active:scale-[0.98]";
+/** CTA utama landing: satu ajakan yang sama di hero dan banner penutup. */
+const CTA_GRATIS = "Coba Try Out Gratis";
+const tombolUtama = tombolBesar(tombolUtamaApp);
+const tombolKedua = tombolBesar(tombolSekunder);
 const wadah = "mx-auto w-full max-w-5xl px-4";
 const judulSection = "heading-4 lg:heading-3 text-balance";
 
@@ -65,28 +65,25 @@ export function LayarLanding({ data, soalHero }: Props) {
   const komposisi = gabung(data.komposisi.map((s) => `${s.jumlah} ${s.kode}`));
   const ambangTeks = data.ambang && gabung(data.ambang.map((a) => `${a.kode} ${a.nilai}`));
 
+  // Ikon keunggulan semua biru: warna status (danger/success) hanya untuk timer, galat, dan hasil.
   const keunggulan = [
     {
-      ikon: Target,
-      warna: "bg-danger/10 text-danger",
-      judul: `${data.totalSoal > 0 ? `${data.totalSoal} soal` : "Soal"} orisinal`,
-      isi: "Ditulis sendiri mengikuti format SKD, bukan salinan dari internet.",
+      ikon: ListChecks,
+      judul: "Komposisi seperti SKD",
+      isi: `${komposisi} dalam satu paket. Soal ditulis sendiri, bukan salinan.`,
     },
     {
       ikon: Timer,
-      warna: "bg-primary/10 text-primary",
       judul: "Simulasi seperti CAT",
       isi: `Timer selalu terlihat dan berubah warna saat waktu tinggal ${AMBANG_TIMER.peringatan * 100}%.`,
     },
     {
       ikon: BookOpen,
-      warna: "bg-primary/10 text-primary",
       judul: "Pembahasan tiap pilihan",
       isi: "Tahu kenapa jawabanmu benar, dan kenapa pilihan lain menjebak.",
     },
     {
       ikon: ChartBar,
-      warna: "bg-success/10 text-success",
       judul: "Skor per subtes",
       isi: ambangTeks
         ? `TWK, TIU, TKP dinilai terpisah dan dibandingkan dengan ${ambangTeks}.`
@@ -110,27 +107,38 @@ export function LayarLanding({ data, soalHero }: Props) {
   const langkah = [
     { judul: "Pilih paket", isi: `${data.soalPerPaket} soal: ${komposisi}.` },
     { judul: "Kerjakan", isi: "Timer berjalan, jawaban tersimpan otomatis." },
-    { judul: "Lihat skor", isi: "Nilai TWK, TIU, TKP langsung keluar." },
-    { judul: "Pelajari", isi: "Saring soal yang salah, kosong, atau ragu." },
+    { judul: "Lihat skor", isi: "Nilai TWK, TIU, TKP langsung keluar, lengkap dengan subtes yang perlu dikejar." },
+    { judul: "Pelajari", isi: "Saring soal yang salah, kosong, atau ragu, lalu baca pembahasannya." },
   ];
 
+  // Semua angka dari bank/ dan config/skd.json. Paket mini gratis dan simulasi lengkap dibedakan.
   const angka = [
-    ...(data.totalSoal > 0
-      ? [{ ikon: Lightning, nilai: `${data.totalSoal}`, label: "Soal orisinal" }]
+    ...(data.totalSoal > 0 ? [{ ikon: Lightning, nilai: `${data.totalSoal}`, label: "Soal orisinal" }] : []),
+    ...(data.paketLengkap > 0
+      ? [{ ikon: Stack, nilai: `${data.paketLengkap}`, label: `Try out lengkap, ${data.soalPerPaket} soal` }]
       : []),
-    ...(data.jumlahPaket > 0 ? [{ ikon: Stack, nilai: `${data.jumlahPaket}`, label: "Paket latihan" }] : []),
-    { ikon: DeviceMobile, nilai: "HP", label: "Nyaman satu tangan" },
-    { ikon: ShieldCheck, nilai: "Gratis", label: `Paket pertama, tanpa akun` },
+    { ikon: ClockCountdown, nilai: `${data.durasiMenit} menit`, label: "Per simulasi lengkap" },
+    ...(data.soalGratis > 0
+      ? [{ ikon: Gift, nilai: `${data.soalGratis} soal`, label: "Paket mini gratis, tanpa akun" }]
+      : []),
   ];
 
   const faq = [
     {
       t: "Apakah soalnya sama dengan soal asli BKN?",
-      j: "Tidak. Semua soal ditulis sendiri mengikuti format SKD. Tidak ada soal yang disalin dari buku atau aplikasi lain.",
+      j: "Tidak. Semua soal ditulis sendiri mengikuti format SKD. Tidak ada soal yang disalin dari buku atau aplikasi lain. SoalSKD adalah platform latihan independen dan tidak berafiliasi dengan BKN, KemenPAN-RB, atau SSCASN.",
+    },
+    {
+      t: "Bagaimana soalnya disusun?",
+      j: `Setiap paket lengkap memuat ${komposisi}, dengan campuran soal mudah, sedang, dan sulit. Setiap soal punya pembahasan untuk semua pilihan jawaban, dan soal TKP punya bobot untuk setiap pilihan. Sebelum terbit, setiap paket diperiksa otomatis: format, kunci jawaban, bobot TKP, dan jumlah soal per subtes.`,
     },
     {
       t: "Berapa soal dan berapa lama satu paket?",
-      j: `${data.soalPerPaket} soal (${komposisi}) dengan waktu ${data.durasiMenit} menit.${
+      j: `Paket lengkap berisi ${data.soalPerPaket} soal (${komposisi}) dengan waktu ${data.durasiMenit} menit.${
+        data.soalGratis > 0 && data.soalGratis < data.soalPerPaket
+          ? ` Paket gratis adalah versi mini berisi ${data.soalGratis} soal dengan waktu ${data.soalGratis * DURASI_LATIHAN_MENIT_PER_SOAL} menit.`
+          : ""
+      }${
         data.acuanDurasi
           ? ` Durasinya mengikuti ${data.acuanDurasi}. Cek aturan BKN/KemenPAN-RB terbaru.`
           : ` Untuk sementara durasinya ${DURASI_LATIHAN_MENIT_PER_SOAL} menit per soal, sampai durasi resmi tahun ini kami catat.`
@@ -167,6 +175,14 @@ export function LayarLanding({ data, soalHero }: Props) {
           {
             t: "Apa bedanya Bundel 1 dan Bundel 2?",
             j: `Isinya berbeda. ${PENAWARAN.map((x) => `${x.nama.split(":")[0]} berisi ${x.isi.map((i) => i.judul).join(" dan ")}`).join(", sedangkan ")}. Soal di setiap paket tidak berulang, jadi keduanya bisa dikerjakan berurutan. Setiap bundel dibeli terpisah dengan kode aktivasinya sendiri, dan semua kode bisa ditukar di akun yang sama.`,
+          },
+        ]
+      : []),
+    ...(PENAWARAN.length > 0
+      ? [
+          {
+            t: "Setelah membeli, bagaimana membuka paketnya?",
+            j: "Setelah pembayaran berhasil, kode aktivasi dikirim ke emailmu. Masuk atau daftar di SoalSKD, buka halaman Aktivasi, lalu masukkan kodenya. Paket langsung terbuka di halaman Try Out, dan ebook PDF bisa diunduh dari halaman yang sama.",
           },
         ]
       : []),
@@ -230,8 +246,8 @@ export function LayarLanding({ data, soalHero }: Props) {
           <div className={`${wadah} grid items-center gap-10 pt-24 pb-10 lg:grid-cols-[7fr_5fr] lg:gap-8 lg:pt-28 lg:pb-12`}>
             <div className="flex flex-col gap-6">
               <p className="caption-4 flex w-fit items-center gap-2 rounded-full bg-accent-soft px-3 py-1.5 text-text">
-                <Trophy size={16} weight="fill" aria-hidden className="text-accent" />
-                SKD CPNS · Simulasi CAT di HP
+                <Student size={16} weight="fill" aria-hidden />
+                Untuk calon peserta SKD CPNS
               </p>
               <h1 className="heading-3 sm:heading-2 lg:heading-1 text-balance tracking-tight">
                 Latihan SKD yang terasa seperti{" "}
@@ -249,26 +265,29 @@ export function LayarLanding({ data, soalHero }: Props) {
                 sesungguhnya.
               </h1>
               <p className="body-3 max-w-[560px] text-pretty text-text-muted sm:text-lg">
-                Soal orisinal dengan pembahasan tiap pilihan, timer seperti di ruang tes, dan skor per subtes yang
-                langsung keluar. Belajar lebih terarah sebelum hari ujian.
+                Try out TWK, TIU, dan TKP dengan timer, skor per subtes, dan pembahasan untuk setiap pilihan jawaban.
+                {data.soalGratis > 0 &&
+                  ` Mulai dari ${data.soalGratis} soal gratis tanpa daftar${
+                    data.paketLengkap > 0 ? `, lalu lanjut ke simulasi lengkap ${data.soalPerPaket} soal` : ""
+                  }.`}
               </p>
               <div className="flex flex-col gap-3 sm:flex-row">
-                <Link href="/try-out" className={`${tombolUtama} h-14 px-6 sm:w-fit`}>
-                  {CTA}
-                  <ArrowRight size={20} aria-hidden />
-                </Link>
                 {data.soalGratis > 0 && (
-                  <Link
-                    href={`/ujian/${PAKET_GRATIS}`}
-                    className="button-md flex h-14 items-center justify-center gap-2 rounded-lg border-2 border-primary bg-surface px-6 text-primary transition-[background-color,transform] duration-300 ease-[var(--ease-out-house)] hover:bg-primary/5 active:scale-[0.98] sm:w-fit"
-                  >
+                  <Link href={`/ujian/${PAKET_GRATIS}`} className={`${tombolUtama} h-14 px-6 sm:w-fit`}>
                     <PlayCircle size={20} weight="fill" aria-hidden />
-                    Coba {data.soalGratis} Soal Gratis
+                    {CTA_GRATIS}
                   </Link>
                 )}
+                <Link
+                  href={PENAWARAN.length > 0 ? "#harga" : "/try-out"}
+                  className={`${data.soalGratis > 0 ? tombolKedua : tombolUtama} h-14 px-6 sm:w-fit`}
+                >
+                  Lihat Paket Latihan
+                  <ArrowRight size={20} aria-hidden />
+                </Link>
               </div>
               <ul className="caption-4 flex flex-wrap gap-x-4 gap-y-2 text-text-muted">
-                {["Paket pertama gratis", "Tanpa daftar akun", "Jawaban tersimpan otomatis"].map((t) => (
+                {["Tanpa daftar akun untuk paket gratis", "Jawaban tersimpan otomatis", "Bisa di HP dan laptop"].map((t) => (
                   <li key={t} className="flex items-center gap-1">
                     <CheckCircle size={16} weight="fill" aria-hidden className="text-success" />
                     {t}
@@ -284,7 +303,7 @@ export function LayarLanding({ data, soalHero }: Props) {
                     <div className="flex items-center justify-between px-5 pt-3 pb-1">
                       <span className="title-4">SoalSKD</span>
                       <span aria-hidden className="h-5 w-20 rounded-full bg-neutral-900 dark:bg-neutral-700" />
-                      <span className="caption-4 rounded-full bg-surface-muted px-2 py-0.5 text-text-muted">Paket 1</span>
+                      <span className="caption-4 rounded-full bg-surface-muted px-2 py-0.5 text-text-muted">Contoh</span>
                     </div>
                     <div className="max-h-[540px] overflow-hidden">
                       <PratinjauUjian soal={soalHero} data={data} tanpaBingkai />
@@ -341,7 +360,16 @@ export function LayarLanding({ data, soalHero }: Props) {
                         <div className="flex flex-col gap-2">
                           <h3 className="title-2">{x.nama}</h3>
                           <p className="heading-2 tracking-tight text-text tabular-nums">{x.harga}</p>
-                          <p className="body-6 text-text-muted">Sekali bayar untuk seluruh isi bundel ini.</p>
+                          <p className="body-6 text-text-muted">
+                            Sekali bayar untuk {PRODUK[x.produk].paket.length} try out lengkap
+                            {data.soalProduk[x.produk] ? (
+                              <>
+                                {" "}
+                                · <span className="mono-number">{data.soalProduk[x.produk]}</span> soal
+                              </>
+                            ) : null}{" "}
+                            + ebook PDF.
+                          </p>
                         </div>
                       </div>
                       <div className="flex flex-1 flex-col gap-6 border-t border-border p-6 sm:p-8">
@@ -365,11 +393,7 @@ export function LayarLanding({ data, soalHero }: Props) {
                               Beli {x.nama.split(":")[0]} {x.harga}
                             </a>
                           ) : (
-                            <span
-                              role="link"
-                              aria-disabled="true"
-                              className="button-md flex h-12 w-full cursor-not-allowed items-center justify-center gap-2 rounded-lg bg-surface-muted px-4 text-text-muted"
-                            >
+                            <span role="link" aria-disabled="true" className={`${tombolBesar(tombolNonaktif)} w-full`}>
                               <ShoppingBag size={20} aria-hidden />
                               Pembelian segera dibuka
                             </span>
@@ -381,10 +405,10 @@ export function LayarLanding({ data, soalHero }: Props) {
                 })}
               </ul>
 
-              <div className="grid gap-6 rounded-2xl border border-border bg-surface p-6 sm:p-8 lg:grid-cols-[2fr_1fr] lg:items-center">
+              <div className="grid gap-8 rounded-2xl border border-border bg-surface p-6 sm:p-8 lg:grid-cols-2">
                 <div className="flex flex-col gap-4">
                   <p className="title-3">{PENAWARAN.length > 1 ? "Di setiap bundel" : "Termasuk"}</p>
-                  <ul className="grid gap-4 sm:grid-cols-3">
+                  <ul className="flex flex-col gap-4">
                     {FITUR_BUNDEL.map((f) => (
                       <li key={f.judul} className="flex items-start gap-3">
                         <CheckCircle size={20} weight="fill" className="mt-0.5 shrink-0 text-primary" aria-hidden />
@@ -396,7 +420,28 @@ export function LayarLanding({ data, soalHero }: Props) {
                     ))}
                   </ul>
                 </div>
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-4 border-t border-border pt-6 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-8">
+                  <p className="title-3">Setelah membayar</p>
+                  <ol className="flex flex-col gap-3">
+                    {[
+                      "Kode aktivasi dikirim ke emailmu.",
+                      "Masuk atau daftar, lalu masukkan kode di halaman Aktivasi.",
+                      "Paket terbuka di halaman Try Out, ebook PDF bisa diunduh di sana.",
+                    ].map((t, i) => (
+                      <li key={t} className="body-6 flex items-start gap-3 text-pretty">
+                        <span
+                          aria-hidden
+                          className="caption-4 flex size-6 shrink-0 items-center justify-center rounded-full bg-primary/10 font-mono text-primary"
+                        >
+                          {i + 1}
+                        </span>
+                        <span>
+                          <span className="sr-only">Langkah {i + 1}: </span>
+                          {t}
+                        </span>
+                      </li>
+                    ))}
+                  </ol>
                   {data.soalGratis > 0 && (
                     <Link href={`/ujian/${PAKET_GRATIS}`} className={`${tombolKedua} w-full`}>
                       <Gift size={20} aria-hidden className="text-primary" />
@@ -421,7 +466,7 @@ export function LayarLanding({ data, soalHero }: Props) {
         <section aria-labelledby="judul-masalah" className="py-8 lg:py-12">
           <Muncul className={`${wadah} grid items-stretch gap-4 lg:grid-cols-[1fr_auto_1fr]`}>
             <div className="relative flex overflow-hidden rounded-2xl border border-border bg-surface p-6 sm:p-8">
-              <div className="relative z-10 flex flex-col gap-5 sm:pr-16">
+              <div className="relative z-10 flex flex-col gap-5">
                 <h2 id="judul-masalah" className="heading-6 sm:heading-5 max-w-[260px] text-balance">
                   Masih belajar CPNS seperti ini?
                 </h2>
@@ -434,12 +479,6 @@ export function LayarLanding({ data, soalHero }: Props) {
                   ))}
                 </ul>
               </div>
-              <SmileyNervous
-                size={120}
-                weight="duotone"
-                aria-hidden
-                className="absolute -right-4 -bottom-4 text-text-muted/15"
-              />
             </div>
             <span
               aria-hidden
@@ -448,7 +487,7 @@ export function LayarLanding({ data, soalHero }: Props) {
               <ArrowRight size={22} />
             </span>
             <div className="relative flex overflow-hidden rounded-2xl border border-primary/20 bg-primary/[0.06] p-6 sm:p-8">
-              <div className="relative z-10 flex flex-col gap-5 sm:pr-16">
+              <div className="relative z-10 flex flex-col gap-5">
                 <h2 className="heading-6 sm:heading-5 max-w-[260px] text-balance">Di SoalSKD, latihannya begini.</h2>
                 <ul className="flex flex-col gap-3">
                   {solusi.map((t) => (
@@ -459,12 +498,6 @@ export function LayarLanding({ data, soalHero }: Props) {
                   ))}
                 </ul>
               </div>
-              <SmileyWink
-                size={120}
-                weight="duotone"
-                aria-hidden
-                className="absolute -right-4 -bottom-4 text-primary/20"
-              />
             </div>
           </Muncul>
         </section>
@@ -476,12 +509,12 @@ export function LayarLanding({ data, soalHero }: Props) {
               Kenapa latihan di SoalSKD?
             </h2>
             <ul className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
-              {keunggulan.map(({ ikon: Ikon, warna, judul, isi }) => (
+              {keunggulan.map(({ ikon: Ikon, judul, isi }) => (
                 <li
                   key={judul}
-                  className="flex flex-col items-center gap-3 rounded-2xl border border-border bg-surface p-4 text-center transition-transform duration-300 ease-[var(--ease-out-house)] hover:-translate-y-1 sm:p-6"
+                  className="flex flex-col items-center gap-3 rounded-2xl border border-border bg-surface p-4 text-center sm:p-6"
                 >
-                  <span className={`flex size-14 items-center justify-center rounded-2xl ${warna}`}>
+                  <span className="flex size-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
                     <Ikon size={30} weight="duotone" aria-hidden />
                   </span>
                   <h3 className="title-3 font-semibold text-balance">{judul}</h3>
@@ -494,20 +527,23 @@ export function LayarLanding({ data, soalHero }: Props) {
 
         {/* Cara kerja: garis langkah */}
         <section id="cara-kerja" aria-labelledby="judul-cara-kerja" className="scroll-mt-20 py-12 lg:py-16">
-          <Muncul className={wadah}>
-            <div className="grid gap-6 rounded-2xl border border-primary/15 bg-primary/[0.05] p-6 sm:p-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,5fr)] lg:items-center">
-              <div className="flex items-center gap-4">
-                <ChartLineUp size={36} weight="duotone" aria-hidden className="shrink-0 text-primary" />
-                <h2 id="judul-cara-kerja" className="title-2 font-semibold text-balance">
-                  Semakin sering latihan, semakin siap menghadapi CAT.
+          <Muncul className={`${wadah} grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-12`}>
+            <div className="flex flex-col gap-8">
+              <div className="flex flex-col gap-3">
+                <h2 id="judul-cara-kerja" className={judulSection}>
+                  Kerjakan, lihat skor, lalu pelajari yang keliru
                 </h2>
+                <p className="body-3 max-w-[560px] text-pretty text-text-muted">
+                  Hasil tidak berhenti di angka. Kamu tahu subtes mana yang perlu dikejar dan soal mana yang perlu dibaca
+                  ulang.
+                </p>
               </div>
-              <ol className="relative grid gap-5 sm:grid-cols-4 sm:gap-2">
-                <span aria-hidden className="absolute top-4 bottom-4 left-4 w-0.5 bg-primary/30 sm:top-4 sm:right-[12.5%] sm:bottom-auto sm:left-[12.5%] sm:h-0.5 sm:w-auto" />
+              <ol className="relative flex flex-col gap-5">
+                <span aria-hidden className="absolute top-4 bottom-4 left-4 w-0.5 bg-primary/30" />
                 {langkah.map((l, i) => {
                   const akhir = i === langkah.length - 1;
                   return (
-                    <li key={l.judul} className="relative flex items-start gap-3 sm:flex-col sm:items-center sm:text-center">
+                    <li key={l.judul} className="relative flex items-start gap-3">
                       <span
                         aria-hidden
                         className={`relative flex size-8 shrink-0 items-center justify-center rounded-full ring-4 ring-surface ${
@@ -521,13 +557,14 @@ export function LayarLanding({ data, soalHero }: Props) {
                           <span className="sr-only">Langkah {i + 1}: </span>
                           {l.judul}
                         </span>
-                        <span className="caption-4 text-pretty text-text-muted">{l.isi}</span>
+                        <span className="body-6 text-pretty text-text-muted">{l.isi}</span>
                       </span>
                     </li>
                   );
                 })}
               </ol>
             </div>
+            <PratinjauHasil komposisi={data.komposisi} nilaiBenar={data.nilaiBenar} />
           </Muncul>
         </section>
 
@@ -613,14 +650,14 @@ export function LayarLanding({ data, soalHero }: Props) {
               <Kilau className="absolute top-3 right-4 size-12 text-accent" />
               <div className="relative flex flex-col items-start gap-3">
                 <p className="caption-4 flex w-fit items-center gap-2 rounded-full bg-accent px-4 py-2 text-on-accent sm:text-sm">
-                  <Megaphone size={20} weight="fill" aria-hidden />
-                  Jangan tunggu sampai hari ujian!
+                  <Gift size={20} weight="fill" aria-hidden />
+                  Mulai dari paket gratis
                 </p>
                 <h2 id="judul-penutup" className="heading-5 sm:heading-4 text-balance">
                   Siap menghadapi <span className="text-accent">SKD</span>?
                 </h2>
                 <p className="body-3 max-w-[480px] text-pretty opacity-90">
-                  Mulai dengan paket gratis hari ini. Semakin cepat latihan, semakin terbiasa dengan waktunya.
+                  Kerjakan paket mini tanpa daftar akun. Kalau cocok, lanjut ke simulasi lengkap dengan pembahasannya.
                 </p>
               </div>
               <div className="relative flex flex-col gap-4 sm:flex-row sm:items-center lg:border-l lg:border-on-primary/25 lg:pl-10">
@@ -637,10 +674,10 @@ export function LayarLanding({ data, soalHero }: Props) {
                   </p>
                 )}
                 <Link
-                  href="/try-out"
-                  className="button-md flex h-14 items-center justify-center gap-2 rounded-full bg-surface px-6 whitespace-nowrap text-text transition-transform duration-300 ease-[var(--ease-out-house)] hover:scale-[1.03] active:scale-[0.98]"
+                  href={data.soalGratis > 0 ? `/ujian/${PAKET_GRATIS}` : "/try-out"}
+                  className="button-md flex h-14 items-center justify-center gap-2 rounded-lg bg-surface px-6 whitespace-nowrap text-text transition-[background-color,transform] duration-300 ease-[var(--ease-out-house)] hover:bg-surface-muted active:scale-[0.98]"
                 >
-                  Mulai Sekarang
+                  {data.soalGratis > 0 ? CTA_GRATIS : CTA}
                   <ArrowRight size={20} aria-hidden />
                 </Link>
               </div>
@@ -679,9 +716,18 @@ export function LayarLanding({ data, soalHero }: Props) {
             <Logo />
             <p className="title-4 text-text">Belajar lebih terarah sebelum hari ujian.</p>
             <p className="caption-4 text-pretty text-text-muted">
-              Soal latihan orisinal, bukan soal resmi BKN. Format dan passing grade mengikuti konfigurasi; cek aturan BKN
-              dan KemenPAN-RB terbaru.
+              SoalSKD adalah platform latihan independen dan tidak berafiliasi dengan BKN, KemenPAN-RB, maupun SSCASN.
+              Soal latihan orisinal, bukan soal resmi. Format dan passing grade mengikuti konfigurasi; cek aturan BKN dan
+              KemenPAN-RB terbaru.
             </p>
+            {EMAIL_KONTAK && (
+              <p className="caption-4 text-text-muted">
+                Bantuan:{" "}
+                <a href={`mailto:${EMAIL_KONTAK}`} className="text-primary underline-offset-4 hover:underline">
+                  {EMAIL_KONTAK}
+                </a>
+              </p>
+            )}
           </div>
           <ul className="flex flex-wrap gap-2">
             {[

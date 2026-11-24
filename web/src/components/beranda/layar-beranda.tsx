@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowCounterClockwise, ArrowLeft, ArrowRight, ClockCountdown, Info, LockKey, Play, ShoppingBag } from "@phosphor-icons/react";
+import { ArrowCounterClockwise, ArrowLeft, ArrowRight, CheckCircle, ClockCountdown, Info, LockKey, Play, ShoppingBag } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { type ReactNode, useEffect, useState } from "react";
@@ -13,6 +13,7 @@ import { KartuEbook } from "@/components/beranda/kartu-ebook";
 import { penawaranUntuk, TAUTAN_BELI } from "@/config/landing";
 import { DAFTAR_PRODUK, PRODUK, produkDariPaket, type IdProduk } from "@/config/produk";
 import { EBOOK_EDISI } from "@/config/akses";
+import { tombolNonaktif, tombolSekunder, tombolUtama } from "@/components/tombol";
 
 export type PaketBeranda = {
   id: string;
@@ -23,17 +24,20 @@ export type PaketBeranda = {
   perSubtes: { subtes: string; jumlah: number }[];
   /** Boleh dikerjakan tanpa login (paket gratis, atau build statis). */
   terbuka: boolean;
+  /** Paket gratis untuk semua orang (`PAKET_TERBUKA`). */
+  gratis: boolean;
+  /** Jumlah soal per subtes sama dengan format SKD di config (bukan paket mini). */
+  lengkap: boolean;
 };
+
+const chip = "caption-4 flex items-center gap-1 rounded-full px-2 py-0.5";
+const chipNetral = `${chip} border border-border text-text-muted`;
 
 type Sesi =
   | { jenis: "baru" }
   | { jenis: "berjalan"; terjawab: number; sisaDetik: number }
   | { jenis: "selesai" };
 
-const tombolDasar =
-  "flex h-12 items-center justify-center gap-2 rounded-lg px-4 title-4 transition-[background-color,transform] duration-200 ease-[var(--ease-out-house)] active:scale-[0.98]";
-const tombolUtama = `${tombolDasar} bg-primary text-on-primary hover:bg-primary-hover`;
-const tombolSekunder = `${tombolDasar} border border-border bg-surface text-text hover:bg-surface-muted`;
 
 function sesiDari(paket: PaketBeranda, sekarang: number): Sesi {
   const r = bacaRekaman(paket.id);
@@ -133,7 +137,9 @@ export function LayarBeranda({ paket, panduan }: { paket: PaketBeranda[]; pandua
           <MenuAkun />
         </div>
         <h1 className="heading-5">Try out SKD CPNS</h1>
-        <p className="body-6 text-text-muted">Latihan TWK, TIU, dan TKP dengan timer dan pembahasan lengkap.</p>
+        <p className="body-6 text-pretty text-text-muted">
+          Pilih paket, kerjakan dengan timer, lalu lihat skor dan pembahasan setelah jawaban dikumpulkan.
+        </p>
       </header>
 
       {berjalan && sesiBerjalan && (
@@ -192,13 +198,26 @@ export function LayarBeranda({ paket, panduan }: { paket: PaketBeranda[]; pandua
               const s = sesi[p.id];
               const terakhir = riwayat.find((e) => e.paket === p.id);
               return (
-                <li key={p.id} className="flex flex-col gap-4 rounded-xl border border-border bg-surface p-4">
-                  <div className="flex flex-col gap-2">
-                    <div className="flex items-center gap-2">
+                <li
+                  key={p.id}
+                  className="flex flex-col gap-4 rounded-xl border border-border bg-surface p-4 sm:flex-row sm:items-center sm:justify-between"
+                >
+                  <div className="flex min-w-0 flex-col gap-2">
+                    <div className="flex flex-wrap items-center gap-2">
                       <h3 className="title-3">{p.judul}</h3>
-                      {p.status !== "final" && (
-                        <span className="caption-4 rounded-full border border-border px-2 py-0.5 text-text-muted">
-                          {p.status === "review" ? "Review" : "Draf"}
+                      {p.gratis && <span className={`${chip} bg-primary/10 text-primary`}>Gratis</span>}
+                      <span className={chipNetral}>{p.lengkap ? "Simulasi lengkap" : "Paket mini"}</span>
+                      {!p.gratis && (akun.paket ?? []).includes(p.id) && <span className={chipNetral}>Sudah dimiliki</span>}
+                      {dimuat && s?.jenis === "berjalan" && (
+                        <span className={`${chip} bg-surface-muted text-text`}>
+                          <ClockCountdown size={12} aria-hidden />
+                          Sedang dikerjakan
+                        </span>
+                      )}
+                      {dimuat && s?.jenis === "selesai" && (
+                        <span className={`${chip} bg-surface-muted text-text`}>
+                          <CheckCircle size={12} weight="fill" aria-hidden />
+                          Selesai
                         </span>
                       )}
                     </div>
@@ -217,6 +236,7 @@ export function LayarBeranda({ paket, panduan }: { paket: PaketBeranda[]; pandua
                       </p>
                     )}
                   </div>
+                  <div className="sm:w-64 sm:shrink-0">
                   {!dimuat ? (
                     <div className="h-12 animate-pulse rounded-lg bg-surface-muted" aria-hidden />
                   ) : s?.jenis === "selesai" ? (
@@ -230,7 +250,7 @@ export function LayarBeranda({ paket, panduan }: { paket: PaketBeranda[]; pandua
                       </button>
                     </div>
                   ) : s?.jenis === "berjalan" ? (
-                    <Link href={`/ujian/${p.id}`} className={tombolSekunder}>
+                    <Link href={`/ujian/${p.id}`} className={tombolUtama}>
                       Lanjutkan
                       <ArrowRight size={20} aria-hidden />
                     </Link>
@@ -240,6 +260,7 @@ export function LayarBeranda({ paket, panduan }: { paket: PaketBeranda[]; pandua
                       Mulai
                     </Link>
                   )}
+                  </div>
                 </li>
               );
             })}
@@ -251,9 +272,9 @@ export function LayarBeranda({ paket, panduan }: { paket: PaketBeranda[]; pandua
                   <div className="flex flex-col gap-2">
                     <div className="flex flex-wrap items-center gap-2">
                       <h3 className="title-3">{produk ? PRODUK[produk].nama : "Paket berbayar lainnya"}</h3>
-                      <span className="caption-4 flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-text-muted">
+                      <span className={chipNetral}>
                         <LockKey size={12} aria-hidden />
-                        Berbayar
+                        Terkunci
                       </span>
                     </div>
                     <p className="body-6 text-text-muted">{isi.map((p) => p.judul).join(", ")}</p>
@@ -278,11 +299,7 @@ export function LayarBeranda({ paket, panduan }: { paket: PaketBeranda[]; pandua
                             Beli {tawar.harga}
                           </a>
                         ) : (
-                          <span
-                            role="link"
-                            aria-disabled="true"
-                            className="button-md flex h-12 cursor-not-allowed items-center justify-center gap-2 rounded-lg bg-surface-muted px-4 text-text-muted"
-                          >
+                          <span role="link" aria-disabled="true" className={tombolNonaktif}>
                             <ShoppingBag size={20} aria-hidden />
                             Pembelian segera dibuka
                           </span>
@@ -346,7 +363,8 @@ export function LayarBeranda({ paket, panduan }: { paket: PaketBeranda[]; pandua
 
       <p className="caption-4 flex items-start gap-2 text-text-muted">
         <Info size={16} className="shrink-0" aria-hidden />
-        Format dan passing grade mengikuti konfigurasi. Cek aturan BKN/KemenPAN-RB terbaru.
+        Soal latihan orisinal dari platform independen, bukan soal resmi dan tidak berafiliasi dengan BKN,
+        KemenPAN-RB, atau SSCASN. Format dan passing grade mengikuti konfigurasi; cek aturan BKN/KemenPAN-RB terbaru.
       </p>
 
       <footer className="-mt-4 flex gap-2 border-t border-border pt-2">

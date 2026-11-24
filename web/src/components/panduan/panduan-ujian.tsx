@@ -1,4 +1,4 @@
-import { CaretDown, CheckCircle, Flag, Info, Timer } from "@phosphor-icons/react/dist/ssr";
+import { CaretDown, CheckCircle, Flag, Info, Target, Timer } from "@phosphor-icons/react/dist/ssr";
 import { AMBANG_TIMER } from "@/config/skd";
 import type { SoalUjian } from "@/lib/soal";
 
@@ -211,6 +211,92 @@ export function PratinjauUjian({
           <span className="title-4 flex h-10 items-center justify-center rounded-lg bg-primary text-on-primary">
             Berikutnya
           </span>
+        </div>
+      </div>
+    </figure>
+  );
+}
+
+/** Rasio skor ilustrasi per subtes untuk `PratinjauHasil` (angka contoh, bukan data peserta). */
+const RASIO_CONTOH: Record<string, number> = { TWK: 0.57, TIU: 0.63, TKP: 0.79 };
+
+/**
+ * Contoh halaman hasil untuk landing: total, skor per subtes, saran mulai belajar, dan jumlah soal
+ * yang perlu dibaca ulang. Angkanya dihitung dari rasio ilustrasi dan nilai maksimal di config,
+ * dan selalu diberi label "Contoh" supaya tidak terbaca sebagai hasil peserta.
+ */
+export function PratinjauHasil({
+  komposisi,
+  nilaiBenar,
+}: {
+  komposisi: { kode: string; jumlah: number; nilaiMaks: number }[];
+  nilaiBenar: number;
+}) {
+  const sub = komposisi.map((s) => {
+    const r = RASIO_CONTOH[s.kode] ?? 0.6;
+    const tkp = s.kode === "TKP";
+    const skor = tkp ? Math.round(s.nilaiMaks * r) : Math.round((s.nilaiMaks * r) / nilaiBenar) * nilaiBenar;
+    // TWK/TIU: soal tidak benar = jumlah - skor/nilai benar. TKP: ±60% memilih opsi terbaik.
+    const tidakBenar = tkp ? s.jumlah - Math.round(s.jumlah * 0.6) : s.jumlah - skor / nilaiBenar;
+    return { ...s, skor, persen: Math.round((skor / s.nilaiMaks) * 100), tidakBenar, tkp };
+  });
+  const total = sub.reduce((n, s) => n + s.skor, 0);
+  const maks = sub.reduce((n, s) => n + s.nilaiMaks, 0);
+  const terlemah = [...sub].sort((a, b) => a.persen - b.persen)[0];
+  const kosong = sub.filter((s) => !s.tkp).length * 2;
+  const salah = sub.reduce((n, s) => n + s.tidakBenar, 0) - kosong;
+  if (!terlemah) return null;
+  return (
+    <figure className="flex w-full flex-col gap-3" aria-label="Contoh hasil try out dengan angka ilustrasi">
+      <figcaption className="caption-4 flex flex-wrap items-center gap-2 text-text-muted">
+        <span className="rounded-full bg-accent-soft px-2 py-0.5 text-text">Contoh hasil try out</span>
+        Angka ilustrasi, bukan hasil peserta.
+      </figcaption>
+      <div className="flex flex-col gap-4 rounded-xl border border-border bg-surface p-4 sm:p-5">
+        <div className="flex flex-col gap-2">
+          <p className="caption-4 text-text-muted">Total skor</p>
+          <p className="flex items-baseline gap-1">
+            <span className="font-mono text-3xl font-semibold tabular-nums">{total}</span>
+            <span className="mono-number text-text-muted">/ {maks}</span>
+          </p>
+          <span aria-hidden className="h-1.5 overflow-hidden rounded-full bg-surface-muted">
+            <span className="block h-full rounded-full bg-primary" style={{ width: `${(total / maks) * 100}%` }} />
+          </span>
+        </div>
+        <ul className="grid grid-cols-3 gap-2">
+          {sub.map((s) => (
+            <li key={s.kode} className="flex flex-col gap-1 rounded-lg border border-border p-3">
+              <span className="caption-4 text-text-muted">{s.kode}</span>
+              <span className="mono-number">
+                {s.skor}
+                <span className="text-text-muted">/{s.nilaiMaks}</span>
+              </span>
+              <span aria-hidden className="h-1 overflow-hidden rounded-full bg-surface-muted">
+                <span className="block h-full rounded-full bg-primary" style={{ width: `${s.persen}%` }} />
+              </span>
+            </li>
+          ))}
+        </ul>
+        <p className="body-6 flex items-start gap-2 rounded-lg bg-surface-muted p-3 text-pretty">
+          <Target size={20} aria-hidden className="mt-px shrink-0 text-primary" />
+          <span>
+            Mulai dari <strong className="font-semibold">{terlemah.kode}</strong>: skornya{" "}
+            <span className="mono-number">{terlemah.persen}%</span> dari maksimal.
+          </span>
+        </p>
+        <div className="flex flex-col gap-2 border-t border-border pt-4">
+          <p className="caption-4 text-text-muted">Pembahasan yang perlu dibaca ulang</p>
+          <ul className="flex flex-wrap gap-2">
+            {[
+              ["Salah", salah],
+              ["Kosong", kosong],
+              ["Ragu", 6],
+            ].map(([label, n]) => (
+              <li key={label} className="title-4 flex h-9 items-center gap-1 rounded-full border border-border px-3">
+                {label} <span className="mono-number text-xs text-text-muted">{n}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </figure>
