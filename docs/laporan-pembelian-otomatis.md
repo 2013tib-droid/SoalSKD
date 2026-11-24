@@ -114,7 +114,23 @@ Storage (semua tertutup client): `ebook/edisi-N.pdf`, `bank/<id>.json` (baru).
 
 ## 5. Hasil automated test
 
-HASIL_TES
+Dijalankan 2026-11-24 di lingkungan cloud (Node 22, Firebase Emulator, Chromium):
+
+| Rangkaian | Perintah | Hasil |
+|---|---|---|
+| Typecheck web + functions | `npm run typecheck` · `tsc --noEmit` | bersih |
+| Unit web (skor TWK/TIU/TKP, timer, katalog, soal gratis tanpa kunci, gerbang tanpa Firebase, saklar) | `cd web && npm run uji:unit` | 8 + 1 (statis: p02–p07 tidak terbaca) + 1 (produksi: tidak membaca repo) lulus |
+| Unit backend (verifikasi transaksi, Boolean, nominal, produk, mata uang, id palsu, transisi status, webhook, ebook) | `cd functions && npm run uji` | 55 lulus |
+| Emulator backend dengan Mayar tiruan | idem | 123 lulus: token salah/kosong, pesanan + harga server, dua perangkat bersamaan, redirect ditolak, rem, pesanan akun lain, transaksi palsu, webhook "SUCCESS" padahal belum lunas, status Boolean false, lunas sebelum login kembali, webhook ganda ×5, nominal/produk/extraData salah, status asing, transaksi 404, id webhook berbeda, email beda, kedaluwarsa + bayar terlambat, batas waktu lewat, Mayar mati (503/UNAVAILABLE) lalu pulih bersamaan, pencabutan pesanan & kode, kode cadangan, tidak ada endpoint publik pembuat kode, tukar kode (termasuk dua akun bersamaan), ebook tanpa akses, rules Firestore + Storage |
+| Gerbang web di emulator | (bagian dari `npm run uji`) | 8 lulus: tanpa login, token palsu, akun tanpa paket, beda bundel, pemilik dari Storage privat (tanpa kunci, gambar ikut), penilaian server, paket belum diunggah, client tidak bisa membaca `bank/` |
+| Validator bank + tes validator + katalog | `python3 tools/validasi.py` · `tools/test_validasi.py` · `bank_privat.py cek-katalog` | 0 galat · 0 kasus gagal · sesuai |
+| Build statis + cek bocor | `STATIK=1 npm run build && npm run cek-bocor` | aman: 89 berkas `out/` tanpa soal berbayar; cek bocor terbukti menangkap teks/id yang disisipkan |
+| E2E Playwright pada build statis | `npm run uji:e2e` | 28 lulus: tombol beli nonaktif, /beli & /akun, paket berbayar terkunci tanpa kunci, navigasi, ragu-ragu, simpan otomatis + muat ulang, timer kritis, kumpulkan, skor + pembahasan, waktu habis otomatis, tanpa galat JS |
+| Build server | `npm run build` | `.next/static` tanpa soal berbayar; paket server hanya membawa `bank/katalog.json` + `bank/p01.json` |
+| Alur beli lengkap (emulator + next dev + Mayar tiruan) | skrip lokal | login email → Bayar → diarahkan ke Mayar → kembali "menunggu" → lunas → otomatis "Paket aktif" (email pembayar beda ditandai) → p02–p04 terbuka |
+
+Belum diuji: Mayar sungguhan (sandbox maupun produksi), Firebase produksi, App Hosting,
+login Google sungguhan, email verifikasi sungguhan.
 
 ## 6. Hasil security audit
 

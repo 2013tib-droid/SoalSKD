@@ -201,7 +201,9 @@ export function LayarAkunSaya({ paket }: { paket: PaketRingkas[] }) {
           <Kerangka tinggi="h-24" />
         ) : lainnya.length === 0 && !disorot ? (
           <p className="body-6 text-text-muted">Belum ada pembelian di akun ini.</p>
-        ) : lainnya.length === 0 ? null : (
+        ) : lainnya.length === 0 ? (
+          <p className="body-6 text-text-muted">Tidak ada pembelian lain selain pesanan di atas.</p>
+        ) : (
           <ul className="flex flex-col gap-3">
             {lainnya.map((p) => (
               <KartuPembelian key={p.orderId} awal={p} />
