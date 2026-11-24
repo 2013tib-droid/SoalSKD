@@ -24,7 +24,10 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-BANK = ROOT / "bank"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lokasi_bank import file_paket  # noqa: E402
+
+BANK = ROOT / "bank"  # bawaan; paket berbayar ada di folder privat (tools/lokasi_bank.py)
 DIR_GAMBAR = BANK / "gambar"
 
 TINTA = "#111827"
@@ -663,10 +666,19 @@ def main():
     tulis = "--cek" not in sys.argv
     galat = []
     bank = {}
+    folder = {}
     for s in SOAL:
         pid = s["id"].split("-")[0]
         if pid not in bank:
-            bank[pid] = {x["id"]: x for x in json.loads((BANK / f"{pid}.json").read_text())["soal"]}
+            f = file_paket(pid)
+            if f is None:
+                galat.append(f"{s['id']}: {pid}.json tidak ditemukan (bank/ atau folder privat, tools/lokasi_bank.py)")
+                bank[pid], folder[pid] = {}, None
+            else:
+                bank[pid] = {x["id"]: x for x in json.loads(f.read_text())["soal"]}
+                folder[pid] = f.parent
+        if folder[pid] is None:
+            continue
         if len(s["cocok"]) != 1:
             galat.append(f"{s['id']}: jawaban tidak tunggal ({s['cocok'] or 'tidak ada'})")
             continue
@@ -689,7 +701,8 @@ def main():
             elif [g["alt"] for g in sb["gambar"]] != [s["alt_soal"]] + ([] if s["jenis"] == "beda" else [s["alt_opsi"]]):
                 galat.append(f"{s['id']}: teks alt di bank berbeda dari definisi gambar")
         if tulis:
-            DIR_GAMBAR.mkdir(exist_ok=True)
+            dasar = folder[pid]  # SVG ditulis di sebelah paketnya (bank/ atau folder privat)
+            (dasar / "gambar").mkdir(exist_ok=True)
             frames = [s["gambar"](x) for x in s["stem"]]
             if s["jenis"] == "serial":
                 isi = svg_deret(frames, s["alt_soal"])
@@ -697,12 +710,12 @@ def main():
                 isi = svg_analogi(*frames, s["alt_soal"])
             else:
                 isi = svg_pilihan(frames, s["alt_soal"])
-            (BANK / file_soal).write_text(isi)
+            (dasar / file_soal).write_text(isi)
             if s["jenis"] != "beda":
-                (BANK / file_opsi).write_text(svg_pilihan([s["gambar"](o) for o in s["opsi"]], s["alt_opsi"]))
+                (dasar / file_opsi).write_text(svg_pilihan([s["gambar"](o) for o in s["opsi"]], s["alt_opsi"]))
     for g in galat:
         print("GALAT ", g)
-    print(f"{len(SOAL)} soal figural diperiksa: {len(galat)} galat" + ("" if not tulis else f"; SVG di {DIR_GAMBAR.relative_to(ROOT)}/"))
+    print(f"{len(SOAL)} soal figural diperiksa: {len(galat)} galat" + ("" if not tulis else "; SVG di folder gambar/ masing-masing paket"))
     for s in SOAL:
         print(f"  {s['id']:8} {s['jenis']:8} jawaban {''.join(s['cocok'])}")
     return 1 if galat else 0

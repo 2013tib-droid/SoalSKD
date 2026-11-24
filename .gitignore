@@ -1,3 +1,4 @@
 # Firebase CLI / emulator
 *-debug.log
 .firebase/
+__pycache__/

@@ -2,7 +2,7 @@
 """Validasi paket soal di bank/.
 
 Pakai:
-    python3 tools/validasi.py                # semua bank/*.json yang punya field "skema"
+    python3 tools/validasi.py                # semua paket di bank/ + folder privat (tools/lokasi_bank.py)
     python3 tools/validasi.py bank/p01.json  # file tertentu
 
 GALAT membuat skrip keluar dengan kode 1 (paket tidak boleh terbit).
@@ -19,6 +19,8 @@ ROOT = Path(__file__).resolve().parent.parent
 BANK = ROOT / "bank"
 SKEMA = ROOT / "schema" / "paket.schema.json"
 CONFIG = ROOT / "config" / "skd.json"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lokasi_bank import file_gambar, semua_dir  # noqa: E402
 
 HURUF = "ABCDE"
 MIN_KATA_PEMBAHASAN = 150
@@ -88,7 +90,7 @@ def cek_soal(s, lok, lap):
             break
 
     for g in s.get("gambar", []):
-        if not (BANK / g["file"]).is_file():
+        if file_gambar(g["file"]) is None:
             lap.g(lok, f"file gambar tidak ditemukan: bank/{g['file']}")
 
 
@@ -232,7 +234,7 @@ def main(argv):
 
     # Seluruh bank dimuat untuk pengecekan lintas paket.
     semua = {}
-    for path in sorted(BANK.glob("*.json")):
+    for path in sorted(p for d in semua_dir() for p in d.glob("*.json") if p.name != "katalog.json"):
         data = muat(path, wajib=False)
         if data is not None:
             semua[path.resolve()] = (path, data)
@@ -244,7 +246,7 @@ def main(argv):
             if arg.is_dir():
                 # Folder: periksa semua *.json di dalamnya. File lama tanpa "skema" dilewati,
                 # sama seperti saat tanpa argumen.
-                isi = sorted(arg.glob("*.json"))
+                isi = sorted(p for p in arg.glob("*.json") if p.name != "katalog.json")
                 if not isi:
                     lap.g(str(arg), "folder tidak berisi file .json")
                 target = [(p, False) for p in isi]

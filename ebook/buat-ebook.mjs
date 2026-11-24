@@ -87,11 +87,19 @@ const mdRingkas = (s) => {
 // ---------- data ----------
 const tanggal = (iso) =>
   new Date(`${iso}T00:00:00`).toLocaleDateString("id-ID", { day: "numeric", month: "long", year: "numeric" });
-const bankUrl = pathToFileURL(path.join(ROOT, "bank") + path.sep).href;
+// Gambar dicari di folder paket sumber (mis. repo privat SoalSKD-bank) lalu bank/ di repo ini.
+const folderGambar = [...new Set([...sumberSemua.map((f) => path.dirname(f)), path.join(ROOT, "bank")])];
+const urlGambar = (file) => {
+  for (const d of folderGambar) {
+    const f = path.resolve(d, file);
+    if (f.startsWith(d + path.sep) && existsSync(f)) return pathToFileURL(f).href;
+  }
+  throw new Error(`gambar tidak ditemukan: ${file}`);
+};
 
 const gambar = (s) =>
   (s.gambar ?? [])
-    .map((g) => `<figure><img src="${esc(new URL(g.file, bankUrl).href)}" alt="${esc(g.alt)}"></figure>`)
+    .map((g) => `<figure><img src="${esc(urlGambar(g.file))}" alt="${esc(g.alt)}"></figure>`)
     .join("");
 
 const nomor = (s) => `<span class="nomor">${s.nomor}</span>`;

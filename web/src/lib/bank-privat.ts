@@ -12,7 +12,7 @@ import { bacaBerkasPrivat } from "@/lib/firebase/admin";
  *   2. Storage privat `bank/<id>.json` (produksi, App Hosting). Berkasnya dibuat
  *      `python3 tools/bank_privat.py siapkan` (SVG sudah ditanam) lalu diunggah
  *      `sh tools/unggah-bank.sh <bucket>`.
- *   3. Hanya dev (`next dev`): `bank/` di repo, selama berkasnya masih ada di sana.
+ *   3. Hanya dev (`next dev`): repo privat `SoalSKD-bank` di sebelah repo ini, lalu `bank/`.
  *
  * Produksi tanpa sumber 1/2 = paket "belum tersedia" (gagal aman), bukan membaca repo.
  */
@@ -46,7 +46,12 @@ async function muat(paket: string): Promise<Paket | null> {
   if (dir) return dariFolder(dir, paket);
   const isi = await bacaBerkasPrivat(`bank/${paket}.json`);
   if (isi) return JSON.parse(isi.toString("utf8")) as Paket;
-  if (process.env.NODE_ENV !== "production") return dariFolder(path.join(process.cwd(), "..", "bank"), paket);
+  if (process.env.NODE_ENV !== "production") {
+    return (
+      (await dariFolder(path.join(process.cwd(), "..", "..", "SoalSKD-bank"), paket)) ??
+      dariFolder(path.join(process.cwd(), "..", "bank"), paket)
+    );
+  }
   return null;
 }
 

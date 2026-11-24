@@ -5,8 +5,9 @@
 //   node scripts/cek-bocor.mjs [folder ...]       (bawaan: out .next/static yang ada)
 //
 // Yang dicari: id soal berbayar (mis. "p02-001"), potongan teks soal, potongan
-// pembahasan, dan SVG gambar berbayar. Sumber pembanding: bank/*.json di repo dan
-// BANK_PRIVAT_DIR (bila diisi). Paket gratis = PAKET_TERBUKA di src/config/akses.ts.
+// pembahasan, dan SVG gambar berbayar. Sumber pembanding: bank/*.json di repo,
+// BANK_PRIVAT_DIR (bila diisi), dan repo privat ../SoalSKD-bank (bila ada). Tanpa
+// salinan bank, pola id soal (p02-001 dst.) tetap diperiksa. Paket gratis = PAKET_TERBUKA di src/config/akses.ts.
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import path from 'node:path';
 
@@ -15,7 +16,7 @@ const ROOT = path.resolve(WEB, '..');
 const akses = readFileSync(path.join(WEB, 'src/config/akses.ts'), 'utf8');
 const gratis = new Set([...akses.match(/PAKET_TERBUKA\s*=\s*\[([^\]]*)\]/)[1].matchAll(/"([a-z0-9-]+)"/g)].map((m) => m[1]));
 
-const sumber = [path.join(ROOT, 'bank'), process.env.BANK_PRIVAT_DIR].filter((d) => d && existsSync(d));
+const sumber = [path.join(ROOT, 'bank'), process.env.BANK_PRIVAT_DIR, path.join(ROOT, '..', 'SoalSKD-bank')].filter((d) => d && existsSync(d));
 const jarum = new Map(); // teks → keterangan
 const idBerbayar = new Set();
 for (const d of sumber) {

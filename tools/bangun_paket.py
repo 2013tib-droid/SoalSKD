@@ -57,7 +57,17 @@ def cmd_gabung(a):
         s.update({"id": f"{a.paket}-{i:03d}", "nomor": i, **isi})
     paket = {"skema": 1, "meta": {"id": a.paket, "judul": f"Paket {a.paket[1:]}", "versi": 1,
              "dibuat": a.tanggal, "status": "draf"}, "soal": soal}
-    out = ROOT / "bank" / f"{a.paket}.json"
+    # Paket berbayar ditulis ke repo privat SoalSKD-bank, bukan ke repo publik.
+    sys.path.insert(0, str(ROOT / "tools"))
+    from bank_privat import paket_gratis
+    from lokasi_bank import dir_privat
+    if a.paket in paket_gratis():
+        out = ROOT / "bank" / f"{a.paket}.json"
+    else:
+        privat = dir_privat()
+        if privat is None:
+            sys.exit("Paket berbayar harus ditulis ke repo privat SoalSKD-bank: pasang di ../SoalSKD-bank atau isi BANK_PRIVAT_DIR.")
+        out = privat / f"{a.paket}.json"
     out.write_text(json.dumps(paket, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     print("kunci:", "".join(s.get("kunci", "") for s in soal),

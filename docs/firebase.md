@@ -243,6 +243,20 @@ halaman produk di Mayar dan tidak ada pemetaan nama produk. Harga ada di
    `PENJUALAN_DIBUKA` di `web/src/config/landing.ts` menjadi `true` untuk bundel itu, lalu
    gabungkan ke `produksi`. Selama `false`, tombol tampil "Pembelian segera dibuka".
 
+## 9b. Repo privat bank soal (`SoalSKD-bank`)
+
+Soal, kunci, dan pembahasan paket berbayar (p02 dst.) **tidak ada di repo publik**. Tempatnya
+repo GitHub privat `2013tib-droid/SoalSKD-bank` (isi: `pXX.json` + `gambar/`, lihat README di
+repo itu). Untuk membuat ebook, mengunggah bank ke Storage, atau mengedit soal di komputer:
+
+```sh
+git clone https://github.com/2013tib-droid/SoalSKD-bank.git   # di sebelah folder SoalSKD
+```
+
+Alat di repo SoalSKD menemukannya otomatis (`tools/lokasi_bank.py`), atau isi
+`BANK_PRIVAT_DIR=/path/ke/SoalSKD-bank`. Sesi Claude yang mengerjakan soal berbayar perlu
+kedua repo. CI GitHub dan GitHub Pages hanya memakai repo publik (tes memakai paket tiruan).
+
 ## 10. Ebook PDF di Storage (privat)
 
 Ebook dijanjikan di kartu harga, satu edisi per bundel. File-nya **tidak boleh** ada
@@ -298,10 +312,10 @@ membuat `ebook/dist/<edisi>.pdf` (330 soal), lalu `gsutil cp` ke
 membuat PDF: `sh tools/unggah-ebook.sh --cuma-buat edisi-2`.
 
 Tanpa skrip: buat PDF dengan
-`node ebook/buat-ebook.mjs bank/p02.json bank/p03.json bank/p04.json --judul "Edisi 1" --keluar ebook/dist/edisi-1.pdf`,
+`node ebook/buat-ebook.mjs ../SoalSKD-bank/p02.json ../SoalSKD-bank/p03.json ../SoalSKD-bank/p04.json --judul "Edisi 1" --keluar ebook/dist/edisi-1.pdf`,
 lalu Console → **Storage → Create folder** `ebook` → buka folder → **Upload file**
 → pilih PDF-nya dan beri nama persis `edisi-1.pdf` (ganti nama di komputer dulu
-kalau perlu). Edisi 2 sama, dengan `bank/p05.json bank/p06.json bank/p07.json`,
+kalau perlu). Edisi 2 sama, dengan `p05.json p06.json p07.json` dari `../SoalSKD-bank`,
 `--judul "Edisi 2"`, dan nama `edisi-2.pdf`.
 
 **Jangan** klik "Create new access token" atau membagikan tautan dari Console:
@@ -314,8 +328,7 @@ Server Next.js membacanya dari Storage privat `bank/<id>.json` (storage.rules me
 client) hanya setelah hak paket dicek. Unggah sekali, dan setiap kali isi paket berubah:
 
 ```sh
-sh tools/unggah-bank.sh soalskd-1a2b3.firebasestorage.app          # dari bank/
-sh tools/unggah-bank.sh soalskd-1a2b3.firebasestorage.app ../SoalSKD-bank   # dari folder/repo privat
+sh tools/unggah-bank.sh soalskd-1a2b3.firebasestorage.app   # paket berbayar dari ../SoalSKD-bank (otomatis)
 ```
 
 Skrip memvalidasi bank, menanam SVG gambar figural ke JSON (`tools/bank_privat.py siapkan`),
