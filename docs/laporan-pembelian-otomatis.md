@@ -152,7 +152,7 @@ Temuan yang masih terbuka (butuh keputusan pemilik):
 4. Header keamanan, App Check, dan pembatasan perangkat per akun belum ada (di luar lingkup ini).
 
 Rekomendasi migrasi paling aman (urut, semua butuh izin pemilik):
-1. Segera: gabungkan branch ini ke branch utama supaya deploy dev menimpa `development/main` dengan build tanpa soal berbayar; jalankan workflow Deploy dev dengan "hapus" untuk `cek-lengkap` dan `modest-franklin`.
+1. ~~Gabungkan ke branch utama dan bersihkan Pages~~ **Selesai 2026-11-24**: branch utama di-fast-forward ke hasil ini, `development/main` dibangun ulang tanpa soal berbayar, `cek-lengkap` dan `modest-franklin` dihapus; `gh-pages` diperiksa dengan `cek-bocor.mjs` (aman). History `gh-pages` dan repo masih memuat versi lama.
 2. Buat repo **privat** baru (mis. `SoalSKD-bank`) berisi `bank/p02+`, `bank/gambar/`, lalu hapus berkas itu dari repo publik dengan commit biasa (tanpa rewrite).
 3. Pilih salah satu: (a) jadikan repo SoalSKD privat (Pages untuk repo privat butuh paket GitHub berbayar; dev bisa pindah ke preview App Hosting), atau (b) tulis ulang history + hapus branch lama + hapus `gh-pages` lama (force push, butuh izin; salinan yang sudah beredar tetap ada).
 4. Anggap p02–p07 bocor: pertimbangkan paket baru untuk dijual, atau jual dengan sadar risikonya.
