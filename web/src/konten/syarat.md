@@ -4,7 +4,7 @@ Dengan memakai SoalSKD, membuat akun, atau membeli paket, kamu menyetujui syarat
 
 {{pengelola}}
 
-SoalSKD adalah layanan latihan try out Seleksi Kompetensi Dasar (SKD) CPNS secara daring: Tes Wawasan Kebangsaan (TWK), Tes Intelegensia Umum (TIU), dan Tes Karakteristik Pribadi (TKP), lengkap dengan timer dan pembahasan. Paket gratis bisa dikerjakan tanpa akun. Paket berbayar dibuka dengan kode aktivasi.
+SoalSKD adalah layanan latihan try out Seleksi Kompetensi Dasar (SKD) CPNS secara daring: Tes Wawasan Kebangsaan (TWK), Tes Intelegensia Umum (TIU), dan Tes Karakteristik Pribadi (TKP), lengkap dengan timer dan pembahasan. Paket gratis bisa dikerjakan tanpa akun. Paket berbayar dibeli dari akunmu dan aktif otomatis setelah pembayaran terverifikasi.
 
 {{penawaran}}
 
@@ -19,22 +19,24 @@ SoalSKD adalah layanan latihan try out Seleksi Kompetensi Dasar (SKD) CPNS secar
 
 - Kamu bisa daftar dengan email dan kata sandi, atau masuk dengan akun Google.
 - Jaga kerahasiaan kata sandimu. Aktivitas di akunmu menjadi tanggung jawabmu.
-- Pakai email yang benar dan bisa kamu buka. Untuk menukar kode, email akun harus sudah diverifikasi (akun Google sudah terverifikasi).
+- Pakai email yang benar dan bisa kamu buka. Untuk membeli atau menukar kode, email akun harus sudah diverifikasi (akun Google sudah terverifikasi).
 - Akun untuk pemakaian pribadi. Dilarang memakai satu akun bersama orang lain atau menjual akses akun.
 
-## Pembelian dan kode aktivasi
+## Pembelian
 
-- Pembayaran diproses oleh Mayar. Metode pembayaran mengikuti yang tersedia di halaman pembayaran Mayar.
+- Masuk dulu, lalu tekan Bayar pada bundel yang kamu pilih. Pembayaran diproses oleh Mayar; metode pembayaran mengikuti yang tersedia di halaman pembayaran Mayar.
 - Harga yang berlaku adalah harga yang tertera saat kamu membayar.
-- Setelah pembayaran berhasil, kode aktivasi dikirim otomatis ke email yang kamu isi saat membayar.
-- Tukarkan kode di halaman [Aktivasi](/aktivasi) setelah masuk. Satu kode hanya bisa ditukar sekali, untuk satu akun.
+- Pesanan terikat ke akun yang menekan Bayar. Setelah server kami memastikan pembayaran lunas ke Mayar, paket aktif otomatis di akun itu. Kamu tidak perlu memasukkan kode.
+- Status setiap pesanan ada di halaman [Akun](/akun). Tagihan yang tidak dibayar sampai batas waktunya kedaluwarsa dan tidak ditagih lagi.
 - Paket yang sudah aktif tetap ada di akunmu selama akunmu dan layanan SoalSKD berjalan.
+- Kode hadiah atau kompensasi dari kami ditukar di halaman [Tukar kode](/aktivasi). Satu kode hanya bisa ditukar sekali, untuk satu akun.
 
-Kalau kode tidak datang:
+Kalau sudah membayar tapi paket belum aktif:
 
-1. cek folder Spam atau Promosi di emailmu;
-2. pastikan email yang kamu isi saat membayar sudah benar;
-3. kalau masih belum ada, hubungi kami (lihat [Kontak](#kontak)) dengan menyebut email pembayaran dan waktu pembayaranmu. Pesanan yang tidak bisa diproses otomatis kami tangani manual.
+1. buka halaman [Akun](/akun) dengan akun yang dipakai saat membeli, lalu tekan **Cek Status Pembayaran**. Jangan membayar ulang;
+2. kalau lebih dari 1 jam masih menunggu, hubungi kami (lihat [Kontak](#kontak)) dengan nomor pesanan, atau dengan email dan waktu pembayaran kalau kamu membayar lewat tautan lain.
+
+Kami mencocokkan laporan dengan catatan pembayaran di Mayar. Akses tidak diberikan hanya berdasarkan screenshot atau nomor transaksi.
 
 ## Pengembalian dana
 

@@ -3,6 +3,7 @@
 import type { User } from "firebase/auth";
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import type { IdEdisi } from "@/config/akses";
+import type { IdProduk } from "@/config/produk";
 import { ambilFirebase, LOGIN_AKTIF } from "@/lib/firebase/klien";
 import { aturUidSinkron, hapusDataLokal, kirimAntrean, sinkronkanAkun } from "@/lib/sinkron";
 
@@ -13,6 +14,25 @@ import { aturUidSinkron, hapusDataLokal, kirimAntrean, sinkronkanAkun } from "@/
  * masuk   : login; `paket` = paket yang dimiliki (null selama dibaca).
  */
 export type StatusAkun = "mati" | "memuat" | "keluar" | "masuk";
+
+/** Status pesanan dari server (cermin `users/{uid}/pembelian/{orderId}`). */
+export type StatusPembelian = "membuat" | "menunggu" | "aktif" | "kedaluwarsa" | "gagal" | "dicabut";
+
+export type Pembelian = {
+  orderId: string;
+  produk: IdProduk;
+  judul: string;
+  amount: number;
+  status: StatusPembelian;
+  /** Tautan bayar Mayar, hanya selama menunggu. */
+  link: string | null;
+  expiresAt: number | null;
+  createdAt: number | null;
+  emailBeda: boolean;
+  /** Email pembayar tersamar (mis. "bu***@gmail.com"), hanya kalau beda dengan email akun. */
+  emailPembayaran: string | null;
+  perluTinjau: boolean;
+};
 
 export type InfoPengguna = {
   uid: string;
@@ -38,6 +58,12 @@ type NilaiAkun = {
   cekVerifikasi: () => Promise<boolean>;
   ambilToken: () => Promise<string | null>;
   tukarKode: (kode: string) => Promise<{ paket: string[]; sudah: boolean }>;
+  /** Buat (atau lanjutkan) pesanan satu bundel; server mengikatnya ke akun ini dan membuat tautan bayar Mayar. */
+  buatPesanan: (produk: IdProduk) => Promise<Pembelian>;
+  /** Minta server memeriksa status bayar ke Mayar (direm server). Paket dimuat ulang kalau sudah aktif. */
+  cekPembayaran: (orderId: string) => Promise<Pembelian>;
+  /** Riwayat pembelian akun ini, terbaru dulu. */
+  muatPembelian: () => Promise<Pembelian[]>;
   /** Signed URL ebook PDF satu edisi (±10 menit) dari Cloud Function `unduhEbook`; server yang mengecek hak edisi itu. */
   unduhEbook: (edisi: IdEdisi) => Promise<{ url: string; namaFile: string }>;
   /** Galat dari alur pindah-halaman Google, ditampilkan di /masuk. */
@@ -211,6 +237,28 @@ export function PenyediaAkun({ children }: { children: ReactNode }) {
         if (auth.currentUser) await muatPaket(auth.currentUser.uid).catch(() => undefined);
         return data;
       },
+      async buatPesanan(produk) {
+        const [{ functions }, { httpsCallable }] = await Promise.all([ambilFirebase(), import("firebase/functions")]);
+        const buat = httpsCallable<{ produk: IdProduk }, unknown>(functions, "buatPesanan");
+        return kePembelian((await buat({ produk })).data);
+      },
+      async cekPembayaran(orderId) {
+        const [{ auth, functions }, { httpsCallable }] = await Promise.all([ambilFirebase(), import("firebase/functions")]);
+        const cek = httpsCallable<{ orderId: string }, unknown>(functions, "cekPembayaran");
+        const hasil = kePembelian((await cek({ orderId })).data);
+        if (hasil.status === "aktif" && auth.currentUser) await muatPaket(auth.currentUser.uid).catch(() => undefined);
+        return hasil;
+      },
+      async muatPembelian() {
+        const [{ auth, db }, { collection, getDocs, limit, orderBy, query }] = await Promise.all([
+          ambilFirebase(),
+          import("firebase/firestore/lite"),
+        ]);
+        const u = auth.currentUser;
+        if (!u) return [];
+        const snap = await getDocs(query(collection(db, "users", u.uid, "pembelian"), orderBy("createdAt", "desc"), limit(20)));
+        return snap.docs.map((d) => kePembelian({ ...d.data(), orderId: d.id }));
+      },
       async unduhEbook(edisi) {
         const [{ functions }, { httpsCallable }] = await Promise.all([ambilFirebase(), import("firebase/functions")]);
         const minta = httpsCallable<{ edisi: IdEdisi }, { url: string; namaFile: string }>(functions, "unduhEbook");
@@ -223,13 +271,35 @@ export function PenyediaAkun({ children }: { children: ReactNode }) {
   return <Konteks.Provider value={nilai}>{children}</Konteks.Provider>;
 }
 
+/** Data pesanan dari server/Firestore → bentuk yang dipakai layar. Field asing diabaikan. */
+function kePembelian(x: unknown): Pembelian {
+  const d = (x ?? {}) as Record<string, unknown>;
+  const angka = (v: unknown) => (typeof v === "number" && Number.isFinite(v) ? v : null);
+  const status = ["membuat", "menunggu", "aktif", "kedaluwarsa", "gagal", "dicabut"].includes(String(d.status))
+    ? (d.status as StatusPembelian)
+    : "menunggu";
+  return {
+    orderId: String(d.orderId ?? ""),
+    produk: d.produk as IdProduk,
+    judul: typeof d.judul === "string" ? d.judul : "",
+    amount: angka(d.amount) ?? 0,
+    status,
+    link: typeof d.link === "string" && d.link.startsWith("https://") ? d.link : null,
+    expiresAt: angka(d.expiresAt),
+    createdAt: angka(d.createdAt),
+    emailBeda: d.emailBeda === true,
+    emailPembayaran: typeof d.emailPembayaran === "string" ? d.emailPembayaran : null,
+    perluTinjau: d.perluTinjau === true,
+  };
+}
+
 async function kirimTautanVerifikasi(
   u: User,
   kirim: (u: User, pengaturan?: { url: string }) => Promise<void>,
 ) {
   try {
-    // Setelah klik tautan, pengguna kembali ke /aktivasi.
-    await kirim(u, { url: `${location.origin}/aktivasi` });
+    // Setelah klik tautan, pengguna kembali ke halaman akun (beli/status pembelian).
+    await kirim(u, { url: `${location.origin}/akun` });
   } catch (e) {
     // Domain belum diizinkan di Firebase: kirim tanpa tautan kembali.
     if ((e as { code?: string }).code === "auth/unauthorized-continue-uri") await kirim(u);
@@ -279,8 +349,10 @@ export function pesanGalat(e: unknown, cadangan = "Kode belum bisa diproses. Cob
     case "auth/too-many-requests":
       return "Terlalu banyak percobaan. Tunggu beberapa menit lalu coba lagi.";
     case "auth/network-request-failed":
-    case "functions/unavailable":
       return "Tidak ada koneksi. Periksa internet lalu coba lagi.";
+    case "functions/unavailable":
+      // Function sendiri memberi pesan (mis. Mayar belum bisa dihubungi); tanpa pesan = koneksi.
+      return pesan && pesan !== "UNAVAILABLE" && pesan !== "unavailable" ? pesan : "Tidak ada koneksi. Periksa internet lalu coba lagi.";
     case "auth/account-exists-with-different-credential":
       return "Email ini terdaftar dengan kata sandi. Masuk dengan email dan kata sandi.";
     case "akun/mati":
@@ -295,6 +367,8 @@ export function pesanGalat(e: unknown, cadangan = "Kode belum bisa diproses. Cob
     case "functions/resource-exhausted":
     case "functions/failed-precondition":
     case "functions/permission-denied":
+    case "functions/already-exists":
+    case "functions/aborted":
     case "functions/internal":
       // "INTERNAL" = function gagal tanpa pesan sendiri.
       return pesan && pesan !== "INTERNAL" ? pesan : cadangan;

@@ -1,14 +1,19 @@
 /**
- * Produk yang dijual, paket yang dibukanya, dan ebook per edisi.
+ * Produk yang dijual, harganya, paket yang dibukanya, dan ebook per edisi.
  *
  * Modul ini murni (tanpa Firebase) supaya bisa diuji langsung dengan Node
  * (`test/produk.mjs`). Sengaja diulang di web (`web/src/config/produk.ts`),
  * bukan diimpor: functions di-deploy terpisah. Ubah keduanya bersamaan.
  */
 
+/**
+ * `harga` dalam rupiah (IDR, bilangan bulat). Ini satu-satunya sumber nominal yang
+ * ditagihkan ke Mayar (`buatPesanan`) dan dicocokkan saat verifikasi pembayaran.
+ * Tampilan harga di web: `PENAWARAN` (web/src/config/landing.ts); ubah bersamaan.
+ */
 export const PRODUK = {
-  'bundel-3to': { judul: 'Bundel 1: 3 Try Out SKD', paket: ['p02', 'p03', 'p04'] },
-  'bundel-3to-2': { judul: 'Bundel 2: 3 Try Out SKD', paket: ['p05', 'p06', 'p07'] },
+  'bundel-3to': { judul: 'Bundel 1: 3 Try Out SKD', paket: ['p02', 'p03', 'p04'], harga: 9900 },
+  'bundel-3to-2': { judul: 'Bundel 2: 3 Try Out SKD', paket: ['p05', 'p06', 'p07'], harga: 9900 },
 } as const;
 export type IdProduk = keyof typeof PRODUK;
 
@@ -37,34 +42,12 @@ export function punyaEdisi(milik: unknown, edisi: IdEdisi): boolean {
   return Array.isArray(milik) && milik.some((p) => typeof p === 'string' && paket.includes(p));
 }
 
-// Penanda edisi dalam nama produk Mayar. "3"/"tiga" = jumlah try out, bukan edisi.
-const EDISI_1 = new Set(['1', 'i', 'satu', 'pertama']);
-const EDISI_2 = new Set(['2', 'ii', 'dua', 'kedua']);
-const NETRAL = new Set(['3', 'tiga']);
-
-/**
- * Nama produk Mayar → produk SoalSKD, hanya bila tidak ragu. Cadangan kalau
- * productId belum dipetakan di `config/mayar_products`.
- *
- *   "Bundel 3 Try Out SKD", "Bundel 1: 3 Try Out SKD"   → bundel-3to
- *   "Bundel 2: 3 Try Out SKD", "Bundel 3 Try Out Edisi II" → bundel-3to-2
- *
- * Aturan: harus menyebut bundel/bundle DAN jumlah 3 try out. Penanda edisi 2
- * (angka 2, "II", "dua", "kedua", atau p05–p07) membuat nama TIDAK PERNAH
- * terbaca sebagai Bundel 1. Penanda kedua edisi sekaligus, angka lain, atau
- * jumlah try out yang tidak disebut → null (ditangani manual).
- */
-export function produkDariNama(nama: string): IdProduk | null {
-  const n = nama.toLowerCase().trim();
-  if (isProduk(n)) return n;
-  if (!/\b(bundel|bundle)\b/.test(n)) return null;
-
-  const token = n.match(/\b(\d+|i{1,3}|iv|v|vi|satu|dua|tiga|empat|lima|enam|pertama|kedua|ketiga)\b/g) ?? [];
-  if (token.some((t) => !EDISI_1.has(t) && !EDISI_2.has(t) && !NETRAL.has(t))) return null;
-  if (!token.some((t) => NETRAL.has(t))) return null;
-
-  const ed1 = token.some((t) => EDISI_1.has(t)) || /\bp0?[2-4]\b/.test(n);
-  const ed2 = token.some((t) => EDISI_2.has(t)) || /\bp0?[5-7]\b/.test(n);
-  if (ed1 && ed2) return null;
-  return ed2 ? 'bundel-3to-2' : 'bundel-3to';
+/** Paket yang dibuka sekumpulan produk (urut, tanpa duplikat). */
+export function paketDariProduk(produk: readonly string[]): string[] {
+  const hasil: string[] = [];
+  for (const p of produk) {
+    if (!isProduk(p)) continue;
+    for (const id of PRODUK[p].paket) if (!hasil.includes(id)) hasil.push(id);
+  }
+  return hasil;
 }

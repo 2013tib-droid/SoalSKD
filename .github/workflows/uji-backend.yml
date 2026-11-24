@@ -1,13 +1,14 @@
-# Tes backend (webhook Mayar, tukar kode, unduh ebook, rules Firestore + Storage) di Firebase Emulator.
+# Tes backend (pembelian Mayar dengan server tiruan, webhook, kode cadangan, unduh ebook,
+# rules Firestore + Storage, gerbang paket web) di Firebase Emulator.
 # Tanpa kredensial dan tanpa menyentuh proyek sungguhan (project demo-soalskd).
 name: Uji backend
 
 on:
   pull_request:
-    paths: [functions/**, firestore.rules, storage.rules, firebase.json, .github/workflows/uji-backend.yml]
+    paths: [functions/**, web/src/**, web/test/**, bank/katalog.json, tools/bank_privat.py, firestore.rules, storage.rules, firebase.json, .github/workflows/uji-backend.yml]
   push:
     branches: [claude/skd-stan-resource-analysis-c10e5n]
-    paths: [functions/**, firestore.rules, storage.rules, firebase.json]
+    paths: [functions/**, web/src/**, web/test/**, firestore.rules, storage.rules, firebase.json]
   workflow_dispatch:
 
 jobs:
@@ -19,11 +20,17 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: functions/package-lock.json
+          cache-dependency-path: |
+            functions/package-lock.json
+            web/package-lock.json
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 21
+      - working-directory: web
+        run: |
+          npm ci
+          npm run uji:unit
       - working-directory: functions
         run: |
           npm ci

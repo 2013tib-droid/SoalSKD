@@ -1,0 +1,82 @@
+{
+  "_catatan": "Dibuat tools/bank_privat.py. Hanya metadata; jangan tambahkan soal, kunci, atau pembahasan.",
+  "paket": [
+    {
+      "id": "p01",
+      "judul": "Paket 01",
+      "status": "draf",
+      "jumlahSoal": 20,
+      "perSubtes": {
+        "TWK": 6,
+        "TIU": 7,
+        "TKP": 7
+      }
+    },
+    {
+      "id": "p02",
+      "judul": "Paket 02",
+      "status": "draf",
+      "jumlahSoal": 110,
+      "perSubtes": {
+        "TWK": 30,
+        "TIU": 35,
+        "TKP": 45
+      }
+    },
+    {
+      "id": "p03",
+      "judul": "Paket 03",
+      "status": "draf",
+      "jumlahSoal": 110,
+      "perSubtes": {
+        "TWK": 30,
+        "TIU": 35,
+        "TKP": 45
+      }
+    },
+    {
+      "id": "p04",
+      "judul": "Paket 04",
+      "status": "draf",
+      "jumlahSoal": 110,
+      "perSubtes": {
+        "TWK": 30,
+        "TIU": 35,
+        "TKP": 45
+      }
+    },
+    {
+      "id": "p05",
+      "judul": "Paket 05",
+      "status": "draf",
+      "jumlahSoal": 110,
+      "perSubtes": {
+        "TWK": 30,
+        "TIU": 35,
+        "TKP": 45
+      }
+    },
+    {
+      "id": "p06",
+      "judul": "Paket 06",
+      "status": "draf",
+      "jumlahSoal": 110,
+      "perSubtes": {
+        "TWK": 30,
+        "TIU": 35,
+        "TKP": 45
+      }
+    },
+    {
+      "id": "p07",
+      "judul": "Paket 07",
+      "status": "draf",
+      "jumlahSoal": 110,
+      "perSubtes": {
+        "TWK": 30,
+        "TIU": 35,
+        "TKP": 45
+      }
+    }
+  ]
+}

@@ -34,9 +34,8 @@ function kontak() {
   const jalur: string[] = [];
   if (EMAIL_KONTAK) jalur.push(`- Email: [${EMAIL_KONTAK}](mailto:${EMAIL_KONTAK})`);
   if (WA_KONTAK) jalur.push(`- WhatsApp: [+${WA_KONTAK}](https://wa.me/${WA_KONTAK})`);
-  const pembeli = "balas email kode aktivasi yang kamu terima; balasannya sampai ke kami.";
-  if (jalur.length === 0) return `Pembeli bisa menghubungi kami dengan cara ini: ${pembeli}`;
-  return ["Hubungi kami lewat:", "", ...jalur, `- Khusus pembeli: ${pembeli}`].join("\n");
+  if (jalur.length === 0) return "Kontak pengelola dicantumkan di sini sebelum penjualan dibuka.";
+  return ["Hubungi kami lewat:", "", ...jalur, "- Khusus pembeli: sebutkan nomor pesanan dari halaman Akun."].join("\n");
 }
 
 function penawaran() {
@@ -48,7 +47,7 @@ function penawaran() {
   const fitur = FITUR_BUNDEL.map((f) => `- **${f.judul}**: ${f.detail}`).join("\n");
   const pembuka =
     PENAWARAN.length > 1
-      ? "Produk berbayar yang tersedia. Setiap bundel dibeli terpisah dan punya kode aktivasinya sendiri:"
+      ? "Produk berbayar yang tersedia. Setiap bundel dibeli terpisah dan aktif di akun pembelinya:"
       : "Yang kamu dapat dengan membeli:";
   return `${pembuka}\n\n${bundel}\n\nDi setiap bundel:\n\n${fitur}`;
 }

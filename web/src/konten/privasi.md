@@ -30,13 +30,13 @@ Firebase Authentication juga mengirim email verifikasi dan email atur ulang kata
 
 ### Kalau kamu membeli
 
-Pembayaran diproses oleh Mayar. Setelah pembayaran berhasil, Mayar mengirim data pesanan ke server kami, lalu kami menyimpan:
+Kamu membeli dari akunmu. Saat kamu menekan Bayar, server kami membuat pesanan dan meminta Mayar membuat tagihan untuk pesanan itu. Kami menyimpan:
 
-- email dan nama yang kamu isi saat membayar;
-- ID transaksi, ID dan nama produk, serta jumlah pembayaran;
-- kode aktivasi untuk pesananmu, waktu email kode terkirim, dan catatan kalau pesanan perlu ditangani manual.
+- ID akun dan email akunmu (email ini juga kami kirim ke Mayar untuk tagihan dan bukti bayar);
+- produk, harga, status pesanan, waktu dibuat dan dibayar, serta ID tagihan dan ID transaksi dari Mayar;
+- email yang dipakai saat membayar di Mayar, kalau berbeda dengan email akun, dan catatan kalau pesanan perlu ditinjau manual.
 
-Saat kode ditukar, kami mencatat akun mana yang menukarnya dan kapan. Dengan begitu pesanan, kode, dan akunmu saling terhubung.
+Status pembayaran kami tanyakan langsung ke Mayar dari server. Mayar juga mengirim pemberitahuan pembayaran ke server kami; isinya (nama, email, nomor HP pembayar, produk, jumlah) kami pakai untuk mencocokkan pesanan, dan email, produk, serta jumlahnya kami catat. Kalau kamu menukar kode hadiah, kami mencatat akun yang menukarnya dan kapan.
 
 Kami tidak menerima nomor kartu, nomor rekening, atau PIN e-wallet. Data itu diproses Mayar dan penyedia pembayarannya.
 
@@ -44,7 +44,7 @@ Tautan unduh ebook dibuat saat kamu menekan tombol unduh, berlaku 10 menit, dan 
 
 ### Log server
 
-Saat situs dan Cloud Functions berjalan, Google Cloud mencatat log teknis. Log permintaan bawaan platform memuat alamat IP, jenis browser, alamat yang diminta, dan waktunya. Log yang kami tulis sendiri berisi ID pesanan, produk, status pemrosesan, dan ID akun saat ebook diunduh. Kode aktivasi dan token tidak pernah ditulis ke log. Email pembeli juga tidak kami tulis ke log, kecuali kalau termuat dalam pesan galat dari server email.
+Saat situs dan Cloud Functions berjalan, Google Cloud mencatat log teknis. Log permintaan bawaan platform memuat alamat IP, jenis browser, alamat yang diminta, dan waktunya. Log yang kami tulis sendiri berisi ID pesanan, produk, status pemrosesan, dan ID akun saat ebook diunduh. Kode aktivasi, kunci API, dan token tidak pernah ditulis ke log. Email pembeli juga tidak kami tulis ke log.
 
 ## Tujuan dan dasar pemrosesan
 
@@ -52,23 +52,22 @@ Saat situs dan Cloud Functions berjalan, Google Cloud mencatat log teknis. Log p
 |---|---|---|
 | Menjalankan try out, menyimpan progres, dan menampilkan riwayat | Jawaban, riwayat skor | Menjalankan layanan yang kamu minta |
 | Membuat akun dan login | Data akun | Menjalankan layanan yang kamu minta |
-| Mengirim kode dan membuka paket yang dibeli | Data pesanan, paket milikmu | Menjalankan perjanjian jual beli |
+| Membuat tagihan, memeriksa pembayaran, dan membuka paket yang dibeli | Data pesanan, paket milikmu | Menjalankan perjanjian jual beli |
 | Mencegah penyalahgunaan kode | Percobaan kode gagal, log | Kepentingan yang sah: menjaga kode pembeli |
 | Membantu pembeli dan memproses pengembalian dana | Data pesanan, kode, isi pesanmu | Menjalankan perjanjian jual beli |
 
-Kami tidak memakai datamu untuk iklan dan tidak mengirim email promosi. Email yang dikirim hanya email kode aktivasi, serta email verifikasi dan atur ulang kata sandi dari Firebase Authentication.
+Kami tidak memakai datamu untuk iklan dan tidak mengirim email promosi. Kami sendiri tidak mengirim email; yang terkirim hanya email verifikasi dan atur ulang kata sandi dari Firebase Authentication, serta tagihan dan bukti bayar dari Mayar.
 
 ## Pihak lain yang memproses data
 
 | Pihak | Untuk apa | Lokasi |
 |---|---|---|
-| Google Firebase: Firestore dan Cloud Functions | Database akun, paket, pesanan; tukar kode; pemrosesan pesanan Mayar | Jakarta (asia-southeast2) |
+| Google Firebase: Firestore dan Cloud Functions | Database akun, paket, pesanan; pembuatan tagihan dan pemeriksaan pembayaran Mayar; tukar kode hadiah | Jakarta (asia-southeast2) |
 | Google Firebase: App Hosting | Menjalankan situs | Singapura (asia-southeast1) |
 | Google Firebase: Authentication | Akun dan login | Pusat data Google, termasuk di luar Indonesia |
-| Google Cloud Storage | File ebook (tidak berisi data pribadi) | Jakarta (asia-southeast2) |
+| Google Cloud Storage | File ebook dan bank soal berbayar (tidak berisi data pribadi) | Jakarta (asia-southeast2) |
 | Google Cloud Logging | Log teknis | Pusat data Google |
-| Gmail (Google) | Mengirim email kode dari akun Gmail kami; salinannya tersimpan di folder Terkirim | Pusat data Google |
-| Mayar | Pembayaran | Lihat kebijakan privasi Mayar |
+| Mayar | Tagihan, pembayaran, dan bukti bayar (menerima email akunmu) | Lihat kebijakan privasi Mayar |
 | GitHub Pages | Hanya situs uji coba (tanpa login dan pembayaran) | Server GitHub di luar Indonesia |
 
 Sebagian data diproses di luar Indonesia, yaitu di Singapura dan di pusat data Google lainnya. Setiap pihak di atas memproses data sesuai kebijakan privasinya sendiri.
@@ -95,10 +94,9 @@ Cara menghapus data di perangkat:
 
 - **Data di perangkat:** sampai kamu menghapusnya dengan cara di atas.
 - **Akun, paket, jawaban, dan riwayat di akun:** selama akunmu ada. Belum ada penghapusan otomatis.
-- **Data pesanan dan kode aktivasi:** disimpan sebagai catatan pembelian untuk dukungan dan pengembalian dana. Belum ada aturan hapus otomatis. Kalau jangka waktunya sudah ditetapkan, halaman ini akan diperbarui.
+- **Data pesanan, catatan pembayaran dari Mayar, dan kode hadiah:** disimpan sebagai catatan pembelian untuk dukungan dan pengembalian dana. Belum ada aturan hapus otomatis. Kalau jangka waktunya sudah ditetapkan, halaman ini akan diperbarui.
 - **Percobaan kode yang gagal:** dihapus saat kode berhasil ditukar.
 - **Log teknis:** mengikuti masa simpan Google Cloud Logging (bawaan 30 hari).
-- **Email kode di folder Terkirim Gmail kami:** sampai dihapus.
 
 ## Hak kamu
 
@@ -116,7 +114,8 @@ Permintaan dikirim lewat [kontak di atas](#pengelola-dan-kontak). Untuk menjaga 
 Langkah yang kami terapkan:
 
 - koneksi ke situs dan ke layanan Firebase memakai HTTPS;
-- aturan database membuat setiap akun hanya bisa membaca datanya sendiri. Data pesanan, kode aktivasi, dan percobaan kode tertutup dari browser dan hanya bisa diakses server;
+- aturan database membuat setiap akun hanya bisa membaca datanya sendiri (termasuk ringkasan pesanannya). Data pesanan lengkap, catatan dari Mayar, kode hadiah, dan percobaan kode tertutup dari browser dan hanya bisa diakses server;
+- pembayaran diperiksa server langsung ke Mayar dengan kunci API yang hanya ada di server;
 - hak atas paket berbayar dicek di server, bukan di browser;
 - file ebook disimpan di penyimpanan privat dan hanya bisa diunduh lewat tautan berumur 10 menit;
 - kode aktivasi tidak ditulis ke log.

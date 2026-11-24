@@ -7,8 +7,10 @@
 # SEBELUM MENJALANKAN, isi di GitHub → Settings → Secrets and variables → Actions:
 #   Secret   FIREBASE_SERVICE_ACCOUNT = isi file JSON service account (seluruhnya)
 #   Variable FIREBASE_PROJECT_ID      = id proyek, mis. soalskd-xxxx
-#   Variable EMAIL_PENGIRIM           = Gmail pengirim kode, mis. soalskd.id@gmail.com
 #   Variable URL_SITUS                = alamat situs pembeli, mis. https://soalskd.id
+#   Variable MAYAR_API_BASE (opsional)= kosong = produksi https://api.mayar.id/hl/v2;
+#                                       sandbox uji: https://api.mayar.io/hl/v2
+# Rahasia functions (MAYAR_API_KEY, MAYAR_WEBHOOK_TOKEN) ada di Secret Manager.
 # Service account butuh peran: Firebase Admin, Cloud Functions Admin, Service
 # Account User, Cloud Datastore Owner, Secret Manager Admin.
 #
@@ -57,14 +59,14 @@ jobs:
         env:
           SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           PROJECT: ${{ vars.FIREBASE_PROJECT_ID }}
-          EMAIL_PENGIRIM: ${{ vars.EMAIL_PENGIRIM }}
           URL_SITUS: ${{ vars.URL_SITUS }}
+          MAYAR_API_BASE: ${{ vars.MAYAR_API_BASE }}
         run: |
           [ -n "$SA" ] || { echo "::error::Secret FIREBASE_SERVICE_ACCOUNT belum diisi."; exit 1; }
           [ -n "$PROJECT" ] || { echo "::error::Variable FIREBASE_PROJECT_ID belum diisi."; exit 1; }
-          [ -n "$EMAIL_PENGIRIM" ] || { echo "::error::Variable EMAIL_PENGIRIM belum diisi."; exit 1; }
           # Parameter non-rahasia untuk functions (defineString). Rahasia ada di Secret Manager.
-          printf 'EMAIL_PENGIRIM=%s\nURL_SITUS=%s\n' "$EMAIL_PENGIRIM" "$URL_SITUS" > functions/.env
+          printf 'URL_SITUS=%s\n' "$URL_SITUS" > functions/.env
+          if [ -n "$MAYAR_API_BASE" ]; then printf 'MAYAR_API_BASE=%s\n' "$MAYAR_API_BASE" >> functions/.env; fi
           # Di luar folder kerja supaya tidak mungkin ikut ter-deploy.
           printf '%s' "$SA" > "$RUNNER_TEMP/service-account.json"
 

@@ -10,7 +10,7 @@ import { EVENT_SINKRON } from "@/lib/sinkron";
 import { useAkun } from "@/components/akun/auth";
 import { MenuAkun } from "@/components/akun/menu-akun";
 import { KartuEbook } from "@/components/beranda/kartu-ebook";
-import { penawaranUntuk, TAUTAN_BELI } from "@/config/landing";
+import { penawaranUntuk, tautanBeli } from "@/config/landing";
 import { DAFTAR_PRODUK, PRODUK, produkDariPaket, type IdProduk } from "@/config/produk";
 import { EBOOK_EDISI } from "@/config/akses";
 import { tombolNonaktif, tombolSekunder, tombolUtama } from "@/components/tombol";
@@ -93,8 +93,7 @@ export function LayarBeranda({ paket, panduan }: { paket: PaketBeranda[]; pandua
 
   const aksesDimuat = akun.status !== "memuat" && !(akun.status === "masuk" && akun.paket === null);
   const terkunci = (p: PaketBeranda) => !p.terbuka && !(akun.paket ?? []).includes(p.id);
-  const tujuanBuka =
-    akun.status === "mati" ? "/#harga" : akun.status === "masuk" ? "/aktivasi?lanjut=/try-out" : "/masuk?lanjut=/try-out";
+  const tujuanBuka = akun.status === "mati" ? "/#harga" : akun.status === "masuk" ? "/akun" : "/masuk?lanjut=/try-out";
 
   // Paket berbayar yang belum dimiliki dikelompokkan per bundel (config/produk.ts): satu kartu
   // per bundel dengan harga dan tombolnya sendiri. Paket yang sudah dibuka tampil biasa.
@@ -266,7 +265,7 @@ export function LayarBeranda({ paket, panduan }: { paket: PaketBeranda[]; pandua
             })}
             {kelompok.map(({ produk, paket: isi }) => {
               const tawar = produk ? penawaranUntuk(produk) : undefined;
-              const beli = produk ? TAUTAN_BELI[produk] : null;
+              const beli = produk ? tautanBeli(produk) : null;
               return (
                 <li key={produk ?? "lainnya"} className="flex flex-col gap-4 rounded-xl border border-border bg-surface p-4">
                   <div className="flex flex-col gap-2">
@@ -294,10 +293,10 @@ export function LayarBeranda({ paket, panduan }: { paket: PaketBeranda[]; pandua
                     <div className="flex flex-col gap-3 sm:grid sm:grid-cols-2">
                       {tawar &&
                         (beli ? (
-                          <a href={beli} target="_blank" rel="noopener" className={tombolUtama}>
+                          <Link href={beli} className={tombolUtama}>
                             <ShoppingBag size={20} aria-hidden />
                             Beli {tawar.harga}
-                          </a>
+                          </Link>
                         ) : (
                           <span role="link" aria-disabled="true" className={tombolNonaktif}>
                             <ShoppingBag size={20} aria-hidden />
@@ -309,7 +308,7 @@ export function LayarBeranda({ paket, panduan }: { paket: PaketBeranda[]; pandua
                         {akun.status === "mati"
                           ? "Lihat penawaran"
                           : akun.status === "masuk"
-                            ? "Masukkan kode aktivasi"
+                            ? "Sudah bayar? Cek status"
                             : "Masuk untuk membuka"}
                       </Link>
                     </div>

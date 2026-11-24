@@ -54,17 +54,24 @@ export const PENAWARAN: Penawaran[] = [
 export const FITUR_BUNDEL: { judul: string; detail: string }[] = [
   { judul: "Pembahasan setiap pilihan", detail: "Tahu kenapa jawabanmu benar atau keliru" },
   { judul: "Ujian di HP", detail: "Timer, grid nomor soal, dan simpan otomatis" },
-  { judul: "Kode aktivasi lewat email", detail: "Ditukar di akunmu; semua bundel bisa di satu akun" },
+  { judul: "Langsung aktif di akunmu", detail: "Tanpa kode: paket terbuka otomatis setelah pembayaran terverifikasi" },
 ];
 
 /**
- * Tujuan tombol beli per bundel: tautan checkout (QRIS/e-wallet) atau wa.me dengan pesan terisi.
- * null = tombol tampil nonaktif "Pembelian segera dibuka" (tidak ada tautan mati).
+ * Penjualan per bundel. `true` = tombol beli membuka checkout SoalSKD (`/beli?produk=…`):
+ * login → server membuat tagihan Mayar untuk akun itu → paket aktif otomatis setelah lunas.
+ * `false` = tombol tampil nonaktif "Pembelian segera dibuka" (tidak ada tautan mati).
+ * Nyalakan HANYA setelah backend + Mayar siap dan uji beli sungguhan lulus (docs/firebase.md).
  */
-export const TAUTAN_BELI: Record<IdProduk, string | null> = {
-  "bundel-3to": null,
-  "bundel-3to-2": null,
+export const PENJUALAN_DIBUKA: Record<IdProduk, boolean> = {
+  "bundel-3to": false,
+  "bundel-3to-2": false,
 };
+
+/** Tujuan tombol beli satu bundel, atau null kalau penjualannya belum dibuka. */
+export function tautanBeli(produk: IdProduk): string | null {
+  return PENJUALAN_DIBUKA[produk] ? `/beli?produk=${produk}` : null;
+}
 
 /** Penawaran untuk satu bundel, atau undefined kalau bundel itu belum ditawarkan. */
 export function penawaranUntuk(produk: IdProduk): Penawaran | undefined {

@@ -9,8 +9,9 @@ import { Kartu, Kerangka, Kolom, LayarAkun, Pesan, tautanTeks, tombolSekunder, t
 
 export type PaketBerbayar = { id: string; judul: string };
 
-const JUDUL = "Aktivasi kode";
-const KETERANGAN = "Kode aktivasi dikirim ke email yang kamu isi saat membayar. Satu kode untuk satu akun.";
+const JUDUL = "Tukar kode";
+const KETERANGAN =
+  "Untuk kode hadiah atau kompensasi dari SoalSKD. Pembelian biasa tidak butuh kode: paket aktif otomatis setelah bayar. Satu kode untuk satu akun.";
 
 export function LayarAktivasi({ paketBerbayar }: { paketBerbayar: PaketBerbayar[] }) {
   const akun = useAkun({ wajib: true });
@@ -153,16 +154,16 @@ export function LayarAktivasi({ paketBerbayar }: { paketBerbayar: PaketBerbayar[
       <div className="flex flex-col gap-1">
         {!semuaAktif && (
           <p className="body-6 text-text-muted">
-            Belum punya kode?{" "}
-            <Link href="/#harga" className={tautanTeks}>
-              Lihat penawaran
+            Membeli bundel?{" "}
+            <Link href="/akun" className={tautanTeks}>
+              Lihat status pembelian
             </Link>
           </p>
         )}
         <p className="body-6 text-text-muted">
-          Kode tidak datang atau tidak bisa dipakai?{" "}
-          <Link href="/syarat#pengembalian-dana" className={tautanTeks}>
-            Bantuan &amp; pengembalian dana
+          Kode tidak bisa dipakai?{" "}
+          <Link href="/akun#bantuan" className={tautanTeks}>
+            Bantuan pembelian
           </Link>
         </p>
         <p className="body-6 text-text-muted">

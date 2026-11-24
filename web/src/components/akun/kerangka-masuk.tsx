@@ -6,7 +6,7 @@ type Mode = "masuk" | "daftar";
 
 const MANFAAT = [
   { Ikon: ArrowsClockwise, judul: "Lanjutkan di perangkat lain", isi: "Jawaban tersimpan otomatis dan ikut ke HP atau laptopmu." },
-  { Ikon: LockKeyOpen, judul: "Paket yang dibeli terbuka di akun", isi: "Tukar kode aktivasi sekali, buka kapan saja." },
+  { Ikon: LockKeyOpen, judul: "Paket yang dibeli terbuka di akun", isi: "Aktif otomatis setelah bayar, tanpa kode. Buka dari HP mana pun." },
   { Ikon: ChartLineUp, judul: "Riwayat skor tersimpan", isi: "Bandingkan hasil tiap percobaan dan lihat kemajuanmu." },
 ];
 

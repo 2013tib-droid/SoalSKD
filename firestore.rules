@@ -16,8 +16,9 @@ service cloud.firestore {
     }
 
     // Profil + paket yang dimiliki (`paket`, `produk`). Ditulis HANYA oleh
-    // `redeemActivationCode`. Client cuma membaca, jadi tidak ada celah
-    // "update dokumen sendiri sambil menambah paket".
+    // Cloud Functions (pembayaran terverifikasi, tukar kode cadangan, pencabutan).
+    // Client cuma membaca, jadi tidak ada celah "update dokumen sendiri sambil
+    // menambah paket".
     match /users/{uid} {
       allow read: if isOwner(uid);
       allow write: if false;
@@ -38,6 +39,13 @@ service cloud.firestore {
           && request.resource.data.berakhirPada is number
           && request.resource.data.selesai is bool
           && request.resource.data.disimpanPada is number;
+      }
+
+      // Ringkasan pesanan milik akun ini (status bayar, tautan bayar selama
+      // menunggu). Cermin `orders/{orderId}`, ditulis HANYA oleh Cloud Functions.
+      match /pembelian/{orderId} {
+        allow read: if isOwner(uid);
+        allow write: if false;
       }
 
       // Riwayat skor, satu dokumen per percobaan (`<paket>-<percobaan>`).
@@ -71,12 +79,28 @@ service cloud.firestore {
       allow read, write: if false;
     }
 
-    // Pesanan Mayar: email pembeli + kode. Tertutup total.
+    // Pesanan: uid, email, id transaksi Mayar, status. Tertutup total;
+    // pembeli membaca cerminnya di users/{uid}/pembelian.
     match /orders/{orderId} {
       allow read, write: if false;
     }
 
-    // Pengaturan server, mis. `config/mayar_products`. Diisi lewat Console.
+    // Indeks id Mayar → pesanan, kunci checkout, catatan webhook, dan rem.
+    // Hanya untuk server.
+    match /mayar_ref/{id} {
+      allow read, write: if false;
+    }
+    match /checkout/{id} {
+      allow read, write: if false;
+    }
+    match /mayar_events/{id} {
+      allow read, write: if false;
+    }
+    match /rate_limits/{id} {
+      allow read, write: if false;
+    }
+
+    // Pengaturan server. Diisi lewat Console.
     match /config/{docId} {
       allow read, write: if false;
     }

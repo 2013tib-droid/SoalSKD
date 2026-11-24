@@ -26,3 +26,8 @@ env:
   # - variable: NEXT_PUBLIC_FIREBASE_APP_ID
   #   value: ISI_APP_ID
   #   availability: [BUILD, RUNTIME]
+  # Bank soal berbayar dibaca server dari Storage privat `bank/<id>.json` (tools/unggah-bank.sh).
+  # Bawaan: bucket PROJECT_ID.firebasestorage.app. Isi hanya kalau nama bucket berbeda.
+  # - variable: BANK_BUCKET
+  #   value: ISI_NAMA_BUCKET
+  #   availability: [RUNTIME]

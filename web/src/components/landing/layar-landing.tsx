@@ -20,7 +20,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import { AMBANG_TIMER, DURASI_LATIHAN_MENIT_PER_SOAL } from "@/config/skd";
-import { FITUR_BUNDEL, PAKET_GRATIS, PENAWARAN, TAUTAN_BELI, TESTIMONI } from "@/config/landing";
+import { FITUR_BUNDEL, PAKET_GRATIS, PENAWARAN, tautanBeli, TESTIMONI } from "@/config/landing";
 import type { SoalUjian } from "@/lib/soal";
 import { MenuAkun } from "@/components/akun/menu-akun";
 import { LOGIN_AKTIF } from "@/lib/firebase/klien";
@@ -174,7 +174,7 @@ export function LayarLanding({ data, soalHero }: Props) {
       ? [
           {
             t: "Apa bedanya Bundel 1 dan Bundel 2?",
-            j: `Isinya berbeda. ${PENAWARAN.map((x) => `${x.nama.split(":")[0]} berisi ${x.isi.map((i) => i.judul).join(" dan ")}`).join(", sedangkan ")}. Soal di setiap paket tidak berulang, jadi keduanya bisa dikerjakan berurutan. Setiap bundel dibeli terpisah dengan kode aktivasinya sendiri, dan semua kode bisa ditukar di akun yang sama.`,
+            j: `Isinya berbeda. ${PENAWARAN.map((x) => `${x.nama.split(":")[0]} berisi ${x.isi.map((i) => i.judul).join(" dan ")}`).join(", sedangkan ")}. Soal di setiap paket tidak berulang, jadi keduanya bisa dikerjakan berurutan. Setiap bundel dibeli terpisah, dan semuanya bisa aktif di akun yang sama.`,
           },
         ]
       : []),
@@ -182,7 +182,7 @@ export function LayarLanding({ data, soalHero }: Props) {
       ? [
           {
             t: "Setelah membeli, bagaimana membuka paketnya?",
-            j: "Setelah pembayaran berhasil, kode aktivasi dikirim ke emailmu. Masuk atau daftar di SoalSKD, buka halaman Aktivasi, lalu masukkan kodenya. Paket langsung terbuka di halaman Try Out, dan ebook PDF bisa diunduh dari halaman yang sama.",
+            j: "Masuk dulu (paling cepat dengan akun Google), lalu bayar di halaman Mayar. Setelah pembayaran terverifikasi, paket langsung aktif di akunmu tanpa kode, biasanya dalam hitungan detik. Status pembelian bisa dilihat di halaman Akun, dan ebook PDF bisa diunduh dari halaman Try Out.",
           },
         ]
       : []),
@@ -348,7 +348,7 @@ export function LayarLanding({ data, soalHero }: Props) {
 
               <ul className={`grid gap-4 ${PENAWARAN.length > 1 ? "lg:grid-cols-2" : ""}`}>
                 {PENAWARAN.map((x) => {
-                  const beli = TAUTAN_BELI[x.produk];
+                  const beli = tautanBeli(x.produk);
                   return (
                     <li
                       key={x.produk}
@@ -389,10 +389,10 @@ export function LayarLanding({ data, soalHero }: Props) {
                         </ul>
                         <div className="mt-auto">
                           {beli ? (
-                            <a href={beli} target="_blank" rel="noopener" className={`${tombolUtama} w-full`}>
+                            <Link href={beli} className={`${tombolUtama} w-full`}>
                               <ShoppingBag size={20} aria-hidden />
                               Beli {x.nama.split(":")[0]} {x.harga}
-                            </a>
+                            </Link>
                           ) : (
                             <span role="link" aria-disabled="true" className={`${tombolBesar(tombolNonaktif)} w-full`}>
                               <ShoppingBag size={20} aria-hidden />
@@ -425,9 +425,9 @@ export function LayarLanding({ data, soalHero }: Props) {
                   <p className="title-3">Setelah membayar</p>
                   <ol className="flex flex-col gap-3">
                     {[
-                      "Kode aktivasi dikirim ke emailmu.",
-                      "Masuk atau daftar, lalu masukkan kode di halaman Aktivasi.",
-                      "Paket terbuka di halaman Try Out, ebook PDF bisa diunduh di sana.",
+                      "Masuk dengan Google (atau email), lalu bayar lewat QRIS/e-wallet di Mayar.",
+                      "Setelah pembayaran terverifikasi, paket langsung aktif di akunmu. Tanpa kode.",
+                      "Kerjakan di halaman Try Out; ebook PDF bisa diunduh di sana.",
                     ].map((t, i) => (
                       <li key={t} className="body-6 flex items-start gap-3 text-pretty">
                         <span
@@ -451,10 +451,10 @@ export function LayarLanding({ data, soalHero }: Props) {
                   )}
                   {LOGIN_AKTIF && (
                     <Link
-                      href="/aktivasi"
+                      href="/akun"
                       className="title-4 flex h-11 items-center justify-center rounded-lg text-text-muted hover:text-text"
                     >
-                      Sudah bayar? Masukkan kode aktivasi
+                      Sudah bayar? Cek status pembelian
                     </Link>
                   )}
                 </div>

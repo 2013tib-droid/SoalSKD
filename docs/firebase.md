@@ -5,17 +5,37 @@ yang membingungkan, kirim tangkapan layarnya ke Claude (tanpa kata sandi/token).
 
 ## Gambaran alurnya
 
-1. Pembeli membayar **Bundel 1** (p02–p04) atau **Bundel 2** (p05–p07), masing-masing
-   Rp9.900 dan dijual terpisah, di Mayar (QRIS/e-wallet).
-2. Mayar memberi tahu server kita (webhook). Server membuat **satu kode aktivasi
-   baru** untuk pesanan itu dan mengirimnya ke **email pembeli**.
-3. Pembeli membuka situs → **Masuk** (email + kata sandi, atau Google) →
-   halaman **Aktivasi kode** → memasukkan kode.
-4. Paket bundel itu terbuka di akun tersebut, di HP mana pun ia login. Kode kedua
-   bundel bisa ditukar di akun yang sama.
-   Tombol **Unduh Ebook PDF Edisi 1/2** (sesuai bundel) muncul di halaman Try out;
-   server memberi tautan unduh yang hanya berlaku ±10 menit.
-5. Paket p01 tetap gratis tanpa login.
+Pembelian normal **tanpa kode dan tanpa email dari kita** (keputusan 2026-11-24):
+
+1. Pembeli menekan **Beli** pada Bundel 1 (p02–p04) atau Bundel 2 (p05–p07), masing-masing
+   Rp9.900, lalu **masuk** (Google diutamakan; email + sandi harus terverifikasi).
+2. Server (`buatPesanan`) membuat pesanan `orders/{orderId}` yang terikat ke uid akun itu,
+   lalu meminta Mayar membuat **Single Payment Request** (`POST /payments/create`,
+   `extraData.orderId`, email akun, nominal dari `functions/src/produk.ts`). Pembeli
+   diarahkan ke halaman bayar Mayar (QRIS/e-wallet).
+3. Setelah bayar, Mayar memanggil webhook `mayarWebhook` dan/atau pembeli kembali ke
+   `/akun?pesanan=…` lalu menekan **Cek Status Pembayaran** (`cekPembayaran`). Keduanya hanya
+   **pemicu**: server menanyakan status ke API Mayar (`GET /transactions/{id}`) dengan API key.
+4. Lunas + nominal, produk, dan id cocok → satu transaksi Firestore: pesanan `aktif` dan
+   paket masuk ke `users/{uid}.paket`. Webhook palsu, redirect browser, atau screenshot tidak
+   pernah membuka akses.
+5. Paket terbuka di HP mana pun akun itu login. Tombol **Unduh Ebook PDF Edisi 1/2** muncul
+   di halaman Try out (tautan bertanda tangan ±10 menit).
+6. Paket p01 tetap gratis tanpa login. **Kode aktivasi** tinggal cadangan (hadiah,
+   kompensasi), dibuat pemilik lewat alat admin dan ditukar di `/aktivasi`.
+
+```
+Pembeli ──login──▶ /beli ──buatPesanan──▶ Cloud Functions ──POST /payments/create──▶ Mayar
+   │                                         │  orders/{id} (uid, harga)              │
+   │◀────────── tautan bayar ────────────────┘                                        │
+   │──────────────────────── bayar QRIS/e-wallet ────────────────────────────────────▶│
+   │                                         ◀── webhook payment.received (pemicu) ───┤
+   │── /akun "Cek Status" (pemicu) ─────────▶ │── GET /transactions/{id} (API key) ───▶│
+   │                                         │◀── status, amount, paymentLink.id ─────┤
+   │                                         └─ lunas & cocok → transaksi Firestore:
+   │                                            orders aktif + users/{uid}.paket
+   │◀── paket aktif; soal berbayar dari Storage privat lewat server Next.js (hak dicek)
+```
 
 Jawaban dan riwayat skor pembeli yang login tersimpan di akunnya, jadi pindah HP
 tidak hilang. Pengunjung yang belum login tetap tersimpan di HP-nya saja, dan
@@ -26,12 +46,13 @@ Yang dipakai:
 | Bagian | Layanan | Lokasi |
 |---|---|---|
 | Login | Firebase Authentication | — |
-| Database (paket milik, jawaban, riwayat, pesanan) | Cloud Firestore | Jakarta (`asia-southeast2`) |
-| Tukar kode + webhook Mayar + tautan unduh ebook | Cloud Functions | Jakarta (`asia-southeast2`) |
-| File ebook PDF (privat) | Cloud Storage for Firebase | Jakarta (`asia-southeast2`) |
+| Database (paket milik, pesanan, jawaban, riwayat) | Cloud Firestore | Jakarta (`asia-southeast2`) |
+| Buat pesanan, cek bayar, webhook Mayar, tukar kode, unduh ebook | Cloud Functions | Jakarta (`asia-southeast2`) |
+| File ebook PDF + bank soal berbayar (privat) | Cloud Storage for Firebase | Jakarta (`asia-southeast2`) |
 | Situs (Next.js dengan server) | Firebase App Hosting | Singapura (`asia-southeast1`) |
-| Email kode | Gmail dengan App Password | — |
+| Pembayaran, tagihan, bukti bayar | Mayar (Single Payment Request + API transaksi) | — |
 
+Tidak ada Gmail, SMTP, App Password, atau layanan email pihak ketiga.
 Proyek Firebase-nya **terpisah** dari game edukasi.
 
 ---
@@ -96,35 +117,38 @@ ketik. Masuk dengan Google tidak perlu verifikasi.
 3. Nilai-nilai ini **bukan rahasia** (memang dikirim ke browser), jadi boleh
    ditempel ke Claude. Claude akan mengisinya di `web/apphosting.yaml`.
 
-## 6. Siapkan dua rahasia: App Password Gmail dan Webhook Token Mayar
+## 6. Siapkan dua rahasia Mayar
 
-**Jangan ditempel ke chat mana pun, termasuk ke Claude.**
+**Jangan ditempel ke chat mana pun, termasuk ke Claude.** Mayar biasanya baru membuka
+menu API dan Webhook setelah KYC/verifikasi toko disetujui.
 
-### 6a. App Password Gmail
+### 6a. API Key Mayar
 
-Kode dikirim dari satu akun Gmail milik Anda (disarankan Gmail khusus, mis.
-`soalskd.id@gmail.com`; alamat ini juga jadi alamat balasan pembeli).
-
-1. Masuk ke https://myaccount.google.com dengan Gmail itu.
-2. **Keamanan → Verifikasi 2 Langkah** harus aktif.
-3. Buka https://myaccount.google.com/apppasswords → nama `SoalSKD` → **Buat**.
-4. Salin 16 hurufnya ke Notepad sementara.
-
-Gmail bisa mengirim sekitar 500 email per hari, jauh di atas kebutuhan awal.
+1. Masuk ke https://web.mayar.id/api-keys → **Create API Key** → pilih **Read & Write**
+   (dibutuhkan untuk membuat tagihan; docs Mayar: Read Only hanya untuk GET).
+2. Salin kuncinya ke Notepad sementara. Kunci ini hanya akan disimpan di Secret Manager.
+3. Docs Mayar: mengganti domain/subdomain toko butuh API key baru.
 
 ### 6b. Webhook Token Mayar
 
-Dasbor Mayar → **Integrasi → Webhook** → salin **Webhook Token**. (Menu ini
-biasanya baru muncul setelah KYC Mayar disetujui.)
+Dasbor Mayar → **Integrasi → Webhook** → salin **Webhook Token** (dikirim Mayar di header
+`X-Callback-Token`; terbukti di proyek game edukasi, tidak tertulis di docs Mayar). Webhook
+hanya pemicu: tanpa API yang menyatakan lunas, webhook tidak membuka apa pun.
 
 ### 6c. Simpan di Secret Manager
 
 1. Buka `https://console.cloud.google.com/security/secret-manager?project=PROJECT_ID`
    (ganti `PROJECT_ID`). Kalau diminta, tekan **Enable**.
-2. **Create secret** → Name `MAYAR_WEBHOOK_TOKEN` → value: Webhook Token → Create.
-3. **Create secret** → Name `GMAIL_APP_PASSWORD` → value: 16 huruf App Password → Create.
+2. **Create secret** → Name `MAYAR_API_KEY` → value: API key → Create.
+3. **Create secret** → Name `MAYAR_WEBHOOK_TOKEN` → value: Webhook Token → Create.
 
-Nama secret harus persis begitu (huruf besar semua).
+Nama secret harus persis begitu (huruf besar semua). Secret `GMAIL_APP_PASSWORD` dari
+versi lama tidak dipakai lagi; kalau sempat dibuat, hapus.
+
+**Uji dulu di sandbox (disarankan):** buat akun di https://web.mayar.io, ambil API key
+sandbox dari https://web.mayar.io/api-keys, simpan sebagai `MAYAR_API_KEY`, dan isi variable
+GitHub `MAYAR_API_BASE` = `https://api.mayar.io/hl/v2` (langkah 7b). Setelah uji lulus,
+ganti secret ke API key produksi (versi baru) dan kosongkan `MAYAR_API_BASE`, lalu deploy ulang.
 
 ## 7. Deploy backend lewat GitHub Actions
 
@@ -145,8 +169,8 @@ Repo SoalSKD → **Settings → Secrets and variables → Actions**:
 |---|---|---|
 | Secret | `FIREBASE_SERVICE_ACCOUNT` | seluruh isi file JSON dari 7a |
 | Variable | `FIREBASE_PROJECT_ID` | Project ID |
-| Variable | `EMAIL_PENGIRIM` | Gmail dari langkah 6a |
-| Variable | `URL_SITUS` | alamat situs, mis. `https://soalskd.id` (boleh dikosongkan dulu) |
+| Variable | `URL_SITUS` | alamat situs, mis. `https://soalskd.id`; dipakai sebagai tautan kembali dari Mayar (`/akun?pesanan=…`) |
+| Variable | `MAYAR_API_BASE` | kosong = produksi `https://api.mayar.id/hl/v2`; sandbox: `https://api.mayar.io/hl/v2` |
 
 Setelah itu file JSON di komputer boleh dihapus.
 
@@ -181,47 +205,43 @@ Kenapa App Hosting, bukan Vercel: lihat bagian "Perbandingan hosting" di bawah.
 5. **Authentication → Settings → Authorized domains**: tambahkan domain `hosted.app`
    di atas dan domain sendiri.
 6. Isi variable GitHub `URL_SITUS` dengan alamat situs, lalu jalankan
-   **Deploy backend** sekali lagi (target `functions`) supaya tautan di email
-   kode menunjuk ke situs.
+   **Deploy backend** sekali lagi (target `functions`) supaya Mayar mengarahkan pembeli
+   kembali ke `/akun?pesanan=…` setelah membayar.
+7. **Bank soal berbayar** dibaca server dari Storage privat (langkah 10d). Bucket bawaan =
+   `PROJECT_ID.firebasestorage.app`. Kalau nama bucket berbeda, tambahkan env `BANK_BUCKET`
+   di `web/apphosting.yaml`. Service account App Hosting perlu bisa membaca bucket itu
+   (peran **Storage Object Viewer** bila belum ada).
 
 **Jangan rollout ke produksi sebelum yakin**: gabungkan ke `produksi` hanya
 setelah dicoba di alamat App Hosting.
 
 ## 9. Mayar
 
-1. **Produk**: buat satu produk digital per bundel, harga Rp9.900 masing-masing.
-   Nama yang disarankan (persis):
-   - `SoalSKD Bundel 1: 3 Try Out SKD + Ebook` → Bundel 1 (p02–p04, Ebook Edisi 1)
-   - `SoalSKD Bundel 2: 3 Try Out SKD + Ebook` → Bundel 2 (p05–p07, Ebook Edisi 2)
+Checkout dibuat per pesanan lewat API (Single Payment Request), jadi **tidak perlu** membuat
+halaman produk di Mayar dan tidak ada pemetaan nama produk. Harga ada di
+`functions/src/produk.ts` (`harga`) dan tampilannya di `web/src/config/landing.ts`
+(`PENAWARAN`); ubah keduanya bersamaan.
 
-   **Cara paling aman** (wajib kalau ada dua bundel): Firestore → koleksi `config`
-   → dokumen `mayar_products` → satu field per produk, nama field = **id produk
-   Mayar**, nilai `bundel-3to` (Bundel 1) atau `bundel-3to-2` (Bundel 2). Pemetaan
-   ini selalu diutamakan dan bisa diubah tanpa deploy.
-   Cadangannya, server menebak dari nama produk (`functions/src/produk.ts`): nama
-   harus memuat **Bundel** dan angka **3**; penanda edisi 2 (`2`, `II`, `dua`,
-   `kedua`, `p05–p07`) selalu dibaca Bundel 2, tidak pernah Bundel 1. Nama yang
-   ragu (mis. menyebut bundel 1 dan 2 sekaligus, atau angka lain) **tidak dikirimi
-   kode otomatis** dan dicatat untuk ditangani manual.
-2. **Catatan produk** (tampil setelah bayar):
-   > Terima kasih sudah membeli SoalSKD. Kode aktivasi dikirim otomatis ke email
-   > yang kamu isi saat membayar, biasanya dalam beberapa menit. Cek juga folder
-   > Spam/Promosi. Lalu buka situs SoalSKD → Masuk → Aktivasi kode.
-3. **URL webhook**: Dasbor Mayar → **Integrasi → Webhook** → isi
+1. **Metode pembayaran**: Dasbor Mayar → **Settings → Payment Methods**: aktifkan QRIS dan
+   e-wallet. (Docs Mayar: biaya admin/channel yang dibebankan ke pembeli **tidak berlaku**
+   untuk Request Payment, jadi nominal yang dibayar = harga.)
+2. **URL webhook**: Dasbor Mayar → **Integrasi → Webhook** → isi
    ```
    https://asia-southeast2-PROJECT_ID.cloudfunctions.net/mayarWebhook
    ```
    (ganti `PROJECT_ID`, tanpa apa pun di belakangnya). Simpan → **Test**.
-   Hasil benar: **200**. Kalau **401**: token di Secret Manager tidak sama dengan
-   di dasbor Mayar (cek spasi yang ikut tersalin), perbaiki lalu deploy ulang.
+   Hasil benar: **200** (event uji diabaikan). Kalau **401**: token di Secret Manager tidak
+   sama dengan di dasbor Mayar (cek spasi yang ikut tersalin), perbaiki lalu deploy ulang.
+3. **Jangan bagikan tautan produk Mayar lama** (kalau pernah dibuat). Pembayaran yang tidak
+   lewat tombol Beli SoalSKD tidak terikat ke akun mana pun; webhook-nya dicatat di
+   `mayar_events` dengan `hasil: tanpa-pesanan` untuk ditangani manual.
 4. **Verifikasi merchant / data toko**: kalau Mayar meminta URL kebijakan,
-   isi `https://DOMAIN/privasi` (privasi), `https://DOMAIN/syarat` (syarat), dan
-   `https://DOMAIN/syarat#pengembalian-dana` (pengembalian dana). Teks
-   pengembalian dana ada di `PENGEMBALIAN_DANA` (`web/src/config/legal.ts`) dan
-   masih **usulan**: setujui atau ubah dulu (langkah 12).
-5. Kirim **tautan kedua produk Mayar** ke Claude. Claude mengisinya di `TAUTAN_BELI`
-   (`web/src/config/landing.ts`, satu per bundel) supaya tombol beli di landing dan
-   /try-out aktif. Bundel yang tautannya masih kosong tampil "Pembelian segera dibuka".
+   isi `https://DOMAIN/privasi`, `https://DOMAIN/syarat`, dan
+   `https://DOMAIN/syarat#pengembalian-dana`. Teks pengembalian dana ada di
+   `PENGEMBALIAN_DANA` (`web/src/config/legal.ts`) dan masih **usulan** (langkah 12).
+5. **Buka penjualan** setelah uji beli (langkah 11) lulus: minta Claude mengubah
+   `PENJUALAN_DIBUKA` di `web/src/config/landing.ts` menjadi `true` untuk bundel itu, lalu
+   gabungkan ke `produksi`. Selama `false`, tombol tampil "Pembelian segera dibuka".
 
 ## 10. Ebook PDF di Storage (privat)
 
@@ -287,21 +307,53 @@ kalau perlu). Edisi 2 sama, dengan `bank/p05.json bank/p06.json bank/p07.json`,
 **Jangan** klik "Create new access token" atau membagikan tautan dari Console:
 tautan semacam itu berlaku selamanya dan bisa disebar.
 
-### 10d. Setiap kali isi bank berubah
+### 10d. Bank soal berbayar di Storage (wajib sebelum jualan)
+
+Soal, kunci, dan pembahasan paket berbayar **tidak dibaca dari repo** oleh situs pembeli.
+Server Next.js membacanya dari Storage privat `bank/<id>.json` (storage.rules menolak semua
+client) hanya setelah hak paket dicek. Unggah sekali, dan setiap kali isi paket berubah:
+
+```sh
+sh tools/unggah-bank.sh soalskd-1a2b3.firebasestorage.app          # dari bank/
+sh tools/unggah-bank.sh soalskd-1a2b3.firebasestorage.app ../SoalSKD-bank   # dari folder/repo privat
+```
+
+Skrip memvalidasi bank, menanam SVG gambar figural ke JSON (`tools/bank_privat.py siapkan`),
+lalu `gsutil cp` ke `gs://<bucket>/bank/`. Paket gratis (PAKET_TERBUKA) tidak diunggah.
+Server menyimpan cache 10 menit. Setelah menambah/mengubah paket, perbarui juga katalog
+publik (metadata saja): `python3 tools/bank_privat.py katalog [folder…]`.
+
+### 10e. Setiap kali isi bank berubah
 
 Soal p02–p04 (Edisi 1) atau p05–p07 (Edisi 2) diperbaiki → jalankan lagi **10c**
-untuk edisi itu. File lama ditimpa di path yang sama, jadi tombol unduh langsung
+untuk edisi itu **dan 10d** (bank di Storage). File lama ditimpa di path yang sama, jadi tombol unduh langsung
 memberi versi baru. Pembeli yang sudah mengunduh tetap memegang versi lamanya.
 Edisi atau bundel baru (mis. Bundel 3) butuh perubahan kecil di
-`functions/src/produk.ts` (`PRODUK`, `EBOOK`), cerminnya di `web/src/config/produk.ts`
+`functions/src/produk.ts` (`PRODUK` termasuk `harga`, `EBOOK`), cerminnya di `web/src/config/produk.ts`, `PENAWARAN` di `web/src/config/landing.ts`,
 dan `web/src/config/akses.ts`, serta skrip; minta Claude.
 
 ## 11. Uji sekali dengan uang sungguhan
 
-Beli sendiri pakai email lain (Rp9.900). Dalam beberapa menit email berisi kode
-harus masuk. Daftar dengan email itu, verifikasi, buka **Aktivasi kode**,
-masukkan kode → "Semua paket sudah aktif" → buka Paket 02. Kembali ke halaman
-Try out → **Unduh ebook PDF** → file `SoalSKD-Edisi-1.pdf` terunduh.
+Lakukan setelah langkah 1–10 dan 12 selesai, **sebelum** `PENJUALAN_DIBUKA` dinyalakan
+untuk umum. Untuk uji ini saja, minta Claude menyalakan `PENJUALAN_DIBUKA` di branch uji
+atau buka langsung `https://DOMAIN/beli?produk=bundel-3to` setelah saklarnya dinyalakan.
+
+1. Buka situs di HP (jendela penyamaran), tekan **Beli Bundel 1** → **Masuk dengan Google**
+   (akun yang belum pernah membeli).
+2. Tekan **Bayar Rp9.900** → halaman Mayar terbuka. Periksa nominal **Rp9.900**.
+3. Bayar dengan QRIS/e-wallet sungguhan.
+4. Kembali ke SoalSKD (otomatis lewat redirect, atau buka `/akun`). Status harus berubah
+   dari **Pembayaran sedang diverifikasi** ke **Paket aktif** dalam beberapa detik; kalau
+   belum, tekan **Cek Status Pembayaran** (jeda 5 detik antar cek).
+5. Buka **Paket 02** dari /try-out → soal tampil (dibaca dari Storage privat).
+   Kerjakan 1–2 soal, kumpulkan → skor + pembahasan tampil.
+6. /try-out → **Unduh Ebook PDF Edisi 1** → `SoalSKD-Edisi-1.pdf` terunduh.
+7. Periksa Console → Firestore: `orders/{id}` `status: aktif`, `paidAt`, `mayarTransactionId`
+   terisi; `users/{uid}.paket` = p02–p04. Console → Functions → Logs: ada
+   `verifikasi: paket diaktifkan`, tanpa galat.
+8. Dasbor Mayar → Transaksi: transaksi Rp9.900 lunas, dan **Webhook History** berstatus sukses.
+9. Ulangi untuk Bundel 2 (langkah 13). Bila perlu, refund transaksi uji di Mayar lalu
+   cabut aksesnya: `node scripts/admin.mjs --project PROJECT_ID cabut-pesanan ord_… refund uji`.
 
 ## 12. Lengkapi halaman Privasi dan Syarat (sebelum jualan)
 
@@ -313,7 +365,7 @@ halaman publik). Kirim nilainya ke Claude atau ubah sendiri:
 | Nilai | Isi | Kenapa wajib |
 |---|---|---|
 | `PENGELOLA` | nama Anda atau badan usaha | UU PDP: pengendali data harus jelas; Mayar dan Google juga memeriksanya |
-| `EMAIL_KONTAK` | email kontak umum (boleh Gmail pengirim kode) | tanpa ini, yang belum membeli tidak punya cara meminta hapus akun |
+| `EMAIL_KONTAK` | email kontak umum (boleh email yang sudah Anda punya; tidak perlu akun baru) | tanpa ini, yang belum membeli tidak punya cara meminta hapus akun |
 | `WA_KONTAK` | nomor WA, mis. `6281234567890` | opsional |
 | `PENGEMBALIAN_DANA` | teks kebijakan pengembalian dana | sekarang masih usulan Claude, perlu persetujuan Anda |
 | `BERLAKU_SEJAK` | tanggal mulai berlaku, mis. `2026-12-01` | diisi setelah Anda membaca kedua halaman |
@@ -328,51 +380,73 @@ sebelum situs pembeli dibuka.
 
 ## 13. Bundel 2 (p05–p07 + Ebook Edisi 2)
 
-Kode untuk Bundel 2 sudah ada di repo (`bundel-3to-2` di `functions/src/produk.ts`),
-tetapi belum hidup sampai langkah berikut selesai. Kerjakan setelah langkah 1–12
-(atau bersamaan, kalau backend belum pernah di-deploy):
+Bundel 2 memakai alur checkout yang sama (produk `bundel-3to-2`, harga di
+`functions/src/produk.ts`). Yang perlu dilakukan:
 
-1. **Deploy backend, target functions** (langkah 7c, dry run dulu). Tanpa ini,
-   function di produksi belum mengenal Bundel 2 dan edisi 2: kode Bundel 2 akan
-   ditolak "bermasalah" dan tombol unduh Edisi 2 gagal.
-2. **Mayar**: buat produk `SoalSKD Bundel 2: 3 Try Out SKD + Ebook`, harga Rp9.900,
-   catatan produk sama dengan Bundel 1 (langkah 9.2).
-3. **`config/mayar_products`**: tambahkan field id produk Mayar Bundel 2 dengan
-   nilai `bundel-3to-2` (langkah 9.1). Periksa juga Bundel 1 bernilai `bundel-3to`.
-4. **Ebook Edisi 2**: `sh tools/unggah-ebook.sh <bucket> edisi-2` (langkah 10c).
-5. **Uji sekali** seperti langkah 11, dengan produk Bundel 2: bayar → email kode →
-   /aktivasi → p05–p07 terbuka → kartu **Unduh Ebook PDF Edisi 2** muncul. Akun yang
-   punya dua bundel melihat dua kartu ebook.
-6. Kirim tautan produk Mayar Bundel 2 ke Claude untuk `TAUTAN_BELI["bundel-3to-2"]`.
-7. Review isi p05–p07 (status masih `draf`), lalu buat ulang Edisi 2 bila ada perubahan.
+1. **Ebook Edisi 2**: `sh tools/unggah-ebook.sh <bucket> edisi-2` (langkah 10c).
+2. **Bank p05–p07**: ikut `sh tools/unggah-bank.sh <bucket>` (langkah 10d).
+3. Review isi p05–p07 (status masih `draf`), lalu unggah ulang bank + ebook bila berubah.
+4. **Uji sekali** seperti langkah 11 dengan Bundel 2: p05–p07 terbuka, kartu **Unduh Ebook PDF
+   Edisi 2** muncul. Akun yang punya dua bundel melihat dua kartu ebook.
+5. Nyalakan `PENJUALAN_DIBUKA["bundel-3to-2"]` (minta Claude).
 
 ## Memantau dan menangani masalah
 
-Semua pesanan ada di Firestore → koleksi **`orders`** (id = id transaksi Mayar):
+Semua pesanan ada di Firestore → koleksi **`orders`** (id `ord_…`, juga terlihat oleh pembeli
+di halaman Akun). Pembeli melihat cerminnya di `users/{uid}/pembelian`.
 
-| Isi dokumen | Artinya | Yang dilakukan |
+| `status` di `orders` | Artinya | Yang dilakukan |
 |---|---|---|
-| `code` + `emailedAt` terisi | Beres | — |
-| `code` terisi, `emailedAt` kosong | Email gagal; Mayar mengulang sendiri | Setelah 1 jam masih kosong: kirim kode di `code` secara manual |
-| `problem: produk-tidak-dikenal` | Nama produk tidak cocok | Buat kode manual (di bawah), betulkan nama produk |
-| `problem: status-…` | Status pembayaran bukan sukses | Cek di dasbor Mayar; kalau ternyata lunas, kirim kode manual |
+| `menunggu` | Tagihan dibuat, belum lunas menurut Mayar | Tidak perlu apa-apa. Pembeli bisa menekan Cek Status |
+| `menunggu` + `perluTinjau: true` | Mayar mengembalikan status yang tidak dikenal (mis. `refunded`) | Cek transaksi di dasbor Mayar |
+| `aktif` | Lunas, paket diberikan | — |
+| `kedaluwarsa` | Tidak dibayar sampai batas waktu (24 jam) | Tidak perlu apa-apa. Kalau ternyata dibayar, webhook/cek berikutnya mengaktifkannya |
+| `gagal` + `problem: tidak-cocok-…` | Mayar bilang lunas, tapi nominal/produk/id tidak cocok | Periksa di Mayar. Kalau sah, beri kode cadangan atau refund. **Jangan** ubah status manual |
+| `dicabut` | Akses dicabut admin (refund/chargeback) | — |
+
+Pembayaran yang tidak lewat checkout SoalSKD: Firestore → **`mayar_events`** dengan
+`hasil: tanpa-pesanan` (email, produk, jumlah dari webhook). Minta pembeli membalas **dari
+email itu**, cocokkan dengan transaksi di dasbor Mayar, lalu beri kode cadangan. Jangan beri
+akses hanya dari screenshot atau nomor transaksi.
+
+**Alat admin** (komputer pemilik, kredensial pemilik; tidak ada endpoint publik). Sekali:
+`gcloud auth application-default login`, lalu di `functions/`: `npm ci && npm run build`.
+
+```sh
+node scripts/admin.mjs --project PROJECT_ID cari pembeli@contoh.com          # pesanan + webhook untuk email itu
+node scripts/admin.mjs --project PROJECT_ID kode bundel-3to 1 kompensasi     # kode cadangan
+node scripts/admin.mjs --project PROJECT_ID cabut-pesanan ord_xxx refund     # cabut akses (refund/chargeback)
+node scripts/admin.mjs --project PROJECT_ID cabut-kode ABC-DEF-GHJ bocor      # cabut kode cadangan
+```
+
+Kode cadangan ditukar pembeli di `/aktivasi` (email terverifikasi, 10 salah per jam).
+Mayar **tidak** mengirim event refund/chargeback (docs: daftar event webhook), jadi
+pencabutan selalu lewat alat admin setelah refund disetujui.
 
 Pembeli melapor ebook tidak bisa diunduh: lihat log function `unduhEbook`
 (Console → Functions → Logs). `file belum diunggah` = ulangi langkah 10c;
 `gagal menandatangani URL` = cek langkah 10b.
 
-Pembeli salah ketik email: cari pesanannya di `orders`, kirim kode yang sama dari
-field `code`. **Jangan buat kode baru**, supaya satu pembayaran tetap satu kode.
+**Kunci API atau token Mayar bocor**: buat yang baru di Mayar, tambahkan sebagai **versi
+baru** di secret `MAYAR_API_KEY` / `MAYAR_WEBHOOK_TOKEN`, nonaktifkan yang lama di Mayar, lalu
+jalankan Deploy backend (target `functions`).
 
-**Membuat kode manual** (giveaway, transfer biasa): Firestore → koleksi
-`activation_codes` → **Add document**:
-- Document ID: kode tanpa tanda hubung, huruf besar, mis. `HADIAH2026A`
-- Field: `produk` (string) `bundel-3to`, `used` (boolean) `false`
+## Biaya dan batas pemakaian
 
-Pembeli bisa mengetiknya dengan atau tanpa tanda hubung/spasi.
+Budget alert **Rp50.000/bulan** (langkah 2) hanya peringatan, **bukan** pemutus. Pengaman
+yang sudah dipasang di repo:
 
-**Token Mayar bocor**: buat token baru di Mayar, tambahkan sebagai **versi baru**
-di secret `MAYAR_WEBHOOK_TOKEN`, lalu jalankan Deploy backend (target `functions`).
+| Layanan | Pengaman |
+|---|---|
+| App Hosting (Cloud Run) | `minInstances: 0`, `maxInstances: 3`, 512 MiB (`web/apphosting.yaml`) |
+| Cloud Functions | `maxInstances: 10` global, webhook `maxInstances: 3` |
+| Mayar API | rem buat pesanan 6/jam/akun; cek status jeda 5 detik dan 20/10 menit/akun; status final tidak ditanyakan ulang (batas Mayar 50/menit/API key) |
+| Tukar kode | 10 salah/jam/akun |
+| Storage | ebook lewat signed URL 10 menit; bank dibaca server dengan cache 10 menit |
+
+Disarankan (Console, sekali): Firestore → **TTL policies** → koleksi `rate_limits`, field
+`kedaluwarsa`; Artifact Registry → repositori `gcf-artifacts` (asia-southeast2) →
+**Cleanup policies**: simpan 2 versi terbaru (image function lama menumpuk biaya penyimpanan).
 
 ## Perbandingan hosting (keputusan: Firebase App Hosting)
 
@@ -394,7 +468,9 @@ harga resmi sebelum memutuskan ulang.)
 ## Untuk developer: uji di emulator
 
 ```sh
-cd functions && npm ci && npm run uji          # 42 tes unit (nama produk, hak edisi) + 74 skenario emulator: webhook, tukar kode, unduh ebook dua edisi, rules
+cd web && npm ci && npm run uji:unit            # skor, timer, katalog, gerbang bank berbayar (tanpa emulator)
+cd functions && npm ci && npm run uji          # tes unit pembayaran + skenario emulator (Mayar tiruan): pesanan, webhook, verifikasi, kode cadangan, ebook, rules, gerbang web
+cd web && STATIK=1 npm run build && npm run cek-bocor && npm run uji:e2e   # build statis tanpa soal berbayar + E2E Playwright
 ```
 
 Butuh Java 21. Untuk mencoba situs dengan emulator: jalankan
@@ -407,4 +483,5 @@ Di emulator, `unduhEbook` menandatangani tautan dengan kunci sekali pakai (tanpa
 kredensial Google), dan tautannya mengarah ke emulator Storage.
 
 Build statis GitHub Pages (`STATIK=1`): login dan gerbang mati, paket berbayar
-terkunci (kecuali `DEV_BUKA_SEMUA`), kartu ebook tidak ikut dibundel. Hanya untuk penguji.
+terkunci dan soalnya tidak pernah dibaca (`DEV_BUKA_SEMUA` wajib `false`), kartu ebook tidak
+ikut dibundel. `scripts/cek-bocor.mjs` menggagalkan deploy dev bila soal berbayar terbawa.

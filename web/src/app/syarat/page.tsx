@@ -4,7 +4,7 @@ import { muatHalamanLegal } from "@/lib/legal";
 
 export const metadata: Metadata = {
   title: "Syarat & Ketentuan · SoalSKD",
-  description: "Syarat memakai dan membeli try out SKD CPNS di SoalSKD: akun, kode aktivasi, pengembalian dana, dan hak cipta.",
+  description: "Syarat memakai dan membeli try out SKD CPNS di SoalSKD: akun, pembelian, pengembalian dana, dan hak cipta.",
 };
 
 export default async function Halaman() {

@@ -1,7 +1,7 @@
 {
   "name": "soalskd-functions",
   "private": true,
-  "description": "Cloud Functions SoalSKD: tukar kode aktivasi, webhook Mayar",
+  "description": "Cloud Functions SoalSKD: pembelian Mayar otomatis, kode cadangan, unduh ebook",
   "type": "commonjs",
   "main": "lib/index.js",
   "engines": {
@@ -15,11 +15,9 @@
   },
   "dependencies": {
     "firebase-admin": "^13.0.2",
-    "firebase-functions": "^6.3.0",
-    "nodemailer": "^10.0.10"
+    "firebase-functions": "^6.3.0"
   },
   "devDependencies": {
-    "@types/nodemailer": "^8.0.2",
     "typescript": "^5.8.3"
   }
 }

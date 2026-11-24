@@ -94,6 +94,9 @@ jobs:
           test -f out/index.html || { echo "::error::out/index.html tidak ada."; exit 1; }
           grep -q "$BASE_PATH/_next/" out/index.html || { echo "::error::basePath build salah."; exit 1; }
           grep -q 'name="robots" content="noindex, nofollow"' out/index.html || { echo "::error::noindex tidak terpasang."; exit 1; }
+          # Soal paket berbayar tidak boleh ada di situs publik ini (scripts/cek-bocor.mjs).
+          node scripts/cek-bocor.mjs out || { echo "::error::Soal berbayar ikut build statis. Deploy dibatalkan."; exit 1; }
+          (cd .. && python3 tools/bank_privat.py cek-katalog) || { echo "::error::bank/katalog.json usang."; exit 1; }
 
       - name: Siapkan branch Pages
         run: |

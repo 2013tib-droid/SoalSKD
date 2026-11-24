@@ -8,11 +8,12 @@ import { PRODUK, type IdProduk } from "@/config/produk";
 export const PAKET_TERBUKA = ["p01"] as const;
 
 /**
- * SAKLAR SEMENTARA untuk cek ulang pemilik: `true` = semua paket terbuka di build statis
- * (GitHub Pages dev), soal + kunci paket berbayar ikut ke `out/`. Tidak berlaku di build server
- * (produksi tetap bergerbang). Kembalikan ke `false` sebelum deploy produksi.
+ * Saklar lama untuk cek ulang pemilik. WAJIB `false` di semua deployment publik (keputusan
+ * pemilik 2026-11-24). Walau `true`, soal berbayar tetap tidak ikut build statis: `lib/soal.ts`
+ * tidak pernah membaca paket berbayar saat STATIK=1, dan `scripts/cek-bocor.mjs` menggagalkan
+ * build yang memuatnya.
  */
-export const DEV_BUKA_SEMUA = true;
+export const DEV_BUKA_SEMUA = false;
 
 /**
  * Paket yang terbuka untuk semua orang. Build statis (GitHub Pages dev) ikut aturan yang sama:

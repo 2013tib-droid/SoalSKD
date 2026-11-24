@@ -26,10 +26,16 @@ const nextConfig: NextConfig = statik
     }
   : {
       env,
-      // Server (App Hosting): bank soal dan config dibaca dari luar web/ saat request,
-      // jadi wajib ikut dibawa ke paket server.
+      // Server (App Hosting): katalog, paket GRATIS, dan config dibaca dari luar web/ saat
+      // request, jadi ikut dibawa ke paket server. Paket berbayar TIDAK dibawa: dibaca dari
+      // Storage privat (src/lib/bank-privat.ts). Tambahkan paket di sini bila PAKET_TERBUKA berubah.
       outputFileTracingRoot: path.resolve(".."),
-      outputFileTracingIncludes: { "/**/*": ["../bank/*.json", "../bank/gambar/*.svg", "../config/*.json", "./src/konten/*.md"] },
+      outputFileTracingIncludes: {
+        "/**/*": ["../bank/katalog.json", "../bank/p01.json", "../config/*.json", "./src/konten/*.md"],
+      },
+      outputFileTracingExcludes: {
+        "*": ["../bank/p0[2-9].json", "../bank/p[1-9][0-9].json", "../bank/gambar/**", "../bank/premium-*.md", "../bank/sample-*.json"],
+      },
     };
 
 export default nextConfig;

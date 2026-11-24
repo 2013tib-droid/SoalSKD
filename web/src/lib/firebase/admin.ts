@@ -33,3 +33,22 @@ export async function paketMilik(uid: string): Promise<string[]> {
   const data = (await getFirestore(app()).doc(`users/${uid}`).get()).data();
   return Array.isArray(data?.paket) ? data.paket.filter((p): p is string => typeof p === "string") : [];
 }
+
+/**
+ * Bucket Storage privat tempat bank soal berbayar (`bank/<id>.json`, diunggah
+ * `tools/unggah-bank.sh`). Bawaan: bucket default proyek; App Hosting membacanya
+ * dengan service account backend (ADC), client tidak pernah bisa (storage.rules).
+ */
+export async function bacaBerkasPrivat(jalur: string): Promise<Buffer | null> {
+  if (!ADMIN_AKTIF) return null;
+  const { getStorage } = await import("firebase-admin/storage");
+  const nama = process.env.BANK_BUCKET || `${projectId}.firebasestorage.app`;
+  const file = getStorage(app()).bucket(nama).file(jalur);
+  try {
+    const [isi] = await file.download();
+    return isi;
+  } catch (e) {
+    if ((e as { code?: number }).code === 404) return null;
+    throw e;
+  }
+}

@@ -5,7 +5,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "cek-bocor": "node scripts/cek-bocor.mjs",
+    "uji:unit": "node --import ./test/loader.mjs --test test/unit.test.ts && STATIK=1 node --import ./test/loader.mjs --test test/bank-statik.test.ts && NODE_ENV=production node --import ./test/loader.mjs --test test/bank-produksi.test.ts",
+    "uji:e2e": "node test/e2e.mjs"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

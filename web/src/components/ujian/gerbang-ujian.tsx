@@ -81,10 +81,10 @@ export function GerbangUjian({ paket, judul }: { paket: string; judul: string })
             <LockKey size={24} className="shrink-0 text-text-muted" aria-hidden />
             <p className="body-6">
               {k.status === "perlu-masuk"
-                ? "Paket ini untuk pembeli. Masuk dengan akun yang dipakai saat aktivasi."
+                ? "Paket ini untuk pembeli. Masuk dengan akun yang dipakai saat membeli."
                 : k.status === "belum-punya"
-                  ? "Akunmu belum punya akses ke paket ini. Masukkan kode aktivasi dari email pembelian."
-                  : "Paket ini untuk pembeli. Setelah membeli, masuk dan masukkan kode aktivasi untuk membukanya. Sementara itu, coba paket gratis dulu."}
+                  ? "Akunmu belum punya akses ke paket ini. Sudah membayar? Cek status pembelianmu; paket aktif otomatis setelah pembayaran terverifikasi."
+                  : "Paket ini untuk pembeli. Setelah membeli, paket aktif otomatis di akunmu. Sementara itu, coba paket gratis dulu."}
             </p>
           </div>
           {k.status === "perlu-masuk" && (
@@ -93,8 +93,8 @@ export function GerbangUjian({ paket, judul }: { paket: string; judul: string })
             </Link>
           )}
           {k.status === "belum-punya" && (
-            <Link href={`/aktivasi?lanjut=${lanjut}`} className={tombolUtama}>
-              Masukkan kode aktivasi
+            <Link href="/akun" className={tombolUtama}>
+              Cek status pembelian
             </Link>
           )}
           <Link href="/#harga" className={tombolSekunder}>

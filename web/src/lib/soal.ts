@@ -1,7 +1,10 @@
 import "server-only";
-import { readdir, readFile } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 import path from "node:path";
+import { PAKET_TERBUKA } from "@/config/akses";
+import { BUILD_STATIK } from "@/config/build";
 import type { Subtes } from "@/config/skd";
+import { bacaPaketPrivat } from "@/lib/bank-privat";
 import { ambilFormatSkd } from "@/lib/format-skd";
 
 /** Bentuk soal di bank sesuai `schema/paket.schema.json` (skema 1). */
@@ -19,7 +22,8 @@ type SoalBank = {
   pembahasan: { inti: string; opsi: Record<string, string>; konsep?: string };
   tips: string;
   rujukan?: string[];
-  gambar?: { file: string; alt: string }[];
+  /** `svg`: base64, hanya di berkas paket privat (tools/bank_privat.py). */
+  gambar?: { file: string; alt: string; svg?: string }[];
 };
 
 type PaketBank = { skema: number; meta: { id: string; judul: string; status: string }; soal: SoalBank[] };
@@ -56,29 +60,48 @@ export type SoalPembahasan = SoalUjian & {
 };
 
 const ROOT = path.join(process.cwd(), "..");
-
-async function bacaPaket(paket: string): Promise<PaketBank | null> {
-  if (!/^[a-z0-9-]+$/.test(paket)) return null;
-  try {
-    const data = JSON.parse(await readFile(path.join(ROOT, "bank", `${paket}.json`), "utf8")) as PaketBank;
-    // Hanya file yang mengikuti skema 1. File lama (mis. sample-15) tidak dimuat.
-    if (data.skema !== 1 || !Array.isArray(data.soal)) return null;
-    const { urutan } = await ambilFormatSkd();
-    data.soal.sort(
-      (a, b) => urutan.indexOf(a.kategori) - urutan.indexOf(b.kategori) || a.nomor - b.nomor,
-    );
-    return data;
-  } catch {
-    return null;
-  }
-}
-
 const DIR_BANK = path.join(ROOT, "bank");
 
-/** Baca SVG soal dari `bank/` (path relatif, tidak boleh keluar folder) menjadi data URI. */
+/**
+ * Sumber paket:
+ *   - Paket gratis (`PAKET_TERBUKA`): `bank/<id>.json` di repo (ikut build statis).
+ *   - Paket berbayar: penyimpanan PRIVAT (`lib/bank-privat.ts`), hanya dipanggil
+ *     setelah hak paket dicek di server. Tidak pernah dibaca di build statis.
+ *   - Daftar/judul/jumlah soal semua paket: `bank/katalog.json` (metadata saja,
+ *     dibuat `tools/bank_privat.py`).
+ */
+async function bacaPaket(paket: string): Promise<PaketBank | null> {
+  if (!/^[a-z0-9-]+$/.test(paket)) return null;
+  let data: PaketBank | null;
+  // Daftar tetap, bukan `paketTerbuka()`: saklar DEV_BUKA_SEMUA tidak boleh membuat paket berbayar dibaca dari repo.
+  if ((PAKET_TERBUKA as readonly string[]).includes(paket)) {
+    try {
+      data = JSON.parse(await readFile(path.join(DIR_BANK, `${paket}.json`), "utf8")) as PaketBank;
+    } catch {
+      return null;
+    }
+  } else {
+    // Build statis tidak pernah memuat soal berbayar, apa pun yang ada di disk.
+    if (BUILD_STATIK) return null;
+    data = (await bacaPaketPrivat(paket)) as PaketBank | null;
+  }
+  // Hanya file yang mengikuti skema 1. File lama (mis. sample-15) tidak dimuat.
+  if (!data || data.skema !== 1 || !Array.isArray(data.soal)) return null;
+  const { urutan } = await ambilFormatSkd();
+  const soal = [...data.soal].sort(
+    (a, b) => urutan.indexOf(a.kategori) - urutan.indexOf(b.kategori) || a.nomor - b.nomor,
+  );
+  return { ...data, soal };
+}
+
+/**
+ * SVG soal menjadi data URI. Paket privat membawa SVG-nya sendiri (`svg`, base64);
+ * paket di repo membaca `bank/<file>` (path relatif, tidak boleh keluar folder).
+ */
 async function muatGambar(s: SoalBank): Promise<GambarSoal[]> {
   return Promise.all(
     (s.gambar ?? []).map(async (g) => {
+      if (typeof g.svg === "string") return { src: `data:image/svg+xml;base64,${g.svg}`, alt: g.alt };
       const file = path.resolve(DIR_BANK, g.file);
       if (!file.startsWith(DIR_BANK + path.sep) || !file.endsWith(".svg")) {
         throw new Error(`path gambar tidak sah: ${g.file}`);
@@ -89,13 +112,25 @@ async function muatGambar(s: SoalBank): Promise<GambarSoal[]> {
   );
 }
 
+type EntriKatalog = { id: string; judul: string; status: string; jumlahSoal: number; perSubtes: Partial<Record<Subtes, number>> };
+
+async function bacaKatalog(): Promise<EntriKatalog[]> {
+  try {
+    const k = JSON.parse(await readFile(path.join(DIR_BANK, "katalog.json"), "utf8")) as { paket?: EntriKatalog[] };
+    return Array.isArray(k.paket) ? k.paket : [];
+  } catch {
+    return [];
+  }
+}
+
 const keOpsi = (s: SoalBank) => Object.entries(s.opsi).map(([huruf, teks]) => ({ huruf, teks }));
 
 const kunciDari = (s: SoalBank) =>
   s.bobot ? Object.entries(s.bobot).reduce((a, b) => (b[1] > a[1] ? b : a))[0] : (s.kunci ?? "");
 
+/** Judul dari katalog: tidak perlu membaca soal (juga untuk paket berbayar). */
 export async function ambilJudulPaket(paket: string): Promise<string | null> {
-  return (await bacaPaket(paket))?.meta.judul ?? null;
+  return (await bacaKatalog()).find((p) => p.id === paket)?.judul ?? null;
 }
 
 export async function ambilSoalUjian(paket: string): Promise<SoalUjian[] | null> {
@@ -132,26 +167,18 @@ export async function ambilSoalPembahasan(paket: string): Promise<SoalPembahasan
   );
 }
 
-/** Semua paket skema 1 di `bank/`, urut menurut id. File lama dilewati. */
+/** Semua paket di katalog, urut menurut id. Tanpa membaca soal. */
 export async function daftarPaket(): Promise<RingkasanPaket[]> {
-  let nama: string[];
-  try {
-    nama = await readdir(path.join(ROOT, "bank"));
-  } catch {
-    return [];
-  }
-  const ids = nama.filter((n) => n.endsWith(".json")).map((n) => n.slice(0, -5)).sort();
-  const hasil = await Promise.all(ids.map((id) => bacaPaket(id)));
-  const { urutan } = await ambilFormatSkd();
-  return hasil
-    .filter((d): d is PaketBank => d !== null)
-    .map((d) => ({
-      id: d.meta.id,
-      judul: d.meta.judul,
-      status: d.meta.status,
-      jumlahSoal: d.soal.length,
+  const [katalog, { urutan }] = await Promise.all([bacaKatalog(), ambilFormatSkd()]);
+  return [...katalog]
+    .sort((a, b) => a.id.localeCompare(b.id))
+    .map((p) => ({
+      id: p.id,
+      judul: p.judul,
+      status: p.status,
+      jumlahSoal: p.jumlahSoal,
       perSubtes: urutan
-        .map((subtes) => ({ subtes, jumlah: d.soal.filter((s) => s.kategori === subtes).length }))
+        .map((subtes) => ({ subtes, jumlah: p.perSubtes[subtes] ?? 0 }))
         .filter((x) => x.jumlah > 0),
     }));
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { Key, SignOut, UserCircle } from "@phosphor-icons/react";
+import { Key, Receipt, SignOut, UserCircle } from "@phosphor-icons/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
@@ -11,7 +11,7 @@ const itemMenu =
   "title-4 flex h-11 w-full items-center gap-2 rounded-lg px-3 text-left text-text hover:bg-surface-muted disabled:opacity-60";
 
 /**
- * Tombol "Masuk" (belum login) atau ikon akun dengan menu: email, Aktivasi kode, Keluar.
+ * Tombol "Masuk" (belum login) atau ikon akun dengan menu: email, Akun & pembelian, Tukar kode, Keluar.
  * Login mati: tidak tampil di server tanpa env Firebase; di build statis tampil sebagai pratinjau.
  */
 export function MenuAkun() {
@@ -71,9 +71,13 @@ export function MenuAkun() {
           className="absolute top-full right-0 z-50 mt-2 flex w-64 flex-col gap-1 rounded-xl border border-border bg-surface p-2"
         >
           <p className="caption-4 truncate px-3 py-2 text-text-muted">{akun.pengguna?.email ?? "Akun Google"}</p>
+          <Link href="/akun" onClick={() => setBuka(false)} className={itemMenu}>
+            <Receipt size={20} aria-hidden />
+            Akun &amp; pembelian
+          </Link>
           <Link href="/aktivasi" onClick={() => setBuka(false)} className={itemMenu}>
             <Key size={20} aria-hidden />
-            Aktivasi kode
+            Tukar kode
           </Link>
           <button
             type="button"

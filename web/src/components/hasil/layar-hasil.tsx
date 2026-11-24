@@ -164,10 +164,10 @@ export function LayarHasil({ paket, dataStatik }: { paket: string; dataStatik?: 
           </p>
           {keadaan.alasan !== "belum-dibuka" && (
             <Link
-              href={`/${keadaan.alasan === "perlu-masuk" ? "masuk" : "aktivasi"}?lanjut=${encodeURIComponent(`/ujian/${paket}/hasil`)}`}
+              href={keadaan.alasan === "perlu-masuk" ? `/masuk?lanjut=${encodeURIComponent(`/ujian/${paket}/hasil`)}` : "/akun"}
               className={tombolUtama}
             >
-              {keadaan.alasan === "perlu-masuk" ? "Masuk" : "Masukkan kode aktivasi"}
+              {keadaan.alasan === "perlu-masuk" ? "Masuk" : "Cek status pembelian"}
             </Link>
           )}
         </section>
