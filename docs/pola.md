@@ -15,7 +15,7 @@ Format: `path` · fungsi · catatan pakai (props penting, varian)
 ## Komponen
 
 - `web/src/components/tombol.ts` · kelas tombol satu sumber: `tombolUtama`, `tombolSekunder`, `tombolNonaktif` (aksi belum bisa dipakai, mis. "Pembelian segera dibuka"), `tombolDasar`, `tombolBesar(kelas)` untuk landing (teks 16px) · modul biasa, bisa dipakai server component; `akun/ui.tsx` menambah `w-full`
-- `web/src/components/landing/gerak.tsx` · `Muncul` (section naik 32px sekali saat masuk layar) dan `TaglineBertahap` (kata menyala satu per satu saat lewat garis 60% layar) · keduanya mati di `prefers-reduced-motion`
+- `web/src/components/landing/gerak.tsx` · `Muncul` (pembungkus section landing, isi selalu terlihat, tanpa animasi masuk) dan `TaglineBertahap` (kata menyala satu per satu saat lewat garis 60% layar, belum dipakai, mati di `prefers-reduced-motion`)
 - `web/src/components/panduan/panduan-ujian.tsx` · `PratinjauUjian` (layar ujian statis dari soal bank, opsi `beranotasi`/`tanpaBingkai`), `CaraBaca` (keterangan bernomor), `PanduanUjian` (`<details>` "Cara membaca layar ujian" di /try-out, dirender server lalu jadi slot `panduan` di `LayarBeranda`), `PratinjauHasil` (contoh halaman hasil di landing, angka dari rasio ilustrasi × nilai maks config, selalu berlabel "Contoh hasil try out · angka ilustrasi"), `BAGIAN_SKD`
 - `web/src/components/gambar-soal.tsx` · `GambarSoal` gambar TIU figural (SVG bank sebagai data URI, ikut gerbang paket) di bawah teks soal, di layar ujian dan pembahasan · SVG dibuat `tools/buat_figural.py`
 - `web/src/components/teks-md.tsx` · render Markdown GFM soal/pembahasan (tanpa HTML, italic jadi medium) · `inline` untuk di dalam tombol

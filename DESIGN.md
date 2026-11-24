@@ -198,6 +198,8 @@ Tanpa bayangan dekoratif. Kedalaman ditunjukkan dengan border dan perbedaan `sur
 
 **Pengecualian landing (`/`) saja:** latar hero boleh bercahaya biru lembut (`primary/7%` + blob blur), mockup HP miring 4° dengan bayangan biru, strip angka dan banner CTA berbayangan biru lembut, banner CTA bergradien `primary` → `primary-hover` (gelap: blue-800 → blue-950, teks putih). Aksen kuning `accent` (#FBBF24, `accent-soft` untuk badge) hanya untuk dekorasi landing: garis coret, kilau, badge, harga di banner. Layar aplikasi tetap datar.
 
+Section landing selalu terlihat sejak render server (tanpa animasi muncul saat di-scroll), supaya screenshot, cetak, dan alat audit melihat isi yang sama dengan pengguna. Tombol di header landing ("Try Out" ke /try-out) bergaya sekunder; satu-satunya tombol biru di layar pertama adalah CTA utama hero.
+
 Landing tetap menjaga makna warna status: ikon kartu keunggulan semuanya `primary/10` + `primary` (bukan `danger`/`success`), tanpa ikon dekoratif yang menimpa teks (smiley di kartu masalah/solusi dihapus), dan kartu yang tidak bisa diklik tidak naik saat hover. Pratinjau hasil di landing memakai label `accent-soft` "Contoh hasil try out" + keterangan "angka ilustrasi".
 
 ## Shapes

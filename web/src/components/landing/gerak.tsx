@@ -5,40 +5,12 @@ import { useEffect, useRef, useState } from "react";
 const reduksiGerak = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 /**
- * Section naik 32px dan muncul sekali saat masuk layar. Konten sudah terlihat di render server;
- * hanya elemen yang masih di bawah layar saat dimuat yang disembunyikan dulu.
+ * Pembungkus section landing. Dulu section di bawah layar disembunyikan (opacity 0) sampai
+ * di-scroll; akibatnya screenshot halaman penuh, cetak, dan alat audit melihat area kosong
+ * (2026-11-24). Sekarang isi selalu terlihat sejak render server, tanpa animasi masuk.
  */
 export function Muncul({ children, className = "" }: { children: React.ReactNode; className?: string }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [tahap, setTahap] = useState<"diam" | "tunggu" | "tampil">("diam");
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el || reduksiGerak() || el.getBoundingClientRect().top < window.innerHeight) return;
-    setTahap("tunggu");
-    const io = new IntersectionObserver(
-      ([e]) => {
-        if (e.isIntersecting) {
-          setTahap("tampil");
-          io.disconnect();
-        }
-      },
-      { rootMargin: "0px 0px -10% 0px" },
-    );
-    io.observe(el);
-    return () => io.disconnect();
-  }, []);
-
-  return (
-    <div
-      ref={ref}
-      className={`${className} ${tahap === "tunggu" ? "translate-y-8 opacity-0" : ""} ${
-        tahap === "tampil" ? "transition-[opacity,transform] duration-700 ease-[var(--ease-out-house)]" : ""
-      }`}
-    >
-      {children}
-    </div>
-  );
+  return <div className={className}>{children}</div>;
 }
 
 /**

@@ -224,11 +224,12 @@ export function LayarLanding({ data, soalHero }: Props) {
           </ul>
           <div className="flex items-center gap-1">
             <MenuAkun />
+            {/* Navigasi ke daftar paket, sengaja sekunder: CTA utama halaman ini "Coba Try Out Gratis" di hero. */}
             <Link
               href="/try-out"
-              className="title-4 flex h-10 items-center gap-1 rounded-lg bg-primary px-3 whitespace-nowrap text-on-primary transition-[background-color,transform] duration-300 ease-[var(--ease-out-house)] hover:bg-primary-hover active:scale-[0.98]"
+              className="title-4 flex h-11 items-center gap-1 rounded-lg border border-border bg-surface px-3 whitespace-nowrap text-text transition-[background-color,transform] duration-300 ease-[var(--ease-out-house)] hover:bg-surface-muted active:scale-[0.98]"
             >
-              {CTA}
+              Try Out
               <ArrowRight size={16} aria-hidden className="hidden sm:block" />
             </Link>
           </div>
