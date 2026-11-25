@@ -16,9 +16,10 @@ Pemakaian (dari root repo):
   python3 tools/bank_privat.py cek-katalog [DIR ...]      # gagal bila katalog usang
   python3 tools/bank_privat.py siapkan KELUAR [DIR ...]   # paket berbayar → KELUAR/<id>.json
 
-DIR = folder berisi p*.json (+ gambar/). Bawaan: bank/. Bila paket berbayar
-sudah dipindah ke repo/folder privat, sebutkan foldernya juga, mis.
-`python3 tools/bank_privat.py katalog bank ../SoalSKD-bank`.
+DIR = folder berisi p*.json (+ gambar/). Bawaan: bank/ + folder privat
+(`BANK_PRIVAT_DIR` atau `../SoalSKD-bank`, lihat tools/lokasi_bank.py).
+`cek-katalog` hanya memeriksa paket yang ada di disk (repo publik tanpa paket
+berbayar tetap lolos).
 Paket gratis dibaca dari PAKET_TERBUKA di web/src/config/akses.ts.
 """
 from __future__ import annotations
@@ -28,6 +29,9 @@ import json
 import re
 import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lokasi_bank import semua_dir  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 KATALOG = ROOT / "bank" / "katalog.json"
@@ -113,17 +117,25 @@ def main(argv: list[str]) -> None:
         if not sisa:
             sys.exit("siapkan butuh folder KELUAR")
         keluar, sisa = Path(sisa[0]), sisa[1:]
-    dirs = [Path(d) for d in sisa] or [ROOT / "bank"]
+    dirs = [Path(d) for d in sisa] or semua_dir()
     paket = baca_semua(dirs)
 
+    lama = json.loads(KATALOG.read_text(encoding="utf-8")) if KATALOG.exists() else {"paket": []}
     if perintah == "katalog":
-        KATALOG.write_text(teks_katalog(buat_katalog(paket)), encoding="utf-8")
-        print(f"{KATALOG.relative_to(ROOT)}: {len(paket)} paket")
+        # Paket yang tidak ada di disk (mis. folder privat tidak terpasang) dipertahankan apa adanya.
+        baru = {p["id"]: p for p in buat_katalog(paket)["paket"]}
+        for p in lama.get("paket", []):
+            baru.setdefault(p["id"], p)
+        hasil = {**buat_katalog({}), "paket": [baru[k] for k in sorted(baru)]}
+        KATALOG.write_text(teks_katalog(hasil), encoding="utf-8")
+        hilang = sorted(set(baru) - set(paket))
+        print(f"{KATALOG.relative_to(ROOT)}: {len(baru)} paket" + (f" ({', '.join(hilang)} tidak di disk, dipertahankan)" if hilang else ""))
     elif perintah == "cek-katalog":
-        lama = KATALOG.read_text(encoding="utf-8") if KATALOG.exists() else ""
-        if lama != teks_katalog(buat_katalog(paket)):
-            sys.exit("bank/katalog.json usang. Jalankan: python3 tools/bank_privat.py katalog")
-        print("bank/katalog.json sesuai bank")
+        tercatat = {p["id"]: p for p in lama.get("paket", [])}
+        usang = [p["id"] for p in buat_katalog(paket)["paket"] if tercatat.get(p["id"]) != p]
+        if usang:
+            sys.exit(f"bank/katalog.json usang untuk {', '.join(usang)}. Jalankan: python3 tools/bank_privat.py katalog")
+        print(f"bank/katalog.json sesuai {len(paket)} paket di disk ({len(tercatat)} tercatat)")
     else:
         for p in siapkan(keluar, paket):
             print(p)

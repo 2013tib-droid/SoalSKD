@@ -2,18 +2,24 @@
 
 Pakai: python3 tools/test_validasi.py
 """
-import copy, json, subprocess, sys, tempfile
+import copy, json, os, subprocess, sys, tempfile
 from pathlib import Path
 
 root = Path(__file__).resolve().parent.parent
 uji = Path(tempfile.mkdtemp())
+# Folder uji dipakai sebagai "folder privat" (tools/lokasi_bank.py) supaya gambar uji ditemukan
+# tanpa bergantung pada bank berbayar (yang ada di repo privat SoalSKD-bank).
+(uji/"gambar").mkdir()
+for n in ("uji-a.svg", "uji-b.svg"):
+    (uji/"gambar"/n).write_text(f'<svg xmlns="http://www.w3.org/2000/svg"><title>{n}</title></svg>')
+ENV = {**os.environ, "BANK_PRIVAT_DIR": str(uji)}
 gagal = []
 asli = json.loads((root/"bank/p01.json").read_text())
 
 def jalan(nama, ubah, harap_kode, harap_teks, file=None):
     p = copy.deepcopy(asli); ubah(p)
     f = uji/(file or f"{p['meta']['id']}.json"); f.write_text(json.dumps(p, ensure_ascii=False))
-    r = subprocess.run([sys.executable, str(root/"tools/validasi.py"), str(f)], capture_output=True, text=True)
+    r = subprocess.run([sys.executable, str(root/"tools/validasi.py"), str(f)], capture_output=True, text=True, env=ENV)
     ok = r.returncode == harap_kode and harap_teks in r.stdout
     print("LULUS" if ok else "GAGAL", nama)
     if not ok:
@@ -35,7 +41,7 @@ jalan("pertanyaan sama persis", lambda p: (ganti_id(p), [q.update(topik=q["topik
 def tanya_sama_gambar(beda):
     def ubah(p):
         ganti_topik(p)
-        gambar = sorted((root/"bank/gambar").glob("*.svg"))[:2]
+        gambar = sorted((uji/"gambar").glob("*.svg"))[:2]
         for q, g in zip((s(p,8), s(p,9)), gambar if beda else gambar[:1]*2):
             q.update(pertanyaan="Gambar yang tepat adalah ....", gambar=[{"file": f"gambar/{g.name}", "alt": "x"}])
     return ubah

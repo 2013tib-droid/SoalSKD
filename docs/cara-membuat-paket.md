@@ -1,6 +1,13 @@
 # Cara membuat paket soal
 
-Alur yang dipakai untuk Paket 2 (`bank/p02.json`, 110 soal), beserta pelajarannya.
+Alur yang dipakai untuk Paket 2 (`p02.json`, 110 soal), beserta pelajarannya.
+
+> **Lokasi berkas (sejak 2026-11-24):** paket berbayar (p02 dst.) dan gambarnya ada di repo
+> **privat** `SoalSKD-bank` (clone di sebelah folder SoalSKD, atau `BANK_PRIVAT_DIR`). Repo publik
+> hanya memuat paket gratis `bank/p01.json` dan `bank/katalog.json`. `tools/bangun_paket.py`
+> menulis paket berbayar ke repo privat; setelah paket baru/berubah jalankan
+> `python3 tools/bank_privat.py katalog` (repo publik) lalu commit di **kedua** repo.
+> Contoh perintah `bank/pXX.json` di bawah berarti `../SoalSKD-bank/pXX.json` untuk paket berbayar.
 Pakai lagi untuk Paket 3, 4, dan seterusnya.
 
 ## Alur

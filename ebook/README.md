@@ -7,7 +7,7 @@ cd ebook && npm install && cd ..          # sekali saja
 node ebook/buat-ebook.mjs bank/p01.json   # hasil: ebook/dist/p01.pdf
 
 # buku gabungan (Edisi 1: p02–p04), hasil: ebook/dist/soalskd-p02-p03-p04.pdf
-node ebook/buat-ebook.mjs bank/p02.json bank/p03.json bank/p04.json --judul "Edisi 1"
+node ebook/buat-ebook.mjs ../SoalSKD-bank/p02.json ../SoalSKD-bank/p03.json ../SoalSKD-bank/p04.json --judul "Edisi 1"
 ```
 
 Opsi: `--judul <teks>` untuk judul sampul buku gabungan, `--keluar <file.pdf>` untuk menentukan lokasi hasil, `--html` untuk ikut menyimpan

@@ -19,10 +19,16 @@ EDISI="${2:-edisi-1}"
 [ -n "$TUJUAN" ] || { echo "Pakai: sh tools/unggah-ebook.sh <bucket> | --cuma-buat [edisi-1|edisi-2]" >&2; exit 1; }
 
 case "$EDISI" in
-  edisi-1) PAKET="bank/p02.json bank/p03.json bank/p04.json"; JUDUL="Edisi 1" ;;
-  edisi-2) PAKET="bank/p05.json bank/p06.json bank/p07.json"; JUDUL="Edisi 2" ;;
+  edisi-1) ID="p02 p03 p04"; JUDUL="Edisi 1" ;;
+  edisi-2) ID="p05 p06 p07"; JUDUL="Edisi 2" ;;
   *) echo "Edisi tidak dikenal: $EDISI (pakai edisi-1 atau edisi-2)" >&2; exit 1 ;;
 esac
+# Paket berbayar ada di repo privat SoalSKD-bank (BANK_PRIVAT_DIR atau ../SoalSKD-bank).
+# shellcheck disable=SC2086
+PAKET="$(python3 -c 'import sys; sys.path.insert(0, "tools"); from lokasi_bank import file_paket
+f = [file_paket(i) for i in sys.argv[1:]]
+if None in f: sys.exit("paket tidak ditemukan: " + " ".join(i for i, x in zip(sys.argv[1:], f) if x is None) + " (pasang repo privat SoalSKD-bank, lihat docs/firebase.md)")
+print(" ".join(str(x) for x in f))' $ID)"
 
 PDF="ebook/dist/$EDISI.pdf"
 [ -d ebook/node_modules ] || (cd ebook && npm ci)

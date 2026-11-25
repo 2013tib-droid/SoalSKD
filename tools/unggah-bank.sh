@@ -5,7 +5,8 @@
 #
 #   sh tools/unggah-bank.sh <bucket> [DIR ...]
 #
-# DIR = folder sumber paket (bawaan: bank/). Berkas disiapkan dulu oleh
+# DIR = folder sumber paket (bawaan: bank/ + repo privat SoalSKD-bank, lihat
+# tools/lokasi_bank.py). Berkas disiapkan dulu oleh
 # tools/bank_privat.py (SVG gambar ditanam), divalidasi, lalu diunggah. Paket gratis
 # (PAKET_TERBUKA) tidak diunggah. Butuh gsutil yang login ke akun pemilik proyek.
 set -eu
@@ -17,7 +18,7 @@ BUCKET="${BUCKET#gs://}"
 shift
 
 # Gagal validasi = tidak ada yang diunggah.
-for d in "${@:-bank}"; do python3 tools/validasi.py "$d"; done
+if [ $# -gt 0 ]; then for d in "$@"; do python3 tools/validasi.py "$d"; done; else python3 tools/validasi.py; fi
 KELUAR="$(mktemp -d)"
 trap 'rm -rf "$KELUAR"' EXIT
 python3 tools/bank_privat.py siapkan "$KELUAR" "$@"
