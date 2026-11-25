@@ -61,9 +61,11 @@ Aturan yang melibatkan beberapa soal sekaligus dicek oleh validator
 (`python3 tools/validasi.py`; galat = tidak boleh terbit, peringatan = sebaiknya dibereskan): bobot TKP memakai 1–5 masing-masing tepat sekali, `id` dan `nomor`
 unik dan berurutan, urutan TWK → TIU → TKP, komposisi 30/35/45 untuk paket
 penuh, sebaran tingkat 20/50/30, sebaran kunci A–E, pembahasan minimal 150 kata,
-`topik` tidak berulang di seluruh bank, dan jawaban terbaik tidak boleh terlalu sering menjadi
-opsi terpanjang (peringatan jika lebih dari 35% soal satu subtes). Saat menulis soal TKP, buat
-opsi bernilai 3 atau 4 sama panjang atau lebih panjang dari opsi bernilai 5.
+`topik` tidak berulang di seluruh bank, dan panjang opsi tidak boleh membocorkan jawaban:
+peringatan jika jawaban terbaik menjadi opsi terpanjang di lebih dari 35% soal satu subtes, atau
+berada di peringkat panjang yang sama (mis. terpanjang ke-2) di lebih dari 40% soal; untuk TKP
+hal yang sama dicek pada opsi bobot 4 (subtes minimal 10 soal). Sebarkan peringkat panjang opsi
+terbaik (dan opsi bobot 4 TKP) kira-kira merata di posisi 1–5.
 
 ## Catatan untuk app (`web/`)
 

@@ -60,6 +60,22 @@ def panjangkan_terbaik(p):
             terbaik = q.get("kunci")
             q["opsi"][terbaik] = q["opsi"][terbaik] + " " + "x" * 300
 jalan("jawaban selalu opsi terpanjang", panjangkan_terbaik, 0, "opsi terpanjang di 7 dari 7")
+def bobot4_terpanjang(p):
+    # Pola yang lolos cek "terpanjang": opsi bobot 4 dibuat terpanjang dan bobot 5 terpanjang ke-2.
+    # Cek ini butuh minimal 10 soal per subtes, jadi soal TKP p01 digandakan dulu.
+    ganti_topik(p)
+    tkp = [q for q in p["soal"] if q["kategori"] == "TKP"]
+    for i, q in enumerate(tkp[:4]):
+        b = copy.deepcopy(q); b["nomor"] = len(p["soal"]) + 1; b["id"] = f"p99-{b['nomor']:03d}"
+        b["topik"] += f" salinan {i}"; b["pertanyaan"] += f" (salinan {i})"; p["soal"].append(b)
+    for q in p["soal"]:
+        if q["kategori"] == "TKP":
+            h4 = next(h for h, v in q["bobot"].items() if v == 4)
+            h5 = next(h for h, v in q["bobot"].items() if v == 5)
+            q["opsi"][h4] += " " + "y" * 400
+            q["opsi"][h5] += " " + "y" * 300
+jalan("bobot 4 TKP selalu terpanjang", bobot4_terpanjang, 0, "opsi bobot 4 adalah opsi terpanjang ke-1 di 11 dari 11")
+jalan("bobot 5 TKP selalu terpanjang ke-2", bobot4_terpanjang, 0, "jawaban terbaik adalah opsi terpanjang ke-2 di 11 dari 11")
 jalan("opsi kembar", lambda p: (ganti_topik(p), s(p,1)["opsi"].update(B=s(p,1)["opsi"]["A"])), 1, "teks opsi yang sama")
 jalan("nomor loncat", lambda p: (ganti_topik(p), s(p,20).update(nomor=21)), 1, "berurutan")
 jalan("urutan subtes", lambda p: (ganti_topik(p), p["soal"].insert(0, p["soal"].pop(13)), [q.update(nomor=i+1) for i,q in enumerate(p["soal"])]), 1, "urutan soal")
