@@ -48,6 +48,12 @@ Pakai lagi untuk Paket 3, 4, dan seterusnya.
   opsi terpanjang di 23 dari 30 soal. Tulis opsi bernilai 3 atau 4 (TKP) dan distraktor
   terkuat (TWK/TIU) sama panjang atau lebih panjang dari jawaban terbaik. Validator
   memberi peringatan jika pola ini muncul di lebih dari 35% soal satu subtes.
+- **Tapi jangan pindah ke pola baru.** Aturan di atas, kalau dipakai di setiap soal, membuat
+  kunci TWK p02 menjadi opsi terpanjang **ke-2** di 22 dari 30 soal dan opsi bobot 4 TKP menjadi
+  terpanjang di 38 dari 45 soal (audit 2026-11-25: menebak "terpanjang ke-2" memberi 110/150
+  TWK dan 188/225 TKP tanpa membaca soal). Targetnya sebaran merata: jawaban terbaik kadang
+  terpanjang, kadang terpendek. Validator kini memperingatkan jika satu peringkat panjang dipakai
+  lebih dari 40% soal satu subtes (TKP: juga untuk opsi bobot 4).
 - **Pembahasan minimal 150 kata** dihitung dari `inti` + `opsi` + `konsep` (tanpa `tips`).
   Soal pendek seperti sinonim, antonim, dan deret sering kurang. Tulis `inti` sekitar 70 kata
   dan tambahkan isi yang berguna, seperti contoh kalimat atau cara memeriksa, bukan kalimat pengisi.

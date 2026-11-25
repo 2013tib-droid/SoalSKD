@@ -174,6 +174,27 @@ def cek_paket(path, paket, config, validator, lap):
             lap.p(lok, f"{kat}: jawaban terbaik adalah opsi terpanjang di {len(terpanjang)} dari {len(grup)} soal "
                        f"(nomor {', '.join(terpanjang)}); samakan panjang opsi agar jawaban tidak mudah ditebak")
 
+    # Menghindari "terpanjang" saja tidak cukup: jawaban yang hampir selalu terpanjang ke-2, atau
+    # opsi bobot 4 TKP yang hampir selalu terpanjang, juga bisa ditebak tanpa membaca soal.
+    # Peringkat panjang: 1 = terpanjang (opsi sama panjang mendapat peringkat yang sama).
+    def peringkat(s, h):
+        return 1 + sum(len(t) > len(s["opsi"][h]) for t in s["opsi"].values())
+    for kat in URUTAN:
+        grup = [s for s in soal if s["kategori"] == kat]
+        if len(grup) < 10:
+            continue
+        pantau = [("jawaban terbaik", lambda s: s.get("kunci") or next(h for h, v in s["bobot"].items() if v == 5))]
+        if kat == "TKP":
+            pantau.append(("opsi bobot 4", lambda s: next(h for h, v in s["bobot"].items() if v == 4)))
+        for nama, pilih in pantau:
+            per = Counter(peringkat(s, pilih(s)) for s in grup)
+            for r, n in sorted(per.items()):
+                if r == 1 and nama == "jawaban terbaik":
+                    continue  # sudah diperiksa di atas
+                if n / len(grup) > 0.4:
+                    lap.p(lok, f"{kat}: {nama} adalah opsi terpanjang ke-{r} di {n} dari {len(grup)} soal; "
+                               f"sebarkan panjang opsi agar jawaban tidak bisa ditebak dari panjangnya")
+
     tkp = [s for s in soal if s["kategori"] == "TKP"]
     if tkp:
         lima = Counter(next(h for h, v in s["bobot"].items() if v == 5) for s in tkp)
