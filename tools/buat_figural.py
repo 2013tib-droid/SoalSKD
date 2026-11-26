@@ -429,11 +429,13 @@ def serial(id_, gambar, stem, opsi, aturan, alt_soal, alt_opsi):
                      alt_soal=alt_soal, alt_opsi=alt_opsi))
 
 
-def analogi(id_, gambar, a, b, c, opsi, aturan, alt_soal, alt_opsi, salah=()):
+def analogi(id_, gambar, a, b, c, opsi, aturan, alt_soal, alt_opsi, salah=(), tandingan=()):
     assert aturan(a) == b, f"{id_}: aturan tidak memetakan A ke B"
     for nama, g in salah:  # tafsiran lain yang masuk akal tidak boleh juga memetakan A ke B
         assert g(a) != b, f"{id_}: tafsiran '{nama}' juga cocok untuk A→B"
     harap = aturan(c)
+    for nama, g in tandingan:  # tafsiran yang juga cocok untuk A→B: hasilnya tidak boleh ada di pilihan
+        assert g(a) == b and (g(c) == harap or g(c) not in opsi), f"{id_}: tafsiran '{nama}' menghasilkan pilihan lain"
     cocok = [HURUF[i] for i, o in enumerate(opsi) if o == harap]
     SOAL.append(dict(id=id_, jenis="analogi", gambar=gambar, stem=[a, b, c], opsi=opsi, cocok=cocok,
                      alt_soal=alt_soal, alt_opsi=alt_opsi))
@@ -455,14 +457,15 @@ serial("p02-065", gb_panah, [0, 45, 90, 135], [225, 90, 180, 0, 270], lambda s: 
        "Pilihan: A panah ke kiri bawah, B panah ke kanan, C panah ke bawah, D panah ke atas, E panah ke kiri.")
 
 analogi("p02-062", gb_luar_dalam, (4, 0), (0, 4), (3, 6),
-        [(6, 3), (3, 6), (6, 0), (3, 3), (0, 3)], lambda s: (s[1], s[0]),
+        [(6, 3), (3, 6), (6, 0), (3, 3), (0, 4)], lambda s: (s[1], s[0]),
         "Analogi: gambar pertama persegi besar berisi lingkaran kecil hitam; gambar kedua lingkaran besar "
         "berisi persegi kecil hitam; gambar ketiga segitiga besar berisi segi enam kecil hitam; gambar keempat "
         "bertanda tanya.",
         "Pilihan: A segi enam besar berisi segitiga kecil hitam; B segitiga besar berisi segi enam kecil hitam; "
         "C segi enam besar berisi lingkaran kecil hitam; D segitiga besar berisi segitiga kecil hitam; "
-        "E lingkaran besar berisi segitiga kecil hitam.",
-        salah=[("bentuk luar tetap", lambda s: (s[0], s[1]))])
+        "E lingkaran besar berisi persegi kecil hitam.",
+        salah=[("bentuk luar tetap", lambda s: (s[0], s[1]))],
+        tandingan=[("luar selalu lingkaran, luar lama menjadi isi", lambda s: (0, s[0]))])
 
 beda("p02-064", gb_titik_dalam_bentuk,
      [(3, 3, "putih"), (5, 5, "putih"), (6, 6, "hitam"), (5, 4, "putih"), (4, 4, "hitam")],
