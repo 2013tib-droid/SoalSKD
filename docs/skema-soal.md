@@ -42,7 +42,7 @@ turunannya.
 | `pembahasan.konsep` | tidak | Konsep penting, rumus, trik eliminasi, atau pola bobot TKP. |
 | `tips` | ya | Tips menghadapi soal sejenis. |
 | `rujukan` | tidak | Pasal/peraturan yang dikutip, misalnya `"UUD NRI 1945 Pasal 28J ayat (2)"`. Wajib dicocokkan dengan teks resmi sebelum `status: final`. |
-| `gambar` | tidak | TIU figural: `[{ "file": "gambar/p02-062-soal.svg", "alt": "..." }]`, path relatif dari `bank/`. Gambar pertama = soal; gambar kedua (analogi/serial) = pilihan A–E berlabel, dan `opsi` cukup "Gambar A" … "Gambar E". SVG dibuat dan kuncinya diverifikasi oleh `python3 tools/buat_figural.py`. |
+| `gambar` | tidak | TIU figural: `[{ "file": "gambar/p02-062-soal.svg", "alt": "..." }]`, path relatif dari `bank/`. Gambar pertama = soal; gambar kedua (analogi/serial/penalaran matriks) = pilihan A–E berlabel. Untuk penalaran matriks, gambar soal berupa kisi 3 × 3 dengan satu sel kosong, dan `opsi` cukup "Gambar A" … "Gambar E". SVG dibuat dan kuncinya diverifikasi oleh `python3 tools/buat_figural.py`. |
 | `catatan_review` | tidak | Masukan pemilik saat review. Dihapus setelah soal diperbaiki. |
 
 ## Aturan teks

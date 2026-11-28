@@ -32,8 +32,10 @@ Pakai lagi untuk Paket 3, 4, dan seterusnya.
    Field `id` dan `nomor` tidak perlu diisi.
 5. **Gabung dan validasi setelah setiap batch:**
    `python3 tools/bangun_paket.py gabung p03 <folder-batch>`. Perbaiki semua galat.
-   TIU wajib memuat minimal satu analogi gambar, satu ketidaksamaan gambar, dan satu serial
-   gambar. Definisikan gambarnya di `tools/buat_figural.py` (state + aturan), jalankan skrip itu,
+   Setiap soal harus masuk kisi-kisi KepmenPANRB 674/2026 (daftar butir dan pemetaan `subtopik`
+   di `SoalSKD-bank/kisi-kisi/`; cek dengan `python3 kisi-kisi/cek_kisi.py --ketat` dari repo itu).
+   Analogi kata, sinonim, antonim, dan ketidaksamaan gambar tidak lagi ada di kisi-kisi.
+   TIU wajib memuat minimal satu serial gambar, satu analogi gambar, dan satu penalaran matriks. Definisikan gambarnya di `tools/buat_figural.py` (state + aturan), jalankan skrip itu,
    lalu pastikan "0 galat" (jawaban tunggal, kunci di bank cocok). Pola dan cara berpikirnya
    jangan diulang antarpaket.
 6. **Commit dan push setiap satu subtes selesai** (TWK, lalu TIU, lalu TKP). Container
@@ -55,7 +57,7 @@ Pakai lagi untuk Paket 3, 4, dan seterusnya.
   terpanjang, kadang terpendek. Validator kini memperingatkan jika satu peringkat panjang dipakai
   lebih dari 40% soal satu subtes (TKP: juga untuk opsi bobot 4).
 - **Pembahasan minimal 150 kata** dihitung dari `inti` + `opsi` + `konsep` (tanpa `tips`).
-  Soal pendek seperti sinonim, antonim, dan deret sering kurang. Tulis `inti` sekitar 70 kata
+  Soal pendek seperti deret angka, berhitung, dan silogisme sering kurang. Tulis `inti` sekitar 70 kata
   dan tambahkan isi yang berguna, seperti contoh kalimat atau cara memeriksa, bukan kalimat pengisi.
 - **Distraktor numerik harus berasal dari kesalahan nyata.** Setiap angka pengecoh punya
   asal hitungan yang bisa dijelaskan, misalnya diskon dijumlahkan, lupa mengurangi volume

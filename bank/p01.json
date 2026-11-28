@@ -3,11 +3,11 @@
   "meta": {
     "id": "p01",
     "judul": "Paket 01",
-    "versi": 1,
+    "versi": 2,
     "dibuat": "2026-11-06",
     "status": "draf",
     "catatan": "Dikonversi dari bank/premium-01.md (20 soal contoh, bukan paket penuh 110 soal).",
-    "diperbarui": "2026-11-06"
+    "diperbarui": "2026-11-28"
   },
   "soal": [
     {
@@ -204,29 +204,29 @@
       "id": "p01-007",
       "nomor": 7,
       "kategori": "TIU",
-      "subtopik": "Analogi",
-      "topik": "Analogi alat ukur cuaca",
+      "subtopik": "Penalaran Induktif",
+      "topik": "Generalisasi hasil panen varietas padi baru dari enam desa",
       "tingkat": "mudah",
-      "pertanyaan": "BAROMETER : TEKANAN UDARA = ANEMOMETER : ....",
+      "pertanyaan": "Petani di enam desa mencoba varietas padi X. Di keenam desa itu, hasil panen rata-rata 15–25 persen lebih tinggi daripada desa-desa tetangga yang masih memakai varietas lama. Curah hujan, jenis tanah, dan jumlah pupuk di desa-desa yang dibandingkan relatif sama.\n\nKesimpulan yang paling mungkin benar adalah ....",
       "opsi": {
-        "A": "Arah angin",
-        "B": "Kelembapan udara",
-        "C": "Curah hujan",
-        "D": "Kecepatan angin",
-        "E": "Intensitas cahaya matahari"
+        "A": "Varietas X pasti menaikkan hasil panen tepat 20 persen di seluruh Indonesia.",
+        "B": "Petani di keenam desa itu bekerja lebih keras daripada petani desa tetangga.",
+        "C": "Varietas lama tidak lagi menghasilkan panen sama sekali.",
+        "D": "Varietas X cenderung menghasilkan panen lebih tinggi pada kondisi lahan yang serupa.",
+        "E": "Hasil panen yang tinggi membuat petani memilih varietas X."
       },
       "kunci": "D",
       "pembahasan": {
-        "inti": "Hubungan pasangan pertama adalah **alat ukur : besaran yang diukur**. Barometer mengukur tekanan udara. Pasangan kedua harus memiliki hubungan yang sama, yaitu besaran yang diukur oleh anemometer: **kecepatan angin**.",
+        "inti": "Enam desa memakai varietas X dan semuanya menunjukkan hasil yang sama: panen lebih tinggi daripada desa tetangga. Faktor lain yang memengaruhi panen (curah hujan, tanah, pupuk) dinyatakan relatif sama. Jadi, perbedaan yang paling menonjol adalah **varietas padinya**.\n\nGeneralisasi yang paling kuat: varietas X **cenderung** menghasilkan panen lebih tinggi pada kondisi lahan yang **serupa**. Kata *cenderung* dan batasan *kondisi serupa* menjaga kesimpulan tetap sesuai data.",
         "opsi": {
-          "A": "Distraktor terkuat karena sama-sama berkaitan dengan angin. Arah angin diukur dengan *wind vane* (penunjuk arah angin), bukan anemometer. Peserta yang hanya mengingat \"anemometer = angin\" mudah terjebak di sini.",
-          "B": "Kelembapan udara diukur dengan **higrometer**. Opsi ini diambil dari besaran cuaca lain, untuk menjebak peserta yang hanya ingat bahwa anemometer termasuk alat cuaca.",
-          "C": "Curah hujan diukur dengan **ombrometer** (penakar hujan). Sama seperti B, ini besaran cuaca yang alat ukurnya berbeda.",
-          "E": "Intensitas cahaya matahari diukur dengan alat seperti **pyranometer** (radiasi matahari) atau **Campbell-Stokes** (lama penyinaran), bukan anemometer."
+          "A": "Terlalu luas dan terlalu pasti. Data hanya dari enam desa, kenaikannya berkisar 15–25 persen (bukan tepat 20), dan kondisi lahan di daerah lain bisa sangat berbeda.",
+          "B": "Tidak ada data tentang kerja keras petani. Penjelasan ini menambah faktor yang tidak diamati.",
+          "C": "Bertentangan dengan data. Desa tetangga tetap panen, hanya hasilnya lebih rendah.",
+          "E": "Membalik urutan sebab-akibat. Petani memilih varietas X **sebelum** panen, jadi hasil panen tidak mungkin menjadi alasan pemilihannya."
         },
-        "konsep": "**Konsep penting tentang analogi:** Langkah kerjanya selalu sama.\n1. Rumuskan hubungan pasangan pertama dalam satu kalimat: \"X adalah alat untuk mengukur Y.\"\n2. Uji setiap opsi dengan kalimat yang sama: \"Anemometer adalah alat untuk mengukur ....\"\n3. Jika lebih dari satu opsi terasa cocok, **perketat kalimatnya** (\"mengukur *besaran* apa dari angin?\")."
+        "konsep": "**Penalaran induktif** menarik kesimpulan umum dari beberapa kasus. Kesimpulan yang baik (1) sesuai pola data, (2) dibatasi pada kondisi yang serupa, dan (3) memakai kata seperti *cenderung* atau *kemungkinan besar*, bukan *pasti*."
       },
-      "tips": "Hubungan analogi yang paling sering muncul: alat–fungsi, alat–pengguna (profesi), sebab–akibat, bagian–keseluruhan, sinonim/antonim, dan bahan–hasil. Waspadai opsi yang berasal dari **kategori yang sama** dengan jawaban (seperti arah angin dan kecepatan angin), karena di situlah jebakannya."
+      "tips": "Coret dulu opsi yang memakai **pasti, tepat, seluruh**, atau yang bertentangan dengan data. Lalu buang opsi yang menambah faktor baru atau membalik sebab-akibat. Opsi yang tersisa biasanya jawabannya."
     },
     {
       "id": "p01-008",
@@ -372,29 +372,29 @@
       "id": "p01-013",
       "nomor": 13,
       "kategori": "TIU",
-      "subtopik": "Logika Proposisi",
-      "topik": "Negasi implikasi berkuantor",
+      "subtopik": "Silogisme",
+      "topik": "Modus tollens dengan konsekuen berkuantor semua",
       "tingkat": "sulit",
-      "pertanyaan": "Negasi dari pernyataan \"Jika harga BBM naik, maka semua harga kebutuhan pokok naik\" adalah ....",
+      "pertanyaan": "Premis 1: Jika harga BBM naik, maka semua harga kebutuhan pokok naik.\nPremis 2: Harga beras, yang termasuk kebutuhan pokok, tidak naik.\n\nKesimpulan yang pasti benar adalah ....",
       "opsi": {
-        "A": "Harga BBM naik dan setidaknya ada satu harga kebutuhan pokok yang tidak naik.",
-        "B": "Jika harga BBM tidak naik, maka semua harga kebutuhan pokok tidak naik.",
-        "C": "Harga BBM naik dan semua harga kebutuhan pokok tidak naik.",
-        "D": "Jika setidaknya ada satu harga kebutuhan pokok yang tidak naik, maka harga BBM tidak naik.",
-        "E": "Harga BBM tidak naik atau setidaknya ada satu harga kebutuhan pokok yang tidak naik."
+        "A": "Harga BBM tidak naik.",
+        "B": "Harga BBM naik, tetapi harga beras tetap.",
+        "C": "Semua harga kebutuhan pokok tidak naik.",
+        "D": "Harga kebutuhan pokok selain beras pasti naik.",
+        "E": "Jika harga BBM tidak naik, maka harga beras tidak naik."
       },
       "kunci": "A",
       "pembahasan": {
-        "inti": "Ada dua aturan yang harus dipakai **berurutan**.\n\n**Aturan 1, negasi implikasi:**\n~(p → q) ≡ p ∧ ~q\n(\"Jika p maka q\" dinegasikan menjadi \"p **dan** tidak q\".)\n\n**Aturan 2, negasi kuantor:**\n~(semua A adalah B) ≡ setidaknya ada satu A yang bukan B\n\nTerapkan pada soal:\n- p = harga BBM naik\n- q = semua harga kebutuhan pokok naik\n- ~q = **setidaknya ada satu** harga kebutuhan pokok yang **tidak** naik\n\nJadi, ~(p → q) ≡ **Harga BBM naik dan setidaknya ada satu harga kebutuhan pokok yang tidak naik.** Dalam soal logika, \"beberapa\" juga bermakna \"setidaknya ada satu\".",
+        "inti": "Misalkan p = harga BBM naik dan q = semua harga kebutuhan pokok naik. Premis 1 berbentuk **p → q**.\n\n**Langkah 1.** Premis 2 menyatakan ada satu kebutuhan pokok (beras) yang harganya tidak naik. Itu cukup untuk membuat q **salah**, karena q menuntut *semua* harga naik. Jadi, diperoleh **~q**.\n\n**Langkah 2 (modus tollens).** Dari p → q dan ~q, disimpulkan **~p**: harga BBM tidak naik.\n\nKunci soal ini adalah negasi kuantor: *tidak benar semua naik* setara dengan *ada paling sedikit satu yang tidak naik*, dan premis 2 menyediakan contoh itu.",
         "opsi": {
-          "B": "**Invers** (~p → ~q). Invers bukan negasi dan tidak ekuivalen dengan pernyataan awal.",
-          "C": "Distraktor paling berbahaya. Aturan 1 sudah benar (bentuk \"p dan ...\"), tetapi kuantornya salah dinegasikan. Negasi \"semua naik\" adalah \"**setidaknya ada satu** yang tidak naik\", bukan \"semua tidak naik\".",
-          "D": "**Kontraposisi** (~q → ~p). Kontraposisi justru **ekuivalen** dengan pernyataan awal, jadi jelas bukan negasinya.",
-          "E": "Berbentuk ~p ∨ ~q. Bentuk ini bukan negasi dan juga tidak ekuivalen dengan pernyataan awal. Opsi ini menjebak peserta yang mencampur aturan implikasi (p → q ≡ ~p ∨ q) dengan aturan negasi."
+          "B": "Jika harga BBM naik, premis 1 mengharuskan semua harga kebutuhan pokok naik, termasuk beras. Premis 2 menyatakan beras tidak naik, jadi opsi ini bertentangan dengan premis.",
+          "C": "Terlalu jauh. Premis 2 hanya menyebut beras. Harga kebutuhan pokok lain bisa naik atau tidak; premis tidak memberi informasi.",
+          "D": "Tidak didukung premis. Karena BBM tidak naik, premis 1 tidak memberi kepastian apa pun tentang harga kebutuhan pokok lain.",
+          "E": "Ini **invers** dari premis 1 (~p → ~q), yang tidak sah disimpulkan dari p → q."
         },
-        "konsep": "**Tabel ringkas yang wajib dihafal:**\n\n| Bentuk | Ekuivalensi | Negasi |\n|---|---|---|\n| p → q | ~q → ~p · ~p ∨ q | p ∧ ~q |\n| p ∧ q | — | ~p ∨ ~q |\n| p ∨ q | ~p → q | ~p ∧ ~q |\n| Semua A adalah B | — | Setidaknya ada satu A yang bukan B |\n| Beberapa A adalah B | — | Semua A bukan B |"
+        "konsep": "**Negasi kuantor:** ~(semua x bersifat P) ≡ ada x yang tidak bersifat P. Jadi, satu contoh yang tidak memenuhi sudah cukup untuk menyangkal pernyataan *semua*. Setelah itu, pakai modus tollens seperti biasa."
       },
-      "tips": "Saat diminta **negasi implikasi**, jawabannya **tidak pernah** berbentuk \"jika ... maka ...\". Coret semua opsi berbentuk implikasi (di soal ini B dan D), lalu pilih opsi berbentuk \"p **dan** ...\" dengan kuantor yang dinegasikan secara benar. Perhatikan juga kata kunci soal: *negasi*, *ekuivalen*, atau *kesimpulan*. Jawaban untuk ketiganya berbeda."
+      "tips": "Jika konsekuen memuat kata **semua**, cukup satu contoh yang tidak memenuhi untuk membuatnya salah. Tandai contoh itu di premis, lalu jalankan modus tollens."
     },
     {
       "id": "p01-014",

@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""Gambar TIU figural (analogi, ketidaksamaan, serial gambar) untuk bank/gambar/.
+"""Gambar TIU figural (serial, analogi, penalaran matriks) untuk bank/gambar/.
+
+Kisi-kisi TIU figural mengikuti KepmenPANRB 674/2026: serial, analogi, dan penalaran matriks.
+Ketidaksamaan gambar tidak lagi tercantum, jadi tidak dipakai lagi.
 
 Setiap soal figural didefinisikan sebagai *keadaan* (state) per gambar, lalu:
 1. aturannya diterapkan secara terprogram untuk mencari jawaban, dan dicek bahwa tepat satu opsi
-   benar (serial/analogi) atau tepat satu gambar melanggar aturan (ketidaksamaan);
+   benar (serial/analogi/matriks) atau tepat satu gambar melanggar aturan (ketidaksamaan, jenis lama);
 2. kunci di bank/<paket>.json harus sama dengan hasil itu;
 3. SVG digambar ulang dari state yang sama ke bank/gambar/<id>-soal.svg (dan -opsi.svg).
 
@@ -164,6 +167,18 @@ def svg_analogi(a, b, c, judul):
     return svg(x + tepi, SEL + 2 * tepi, "".join(isi), judul)
 
 
+def svg_matriks(frames, judul):
+    """Penalaran matriks: kisi 3 × 3, sel kanan bawah bertanda tanya (frames berisi 8 gambar)."""
+    jarak, tepi = 12, 10
+    isi = []
+    for i in range(9):
+        r, k = divmod(i, 3)
+        x, y = tepi + k * (SEL + jarak), tepi + r * (SEL + jarak)
+        isi.append(sel("", x, y, tanya=True) if i == 8 else sel(frames[i], x, y))
+    sisi = 2 * tepi + 3 * SEL + 2 * jarak
+    return svg(sisi, sisi, "".join(isi), judul)
+
+
 def svg_pilihan(frames, judul):
     """Lima gambar berlabel A–E: 3 di baris atas, 2 di baris bawah (tetap besar di layar HP)."""
     jarak, tepi, baris = 16, 10, SEL + 30
@@ -227,6 +242,11 @@ def gb_poliomino(s):  # (nama, putar, cermin, isi)
 def gb_sisi_isi(s):  # (sisi, isi)
     n, isi = s
     return bentuk(n, r=40, isi=isi, cy=53 if n == 3 else 50)
+
+
+def gb_bangun_tegak(s):  # (sisi, isi); persegi digambar tegak, bukan belah ketupat
+    n, isi = s
+    return bentuk(n, r=40, isi=isi, rot=45 if n == 4 else 0, cy=53 if n == 3 else 50)
 
 
 SUDUT4 = {"KA": (11, 11), "KN": (89, 11), "BN": (89, 89), "BA": (11, 89)}  # kiri-atas, kanan-atas, ...
@@ -441,6 +461,26 @@ def analogi(id_, gambar, a, b, c, opsi, aturan, alt_soal, alt_opsi, salah=(), ta
                      alt_soal=alt_soal, alt_opsi=alt_opsi))
 
 
+def matriks(id_, gambar, aturan, opsi, alt_soal, alt_opsi, salah=(), tandingan=()):
+    """aturan(baris, kolom) -> state untuk kisi 3 × 3; sel (2, 2) adalah yang ditanyakan.
+
+    salah: tafsiran lain yang masuk akal tetapi tidak boleh cocok dengan delapan sel yang terlihat.
+    tandingan: tafsiran lain yang cocok dengan delapan sel; hasilnya harus sama atau tidak ada di pilihan.
+    """
+    sel9 = [(r, k) for r in range(3) for k in range(3)]
+    tampak = sel9[:8]
+    stem = [aturan(r, k) for r, k in tampak]
+    harap = aturan(2, 2)
+    for nama, g in salah:
+        assert any(g(r, k) != aturan(r, k) for r, k in tampak), f"{id_}: tafsiran '{nama}' juga cocok"
+    for nama, g in tandingan:
+        assert all(g(r, k) == aturan(r, k) for r, k in tampak), f"{id_}: tandingan '{nama}' tidak cocok"
+        assert g(2, 2) == harap or g(2, 2) not in opsi, f"{id_}: tafsiran '{nama}' menghasilkan pilihan lain"
+    cocok = [HURUF[i] for i, o in enumerate(opsi) if o == harap]
+    SOAL.append(dict(id=id_, jenis="matriks", gambar=gambar, stem=stem, opsi=opsi, cocok=cocok,
+                     alt_soal=alt_soal, alt_opsi=alt_opsi))
+
+
 def beda(id_, gambar, fig, predikat, alt_soal):
     cocok = [HURUF[i] for i, s in enumerate(fig) if not predikat(s)]
     SOAL.append(dict(id=id_, jenis="beda", gambar=gambar, stem=fig, opsi=None, cocok=cocok,
@@ -467,12 +507,15 @@ analogi("p02-062", gb_luar_dalam, (4, 0), (0, 4), (3, 6),
         salah=[("bentuk luar tetap", lambda s: (s[0], s[1]))],
         tandingan=[("luar selalu lingkaran, luar lama menjadi isi", lambda s: (0, s[0]))])
 
-beda("p02-064", gb_titik_dalam_bentuk,
-     [(3, 3, "putih"), (5, 5, "putih"), (6, 6, "hitam"), (5, 4, "putih"), (4, 4, "hitam")],
-     lambda s: s[0] == s[1],
-     "Lima gambar berlabel A sampai E. A: segitiga putih berisi 3 titik. B: segi lima putih berisi 5 titik. "
-     "C: segi enam hitam berisi 6 titik putih. D: segi lima putih berisi 4 titik. E: persegi hitam "
-     "berisi 4 titik putih.")
+matriks("p02-064", gb_panah, lambda r, k: (90 * k + 45 * r) % 360,
+        [315, 180, 225, 270, 0],
+        "Kisi 3 × 3 berisi panah hitam, sel kanan bawah bertanda tanya. Baris 1: panah ke atas, ke kanan, "
+        "ke bawah. Baris 2: panah ke kanan atas, ke kanan bawah, ke kiri bawah. Baris 3: panah ke kanan, "
+        "ke bawah, lalu tanda tanya.",
+        "Pilihan: A panah ke kiri atas, B panah ke bawah, C panah ke kiri bawah, D panah ke kiri, E panah ke atas.",
+        salah=[("setiap baris sama", lambda r, k: 90 * k % 360),
+               ("putar 45° per kolom", lambda r, k: (45 * k + 45 * r) % 360)],
+        tandingan=[("ke bawah: putar 45° per baris", lambda r, k: (45 * r + 90 * k) % 360)])
 
 # --- p03 ---------------------------------------------------------------
 putar_cw_balik = lambda s: (s[0], (s[1] + 1) % 4, s[2], "putih" if s[3] == "hitam" else "hitam")  # noqa: E731
@@ -503,15 +546,29 @@ analogi("p03-062", gb_poliomino, ("L", 0, False, "hitam"), ("L", 1, False, "puti
                ("cermin", lambda s: (s[0], s[1], not s[2], "putih")),
                ("putar 180°", lambda s: (s[0], (s[1] + 2) % 4, s[2], "putih"))])
 
-beda("p03-063", gb_poliomino,
-     [("F", 0, False, "hitam"), ("F", 2, False, "hitam"), ("F", 3, False, "hitam"), ("F", 1, True, "hitam"),
-      ("F", 1, False, "hitam")],
-     lambda s: sel_poliomino(*s[:3]) in {sel_poliomino("F", k) for k in range(4)},
-     "Lima gambar berlabel A sampai E, masing-masing bangun hitam dari lima persegi kecil pada kisi 3 × 3. "
-     "A: baris atas tengah dan kanan; baris tengah kiri dan tengah; baris bawah tengah. B: baris atas tengah; "
-     "baris tengah tengah dan kanan; baris bawah kiri dan tengah. C: baris atas kiri; baris tengah penuh; "
-     "baris bawah tengah. D: baris atas kanan; baris tengah penuh; baris bawah tengah. E: baris atas tengah; "
-     "baris tengah penuh; baris bawah kanan.")
+_m = {(0, 0): {1, 2, 5}, (0, 1): {2, 3, 9}, (1, 0): {4, 5, 7}, (1, 1): {5, 6, 7}, (2, 0): {1, 6, 8},
+      (2, 1): {3, 6, 9}}
+
+
+def _xor(r, k):
+    if k < 2:
+        return (frozenset(_m[(r, k)]), None)
+    return (frozenset(_m[(r, 0)] ^ _m[(r, 1)]), None)
+
+
+matriks("p03-063", gb_grid, _xor,
+        [(frozenset({1, 3, 6, 8, 9}), None), (frozenset({6}), None), (frozenset({1, 8}), None),
+         (frozenset({1, 3, 8, 9}), None), (frozenset({1, 3, 8}), None)],
+        "Kisi besar 3 × 3. Setiap sel berisi kisi kecil 3 × 3 (petak dinomori 1–9 dari kiri atas, baris demi "
+        "baris) dengan beberapa petak hitam. Baris 1: petak 1, 2, 5 | petak 2, 3, 9 | petak 1, 3, 5, 9. "
+        "Baris 2: petak 4, 5, 7 | petak 5, 6, 7 | petak 4, 6. Baris 3: petak 1, 6, 8 | petak 3, 6, 9 | "
+        "tanda tanya.",
+        "Pilihan kisi kecil dengan petak hitam: A petak 1, 3, 6, 8, 9; B petak 6; C petak 1, 8; "
+        "D petak 1, 3, 8, 9; E petak 1, 3, 8.",
+        salah=[("gabungan", lambda r, k: (frozenset(_m[(r, 0)] | _m[(r, 1)]), None) if k == 2 else _xor(r, k)),
+               ("irisan", lambda r, k: (frozenset(_m[(r, 0)] & _m[(r, 1)]), None) if k == 2 else _xor(r, k)),
+               ("kiri dikurangi tengah", lambda r, k: (frozenset(_m[(r, 0)] - _m[(r, 1)]), None) if k == 2
+                else _xor(r, k))])
 
 serial("p03-065", gb_sisi_isi, [(3, "putih"), (4, "hitam"), (5, "putih"), (6, "hitam")],
        [(7, "hitam"), (6, "putih"), (7, "putih"), (8, "putih"), (5, "hitam")],
@@ -530,23 +587,26 @@ serial("p04-058", gb_sudut_garis, [("KA", 1), ("KN", 2), ("BN", 3), ("BA", 4)],
        "Pilihan: A titik kiri atas, 4 garis; B titik kiri atas, 5 garis; C titik kanan atas, 5 garis; "
        "D titik kiri bawah, 5 garis; E titik kiri atas, 6 garis.")
 
-_konfig = [  # (pusat lingkaran, jari-jari, segitiga, daerah target titik: (di lingkaran, di segitiga))
-    ((36, 38), 24, [(54, 20), (88, 84), (24, 84)], (False, True)),
-    ((64, 64), 22, [(14, 16), (84, 22), (30, 84)], (False, True)),
-    ((50, 30), 21, [(50, 40), (88, 88), (12, 88)], (False, True)),
-    ((32, 62), 22, [(88, 14), (84, 86), (22, 36)], (False, True)),
-    ((60, 46), 27, [(40, 12), (88, 84), (10, 78)], (True, True)),
-]
-_fig = []
-for c, r, t, target in _konfig:
-    p = cari_titik(c, r, t, target)
-    assert ruang(p, c, r, t) >= 9, f"p04-060: titik terlalu dekat garis ({ruang(p, c, r, t):.1f})"
-    _fig.append((c, r, t, p))
-beda("p04-060", gb_tumpang, _fig,
-     lambda s: daerah(s[3], s[0], s[1], s[2]) == (False, True),
-     "Lima gambar berlabel A sampai E. Setiap gambar berisi satu lingkaran dan satu segitiga yang saling "
-     "bertumpang tindih dengan posisi dan ukuran berbeda, serta satu titik hitam. Letak titik: A, B, C, dan D "
-     "di dalam segitiga tetapi di luar lingkaran; E di dalam segitiga dan di dalam lingkaran.")
+_jml = {(0, 0): 1, (0, 1): 2, (1, 0): 3, (1, 1): 1, (2, 0): 2, (2, 1): 3}
+
+
+def _jumlah(r, k):
+    return ("lingkaran", _jml[(r, k)] if k < 2 else _jml[(r, 0)] + _jml[(r, 1)], False)
+
+
+matriks("p04-060", gb_kelompok, _jumlah,
+        [("lingkaran", 6, False), ("lingkaran", 4, False), ("persegi", 5, False), ("lingkaran", 1, False),
+         ("lingkaran", 5, False)],
+        "Kisi 3 × 3 berisi lingkaran hitam kecil, sel kanan bawah bertanda tanya. Baris 1: 1, 2, 3 lingkaran. "
+        "Baris 2: 3, 1, 4 lingkaran. Baris 3: 2, 3 lingkaran, lalu tanda tanya.",
+        "Pilihan: A 6 lingkaran hitam kecil; B 4 lingkaran hitam kecil; C 5 persegi putih kecil; "
+        "D 1 lingkaran hitam kecil; E 5 lingkaran hitam kecil.",
+        salah=[("kolom ketiga hasil kali", lambda r, k: ("lingkaran", _jml[(r, 0)] * _jml[(r, 1)], False)
+                if k == 2 else _jumlah(r, k)),
+               ("kolom ketiga selisih", lambda r, k: ("lingkaran", abs(_jml[(r, 0)] - _jml[(r, 1)]), False)
+                if k == 2 else _jumlah(r, k))],
+        tandingan=[("kolom ketiga bertambah satu ke bawah", lambda r, k: ("lingkaran", 3 + r, False)
+                    if k == 2 else _jumlah(r, k))])
 
 analogi("p04-061", gb_bendera, ("bendera", 0, False, False), ("bendera", 0, True, False),
         ("sepatu", 0, False, False),
@@ -583,11 +643,15 @@ serial("p05-054", gb_grid, [(1, 9), (3, 8), (5, 7), (7, 6)], [(9, 5), (9, 4), (8
        "Pilihan: A hitam 9, silang 5; B hitam 9, silang 4; C hitam 8, silang 5; D hitam 1, silang 5; "
        "E hitam 9, silang 6.")
 
-beda("p05-060", gb_simetri, ["rumah", "panah", "trapesium", "plus", "takik"],
-     lambda s: punya_sumbu_simetri(BENTUK_SIMETRI[s]),
-     "Lima bangun putih bergaris tepi hitam berlabel A sampai E. A: bentuk rumah (segi lima). B: panah "
-     "menunjuk ke kanan. C: trapesium yang sisi sejajarnya tegak. D: tanda tambah. E: persegi panjang yang "
-     "pojok kanan bawahnya terpotong berbentuk persegi panjang kecil.")
+_latin = [[3, 4, 0], [0, 3, 4], [4, 0, 3]]
+matriks("p05-060", gb_bangun_tegak, lambda r, k: (_latin[r][k], "putih"),
+        [(4, "putih"), (0, "putih"), (5, "putih"), (3, "hitam"), (3, "putih")],
+        "Kisi 3 × 3 berisi bangun putih bergaris tepi hitam, sel kanan bawah bertanda tanya. Baris 1: "
+        "segitiga, persegi, lingkaran. Baris 2: lingkaran, segitiga, persegi. Baris 3: persegi, lingkaran, "
+        "lalu tanda tanya.",
+        "Pilihan: A persegi putih, B lingkaran putih, C segi lima putih, D segitiga hitam, E segitiga putih.",
+        salah=[("setiap kolom sama", lambda r, k: (_latin[0][k], "putih"))],
+        tandingan=[("diagonal utama sama", lambda r, k: (_latin[r][k], "putih"))])
 
 # --- p06 ---------------------------------------------------------------
 analogi("p06-054", gb_belah, ("lingkaran", "utuh"), ("lingkaran", "kiri"), ("rumah", "utuh"),
@@ -602,14 +666,23 @@ analogi("p06-054", gb_belah, ("lingkaran", "utuh"), ("lingkaran", "kiri"), ("rum
         salah=[("sisakan setengah kanan", lambda s: (s[0], "kanan")),
                ("sisakan setengah atas", lambda s: (s[0], "atas"))])
 
-GARIS3 = [{1, 2, 3}, {4, 5, 6}, {7, 8, 9}, {1, 4, 7}, {2, 5, 8}, {3, 6, 9}, {1, 5, 9}, {3, 5, 7}]
-beda("p06-056", gb_grid,
-     [(frozenset({4, 5, 6}), None), (frozenset({1, 4, 7}), None), (frozenset({1, 5, 9}), None),
-      (frozenset({3, 5, 7}), None), (frozenset({1, 5, 8}), None)],
-     lambda s: set(s[0]) in GARIS3,
-     "Lima kisi 3 × 3 berlabel A sampai E (petak dinomori 1–9 dari kiri atas, baris demi baris), masing-masing "
-     "dengan tiga petak hitam. A: petak 4, 5, 6. B: petak 1, 4, 7. C: petak 1, 5, 9. D: petak 3, 5, 7. "
-     "E: petak 1, 5, 8.")
+def _bentuk_titik(r, k):
+    n = 3 + r
+    return (n, n - k, "hitam" if (r + k) % 2 else "putih")
+
+
+matriks("p06-056", gb_titik_dalam_bentuk, _bentuk_titik,
+        [(5, 3, "hitam"), (5, 4, "putih"), (6, 3, "putih"), (5, 2, "putih"), (5, 3, "putih")],
+        "Kisi 3 × 3 berisi bangun bertitik, sel kanan bawah bertanda tanya. Baris 1: segitiga putih 3 titik, "
+        "segitiga hitam 2 titik putih, segitiga putih 1 titik. Baris 2: persegi hitam 4 titik putih, persegi "
+        "putih 3 titik, persegi hitam 2 titik putih. Baris 3: segi lima putih 5 titik, segi lima hitam 4 titik "
+        "putih, lalu tanda tanya.",
+        "Pilihan: A segi lima hitam berisi 3 titik putih; B segi lima putih berisi 4 titik; C segi enam putih "
+        "berisi 3 titik; D segi lima putih berisi 2 titik; E segi lima putih berisi 3 titik.",
+        salah=[("hanya kolom tengah hitam", lambda r, k: (3 + r, 3 + r - k, "hitam" if k == 1 else "putih")),
+               ("titik sama dalam satu kolom", lambda r, k: (3 + r, 3 - k, "hitam" if (r + k) % 2 else "putih"))],
+        tandingan=[("titik kolom ketiga bertambah satu ke bawah",
+                    lambda r, k: (3 + r, (1 + r) if k == 2 else 3 + r - k, "hitam" if (r + k) % 2 else "putih"))])
 
 serial("p06-058", gb_dua_benda, [(0, 5), (1, 3), (2, 1), (3, 7)],
        [(3, 5), (4, 3), (5, 4), (4, 5), (4, 7)],
@@ -647,12 +720,19 @@ serial("p07-058", gb_kelompok, [("lingkaran", 1, False), ("persegi", 3, False), 
        "Pilihan: A 9 lingkaran hitam kecil; B 9 persegi putih kecil; C 8 lingkaran hitam kecil; D 7 lingkaran "
        "hitam kecil; E 9 segitiga hitam kecil.")
 
-beda("p07-065", gb_titik_dalam_bentuk,
-     [(5, 3, "putih"), (6, 3, "putih"), (4, 2, "hitam"), (3, 1, "putih"), (6, 4, "hitam")],
-     lambda s: s[1] == s[0] - 2,
-     "Lima gambar berlabel A sampai E. A: segi lima putih berisi 3 titik. B: segi enam putih berisi 3 titik. "
-     "C: persegi hitam berisi 2 titik putih. D: segitiga putih berisi 1 titik. E: segi enam hitam "
-     "berisi 4 titik putih.")
+matriks("p07-065", gb_dua_benda, lambda r, k: ((k + 2 * r) % 8, (4 - 2 * k + 2 * r) % 8),
+        [(5, 4), (6, 4), (4, 6), (7, 4), (6, 0)],
+        "Kisi 3 × 3. Setiap sel memiliki bingkai persegi putus-putus dengan delapan titik letak (empat pojok "
+        "dan empat tengah sisi), satu lingkaran putih, dan satu segitiga hitam. Sel kanan bawah bertanda tanya. "
+        "Baris 1: lingkaran kiri atas, segitiga kanan bawah | lingkaran tengah atas, segitiga kanan atas | "
+        "lingkaran kanan atas, segitiga kiri atas. Baris 2: lingkaran kanan atas, segitiga kiri bawah | "
+        "lingkaran tengah kanan, segitiga kanan bawah | lingkaran kanan bawah, segitiga kanan atas. Baris 3: "
+        "lingkaran kanan bawah, segitiga kiri atas | lingkaran tengah bawah, segitiga kiri bawah | tanda tanya.",
+        "Pilihan: A lingkaran tengah bawah, segitiga kanan bawah; B lingkaran kiri bawah, segitiga kanan bawah; "
+        "C lingkaran kanan bawah, segitiga kiri bawah; D lingkaran tengah kiri, segitiga kanan bawah; "
+        "E lingkaran kiri bawah, segitiga kiri atas.",
+        salah=[("segitiga searah jarum jam", lambda r, k: ((k + 2 * r) % 8, (4 + 2 * k + 2 * r) % 8)),
+               ("lingkaran dua langkah per kolom", lambda r, k: ((2 * k + 2 * r) % 8, (4 - 2 * k + 2 * r) % 8))])
 
 # ---------------------------------------------------------------- cek + tulis
 
@@ -711,6 +791,8 @@ def main():
                 isi = svg_deret(frames, s["alt_soal"])
             elif s["jenis"] == "analogi":
                 isi = svg_analogi(*frames, s["alt_soal"])
+            elif s["jenis"] == "matriks":
+                isi = svg_matriks(frames, s["alt_soal"])
             else:
                 isi = svg_pilihan(frames, s["alt_soal"])
             (dasar / file_soal).write_text(isi)
