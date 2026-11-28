@@ -24,11 +24,32 @@ const blok: Components = {
   img: () => null,
 };
 
+/**
+ * Satu baris baru = <br>, seperti `breaks: true` di ebook (ebook/buat-ebook.mjs). Tanpa ini,
+ * premis silogisme yang ditulis per baris ("Premis 1: …\nPremis 2: …") menempel jadi satu paragraf.
+ */
+type NodeMd = { type: string; value?: string; children?: NodeMd[] };
+function remarkBarisBaru() {
+  const jalan = (node: NodeMd) => {
+    if (!node.children) return;
+    node.children = node.children.flatMap((anak) => {
+      if (anak.type !== "text" || !anak.value?.includes("\n")) {
+        jalan(anak);
+        return [anak];
+      }
+      return anak.value
+        .split(/\r?\n/)
+        .flatMap((bagian, i): NodeMd[] => [...(i ? [{ type: "break" }] : []), ...(bagian ? [{ type: "text", value: bagian }] : [])]);
+    });
+  };
+  return (tree: NodeMd) => jalan(tree);
+}
+
 const sebaris: Components = { ...blok, p: ({ children }) => <span>{children}</span> };
 
 export function TeksMd({ children, inline = false }: { children: string; inline?: boolean }) {
   return (
-    <Markdown remarkPlugins={[remarkGfm]} components={inline ? sebaris : blok} skipHtml>
+    <Markdown remarkPlugins={[remarkGfm, remarkBarisBaru]} components={inline ? sebaris : blok} skipHtml>
       {children}
     </Markdown>
   );

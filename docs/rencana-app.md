@@ -47,7 +47,8 @@ Paket di `bank/`: `p01` gratis (20 dari 110 soal); Bundel 1 = `p02`–`p04`, Bun
 - **Belum ada bottom nav.** Ditambahkan saat halaman Riwayat dan Profil terpisah sudah ada.
 - **Soal figural** tampil di ujian dan pembahasan (`GambarSoal`). Teks alt menggambarkan isi gambar, tetapi soal rotasi/pencerminan (mis. p03-063) tetap sulit dikerjakan dengan pembaca layar. `p01` belum punya soal figural.
 - **Simbol `∧ ∨ ≡ ✓ ✗`** di pembahasan TIU `p01` dicetak dengan DejaVu Sans di PDF karena Geist tidak punya glyph-nya. Diputuskan dibiarkan.
-- **Durasi** paket lengkap 100 menit (SKD CPNS TA 2024, KepmenPANRB 321/2024, `config/skd.json`); teks PDF-nya belum dicocokkan langsung (bkn.go.id diblokir dari lingkungan kerja). Paket belum lengkap (p01) tetap 1 menit per soal. **Ambang batas** masih `null`. Cek aturan BKN/KemenPAN-RB terbaru.
+- **Durasi** paket lengkap 100 menit dan **ambang batas** kebutuhan umum TWK 65, TIU 80, TKP 166 (SKD CPNS TA 2026, KepmenPANRB 674/2026, `config/skd.json`), dicocokkan langsung dengan teks Kepmen pada 2026-11-28. Paket belum lengkap (p01) tetap 1 menit per soal. Cek aturan BKN/KemenPAN-RB terbaru.
+- **Ebook dan Storage privat belum memuat penggantian soal kisi-kisi 2026-11-28** (TIU di luar kisi-kisi p01–p07 diganti). Buat ulang ebook dan jalankan `tools/unggah-bank.sh` sebelum jualan.
 - **Ebook PDF Edisi 1 dan 2 belum memuat revisi audit 2026-11-22** (soal figural baru, perbaikan p02/p05/p07). Buat ulang dan unggah sebelum jualan.
 - **Branch `claude/skema-json-bank`** masih ada di GitHub; pemilik menghapusnya manual.
 

@@ -18,7 +18,7 @@ export const BAGIAN_SKD: Record<string, { nama: string; menguji: string; contoh:
   TIU: {
     nama: "Kemampuan Berpikir",
     menguji: "Cara kamu bernalar dan berhitung.",
-    contoh: "Deret angka, soal cerita hitungan, logika, dan arti kata.",
+    contoh: "Penalaran (silogisme, induktif, analitis), hitungan dan deret angka, serta gambar (serial, analogi, matriks).",
   },
   TKP: {
     nama: "Sikap dan Karakter",

@@ -1,8 +1,8 @@
 {
-  "catatan": "Cek aturan BKN/KemenPAN-RB terbaru. `durasi_menit` adalah durasi simulasi paket lengkap (110 soal) menurut acuan di `acuan_durasi`; paket yang belum lengkap (mis. demo p01) memakai durasi latihan per soal dari app (web/src/config/skd.ts). Ambang batas sengaja null sampai nilainya dicocokkan dengan dokumen di `sumber`. Jumlah soal per subtes adalah standar komposisi produk ini (mengikuti proporsi SKD CAT).",
-  "sumber": "https://www.bkn.go.id/storage/2024/08/2024kepmenpanrb321-Nilai-Ambang-Batas.pdf",
-  "acuan_durasi": "SKD CPNS TA 2024 (KepmenPANRB No. 321 Tahun 2024)",
-  "bahan_cek": "Durasi 100 menit diisi atas arahan audit 2026-11-22 dengan acuan KepmenPANRB 321/2024 (CPNS TA 2024); PDF di `sumber` belum bisa dibuka dari lingkungan kerja saat itu, jadi cocokkan lagi dengan teks resminya. Dari ingatan, BUKAN sumber: ambang batas TWK 65, TIU 80, TKP 166. Jika seleksi tahun berikutnya memakai aturan baru, ganti `acuan_durasi` dan `sumber`.",
+  "catatan": "Cek aturan BKN/KemenPAN-RB terbaru. `durasi_menit` adalah durasi simulasi paket lengkap (110 soal) menurut acuan di `acuan_durasi`; paket yang belum lengkap (mis. demo p01) memakai durasi latihan per soal dari app (web/src/config/skd.ts). Ambang batas adalah nilai kebutuhan umum dari dokumen di `sumber`. Jumlah soal per subtes adalah standar komposisi produk ini (mengikuti proporsi SKD CAT).",
+  "sumber": "https://jdih.menpan.go.id (Keputusan Menteri PANRB Nomor 674 Tahun 2026, ditetapkan 20 November 2026; salinan di repo privat SoalSKD-bank/kisi-kisi/kepmenpanrb-674-2026.pdf)",
+  "acuan_durasi": "SKD CPNS TA 2026 (KepmenPANRB No. 674 Tahun 2026)",
+  "bahan_cek": "Dicocokkan langsung dengan teks KepmenPANRB 674/2026 pada 2026-11-28: Lampiran I huruf F angka 2-5 (100 menit; 30/35/45 soal; TWK/TIU benar 5 salah 0; TKP 1-5; maks 150/175/225/550) dan Lampiran II huruf B (ambang batas kebutuhan umum TWK 65, TIU 80, TKP 166). Ambang batas kebutuhan khusus (cum laude/diaspora: total 311 dan TIU 85; disabilitas/Papua: total 286 dan TIU 60) tidak dipakai app. Jika seleksi tahun berikutnya memakai aturan baru, ganti `acuan_durasi`, `sumber`, dan nilai ambang batas.",
   "durasi_menit": 100,
   "subtes": [
     {
@@ -13,7 +13,7 @@
       "nilai_benar": 5,
       "nilai_salah": 0,
       "nilai_maks": 150,
-      "ambang_batas": null
+      "ambang_batas": 65
     },
     {
       "kode": "TIU",
@@ -23,7 +23,7 @@
       "nilai_benar": 5,
       "nilai_salah": 0,
       "nilai_maks": 175,
-      "ambang_batas": null
+      "ambang_batas": 80
     },
     {
       "kode": "TKP",
@@ -35,7 +35,7 @@
         5
       ],
       "nilai_maks": 225,
-      "ambang_batas": null
+      "ambang_batas": 166
     }
   ],
   "nilai_maks_total": 550,

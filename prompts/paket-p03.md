@@ -1,5 +1,7 @@
 # Prompt: buat Paket 3
 
+> **Usang (TIU).** Bagian TIU di prompt ini (sinonim, antonim, analogi kata) tidak lagi sesuai kisi-kisi KepmenPANRB 674/2026. Untuk paket baru, ikuti `SoalSKD-bank/kisi-kisi/README.md` (butir kisi-kisi, aturan penulisan soal, dan komposisi sasaran).
+
 ## Teks untuk ditempel di sesi baru
 
 ```

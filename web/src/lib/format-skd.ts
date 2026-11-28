@@ -24,7 +24,7 @@ export type FormatSkd = {
   urutan: Subtes[];
   sumber: string | null;
   durasiResmiMenit: number | null;
-  /** Nama aturan yang menjadi acuan `durasiResmiMenit`, mis. "SKD CPNS TA 2024 (KepmenPANRB No. 321 Tahun 2024)". */
+  /** Nama aturan yang menjadi acuan `durasiResmiMenit`, mis. "SKD CPNS TA 2026 (KepmenPANRB No. 674 Tahun 2026)". */
   acuanDurasi: string | null;
   subtes: Record<
     Subtes,
