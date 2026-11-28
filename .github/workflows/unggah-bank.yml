@@ -1,0 +1,131 @@
+# Mengunggah bank soal berbayar dan/atau ebook PDF ke Storage PRIVAT, tanpa PC:
+# tab Actions → "Unggah bank & ebook" → Run workflow (bisa dari aplikasi GitHub di HP).
+# Isinya sama dengan `sh tools/unggah-bank.sh <bucket>` dan
+# `sh tools/unggah-ebook.sh <bucket> edisi-1|edisi-2` (docs/firebase.md langkah 10).
+#
+# BELUM PERNAH DIJALANKAN. Jalankan pertama kali dengan "Cuma periksa" (dry run).
+#
+# SEBELUM MENJALANKAN, isi di GitHub → Settings → Secrets and variables → Actions:
+#   Secret   FIREBASE_SERVICE_ACCOUNT = sudah dipakai "Deploy backend" (docs/firebase.md 7a)
+#   Secret   BANK_REPO_TOKEN          = fine-grained token, hanya repo SoalSKD-bank,
+#                                       izin Contents: Read-only
+#   Variable FIREBASE_PROJECT_ID      = id proyek, mis. soalskd-xxxx
+#   Variable BANK_BUCKET (opsional)   = kosong = <FIREBASE_PROJECT_ID>.firebasestorage.app
+# Service account butuh izin tulis objek di bucket itu (Firebase Admin biasanya cukup;
+# kalau gagal "403", tambahkan peran Storage Object Admin).
+#
+# Repo ini publik: workflow TIDAK menyimpan PDF/JSON sebagai artifact dan tidak mencetak isi soal.
+name: Unggah bank & ebook
+
+on:
+  workflow_dispatch:
+    inputs:
+      apa:
+        description: 'Apa yang diunggah'
+        required: true
+        type: choice
+        default: 'semua'
+        options:
+          - 'semua'
+          - 'bank'
+          - 'ebook edisi-1'
+          - 'ebook edisi-2'
+      dry_run:
+        description: 'Cuma periksa (validasi, buat PDF, cek akses bucket), jangan unggah'
+        required: false
+        type: boolean
+        default: true
+
+concurrency:
+  group: unggah-bank
+  cancel-in-progress: false
+
+jobs:
+  unggah:
+    runs-on: ubuntu-latest
+    env:
+      BANK_PRIVAT_DIR: ${{ github.workspace }}/SoalSKD-bank
+      APA: ${{ inputs.apa }}
+      DRY: ${{ inputs.dry_run }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Periksa pengaturan
+        env:
+          SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          TOKEN: ${{ secrets.BANK_REPO_TOKEN }}
+          PROJECT: ${{ vars.FIREBASE_PROJECT_ID }}
+          BANK_BUCKET: ${{ vars.BANK_BUCKET }}
+        run: |
+          [ -n "$SA" ] || { echo "::error::Secret FIREBASE_SERVICE_ACCOUNT belum diisi."; exit 1; }
+          [ -n "$TOKEN" ] || { echo "::error::Secret BANK_REPO_TOKEN belum diisi (token baca-saja repo SoalSKD-bank)."; exit 1; }
+          [ -n "$PROJECT" ] || [ -n "$BANK_BUCKET" ] || { echo "::error::Variable FIREBASE_PROJECT_ID belum diisi."; exit 1; }
+          echo "BUCKET=${BANK_BUCKET:-$PROJECT.firebasestorage.app}" >> "$GITHUB_ENV"
+
+      - name: Ambil repo privat SoalSKD-bank (main)
+        uses: actions/checkout@v4
+        with:
+          repository: 2013tib-droid/SoalSKD-bank
+          ref: main
+          token: ${{ secrets.BANK_REPO_TOKEN }}
+          path: SoalSKD-bank
+          persist-credentials: false
+
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+
+      - uses: google-github-actions/setup-gcloud@v2
+
+      - name: Cek akses bucket
+        run: gsutil ls "gs://$BUCKET/" > /dev/null && echo "Bucket gs://$BUCKET bisa dibaca."
+
+      - name: Validasi bank
+        run: |
+          python3 tools/validasi.py
+          python3 tools/bank_privat.py cek-katalog
+
+      - name: Unggah bank
+        if: inputs.apa == 'semua' || inputs.apa == 'bank'
+        run: |
+          if [ "$DRY" = "true" ]; then
+            D="$(mktemp -d)"
+            python3 tools/bank_privat.py siapkan "$D"
+            echo "Dry run: siap diunggah ke gs://$BUCKET/bank/ →"; ls "$D"
+            rm -rf "$D"
+          else
+            sh tools/unggah-bank.sh "$BUCKET"
+          fi
+
+      - name: Siapkan pembuat ebook
+        if: inputs.apa != 'bank'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: ebook/package-lock.json
+
+      - name: Pasang Chromium untuk ebook
+        if: inputs.apa != 'bank'
+        working-directory: ebook
+        run: |
+          npm ci
+          npm install --no-save playwright@1.63.0
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y fonts-dejavu-core
+
+      - name: Buat dan unggah ebook
+        if: inputs.apa != 'bank'
+        run: |
+          case "$APA" in
+            semua) EDISI="edisi-1 edisi-2" ;;
+            *) EDISI="${APA#ebook }" ;;
+          esac
+          for e in $EDISI; do
+            if [ "$DRY" = "true" ]; then
+              sh tools/unggah-ebook.sh --cuma-buat "$e"
+            else
+              sh tools/unggah-ebook.sh "$BUCKET" "$e"
+            fi
+          done
+          rm -rf ebook/dist

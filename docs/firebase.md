@@ -336,6 +336,15 @@ lalu `gsutil cp` ke `gs://<bucket>/bank/`. Paket gratis (PAKET_TERBUKA) tidak di
 Server menyimpan cache 10 menit. Setelah menambah/mengubah paket, perbarui juga katalog
 publik (metadata saja): `python3 tools/bank_privat.py katalog [folder…]`.
 
+### 10f. Unggah tanpa PC (GitHub Actions)
+
+10c dan 10d juga bisa dijalankan dari HP: tab **Actions → "Unggah bank & ebook" → Run workflow**
+(`.github/workflows/unggah-bank.yml`). Sekali saja, isi di Settings → Secrets and variables → Actions:
+secret `BANK_REPO_TOKEN` (fine-grained token, hanya repo `SoalSKD-bank`, Contents: Read-only) dan,
+bila bucket bukan `PROJECT_ID.firebasestorage.app`, variable `BANK_BUCKET`. `FIREBASE_SERVICE_ACCOUNT`
+dan `FIREBASE_PROJECT_ID` sama dengan langkah 7b. Jalankan pertama dengan "Cuma periksa" dicentang.
+Workflow memakai `main` repo bank dan tidak menyimpan PDF/JSON sebagai artifact.
+
 ### 10e. Setiap kali isi bank berubah
 
 Soal p02–p04 (Edisi 1) atau p05–p07 (Edisi 2) diperbaiki → jalankan lagi **10c**
